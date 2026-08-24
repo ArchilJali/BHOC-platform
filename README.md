@@ -27,16 +27,16 @@ BHOC is intended as a complementary approach to the oxygen-delivery function of 
 Precision Oxygen Therapeutics focuses on four fundamental questions:
 
 ### WHERE
-Where is oxygen needed
+Where is oxygen needed?
 
 ### WHEN
-When is additional oxygen delivery required
+When is additional oxygen delivery required?
 
 ### HOW MUCH
-How much oxygen is required to support tissue demand
+How much oxygen is required to support tissue demand?
 
 ### CONTROL
-How can oxygen delivery be supported in a controlled and continuous manner
+How can oxygen delivery be supported in a controlled and continuous manner?
 
 The objective is to move the focus from simply increasing circulating hemoglobin toward understanding and supporting **oxygen availability at the tissue level**.
 
