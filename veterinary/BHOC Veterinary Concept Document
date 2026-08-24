@@ -12,137 +12,562 @@
 
 ---
 
-## 📖 Overview
+# Biological Hemoglobin Oxygen Carrier (BHOC)
+## Technical Overview & Strategic Documentation
 
-**BHOC** is a **donor-independent, room-temperature-stable (3+ years), endotoxin-free, cell-antigen-free biologic hemoglobin oxygen carrier** designed for **microvascular and tissue-level oxygen exchange and delivery** across all mammalian species.
-
-- ✅ Compatible with all blood types
-- ✅ For all species — Companion and Wildlife animals
-- ✅ 3–5× oxygen-carrying capacity vs. packed red blood cells (pRBCs)
-
----
-
-## 👨‍⚕️ Authors
-
-| Name | Credentials | Role |
-|------|-------------|------|
-| **Bob Murtaugh** | DVM, MS | Clinical Veterinary Advisor |
-| **Carl Raush** | — | Scientific & Regulatory Strategy |
-| **Archil Jaliashvili** | — | Lead Author & Project Director |
+**Document Version:** 1.0  
+**Date:** August 2026  
+**Classification:** Technical & Strategic Reference  
 
 ---
 
-## 🔬 Key Differentiators
+## Table of Contents
 
-| **Parameter** | **Traditional Blood** | **BHOC** |
-|---------------|------------------------|----------|
-| Donor Dependency | Required | **Eliminated** |
-| Cross-matching | Required | **Not required** |
-| Storage | Refrigerated (21–42 days) | **Room temperature (3+ years)** |
-| Oxygen Efficiency | 1× (pRBCs) | **3–5×** |
-| Wastage | 10–20% | **<2%** |
-| Time to Deployment | 4–8 hours | **<3 minutes** |
-| Species Compatibility | Donor-dependent | **Universal** |
-| Hematocrit recovery | Need 5-6 days | **From 1 day** |
-
----
-
-## 📊 Market Opportunity
-
-- **70% of US veterinary clinics** (40,544 of 57,920) lack transfusion capabilities
-- **$10B+ annual revenue leakage** from referred cases
-- **40–60% net margin** on BHOC procedures (vs. 0–10% for traditional blood)
+1. [Executive Summary](#1-executive-summary)
+2. [Regulatory & Historical Foundation](#2-regulatory--historical-foundation)
+3. [Scientific Framework](#3-scientific-framework)
+4. [Product Architecture](#4-product-architecture)
+5. [Clinical Applications](#5-clinical-applications)
+6. [Market Analysis](#6-market-analysis)
+7. [Economic Model](#7-economic-model)
+8. [Implementation Strategy](#8-implementation-strategy)
+9. [Technical Specifications](#9-technical-specifications)
+10. [Research References](#10-research-references)
 
 ---
 
-## 💊 Product Formulations
+## 1. Executive Summary
 
-| **Pack** | **Volume** | **Primary Use Case** | **Target Species** |
-|----------|------------|----------------------|-------------------|
+### 1.1 Product Definition
+
+**Biological Hemoglobin Oxygen Carrier (BHOC)** is a donor-independent, room-temperature-stable (3+ years), endotoxin-free, cell-antigen-free biologic hemoglobin oxygen carrier designed for microvascular and tissue-level oxygen exchange and delivery across all mammalian species.
+
+### 1.2 Core Specifications
+
+| Parameter | Specification |
+|-----------|---------------|
+| **Oxygen Capacity** | 3-5× per mL vs. packed red blood cells (pRBCs) |
+| **Stability** | Room temperature, 3+ years |
+| **Storage Requirements** | No refrigeration needed |
+| **Cross-matching** | Not required |
+| **Species Compatibility** | Universal (all mammalian species) |
+| **Deployment Time** | <3 minutes |
+| **Wastage Rate** | <2% |
+| **Molecular Weight** | ~200 kDa |
+
+### 1.3 Historical Validation
+
+- **FDA Approval:** 1998 (Oxyglobin)
+- **EMA Approval:** 1999 (Oxyglobin)
+- **Units Sold:** >240,000 (Oxyglobin/Hemopure)
+- **Species Treated:** ~30 off-label
+- **Clinical Trials:** 27
+- **Preclinical Studies:** 250+
+- **Treatment Success:** 95% vs. 32% control (pivotal canine anemia trial)
+
+---
+
+## 2. Regulatory & Historical Foundation
+
+### 2.1 Oxyglobin Precedent
+
+Oxyglobin, developed by Biopure Corporation, represents the foundational technology:
+
+**Regulatory Milestones:**
+- 1998: FDA approval for canine anemia
+- 1999: EMA approval
+
+**Clinical Evidence Base:**
+- 2 core effectiveness studies
+- Multi-center clinical field trial: 64 anemic dogs
+- 885 veterinary reports (Dec 1998-Aug 1999)
+- 78% of dogs showed PCV improvement within 72 hours
+- 85% of blood-loss cases received Oxyglobin only
+- 4.5× higher survival rate for PCV <15% vs. whole blood at PCV <10%
+
+### 2.2 Limitations of Traditional RBC Transfusions
+
+**Physiological Limitations:**
+- Microcirculatory failure: RBCs may not reach hypoxic tissues
+- Diffusion barriers: Cellular membranes reduce oxygen transfer
+- Storage lesions: Impaired oxygen offloading from refrigerated blood
+
+**Operational Limitations:**
+- Donor dependency
+- Crossmatching requirements
+- Refrigeration dependency (21-42 days)
+- 10-20% wastage from expiration
+- 4-8 hour deployment time
+
+**Species Limitations:**
+- Donor-dependent compatibility
+- Limited wildlife/exotic support
+- Geographic restrictions
+
+### 2.3 BHOC Regulatory Pathway
+
+**Status:** Registration dossier preparation for biosimilar submission  
+**Target:** FDA/CVM approval (expected 2026-2027)  
+**Strategy:** 505(b)(2) regulatory pathway leveraging Oxyglobin precedent
+
+---
+
+## 3. Scientific Framework
+
+### 3.1 Mechanism of Action
+
+BHOC functions as a cell-free stabilized hemoglobin solution that:
+
+1. **Delivers oxygen directly to tissues** without RBC membrane barriers
+2. **Penetrates microvascular beds** compromised by endothelial dysfunction
+3. **Provides controlled oxygen release** through stabilized hemoglobin structure
+4. **Maintains oncotic pressure** while delivering oxygen
+
+### 3.2 Oxygen Delivery Efficiency
+
+**Comparison Data:**
+
+| Parameter | pRBC | BHOC |
+|-----------|------|------|
+| Oxygen capacity | 1× | 3-5× |
+| Oxygen unloading | Delayed (storage lesions) | Immediate |
+| Microvascular penetration | Limited | High |
+| Diffusion efficiency | Membrane-limited | Cell-free |
+
+*In left graphic, RBC was given 60g of Hemoglobin compared with HBOC of 30g*
+
+### 3.3 Molecular Design
+
+**Stabilization Mechanism:**
+- Glutaraldehyde polymerization
+- Molecular weight: ~200 kDa
+- Endotoxin-free formulation
+- Cell antigen-free processing
+
+**Advantages:**
+- Reduced vasoactivity risk vs. unpolymerized HBOCs
+- Extended circulatory half-life
+- Controlled oxygen affinity
+
+---
+
+## 4. Product Architecture
+
+### 4.1 Formulations
+
+| SKU | Volume | Primary Use Case | Target Species |
+|-----|--------|------------------|----------------|
 | BHOC-20 | 20 mL | Feline/exotic/small canine | Cats, rabbits, birds, reptiles |
-| BHOC-80 | 80 mL | Small-medium canine/ICU support | Dogs (10–30 kg), foals |
+| BHOC-80 | 80 mL | Small-medium canine/ICU support | Dogs (10-30 kg), foals |
 | BHOC-200 | 200 mL | Medium-large canine/surgical | Dogs (30+ kg), horses |
 
+### 4.2 Administration System
+
+**Components:**
+- Unit-specific QR code for tracking
+- Dedicated administration device
+- Protocol-based delivery system
+- Traceability integration
+
+**Administration Parameters:**
+- Smaller access/needle size
+- Controlled infusion speed
+- Volume-specific protocols
+- Application-specific guidance
+
+### 4.3 Digital Ecosystem
+
+**Future Development:**
+- Web application for protocol guidance
+- Mobile app for treatment tracking
+- Anonymized clinical data aggregation
+- Evidence-based protocol optimization
+
+**Data Collection Model:**
+- Voluntary treatment information sharing
+- Permission-based anonymized data use
+- Complementary bonus system for participants
+- Free product units for contributing clinics
+
 ---
 
-## 📈 Procedure Menu & Pricing
+## 5. Clinical Applications
+
+### 5.1 Primary Indications
+
+**Emergency Oxygen Rescue:**
+- Anemia (acute/chronic)
+- Trauma/hemorrhage
+- Surgical bleeding
+- IMHA
+- Parvovirus
+
+**Surgical Support:**
+- Preoperative optimization
+- High-risk surgeries
+- Postoperative recovery
+- Orthopedic repair
+
+**Equine Emergency:**
+- Colic
+- Foal maladjustment
+- Transport support
+
+### 5.2 Emerging Applications
+
+| Application | Mechanism | Status |
+|-------------|-----------|--------|
+| **Oncology Support** | Mitigates hypoxia-induced chemoresistance; reduces doxorubicin cardiotoxicity | Preclinical evidence |
+| **Longevity/Vitality** | Supports oxidative metabolism; improves mitochondrial function | Research phase |
+| **Sports Medicine** | WADA/FEI/ARCI compliant; performance recovery | Field studies |
+| **Iron Supplement Infusion** | Bioavailable iron + oxygenation | Clinical evaluation |
+| **Wildlife/Zoo Emergency** | No donor blood; room-temperature stable | Field deployment |
+
+### 5.3 Evidence Summary
+
+| Application | Key Findings | Sources |
+|-------------|--------------|---------|
+| Oncology | 5-20% dose reduction of doxorubicin; enhanced radiation therapy; reduced metastasis | [5, 6, 7] |
+| Surgery | 40% reduction in postoperative infections; 50% mortality reduction in shock models | [8, 9, 10] |
+| Longevity | 20% telomere length increase in human leukocytes with hyper-oxygenation | [14, 15, 16] |
+| Acute Care | Immediate deployment; no crossmatching; reduces mortality in trauma | [10, 4] |
+| Cats | Addresses volume overload risk; no donor dependency | [4, 17, 19, 20] |
+| Wildlife/Zoos | No donor blood available; room-temperature stable; universal compatibility | [19, 4] |
+
+---
+
+## 6. Market Analysis
+
+### 6.1 US Veterinary Market Overview
+
+**Total Market Size:** $72.6B (2026, IBISWorld)
+
+**Clinic Segmentation:**
+
+| Segment | Clinics | Percentage | Transfusion Capability |
+|---------|---------|------------|----------------------|
+| Small Animal | 40,544 | 70% | 30% |
+| Equine | 5,792 | 10% | 20% |
+| Mixed/Exotic/Wildlife | 11,584 | 20% | <10% |
+| **Total** | **57,920** | **100%** | - |
+
+### 6.2 Unmet Needs by Segment
+
+| Segment | Current Problem | BHOC Opportunity | Revenue Potential |
+|---------|----------------|------------------|-------------------|
+| Small Animal | 70% refer cases out | Convert referrals to in-house | $5-10B/year |
+| Equine | 80% lack donor access | Immediate oxygenation for 80% | $1-2B/year |
+| Mixed/Exotic/Wildlife | <10% have species-specific blood | Universal platform for 90% | $2-4B/year |
+
+### 6.3 Species Population Data (2025-2026)
+
+| Species | US Population | Growth Trend |
+|---------|---------------|--------------|
+| Dogs | 87.3M | Growth |
+| Cats | 76.3M | Growth |
+| Horses | 9.2M | Stable |
+| Birds | 6M households | Stable |
+| Reptiles | 6M households | Stable |
+| Small Mammals | 6-7M households | Slight decline |
+| Backyard Chickens | 11M households | Growing |
+
+### 6.4 Niche Markets
+
+**Wildlife Rehabilitation:**
+- 200,000+ cases/year in North America
+- No donor blood availability
+- Critical deployment need
+
+**Zoos/Aquariums:**
+- Room-temperature stability required
+- Universal compatibility essential
+- Emergency oxygenation critical
+
+**Travel/Relocation:**
+- Geographic donor blood type mismatches
+- Emergency oxygen bridge requirement
+- International transport support
+
+---
+
+## 7. Economic Model
+
+### 7.1 Pricing Structure
+
+**Philosophy:** Priced for total procedure value, not per mL like blood
+
+**Traditional Blood Costs Eliminated:**
+- Donor dependency ($5,000-10,000/year)
+- Crossmatching ($100-300/case)
+- Storage/refrigeration ($1,000-5,000/year)
+- Wastage (10-20% for blood vs. <2% for BHOC)
+- Emergency delays (1-4 hours for blood vs. <5 minutes for BHOC)
+
+**Target Margin:** 40-60% net margin
+
+### 7.2 Procedure Pricing (2026 Estimates)
 
 | Procedure | Indications | Price Range |
 |-----------|-------------|-------------|
-| Oxygen Rescue (Feline/Exotic) | Anemia, trauma, surgical bleeding | $600–1,200 |
-| Oxygen Rescue (Canine) | Anemia, trauma, IMHA, parvovirus | $900–1,800 |
-| Surgical Oxygen Support | Preoperative, high-risk surgeries | $700–1,500 (add-on) |
-| Equine Emergency Oxygenation | Colic, foal maladjustment, transport | $2,500–5,000 |
-| Recovery Optimization | Post-surgical, trauma | $300–800/session |
-| Anti-Cancer Support | Chemotherapy fatigue, tumor hypoxia | $400–1,000/session |
-| Longevity & Vitality Plan | Senior pets, cognitive decline | $1,200–3,000/year |
-| Sports Recovery & Performance | Racing, endurance, show animals | $400–4,000/session |
-| Iron Supplement Infusion | Iron-deficiency anemia, CKD | $500–1,200/infusion |
-| Wildlife/Zoo Emergency | Trauma, poisoning, injury | $1,500–3,000/case |
-| Travel/Relocation Support | International transport, donor mismatches | $800–1,500/case |
+| Oxygen Rescue (Feline/Exotic) | Anemia, trauma, surgical bleeding | $600-1,200 |
+| Oxygen Rescue (Canine) | Anemia, trauma, IMHA, parvovirus | $900-1,800 |
+| Surgical Oxygen Support | Preoperative, high-risk surgeries | $700-1,500 |
+| Equine Emergency Oxygenation | Colic, foal maladjustment, transport | $2,500-5,000 |
+| Recovery Optimization | Post-surgical, trauma, orthopedic repair | $300-800/session |
+| Anti-Cancer Support | Chemotherapy fatigue, tumor hypoxia | $400-1,000/session |
+| Longevity & Vitality Plan | Senior pets, cognitive decline | $1,200-3,000/year |
+| Sports Recovery & Performance | Racing, endurance, show animals | $400-4,000/session |
+| Iron Supplement Infusion | Iron-deficiency anemia, CKD | $500-1,200/infusion |
+| Wildlife/Zoo Emergency | Trauma, poisoning, injury | $1,500-3,000/case |
+| Travel/Relocation Support | International transport, donor mismatches | $800-1,500/case |
 
----
+### 7.3 Clinic ROI Analysis
 
-## 💰 ROI Analysis
+**Clinics Without Transfusion Capabilities**
 
-### Clinics Without Transfusion Capabilities
+*Assumptions:*
+- Monthly cases: 15-20
+- Average revenue/case: $1,500
+- BHOC cost/case: $400
+- Operational savings/case: $300
 
 | Metric | Calculation | Result |
 |--------|-------------|--------|
-| Monthly Revenue | 20 × $1,500 | **$30,000** |
-| Monthly BHOC Cost | 20 × $400 | **$8,000** |
-| Monthly Operational Savings | 20 × $300 | **$6,000** |
-| **Monthly Profit** | ($30,000 – $8,000) + $6,000 | **$28,000** |
+| Monthly Revenue | 20 × $1,500 | $30,000 |
+| Monthly BHOC Cost | 20 × $400 | $8,000 |
+| Monthly Operational Savings | 20 × $300 | $6,000 |
+| **Monthly Profit** | ($30,000 - $8,000) + $6,000 | **$28,000** |
 | **Annual Profit** | $28,000 × 12 | **$336,000** |
 
-### Clinics With Transfusion Capabilities
+**Clinics With Transfusion Capabilities**
+
+*Assumptions:*
+- Monthly cases: 10 (anemic) + 5 (non-anemic)
+- Average revenue: $1,200 (anemic), $800 (non-anemic)
 
 | Metric | Calculation | Result |
 |--------|-------------|--------|
-| Monthly Revenue (Anemic) | 10 × $1,200 | **$12,000** |
-| Monthly Revenue (Non-Anemic) | 5 × $800 | **$4,000** |
-| **Total Monthly Revenue** | — | **$16,000** |
+| Monthly Revenue (Anemic) | 10 × $1,200 | $12,000 |
+| Monthly Revenue (Non-Anemic) | 5 × $800 | $4,000 |
+| **Total Monthly Revenue** | - | **$16,000** |
 | **Annual Profit** | $16,000 × 12 | **$192,000** |
 
----
+### 7.4 Recurring Revenue Example
 
-## 🌍 Wildlife & Niche Markets
+**Longevity Plan**
 
-- **Wildlife Rehabilitation**: 200,000+ cases/year in North America
-- **Zoos/Aquariums**: Critical need for room-temperature-stable oxygenation
-- **Travel/Relocation**: Geographic donor blood type mismatches
+*Assumptions:*
+- Monthly clients: 10 (12 sessions/year)
+- Revenue/client: $200/session
+- BHOC cost/session: $100
 
----
-
-## 📚 Key References
-
-1. FDA. (1998). *Oxyglobin (Hemoglobin Glutamer-200) Approval*.
-2. EMA. (1999). *Oxyglobin EPAR*.
-3. Biopure Corporation. (2001). *Annual Report*.
-4. Standl TG, et al. (1996). *Bovine haemoglobin is more potent than autologous red blood cells*. *Canadian Journal of Anesthesia*.
-5. Vail DM, et al. (2000). *Use of hemoglobin-based oxygen carriers in veterinary oncology*. *Journal of Veterinary Internal Medicine*.
-
-[Full reference list available in the complete document]
+| Metric | Calculation | Result |
+|--------|-------------|--------|
+| Monthly Revenue | 10 × $200 | $2,000 |
+| Monthly BHOC Cost | 10 × $100 | $1,000 |
+| **Monthly Profit** | $2,000 - $1,000 | **$1,000** |
+| **Annual Profit** | $1,000 × 12 | **$12,000** |
 
 ---
 
-## ⚖️ Disclaimer
+## 8. Implementation Strategy
 
-This document is for **internal strategic use** and contains projections, estimates, and forward-looking statements based on:
+### 8.1 Target Clinic Types
+
+| Clinic Type | BHOC Value Proposition |
+|-------------|----------------------|
+| Clinics without transfusion | New emergency treatment category (+60% margin) |
+| Clinics with blood banks | Reduces donor overhead, wastage, delays, time & staff |
+| Specialty/Referral Hospitals | Enhances ICU/surgical outcomes with higher margins |
+| Equine/Wildlife Practices | Enables immediate, donor-free oxygenation |
+
+### 8.2 Adoption Phases
+
+**Phase 1 (2026-2027):**
+- Regulatory submission
+- Clinical trials completion
+- Initial product launch
+- Early adopter clinics
+
+**Phase 2 (2027-2028):**
+- Expanded distribution
+- Protocol development
+- Digital ecosystem launch
+- Corporate partnerships
+
+**Phase 3 (2028-2029):**
+- Full market penetration
+- International expansion
+- New application development
+- Longevity/wellness programs
+
+### 8.3 Key Implementation Principles
+
+**Not a Traditional Blood Transfusion:**
+- Requires controlled administration
+- Protocol-based delivery
+- Application-specific guidelines
+- Traceability integration
+
+**Smart Ecosystem Development:**
+- Better protocols through data collection
+- Clinical learning from real-world use
+- Veterinary adoption through evidence
+- Continuous quality improvement
+
+---
+
+## 9. Technical Specifications
+
+### 9.1 Product Specifications
+
+| Parameter | Specification |
+|-----------|---------------|
+| Active Ingredient | Glutaraldehyde-polymerized bovine hemoglobin |
+| Molecular Weight | ~200 kDa |
+| Hemoglobin Concentration | 13 g/dL |
+| Oxygen Affinity (P50) | ~35-40 mmHg |
+| Endotoxin | <0.5 EU/mL |
+| pH | 7.6-7.9 |
+| Storage Temperature | 15-30°C (room temperature) |
+| Shelf Life | 3+ years |
+| Preservatives | None |
+| Antigens | Cell-free, no antigenic activity |
+
+### 9.2 Delivery Specifications
+
+| Parameter | Specification |
+|-----------|---------------|
+| Administration Route | IV infusion |
+| Infusion Rate | 5-10 mL/kg/hour (protocol dependent) |
+| Maximum Volume | Determined by species and condition |
+| Compatibility | All blood types, all mammalian species |
+| Pre-medication | None required |
+| Monitoring Requirements | Standard vital signs |
+
+### 9.3 Quality Specifications
+
+| Parameter | Specification |
+|-----------|---------------|
+| Manufacturing Standard | cGMP |
+| Sterility | Terminal sterilization |
+| Pyrogen Testing | LAL test |
+| Efficacy Testing | Oxygen delivery assay |
+| Stability Testing | ICH guidelines |
+| Traceability | Unit-specific QR code |
+
+---
+
+## 10. Research References
+
+### 10.1 Regulatory & Historical
+
+1. FDA. (1998). *Oxyglobin (Hemoglobin Glutamer-200) Approval*. [Animal Drugs @ FDA](https://animaldrugsatfda.fda.gov/)
+
+2. EMA. (1999). *Oxyglobin EPAR*. [EMA](https://www.ema.europa.eu/en/medicines/veterinary/EPAR/oxyglobin)
+
+3. Biopure Corporation. (2001). *Annual Report*. [Biopure AR 2001](https://media.corporate-ir.net/media_files/NSD/BPUR/reports/bpur_ar01.pdf)
+
+### 10.2 Oxygenation & Efficacy
+
+4. Standl TG, et al. (1996). *Bovine haemoglobin is more potent than autologous red blood cells in restoring muscular tissue oxygenation after profound isovolaemic haemodilution in dogs*. *Canadian Journal of Anesthesia, 43*(7), 714-723. [PubMed](https://pubmed.ncbi.nlm.nih.gov/8807179/)
+
+### 10.3 Oncology Support
+
+5. Teacher BA, et al. (1995). *Hemoglobin-based oxygen carriers enhance the efficacy of cancer therapies*. *Cancer Research, 55*(1), 181-186. [PubMed](https://pubmed.ncbi.nlm.nih.gov/7530924/)
+
+6. Vail DM, et al. (2000). *Use of hemoglobin-based oxygen carriers in veterinary oncology*. *Journal of Veterinary Internal Medicine, 14*(3), 287-292. [PubMed](https://pubmed.ncbi.nlm.nih.gov/10702581/)
+
+7. Rockwell S, et al. (1997). *Hemoglobin-based oxygen carriers as radiosensitizers*. *International Journal of Radiation Oncology, 38*(3), 573-578. [PubMed](https://pubmed.ncbi.nlm.nih.gov/9172270/)
+
+### 10.4 Surgery & Acute Care
+
+8. Yearley JH, et al. (1990). *Hemoglobin-based oxygen carriers reduce postoperative infections in surgical patients*. *Surgery, 107*(6), 693-699. [PubMed](https://pubmed.ncbi.nlm.nih.gov/2164070/)
+
+9. Gordillo GM, et al. (2010). *Hyperoxygenation accelerates wound healing in diabetic rats*. *American Journal of Pathology, 176*(5), 2432-2443. [PubMed](https://pubmed.ncbi.nlm.nih.gov/20551150/)
+
+10. Gould SA, et al. (1998). *Hemoglobin-based oxygen carriers improve survival in hemorrhagic shock*. *Journal of Trauma, 44*(5), 807-814. [PubMed](https://pubmed.ncbi.nlm.nih.gov/9686610/)
+
+### 10.5 Longevity & Telomere Research
+
+11. Vogelstein B, DePinho RA. (2000). *Telomeres and human cancer*. *Nature, 408*(6811), 546-550. [Nature](https://www.nature.com/articles/35000500)
+
+12. Efrati S, et al. (2020). *Hyperbaric oxygen therapy increases telomere length in human leukocytes*. *Aging, 12*(24), 24449-24460. [PubMed](https://pubmed.ncbi.nlm.nih.gov/33200821/)
+
+13. Sahin E, DePinho RA. (2010). *Linking functional decline of telomeres, mitochondria and stem cells during ageing*. *Nature, 464*(7288), 520-528. [PubMed](https://pubmed.ncbi.nlm.nih.gov/20505726/)
+
+### 10.6 Sports Medicine & Compliance
+
+14. World Anti-Doping Agency (WADA). (2026). *Prohibited List*. [WADA](https://www.wada-ama.org/en/prohibited-list)
+
+15. Fédération Équestre Internationale (FEI). (2026). *Clean Sport Regulations*. [FEI](https://www.fei.org/clean-sport)
+
+16. Association of Racing Commissioners International (ARCI). (2026). *Model Rules*. [ARCI](https://www.arci.com/)
+
+### 10.7 Market & Population Data
+
+17. AVMA. (2025). *Pet Ownership and Demographics Sourcebook*. [AVMA](https://www.avma.org/resources-tools/reports-statistics/us-pet-ownership-statistics)
+
+18. American Horse Council Foundation. (2025). *Horse Industry Statistics*. [AHC](https://www.horsecouncil.org/)
+
+19. *Animals* Journal. (2023). *Wildlife Rehabilitation in North America*. [MDPI](https://www.mdpi.com/journal/animals)
+
+20. American Pet Products Association (APPA). (2025). *National Pet Owners Survey*. [APPA](https://www.americanpetproducts.org/)
+
+21. IBISWorld. (2026). *Veterinary Services Industry Report*. [IBISWorld](https://www.ibisworld.com/)
+
+### 10.8 Feline Clinical Studies
+
+22. Clinical use of a haemoglobin-based oxygen carrying solution (Oxyglobin) in 48 cats (2002-2006). [PubMed](https://pubmed.ncbi.nlm.nih.gov/18455461/)
+
+23. Use of a hemoglobin-based oxygen-carrying solution in cats: 72 cases (1998-2000). [PubMed](https://pubmed.ncbi.nlm.nih.gov/12420832/)
+
+---
+
+## Appendix
+
+### A. Glossary of Terms
+
+| Term | Definition |
+|------|------------|
+| BHOC | Biological Hemoglobin Oxygen Carrier |
+| HBOC | Hemoglobin-Based Oxygen Carrier |
+| pRBC | Packed Red Blood Cells |
+| PCV | Packed Cell Volume |
+| IMHA | Immune-Mediated Hemolytic Anemia |
+| CKD | Chronic Kidney Disease |
+| cGMP | Current Good Manufacturing Practices |
+| FDA | Food and Drug Administration |
+| EMA | European Medicines Agency |
+| CVM | Center for Veterinary Medicine |
+| WADA | World Anti-Doping Agency |
+| FEI | Fédération Équestre Internationale |
+| ARCI | Association of Racing Commissioners International |
+
+### B. Disclaimer
+
+This document is for **technical and strategic reference** and contains projections, estimates, and forward-looking statements based on:
+
 - 2026 market modeling
 - Preclinical and historical data (Oxyglobin/Hemopure)
 - Veterinary workflow analysis
 
+**Key Notes:**
+- **Regulatory Status:** Final product specifications, pricing, and claims are subject to FDA/CVM approval
+- **Scientific Validation:** Expanded applications require veterinary-specific clinical validation
+- **Antidoping Compliance:** Clinics must verify species-specific regulations
+- **Safety:** BHOC's ~200 kDa MW and endotoxin-free formulation are designed to minimize vasoactivity risks
+
 **Not for public distribution or regulatory submission without approval.**
 
----
+### C. Document Control
 
-## 🔗 Links
-
-- [LinkedIn Company Page](https://www.linkedin.com/company/biological-hemoglobin-oxygen-carrier/)
-- [FDA Animal Drugs](https://animaldrugsatfda.fda.gov/)
-- [EMA Veterinary Medicines](https://www.ema.europa.eu/en/medicines/veterinary/EPAR/oxyglobin)
+| Version | Date | Author | Changes |
+|---------|------|--------|---------|
+| 1.0 | August 2026 | BHOC Development Team | Initial release |
 
 ---
+
+*For additional information, please contact the BHOC Development Team.*
 
 *© 2026 BHOC Project. All rights reserved.*
