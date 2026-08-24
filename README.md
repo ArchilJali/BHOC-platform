@@ -27,16 +27,16 @@ BHOC is intended as a complementary approach to the oxygen-delivery function of 
 Precision Oxygen Therapeutics focuses on four fundamental questions:
 
 ### WHERE
-Where is oxygen needed?
+Where is oxygen needed
 
 ### WHEN
-When is additional oxygen delivery required?
+When is additional oxygen delivery required
 
 ### HOW MUCH
-How much oxygen is required to support tissue demand?
+How much oxygen is required to support tissue demand
 
 ### CONTROL
-How can oxygen delivery be supported in a controlled and continuous manner?
+How can oxygen delivery be supported in a controlled and continuous manner
 
 The objective is to move the focus from simply increasing circulating hemoglobin toward understanding and supporting **oxygen availability at the tissue level**.
 
@@ -89,46 +89,48 @@ Important scientific concepts include:
 
 Blood performs many essential physiological functions, including:
 
-- Oxygen transport
-- Carbon dioxide transport
-- Coagulation
-- Immune functions
-- Acid-base regulation
-- Signaling and other biological functions
+Oxygen carrier transport and distribution
+Cellular and protein components that are critical to osmotic pressure fluid balance  
+Carbon dioxide transport
+Coagulation
+Immune system management functions
+Acid-base regulation as well as ionic balance
+Signaling and other biological functions
+BHOC focuses specifically on the cooperative oxygen-delivery and distribution function.
 
-BHOC focuses specifically on the **oxygen-delivery function**.
-
-Therefore, BHOC is being developed and evaluated as a **complementary oxygenation approach**, rather than as a replacement for all functions of blood.
+Therefore, BHOCs have been  developed and evaluated as an immediate and complementary oxygenation support, rather than as a substitute for all functions of blood.
 
 ---
 
 ## Research Areas
 
-BHOC is relevant to research across several areas of oxygen therapeutics and transfusion science:
+BHOC is relevant to cellular regeneration research across many areas of life function support and "oxygen therapeutics” where 
+transfusion and perfusion sciences are critical:
 
-- Hemoglobin-Based Oxygen Carriers (HBOCs)
-- Oxygen Therapeutics
-- Precision Oxygenation
-- Tissue Oxygenation
-- Oxygen Delivery
-- Transfusion Medicine
-- Artificial Blood Research
-- Blood Substitutes
-- Microvascular Oxygenation
-- Ischemia and Reperfusion
-- Organ Preservation
-- Machine Perfusion
-- Trauma
-- Emergency Medicine
-- Prehospital Medicine
-- Surgery
-- Veterinary Medicine
+Hemoglobin-Based Oxygen Carriers (HBOCs)
+Oxygen Therapeutics
+Precision Oxygenation
+Tissue Oxygenation
+Oxygen Delivery
+Transfusion Medicine 
+Artificial Blood Research
+Blood Substitutes ((immediate bridging to definitive and/or adjunctive care)
+Microvascular Oxygenation
+Ischemia and Reperfusion
+Organ Preservation (harvest, transport, implantation and recovery)
+Machine Perfusion
+Trauma (perfusion control clod and warm)
+Emergency Medicine
+Prehospital Medicine
+Surgery
+Veterinary Medicine
+Disease management and control
 
 ---
 
 ## Potential Applications
 
-Research and development may explore applications where oxygen delivery is compromised, limited, or requires additional support.
+Research (applied) and development may explore applications where oxygen delivery is compromised, delayed,  limited, and or pressure limited and requires additional support.
 
 Potential areas include:
 
@@ -138,11 +140,13 @@ Potential areas include:
 - Organ preservation and transplantation
 - Machine perfusion
 - Ischemia and reperfusion
-- Veterinary medicine
-- Blood-supply constrained environments
+- Veterinary medicine and all Animal health regardless of species
+- Blood-supply constrained environments that can be expanded and defined by innovative PBM, patient blood management. (Bridge to
+  support need  without present logistics of blood banking)
 - Resource-limited healthcare settings
+- Applications must be evaluated according to the available scientific and clinical evidence.(Animal health models and experience
+  can prescreen logistics and value of immediate intervention)
 
-Applications must be evaluated according to the available scientific and clinical evidence.
 
 ---
 
@@ -167,77 +171,88 @@ Scientific evidence, preclinical evidence, clinical evidence, and future hypothe
 
 ## Publications
 
+This repository is intended to provide an open scientific entry point for information related to BHOC, hemoglobin-based oxygen carriers, oxygen therapeutics, and tissue-level oxygen delivery.
+
+Future materials may include:
+
+- Scientific publications
+- Research summaries
+- Preclinical studies
+- Clinical research
+- Oxygen physiology
+- Technology development
+- References and datasets
+- Scientific discussions
+- Scientific evidence, preclinical evidence, clinical evidence, and future hypotheses should be clearly distinguished.
+
+
+---
+
+## Scientific Principles
+
 A growing collection of relevant scientific publications will be organized around:
 
 - BHOC
 - HBOCs
 - Oxygen Therapeutics
 - Hemoglobin physiology
+- Oncology
+- Iron support
+- Wound healing
+- Metabolism and mitochondrial support (longevity)
 - Oxygen delivery
 - Tissue oxygenation
 - Transfusion medicine
 - Organ preservation
 - Emergency medicine
-
-Where available, publications should link to the original journal, DOI, PubMed record, or other primary scientific source.
+- Animal healthcare applications
+- Where available, publications should link to the original journal, DOI, PubMed record, or other primary scientific source.
 
 ---
-
 ## Scientific Principles
-
 The development of Precision Oxygen Therapeutics requires understanding the relationship between:
 
-**Oxygen Supply**
-
+Oxygen Supply (lung  and membrane oxygenation and anti oxidation control)
 ↓
-
-**Oxygen Transport**
-
+Oxygen Transport (rheology and diffusion support, ECMO)
 ↓
-
-**Microvascular Distribution**
-
+Microvascular Distribution (perfusion and concentration)
 ↓
-
-**Tissue Oxygen Availability**
-
+Tissue Oxygen Availability (extraction and control)
 ↓
+Cellular Oxygen Utilization
 
-**Cellular Oxygen Utilization**
+The ultimate biological objective of oxygen delivery is not simply the presence of oxygen in the circulation, but its exchange
+with tissues and cells.
 
-The ultimate biological objective of oxygen delivery is not simply the presence of oxygen in the circulation, but its availability to tissues and cells.
-
----
 
 ## BHOC Vision
 
-The long-term objective is to advance a scientific framework in which oxygen delivery can be considered as a therapeutic function:
+The long-term objective is to advance a scientific framework in which systemic and organ and tissue oxygen delivery can be
+regenerative as a therapeutic function:
 
-**Where oxygen is needed.**
-
-**When oxygen is needed.**
-
-**In the amount oxygen is needed.**
-
-**Continuously and controllably at the tissue level.**
+- Where oxygen is needed
+- When oxygen is needed.
+- In the amount oxygen is needed.
+- Continuously and controllably at the cell and mitochondrial level.
 
 ---
 
 ## Disclaimer
 
-BHOC and Precision Oxygen Therapeutics are presented here as a scientific and technology development concept.
+BHOC and Precision Oxygen Therapeutics are presented here as a scientific and technology development platform.
 
-Information in this repository should not be interpreted as medical advice, a clinical recommendation, or evidence of regulatory approval.
+Information in this repository should not be interpreted as medical advice, a clinical recommendation, or evidence of regulatory
+approval.
 
 Scientific claims should be supported by appropriate primary evidence, and ongoing research may change current understanding.
-
 ---
 
 ## Contact
 
 **Archil Jaliashvili**
 
-Biotechnology & Healthcare Innovation
+**Biotechnology & Healthcare Innovation**
 
 **BHOC — Biological Hemoglobin Oxygen Carrier**
 
