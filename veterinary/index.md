@@ -2,7 +2,7 @@
 
 ## 📄 Available Files
 
-- [BHOC Veterinary Concept Document](./BHOC%20Vet%20concept%202026.docx)
+- [BHOC Veterinary Concept Document](BHOC_Technical_Overview.md)
 
 ---
 
