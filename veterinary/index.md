@@ -1,8 +1,9 @@
-# Veterinary Documents
+# 🏥 Veterinary Documents
 
-## 📄 Available Files
+## BHOC Platform Documentation
 
-- **[BHOC Veterinary Concept Document](BHOC_Technical_Overview.md)** — Comprehensive technical overview, market analysis, clinical applications, and veterinary market access strategy for BHOC .
+- **[Biological Hemoglobin Oxygen Carrier (BHOC) — Technical Overview](BHOC_Technical_Overview.md)**  
+  *Complete technical documentation: product specifications, clinical applications, market analysis, regulatory strategy, and economic model.*
 
 ---
 
