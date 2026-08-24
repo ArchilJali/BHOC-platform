@@ -257,3 +257,15 @@ Scientific claims should be supported by appropriate primary evidence, and ongoi
 **BHOC — Biological Hemoglobin Oxygen Carrier**
 
 **Precision Oxygen Therapeutics**
+
+## Scientific Research
+
+### Featured Research
+
+**Defining and quantifying oxygen delivery potency of blood products**
+
+Recent research by Rogers et al. introduces **L-TOF (lung-to-tissue O₂ flux)**, an in-vitro metric designed to quantify the oxygen-delivery potency of different blood products and hemoglobin formulations.
+
+The study highlights an important question for transfusion medicine: **does hemoglobin concentration alone adequately describe the functional oxygen-delivery capacity of a blood product?**
+
+[Read the scientific analysis →](docs/oxygen-delivery-potency-of-stored-blood.md)
