@@ -5,14 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Oxygen Delivery Potency | BHOC Platform</title>
+    <title>BHOCpbm | Oxygen Delivery Potency</title>
 
     <meta name="description"
-        content="Defining and quantifying oxygen delivery potency of blood products using L-TOF.">
+        content="Defining and quantifying oxygen delivery potency of blood products using L-TOF and hemoglobin-based oxygen carriers.">
 
     <style>
+
         * {
             box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -24,13 +29,14 @@
         }
 
         .container {
-            width: min(1000px, 90%);
+            width: min(1050px, 90%);
             margin: auto;
         }
 
         header {
             border-bottom: 1px solid #e5e9ec;
             padding: 22px 0;
+            background: #ffffff;
         }
 
         .logo {
@@ -40,7 +46,7 @@
         }
 
         .breadcrumb {
-            padding: 25px 0 0;
+            padding: 24px 0 0;
             font-size: 14px;
             color: #71808a;
         }
@@ -51,7 +57,7 @@
         }
 
         .hero {
-            padding: 70px 0 55px;
+            padding: 75px 0 65px;
             background: #f5f9fb;
         }
 
@@ -64,47 +70,26 @@
         }
 
         h1 {
-            font-size: clamp(38px, 6vw, 62px);
+            font-size: clamp(40px, 6vw, 64px);
             line-height: 1.08;
             letter-spacing: -2px;
-            max-width: 900px;
-            margin: 18px 0;
+            max-width: 920px;
+            margin: 18px 0 22px;
         }
 
         .subtitle {
             font-size: 22px;
             color: #53636e;
-            max-width: 800px;
-        }
-
-        main section {
-            padding: 65px 0;
-        }
-
-        h2 {
-            font-size: 34px;
-            line-height: 1.2;
-            margin-bottom: 22px;
-        }
-
-        h3 {
-            font-size: 22px;
-            margin-top: 35px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 18px;
-            max-width: 850px;
+            max-width: 820px;
         }
 
         .authors {
-            margin-top: 30px;
+            margin-top: 35px;
             padding: 25px;
             background: #ffffff;
             border: 1px solid #e2e7ea;
             border-radius: 8px;
-            font-size: 16px;
+            font-size: 15px;
             color: #596873;
         }
 
@@ -112,16 +97,26 @@
             color: #17212b;
         }
 
-        .highlight {
-            margin: 35px 0;
-            padding: 30px;
-            background: #f5f9fb;
-            border-left: 4px solid #0879b7;
+        main section {
+            padding: 70px 0;
         }
 
-        .highlight strong {
-            font-size: 25px;
-            line-height: 1.4;
+        h2 {
+            font-size: 36px;
+            line-height: 1.2;
+            letter-spacing: -0.8px;
+            margin: 12px 0 22px;
+        }
+
+        h3 {
+            font-size: 23px;
+            margin-top: 35px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            max-width: 880px;
         }
 
         ul {
@@ -133,6 +128,19 @@
             margin: 12px 0;
         }
 
+        .highlight {
+            margin: 35px 0;
+            padding: 30px;
+            background: #f5f9fb;
+            border-left: 4px solid #0879b7;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight strong {
+            font-size: 25px;
+            line-height: 1.4;
+        }
+
         .metric-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -141,7 +149,7 @@
         }
 
         .metric {
-            padding: 25px;
+            padding: 28px;
             background: #f7f8f9;
             border: 1px solid #e4e8eb;
             border-radius: 8px;
@@ -149,20 +157,37 @@
 
         .metric strong {
             display: block;
-            font-size: 32px;
+            font-size: 34px;
             color: #0879b7;
             margin-bottom: 8px;
         }
 
         .science-box {
+            margin-top: 25px;
+            padding: 28px;
+            background: #f7f9fa;
+            border-left: 3px solid #0879b7;
+            border-radius: 7px;
+        }
+
+        .science-box h3 {
+            margin-top: 0;
+        }
+
+        .bhoc-section {
+            background: #f5f9fb;
+        }
+
+        .bhoc-note {
             margin-top: 30px;
             padding: 30px;
-            background: #f7f9fa;
+            background: #ffffff;
+            border: 1px solid #dfe7eb;
             border-radius: 8px;
         }
 
         .reference {
-            background: #f7f9fa;
+            background: #f7f8f9;
         }
 
         .pubmed-link {
@@ -170,17 +195,29 @@
             margin-top: 15px;
             padding: 12px 20px;
             background: #0879b7;
-            color: white;
+            color: #ffffff;
             text-decoration: none;
             border-radius: 6px;
             font-weight: 700;
         }
 
+        .pubmed-link:hover {
+            opacity: 0.9;
+        }
+
         footer {
-            padding: 30px 0;
+            padding: 32px 0;
             background: #10232e;
             color: #b8c5cc;
             font-size: 14px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 25px;
+            color: #0879b7;
+            text-decoration: none;
+            font-weight: 700;
         }
 
         @media (max-width: 700px) {
@@ -193,11 +230,22 @@
                 letter-spacing: -1px;
             }
 
-            main section {
-                padding: 50px 0;
+            h2 {
+                font-size: 30px;
             }
+
+            main section {
+                padding: 55px 0;
+            }
+
+            .hero {
+                padding: 60px 0 50px;
+            }
+
         }
+
     </style>
+
 </head>
 
 
@@ -231,14 +279,14 @@
 <main>
 
 
-<!-- TITLE -->
+<!-- HERO -->
 
 <section class="hero">
 
     <div class="container">
 
         <div class="label">
-            BHOC Science
+            BHOCpbm · Scientific Knowledge Base
         </div>
 
         <h1>
@@ -248,8 +296,8 @@
         </h1>
 
         <p class="subtitle">
-            Moving beyond hemoglobin concentration toward
-            functional measurement of oxygen delivery.
+            A scientific perspective on measuring functional
+            oxygen delivery beyond hemoglobin concentration.
         </p>
 
 
@@ -272,14 +320,14 @@
 </section>
 
 
-<!-- PROBLEM -->
+<!-- THE SCIENTIFIC PROBLEM -->
 
 <section>
 
     <div class="container">
 
         <div class="label">
-            The Scientific Problem
+            01 · The Scientific Problem
         </div>
 
         <h2>
@@ -289,21 +337,22 @@
 
         <p>
             Current transfusion practices rely heavily on
-            hemoglobin (Hb) levels to guide dosing.
-            However, this approach may overlook significant
-            differences in the actual oxygen-delivering
-            capacity of different blood products.
+            hemoglobin (Hb) levels to guide dosing. However,
+            this approach overlooks potentially important
+            differences in the actual oxygen-delivering capacity
+            of different blood products.
         </p>
 
         <p>
-            This creates an important physiological question:
+            The physiological question therefore extends beyond
+            how much hemoglobin is present:
         </p>
 
         <div class="highlight">
 
             <strong>
-                How much oxygen can a given blood product
-                actually deliver from the lungs to tissue?
+                How much oxygen can a blood product actually
+                deliver from the lungs to tissue?
             </strong>
 
         </div>
@@ -320,7 +369,7 @@
     <div class="container">
 
         <div class="label">
-            Measurement
+            02 · Measurement Concept
         </div>
 
         <h2>
@@ -328,20 +377,21 @@
         </h2>
 
         <p>
-            To address this problem, the researchers developed
+            To address this question, the researchers developed
             an in vitro metric called
             <strong>L-TOF (lung-to-tissue O₂ flux)</strong>.
         </p>
 
         <p>
-            L-TOF is designed to quantify the oxygen delivery
+            L-TOF is intended to quantify the oxygen delivery
             potency of different hemoglobin-containing
             formulations.
         </p>
 
         <p>
-            The study evaluated multiple types of blood products
-            and hemoglobin formulations, including:
+            The study evaluated oxygen delivery characteristics
+            across several types of blood products and
+            hemoglobin formulations, including:
         </p>
 
         <ul>
@@ -366,25 +416,24 @@
 </section>
 
 
-<!-- FINDINGS -->
+<!-- KEY FINDING -->
 
 <section>
 
     <div class="container">
 
         <div class="label">
-            Key Finding
+            03 · Key Finding
         </div>
 
         <h2>
-            Storage was associated with a substantial reduction
-            in oxygen delivery potency.
+            Storage can change functional oxygen delivery potency.
         </h2>
 
         <p>
-            Using L-TOF, the researchers found that red blood
-            cell concentrates stored for 42 days demonstrated
-            reduced functional oxygen delivery potency.
+            Using L-TOF, the study found that red blood cell
+            concentrates stored for 42 days demonstrated
+            substantially reduced oxygen delivery potency.
         </p>
 
 
@@ -404,8 +453,8 @@
 
                 <strong>476 mL</strong>
 
-                Volume of 42-day-stored product
-                required for equivalent oxygen delivery.
+                42-day-stored product required
+                for equivalent oxygen delivery.
 
             </div>
 
@@ -423,10 +472,10 @@
 
 
         <p>
-            This observation illustrates why the amount of
-            hemoglobin administered may not necessarily be
-            equivalent to the functional oxygen delivery
-            achieved.
+            The finding illustrates an important distinction:
+            the amount of hemoglobin administered does not
+            necessarily correspond directly to the functional
+            oxygen delivery achieved.
         </p>
 
     </div>
@@ -441,33 +490,30 @@
     <div class="container">
 
         <div class="label">
-            Significance
+            04 · Significance
         </div>
 
         <h2>
-            A functional quality metric for oxygen delivery.
+            A functional quality metric for transfusion medicine.
         </h2>
 
         <p>
-            L-TOF provides a quantitative framework for comparing
-            oxygen delivery potency between different blood
-            products.
+            L-TOF enables a quantitative comparison of oxygen
+            delivery potency between different blood products.
         </p>
 
         <p>
-            Such a measurement could support more precise
-            transfusion strategies and potentially improve the
-            characterization of oxygen-carrying products,
-            particularly in settings where oxygen delivery is
-            critically important.
+            Such a measurement could provide an additional
+            dimension for evaluating blood-product quality
+            and potentially support more precise transfusion
+            decisions.
         </p>
 
         <div class="highlight">
 
             <strong>
-                Oxygen delivery potency may provide a more
-                functional dimension of blood-product quality
-                than hemoglobin concentration alone.
+                Oxygen delivery potency provides a functional
+                dimension that complements hemoglobin concentration.
             </strong>
 
         </div>
@@ -484,7 +530,7 @@
     <div class="container">
 
         <div class="label">
-            Experimental Measurement
+            05 · Experimental Measurement
         </div>
 
         <h2>
@@ -498,8 +544,9 @@
         </p>
 
         <p>
-            The instrument was used to generate two types of
-            oxygen-binding curves for the tested blood products.
+            The instrument was used to generate oxygen
+            association and dissociation curves for the
+            investigated blood products.
         </p>
 
 
@@ -510,9 +557,10 @@
             </h3>
 
             <p>
-                Association curves were measured at a higher
-                pH of approximately 7.6, representing conditions
-                associated with oxygen loading in the lungs.
+                Association measurements were performed at
+                a higher pH of approximately 7.6, representing
+                conditions associated with oxygen loading in
+                the lungs.
             </p>
 
         </div>
@@ -525,10 +573,10 @@
             </h3>
 
             <p>
-                Dissociation curves were measured at a lower
-                pH of approximately 6.8, representing more acidic
-                conditions associated with oxygen unloading
-                in tissues.
+                Dissociation measurements were performed at
+                a lower pH of approximately 6.8, representing
+                more acidic conditions associated with oxygen
+                unloading in tissues.
             </p>
 
         </div>
@@ -538,14 +586,46 @@
 </section>
 
 
-<!-- BHOC PERSPECTIVE -->
+<!-- PHYSIOLOGICAL CONTEXT -->
 
-<section class="reference">
+<section>
 
     <div class="container">
 
         <div class="label">
-            BHOC Perspective
+            06 · Physiological Context
+        </div>
+
+        <h2>
+            Oxygen transport is a dynamic physiological process.
+        </h2>
+
+        <p>
+            Oxygen delivery is determined not only by the amount
+            of hemoglobin present, but also by the ability of
+            hemoglobin to load oxygen, transport it through the
+            circulation and release it under tissue conditions.
+        </p>
+
+        <p>
+            This places oxygen affinity, oxygen unloading,
+            microvascular transport and tissue oxygen availability
+            within the same physiological framework.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- BHOC PERSPECTIVE -->
+
+<section class="bhoc-section">
+
+    <div class="container">
+
+        <div class="label">
+            07 · BHOC Perspective
         </div>
 
         <h2>
@@ -553,24 +633,34 @@
         </h2>
 
         <p>
-            The concept of oxygen delivery potency is highly
-            relevant to the development of hemoglobin-based
-            oxygen carriers.
+            The concept of oxygen delivery potency is directly
+            relevant to the development and characterization of
+            hemoglobin-based oxygen carriers.
         </p>
 
         <p>
-            For BHOC, this perspective supports a broader
-            scientific question: how should the performance
-            of an oxygen carrier be quantified when the ultimate
-            objective is not simply to increase circulating
-            hemoglobin, but to improve functional oxygen
-            availability at the tissue level?
+            For BHOC, this raises a broader scientific question:
+            how should the performance of an oxygen carrier be
+            quantified when the ultimate objective is not simply
+            to increase circulating hemoglobin, but to improve
+            functional oxygen availability at the tissue level?
         </p>
 
-        <p>
-            This distinction is central to the emerging field
-            of <strong>Precision Oxygen Therapeutics</strong>.
-        </p>
+
+        <div class="bhoc-note">
+
+            <h3>
+                Precision Oxygen Therapeutics
+            </h3>
+
+            <p>
+                BHOC is being developed from the perspective that
+                oxygen therapy should ultimately be evaluated by
+                functional oxygen delivery and tissue oxygenation,
+                rather than by hemoglobin concentration alone.
+            </p>
+
+        </div>
 
     </div>
 
@@ -579,12 +669,12 @@
 
 <!-- REFERENCE -->
 
-<section>
+<section class="reference">
 
     <div class="container">
 
         <div class="label">
-            Scientific Reference
+            08 · Scientific Reference
         </div>
 
         <h2>
@@ -602,14 +692,24 @@
             </strong>
         </p>
 
+        <p>
+            PubMed:
+        </p>
+
         <a
             class="pubmed-link"
             href="https://pubmed.ncbi.nlm.nih.gov/42453356/"
             target="_blank"
             rel="noopener noreferrer">
 
-            View on PubMed
+            View Publication on PubMed
 
+        </a>
+
+        <br>
+
+        <a class="back-link" href="../index.html">
+            ← Back to BHOC Platform
         </a>
 
     </div>
