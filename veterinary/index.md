@@ -2,7 +2,7 @@
 
 ## 📄 Available Files
 
-- [BHOC Veterinary Concept Document](./BHOC%20Veterinary%20Concept%20document)
+- [Скачать](./BHOC%20Veterinary%20Concept%20document.docx)
 - Fix link to veterinary document
 
 ---
