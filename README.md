@@ -257,6 +257,3 @@ Scientific claims should be supported by appropriate primary evidence, and ongoi
 **BHOC — Biological Hemoglobin Oxygen Carrier**
 
 **Precision Oxygen Therapeutics**
-
-
-[Read the scientific analysis →](docs/oxygen-delivery-potency-of-stored-blood.md)
