@@ -1,9 +1,54 @@
-# 🏥 Veterinary Documents
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏥 Veterinary Documents</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #24292e;
+            background: #fff;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eaecef;
+        }
+        .file-list {
+            list-style: none;
+            padding: 0;
+        }
+        .file-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .file-list li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
 
-## 📄 Available Files
+<h1>🏥 Veterinary Documents</h1>
 
-- [BHOC Veterinary Concept Document](./BHOC%20Veterinary%20Concept%20Document)
+<h2>📄 Available Files</h2>
 
----
+<ul class="file-list">
+    <li><a href="./BHOC-Veterinary-Concept.html">BHOC Veterinary Concept Document</a></li>
+</ul>
 
-[← Back to main page](../)
+<p class="back-link"><a href="../">← Back to main page</a></p>
+
+</body>
+</html>
