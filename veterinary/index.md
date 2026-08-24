@@ -2,7 +2,7 @@
 
 ## 📄 Available Files
 
-- [Biological Hemoglobin Oxygen Carrier (BHOC) — Technical Overview](./BHOC_Technical_Overview.md)
+- [Biological Hemoglobin Oxygen Carrier (BHOC) — Technical Overview](./BHOC%20Veterinary%20Concept%20Document)
 
 ---
 
