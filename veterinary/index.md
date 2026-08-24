@@ -1,8 +1,6 @@
 # Veterinary Documents
 
-Clinical applications, protocols, and veterinary concepts for BHOC.
-
-## 📄 Available Documents
+## 📄 Available Files
 
 - [BHOC Veterinary Concept Document](./BHOC-Vet-Concept-2026.docx)
 
