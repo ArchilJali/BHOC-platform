@@ -10,8 +10,10 @@
 
 **Delivering oxygen where it is needed, when it is needed, and in the amount needed — continuously, controllably, and at the tissue level.**
 
-📄 [Scientific Documents](./science/)
-📄 [Veterinary Documents](./veterinary/)
+## 📚 Documentation
+
+- [🧪 Scientific Documents](./science/)
+- [🏥 Veterinary Documents](./veterinary/)
 
 ---
 
