@@ -14,7 +14,6 @@
             color: #24292e;
             background-color: #ffffff;
         }
-        /* ===== НАВИГАЦИЯ СВЕРХУ (хлебные крошки) ===== */
         .breadcrumb {
             font-size: 14px;
             padding: 10px 0;
@@ -44,7 +43,6 @@
         .breadcrumb .home-icon {
             font-size: 16px;
         }
-
         h1, h2, h3 {
             border-bottom: 1px solid #eaecef;
             padding-bottom: 0.3em;
@@ -78,38 +76,15 @@
             padding-top: 20px;
             border-top: 1px solid #eaecef;
         }
-        .disclaimer {
-            background-color: #fff3cd;
-            border-left: 4px solid #ffe69c;
-            padding: 12px 16px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        .glossary {
-            display: grid;
-            grid-template-columns: auto 1fr;
-            gap: 4px 20px;
-            margin: 16px 0;
-        }
-        .glossary-term {
-            font-weight: 600;
-        }
         @media (max-width: 600px) {
-            table {
-                font-size: 14px;
-            }
-            th, td {
-                padding: 6px 8px;
-            }
-            .breadcrumb {
-                font-size: 13px;
-            }
+            table { font-size: 14px; }
+            th, td { padding: 6px 8px; }
+            .breadcrumb { font-size: 13px; }
         }
     </style>
 </head>
 <body>
 
-<!-- ===== НАВИГАЦИЯ СВЕРХУ (хлебные крошки) ===== -->
 <div class="breadcrumb">
     <span class="home-icon">🏠</span>
     <a href="https://github.com/ArchilJali/BHOC-platform">BHOC-platform</a>
@@ -121,7 +96,6 @@
     <span class="current">📄 BHOC Veterinary Concept Document</span>
 </div>
 
-<!-- ===== ОСНОВНОЙ КОНТЕНТ ДОКУМЕНТА ===== -->
 <h1>Biological Hemoglobin Oxygen Carrier (BHOC)</h1>
 <h2>Technical Overview & Strategic Documentation</h2>
 
@@ -147,7 +121,6 @@
 
 <hr>
 
-<!-- ===== 1. Executive Summary ===== -->
 <h2 id="executive-summary">1. Executive Summary</h2>
 
 <h3>1.1 Product Definition</h3>
@@ -183,7 +156,6 @@
 
 <hr>
 
-<!-- ===== 2. Regulatory ===== -->
 <h2 id="regulatory">2. Regulatory &amp; Historical Foundation</h2>
 
 <h3>2.1 Oxyglobin Precedent</h3>
@@ -193,16 +165,6 @@
 <ul>
     <li>1998: FDA approval for canine anemia</li>
     <li>1999: EMA approval</li>
-</ul>
-
-<p><strong>Clinical Evidence Base:</strong></p>
-<ul>
-    <li>2 core effectiveness studies</li>
-    <li>Multi-center clinical field trial: 64 anemic dogs</li>
-    <li>885 veterinary reports (Dec 1998-Aug 1999)</li>
-    <li>78% of dogs showed PCV improvement within 72 hours</li>
-    <li>85% of blood-loss cases received Oxyglobin only</li>
-    <li>4.5× higher survival rate for PCV &lt;15% vs. whole blood at PCV &lt;10%</li>
 </ul>
 
 <h3>2.2 Limitations of Traditional RBC Transfusions</h3>
@@ -223,13 +185,6 @@
     <li>4-8 hour deployment time</li>
 </ul>
 
-<p><strong>Species Limitations:</strong></p>
-<ul>
-    <li>Donor-dependent compatibility</li>
-    <li>Limited wildlife/exotic support</li>
-    <li>Geographic restrictions</li>
-</ul>
-
 <h3>2.3 BHOC Regulatory Pathway</h3>
 <p><strong>Status:</strong> Registration dossier preparation for biosimilar submission<br>
 <strong>Target:</strong> FDA/CVM approval (expected 2026-2027)<br>
@@ -237,7 +192,6 @@
 
 <hr>
 
-<!-- ===== 3. Scientific ===== -->
 <h2 id="scientific">3. Scientific Framework</h2>
 
 <h3>3.1 Mechanism of Action</h3>
@@ -251,7 +205,6 @@
 
 <h3>3.2 Oxygen Delivery Efficiency</h3>
 
-<p><strong>Comparison Data:</strong></p>
 <table>
     <thead>
         <tr><th>Parameter</th><th>pRBC</th><th>BHOC</th></tr>
@@ -263,7 +216,6 @@
         <tr><td>Diffusion efficiency</td><td>Membrane-limited</td><td>Cell-free</td></tr>
     </tbody>
 </table>
-<p><em>In left graphic, RBC was given 60g of Hemoglobin compared with HBOC of 30g</em></p>
 
 <h3>3.3 Molecular Design</h3>
 
@@ -275,16 +227,8 @@
     <li>Cell antigen-free processing</li>
 </ul>
 
-<p><strong>Advantages:</strong></p>
-<ul>
-    <li>Reduced vasoactivity risk vs. unpolymerized HBOCs</li>
-    <li>Extended circulatory half-life</li>
-    <li>Controlled oxygen affinity</li>
-</ul>
-
 <hr>
 
-<!-- ===== 4. Product ===== -->
 <h2 id="product">4. Product Architecture</h2>
 
 <h3>4.1 Formulations</h3>
@@ -301,7 +245,6 @@
 
 <h3>4.2 Administration System</h3>
 
-<p><strong>Components:</strong></p>
 <ul>
     <li>Unit-specific QR code for tracking</li>
     <li>Dedicated administration device</li>
@@ -309,101 +252,13 @@
     <li>Traceability integration</li>
 </ul>
 
-<p><strong>Administration Parameters:</strong></p>
-<ul>
-    <li>Smaller access/needle size</li>
-    <li>Controlled infusion speed</li>
-    <li>Volume-specific protocols</li>
-    <li>Application-specific guidance</li>
-</ul>
-
-<h3>4.3 Digital Ecosystem</h3>
-
-<p><strong>Future Development:</strong></p>
-<ul>
-    <li>Web application for protocol guidance</li>
-    <li>Mobile app for treatment tracking</li>
-    <li>Anonymized clinical data aggregation</li>
-    <li>Evidence-based protocol optimization</li>
-</ul>
-
-<p><strong>Data Collection Model:</strong></p>
-<ul>
-    <li>Voluntary treatment information sharing</li>
-    <li>Permission-based anonymized data use</li>
-    <li>Complementary bonus system for participants</li>
-    <li>Free product units for contributing clinics</li>
-</ul>
-
 <hr>
 
-<!-- ===== 5. Clinical ===== -->
-<h2 id="clinical">5. Clinical Applications</h2>
+<h2 id="market">5. Market Analysis</h2>
 
-<h3>5.1 Primary Indications</h3>
-
-<p><strong>Emergency Oxygen Rescue:</strong></p>
-<ul>
-    <li>Anemia (acute/chronic)</li>
-    <li>Trauma/hemorrhage</li>
-    <li>Surgical bleeding</li>
-    <li>IMHA</li>
-    <li>Parvovirus</li>
-</ul>
-
-<p><strong>Surgical Support:</strong></p>
-<ul>
-    <li>Preoperative optimization</li>
-    <li>High-risk surgeries</li>
-    <li>Postoperative recovery</li>
-    <li>Orthopedic repair</li>
-</ul>
-
-<p><strong>Equine Emergency:</strong></p>
-<ul>
-    <li>Colic</li>
-    <li>Foal maladjustment</li>
-    <li>Transport support</li>
-</ul>
-
-<h3>5.2 Emerging Applications</h3>
-<table>
-    <thead>
-        <tr><th>Application</th><th>Mechanism</th><th>Status</th></tr>
-    </thead>
-    <tbody>
-        <tr><td><strong>Oncology Support</strong></td><td>Mitigates hypoxia-induced chemoresistance; reduces doxorubicin cardiotoxicity</td><td>Preclinical evidence</td></tr>
-        <tr><td><strong>Longevity/Vitality</strong></td><td>Supports oxidative metabolism; improves mitochondrial function</td><td>Research phase</td></tr>
-        <tr><td><strong>Sports Medicine</strong></td><td>WADA/FEI/ARCI compliant; performance recovery</td><td>Field studies</td></tr>
-        <tr><td><strong>Iron Supplement Infusion</strong></td><td>Bioavailable iron + oxygenation</td><td>Clinical evaluation</td></tr>
-        <tr><td><strong>Wildlife/Zoo Emergency</strong></td><td>No donor blood; room-temperature stable</td><td>Field deployment</td></tr>
-    </tbody>
-</table>
-
-<h3>5.3 Evidence Summary</h3>
-<table>
-    <thead>
-        <tr><th>Application</th><th>Key Findings</th><th>Sources</th></tr>
-    </thead>
-    <tbody>
-        <tr><td>Oncology</td><td>5-20% dose reduction of doxorubicin; enhanced radiation therapy; reduced metastasis</td><td>[5, 6, 7]</td></tr>
-        <tr><td>Surgery</td><td>40% reduction in postoperative infections; 50% mortality reduction in shock models</td><td>[8, 9, 10]</td></tr>
-        <tr><td>Longevity</td><td>20% telomere length increase in human leukocytes with hyper-oxygenation</td><td>[14, 15, 16]</td></tr>
-        <tr><td>Acute Care</td><td>Immediate deployment; no crossmatching; reduces mortality in trauma</td><td>[10, 4]</td></tr>
-        <tr><td>Cats</td><td>Addresses volume overload risk; no donor dependency</td><td>[4, 17, 19, 20]</td></tr>
-        <tr><td>Wildlife/Zoos</td><td>No donor blood available; room-temperature stable; universal compatibility</td><td>[19, 4]</td></tr>
-    </tbody>
-</table>
-
-<hr>
-
-<!-- ===== 6. Market ===== -->
-<h2 id="market">6. Market Analysis</h2>
-
-<h3>6.1 US Veterinary Market Overview</h3>
+<h3>5.1 US Veterinary Market Overview</h3>
 <p><strong>Total Market Size:</strong> $72.6B (2026, IBISWorld)</p>
 
-<p><strong>Clinic Segmentation:</strong></p>
 <table>
     <thead>
         <tr><th>Segment</th><th>Clinics</th><th>Percentage</th><th>Transfusion Capability</th></tr>
@@ -416,316 +271,33 @@
     </tbody>
 </table>
 
-<h3>6.2 Unmet Needs by Segment</h3>
+<h3>5.2 Unmet Needs by Segment</h3>
 <table>
     <thead>
-        <tr><th>Segment</th><th>Current Problem</th><th>BHOC Opportunity</th><th>Revenue Potential</th></tr>
+        <tr><th>Segment</th><th>Current Problem</th><th>BHOC Opportunity</th></tr>
     </thead>
     <tbody>
-        <tr><td>Small Animal</td><td>70% refer cases out</td><td>Convert referrals to in-house</td><td>$5-10B/year</td></tr>
-        <tr><td>Equine</td><td>80% lack donor access</td><td>Immediate oxygenation for 80%</td><td>$1-2B/year</td></tr>
-        <tr><td>Mixed/Exotic/Wildlife</td><td>&lt;10% have species-specific blood</td><td>Universal platform for 90%</td><td>$2-4B/year</td></tr>
-    </tbody>
-</table>
-
-<h3>6.3 Species Population Data (2025-2026)</h3>
-<table>
-    <thead>
-        <tr><th>Species</th><th>US Population</th><th>Growth Trend</th></tr>
-    </thead>
-    <tbody>
-        <tr><td>Dogs</td><td>87.3M</td><td>Growth</td></tr>
-        <tr><td>Cats</td><td>76.3M</td><td>Growth</td></tr>
-        <tr><td>Horses</td><td>9.2M</td><td>Stable</td></tr>
-        <tr><td>Birds</td><td>6M households</td><td>Stable</td></tr>
-        <tr><td>Reptiles</td><td>6M households</td><td>Stable</td></tr>
-        <tr><td>Small Mammals</td><td>6-7M households</td><td>Slight decline</td></tr>
-        <tr><td>Backyard Chickens</td><td>11M households</td><td>Growing</td></tr>
-    </tbody>
-</table>
-
-<h3>6.4 Niche Markets</h3>
-
-<p><strong>Wildlife Rehabilitation:</strong></p>
-<ul>
-    <li>200,000+ cases/year in North America</li>
-    <li>No donor blood availability</li>
-    <li>Critical deployment need</li>
-</ul>
-
-<p><strong>Zoos/Aquariums:</strong></p>
-<ul>
-    <li>Room-temperature stability required</li>
-    <li>Universal compatibility essential</li>
-    <li>Emergency oxygenation critical</li>
-</ul>
-
-<p><strong>Travel/Relocation:</strong></p>
-<ul>
-    <li>Geographic donor blood type mismatches</li>
-    <li>Emergency oxygen bridge requirement</li>
-    <li>International transport support</li>
-</ul>
-
-<hr>
-
-<!-- ===== 7. Economic ===== -->
-<h2 id="economic">7. Economic Model</h2>
-
-<h3>7.1 Pricing Structure</h3>
-
-<p><strong>Philosophy:</strong> Priced for total procedure value, not per mL like blood</p>
-
-<p><strong>Traditional Blood Costs Eliminated:</strong></p>
-<ul>
-    <li>Donor dependency ($5,000-10,000/year)</li>
-    <li>Crossmatching ($100-300/case)</li>
-    <li>Storage/refrigeration ($1,000-5,000/year)</li>
-    <li>Wastage (10-20% for blood vs. &lt;2% for BHOC)</li>
-    <li>Emergency delays (1-4 hours for blood vs. &lt;5 minutes for BHOC)</li>
-</ul>
-
-<p><strong>Target Margin:</strong> 40-60% net margin</p>
-
-<h3>7.2 Procedure Pricing (2026 Estimates)</h3>
-<table>
-    <thead>
-        <tr><th>Procedure</th><th>Indications</th><th>Price Range</th></tr>
-    </thead>
-    <tbody>
-        <tr><td>Oxygen Rescue (Feline/Exotic)</td><td>Anemia, trauma, surgical bleeding</td><td>$600-1,200</td></tr>
-        <tr><td>Oxygen Rescue (Canine)</td><td>Anemia, trauma, IMHA, parvovirus</td><td>$900-1,800</td></tr>
-        <tr><td>Surgical Oxygen Support</td><td>Preoperative, high-risk surgeries</td><td>$700-1,500</td></tr>
-        <tr><td>Equine Emergency Oxygenation</td><td>Colic, foal maladjustment, transport</td><td>$2,500-5,000</td></tr>
-        <tr><td>Recovery Optimization</td><td>Post-surgical, trauma, orthopedic repair</td><td>$300-800/session</td></tr>
-        <tr><td>Anti-Cancer Support</td><td>Chemotherapy fatigue, tumor hypoxia</td><td>$400-1,000/session</td></tr>
-        <tr><td>Longevity &amp; Vitality Plan</td><td>Senior pets, cognitive decline</td><td>$1,200-3,000/year</td></tr>
-        <tr><td>Sports Recovery &amp; Performance</td><td>Racing, endurance, show animals</td><td>$400-4,000/session</td></tr>
-        <tr><td>Iron Supplement Infusion</td><td>Iron-deficiency anemia, CKD</td><td>$500-1,200/infusion</td></tr>
-        <tr><td>Wildlife/Zoo Emergency</td><td>Trauma, poisoning, injury</td><td>$1,500-3,000/case</td></tr>
-        <tr><td>Travel/Relocation Support</td><td>International transport, donor mismatches</td><td>$800-1,500/case</td></tr>
-    </tbody>
-</table>
-
-<h3>7.3 Clinic ROI Analysis</h3>
-
-<p><strong>Clinics Without Transfusion Capabilities</strong></p>
-
-<p><em>Assumptions:</em></p>
-<ul>
-    <li>Monthly cases: 15-20</li>
-    <li>Average revenue/case: $1,500</li>
-    <li>BHOC cost/case: $400</li>
-    <li>Operational savings/case: $300</li>
-</ul>
-
-<table>
-    <thead>
-        <tr><th>Metric</th><th>Calculation</th><th>Result</th></tr>
-    </thead>
-    <tbody>
-        <tr><td>Monthly Revenue</td><td>20 × $1,500</td><td>$30,000</td></tr>
-        <tr><td>Monthly BHOC Cost</td><td>20 × $400</td><td>$8,000</td></tr>
-        <tr><td>Monthly Operational Savings</td><td>20 × $300</td><td>$6,000</td></tr>
-        <tr><td><strong>Monthly Profit</strong></td><td>($30,000 - $8,000) + $6,000</td><td><strong>$28,000</strong></td></tr>
-        <tr><td><strong>Annual Profit</strong></td><td>$28,000 × 12</td><td><strong>$336,000</strong></td></tr>
-    </tbody>
-</table>
-
-<p><strong>Clinics With Transfusion Capabilities</strong></p>
-
-<p><em>Assumptions:</em></p>
-<ul>
-    <li>Monthly cases: 10 (anemic) + 5 (non-anemic)</li>
-    <li>Average revenue: $1,200 (anemic), $800 (non-anemic)</li>
-</ul>
-
-<table>
-    <thead>
-        <tr><th>Metric</th><th>Calculation</th><th>Result</th></tr>
-    </thead>
-    <tbody>
-        <tr><td>Monthly Revenue (Anemic)</td><td>10 × $1,200</td><td>$12,000</td></tr>
-        <tr><td>Monthly Revenue (Non-Anemic)</td><td>5 × $800</td><td>$4,000</td></tr>
-        <tr><td><strong>Total Monthly Revenue</strong></td><td></td><td><strong>$16,000</strong></td></tr>
-        <tr><td><strong>Annual Profit</strong></td><td>$16,000 × 12</td><td><strong>$192,000</strong></td></tr>
-    </tbody>
-</table>
-
-<h3>7.4 Recurring Revenue Example</h3>
-
-<p><strong>Longevity Plan</strong></p>
-
-<p><em>Assumptions:</em></p>
-<ul>
-    <li>Monthly clients: 10 (12 sessions/year)</li>
-    <li>Revenue/client: $200/session</li>
-    <li>BHOC cost/session: $100</li>
-</ul>
-
-<table>
-    <thead>
-        <tr><th>Metric</th><th>Calculation</th><th>Result</th></tr>
-    </thead>
-    <tbody>
-        <tr><td>Monthly Revenue</td><td>10 × $200</td><td>$2,000</td></tr>
-        <tr><td>Monthly BHOC Cost</td><td>10 × $100</td><td>$1,000</td></tr>
-        <tr><td><strong>Monthly Profit</strong></td><td>$2,000 - $1,000</td><td><strong>$1,000</strong></td></tr>
-        <tr><td><strong>Annual Profit</strong></td><td>$1,000 × 12</td><td><strong>$12,000</strong></td></tr>
+        <tr><td>Small Animal</td><td>70% refer cases out</td><td>Convert referrals to in-house</td></tr>
+        <tr><td>Equine</td><td>80% lack donor access</td><td>Immediate oxygenation for 80%</td></tr>
+        <tr><td>Mixed/Exotic/Wildlife</td><td>&lt;10% have species-specific blood</td><td>Universal platform for 90%</td></tr>
     </tbody>
 </table>
 
 <hr>
 
-<!-- ===== 8. Implementation ===== -->
-<h2 id="implementation">8. Implementation Strategy</h2>
+<h2 id="references">6. References</h2>
 
-<h3>8.1 Target Clinic Types</h3>
-<table>
-    <thead>
-        <tr><th>Clinic Type</th><th>BHOC Value Proposition</th></tr>
-    </thead>
-    <tbody>
-        <tr><td>Clinics without transfusion</td><td>New emergency treatment category (+60% margin)</td></tr>
-        <tr><td>Clinics with blood banks</td><td>Reduces donor overhead, wastage, delays, time &amp; staff</td></tr>
-        <tr><td>Specialty/Referral Hospitals</td><td>Enhances ICU/surgical outcomes with higher margins</td></tr>
-        <tr><td>Equine/Wildlife Practices</td><td>Enables immediate, donor-free oxygenation</td></tr>
-    </tbody>
-</table>
-
-<h3>8.2 Adoption Phases</h3>
-
-<p><strong>Phase 1 (2026-2027):</strong></p>
-<ul>
-    <li>Regulatory submission</li>
-    <li>Clinical trials completion</li>
-    <li>Initial product launch</li>
-    <li>Early adopter clinics</li>
-</ul>
-
-<p><strong>Phase 2 (2027-2028):</strong></p>
-<ul>
-    <li>Expanded distribution</li>
-    <li>Protocol development</li>
-    <li>Digital ecosystem launch</li>
-    <li>Corporate partnerships</li>
-</ul>
-
-<p><strong>Phase 3 (2028-2029):</strong></p>
-<ul>
-    <li>Full market penetration</li>
-    <li>International expansion</li>
-    <li>New application development</li>
-    <li>Longevity/wellness programs</li>
-</ul>
-
-<h3>8.3 Key Implementation Principles</h3>
-
-<p><strong>Not a Traditional Blood Transfusion:</strong></p>
-<ul>
-    <li>Requires controlled administration</li>
-    <li>Protocol-based delivery</li>
-    <li>Application-specific guidelines</li>
-    <li>Traceability integration</li>
-</ul>
-
-<p><strong>Smart Ecosystem Development:</strong></p>
-<ul>
-    <li>Better protocols through data collection</li>
-    <li>Clinical learning from real-world use</li>
-    <li>Veterinary adoption through evidence</li>
-    <li>Continuous quality improvement</li>
-</ul>
-
-<hr>
-
-<!-- ===== 9. Technical ===== -->
-<h2 id="technical">9. Technical Specifications</h2>
-
-<h3>9.1 Product Specifications</h3>
-<table>
-    <thead>
-        <tr><th>Parameter</th><th>Specification</th></tr>
-    </thead>
-    <tbody>
-        <tr><td>Active Ingredient</td><td>Glutaraldehyde-polymerized bovine hemoglobin</td></tr>
-        <tr><td>Molecular Weight</td><td>~200 kDa</td></tr>
-        <tr><td>Hemoglobin Concentration</td><td>13 g/dL</td></tr>
-        <tr><td>Oxygen Affinity (P50)</td><td>~35-40 mmHg</td></tr>
-        <tr><td>Endotoxin</td><td>&lt;0.5 EU/mL</td></tr>
-        <tr><td>pH</td><td>7.6-7.9</td></tr>
-        <tr><td>Storage Temperature</td><td>15-30°C (room temperature)</td></tr>
-        <tr><td>Shelf Life</td><td>3+ years</td></tr>
-        <tr><td>Preservatives</td><td>None</td></tr>
-        <tr><td>Antigens</td><td>Cell-free, no antigenic activity</td></tr>
-    </tbody>
-</table>
-
-<h3>9.2 Delivery Specifications</h3>
-<table>
-    <thead>
-        <tr><th>Parameter</th><th>Specification</th></tr>
-    </thead>
-    <tbody>
-        <tr><td>Administration Route</td><td>IV infusion</td></tr>
-        <tr><td>Infusion Rate</td><td>5-10 mL/kg/hour (protocol dependent)</td></tr>
-        <tr><td>Maximum Volume</td><td>Determined by species and condition</td></tr>
-        <tr><td>Compatibility</td><td>All blood types, all mammalian species</td></tr>
-        <tr><td>Pre-medication</td><td>None required</td></tr>
-        <tr><td>Monitoring Requirements</td><td>Standard vital signs</td></tr>
-    </tbody>
-</table>
-
-<h3>9.3 Quality Specifications</h3>
-<table>
-    <thead>
-        <tr><th>Parameter</th><th>Specification</th></tr>
-    </thead>
-    <tbody>
-        <tr><td>Manufacturing Standard</td><td>cGMP</td></tr>
-        <tr><td>Sterility</td><td>Terminal sterilization</td></tr>
-        <tr><td>Pyrogen Testing</td><td>LAL test</td></tr>
-        <tr><td>Efficacy Testing</td><td>Oxygen delivery assay</td></tr>
-        <tr><td>Stability Testing</td><td>ICH guidelines</td></tr>
-        <tr><td>Traceability</td><td>Unit-specific QR code</td></tr>
-    </tbody>
-</table>
-
-<hr>
-
-<!-- ===== 10. References ===== -->
-<h2 id="references">10. Research References</h2>
-
-<h3>10.1 Regulatory &amp; Historical</h3>
 <ol>
     <li>FDA. (1998). NADA 141-067: Oxyglobin approval.</li>
     <li>EMA. (1999). Oxyglobin assessment report.</li>
-    <li>Biopure Corporation. (1998-2000). Oxyglobin clinical trial data.</li>
-</ol>
-
-<h3>10.2 Scientific Literature</h3>
-<ol start="4">
     <li>Callan MB, Rentko VT. (2003). Clinical application of a hemoglobin-based oxygen-carrying solution. Vet Clin North Am Small Anim Pract.</li>
     <li>Driessen B, Jahr JS, Lurie F, et al. (2001). Effects of hemoglobin-based oxygen carrier on intestinal perfusion. Br J Anaesth.</li>
     <li>Cheung AT, Jahr JS, Driessen B, et al. (2001). The effects of hemoglobin glutamer-200 on the microcirculation. Anesth Analg.</li>
-    <li>Driessen B, et al. (2003). Arterial oxygenation and oxygen delivery after HBOC infusion. Am J Vet Res.</li>
-    <li>Pawson P, et al. (2014). Investigation of the effects of a polymerised bovine haemoglobin solution on isolated canine arteries. J Small Anim Pract.</li>
-    <li>Weingart C, et al. (2008). Clinical use of a haemoglobin-based oxygen carrying solution in anaemic cats. J Feline Med Surg.</li>
-    <li>Dandea ȘM, et al. (2025). Veterinary perspectives on hemoglobin-based oxygen carriers. Review article.</li>
-</ol>
-
-<h3>10.3 Clinical &amp; Market References</h3>
-<ol start="11">
-    <li>Haak CE, et al. (2012). Comparison of Hb-200 and 6% hetastarch during fluid resuscitation of dogs with GDV. J Vet Emerg Crit Care.</li>
-    <li>Zambelli AB, Leisewitz AL. (2009). A prospective, randomized comparison of Oxyglobin and packed red blood cell transfusion in dogs with babesiosis. J S Afr Vet Assoc.</li>
-    <li>Black V, et al. (2016). Feline non-regenerative immune-mediated anaemia: features and outcome in 15 cases. J Feline Med Surg.</li>
     <li>IBISWorld. (2026). US Veterinary Services Industry Report.</li>
-    <li>AVMA. (2025). US Pet Ownership Statistics.</li>
 </ol>
 
 <hr>
 
-<!-- ===== ССЫЛКА НАЗАД ===== -->
 <div class="back-link">
     <a href="https://github.com/ArchilJali/BHOC-platform/tree/main/veterinary/business">⬅ Back to Business Section</a> |
     <a href="https://github.com/ArchilJali/BHOC-platform/tree/main/veterinary">🏥 Back to Veterinary Documents</a> |
