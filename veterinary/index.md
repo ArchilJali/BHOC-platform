@@ -25,9 +25,9 @@ title: Veterinary Evidence Library
 
 | Section | Description | Link |
 |---------|-------------|------|
-| **Regulatory Data** | FDA, EMA approvals, dosing, indications | [📋 Перейти →](bibliography/regulatory/fda.md)
-| **Clinical Data** | 146 clinical cases | [📋 Перейти →](./bibliography/clinical/cases.md) |
-| **Research Studies** | Preclinical models, field trials | [📋 Перейти →](./bibliography/research/studies.md) |
+| **Regulatory Data** | FDA, EMA approvals, dosing, indications | [📋 Study →](bibliography/regulatory/fda.md)
+| **Clinical Data** | 146 clinical cases | [📋 Study →](./bibliography/clinical/cases.md) |
+| **Research Studies** | Preclinical models, field trials | [📋 Study →](./bibliography/research/studies.md) |
 
 ---
 
