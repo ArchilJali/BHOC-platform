@@ -10,7 +10,7 @@ Evidence library for BHOC (Oxyglobin) applications in veterinary practice.
 
 | File | Description |
 | :--- | :--- |
-| [BHOC Veterinary Concept Document](./business/BHOC-Veterinary-Concept.html) | Main veterinary concept document |
+| [BHOC Veterinary Concept Document](./business/BHOC-Veterinary-Concept.htm) | Main veterinary concept document |
 | [Market Analysis](./business/market-analysis.md) | Market size, trends, competition |
 | [Regulatory Strategy](./business/regulatory-strategy.md) | FDA, EMA approval pathways |
 | [Commercialization Plan](./business/commercialization-plan.md) | Go-to-market strategy |
