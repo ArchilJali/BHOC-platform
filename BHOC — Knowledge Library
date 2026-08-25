@@ -1,0 +1,35 @@
+# BHOC — Knowledge Library
+
+**Biological Hemoglobin Oxygen Carrier (BHOC)** — a research and development platform for hemoglobin-based oxygen therapeutics.
+
+---
+
+## 📚 Library Structure
+
+The library is organized into three main application areas. Each area contains its own bibliography (regulatory data, clinical evidence, research studies) and market insights.
+
+| Area | Description | Link |
+| :--- | :--- | :--- |
+| **🐾 Veterinary** | Approved veterinary applications (Oxyglobin). Clinical cases, regulatory dossiers. | [↗](/veterinary/README.md) |
+| **🫀 Transplant** | BHOC for organ perfusion, preservation, and transportation. | [↗](/transplant/README.md) |
+| **🧬 Human Use** | Historical trials, current research, regulatory status. | [↗](/human-use/README.md) |
+
+---
+
+## 🧭 How to Use This Library
+
+| Your Role | What to Explore |
+| :--- | :--- |
+| **Investor** | Go to each area → `market/` (approvals, competitive landscape) |
+| **Veterinarian** | `veterinary/` → `bibliography/clinical/cases.md` |
+| **Researcher** | Any area → `bibliography/studies/` |
+| **Regulator** | Any area → `bibliography/regulatory/` (by jurisdiction) |
+
+---
+
+## 📂 Repository Navigation
+
+
+---
+
+*Library is continuously updated as new data becomes available.*
