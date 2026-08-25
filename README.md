@@ -14,7 +14,7 @@
 
 ## 📚 Documentation
 
-- [🧪 Scientific Documents](./science/)
+- [🧪 Related Scientific Articles ](./science/)
 - [🏥 Veterinary Documents](./veterinary/)
 
 ---
