@@ -14,6 +14,37 @@
             color: #24292e;
             background-color: #ffffff;
         }
+        /* ===== НАВИГАЦИЯ СВЕРХУ (хлебные крошки) ===== */
+        .breadcrumb {
+            font-size: 14px;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eaecef;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 6px;
+        }
+        .breadcrumb a {
+            color: #0366d6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .breadcrumb .separator {
+            color: #6a737d;
+            margin: 0 4px;
+        }
+        .breadcrumb .current {
+            color: #24292e;
+            font-weight: 600;
+        }
+        .breadcrumb .home-icon {
+            font-size: 16px;
+        }
+
         h1, h2, h3 {
             border-bottom: 1px solid #eaecef;
             padding-bottom: 0.3em;
@@ -70,11 +101,25 @@
             th, td {
                 padding: 6px 8px;
             }
+            .breadcrumb {
+                font-size: 13px;
+            }
         }
     </style>
 </head>
 <body>
 
+<!-- ===== НАВИГАЦИЯ СВЕРХУ (хлебные крошки) ===== -->
+<div class="breadcrumb">
+    <span class="home-icon">🏠</span>
+    <a href="https://archiljali.github.io/BHOC-platform/">BHOC-platform</a>
+    <span class="separator">/</span>
+    <a href="https://archiljali.github.io/BHOC-platform/veterinary/">🏥 Veterinary</a>
+    <span class="separator">/</span>
+    <span class="current">📄 BHOC Veterinary Concept Document</span>
+</div>
+
+<!-- ===== ОСНОВНОЙ КОНТЕНТ ДОКУМЕНТА ===== -->
 <h1>Biological Hemoglobin Oxygen Carrier (BHOC)</h1>
 <h2>Technical Overview & Strategic Documentation</h2>
 
@@ -651,16 +696,4 @@
 
 <h3>10.1 Regulatory &amp; Historical</h3>
 <ol>
-    <li>FDA. (1998). <em>Oxyglobin (Hemoglobin Glutamer-200) Approval</em>. <a href="https://animaldrugsatfda.fda.gov/" target="_blank">Animal Drugs @ FDA</a></li>
-    <li>EMA. (1999). <em>Oxyglobin EPAR</em>. <a href="https://www.ema.europa.eu/en/medicines/veterinary/EPAR/oxyglobin" target="_blank">EMA</a></li>
-    <li>Biopure Corporation. (2001). <em>Annual Report</em>. <a href="https://media.corporate-ir.net/media_files/NSD/BPUR/reports/bpur_ar01.pdf" target="_blank">Biopure AR 2001</a></li>
-</ol>
-
-<h3>10.2 Oxygenation &amp; Efficacy</h3>
-<ol start="4">
-    <li>Standl TG, et al. (1996). <em>Bovine haemoglobin is more potent than autologous red blood cells in restoring muscular tissue oxygenation after profound isovolaemic haemodilution in dogs</em>. <em>Canadian Journal of Anesthesia, 43</em>(7), 714-723. <a href="https://pubmed.ncbi.nlm.nih.gov/8807179/" target="_blank">PubMed</a></li>
-</ol>
-
-<h3>10.3 Oncology Support</h3>
-<ol start="5">
-    <li>Teacher BA, et al. (1995). <em>Hemoglobin-based oxygen carriers enhance the efficacy of cancer therapies</em>. <em>Cancer Research, 55</em>(1), 181-186. <a href="https://pubmed.ncbi.nlm.nih.gov/7530924/" target="_blank">PubMed
+    <li>FDA. (1998
