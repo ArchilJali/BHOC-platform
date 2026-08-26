@@ -1,34 +1,35 @@
 ---
-title: Scientific Documents
+title: Scientific Publications — BHOC
 ---
 
-# 🔬 Scientific Documents
+# 🔬 Scientific Publications
 
-## 📄 Available Files
-
-| # | Document | Description |
-|---|----------|-------------|
-| 01 | [Oxygen Delivery Potency — L-TOF Framework](./oxygen-delivery-potency.md) | L‑TOF metric: quantitative evidence for BHOC superiority in tissue oxygenation |
-| 02 | [Oxygen Delivery Potency Analysis](./oxygen-delivery-potency.html) | HTML version with interactive tables and references |
+> Collection of peer-reviewed articles and scientific references supporting BHOC (Biological Hemoglobin Oxygen Carrier) technology.
 
 ---
 
-## 📚 External References
+## 📄 2026
 
-| Source | Description | Link |
-|--------|-------------|------|
-| **PubMed** | L-TOF article | [42453356](https://pubmed.ncbi.nlm.nih.gov/42453356/) |
-| **DOI** | Defining and quantifying oxygen delivery potency of blood products | [10.1016/j.brci.2026.100054](https://doi.org/10.1016/j.brci.2026.100054) |
-| **HEMOX Analyzer** | TCS Scientific Corp | [tcscientific.com](https://tcscientific.com/he-mox-analyzer) |
+### Defining and quantifying oxygen delivery potency of blood products
 
----
+**Authors:** Rogers SC, Brummet M, Tobin KV, Safari Z, Anand A, Bennett D, Adao R, McAslan E, Jacobsen M, Parrish A, Joshi A, Alp E, Zheleznyakova E, Buehler PW, Palmer AF, Salvi T, Beyer G, Khan MA, Renaldo A, Conway A, Rowden T, McGhee W, McCauley S, Sen Gupta A, Bruckman MA, Pawlowski CL, Shea S, Neal MD, Spinella PC, Pan D, Doctor A
 
-## 📌 Key Takeaways
+**Journal:** Blood Red Cells & Iron
 
-- L-TOF quantifies oxygen delivery potency of blood products and HBOCs
-- Stored pRBCs (Day 42) require **158% more volume** to match fresh blood
-- BHOC maintains O₂ delivery potency comparable to **fresh** blood
-- L-TOF introduces the concept of **pharmacodynamic potency** to blood products
+**Year:** 2026
+
+**Volume/Issue:** 2(2):100054
+
+**DOI:** [10.1016/j.brci.2026.100054](https://doi.org/10.1016/j.brci.2026.100054)
+
+**PubMed:** [42453356](https://pubmed.ncbi.nlm.nih.gov/42453356/)
+
+**Summary:** Introduces the L-TOF (Lung-to-Tissue O₂ Flux) metric to quantify oxygen delivery potency of blood products and HBOCs. Stored pRBCs (Day 42) require 158% more volume to match fresh blood.
+
+**Keywords:** `#LTOF` `#OxygenDelivery` `#HBOC` `#Potency`
+
+**📄 [Read full summary →](./oxygen-delivery-potency.html)**
+
 
 ---
 
