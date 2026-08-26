@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Veterinary Evidence Library
+title: Veterinary Application 
 ---
 
-# 🐾 Evidence Library for BHOC (Oxyglobin) Applications in Veterinary Practice
+# 🐾 BHOC  Veterinary Application 
 
 ---
 
@@ -25,9 +25,10 @@ title: Veterinary Evidence Library
 
 | Section | Description | Link |
 |---------|-------------|------|
-| **Regulatory Data** | FDA, EMA approvals, dosing, indications | [📋 Study →](bibliography/regulatory/fda.md)
-| **Clinical Data** | 146 clinical cases | [📋 Study →](./bibliography/clinical/cases.md) |
-| **Research Studies** | Preclinical models, field trials | [📋 Study →](./bibliography/research/studies.md) |
+| **Regulatory Data** | FDA, EMA approvals, dosing, indications | [📋 View Regulatory Data →](./bibliography/regulatory/regulatory-registry.md) |
+| **Regulatory Approvals Summary** | FDA and EMA approval details, dates, Annexes | [📋 View Approvals Summary →](./bibliography/regulatory/approvals-summary.md) |
+| **Clinical Data** | 146 clinical cases | [📋 View Clinical Data →](./bibliography/clinical/cases.md) |
+| **Research Studies** | Preclinical models, field trials | [📋 View Research Studies →](./bibliography/research/studies.md) |
 
 ---
 
@@ -47,7 +48,8 @@ title: Veterinary Evidence Library
 
 | Document | Why It's Important |
 |----------|---------------------|
-| [FDA NADA 141-064](./bibliography/regulatory/fda.md#reg-001) | Original approval of Oxyglobin |
+| [FDA NADA 141-067](./bibliography/regulatory/regulatory-registry.md#reg-001) | Original approval of Oxyglobin |
+| [EMA Approval Summary](./bibliography/regulatory/approvals-summary.md) | European approval details (1999) |
 | [Clinical Case Summary](./bibliography/clinical/cases.md) | 146 cases aggregated |
 | [Competitive Landscape](./business/competitive-landscape.md) | BHOC vs alternatives |
 
