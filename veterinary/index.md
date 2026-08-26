@@ -32,9 +32,8 @@ title: Veterinary Evidence Library
 |---|----------|---------------|
 | 05 | [Veterinary Concept](./05-concept.md) | Main veterinary concept document |
 | 06 | [Market Analysis](./06-market-analysis.md) | Market size, trends, competition |
-| 07 | [Regulatory Strategy](./07-regulatory-strategy.md) | FDA, EMA approval pathways |
-| 08 | [Commercialization Plan](./08-commercialization-plan.md) | Go-to-market strategy |
-| 09 | [Competitive Landscape](./09-competitive-landscape.md) | Alternative products comparison |
+| 07 | [Regulatory Strategy] | FDA, EMA approval pathways |
+| 08 | [Commercialization Plan]| Go-to-market strategy |
 
 ---
 
@@ -54,9 +53,9 @@ title: Veterinary Evidence Library
 
 | Document | Why It's Important |
 |----------|---------------------|
-| [FDA NADA 141-067](./01-regulatory-registry.md#reg-001) | Original FDA approval |
-| [EMA Approval Summary](./02-approvals-summary.md) | European approval (1999) |
-| [Competitive Landscape](./09-competitive-landscape.md) | BHOC vs alternatives |
+| [FDA NADA 141-067](./FDA-registry.md) | Original FDA approval |
+| [EMA Approval Summary](./EMA-approvals-summary.md) | European approval (1999) |
+| [Competitive Landscape]) | BHOC vs alternatives |
 
 ---
 
