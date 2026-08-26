@@ -1,18 +1,15 @@
 # BHOC
 
 ## Biological Hemoglobin Oxygen Carrier
-
 ### Precision Oxygen Therapeutics
-
 ### Tissue-Level Oxygen Delivery
-
 ### Oxygenation 
 
 **Delivering oxygen where it is needed, when it is needed, and in the amount needed — continuously, controllably, and at the tissue level.**
 
 ---
-
 ## 📚 Documentation
+
 
 - [🧪 Related Scientific Articles ](./science/)
 - [🏥 Veterinary Documents](./veterinary/)
