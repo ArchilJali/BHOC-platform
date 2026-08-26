@@ -12,7 +12,7 @@
 
 
 - [🧪 Related Scientific Articles ](./science/)
-- [🏥 Veterinary Documents](./veterinary/)
+- [🏥 Veterinary Application ](./veterinary/)
 
 ---
 
