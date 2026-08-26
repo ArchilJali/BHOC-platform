@@ -21,8 +21,8 @@ title: Veterinary Evidence Library
 
 | # | Document | What's inside |
 |---|----------|---------------|
-| 03 | [Clinical Cases](./03-clinical-cases.md) | 146 clinical cases (coming soon) |
-| 04 | [Research Studies](./04-research-studies.md) | 24 preclinical + 12 field trials (coming soon) |
+| 03 | [Clinical Cases](./03-clinical-cases.md) | 146 clinical cases |
+| 04 | [Research Studies](./04-research-studies.md) | 24 preclinical + 12 field trials |
 
 ---
 
