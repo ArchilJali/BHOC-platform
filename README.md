@@ -15,6 +15,7 @@
 - [🏥 Veterinary Application ](./veterinary/)
 - 	[🧬 Transplantation Application ]
 - 	[⚕️ Human Medicine ]
+- 	[📱 LinkedIn Publications](./social-media/linkedin/)
 
 ---
 
