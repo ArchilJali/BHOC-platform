@@ -13,6 +13,8 @@
 
 - [🧪 Related Scientific Articles ](./science/)
 - [🏥 Veterinary Application ](./veterinary/)
+- 	[🧬 Transplantation Application ]
+- 	[ ⚕️ Human Medicine ]
 
 ---
 
