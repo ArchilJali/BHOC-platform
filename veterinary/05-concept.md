@@ -1,308 +1,171 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BHOC Veterinary Concept Document</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-            color: #24292e;
-            background-color: #ffffff;
-        }
-        .breadcrumb {
-            font-size: 14px;
-            padding: 10px 0;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #eaecef;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 6px;
-        }
-        .breadcrumb a {
-            color: #0366d6;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-        .breadcrumb .separator {
-            color: #6a737d;
-            margin: 0 4px;
-        }
-        .breadcrumb .current {
-            color: #24292e;
-            font-weight: 600;
-        }
-        .breadcrumb .home-icon {
-            font-size: 16px;
-        }
-        h1, h2, h3 {
-            border-bottom: 1px solid #eaecef;
-            padding-bottom: 0.3em;
-        }
-        h1 { font-size: 2em; }
-        h2 { font-size: 1.5em; }
-        h3 { font-size: 1.25em; }
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            margin: 16px 0;
-        }
-        th, td {
-            border: 1px solid #dfe2e5;
-            padding: 8px 13px;
-        }
-        th {
-            background-color: #f6f8fa;
-            font-weight: 600;
-        }
-        a {
-            color: #0366d6;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .back-link {
-            display: block;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eaecef;
-        }
-        @media (max-width: 600px) {
-            table { font-size: 14px; }
-            th, td { padding: 6px 8px; }
-            .breadcrumb { font-size: 13px; }
-        }
-    </style>
-</head>
-<body>
+---
+title: BHOC Veterinary Concept Document
+---
 
-<div class="breadcrumb">
-    <span class="home-icon">🏠</span>
-    <a href="https://github.com/ArchilJali/BHOC-platform">BHOC-platform</a>
-    <span class="separator">/</span>
-    <a href="https://github.com/ArchilJali/BHOC-platform/tree/main/veterinary">🏥 Veterinary</a>
-    <span class="separator">/</span>
-    <a href="https://github.com/ArchilJali/BHOC-platform/tree/main/veterinary/business">💼 Business</a>
-    <span class="separator">/</span>
-    <span class="current">📄 BHOC Veterinary Concept Document</span>
-</div>
+# Biological Hemoglobin Oxygen Carrier (BHOC)
+## Technical Overview & Strategic Documentation
 
-<h1>Biological Hemoglobin Oxygen Carrier (BHOC)</h1>
-<h2>Technical Overview & Strategic Documentation</h2>
+**Document Version:** 1.0  
+**Date:** August 2026  
+**Classification:** Technical & Strategic Reference
 
-<p><strong>Document Version:</strong> 1.0<br>
-<strong>Date:</strong> August 2026<br>
-<strong>Classification:</strong> Technical & Strategic Reference</p>
+---
 
-<hr>
+## Table of Contents
 
-<h2>Table of Contents</h2>
-<ol>
-    <li><a href="#executive-summary">Executive Summary</a></li>
-    <li><a href="#regulatory">Regulatory &amp; Historical Foundation</a></li>
-    <li><a href="#scientific">Scientific Framework</a></li>
-    <li><a href="#product">Product Architecture</a></li>
-    <li><a href="#clinical">Clinical Applications</a></li>
-    <li><a href="#market">Market Analysis</a></li>
-    <li><a href="#economic">Economic Model</a></li>
-    <li><a href="#implementation">Implementation Strategy</a></li>
-    <li><a href="#technical">Technical Specifications</a></li>
-    <li><a href="#references">Research References</a></li>
-</ol>
+1. [Executive Summary](#executive-summary)
+2. [Regulatory & Historical Foundation](#regulatory)
+3. [Scientific Framework](#scientific)
+4. [Product Architecture](#product)
+5. [Clinical Applications](#clinical)
+6. [Market Analysis](#market)
+7. [Economic Model](#economic)
+8. [Implementation Strategy](#implementation)
+9. [Technical Specifications](#technical)
+10. [Research References](#references)
 
-<hr>
+---
 
-<h2 id="executive-summary">1. Executive Summary</h2>
+## 1. Executive Summary {#executive-summary}
 
-<h3>1.1 Product Definition</h3>
-<p><strong>Biological Hemoglobin Oxygen Carrier (BHOC)</strong> is a donor-independent, room-temperature-stable (3+ years), endotoxin-free, cell-antigen-free biologic hemoglobin oxygen carrier designed for microvascular and tissue-level oxygen exchange and delivery across all mammalian species.</p>
+### 1.1 Product Definition
 
-<h3>1.2 Core Specifications</h3>
-<table>
-    <thead>
-        <tr><th>Parameter</th><th>Specification</th></tr>
-    </thead>
-    <tbody>
-        <tr><td><strong>Oxygen Capacity</strong></td><td>3-5× per mL vs. packed red blood cells (pRBCs)</td></tr>
-        <tr><td><strong>Stability</strong></td><td>Room temperature, 3+ years</td></tr>
-        <tr><td><strong>Storage Requirements</strong></td><td>No refrigeration needed</td></tr>
-        <tr><td><strong>Cross-matching</strong></td><td>Not required</td></tr>
-        <tr><td><strong>Species Compatibility</strong></td><td>Universal (all mammalian species)</td></tr>
-        <tr><td><strong>Deployment Time</strong></td><td>&lt;3 minutes</td></tr>
-        <tr><td><strong>Wastage Rate</strong></td><td>&lt;2%</td></tr>
-        <tr><td><strong>Molecular Weight</strong></td><td>~200 kDa</td></tr>
-    </tbody>
-</table>
+**Biological Hemoglobin Oxygen Carrier (BHOC)** is a donor-independent, room-temperature-stable (3+ years), endotoxin-free, cell-antigen-free biologic hemoglobin oxygen carrier designed for microvascular and tissue-level oxygen exchange and delivery across all mammalian species.
 
-<h3>1.3 Historical Validation</h3>
-<ul>
-    <li><strong>FDA Approval:</strong> 1998 (Oxyglobin)</li>
-    <li><strong>EMA Approval:</strong> 1999 (Oxyglobin)</li>
-    <li><strong>Units Sold:</strong> &gt;240,000 (Oxyglobin/Hemopure)</li>
-    <li><strong>Species Treated:</strong> ~30 off-label</li>
-    <li><strong>Clinical Trials:</strong> 27</li>
-    <li><strong>Preclinical Studies:</strong> 250+</li>
-    <li><strong>Treatment Success:</strong> 95% vs. 32% control (pivotal canine anemia trial)</li>
-</ul>
+### 1.2 Core Specifications
 
-<hr>
+| Parameter | Specification |
+|-----------|---------------|
+| **Oxygen Capacity** | 3-5× per mL vs. packed red blood cells (pRBCs) |
+| **Stability** | Room temperature, 3+ years |
+| **Storage Requirements** | No refrigeration needed |
+| **Cross-matching** | Not required |
+| **Species Compatibility** | Universal (all mammalian species) |
+| **Deployment Time** | <3 minutes |
+| **Wastage Rate** | <2% |
+| **Molecular Weight** | ~200 kDa |
 
-<h2 id="regulatory">2. Regulatory &amp; Historical Foundation</h2>
+### 1.3 Historical Validation
 
-<h3>2.1 Oxyglobin Precedent</h3>
-<p>Oxyglobin, developed by Biopure Corporation, represents the foundational technology:</p>
+- **FDA Approval:** 1998 (Oxyglobin)
+- **EMA Approval:** 1999 (Oxyglobin)
+- **Units Sold:** >240,000 (Oxyglobin/Hemopure)
+- **Species Treated:** ~30 off-label
+- **Clinical Trials:** 27
+- **Preclinical Studies:** 250+
+- **Treatment Success:** 95% vs. 32% control (pivotal canine anemia trial)
 
-<p><strong>Regulatory Milestones:</strong></p>
-<ul>
-    <li>1998: FDA approval for canine anemia</li>
-    <li>1999: EMA approval</li>
-</ul>
+---
 
-<h3>2.2 Limitations of Traditional RBC Transfusions</h3>
+## 2. Regulatory & Historical Foundation {#regulatory}
 
-<p><strong>Physiological Limitations:</strong></p>
-<ul>
-    <li>Microcirculatory failure: RBCs may not reach hypoxic tissues</li>
-    <li>Diffusion barriers: Cellular membranes reduce oxygen transfer</li>
-    <li>Storage lesions: Impaired oxygen offloading from refrigerated blood</li>
-</ul>
+### 2.1 Oxyglobin Precedent
 
-<p><strong>Operational Limitations:</strong></p>
-<ul>
-    <li>Donor dependency</li>
-    <li>Crossmatching requirements</li>
-    <li>Refrigeration dependency (21-42 days)</li>
-    <li>10-20% wastage from expiration</li>
-    <li>4-8 hour deployment time</li>
-</ul>
+Oxyglobin, developed by Biopure Corporation, represents the foundational technology:
 
-<h3>2.3 BHOC Regulatory Pathway</h3>
-<p><strong>Status:</strong> Registration dossier preparation for biosimilar submission<br>
-<strong>Target:</strong> FDA/CVM approval (expected 2026-2027)<br>
-<strong>Strategy:</strong> 505(b)(2) regulatory pathway leveraging Oxyglobin precedent</p>
+**Regulatory Milestones:**
+- 1998: FDA approval for canine anemia
+- 1999: EMA approval
 
-<hr>
+### 2.2 Limitations of Traditional RBC Transfusions
 
-<h2 id="scientific">3. Scientific Framework</h2>
+**Physiological Limitations:**
+- Microcirculatory failure: RBCs may not reach hypoxic tissues
+- Diffusion barriers: Cellular membranes reduce oxygen transfer
+- Storage lesions: Impaired oxygen offloading from refrigerated blood
 
-<h3>3.1 Mechanism of Action</h3>
-<p>BHOC functions as a cell-free stabilized hemoglobin solution that:</p>
-<ol>
-    <li><strong>Delivers oxygen directly to tissues</strong> without RBC membrane barriers</li>
-    <li><strong>Penetrates microvascular beds</strong> compromised by endothelial dysfunction</li>
-    <li><strong>Provides controlled oxygen release</strong> through stabilized hemoglobin structure</li>
-    <li><strong>Maintains oncotic pressure</strong> while delivering oxygen</li>
-</ol>
+**Operational Limitations:**
+- Donor dependency
+- Crossmatching requirements
+- Refrigeration dependency (21-42 days)
+- 10-20% wastage from expiration
+- 4-8 hour deployment time
 
-<h3>3.2 Oxygen Delivery Efficiency</h3>
+### 2.3 BHOC Regulatory Pathway
 
-<table>
-    <thead>
-        <tr><th>Parameter</th><th>pRBC</th><th>BHOC</th></tr>
-    </thead>
-    <tbody>
-        <tr><td>Oxygen capacity</td><td>1×</td><td>3-5×</td></tr>
-        <tr><td>Oxygen unloading</td><td>Delayed (storage lesions)</td><td>Immediate</td></tr>
-        <tr><td>Microvascular penetration</td><td>Limited</td><td>High</td></tr>
-        <tr><td>Diffusion efficiency</td><td>Membrane-limited</td><td>Cell-free</td></tr>
-    </tbody>
-</table>
+**Status:** Registration dossier preparation for biosimilar submission  
+**Target:** FDA/CVM approval (expected 2026-2027)  
+**Strategy:** 505(b)(2) regulatory pathway leveraging Oxyglobin precedent
 
-<h3>3.3 Molecular Design</h3>
+---
 
-<p><strong>Stabilization Mechanism:</strong></p>
-<ul>
-    <li>Glutaraldehyde polymerization</li>
-    <li>Molecular weight: ~200 kDa</li>
-    <li>Endotoxin-free formulation</li>
-    <li>Cell antigen-free processing</li>
-</ul>
+## 3. Scientific Framework {#scientific}
 
-<hr>
+### 3.1 Mechanism of Action
 
-<h2 id="product">4. Product Architecture</h2>
+BHOC functions as a cell-free stabilized hemoglobin solution that:
 
-<h3>4.1 Formulations</h3>
-<table>
-    <thead>
-        <tr><th>SKU</th><th>Volume</th><th>Primary Use Case</th><th>Target Species</th></tr>
-    </thead>
-    <tbody>
-        <tr><td>BHOC-20</td><td>20 mL</td><td>Feline/exotic/small canine</td><td>Cats, rabbits, birds, reptiles</td></tr>
-        <tr><td>BHOC-80</td><td>80 mL</td><td>Small-medium canine/ICU support</td><td>Dogs (10-30 kg), foals</td></tr>
-        <tr><td>BHOC-200</td><td>200 mL</td><td>Medium-large canine/surgical</td><td>Dogs (30+ kg), horses</td></tr>
-    </tbody>
-</table>
+1. **Delivers oxygen directly to tissues** without RBC membrane barriers
+2. **Penetrates microvascular beds** compromised by endothelial dysfunction
+3. **Provides controlled oxygen release** through stabilized hemoglobin structure
+4. **Maintains oncotic pressure** while delivering oxygen
 
-<h3>4.2 Administration System</h3>
+### 3.2 Oxygen Delivery Efficiency
 
-<ul>
-    <li>Unit-specific QR code for tracking</li>
-    <li>Dedicated administration device</li>
-    <li>Protocol-based delivery system</li>
-    <li>Traceability integration</li>
-</ul>
+| Parameter | pRBC | BHOC |
+|-----------|------|------|
+| Oxygen capacity | 1× | 3-5× |
+| Oxygen unloading | Delayed (storage lesions) | Immediate |
+| Microvascular penetration | Limited | High |
+| Diffusion efficiency | Membrane-limited | Cell-free |
 
-<hr>
+### 3.3 Molecular Design
 
-<h2 id="market">5. Market Analysis</h2>
+**Stabilization Mechanism:**
+- Glutaraldehyde polymerization
+- Molecular weight: ~200 kDa
+- Endotoxin-free formulation
+- Cell antigen-free processing
 
-<h3>5.1 US Veterinary Market Overview</h3>
-<p><strong>Total Market Size:</strong> $72.6B (2026, IBISWorld)</p>
+---
 
-<table>
-    <thead>
-        <tr><th>Segment</th><th>Clinics</th><th>Percentage</th><th>Transfusion Capability</th></tr>
-    </thead>
-    <tbody>
-        <tr><td>Small Animal</td><td>40,544</td><td>70%</td><td>30%</td></tr>
-        <tr><td>Equine</td><td>5,792</td><td>10%</td><td>20%</td></tr>
-        <tr><td>Mixed/Exotic/Wildlife</td><td>11,584</td><td>20%</td><td>&lt;10%</td></tr>
-        <tr><td><strong>Total</strong></td><td><strong>57,920</strong></td><td><strong>100%</strong></td><td></td></tr>
-    </tbody>
-</table>
+## 4. Product Architecture {#product}
 
-<h3>5.2 Unmet Needs by Segment</h3>
-<table>
-    <thead>
-        <tr><th>Segment</th><th>Current Problem</th><th>BHOC Opportunity</th></tr>
-    </thead>
-    <tbody>
-        <tr><td>Small Animal</td><td>70% refer cases out</td><td>Convert referrals to in-house</td></tr>
-        <tr><td>Equine</td><td>80% lack donor access</td><td>Immediate oxygenation for 80%</td></tr>
-        <tr><td>Mixed/Exotic/Wildlife</td><td>&lt;10% have species-specific blood</td><td>Universal platform for 90%</td></tr>
-    </tbody>
-</table>
+### 4.1 Formulations
 
-<hr>
+| SKU | Volume | Primary Use Case | Target Species |
+|-----|--------|------------------|----------------|
+| BHOC-20 | 20 mL | Feline/exotic/small canine | Cats, rabbits, birds, reptiles |
+| BHOC-80 | 80 mL | Small-medium canine/ICU support | Dogs (10-30 kg), foals |
+| BHOC-200 | 200 mL | Medium-large canine/surgical | Dogs (30+ kg), horses |
 
-<h2 id="references">6. References</h2>
+### 4.2 Administration System
 
-<ol>
-    <li>FDA. (1998). NADA 141-067: Oxyglobin approval.</li>
-    <li>EMA. (1999). Oxyglobin assessment report.</li>
-    <li>Callan MB, Rentko VT. (2003). Clinical application of a hemoglobin-based oxygen-carrying solution. Vet Clin North Am Small Anim Pract.</li>
-    <li>Driessen B, Jahr JS, Lurie F, et al. (2001). Effects of hemoglobin-based oxygen carrier on intestinal perfusion. Br J Anaesth.</li>
-    <li>Cheung AT, Jahr JS, Driessen B, et al. (2001). The effects of hemoglobin glutamer-200 on the microcirculation. Anesth Analg.</li>
-    <li>IBISWorld. (2026). US Veterinary Services Industry Report.</li>
-</ol>
+- Unit-specific QR code for tracking
+- Dedicated administration device
+- Protocol-based delivery system
+- Traceability integration
 
-<hr>
+---
 
-<div class="back-link">
-    <a href="https://github.com/ArchilJali/BHOC-platform/tree/main/veterinary/business">⬅ Back to Business Section</a> |
-    <a href="https://github.com/ArchilJali/BHOC-platform/tree/main/veterinary">🏥 Back to Veterinary Documents</a> |
-    <a href="https://github.com/ArchilJali/BHOC-platform">🏠 Back to Main</a>
-</div>
+## 5. Market Analysis {#market}
 
-</body>
-</html>
+### 5.1 US Veterinary Market Overview
+
+**Total Market Size:** $72.6B (2026, IBISWorld)
+
+| Segment | Clinics | Percentage | Transfusion Capability |
+|---------|---------|------------|------------------------|
+| Small Animal | 40,544 | 70% | 30% |
+| Equine | 5,792 | 10% | 20% |
+| Mixed/Exotic/Wildlife | 11,584 | 20% | <10% |
+| **Total** | **57,920** | **100%** | |
+
+### 5.2 Unmet Needs by Segment
+
+| Segment | Current Problem | BHOC Opportunity |
+|---------|-----------------|------------------|
+| Small Animal | 70% refer cases out | Convert referrals to in-house |
+| Equine | 80% lack donor access | Immediate oxygenation for 80% |
+| Mixed/Exotic/Wildlife | <10% have species-specific blood | Universal platform for 90% |
+
+---
+
+## References {#references}
+
+1. FDA. (1998). NADA 141-067: Oxyglobin approval.
+2. EMA. (1999). Oxyglobin assessment report.
+3. Callan MB, Rentko VT. (2003). Clinical application of a hemoglobin-based oxygen-carrying solution. Vet Clin North Am Small Anim Pract.
+4. Driessen B, Jahr JS, Lurie F, et al. (2001). Effects of hemoglobin-based oxygen carrier on intestinal perfusion. Br J Anaesth.
+5. Cheung AT, Jahr JS, Driessen B, et al. (2001). The effects of hemoglobin glutamer-200 on the microcirculation. Anesth Analg.
+6. IBISWorld. (2026). US Veterinary Services Industry Report.
