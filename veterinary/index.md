@@ -31,7 +31,7 @@ title: Veterinary Evidence Library
 | # | Document | What's inside |
 |---|----------|---------------|
 | 05 | [Veterinary Concept](./05-concept.md) | Main veterinary concept document |
-| 06 | [Market Analysis](./06-market-analysis.md) | Market size, trends, competition |
+| 06 | [Market Analysis] | Market size, trends, competition |
 | 07 | [Regulatory Strategy] | FDA, EMA approval pathways |
 | 08 | [Commercialization Plan]| Go-to-market strategy |
 
