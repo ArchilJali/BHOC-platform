@@ -8,9 +8,8 @@ This folder contains all LinkedIn publications from BHOC-platform.
 
 - [US Navy CRADA collaboration with Biopure Hemopure](https://www.linkedin.com/feed/update/urn:li:activity:7498463309428572161) — 2026-08-26
 
-## 📁 Files
 
-- [`publications.yaml`](./publications.yaml) — YAML file with all publications
+
 
 ---
 
