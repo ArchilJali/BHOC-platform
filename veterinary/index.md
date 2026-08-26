@@ -1,38 +1,45 @@
 ---
 layout: default
-title: Veterinary Application 
+title: Veterinary Evidence Library
 ---
 
-# 🐾 BHOC  Veterinary Application 
+# 🐾 Evidence Library for BHOC 
 
----
-
-## 📊 Structure
-
-### Business Section
-
-| File | Description |
-|------|-------------|
-| [BHOC Veterinary Concept Document](./business/concept.md) | Main veterinary concept document |
-| [Market Analysis](./business/market-analysis.md) | Market size, trends, competition |
-| [Regulatory Strategy](./business/regulatory-strategy.md) | FDA, EMA approval pathways |
-| [Commercialization Plan](./business/commercialization-plan.md) | Go-to-market strategy |
-| [Competitive Landscape](./business/competitive-landscape.md) | Alternative products comparison |
+> **Quick navigation** — click any link below to open the document.
 
 ---
 
-### Bibliography (Evidence Base)
+## 📋 REGULATORY SECTION
 
-| Section | Description | Link |
-|---------|-------------|------|
-| **Regulatory Data** | FDA, EMA approvals, dosing, indications | [📋 View Regulatory Data →](./bibliography/regulatory/regulatory-registry.md) |
-| **Regulatory Approvals Summary** | FDA and EMA approval details, dates, Annexes | [📋 View Approvals Summary →](./bibliography/regulatory/approvals-summary.md) |
-| **Clinical Data** | 146 clinical cases | [📋 View Clinical Data →](./bibliography/clinical/cases.md) |
-| **Research Studies** | Preclinical models, field trials | [📋 View Research Studies →](./bibliography/research/studies.md) |
+| # | Document | What's inside |
+|---|----------|---------------|
+| 01 | [Regulatory Registry](./01-regulatory-registry.md) | 80 records: FDA & EMA approvals, dosing, safety |
+| 02 | [Approvals Summary](./02-approvals-summary.md) | FDA/EMA approval dates, numbers, Annexes |
 
 ---
 
-## 📊 Evidence Library in Numbers
+## 📊 CLINICAL & RESEARCH
+
+| # | Document | What's inside |
+|---|----------|---------------|
+| 03 | [Clinical Cases](./03-clinical-cases.md) | 146 clinical cases (coming soon) |
+| 04 | [Research Studies](./04-research-studies.md) | 24 preclinical + 12 field trials (coming soon) |
+
+---
+
+## 💼 BUSINESS SECTION
+
+| # | Document | What's inside |
+|---|----------|---------------|
+| 05 | [Veterinary Concept](./05-concept.md) | Main veterinary concept document |
+| 06 | [Market Analysis](./06-market-analysis.md) | Market size, trends, competition |
+| 07 | [Regulatory Strategy](./07-regulatory-strategy.md) | FDA, EMA approval pathways |
+| 08 | [Commercialization Plan](./08-commercialization-plan.md) | Go-to-market strategy |
+| 09 | [Competitive Landscape](./09-competitive-landscape.md) | Alternative products comparison |
+
+---
+
+## 📊 Library in Numbers
 
 | Category | Count |
 |----------|-------|
@@ -44,23 +51,21 @@ title: Veterinary Application
 
 ---
 
-## ⭐ Key Documents
+## ⭐ Key Documents (Start Here)
 
 | Document | Why It's Important |
 |----------|---------------------|
-| [FDA NADA 141-067](./bibliography/regulatory/regulatory-registry.md#reg-001) | Original approval of Oxyglobin |
-| [EMA Approval Summary](./bibliography/regulatory/approvals-summary.md) | European approval details (1999) |
-| [Clinical Case Summary](./bibliography/clinical/cases.md) | 146 cases aggregated |
-| [Competitive Landscape](./business/competitive-landscape.md) | BHOC vs alternatives |
+| [FDA NADA 141-067](./01-regulatory-registry.md#reg-001) | Original FDA approval |
+| [EMA Approval Summary](./02-approvals-summary.md) | European approval (1999) |
+| [Competitive Landscape](./09-competitive-landscape.md) | BHOC vs alternatives |
 
 ---
 
-## 🧭 How to Use This Library
+## 🧭 How to Use
 
-1. **Start with Regulatory Data** — to understand approved indications and dosing.
-2. **Review Clinical Data** — to see real-world evidence from 146 cases.
-3. **Explore Research Studies** — for preclinical models and mechanistic insights.
-4. **Check Business Section** — for market and commercialization context.
+1. **Start with #01–02** — Regulatory data (approved indications, dosing)
+2. **Then #03–04** — Clinical evidence and research
+3. **Finally #05–09** — Business and market context
 
 ---
 
