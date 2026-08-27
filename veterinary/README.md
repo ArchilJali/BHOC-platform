@@ -76,37 +76,6 @@ This database compiles **200+ peer-reviewed publications** on hemoglobin-based o
 
 ---
 
-## Search Tips
-
-| Keyword | Finds |
-| :--- | :--- |
-| `canine` | All publications about dogs |
-| `feline` | All publications about cats |
-| `equine` | All publications about horses |
-| `avian` | All publications about birds |
-| `exotic` | Exotic species (ferrets, otters, etc.) |
-| `Oxyglobin` | All Oxyglobin-specific publications |
-| `trauma` | Hemorrhagic shock, injury studies |
-| `safety` | Adverse effects, toxicity studies |
-| `transfusion` | Blood transfusion and alternatives |
-| `vasoconstriction` | Vascular effects studies |
-| `clinical trial` | Human clinical studies |
-| `review` | Review articles |
-
----
-
-## Statistics
-
-| Category | Count |
-| :--- | :---: |
-| Total Publications | 200+ |
-| Veterinary Studies | 45+ |
-| Clinical Trials | 38 |
-| Preclinical Studies | 72 |
-| Review Articles | 25 |
-| Safety/Toxicology | 20 |
-| Transplantation | 15+ |
-
 ---
 
 ## Contributing
