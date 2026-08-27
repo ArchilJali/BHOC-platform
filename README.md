@@ -60,7 +60,7 @@
 <p align="center">
   <table style="border-collapse: collapse; border: none; margin: 0 auto;">
     <tr>
-      <!-- Veterinary - with link -->
+      <!-- Veterinary - WITH link -->
       <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 12px; width: 145px; background-color: #ffffff;">
         <div style="font-size: 36px;">🏥</div>
         <br>
@@ -77,8 +77,6 @@
         <br>
         <strong style="font-size: 15px; color: #1a365d;">Transplantation</strong><br>
         <small style="font-size: 11px; color: #718096;">Application</small>
-        <br><br>
-        <span style="color: #a0aec0; font-size: 11px;">Coming soon</span>
       </td>
       <td style="width: 12px;"></td>
       
@@ -88,12 +86,10 @@
         <br>
         <strong style="font-size: 15px; color: #1a365d;">Human</strong><br>
         <small style="font-size: 11px; color: #718096;">Medicine</small>
-        <br><br>
-        <span style="color: #a0aec0; font-size: 11px;">Coming soon</span>
       </td>
       <td style="width: 12px;"></td>
       
-      <!-- Scientific Articles - with link -->
+      <!-- Scientific Articles - WITH link -->
       <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 12px; width: 145px; background-color: #ffffff;">
         <div style="font-size: 36px;">🔬</div>
         <br>
@@ -104,7 +100,7 @@
       </td>
       <td style="width: 12px;"></td>
       
-      <!-- LinkedIn Publications - with link -->
+      <!-- LinkedIn Publications - WITH link -->
       <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 12px; width: 145px; background-color: #ffffff;">
         <div style="font-size: 36px;">📱</div>
         <br>
@@ -648,4 +644,9 @@
 ---
 
 <!-- ============================================================ -->
-<!-- FOOTER BAD
+<!-- FOOTER BADGES                                                -->
+<!-- ============================================================ -->
+
+<p align="center">
+  <img src="https://img.shields.io/badge/BHOC-Biological%20Hemoglobin%20Oxygen%20Carrier-1a365d?style=flat-square&logo=github" alt="BHOC">
+  <img src="https://img.shields.io/badge/Precision%20Oxygen%20Therapeutics-Research-2
