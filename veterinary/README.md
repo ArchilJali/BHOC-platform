@@ -24,13 +24,10 @@
 | :--- | :--- |
 | 🔍 **[Interactive Search Tool](search.html)** | Search all 200+ publications by keyword |
  📋 **[Oxyglobin Publications](https://github.com/ArchilJali/BHOC-platform/blob/main/veterinary/03-publication-BHOC-Oxyglobin.md)** | Full list with Vancouver-style citations |
-| 📖 **[About This Database](https://github.com/ArchilJali/BHOC-platform/blob/main/README.md)** | Overview and usage guidelines |
 ---
 
 ## Species Distribution
-
 This database includes publications across **multiple species** — both veterinary and preclinical models.
-
 | Species | Number of Publications | Keywords to Search |
 | :--- | :---: | :--- |
 | 🐕 **Canine (Dog)** | 35+ | `canine`, `dog` |
