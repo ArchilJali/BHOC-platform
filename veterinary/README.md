@@ -2,8 +2,8 @@
 
 ## Hemoglobin-Based Oxygen Carriers — Oxyglobin Literature Review
 
-[![Version](https://img.shields.io/badge/Version-2.0-blue.svg)]
-[![Records](https://img.shields.io/badge/Records-200%2B-green.svg)]
+[![Version](https://img.shields.io/badge/Version-2.0-blue.svg)](https://github.com)
+[![Records](https://img.shields.io/badge/Records-200%2B-green.svg)](https://github.com)
 [![License](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 ---
@@ -16,6 +16,27 @@
 | 📋 **[Oxyglobin Publications](03-publication-BHOC-Oxyglobin.md)** | Full list with Vancouver-style citations |
 | 📖 **[About This Database](#about-this-database)** | Overview and usage guidelines |
 | ⚖️ **[License](LICENSE)** | Creative Commons Attribution 4.0 |
+
+---
+
+## Species Distribution
+
+This database includes publications across **multiple species** — both veterinary and preclinical models.
+
+| Species | Number of Publications | Keywords to Search |
+| :--- | :---: | :--- |
+| 🐕 **Canine (Dog)** | 35+ | `canine`, `dog` |
+| 🐈 **Feline (Cat)** | 15+ | `feline`, `cat` |
+| 🐴 **Equine (Horse)** | 8+ | `equine`, `horse`, `foal`, `pony` |
+| 🐖 **Porcine (Pig)** | 18+ | `swine`, `pig`, `porcine` |
+| 🐑 **Ovine (Sheep)** | 6+ | `sheep`, `ovine` |
+| 🐀 **Rodent (Rat, Mouse, Hamster)** | 32+ | `rat`, `mouse`, `hamster`, `rodent` |
+| 🦅 **Avian (Birds)** | 15+ | `avian`, `bird`, `duck`, `parrot`, `hawk`, `owl`, `eagle` |
+| 🦦 **Exotic / Wildlife** | 12+ | `ferret`, `otter`, `tamandua`, `crane`, `swan`, `seaduck` |
+| 👤 **Human** | 38+ | `human`, `clinical` |
+| 🧪 **Other / In Vitro** | 20+ | `in vitro`, `cell culture` |
+
+> **Total: 200+ publications** across all species categories.
 
 ---
 
@@ -42,7 +63,7 @@ This database compiles **200+ peer-reviewed publications** on hemoglobin-based o
 ### For Researchers
 - Use the **Interactive Search Tool** to find publications by keyword
 - Browse by year, journal, or author
-- Export data for meta-analysis
+- Filter by **species** using the keywords above
 
 ### For Clinicians
 - Look up safety data before using Oxyglobin
@@ -78,7 +99,7 @@ This database compiles **200+ peer-reviewed publications** on hemoglobin-based o
 ## Statistics
 
 | Category | Count |
-| :--- | :--- |
+| :--- | :---: |
 | Total Publications | 200+ |
 | Veterinary Studies | 45+ |
 | Clinical Trials | 38 |
@@ -98,6 +119,11 @@ To add new publications, please:
 3. Submit a pull request
 
 **Format for new entries:**
-1. If you have any remarks or would like to add your publication, please contact 
-
-
+```json
+{
+  "title": "Title of the paper",
+  "authors": "Author1, Author2, Author3",
+  "year": "2026",
+  "journal": "Journal Name",
+  "keywords": "keyword1, keyword2, keyword3"
+}
