@@ -14,15 +14,6 @@
 
 > ### 🎯 **Delivering oxygen where it is needed, when it is needed, and in the amount needed — continuously, controllably, and at the tissue level.**
 
-<br>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Version-2.0-blue?style=flat-square" alt="Version">
-  <img src="https://img.shields.io/badge/Records-200%2B-green?style=flat-square" alt="Records">
-  <img src="https://img.shields.io/badge/Species-12%2B-orange?style=flat-square" alt="Species">
-  <img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey?style=flat-square" alt="License">
-</p>
-
 ---
 
 <!-- ============================================================ -->
