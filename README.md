@@ -582,9 +582,8 @@
     <td style="border: 3px solid #c53030; border-radius: 10px; padding: 20px 25px; background-color: #fff5f5; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
       <strong>BHOC and Precision Oxygen Therapeutics are presented here as a scientific and technology development platform.</strong>
       <br><br>
-      Information in this repository should not be interpreted as medical advice, a clinical recommendation, or evidence of regulatory approval.
-      <br><br>
-      Scientific claims should be supported by appropriate primary evidence, and ongoing research may change current understanding.
+      Information in this repository should not be interpreted as medical advice, a clinical recommendation.
+      <br>
     </td>
   </tr>
 </table>
@@ -596,7 +595,5 @@
 <!-- ============================================================ -->
 
 ## 📬 Contact
-
-<table>
-  <tr>
-    <td style="border: 2px solid #1a365d
+Archil Jaliashvili 
+2026 
