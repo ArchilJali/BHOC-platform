@@ -1,22 +1,17 @@
 <!-- ============================================================ -->
 <!-- HEADER - Visual Banner (not a link)                          -->
 <!-- ============================================================ -->
-
 <p align="center">
   <span style="background-color: #1a365d; color: #ffffff; padding: 10px 30px; border-radius: 8px; font-weight: 700; font-size: 18px; display: inline-block; letter-spacing: 1px;">
     BHOC — Biological Hemoglobin Oxygen Carrier
   </span>
 </p>
-
 <h1 align="center" style="color: #1a365d; font-size: 36px; font-weight: 700; margin: 0;">🩸 BHOC</h1>
 <h2 align="center" style="color: #2d3748; font-size: 22px; font-weight: 400; margin: 5px 0 20px 0;">Biological Hemoglobin Oxygen Carrier</h2>
-
 <br>
-
 <!-- ============================================================ -->
 <!-- COLORED STATS BANNER - 4 colored boxes in a row              -->
 <!-- ============================================================ -->
-
 <p align="center">
   <table style="border-collapse: collapse; border: none; margin: 0 auto;">
     <tr>
@@ -46,17 +41,11 @@
 </p>
 
 <br>
-
----
-
 <!-- ============================================================ -->
 <!-- DOCUMENTATION - CARDS (compact, attractive style)            -->
 <!-- ============================================================ -->
-
 ## 📚 Documentation
-
 <br>
-
 <table align="center" style="border-collapse: collapse; border: none; margin: 0 auto;">
   <tr>
     <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 16px; width: 140px; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
@@ -115,7 +104,6 @@
 <!-- ============================================================ -->
 
 ## 📖 About BHOC
-
 <table>
   <tr>
     <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 25px; background-color: #f7fafc; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
@@ -129,7 +117,6 @@
 </table>
 
 ---
-
 <!-- ============================================================ -->
 <!-- PRECISION OXYGEN THERAPEUTICS - 4 CARDS                      -->
 <!-- ============================================================ -->
