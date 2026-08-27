@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veterinary HBOC Publications · Oxyglobin Database</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f8fafc;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 2rem;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+      padding: 2.5rem 2rem;
+    }
+
+    /* back to top button (replaces the <br> + p block) */
+    .top-link-wrapper {
+      display: flex;
+      justify-content: center;
+      margin: 0.5rem 0 2rem 0;
+    }
+
+    .top-link {
+      text-decoration: none;
+      color: #1a365d;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: 2px solid #1a365d;
+      border-radius: 6px;
+      padding: 0.5rem 1.8rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: #f7fafc;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .top-link:hover {
+      background-color: #edf2f7;
+      transform: translateY(-1px);
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #0b2b4a;
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .subhead {
+      font-size: 1.1rem;
+      color: #334155;
+      border-left: 4px solid #b0c4de;
+      padding-left: 1rem;
+      margin: 0.5rem 0 1.5rem 0;
+      font-weight: 400;
+    }
+
+    .badge-license {
+      display: inline-block;
+      background: #e9ecef;
+      padding: 0.2rem 0.9rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      color: #1e293b;
+      margin-right: 0.5rem;
+    }
+
+    .version-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 1.2rem;
+      margin: 1.2rem 0 1.8rem 0;
+      padding: 0.6rem 0;
+      border-top: 1px solid #e2e8f0;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .version-row span {
+      font-size: 0.95rem;
+      color: #1e293b;
+    }
+
+    .version-row i {
+      margin-right: 0.3rem;
+      color: #1a365d;
+    }
+
+    /* quick nav grid */
+    .nav-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      background: #f1f5f9;
+      padding: 1.5rem 1.8rem;
+      border-radius: 1.5rem;
+      margin: 1.8rem 0 2.2rem 0;
+    }
+
+    .nav-grid a {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      color: #0b2b4a;
+      font-weight: 500;
+      padding: 0.4rem 0.2rem;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .nav-grid a:hover {
+      border-bottom-color: #1a365d;
+    }
+
+    .nav-grid i {
+      font-size: 1.1rem;
+      width: 1.6rem;
+      color: #1a365d;
+    }
+
+    /* section cards */
+    .section-card {
+      background: #ffffff;
+      border-radius: 1.25rem;
+      padding: 1.2rem 1.8rem 1.8rem 1.8rem;
+      margin: 2rem 0 1.8rem 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+      border: 1px solid #e9edf3;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 650;
+      color: #0b2b4a;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .section-title i {
+      color: #1a365d;
+      font-size: 1.4rem;
+    }
+
+    .doc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.8rem 1.5rem;
+      margin-top: 0.25rem;
+    }
+
+    .doc-grid a {
+      text-decoration: none;
+      color: #1e3a5f;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.3rem 0;
+      border-bottom: 1px dashed #dce3ec;
+    }
+    .doc-grid a i {
+      width: 1.4rem;
+      color: #1a365d;
+    }
+    .doc-grid a:hover {
+      color: #000;
+    }
+
+    /* species table */
+    .species-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+      margin: 0.5rem 0;
+    }
+    .species-table th {
+      text-align: left;
+      padding: 0.5rem 0.3rem 0.5rem 0;
+      font-weight: 600;
+      color: #1e293b;
+      border-bottom: 1px solid #d1d9e6;
+    }
+    .species-table td {
+      padding: 0.5rem 0.3rem 0.5rem 0;
+      border-bottom: 1px solid #edf2f7;
+    }
+    .species-table tr:last-child td {
+      border-bottom: none;
+    }
+    .species-icon {
+      font-size: 1.2rem;
+      margin-right: 0.3rem;
+    }
+    .species-count {
+      background: #eef2f6;
+      padding: 0.1rem 0.6rem;
+      border-radius: 30px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #1e293b;
+      display: inline-block;
+    }
+    .keyword-tag {
+      background: #f1f5f9;
+      padding: 0.05rem 0.5rem;
+      border-radius: 12px;
+      font-size: 0.7rem;
+      color: #1e293b;
+      font-family: monospace;
+    }
+
+    .total-badge {
+      font-weight: 600;
+      color: #0b2b4a;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.8rem;
+      margin: 0.5rem 0 0 0;
+    }
+    .about-item {
+      background: #f8fafc;
+      border-radius: 0.75rem;
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+    }
+    .about-item i {
+      margin-right: 0.4rem;
+      color: #1a365d;
+    }
+
+    .howto-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.2rem;
+      margin-top: 0.6rem;
+    }
+    .howto-card {
+      background: #f8fafc;
+      padding: 0.8rem 1rem;
+      border-radius: 1rem;
+      border-left: 4px solid #1a365d;
+    }
+    .howto-card strong {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+    }
+    .howto-card p {
+      font-size: 0.9rem;
+      color: #334155;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #dce3ec;
+      margin: 2rem 0 1.2rem 0;
+    }
+
+    .footer-note {
+      font-size: 0.9rem;
+      color: #475569;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-note a {
+      color: #1a365d;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .footer-note a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 1.5rem 1rem; }
+      h1 { font-size: 1.8rem; }
+      .nav-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="container" id="top">
+
+  <!-- Back to Top (exact replica of the markdown <br> + <p> block) -->
+  <div class="top-link-wrapper">
+    <a href="#top" class="top-link">
+      <i class="fas fa-arrow-up" style="font-size: 0.8rem;"></i> Back to Top
+    </a>
+  </div>
+
+  <!-- Header -->
+  <h1>Veterinary HBOC Publications Database</h1>
+  <div class="subhead">
+    Hemoglobin-Based Oxygen Carriers — Oxyglobin Literature Review
+  </div>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 0.8rem 1.5rem; align-items: center; margin-bottom: 0.25rem;">
+    <span><i class="fas fa-tag" style="color:#1a365d;"></i> <span class="badge-license"><i class="fab fa-creative-commons"></i> CC BY 4.0</span></span>
+    <span><i class="fas fa-code-branch"></i> Version: 2.0</span>
+    <span><i class="fas fa-file-alt"></i> Records: <strong>200+</strong> publications</span>
+  </div>
+
+  <!-- Quick Navigation -->
+  <div class="nav-grid">
+    <a href="search.html"><i class="fas fa-search"></i> Interactive Search Tool</a>
+    <a href="03-publication-BHOC-Oxyglobin.md"><i class="fas fa-list-ul"></i> Oxyglobin Publications</a>
+    <a href="#about-this-database"><i class="fas fa-info-circle"></i> About This Database</a>
+  </div>
+
+  <!-- Regulatory Approvals -->
+  <div class="section-card">
+    <div class="section-title"><i class="fas fa-gavel"></i> Regulatory Approvals</div>
+    <div class="doc-grid">
+      <a href="FDA-registry.md"><i class="fas fa-file-pdf"></i> FDA Approval Details</a>
+      <a href="EMA-approvals-summary.md"><i class="fas fa-file-pdf"></i> EMA Approvals Summary</a>
+    </div>
+  </div>
+
+  <!-- Publications (simple) -->
+  <div class="section-card">
+    <div class="section-title"><i class="fas fa-book-open"></i> Publications</div>
+    <div class="doc-grid">
+      <a href="03-publication-BHOC-Oxyglobin.md"><i class="fas fa-file-alt"></i> Oxyglobin Publications (Vancouver)</a>
+    </div>
+  </div>
+
+  <!-- Species Distribution -->
+  <div class="section-card">
+    <div class="section-title"><i class="fas fa-paw"></i> Species Distribution</div>
+    <p style="color: #334155; margin-bottom: 0.75rem;">
+      This database includes publications across <strong>multiple species</strong> — both veterinary and preclinical models.
+    </p>
+
+    <table class="species-table">
+      <thead><tr><th>Species</th><th style="text-align:center;">Publications</th><th>Keywords to Search</th></tr></thead>
+      <tbody>
+        <tr><td><span class="species-icon">🐕</span> Canine (Dog)</td><td style="text-align:center;"><span class="species-count">35+</span></td><td><span class="keyword-tag">canine</span> <span class="keyword-tag">dog</span></td></tr>
+        <tr><td><span class="species-icon">🐈</span> Feline (Cat)</td><td style="text-align:center;"><span class="species-count">15+</span></td><td><span class="keyword-tag">feline</span> <span class="keyword-tag">cat</span></td></tr>
+        <tr><td><span class="species-icon">🐴</span> Equine (Horse)</td><td style="text-align:center;"><span class="species-count">8+</span></td><td><span class="keyword-tag">equine</span> <span class="keyword-tag">horse</span> <span class="keyword-tag">foal</span> <span class="keyword-tag">pony</span></td></tr>
+        <tr><td><span class="species-icon">🐖</span> Porcine (Pig)</td><td style="text-align:center;"><span class="species-count">18+</span></td><td><span class="keyword-tag">swine</span> <span class="keyword-tag">pig</span> <span class="keyword-tag">porcine</span></td></tr>
+        <tr><td><span class="species-icon">🐑</span> Ovine (Sheep)</td><td style="text-align:center;"><span class="species-count">6+</span></td><td><span class="keyword-tag">sheep</span> <span class="keyword-tag">ovine</span></td></tr>
+        <tr><td><span class="species-icon">🐀</span> Rodent (Rat, Mouse, Hamster)</td><td style="text-align:center;"><span class="species-count">32+</span></td><td><span class="keyword-tag">rat</span> <span class="keyword-tag">mouse</span> <span class="keyword-tag">hamster</span> <span class="keyword-tag">rodent</span></td></tr>
+        <tr><td><span class="species-icon">🦅</span> Avian (Birds)</td><td style="text-align:center;"><span class="species-count">15+</span></td><td><span class="keyword-tag">avian</span> <span class="keyword-tag">bird</span> <span class="keyword-tag">duck</span> <span class="keyword-tag">parrot</span> <span class="keyword-tag">hawk</span> <span class="keyword-tag">owl</span> <span class="keyword-tag">eagle</span></td></tr>
+        <tr><td><span class="species-icon">🦦</span> Exotic / Wildlife</td><td style="text-align:center;"><span class="species-count">12+</span></td><td><span class="keyword-tag">ferret</span> <span class="keyword-tag">otter</span> <span class="keyword-tag">tamandua</span> <span class="keyword-tag">crane</span> <span class="keyword-tag">swan</span> <span class="keyword-tag">seaduck</span></td></tr>
+        <tr><td><span class="species-icon">👤</span> Human</td><td style="text-align:center;"><span class="species-count">38+</span></td><td><span class="keyword-tag">human</span> <span class="keyword-tag">clinical</span></td></tr>
+        <tr><td><span class="species-icon">🧪</span> Other / In Vitro</td><td style="text-align:center;"><span class="species-count">20+</span></td><td><span class="keyword-tag">in vitro</span> <span class="keyword-tag">cell culture</span></td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top: 0.7rem; font-size: 0.9rem; color: #1e293b;">
+      <i class="fas fa-asterisk" style="color:#1a365d; font-size: 0.6rem;"></i> <strong>Total: 200+ publications</strong> across all species categories.
+    </p>
+  </div>
+
+  <!-- About this Database -->
+  <div id="about-this-database" style="scroll-margin-top: 1.2rem;">
+    <div class="section-card">
+      <div class="section-title"><i class="fas fa-database"></i> About This Database</div>
+      <p style="margin-bottom: 0.8rem;">
+        This database compiles <strong>200+ peer-reviewed publications</strong> on hemoglobin-based oxygen carriers (HBOCs), with a special focus on <strong>Oxyglobin</strong> (hemoglobin glutamer-200, bovine) — the only FDA-approved HBOC for veterinary use.
+      </p>
+      <div class="about-grid">
+        <div class="about-item"><i class="fas fa-tint"></i> Oxyglobin</div>
+        <div class="about-item"><i class="fas fa-tint"></i> HBOC-201 / Hemopure</div>
+        <div class="about-item"><i class="fas fa-shield-alt"></i> Safety & Toxicology</div>
+        <div class="about-item"><i class="fas fa-microscope"></i> Mechanisms</div>
+        <div class="about-item"><i class="fas fa-balance-scale"></i> Comparative Studies</div>
+        <div class="about-item"><i class="fas fa-users"></i> Special Populations</div>
+        <div class="about-item"><i class="fas fa-hand-holding-heart"></i> Transplantation</div>
+      </div>
+      <div style="margin-top: 0.5rem; font-size: 0.9rem; color: #334155;">
+        <i class="fas fa-circle-check" style="color:#1a365d;"></i> Coverage: veterinary applications, human clinical trials, adverse effects, oxygen delivery, NO scavenging, microcirculation, HBOC vs blood transfusion, Jehovah's Witnesses, sickle cell, trauma, machine perfusion, organ preservation.
+      </div>
+    </div>
+  </div>
+
+  <!-- How to Use -->
+  <div class="section-card">
+    <div class="section-title"><i class="fas fa-compass"></i> How to Use</div>
+    <div class="howto-grid">
+      <div class="howto-card"><strong><i class="fas fa-flask"></i> For Researchers</strong>
+        <p>Use the <strong>Interactive Search Tool</strong> to find publications by keyword. Browse by year, journal, or author. Filter by <strong>species</strong> using the keywords above.</p>
+      </div>
+      <div class="howto-card"><strong><i class="fas fa-user-md"></i> For Clinicians</strong>
+        <p>Look up safety data before using Oxyglobin. Find comparative studies vs. blood transfusions. Review emergency and surgical applications.</p>
+      </div>
+      <div class="howto-card"><strong><i class="fas fa-graduation-cap"></i> For Students</strong>
+        <p>Explore key publications on specific topics. Review articles for comprehensive overviews. Track research trends over time.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contributing -->
+  <hr>
+  <div class="footer-note">
+    <span><i class="fas fa-handshake"></i> <strong>Contributing</strong> — If you would like to correct or add new publications, please <a href="#">contact us</a>!</span>
+    <span style="font-size: 0.8rem; opacity:0.7;"><i class="far fa-calendar-alt"></i> Oxyglobin HBOC database v2.0</span>
+  </div>
+
+  <!-- small extra spacing -->
+  <div style="height:0.5rem;"></div>
+</div>
+</body>
+</html>
