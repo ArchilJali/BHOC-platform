@@ -356,6 +356,3 @@ Scientific claims should be supported by appropriate primary evidence, and ongoi
 **BHOC — Biological Hemoglobin Oxygen Carrier**
 
 **Precision Oxygen Therapeutics**
-
-          <td style="border: none; padding: 3px 10px; width: 33%;">• Scientific publications</td>
-          <td style="
