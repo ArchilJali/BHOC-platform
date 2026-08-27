@@ -14,6 +14,8 @@ title: Veterinary Evidence Library
 |---|----------|---------------|
 | 01 | [Regulatory Registry](./01-regulatory-registry.md) | 80 records: FDA & EMA approvals, dosing, safety |
 | 02 | [Approvals Summary](./02-approvals-summary.md) | FDA/EMA approval dates, numbers, Annexes |
+| 03 | [Oublications ](./03-publication-BHOC-Oxyglobin.md) | Publication , dates, numbers, Annexes |
+
 
 ---
 
