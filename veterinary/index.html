@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinary HBOC Database - Oxyglobin Literature Review</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            background: #f0f4f8;
+            color: #2d3748;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1a365d, #2b6cb0);
+            color: white;
+            padding: 50px 40px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 36px; font-weight: 800; letter-spacing: -0.5px; }
+        .hero .subtitle { font-size: 18px; opacity: 0.9; margin-top: 10px; }
+        .hero .badges { margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        .badge {
+            background: rgba(255,255,255,0.15);
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+            backdrop-filter: blur(4px);
+        }
+        .badge.blue { background: rgba(66, 153, 225, 0.4); }
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .quick-card {
+            background: white;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: #2d3748;
+            border: 1px solid #e2e8f0;
+        }
+        .quick-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(43, 108, 176, 0.12);
+            border-color: #2b6cb0;
+        }
+        .quick-card .icon { font-size: 32px; display: block; margin-bottom: 8px; }
+        .quick-card h3 { font-size: 18px; font-weight: 600; margin-bottom: 4px; }
+        .quick-card p { font-size: 14px; color: #718096; margin: 0; }
+        .main-content {
+            background: white;
+            border-radius: 12px;
+            padding: 35px 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-bottom: 30px;
+        }
+        .main-content h2 { font-size: 24px; font-weight: 700; margin-bottom: 12px; color: #1a365d; }
+        .main-content h3 { font-size: 18px; font-weight: 600; margin-top: 25px; margin-bottom: 10px; color: #2b6cb0; }
+        .main-content p { color: #4a5568; margin-bottom: 12px; }
+        .main-content ul { padding-left: 24px; color: #4a5568; margin-bottom: 16px; }
+        .main-content ul li { margin-bottom: 6px; }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .stat-item {
+            background: #f7fafc;
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #edf2f7;
+        }
+        .stat-item .number { font-size: 28px; font-weight: 700; color: #2b6cb0; }
+        .stat-item .label { font-size: 13px; color: #718096; }
+        .search-tips {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .tip {
+            background: #ebf8ff;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 13px;
+            color: #2b6cb0;
+        }
+        .tip code {
+            background: white;
+            padding: 1px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            color: #a0aec0;
+            font-size: 13px;
+            padding: 20px;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 10px;
+        }
+        .footer a { color: #2b6cb0; text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+        @media (max-width: 768px) {
+            .hero { padding: 30px 20px; }
+            .hero h1 { font-size: 26px; }
+            .main-content { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="hero">
+        <h1>🩸 Veterinary HBOC Publications Database</h1>
+        <p class="subtitle">Comprehensive Literature Review on Hemoglobin-Based Oxygen Carriers — <strong>Oxyglobin</strong> Focus</p>
+        <div class="badges">
+            <span class="badge">📄 200+ Records</span>
+            <span class="badge">📅 1939–2018</span>
+            <span class="badge">🐶 Canine · 🐱 Feline · 🐴 Equine</span>
+            <span class="badge blue">🦅 Avian · 🐹 Exotic</span>
+        </div>
+    </div>
+
+    <div class="quick-links">
+        <a href="search.html" class="quick-card">
+            <span class="icon">🔍</span>
+            <h3>Interactive Search Tool</h3>
+            <p>Search all 200+ publications by keyword, author, year, or journal</p>
+        </a>
+        <a href="03-publication-BHOC-Oxyglobin.md" class="quick-card">
+            <span class="icon">📋</span>
+            <h3>Oxyglobin Publications</h3>
+            <p>Full list of Oxyglobin-specific references with Vancouver-style citations</p>
+        </a>
+        <a href="README.md" class="quick-card">
+            <span class="icon">📖</span>
+            <h3>About This Database</h3>
+            <p>Overview, usage guidelines, and how to contribute new publications</p>
+        </a>
+        <a href="LICENSE" class="quick-card">
+            <span class="icon">⚖️</span>
+            <h3>License</h3>
+            <p>Creative Commons Attribution 4.0 — Free to use with attribution</p>
+        </a>
+    </div>
+
+    <div class="main-content">
+
+        <h2>📚 About This Database</h2>
+        <p>
+            This database compiles <strong>200+ peer-reviewed publications</strong> on hemoglobin-based oxygen carriers (HBOCs),
+            with a special focus on <strong>Oxyglobin</strong> (hemoglobin glutamer-200, bovine) — the only FDA-approved
+            HBOC for veterinary use.
+        </p>
+
+        <div class="stats-grid">
+            <div class="stat-item"><div class="number">200+</div><div class="label">Total Publications</div></div>
+            <div class="stat-item"><div class="number">45+</div><div class="label">Veterinary Studies</div></div>
+            <div class="stat-item"><div class="number">38</div><div class="label">Clinical Trials</div></div>
+            <div class="stat-item"><div class="number">72</div><div class="label">Preclinical Studies</div></div>
+            <div class="stat-item"><div class="number">25</div><div class="label">Review Articles</div></div>
+            <div class="stat-item"><div class="number">20</div><div class="label">Safety/Toxicology</div></div>
+        </div>
+
+        <h3>🔍 How to Search</h3>
+        <p>Use the <strong>Interactive Search Tool</strong> to find publications by any keyword. Here are some examples:</p>
+        <div class="search-tips">
+            <span class="tip"><code>canine</code> — All dog studies</span>
+            <span class="tip"><code>feline</code> — All cat studies</span>
+            <span class="tip"><code>equine</code> — All horse studies</span>
+            <span class="tip"><code>avian</code> — All bird studies</span>
+            <span class="tip"><code>Oxyglobin</code> — Oxyglobin-specific</span>
+            <span class="tip"><code>trauma</code> — Hemorrhagic shock</span>
+            <span class="tip"><code>safety</code> — Adverse effects</span>
+            <span class="tip"><code>transfusion</code> — Blood substitutes</span>
+        </div>
+
+        <h3>📋 Key Oxyglobin Publications</h3>
+        <ul>
+            <li><strong>Cheung AT, et al. (2001)</strong> — Microcirculation in canine hypovolemia model</li>
+            <li><strong>Driessen B, et al. (2001–2007)</strong> — Multiple canine hemorrhagic shock studies</li>
+            <li><strong>Gibson GR, et al. (2002)</strong> — 72 cases in cats</li>
+            <li><strong>Lichtenberger M, et al. (2009)</strong> — Mallard ducks resuscitation study</li>
+            <li><strong>Maxson AD, et al. (1993)</strong> — Miniature horse case report</li>
+            <li><strong>Perkins GA, Divers TJ (2001)</strong> — Foal with neonatal isoerythrolysis</li>
+            <li><strong>Soma LR, et al. (2005)</strong> — Pharmacokinetics in horses</li>
+        </ul>
+
+        <h3>📖 How to Cite This Database</h3>
+        <p style="background: #f7fafc; padding: 12px 16px; border-radius: 6px; border-left: 4px solid #2b6cb0; font-size: 14px;">
+            <strong>Jali A.</strong> (2026). <em>HBOC Publications Database: Comprehensive Literature Review on Hemoglobin-Based Oxygen Carriers — Veterinary Focus.</em>
+            GitHub. https://github.com/ArchilJali/BHOC-platform
+        </p>
+
+        <h3>🤝 Contributing</h3>
+        <p>
+            To add new publications, please fork the repository and submit a pull request with your addition to
+            <code>publications.json</code>. All submissions are reviewed for accuracy and consistency.
+        </p>
+
+    </div>
+
+    <div class="footer">
+        HBOC Publications Database &bull; Veterinary Focus &bull; Data compiled from peer-reviewed literature &bull;
+        <a href="https://github.com/ArchilJali/BHOC-platform" target="_blank">View on GitHub</a> &bull;
+        Last updated: August 2026
+    </div>
+
+</div>
+
+</body>
+</html>
