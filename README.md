@@ -72,7 +72,7 @@
       <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 12px; width: 145px; background-color: #ffffff;">
         <div style="font-size: 36px;">🧬</div>
         <br>
-        <strong style="font-size: 15px; color: #1a365d;">Transplantation</strong><br>
+        <strong style="font-size: 15px; color: #1a365d;"
         <small style="font-size: 11px; color: #718096;">Application</small>
         <br><br>
         <a href="./transplantation/" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 5px 14px; display: inline-block; font-size: 11px;">Explore →</a>
