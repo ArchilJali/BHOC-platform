@@ -5,14 +5,20 @@
 [![Records](https://img.shields.io/badge/Records-200%2B-green.svg)](https://github.com)
 
 ---
-
 ## 🔍 Interactive Search
 
-**Click here to search the entire publication database by keyword:**  
-👉 **[Open Interactive Search Tool](../search.html)**
+**Click here to search the entire publication database (200+ publications) by keyword:**  
+👉 **[Open Interactive Search Tool](search.html)**
 
 > Search by: title, authors, year, journal, keywords (e.g., canine, trauma, Oxyglobin, safety, clinical trial)
 
+---
+
+## 📊 Full Publication List
+
+**All 200+ publications are available in the [Interactive Search Tool](search.html) above.**
+
+Below is a summary of key publications and categories.
 ---
 
 ## Quick Navigation
