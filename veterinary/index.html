@@ -71,7 +71,7 @@
             text-decoration: none;
             color: #2d3748;
             border: 1px solid #e2e8f0;
-            cursor: pointer;
+            display: block;
         }
         .quick-card:hover {
             transform: translateY(-3px);
@@ -339,33 +339,37 @@
         <span><i class="fas fa-file-alt" style="color:#1a365d;"></i> Records: <strong>200+</strong> publications</span>
     </div>
 
-    <!-- ===== ДОКУМЕНТАЦИЯ ===== -->
+    <!-- ===== КАРТОЧКИ БЫСТРОГО ДОСТУПА ===== -->
     <div class="quick-links">
-        <div class="quick-card" onclick="document.getElementById('search-section').scrollIntoView({behavior:'smooth'})">
+        <a href="search.html" class="quick-card">
             <span class="icon">🔍</span>
             <h3>Interactive Search Tool</h3>
             <p>Search all 200+ publications by keyword</p>
-        </div>
-        <div class="quick-card" onclick="showAllPublications()">
+        </a>
+        <a href="03-publication-BHOC-Oxyglobin.md" class="quick-card">
             <span class="icon">📋</span>
             <h3>Oxyglobin Publications</h3>
             <p>Full list with Vancouver-style citations</p>
-        </div>
-        <div class="quick-card" onclick="document.getElementById('about-this-database').scrollIntoView({behavior:'smooth'})">
+        </a>
+        <a href="#about-this-database" class="quick-card">
             <span class="icon">📖</span>
             <h3>About This Database</h3>
             <p>Overview and usage guidelines</p>
-        </div>
-        <div class="quick-card" onclick="document.getElementById('concept-section').scrollIntoView({behavior:'smooth'})">
+        </a>
+        <a href="05-concept.md" class="quick-card">
             <span class="icon">💡</span>
             <h3>Concept Overview</h3>
             <p>BHOC veterinary concept documentation</p>
-        </div>
+        </a>
     </div>
 
     <!-- ===== РЕГУЛЯТОРНЫЕ ОДОБРЕНИЯ ===== -->
     <h2 class="section-title">🏛️ Regulatory Approvals</h2>
     <div class="content-card">
+        <div class="doc-grid">
+            <a href="FDA-registry.md"><i class="fas fa-file-pdf"></i> FDA Approval Details <span class="file-badge">.md</span></a>
+            <a href="EMA-approvals-summary.md"><i class="fas fa-file-pdf"></i> EMA Approvals Summary <span class="file-badge">.md</span></a>
+        </div>
         <div style="margin-top:0.8rem;padding:0.8rem 1rem;background:#f8fafc;border-radius:1rem;font-size:0.9rem;">
             <p><strong>📋 FDA Approval:</strong> Oxyglobin (hemoglobin glutamer-200, bovine) — approved for canine anemia treatment.</p>
             <p><strong>🇪🇺 EMA:</strong> Oxyglobin received conditional approval in Europe for veterinary use.</p>
@@ -375,13 +379,14 @@
     <!-- ===== ПУБЛИКАЦИИ ===== -->
     <h2 class="section-title" id="publications-section">📄 Publications</h2>
     <div class="content-card">
-        <div style="display:flex; flex-wrap:wrap; gap:0.8rem;">
-            <button onclick="showAllPublications()" style="background:#1a365d; color:white; border:none; border-radius:30px; padding:10px 24px; font-weight:600; cursor:pointer;">
-                <i class="fas fa-list"></i> Show All Publications
-            </button>
-            <button onclick="document.getElementById('searchInput').value=''; renderPublications('');" style="background:#e9ecef; color:#1e293b; border:none; border-radius:30px; padding:10px 24px; font-weight:600; cursor:pointer;">
-                <i class="fas fa-undo"></i> Reset
-            </button>
+        <div class="doc-grid">
+            <a href="03-publication-BHOC-Oxyglobin.md"><i class="fas fa-file-alt"></i> Oxyglobin Publications (Vancouver) <span class="file-badge">.md</span></a>
+            <a href="publications.json"><i class="fas fa-code"></i> Publications JSON <span class="file-badge">.json</span></a>
+        </div>
+        <div style="margin-top:0.8rem;display:flex;flex-wrap:wrap;gap:0.8rem;">
+            <a href="03-publication-BHOC-Oxyglobin.md" style="background:#1a365d; color:white; border:none; border-radius:30px; padding:10px 24px; font-weight:600; text-decoration:none; display:inline-block;">
+                <i class="fas fa-list"></i> View All Publications
+            </a>
         </div>
     </div>
 
@@ -390,6 +395,7 @@
     <div class="content-card">
         <p style="margin-bottom:0.5rem;color:#334155;">
             Search all <strong>200+</strong> publications by keyword, author, species, or year.
+            <span style="font-size:0.85rem;color:#64748b;">(data loaded from <code>publications.json</code>)</span>
         </p>
 
         <div class="search-box">
@@ -401,8 +407,12 @@
         </div>
 
         <div class="pub-list" id="pubList">
-            <div class="loading-pubs"><i class="fas fa-spinner fa-spin"></i> Loading publications...</div>
+            <div class="loading-pubs"><i class="fas fa-spinner fa-spin"></i> Loading publications from publications.json...</div>
         </div>
+        <p style="margin-top:0.8rem;font-size:0.85rem;color:#64748b;">
+            <i class="fas fa-info-circle"></i> 
+            <a href="search.html" style="color:#1a365d;font-weight:600;">Open full search page →</a>
+        </p>
     </div>
 
     <!-- ===== ВИДЫ ===== -->
@@ -457,6 +467,11 @@
         <p><strong>BHOC (Biological Hemoglobin Oxygen Carrier)</strong> is a hemoglobin-based oxygen carrier platform focused on supporting oxygen delivery beyond the conventional red blood cell transfusion model.</p>
         <p style="margin-top:8px;">The central concept is <strong>Precision Oxygen Therapeutics</strong>: focusing on oxygen delivery at the tissue level rather than on blood hemoglobin concentration alone.</p>
         <p style="margin-top:8px;">BHOC is intended as a complementary approach to the oxygen-delivery function of blood, while recognizing that blood performs many other essential physiological functions.</p>
+        <p style="margin-top:12px;">
+            <a href="05-concept.md" style="background:#1a365d; color:white; border:none; border-radius:30px; padding:8px 20px; font-weight:600; text-decoration:none; display:inline-block;">
+                <i class="fas fa-book"></i> Read Full Concept
+            </a>
+        </p>
     </div>
 
     <!-- ===== КАК ИСПОЛЬЗОВАТЬ ===== -->
@@ -495,7 +510,7 @@
 
     <div class="footer">
         BHOC — Veterinary HBOC Database &bull; Oxyglobin Literature Review &bull;
-        <a href="#">README</a> &bull;
+        <a href="README.md">README</a> &bull;
         <a href="https://github.com/ArchilJali/BHOC-platform" target="_blank">View on GitHub</a>
     </div>
 
@@ -503,7 +518,7 @@
 
 <script>
     // ============================================================
-    //   ЗАГРУЗКА ДАННЫХ
+    //   ЗАГРУЗКА ДАННЫХ ИЗ publications.json
     // ============================================================
     let allPublications = [];
 
@@ -548,18 +563,4 @@
             { id: 13, title: "Renal toxicity of HBOCs in canines", authors: "O'Brien M, Murphy K", journal: "Vet Pathol", year: 2021, species: "canine", keywords: "renal, toxicity, kidney" },
             { id: 14, title: "Equine neonatal foal resuscitation", authors: "Taylor S, Evans D", journal: "Equine Vet Educ", year: 2020, species: "equine", keywords: "foal, neonatal, resuscitation" },
             { id: 15, title: "Oxyglobin in sea ducks (wildlife)", authors: "Foster L, Crane M", journal: "J Zoo Wildl Med", year: 2022, species: "exotic", keywords: "seaduck, wildlife, waterfowl" },
-            { id: 16, title: "HBOC-201 in sickle cell crisis", authors: "Green A, Hall B", journal: "Blood", year: 2019, species: "human", keywords: "sickle cell, crisis, hemolysis" },
-            { id: 17, title: "Porcine liver perfusion with HBOC", authors: "Morris T, Clark P", journal: "Transplantation", year: 2021, species: "porcine", keywords: "liver, machine perfusion, preservation" },
-            { id: 18, title: "Feline Oxyglobin pharmacokinetics", authors: "Scott R, Young L", journal: "J Vet Pharmacol Ther", year: 2020, species: "feline", keywords: "pharmacokinetics, cat" },
-            { id: 19, title: "Avian HBOC in raptors (hawks)", authors: "Harris N, Bell J", journal: "J Avian Med Surg", year: 2021, species: "avian", keywords: "hawk, raptor, eagle" },
-            { id: 20, title: "Ovine model for HBOC safety", authors: "Mason D, Knight S", journal: "Lab Anim", year: 2018, species: "ovine", keywords: "safety, sheep, preclinical" },
-        ];
-    }
-
-    function renderPublications(filter = '') {
-        const list = document.getElementById('pubList');
-        const q = filter.toLowerCase().trim();
-
-        let filtered = allPublications;
-        if (q) {
-            filtered =
+            { id: 16, title: "HBOC-201 in sickle cell crisis", authors: "Green A, Hall B", journal: "Blood", year: 2019, species: "human", keywords: "sickle
