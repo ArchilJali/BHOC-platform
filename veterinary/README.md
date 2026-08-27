@@ -14,7 +14,7 @@
 
 [![License](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-**Version:** 2.0 | **Records:** 200+ publication 
+**Version:** 2.0 | **Records:** 200+ publications
 
 ---
 
@@ -23,7 +23,7 @@
 | Link | Description |
 | :--- | :--- |
 | 🔍 **[Interactive Search Tool](search.html)** | Search all 200+ publications by keyword |
-| 📋 **[Oxyglobin Publications](03-publication-BHOC-Oxyglobin.md )** | Full list with Vancouver-style citations |
+| 📋 **[Oxyglobin Publications](03-publication-BHOC-Oxyglobin.md)** | Full list with Vancouver-style citations |
 | 📖 **[About This Database](#about-this-database)** | Overview and usage guidelines |
 
 ---
@@ -86,8 +86,6 @@ This database compiles **200+ peer-reviewed publications** on hemoglobin-based o
 
 ---
 
----
-
 ## Contributing
 
-If you would like to correct or add new publications, please contact !
+If you would like to correct or add new publications, please contact us!
