@@ -65,7 +65,7 @@
       <strong style="font-size: 14px; color: #1a365d;">Veterinary</strong><br>
       <small style="font-size: 11px; color: #718096;">Application</small>
       <br><br>
-      <a href="./veterinary/" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
+      <a href="/BHOC-platform/veterinary/" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
     </td>
     <td style="width: 12px;"></td>
     <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 16px; width: 140px; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
@@ -92,7 +92,7 @@
       <strong style="font-size: 14px; color: #1a365d;">Scientific</strong><br>
       <small style="font-size: 11px; color: #718096;">Articles</small>
       <br><br>
-      <a href="./science/" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
+      <a href="/BHOC-platform/science/" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
     </td>
     <td style="width: 12px;"></td>
     <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 16px; width: 140px; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
@@ -101,7 +101,7 @@
       <strong style="font-size: 14px; color: #1a365d;">LinkedIn</strong><br>
       <small style="font-size: 11px; color: #718096;">Publications</small>
       <br><br>
-      <a href="./social-media/linkedin/" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
+      <a href="/BHOC-platform/social-media/linkedin/" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
     </td>
   </tr>
 </table>
@@ -596,4 +596,8 @@
 <!-- CONTACT - CARD                                               -->
 <!-- ============================================================ -->
 
-##
+## 📬 Contact
+
+<table>
+  <tr>
+    <td style="border: 2px solid #1a365d
