@@ -595,9 +595,17 @@
 <!-- ============================================================ -->
 <!-- CONTACT - CARD                                               -->
 <!-- ============================================================ -->
+<!-- CONTACT - CARD                                               -->
+<!-- ============================================================ -->
 
 ## 📬 Contact
 
 <table>
   <tr>
-    <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 25px; background-color: #f7fafc; text-align: center; box-shadow: 0 2px 8
+    <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 25px; background-color: #f7fafc; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+      <strong style="font-size: 17px; color: #1a365d;">Archil Jaliashvili</strong><br>
+      <strong style="font-size: 14px; color: #1a365d;">BHOC — Biological Hemoglobin Oxygen Carrier</strong><br>
+      <em style="font-size: 13px; color: #4a5568;">Precision Oxygen Therapeutics</em>
+    </td>
+  </tr>
+</table>
