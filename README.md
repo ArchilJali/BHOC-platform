@@ -33,7 +33,7 @@
       </td>
       <td style="width: 12px;"></td>
       <td align="center" style="border: 2px solid #1a365d; border-radius: 8px; padding: 12px 20px; background-color: #fed7d0; font-weight: 600; font-size: 13px; color: #1a365d;">
-        CONTINUOUS &<br>CONTROLLED
+        CONTINUOUSLY &<br>CONTROLLED
       </td>
     </tr>
   </table>
@@ -42,7 +42,7 @@
 <br>
 
 <p align="center" style="font-size: 15px; color: #2d3748; max-width: 700px; margin: 0 auto; font-style: italic;">
-  Delivering oxygen where it is needed, when it is needed, and in the amount needed — continuously, controllably, and at the tissue level.
+  Delivering oxygen where it is needed, when it is needed, and in the amount needed — continuously, controllable, and at the tissue level.
 </p>
 
 <br>
