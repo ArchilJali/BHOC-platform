@@ -60,6 +60,7 @@
 <p align="center">
   <table style="border-collapse: collapse; border: none; margin: 0 auto;">
     <tr>
+      <!-- Veterinary - with link -->
       <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 12px; width: 145px; background-color: #ffffff;">
         <div style="font-size: 36px;">🏥</div>
         <br>
@@ -69,24 +70,30 @@
         <a href="./veterinary/" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 5px 14px; display: inline-block; font-size: 11px;">Explore →</a>
       </td>
       <td style="width: 12px;"></td>
+      
+      <!-- Transplantation - NO link -->
       <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 12px; width: 145px; background-color: #ffffff;">
         <div style="font-size: 36px;">🧬</div>
         <br>
         <strong style="font-size: 15px; color: #1a365d;">Transplantation</strong><br>
         <small style="font-size: 11px; color: #718096;">Application</small>
         <br><br>
-        
+        <span style="color: #a0aec0; font-size: 11px;">Coming soon</span>
       </td>
       <td style="width: 12px;"></td>
+      
+      <!-- Human Medicine - NO link -->
       <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 12px; width: 145px; background-color: #ffffff;">
         <div style="font-size: 36px;">⚕️</div>
         <br>
         <strong style="font-size: 15px; color: #1a365d;">Human</strong><br>
         <small style="font-size: 11px; color: #718096;">Medicine</small>
         <br><br>
-        <a href="./human/" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 5px 14px; display: inline-block; font-size: 11px;">Explore →</a>
+        <span style="color: #a0aec0; font-size: 11px;">Coming soon</span>
       </td>
       <td style="width: 12px;"></td>
+      
+      <!-- Scientific Articles - with link -->
       <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 12px; width: 145px; background-color: #ffffff;">
         <div style="font-size: 36px;">🔬</div>
         <br>
@@ -96,6 +103,8 @@
         <a href="./science/" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 5px 14px; display: inline-block; font-size: 11px;">Explore →</a>
       </td>
       <td style="width: 12px;"></td>
+      
+      <!-- LinkedIn Publications - with link -->
       <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 12px; width: 145px; background-color: #ffffff;">
         <div style="font-size: 36px;">📱</div>
         <br>
@@ -630,4 +639,13 @@
     <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 25px; background-color: #f7fafc; text-align: center;">
       <strong style="font-size: 17px; color: #1a365d;">Archil Jaliashvili</strong><br>
       <em style="font-size: 14px; color: #4a5568;">Biotechnology & Healthcare Innovation</em><br><br>
-      <strong style="font-size: 14px; color: #1a365d;">BHOC — Biological Hemoglobin Oxygen Carrier</
+      <strong style="font-size: 14px; color: #1a365d;">BHOC — Biological Hemoglobin Oxygen Carrier</strong><br>
+      <em style="font-size: 13px; color: #4a5568;">Precision Oxygen Therapeutics</em>
+    </td>
+  </tr>
+</table>
+
+---
+
+<!-- ============================================================ -->
+<!-- FOOTER BAD
