@@ -11,22 +11,22 @@
 <br>
 
 <!-- ============================================================ -->
-<!-- STATS BANNER - Colored boxes like Veterinary page             -->
+<!-- PRECISION OXYGEN THERAPEUTICS BANNER - Visual only, no links -->
 <!-- ============================================================ -->
 
 <p align="center">
-  <table style="border-collapse: collapse; border: none;">
+  <table style="border-collapse: collapse; border: none; margin: 0 auto;">
     <tr>
-      <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 12px 25px; background-color: #ebf8ff; font-weight: bold; color: #1a365d;">
+      <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 12px 22px; background-color: #ebf8ff; font-weight: bold; font-size: 14px; color: #1a365d;">
         PRECISION OXYGEN<br>THERAPEUTICS
       </td>
-      <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 12px 25px; background-color: #e6fffa; font-weight: bold; color: #1a365d;">
+      <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 12px 22px; background-color: #e6fffa; font-weight: bold; font-size: 14px; color: #1a365d;">
         TISSUE LEVEL<br>DELIVERY
       </td>
-      <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 12px 25px; background-color: #fefcbf; font-weight: bold; color: #1a365d;">
+      <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 12px 22px; background-color: #fefcbf; font-weight: bold; font-size: 14px; color: #1a365d;">
         OXYGENATION
       </td>
-      <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 12px 25px; background-color: #fed7d0; font-weight: bold; color: #1a365d;">
+      <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 12px 22px; background-color: #fed7d0; font-weight: bold; font-size: 14px; color: #1a365d;">
         CONTINUOUS &<br>CONTROLLED
       </td>
     </tr>
@@ -42,57 +42,73 @@
 ---
 
 <!-- ============================================================ -->
-<!-- DOCUMENTATION - Like Veterinary page cards                   -->
+<!-- DOCUMENTATION - Separate individual boxes                     -->
 <!-- ============================================================ -->
 
 ## 📚 Documentation
 
 <br>
 
-<table style="border-collapse: collapse; border: none;">
-  <tr>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 15px; width: 20%; background-color: #f7fafc;">
-      <div style="font-size: 36px;">🏥</div>
-      <br>
-      <strong style="font-size: 16px; color: #1a365d;">Veterinary</strong><br>
-      <small style="font-size: 12px; color: #4a5568;">Application</small>
-      <br><br>
-      <a href="./veterinary/" style="text-decoration: none; color: #1a365d; font-weight: bold; border: 2px solid #1a365d; border-radius: 6px; padding: 6px 16px; display: inline-block; font-size: 12px;">→ Explore</a>
-    </td>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 15px; width: 20%; background-color: #f7fafc;">
-      <div style="font-size: 36px;">🧬</div>
-      <br>
-      <strong style="font-size: 16px; color: #1a365d;">Transplantation</strong><br>
-      <small style="font-size: 12px; color: #4a5568;">Application</small>
-      <br><br>
-      <a href="./transplantation/" style="text-decoration: none; color: #1a365d; font-weight: bold; border: 2px solid #1a365d; border-radius: 6px; padding: 6px 16px; display: inline-block; font-size: 12px;">→ Explore</a>
-    </td>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 15px; width: 20%; background-color: #f7fafc;">
-      <div style="font-size: 36px;">⚕️</div>
-      <br>
-      <strong style="font-size: 16px; color: #1a365d;">Human</strong><br>
-      <small style="font-size: 12px; color: #4a5568;">Medicine</small>
-      <br><br>
-      <a href="./human/" style="text-decoration: none; color: #1a365d; font-weight: bold; border: 2px solid #1a365d; border-radius: 6px; padding: 6px 16px; display: inline-block; font-size: 12px;">→ Explore</a>
-    </td>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 15px; width: 20%; background-color: #f7fafc;">
-      <div style="font-size: 36px;">🔬</div>
-      <br>
-      <strong style="font-size: 16px; color: #1a365d;">Scientific</strong><br>
-      <small style="font-size: 12px; color: #4a5568;">Articles</small>
-      <br><br>
-      <a href="./science/" style="text-decoration: none; color: #1a365d; font-weight: bold; border: 2px solid #1a365d; border-radius: 6px; padding: 6px 16px; display: inline-block; font-size: 12px;">→ Explore</a>
-    </td>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 15px; width: 20%; background-color: #f7fafc;">
-      <div style="font-size: 36px;">📱</div>
-      <br>
-      <strong style="font-size: 16px; color: #1a365d;">LinkedIn</strong><br>
-      <small style="font-size: 12px; color: #4a5568;">Publications</small>
-      <br><br>
-      <a href="./social-media/linkedin/" style="text-decoration: none; color: #1a365d; font-weight: bold; border: 2px solid #1a365d; border-radius: 6px; padding: 6px 16px; display: inline-block; font-size: 12px;">→ Explore</a>
-    </td>
-  </tr>
-</table>
+<!-- Row 1 -->
+<p align="center">
+  <table style="border-collapse: collapse; border: none; margin: 0 auto;">
+    <tr>
+      <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 20px; width: 180px; background-color: #f7fafc;">
+        <div style="font-size: 36px;">🏥</div>
+        <br>
+        <strong style="font-size: 16px; color: #1a365d;">Veterinary</strong><br>
+        <small style="font-size: 12px; color: #4a5568;">Application</small>
+        <br><br>
+        <a href="./veterinary/" style="text-decoration: none; color: #1a365d; font-weight: bold; border: 2px solid #1a365d; border-radius: 6px; padding: 6px 16px; display: inline-block; font-size: 12px;">→ Explore</a>
+      </td>
+      <td style="width: 20px;"></td>
+      <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 20px; width: 180px; background-color: #f7fafc;">
+        <div style="font-size: 36px;">🧬</div>
+        <br>
+        <strong style="font-size: 16px; color: #1a365d;">Transplantation</strong><br>
+        <small style="font-size: 12px; color: #4a5568;">Application</small>
+        <br><br>
+        <a href="./transplantation/" style="text-decoration: none; color: #1a365d; font-weight: bold; border: 2px solid #1a365d; border-radius: 6px; padding: 6px 16px; display: inline-block; font-size: 12px;">→ Explore</a>
+      </td>
+      <td style="width: 20px;"></td>
+      <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 20px; width: 180px; background-color: #f7fafc;">
+        <div style="font-size: 36px;">⚕️</div>
+        <br>
+        <strong style="font-size: 16px; color: #1a365d;">Human</strong><br>
+        <small style="font-size: 12px; color: #4a5568;">Medicine</small>
+        <br><br>
+        <a href="./human/" style="text-decoration: none; color: #1a365d; font-weight: bold; border: 2px solid #1a365d; border-radius: 6px; padding: 6px 16px; display: inline-block; font-size: 12px;">→ Explore</a>
+      </td>
+    </tr>
+  </table>
+</p>
+
+<br>
+
+<!-- Row 2 -->
+<p align="center">
+  <table style="border-collapse: collapse; border: none; margin: 0 auto;">
+    <tr>
+      <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 20px; width: 180px; background-color: #f7fafc;">
+        <div style="font-size: 36px;">🔬</div>
+        <br>
+        <strong style="font-size: 16px; color: #1a365d;">Scientific</strong><br>
+        <small style="font-size: 12px; color: #4a5568;">Articles</small>
+        <br><br>
+        <a href="./science/" style="text-decoration: none; color: #1a365d; font-weight: bold; border: 2px solid #1a365d; border-radius: 6px; padding: 6px 16px; display: inline-block; font-size: 12px;">→ Explore</a>
+      </td>
+      <td style="width: 20px;"></td>
+      <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 20px; width: 180px; background-color: #f7fafc;">
+        <div style="font-size: 36px;">📱</div>
+        <br>
+        <strong style="font-size: 16px; color: #1a365d;">LinkedIn</strong><br>
+        <small style="font-size: 12px; color: #4a5568;">Publications</small>
+        <br><br>
+        <a href="./social-media/linkedin/" style="text-decoration: none; color: #1a365d; font-weight: bold; border: 2px solid #1a365d; border-radius: 6px; padding: 6px 16px; display: inline-block; font-size: 12px;">→ Explore</a>
+      </td>
+    </tr>
+  </table>
+</p>
 
 <br>
 
@@ -128,26 +144,31 @@ Precision Oxygen Therapeutics focuses on four fundamental questions:
 
 <br>
 
-<table style="border-collapse: collapse; border: none;">
-  <tr>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 15px; width: 25%; background-color: #ebf8ff;">
-      <strong style="font-size: 20px; color: #1a365d;">📍 WHERE</strong><br><br>
-      <small style="font-size: 13px; color: #4a5568;">Where is oxygen needed?</small>
-    </td>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 15px; width: 25%; background-color: #e6fffa;">
-      <strong style="font-size: 20px; color: #1a365d;">⏰ WHEN</strong><br><br>
-      <small style="font-size: 13px; color: #4a5568;">When is additional oxygen delivery required?</small>
-    </td>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 15px; width: 25%; background-color: #fefcbf;">
-      <strong style="font-size: 20px; color: #1a365d;">📊 HOW MUCH</strong><br><br>
-      <small style="font-size: 13px; color: #4a5568;">How much oxygen is required to support tissue demand?</small>
-    </td>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 15px; width: 25%; background-color: #fed7d0;">
-      <strong style="font-size: 20px; color: #1a365d;">🎮 CONTROL</strong><br><br>
-      <small style="font-size: 13px; color: #4a5568;">How can oxygen delivery be supported in a controlled and continuous manner?</small>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <table style="border-collapse: collapse; border: none; margin: 0 auto;">
+    <tr>
+      <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 15px; width: 180px; background-color: #ebf8ff;">
+        <strong style="font-size: 20px; color: #1a365d;">📍 WHERE</strong><br><br>
+        <small style="font-size: 13px; color: #4a5568;">Where is oxygen needed?</small>
+      </td>
+      <td style="width: 15px;"></td>
+      <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 15px; width: 180px; background-color: #e6fffa;">
+        <strong style="font-size: 20px; color: #1a365d;">⏰ WHEN</strong><br><br>
+        <small style="font-size: 13px; color: #4a5568;">When is additional oxygen delivery required?</small>
+      </td>
+      <td style="width: 15px;"></td>
+      <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 15px; width: 180px; background-color: #fefcbf;">
+        <strong style="font-size: 20px; color: #1a365d;">📊 HOW MUCH</strong><br><br>
+        <small style="font-size: 13px; color: #4a5568;">How much oxygen is required to support tissue demand?</small>
+      </td>
+      <td style="width: 15px;"></td>
+      <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 15px; width: 180px; background-color: #fed7d0;">
+        <strong style="font-size: 20px; color: #1a365d;">🎮 CONTROL</strong><br><br>
+        <small style="font-size: 13px; color: #4a5568;">How can oxygen delivery be supported in a controlled and continuous manner?</small>
+      </td>
+    </tr>
+  </table>
+</p>
 
 <br>
 
@@ -541,26 +562,31 @@ Precision Oxygen Therapeutics focuses on four fundamental questions:
     <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; background-color: #ebf8ff;">
       The long-term objective is to advance a scientific framework in which systemic and organ and tissue oxygen delivery can be regenerative as a therapeutic function:
       <br><br>
-      <table style="border-collapse: collapse; border: none;">
-        <tr>
-          <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px 10px; width: 25%; background-color: #fff;">
-            <strong style="font-size: 18px; color: #1a365d;">📍 WHERE</strong><br>
-            <small style="font-size: 12px; color: #4a5568;">oxygen is needed</small>
-          </td>
-          <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px 10px; width: 25%; background-color: #fff;">
-            <strong style="font-size: 18px; color: #1a365d;">⏰ WHEN</strong><br>
-            <small style="font-size: 12px; color: #4a5568;">oxygen is needed</small>
-          </td>
-          <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px 10px; width: 25%; background-color: #fff;">
-            <strong style="font-size: 18px; color: #1a365d;">📊 IN THE AMOUNT</strong><br>
-            <small style="font-size: 12px; color: #4a5568;">oxygen is needed</small>
-          </td>
-          <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px 10px; width: 25%; background-color: #fff;">
-            <strong style="font-size: 18px; color: #1a365d;">🎯 CONTINUOUSLY</strong><br>
-            <small style="font-size: 12px; color: #4a5568;">and controllably at the cell and mitochondrial level</small>
-          </td>
-        </tr>
-      </table>
+      <p align="center">
+        <table style="border-collapse: collapse; border: none; margin: 0 auto;">
+          <tr>
+            <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px 12px; width: 170px; background-color: #fff;">
+              <strong style="font-size: 18px; color: #1a365d;">📍 WHERE</strong><br>
+              <small style="font-size: 12px; color: #4a5568;">oxygen is needed</small>
+            </td>
+            <td style="width: 10px;"></td>
+            <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px 12px; width: 170px; background-color: #fff;">
+              <strong style="font-size: 18px; color: #1a365d;">⏰ WHEN</strong><br>
+              <small style="font-size: 12px; color: #4a5568;">oxygen is needed</small>
+            </td>
+            <td style="width: 10px;"></td>
+            <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px 12px; width: 170px; background-color: #fff;">
+              <strong style="font-size: 18px; color: #1a365d;">📊 IN THE AMOUNT</strong><br>
+              <small style="font-size: 12px; color: #4a5568;">oxygen is needed</small>
+            </td>
+            <td style="width: 10px;"></td>
+            <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px 12px; width: 170px; background-color: #fff;">
+              <strong style="font-size: 18px; color: #1a365d;">🎯 CONTINUOUSLY</strong><br>
+              <small style="font-size: 12px; color: #4a5568;">and controllably at the cell and mitochondrial level</small>
+            </td>
+          </tr>
+        </table>
+      </p>
     </td>
   </tr>
 </table>
