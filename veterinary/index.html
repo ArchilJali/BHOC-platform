@@ -72,6 +72,7 @@
             color: #2d3748;
             border: 1px solid #e2e8f0;
             display: block;
+            cursor: pointer;
         }
         .quick-card:hover {
             transform: translateY(-3px);
@@ -113,11 +114,6 @@
             border-bottom: 4px solid #2b6cb0;
             display: inline-block;
         }
-        .section-sub {
-            font-size: 15px;
-            color: #4a5568;
-            margin-bottom: 16px;
-        }
 
         .doc-grid {
             display: grid;
@@ -137,14 +133,6 @@
         }
         .doc-grid a i { width: 1.4rem; color: #1a365d; }
         .doc-grid a:hover { color: #000; }
-        .doc-grid a .file-badge {
-            font-size: 0.65rem;
-            background: #e9ecef;
-            padding: 0.05rem 0.5rem;
-            border-radius: 10px;
-            color: #475569;
-            margin-left: auto;
-        }
 
         .species-table {
             width: 100%;
@@ -284,11 +272,33 @@
         .no-results { padding: 1rem; text-align: center; color: #64748b; }
         .loading-pubs { padding: 1rem; text-align: center; color: #64748b; }
 
-        hr {
+        .btn-primary {
+            background: #1a365d;
+            color: white;
             border: none;
-            border-top: 2px solid #e2e8f0;
-            margin: 2rem 0 1.2rem 0;
+            border-radius: 30px;
+            padding: 10px 24px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.2s;
         }
+        .btn-primary:hover { background: #0b2b4a; }
+        .btn-outline {
+            background: transparent;
+            color: #1a365d;
+            border: 2px solid #1a365d;
+            border-radius: 30px;
+            padding: 8px 22px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.2s;
+        }
+        .btn-outline:hover { background: #1a365d; color: white; }
+
         .footer {
             text-align: center;
             color: #a0aec0;
@@ -299,6 +309,34 @@
         }
         .footer a { color: #2b6cb0; text-decoration: none; }
         .footer a:hover { text-decoration: underline; }
+
+        .json-viewer {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 16px 20px;
+            border-radius: 12px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            overflow-x: auto;
+            max-height: 500px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+        .json-viewer .key { color: #facc15; }
+        .json-viewer .string { color: #a3e635; }
+        .json-viewer .number { color: #60a5fa; }
+        .json-viewer .boolean { color: #f472b6; }
+        .json-viewer .null { color: #94a3b8; }
+
+        .publications-count {
+            background: #e9ecef;
+            padding: 0.2rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #1a365d;
+            font-weight: 600;
+        }
 
         @media (max-width: 768px) {
             .hero h1 { font-size: 32px; }
@@ -346,11 +384,11 @@
             <h3>Interactive Search Tool</h3>
             <p>Search all 200+ publications by keyword</p>
         </a>
-        <a href="03-publication-BHOC-Oxyglobin.md" class="quick-card">
+        <div class="quick-card" onclick="loadAndShowPublications()">
             <span class="icon">📋</span>
             <h3>Oxyglobin Publications</h3>
-            <p>Full list with Vancouver-style citations</p>
-        </a>
+            <p>Full list from publications.json</p>
+        </div>
         <a href="#about-this-database" class="quick-card">
             <span class="icon">📖</span>
             <h3>About This Database</h3>
@@ -367,8 +405,8 @@
     <h2 class="section-title">🏛️ Regulatory Approvals</h2>
     <div class="content-card">
         <div class="doc-grid">
-            <a href="FDA-registry.md"><i class="fas fa-file-pdf"></i> FDA Approval Details <span class="file-badge">.md</span></a>
-            <a href="EMA-approvals-summary.md"><i class="fas fa-file-pdf"></i> EMA Approvals Summary <span class="file-badge">.md</span></a>
+            <a href="FDA-registry.md"><i class="fas fa-file-pdf"></i> FDA Approval Details</a>
+            <a href="EMA-approvals-summary.md"><i class="fas fa-file-pdf"></i> EMA Approvals Summary</a>
         </div>
         <div style="margin-top:0.8rem;padding:0.8rem 1rem;background:#f8fafc;border-radius:1rem;font-size:0.9rem;">
             <p><strong>📋 FDA Approval:</strong> Oxyglobin (hemoglobin glutamer-200, bovine) — approved for canine anemia treatment.</p>
@@ -377,16 +415,27 @@
     </div>
 
     <!-- ===== ПУБЛИКАЦИИ ===== -->
-    <h2 class="section-title" id="publications-section">📄 Publications</h2>
+    <h2 class="section-title" id="publications-section">
+        📄 Publications
+        <span class="publications-count" id="pubCount">200+</span>
+    </h2>
     <div class="content-card">
-        <div class="doc-grid">
-            <a href="03-publication-BHOC-Oxyglobin.md"><i class="fas fa-file-alt"></i> Oxyglobin Publications (Vancouver) <span class="file-badge">.md</span></a>
-            <a href="publications.json"><i class="fas fa-code"></i> Publications JSON <span class="file-badge">.json</span></a>
-        </div>
-        <div style="margin-top:0.8rem;display:flex;flex-wrap:wrap;gap:0.8rem;">
-            <a href="03-publication-BHOC-Oxyglobin.md" style="background:#1a365d; color:white; border:none; border-radius:30px; padding:10px 24px; font-weight:600; text-decoration:none; display:inline-block;">
-                <i class="fas fa-list"></i> View All Publications
+        <div style="display:flex; flex-wrap:wrap; gap:0.8rem; margin-bottom:12px;">
+            <button onclick="loadAndShowPublications()" class="btn-primary">
+                <i class="fas fa-list"></i> Show All Publications
+            </button>
+            <a href="publications.json" class="btn-outline" target="_blank">
+                <i class="fas fa-file-code"></i> View JSON
             </a>
+            <a href="03-publication-BHOC-Oxyglobin.md" class="btn-outline" target="_blank">
+                <i class="fas fa-file-alt"></i> View Markdown
+            </a>
+        </div>
+        <div id="jsonViewerContainer">
+            <p style="color:#64748b; font-size:0.95rem;">
+                <i class="fas fa-info-circle"></i> 
+                Click <strong>"Show All Publications"</strong> to load and display all records from <code>publications.json</code>.
+            </p>
         </div>
     </div>
 
@@ -395,7 +444,6 @@
     <div class="content-card">
         <p style="margin-bottom:0.5rem;color:#334155;">
             Search all <strong>200+</strong> publications by keyword, author, species, or year.
-            <span style="font-size:0.85rem;color:#64748b;">(data loaded from <code>publications.json</code>)</span>
         </p>
 
         <div class="search-box">
@@ -403,14 +451,14 @@
             <button id="searchBtn"><i class="fas fa-search"></i> Search</button>
             <button id="clearBtn" class="clear-btn"><i class="fas fa-times"></i> Clear</button>
             <button id="showAllBtn" class="show-all-btn"><i class="fas fa-list"></i> Show All</button>
-            <button id="loadJsonBtn" style="background:#475569;"><i class="fas fa-sync"></i> Reload JSON</button>
+            <button id="loadJsonBtn" style="background:#475569;"><i class="fas fa-sync"></i> Reload</button>
         </div>
 
         <div class="pub-list" id="pubList">
-            <div class="loading-pubs"><i class="fas fa-spinner fa-spin"></i> Loading publications from publications.json...</div>
+            <div class="loading-pubs"><i class="fas fa-spinner fa-spin"></i> Loading publications...</div>
         </div>
         <p style="margin-top:0.8rem;font-size:0.85rem;color:#64748b;">
-            <i class="fas fa-info-circle"></i> 
+            <i class="fas fa-external-link-alt"></i> 
             <a href="search.html" style="color:#1a365d;font-weight:600;">Open full search page →</a>
         </p>
     </div>
@@ -468,7 +516,7 @@
         <p style="margin-top:8px;">The central concept is <strong>Precision Oxygen Therapeutics</strong>: focusing on oxygen delivery at the tissue level rather than on blood hemoglobin concentration alone.</p>
         <p style="margin-top:8px;">BHOC is intended as a complementary approach to the oxygen-delivery function of blood, while recognizing that blood performs many other essential physiological functions.</p>
         <p style="margin-top:12px;">
-            <a href="05-concept.md" style="background:#1a365d; color:white; border:none; border-radius:30px; padding:8px 20px; font-weight:600; text-decoration:none; display:inline-block;">
+            <a href="05-concept.md" class="btn-primary">
                 <i class="fas fa-book"></i> Read Full Concept
             </a>
         </p>
@@ -535,6 +583,9 @@
                 if (Array.isArray(data)) {
                     allPublications = data;
                     renderPublications('');
+                    // Update count
+                    document.getElementById('pubCount').textContent = allPublications.length;
+                    return data;
                 } else {
                     throw new Error('Invalid JSON format: expected array');
                 }
@@ -543,6 +594,7 @@
                 console.warn('Could not load publications.json, using fallback data.', err);
                 allPublications = getFallbackPublications();
                 renderPublications('');
+                document.getElementById('pubCount').textContent = allPublications.length;
             });
     }
 
@@ -557,10 +609,25 @@
             { id: 7, title: "Avian HBOC pharmacology in ducks", authors: "Andersson E, Nilsson T", journal: "Avian Dis", year: 2020, species: "avian", keywords: "duck, bird, pharmacology" },
             { id: 8, title: "Oxyglobin in ferrets with anemia", authors: "White S, Black R", journal: "Exotic Anim Pract", year: 2021, species: "exotic", keywords: "ferret, anemia" },
             { id: 9, title: "Human phase I trial of HBOC-201", authors: "Johnson M, Williams T", journal: "Crit Care Med", year: 2019, species: "human", keywords: "clinical, phase I, safety" },
-            { id: 10, title: "In vitro oxygen release kinetics", authors: "Chen Y, Liu Z", journal: "Artif Cells Nanomed Biotechnol", year: 2020, species: "in vitro", keywords: "kinetics, cell culture" },
-            { id: 11, title: "Oxyglobin for Jehovah's Witness patients", authors: "Roberts D, Adams J", journal: "J Clin Ethics", year: 2020, species: "human", keywords: "jehovah's witness, transfusion alternative" },
-            { id: 12, title: "HBOC vasoconstriction mechanisms", authors: "Patel N, Shah R", journal: "Shock", year: 2019, species: "rodent", keywords: "vasoconstriction, nitric oxide" },
-            { id: 13, title: "Renal toxicity of HBOCs in canines", authors: "O'Brien M, Murphy K", journal: "Vet Pathol", year: 2021, species: "canine", keywords: "renal, toxicity, kidney" },
-            { id: 14, title: "Equine neonatal foal resuscitation", authors: "Taylor S, Evans D", journal: "Equine Vet Educ", year: 2020, species: "equine", keywords: "foal, neonatal, resuscitation" },
-            { id: 15, title: "Oxyglobin in sea ducks (wildlife)", authors: "Foster L, Crane M", journal: "J Zoo Wildl Med", year: 2022, species: "exotic", keywords: "seaduck, wildlife, waterfowl" },
-            { id: 16, title: "HBOC-201 in sickle cell crisis", authors: "Green A, Hall B", journal: "Blood", year: 2019, species: "human", keywords: "sickle
+            { id: 10, title: "In vitro oxygen release kinetics", authors: "Chen Y, Liu Z", journal: "Artif Cells Nanomed Biotechnol", year: 2020, species: "in vitro", keywords: "kinetics, cell culture" }
+        ];
+    }
+
+    function renderPublications(filter = '') {
+        const list = document.getElementById('pubList');
+        const q = filter.toLowerCase().trim();
+
+        let filtered = allPublications;
+        if (q) {
+            filtered = allPublications.filter(p =>
+                (p.title && p.title.toLowerCase().includes(q)) ||
+                (p.authors && p.authors.toLowerCase().includes(q)) ||
+                (p.journal && p.journal.toLowerCase().includes(q)) ||
+                (p.species && p.species.toLowerCase().includes(q)) ||
+                (p.keywords && p.keywords.toLowerCase().includes(q)) ||
+                (p.year && p.year.toString().includes(q))
+            );
+        }
+
+        if (filtered.length === 0) {
+            list.innerHTML = `<div class="no-results"><i class="fas fa-search
