@@ -1,3 +1,13 @@
+<br>
+
+<p align="center">
+  <a href="#top" style="text-decoration: none; color: #1a365d; font-weight: 600; font-size: 14px; border: 2px solid #1a365d; border-radius: 6px; padding: 8px 24px; display: inline-block; background-color: #f7fafc;">
+    ↑ Back to Top
+  </a>
+</p>
+
+<br>
+
 # Veterinary HBOC Publications Database
 
 ## Hemoglobin-Based Oxygen Carriers — Oxyglobin Literature Review
