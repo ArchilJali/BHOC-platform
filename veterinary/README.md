@@ -119,11 +119,5 @@ To add new publications, please:
 3. Submit a pull request
 
 **Format for new entries:**
-```json
-{
-  "title": "Title of the paper",
-  "authors": "Author1, Author2, Author3",
-  "year": "2026",
-  "journal": "Journal Name",
-  "keywords": "keyword1, keyword2, keyword3"
-}
+ Please contact if you found mistake or would like to add publication 
+ Thank you 
