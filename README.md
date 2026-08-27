@@ -1,3 +1,6 @@
+<!-- ============================================================ -->
+<!-- HEADER - Like Veterinary HBOC Database                        -->
+<!-- ============================================================ -->
 
 <p align="center">
   <img src="https://img.shields.io/badge/BHOC-Biological%20Hemoglobin%20Oxygen%20Carrier-1a365d?style=for-the-badge&logo=github" alt="BHOC">
