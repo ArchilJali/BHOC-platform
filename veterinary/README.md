@@ -2,8 +2,8 @@
 
 ## Hemoglobin-Based Oxygen Carriers — Oxyglobin Literature Review
 
- (https://img.shields.io/badge/Version-2.0-blue.svg)
-[!(https://img.shields.io/badge/Records-200%2B-green.svg)]
+**Version:** 2.0
+**Records:** 200+ publication 
 [![License](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 ---
