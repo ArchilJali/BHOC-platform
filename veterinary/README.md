@@ -108,11 +108,3 @@ This database compiles **200+ peer-reviewed publications** on hemoglobin-based o
 If you would like to correct or add new publications, please contact us!
 
 ---
-
-## 📎 Related Documents
-
-| Document | Link |
-| :--- | :--- |
-| 📄 FDA Registry | [FDA-registry.md](FDA-registry.md) |
-| 📄 EMA Approvals | [EMA-approvals-summary.md](EMA-approvals-summary.md) |
-| 📄 Publications | [03-publication-BHOC-Oxyglobin.md](03-publication-BHOC-Oxyglobin.md) |
