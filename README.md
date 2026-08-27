@@ -5,13 +5,18 @@
 <p align="center">
   <img src="https://img.shields.io/badge/BHOC-Biological%20Hemoglobin%20Oxygen%20Carrier-1a365d?style=for-the-badge&logo=github" alt="BHOC">
 </p>
+
 <br>
+
 <h1 align="center">🩸 BHOC</h1>
 <h2 align="center" style="color: #1a365d;">Biological Hemoglobin Oxygen Carrier</h2>
+
 <br>
+
 <!-- ============================================================ -->
 <!-- PRECISION OXYGEN THERAPEUTICS HEADER - Visual Banner         -->
 <!-- ============================================================ -->
+
 <p align="center">
   <table>
     <tr>
@@ -36,41 +41,53 @@
 > ### 🎯 Delivering oxygen where it is needed, when it is needed, and in the amount needed — continuously, controllably, and at the tissue level.
 
 <br>
+
 ---
+
 <!-- ============================================================ -->
-<!-- DOCUMENTATION - BOX CARDS (NO LINKS)                        -->
+<!-- DOCUMENTATION - BIG SEPARATE BOX CARDS                       -->
 <!-- ============================================================ -->
 
 ## 📚 Documentation
+
+<br>
+
 <table>
   <tr>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; width: 20%; background-color: #f7fafc;">
-      <strong>🏥</strong><br>
-      <strong>Veterinary</strong><br>
-      <small>Application</small>
+    <td align="center" style="border: 3px solid #1a365d; border-radius: 15px; padding: 35px 20px; width: 20%; background-color: #f7fafc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <div style="font-size: 48px;">🏥</div>
+      <br>
+      <strong style="font-size: 20px; color: #1a365d;">Veterinary</strong><br>
+      <small style="font-size: 14px; color: #4a5568;">Application</small>
     </td>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; width: 20%; background-color: #f7fafc;">
-      <strong>🧬</strong><br>
-      <strong>Transplantation</strong><br>
-      <small>Application</small>
+    <td align="center" style="border: 3px solid #1a365d; border-radius: 15px; padding: 35px 20px; width: 20%; background-color: #f7fafc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <div style="font-size: 48px;">🧬</div>
+      <br>
+      <strong style="font-size: 20px; color: #1a365d;">Transplantation</strong><br>
+      <small style="font-size: 14px; color: #4a5568;">Application</small>
     </td>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; width: 20%; background-color: #f7fafc;">
-      <strong>⚕️</strong><br>
-      <strong>Human</strong><br>
-      <small>Medicine</small>
+    <td align="center" style="border: 3px solid #1a365d; border-radius: 15px; padding: 35px 20px; width: 20%; background-color: #f7fafc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <div style="font-size: 48px;">⚕️</div>
+      <br>
+      <strong style="font-size: 20px; color: #1a365d;">Human</strong><br>
+      <small style="font-size: 14px; color: #4a5568;">Medicine</small>
     </td>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; width: 20%; background-color: #f7fafc;">
-      <strong>🔬</strong><br>
-      <strong>Scientific</strong><br>
-      <small>Articles</small>
+    <td align="center" style="border: 3px solid #1a365d; border-radius: 15px; padding: 35px 20px; width: 20%; background-color: #f7fafc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <div style="font-size: 48px;">🔬</div>
+      <br>
+      <strong style="font-size: 20px; color: #1a365d;">Scientific</strong><br>
+      <small style="font-size: 14px; color: #4a5568;">Articles</small>
     </td>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; width: 20%; background-color: #f7fafc;">
-      <strong>📱</strong><br>
-      <strong>LinkedIn</strong><br>
-      <small>Publications</small>
+    <td align="center" style="border: 3px solid #1a365d; border-radius: 15px; padding: 35px 20px; width: 20%; background-color: #f7fafc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <div style="font-size: 48px;">📱</div>
+      <br>
+      <strong style="font-size: 20px; color: #1a365d;">LinkedIn</strong><br>
+      <small style="font-size: 14px; color: #4a5568;">Publications</small>
     </td>
   </tr>
 </table>
+
+<br>
 
 ---
 
@@ -82,7 +99,7 @@
 
 <table>
   <tr>
-    <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; background-color: #f7fafc;">
+    <td style="border: 3px solid #1a365d; border-radius: 15px; padding: 25px; background-color: #f7fafc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
       <strong>BHOC (Biological Hemoglobin Oxygen Carrier)</strong> is a hemoglobin-based oxygen carrier platform focused on supporting oxygen delivery beyond the conventional red blood cell transfusion model.
       <br><br>
       The central concept is <strong>Precision Oxygen Therapeutics</strong>: focusing on oxygen delivery at the tissue level rather than on blood hemoglobin concentration alone.
@@ -102,23 +119,33 @@
 
 Precision Oxygen Therapeutics focuses on four fundamental questions:
 
+<br>
+
 <table>
   <tr>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; width: 25%; background-color: #ebf8ff;">
-      <strong>📍 WHERE</strong><br><br>
-      <small>Where is oxygen needed?</small>
+    <td align="center" style="border: 3px solid #1a365d; border-radius: 15px; padding: 30px 15px; width: 25%; background-color: #ebf8ff; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <div style="font-size: 36px;">📍</div>
+      <br>
+      <strong style="font-size: 22px; color: #1a365d;">WHERE</strong><br><br>
+      <small style="font-size: 14px; color: #4a5568;">Where is oxygen needed?</small>
     </td>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; width: 25%; background-color: #e6fffa;">
-      <strong>⏰ WHEN</strong><br><br>
-      <small>When is additional oxygen delivery required?</small>
+    <td align="center" style="border: 3px solid #1a365d; border-radius: 15px; padding: 30px 15px; width: 25%; background-color: #e6fffa; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <div style="font-size: 36px;">⏰</div>
+      <br>
+      <strong style="font-size: 22px; color: #1a365d;">WHEN</strong><br><br>
+      <small style="font-size: 14px; color: #4a5568;">When is additional oxygen delivery required?</small>
     </td>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; width: 25%; background-color: #fefcbf;">
-      <strong>📊 HOW MUCH</strong><br><br>
-      <small>How much oxygen is required to support tissue demand?</small>
+    <td align="center" style="border: 3px solid #1a365d; border-radius: 15px; padding: 30px 15px; width: 25%; background-color: #fefcbf; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <div style="font-size: 36px;">📊</div>
+      <br>
+      <strong style="font-size: 22px; color: #1a365d;">HOW MUCH</strong><br><br>
+      <small style="font-size: 14px; color: #4a5568;">How much oxygen is required to support tissue demand?</small>
     </td>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; width: 25%; background-color: #fed7d0;">
-      <strong>🎮 CONTROL</strong><br><br>
-      <small>How can oxygen delivery be supported in a controlled and continuous manner?</small>
+    <td align="center" style="border: 3px solid #1a365d; border-radius: 15px; padding: 30px 15px; width: 25%; background-color: #fed7d0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <div style="font-size: 36px;">🎮</div>
+      <br>
+      <strong style="font-size: 22px; color: #1a365d;">CONTROL</strong><br><br>
+      <small style="font-size: 14px; color: #4a5568;">How can oxygen delivery be supported in a controlled and continuous manner?</small>
     </td>
   </tr>
 </table>
@@ -127,7 +154,7 @@ Precision Oxygen Therapeutics focuses on four fundamental questions:
 
 <table>
   <tr>
-    <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px; background-color: #f7fafc;">
+    <td style="border: 3px solid #1a365d; border-radius: 15px; padding: 20px; background-color: #f7fafc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
       The objective is to move the focus from simply increasing circulating hemoglobin toward understanding and supporting <strong>oxygen availability at the tissue level</strong>.
     </td>
   </tr>
@@ -143,7 +170,7 @@ Precision Oxygen Therapeutics focuses on four fundamental questions:
 
 <table>
   <tr>
-    <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; background-color: #f7fafc;">
+    <td style="border: 3px solid #1a365d; border-radius: 15px; padding: 25px; background-color: #f7fafc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
       Systemic measurements such as hemoglobin concentration and arterial oxygen saturation are important indicators of oxygen transport.
       <br><br>
       However, tissue oxygenation is influenced by multiple physiological processes, including:
@@ -182,7 +209,7 @@ Precision Oxygen Therapeutics focuses on four fundamental questions:
 
 <table>
   <tr>
-    <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; background-color: #f7fafc;">
+    <td style="border: 3px solid #1a365d; border-radius: 15px; padding: 25px; background-color: #f7fafc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
       A simplified oxygen-delivery pathway can be represented as:
       <br><br>
       <strong>Oxygen Loading → Transport → Distribution → Oxygen Unloading → Tissue Availability → Cellular Utilization</strong>
@@ -219,7 +246,7 @@ Precision Oxygen Therapeutics focuses on four fundamental questions:
 
 <table>
   <tr>
-    <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; background-color: #f7fafc;">
+    <td style="border: 3px solid #1a365d; border-radius: 15px; padding: 25px; background-color: #f7fafc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
       Blood performs many essential physiological functions, including:
       <br><br>
       <table>
@@ -258,7 +285,7 @@ Precision Oxygen Therapeutics focuses on four fundamental questions:
 
 <table>
   <tr>
-    <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; background-color: #f7fafc;">
+    <td style="border: 3px solid #1a365d; border-radius: 15px; padding: 25px; background-color: #f7fafc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
       BHOC is relevant to cellular regeneration research across many areas of life function support and "oxygen therapeutics" where transfusion and perfusion sciences are critical:
       <br><br>
       <details>
@@ -317,7 +344,7 @@ Precision Oxygen Therapeutics focuses on four fundamental questions:
 
 <table>
   <tr>
-    <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; background-color: #f7fafc;">
+    <td style="border: 3px solid #1a365d; border-radius: 15px; padding: 25px; background-color: #f7fafc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
       Research (applied) and development may explore applications where oxygen delivery is compromised, delayed, limited, and/or pressure limited and requires additional support.
       <br><br>
       Potential areas include:
@@ -360,7 +387,7 @@ Precision Oxygen Therapeutics focuses on four fundamental questions:
 
 <table>
   <tr>
-    <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; background-color: #f7fafc;">
+    <td style="border: 3px solid #1a365d; border-radius: 15px; padding: 25px; background-color: #f7fafc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
       This repository is intended to provide an open scientific entry point for information related to BHOC, hemoglobin-based oxygen carriers, oxygen therapeutics, and tissue-level oxygen delivery.
       <br><br>
       Future materials may include:
@@ -398,7 +425,7 @@ Precision Oxygen Therapeutics focuses on four fundamental questions:
 
 <table>
   <tr>
-    <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; background-color: #f7fafc;">
+    <td style="border: 3px solid #1a365d; border-radius: 15px; padding: 25px; background-color: #f7fafc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
       This repository is intended to provide an open scientific entry point for information related to BHOC, hemoglobin-based oxygen carriers, oxygen therapeutics, and tissue-level oxygen delivery.
       <br><br>
       Future materials may include:
@@ -436,7 +463,7 @@ Precision Oxygen Therapeutics focuses on four fundamental questions:
 
 <table>
   <tr>
-    <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; background-color: #f7fafc;">
+    <td style="border: 3px solid #1a365d; border-radius: 15px; padding: 25px; background-color: #f7fafc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
       A growing collection of relevant scientific publications will be organized around:
       <br><br>
       <table>
@@ -482,7 +509,7 @@ Precision Oxygen Therapeutics focuses on four fundamental questions:
 
 <table>
   <tr>
-    <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; background-color: #f7fafc;">
+    <td style="border: 3px solid #1a365d; border-radius: 15px; padding: 25px; background-color: #f7fafc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
       The development of Precision Oxygen Therapeutics requires understanding the relationship between:
       <br><br>
       <code>
@@ -512,26 +539,26 @@ Precision Oxygen Therapeutics focuses on four fundamental questions:
 
 <table>
   <tr>
-    <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; background-color: #ebf8ff;">
+    <td style="border: 3px solid #1a365d; border-radius: 15px; padding: 25px; background-color: #ebf8ff; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
       The long-term objective is to advance a scientific framework in which systemic and organ and tissue oxygen delivery can be regenerative as a therapeutic function:
       <br><br>
       <table>
         <tr>
-          <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px; width: 25%; background-color: #fff;">
-            <strong>📍 WHERE</strong><br>
-            <small>oxygen is needed</small>
+          <td align="center" style="border: 3px solid #1a365d; border-radius: 15px; padding: 20px 15px; width: 25%; background-color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <strong style="font-size: 20px; color: #1a365d;">📍 WHERE</strong><br>
+            <small style="font-size: 13px; color: #4a5568;">oxygen is needed</small>
           </td>
-          <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px; width: 25%; background-color: #fff;">
-            <strong>⏰ WHEN</strong><br>
-            <small>oxygen is needed</small>
+          <td align="center" style="border: 3px solid #1a365d; border-radius: 15px; padding: 20px 15px; width: 25%; background-color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <strong style="font-size: 20px; color: #1a365d;">⏰ WHEN</strong><br>
+            <small style="font-size: 13px; color: #4a5568;">oxygen is needed</small>
           </td>
-          <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px; width: 25%; background-color: #fff;">
-            <strong>📊 IN THE AMOUNT</strong><br>
-            <small>oxygen is needed</small>
+          <td align="center" style="border: 3px solid #1a365d; border-radius: 15px; padding: 20px 15px; width: 25%; background-color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <strong style="font-size: 20px; color: #1a365d;">📊 IN THE AMOUNT</strong><br>
+            <small style="font-size: 13px; color: #4a5568;">oxygen is needed</small>
           </td>
-          <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px; width: 25%; background-color: #fff;">
-            <strong>🎯 CONTINUOUSLY</strong><br>
-            <small>and controllably at the cell and mitochondrial level</small>
+          <td align="center" style="border: 3px solid #1a365d; border-radius: 15px; padding: 20px 15px; width: 25%; background-color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <strong style="font-size: 20px; color: #1a365d;">🎯 CONTINUOUSLY</strong><br>
+            <small style="font-size: 13px; color: #4a5568;">and controllably at the cell and mitochondrial level</small>
           </td>
         </tr>
       </table>
@@ -549,7 +576,7 @@ Precision Oxygen Therapeutics focuses on four fundamental questions:
 
 <table>
   <tr>
-    <td style="border: 3px solid #c53030; border-radius: 10px; padding: 20px; background-color: #fff5f5;">
+    <td style="border: 3px solid #c53030; border-radius: 15px; padding: 25px; background-color: #fff5f5; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
       <strong>BHOC and Precision Oxygen Therapeutics are presented here as a scientific and technology development platform.</strong>
       <br><br>
       Information in this repository should not be interpreted as medical advice, a clinical recommendation, or evidence of regulatory approval.
@@ -569,11 +596,11 @@ Precision Oxygen Therapeutics focuses on four fundamental questions:
 
 <table>
   <tr>
-    <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; background-color: #f7fafc; text-align: center;">
-      <strong>Archil Jaliashvili</strong><br>
-      <em>Biotechnology & Healthcare Innovation</em><br><br>
-      <strong>BHOC — Biological Hemoglobin Oxygen Carrier</strong><br>
-      <em>Precision Oxygen Therapeutics</em>
+    <td style="border: 3px solid #1a365d; border-radius: 15px; padding: 30px; background-color: #f7fafc; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <strong style="font-size: 18px; color: #1a365d;">Archil Jaliashvili</strong><br>
+      <em style="font-size: 16px; color: #4a5568;">Biotechnology & Healthcare Innovation</em><br><br>
+      <strong style="font-size: 16px; color: #1a365d;">BHOC — Biological Hemoglobin Oxygen Carrier</strong><br>
+      <em style="font-size: 15px; color: #4a5568;">Precision Oxygen Therapeutics</em>
     </td>
   </tr>
 </table>
