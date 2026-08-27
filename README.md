@@ -45,7 +45,7 @@
 ---
 
 <!-- ============================================================ -->
-<!-- DOCUMENTATION - BIG SEPARATE BOX CARDS                       -->
+<!-- DOCUMENTATION - BIG SEPARATE BOX CARDS WITH LINKS            -->
 <!-- ============================================================ -->
 
 ## 📚 Documentation
@@ -59,30 +59,40 @@
       <br>
       <strong style="font-size: 20px; color: #1a365d;">Veterinary</strong><br>
       <small style="font-size: 14px; color: #4a5568;">Application</small>
+      <br><br>
+      <a href="./veterinary/" style="text-decoration: none; color: #1a365d; font-weight: bold; border: 2px solid #1a365d; border-radius: 8px; padding: 8px 20px; display: inline-block; font-size: 14px;">→ Explore</a>
     </td>
     <td align="center" style="border: 3px solid #1a365d; border-radius: 15px; padding: 35px 20px; width: 20%; background-color: #f7fafc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
       <div style="font-size: 48px;">🧬</div>
       <br>
       <strong style="font-size: 20px; color: #1a365d;">Transplantation</strong><br>
       <small style="font-size: 14px; color: #4a5568;">Application</small>
+      <br><br>
+      <a href="./transplantation/" style="text-decoration: none; color: #1a365d; font-weight: bold; border: 2px solid #1a365d; border-radius: 8px; padding: 8px 20px; display: inline-block; font-size: 14px;">→ Explore</a>
     </td>
     <td align="center" style="border: 3px solid #1a365d; border-radius: 15px; padding: 35px 20px; width: 20%; background-color: #f7fafc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
       <div style="font-size: 48px;">⚕️</div>
       <br>
       <strong style="font-size: 20px; color: #1a365d;">Human</strong><br>
       <small style="font-size: 14px; color: #4a5568;">Medicine</small>
+      <br><br>
+      <a href="./human/" style="text-decoration: none; color: #1a365d; font-weight: bold; border: 2px solid #1a365d; border-radius: 8px; padding: 8px 20px; display: inline-block; font-size: 14px;">→ Explore</a>
     </td>
     <td align="center" style="border: 3px solid #1a365d; border-radius: 15px; padding: 35px 20px; width: 20%; background-color: #f7fafc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
       <div style="font-size: 48px;">🔬</div>
       <br>
       <strong style="font-size: 20px; color: #1a365d;">Scientific</strong><br>
       <small style="font-size: 14px; color: #4a5568;">Articles</small>
+      <br><br>
+      <a href="./science/" style="text-decoration: none; color: #1a365d; font-weight: bold; border: 2px solid #1a365d; border-radius: 8px; padding: 8px 20px; display: inline-block; font-size: 14px;">→ Explore</a>
     </td>
     <td align="center" style="border: 3px solid #1a365d; border-radius: 15px; padding: 35px 20px; width: 20%; background-color: #f7fafc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
       <div style="font-size: 48px;">📱</div>
       <br>
       <strong style="font-size: 20px; color: #1a365d;">LinkedIn</strong><br>
       <small style="font-size: 14px; color: #4a5568;">Publications</small>
+      <br><br>
+      <a href="./social-media/linkedin/" style="text-decoration: none; color: #1a365d; font-weight: bold; border: 2px solid #1a365d; border-radius: 8px; padding: 8px 20px; display: inline-block; font-size: 14px;">→ Explore</a>
     </td>
   </tr>
 </table>
@@ -614,11 +624,4 @@ Precision Oxygen Therapeutics focuses on four fundamental questions:
 <p align="center">
   <img src="https://img.shields.io/badge/BHOC-Biological%20Hemoglobin%20Oxygen%20Carrier-1a365d?style=flat-square&logo=github" alt="BHOC">
   <img src="https://img.shields.io/badge/Precision%20Oxygen%20Therapeutics-Research-2d3748?style=flat-square" alt="Precision Oxygen Therapeutics">
-  <img src="https://img.shields.io/badge/Tissue%20Level%20Oxygenation-Continuous%20Delivery-4a5568?style=flat-square" alt="Tissue Level Oxygenation">
-</p>
-
-<br>
-
-<p align="center">
-  <sub><strong>BHOC</strong> — Biological Hemoglobin Oxygen Carrier | Precision Oxygen Therapeutics</sub>
-</p>
+  <img src="https://img.shields.io/badge/Tissue%20Level%20Oxygenation-Continuous%20
