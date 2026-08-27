@@ -13,9 +13,27 @@
 
 <br>
 
+<!-- ============================================================ -->
+<!-- PRECISION OXYGEN THERAPEUTICS HEADER - Visual Banner         -->
+<!-- ============================================================ -->
+
 <p align="center">
-  <img src="https://img.shields.io/badge/Precision%20Oxygen%20Therapeutics-Tissue%20Level%20Delivery-2d3748?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Oxygenation-Continuous%20%26%20Controlled-4a5568?style=for-the-badge">
+  <table>
+    <tr>
+      <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px 30px; background-color: #ebf8ff; font-weight: bold; font-size: 18px; color: #1a365d;">
+        PRECISION OXYGEN THERAPEUTICS
+      </td>
+      <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px 30px; background-color: #e6fffa; font-weight: bold; font-size: 18px; color: #1a365d;">
+        TISSUE LEVEL DELIVERY
+      </td>
+      <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px 30px; background-color: #fefcbf; font-weight: bold; font-size: 18px; color: #1a365d;">
+        OXYGENATION
+      </td>
+      <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px 30px; background-color: #fed7d0; font-weight: bold; font-size: 18px; color: #1a365d;">
+        CONTINUOUS & CONTROLLED
+      </td>
+    </tr>
+  </table>
 </p>
 
 <br>
@@ -27,59 +45,37 @@
 ---
 
 <!-- ============================================================ -->
-<!-- STATS BANNER - Like first page                                -->
-<!-- ============================================================ -->
-
-<p align="center">
-  <table>
-    <tr>
-      <td align="center"><strong>📚 200+</strong><br><small>Publications</small></td>
-      <td align="center"><strong>🔬 12+</strong><br><small>Research Areas</small></td>
-      <td align="center"><strong>🩸</strong><br><small>HBOC Platform</small></td>
-      <td align="center"><strong>🎯</strong><br><small>Precision Oxygen</small></td>
-    </tr>
-  </table>
-</p>
-
----
-
-<!-- ============================================================ -->
-<!-- DOCUMENTATION - BOX CARDS                                    -->
+<!-- DOCUMENTATION - BOX CARDS (NO LINKS)                        -->
 <!-- ============================================================ -->
 
 ## 📚 Documentation
 
 <table>
   <tr>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px; width: 20%;">
+    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; width: 20%; background-color: #f7fafc;">
       <strong>🏥</strong><br>
       <strong>Veterinary</strong><br>
-      <small>Application</small><br>
-      <a href="./veterinary/">→ Explore</a>
+      <small>Application</small>
     </td>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px; width: 20%;">
+    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; width: 20%; background-color: #f7fafc;">
       <strong>🧬</strong><br>
       <strong>Transplantation</strong><br>
-      <small>Application</small><br>
-      <a href="./transplantation/">→ Explore</a>
+      <small>Application</small>
     </td>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px; width: 20%;">
+    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; width: 20%; background-color: #f7fafc;">
       <strong>⚕️</strong><br>
       <strong>Human</strong><br>
-      <small>Medicine</small><br>
-      <a href="./human/">→ Explore</a>
+      <small>Medicine</small>
     </td>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px; width: 20%;">
+    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; width: 20%; background-color: #f7fafc;">
       <strong>🔬</strong><br>
       <strong>Scientific</strong><br>
-      <small>Articles</small><br>
-      <a href="./science/">→ Explore</a>
+      <small>Articles</small>
     </td>
-    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px; width: 20%;">
+    <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; width: 20%; background-color: #f7fafc;">
       <strong>📱</strong><br>
       <strong>LinkedIn</strong><br>
-      <small>Publications</small><br>
-      <a href="./social-media/linkedin/">→ Explore</a>
+      <small>Publications</small>
     </td>
   </tr>
 </table>
