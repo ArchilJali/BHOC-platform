@@ -1,504 +1,572 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BHOC — Biological Hemoglobin Oxygen Carrier</title>
     <style>
+        /* ===== RESET & BASE ===== */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
-            background: #f8fafc;
-            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            background-color: #f0f4f8;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             padding: 30px 20px;
+            color: #1a202c;
             display: flex;
             justify-content: center;
         }
+
         .container {
             max-width: 1100px;
             width: 100%;
-            background: white;
-            border-radius: 28px;
-            box-shadow: 0 20px 40px -12px rgba(0,0,0,0.12);
-            padding: 30px 30px 40px;
+            background-color: #f0f4f8;
         }
-        /* header banner */
-        .banner {
-            background: #1a365d;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 60px;
-            display: inline-block;
+
+        /* ===== HEADER ===== */
+        .header-badge {
+            background-color: #1a365d;
+            color: #ffffff;
+            padding: 10px 30px;
+            border-radius: 8px;
             font-weight: 700;
-            font-size: 16px;
-            letter-spacing: 1.2px;
+            font-size: 18px;
+            display: inline-block;
+            letter-spacing: 1px;
             margin-bottom: 12px;
         }
-        .main-title {
-            font-size: 44px;
-            font-weight: 700;
+
+        h1 {
             color: #1a365d;
-            letter-spacing: -0.5px;
+            font-size: 42px;
+            font-weight: 700;
             margin: 0;
             line-height: 1.2;
         }
-        .main-title span {
+
+        .subtitle {
             color: #2d3748;
+            font-size: 22px;
             font-weight: 400;
-            font-size: 26px;
-            display: block;
-            margin-top: 4px;
-            letter-spacing: 0.2px;
+            margin: 5px 0 20px 0;
         }
+
+        .tagline {
+            font-size: 15px;
+            color: #2d3748;
+            max-width: 700px;
+            margin: 10px auto 0 auto;
+            font-style: italic;
+            text-align: center;
+        }
+
+        /* ===== STATS BANNER (4 цветные коробки) ===== */
         .stats-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px 18px;
-            margin: 28px 0 16px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin: 25px 0 10px 0;
         }
+
         .stat-box {
             border: 2px solid #1a365d;
-            border-radius: 14px;
-            padding: 10px 24px;
-            background: #ebf8ff;
+            border-radius: 8px;
+            padding: 14px 10px;
+            text-align: center;
             font-weight: 600;
             font-size: 13px;
             color: #1a365d;
-            text-align: center;
+            background-color: #ffffff;
             line-height: 1.4;
-            min-width: 120px;
-        }
-        .stat-box:nth-child(2) { background: #e6fffa; }
-        .stat-box:nth-child(3) { background: #fefcbf; }
-        .stat-box:nth-child(4) { background: #fed7d0; }
-        .tagline {
-            font-style: italic;
-            color: #2d3748;
-            font-size: 16px;
-            text-align: center;
-            max-width: 700px;
-            margin: 6px auto 28px;
-            border-top: 1px solid #e2e8f0;
-            padding-top: 20px;
-        }
-        hr {
-            border: none;
-            border-top: 2px solid #e2e8f0;
-            margin: 28px 0;
         }
 
-        /* cards */
+        .stat-box.blue {
+            background-color: #ebf8ff;
+        }
+        .stat-box.teal {
+            background-color: #e6fffa;
+        }
+        .stat-box.yellow {
+            background-color: #fefcbf;
+        }
+        .stat-box.red {
+            background-color: #fed7d0;
+        }
+
+        /* ===== CARDS ===== */
         .section-title {
-            font-size: 26px;
+            font-size: 24px;
             font-weight: 700;
             color: #1a365d;
-            margin: 30px 0 14px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            margin: 40px 0 16px 0;
+            letter-spacing: -0.5px;
         }
+
         .card-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 14px;
-            justify-content: center;
-            margin: 12px 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 16px;
+            margin-bottom: 20px;
         }
+
         .card {
+            background-color: #ffffff;
             border: 2px solid #1a365d;
-            border-radius: 18px;
-            padding: 20px 14px 18px;
-            background: white;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            border-radius: 12px;
+            padding: 22px 12px 18px 12px;
             text-align: center;
-            flex: 0 0 140px;
-            transition: 0.15s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+            transition: transform 0.1s ease;
         }
-        .card:hover {
-            box-shadow: 0 8px 20px rgba(26,54,93,0.08);
+
+        .card .icon {
+            font-size: 32px;
+            line-height: 1.2;
         }
-        .card .emoji-big {
-            font-size: 36px;
-            display: block;
-            margin-bottom: 6px;
-        }
-        .card strong {
-            display: block;
-            font-size: 15px;
+
+        .card .label {
+            font-weight: 700;
+            font-size: 14px;
             color: #1a365d;
-            margin: 6px 0 2px;
+            margin: 6px 0 2px 0;
         }
-        .card small {
+
+        .card .sub-label {
             font-size: 11px;
             color: #718096;
             display: block;
             margin-bottom: 10px;
         }
-        .card a {
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 12px;
-            color: #1a365d;
-            border: 2px solid #1a365d;
-            border-radius: 30px;
-            padding: 4px 18px;
+
+        .card .btn {
             display: inline-block;
+            text-decoration: none;
+            color: #1a365d;
+            font-weight: 600;
+            border: 2px solid #1a365d;
+            border-radius: 6px;
+            padding: 4px 16px;
+            font-size: 11px;
             background: transparent;
             transition: 0.15s;
         }
-        .card a:hover {
-            background: #1a365d;
-            color: white;
-        }
-        .card .coming {
-            color: #a0aec0;
-            font-size: 11px;
-            font-weight: 500;
+
+        .card .btn:hover {
+            background-color: #1a365d;
+            color: #ffffff;
         }
 
-        .info-card {
+        .card .btn-disabled {
+            color: #a0aec0;
+            border-color: #a0aec0;
+            cursor: default;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid #a0aec0;
+            border-radius: 6px;
+            padding: 4px 16px;
+            font-size: 11px;
+            background: transparent;
+            pointer-events: none;
+        }
+
+        /* ===== FULL-WIDTH CONTENT CARDS ===== */
+        .content-card {
+            background-color: #ffffff;
             border: 2px solid #1a365d;
-            border-radius: 18px;
-            padding: 22px 26px;
-            background: #f7fafc;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
-            margin: 12px 0 16px;
+            border-radius: 12px;
+            padding: 22px 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
         }
-        .info-card p {
-            font-size: 15px;
-            line-height: 1.6;
-            color: #1e293b;
+
+        .content-card.blue-bg {
+            background-color: #ebf8ff;
         }
-        .info-card ul {
+
+        .content-card.warning {
+            border-color: #c53030;
+            background-color: #fff5f5;
+        }
+
+        .content-card ul,
+        .content-card .grid-2col {
             list-style: none;
+            padding: 0;
+            margin: 8px 0 0 0;
+        }
+
+        .grid-2col {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4px 20px;
-            margin: 10px 0 6px;
+            gap: 2px 20px;
         }
-        .info-card ul li {
-            padding: 4px 0;
+
+        .grid-3col {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2px 20px;
+        }
+
+        .grid-2col li,
+        .grid-3col li {
+            padding: 3px 0;
             font-size: 14px;
         }
-        .info-card ul li::before {
-            content: "•";
+
+        .grid-2col li::before,
+        .grid-3col li::before {
+            content: "• ";
             color: #1a365d;
             font-weight: 700;
-            margin-right: 8px;
         }
-        .code-block {
+
+        .inline-badge {
+            display: inline-block;
             background: #edf2f7;
-            padding: 16px 18px;
-            border-radius: 12px;
-            font-size: 14px;
-            line-height: 1.9;
-            font-family: 'Menlo', monospace;
-            margin: 8px 0;
+            padding: 12px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            line-height: 1.8;
+            font-family: monospace;
+            width: 100%;
+            margin: 6px 0 10px 0;
         }
-        .pill-box {
+
+        .vision-list {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 18px 30px;
-            padding: 6px 0 10px;
+            gap: 12px 28px;
+            padding: 6px 0 0 0;
         }
-        .pill-box span {
+
+        .vision-list span {
             font-size: 16px;
-            font-weight: 500;
             color: #1a365d;
         }
 
-        /* database / publications section (like screenshot) */
-        .db-section {
-            background: #f0f4fb;
-            border-radius: 24px;
-            padding: 24px 28px 28px;
-            margin: 32px 0 18px;
-            border: 1px solid #dce5f0;
-        }
-        .db-header {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: baseline;
-            justify-content: space-between;
-        }
-        .db-header h2 {
-            font-size: 24px;
+        .vision-list strong {
             font-weight: 700;
-            color: #0b2a4a;
-            letter-spacing: -0.3px;
-        }
-        .db-badge {
-            background: #1a365d;
-            color: white;
-            font-weight: 600;
-            padding: 6px 18px;
-            border-radius: 40px;
-            font-size: 13px;
-        }
-        .db-stats {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 14px 28px;
-            margin: 16px 0 14px;
-            font-weight: 600;
-            color: #1e3a5f;
-        }
-        .db-stats span {
-            background: white;
-            padding: 4px 18px 4px 14px;
-            border-radius: 40px;
-            border: 1px solid #cbd5e1;
-            font-size: 14px;
-        }
-        .db-stats i {
-            font-style: normal;
-            background: #1a365d;
-            color: white;
-            border-radius: 40px;
-            padding: 0 12px;
-            margin-right: 6px;
-        }
-        .db-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px 20px;
-            margin: 18px 0 10px;
-        }
-        .db-card {
-            background: white;
-            border-radius: 18px;
-            padding: 16px 18px;
-            flex: 1 0 180px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.02);
-            border: 1px solid #dce5f0;
-        }
-        .db-card .db-icon {
-            font-size: 22px;
-            display: block;
-            margin-bottom: 6px;
-        }
-        .db-card strong {
-            font-size: 15px;
-            color: #0b2a4a;
-        }
-        .db-card small {
-            display: block;
-            color: #4a627a;
-            font-size: 13px;
-            margin: 4px 0 8px;
-        }
-        .db-card a {
-            font-weight: 600;
-            font-size: 13px;
-            color: #1a365d;
-            text-decoration: none;
-            border-bottom: 2px solid #1a365d;
-            padding-bottom: 2px;
-        }
-        .db-card a:hover {
-            opacity: 0.7;
-        }
-        .db-note {
-            background: #e9eef6;
-            border-radius: 40px;
-            padding: 10px 20px;
-            font-size: 14px;
-            color: #1a365d;
-            display: inline-block;
-            margin-top: 6px;
         }
 
-        /* responsive */
-        @media (max-width: 640px) {
-            .container { padding: 18px; }
-            .main-title { font-size: 34px; }
-            .main-title span { font-size: 20px; }
-            .card { flex: 0 0 120px; padding: 14px 8px; }
-            .info-card ul { grid-template-columns: 1fr; }
-            .db-header { flex-direction: column; align-items: start; gap: 8px; }
+        hr {
+            margin: 32px 0 8px 0;
+            border: 0;
+            border-top: 2px solid #e2e8f0;
         }
-        .mt-2 { margin-top: 8px; }
-        .mb-1 { margin-bottom: 6px; }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 700px) {
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .grid-2col,
+            .grid-3col {
+                grid-template-columns: 1fr;
+            }
+            .card-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            .vision-list {
+                flex-direction: column;
+                align-items: center;
+                gap: 4px;
+            }
+            .content-card {
+                padding: 18px 16px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
+
 <div class="container">
 
-    <!-- header -->
-    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 20px; margin-bottom: 12px;">
-        <div class="banner">BHOC — Biological Hemoglobin Oxygen Carrier</div>
+    <!-- ===== HEADER ===== -->
+    <div style="text-align: center;">
+        <span class="header-badge">BHOC — Biological Hemoglobin Oxygen Carrier</span>
+        <h1>🩸 BHOC</h1>
+        <div class="subtitle">Biological Hemoglobin Oxygen Carrier</div>
+        <div class="tagline">
+            Delivering oxygen where it is needed, when it is needed, and in the amount needed — continuously, controllably, and at the tissue level.
+        </div>
     </div>
-    <h1 class="main-title">🩸 BHOC <span>Biological Hemoglobin Oxygen Carrier</span></h1>
 
-    <!-- colored stats -->
+    <!-- ===== STATS BANNER (4 цветные коробки) ===== -->
     <div class="stats-grid">
-        <div class="stat-box">PRECISION OXYGEN<br>THERAPEUTICS</div>
-        <div class="stat-box">TISSUE LEVEL<br>DELIVERY</div>
-        <div class="stat-box">OXYGENATION</div>
-        <div class="stat-box">CONTINUOUS &<br>CONTROLLED</div>
+        <div class="stat-box blue">PRECISION OXYGEN<br>THERAPEUTICS</div>
+        <div class="stat-box teal">TISSUE LEVEL<br>DELIVERY</div>
+        <div class="stat-box yellow">OXYGENATION</div>
+        <div class="stat-box red">CONTINUOUS &<br>CONTROLLED</div>
     </div>
-    <div class="tagline">Delivering oxygen where it is needed, when it is needed, and in the amount needed — continuously, controllably, and at the tissue level.</div>
-    <hr>
 
-    <!-- documentation cards -->
-    <div class="section-title">📚 Documentation</div>
+    <!-- ===== CARDS: Documentation ===== -->
+    <h2 class="section-title">📚 Documentation</h2>
     <div class="card-grid">
-        <div class="card"><span class="emoji-big">🏥</span><strong>Veterinary</strong><small>Application</small><a href="#">Explore →</a></div>
-        <div class="card"><span class="emoji-big">🧬</span><strong>Transplantation</strong><small>Application</small><span class="coming">Coming soon</span></div>
-        <div class="card"><span class="emoji-big">⚕️</span><strong>Human</strong><small>Medicine</small><span class="coming">Coming soon</span></div>
-        <div class="card"><span class="emoji-big">🔬</span><strong>Scientific</strong><small>Articles</small><a href="#">Explore →</a></div>
-        <div class="card"><span class="emoji-big">📱</span><strong>LinkedIn</strong><small>Publications</small><a href="#">Explore →</a></div>
+        <!-- Veterinary -->
+        <div class="card">
+            <div class="icon">🏥</div>
+            <div class="label">Veterinary</div>
+            <span class="sub-label">Application</span>
+            <a href="/veterinary" class="btn">Explore →</a>
+        </div>
+        <!-- Transplantation -->
+        <div class="card">
+            <div class="icon">🧬</div>
+            <div class="label">Transplantation</div>
+            <span class="sub-label">Application</span>
+            <span class="btn-disabled">Coming soon</span>
+        </div>
+        <!-- Human -->
+        <div class="card">
+            <div class="icon">⚕️</div>
+            <div class="label">Human</div>
+            <span class="sub-label">Medicine</span>
+            <span class="btn-disabled">Coming soon</span>
+        </div>
+        <!-- Scientific -->
+        <div class="card">
+            <div class="icon">🔬</div>
+            <div class="label">Scientific</div>
+            <span class="sub-label">Articles</span>
+            <a href="/science" class="btn">Explore →</a>
+        </div>
+        <!-- LinkedIn -->
+        <div class="card">
+            <div class="icon">📱</div>
+            <div class="label">LinkedIn</div>
+            <span class="sub-label">Publications</span>
+            <a href="/social-media/linkedin" class="btn">Explore →</a>
+        </div>
     </div>
 
-    <!-- About -->
-    <div class="section-title">📖 About BHOC</div>
-    <div class="info-card">
-        <p><strong>BHOC (Biological Hemoglobin Oxygen Carrier)</strong> is a hemoglobin-based oxygen carrier platform focused on supporting oxygen delivery beyond the conventional red blood cell transfusion model.</p>
-        <p style="margin-top: 10px;">The central concept is <strong>Precision Oxygen Therapeutics</strong>: focusing on oxygen delivery at the tissue level rather than on blood hemoglobin concentration alone.</p>
-        <p style="margin-top: 10px;">BHOC is intended as a complementary approach to the oxygen-delivery function of blood, while recognizing that blood performs many other essential physiological functions.</p>
-    </div>
-    <hr>
-
-    <!-- precision oxygen therapeutics -->
-    <div class="section-title">🎯 Precision Oxygen Therapeutics</div>
-    <p style="color:#4a5568; margin-bottom: 14px;">Precision Oxygen Therapeutics focuses on four fundamental questions:</p>
-    <div class="card-grid">
-        <div class="card" style="background:#ebf8ff;"><span style="font-size:30px;">📍</span><strong>WHERE</strong><small>Where is oxygen needed?</small></div>
-        <div class="card" style="background:#e6fffa;"><span style="font-size:30px;">⏰</span><strong>WHEN</strong><small>When is additional oxygen delivery required?</small></div>
-        <div class="card" style="background:#fefcbf;"><span style="font-size:30px;">📊</span><strong>HOW MUCH</strong><small>How much oxygen is required to support tissue demand?</small></div>
-        <div class="card" style="background:#fed7d0;"><span style="font-size:30px;">🎮</span><strong>CONTROL</strong><small>How can oxygen delivery be supported in a controlled and continuous manner?</small></div>
-    </div>
-    <div class="info-card" style="background:#f7fafc; border-color:#1a365d;">
-        <p>The objective is to move the focus from simply increasing circulating hemoglobin toward understanding and supporting <strong>oxygen availability at the tissue level</strong>.</p>
+    <!-- ===== ABOUT BHOC ===== -->
+    <h2 class="section-title">📖 About BHOC</h2>
+    <div class="content-card">
+        <strong>BHOC (Biological Hemoglobin Oxygen Carrier)</strong> is a hemoglobin-based oxygen carrier platform focused on supporting oxygen delivery beyond the conventional red blood cell transfusion model.
+        <br><br>
+        The central concept is <strong>Precision Oxygen Therapeutics</strong>: focusing on oxygen delivery at the tissue level rather than on blood hemoglobin concentration alone.
+        <br><br>
+        BHOC is intended as a complementary approach to the oxygen-delivery function of blood, while recognizing that blood performs many other essential physiological functions.
     </div>
 
-    <!-- Tissue-Level -->
-    <div class="section-title">🫁 Tissue-Level Oxygen Delivery</div>
-    <div class="info-card">
-        <p>Systemic measurements such as hemoglobin concentration and arterial oxygen saturation are important indicators of oxygen transport.</p>
-        <p style="margin-top: 10px;">However, tissue oxygenation is influenced by multiple physiological processes, including:</p>
-        <ul>
-            <li>Oxygen content</li><li>Cardiac output</li>
-            <li>Microcirculation</li><li>Oxygen extraction</li>
-            <li>Diffusion</li><li>Tissue oxygen demand</li>
+    <!-- ===== PRECISION OXYGEN THERAPEUTICS ===== -->
+    <h2 class="section-title">🎯 Precision Oxygen Therapeutics</h2>
+    <div style="font-size: 14px; color: #4a5568; margin-bottom: 12px;">Precision Oxygen Therapeutics focuses on four fundamental questions:</div>
+
+    <div class="stats-grid" style="margin-top: 0;">
+        <div class="stat-box blue" style="background-color: #ebf8ff;">
+            <div style="font-size: 28px;">📍</div>
+            <strong style="font-size: 17px;">WHERE</strong><br>
+            <small style="font-size: 10px; color: #4a5568;">Where is oxygen needed?</small>
+        </div>
+        <div class="stat-box teal" style="background-color: #e6fffa;">
+            <div style="font-size: 28px;">⏰</div>
+            <strong style="font-size: 17px;">WHEN</strong><br>
+            <small style="font-size: 10px; color: #4a5568;">When is additional oxygen delivery required?</small>
+        </div>
+        <div class="stat-box yellow" style="background-color: #fefcbf;">
+            <div style="font-size: 28px;">📊</div>
+            <strong style="font-size: 17px;">HOW MUCH</strong><br>
+            <small style="font-size: 10px; color: #4a5568;">How much oxygen is required to support tissue demand?</small>
+        </div>
+        <div class="stat-box red" style="background-color: #fed7d0;">
+            <div style="font-size: 28px;">🎮</div>
+            <strong style="font-size: 17px;">CONTROL</strong><br>
+            <small style="font-size: 10px; color: #4a5568;">How can oxygen delivery be supported in a controlled and continuous manner?</small>
+        </div>
+    </div>
+
+    <div class="content-card" style="margin-top: 8px;">
+        The objective is to move the focus from simply increasing circulating hemoglobin toward understanding and supporting <strong>oxygen availability at the tissue level</strong>.
+    </div>
+
+    <!-- ===== TISSUE-LEVEL OXYGEN DELIVERY ===== -->
+    <h2 class="section-title">🫁 Tissue-Level Oxygen Delivery</h2>
+    <div class="content-card">
+        Systemic measurements such as hemoglobin concentration and arterial oxygen saturation are important indicators of oxygen transport.
+        <br><br>
+        However, tissue oxygenation is influenced by multiple physiological processes, including:
+        <br><br>
+        <ul class="grid-2col">
+            <li>Oxygen content</li>
+            <li>Cardiac output</li>
+            <li>Microcirculation</li>
+            <li>Oxygen extraction</li>
+            <li>Diffusion</li>
+            <li>Tissue oxygen demand</li>
             <li>Cellular oxygen utilization</li>
         </ul>
-        <p style="margin-top: 10px;">BHOC research and development is centered on the broader question of how hemoglobin-based oxygen transport can contribute to oxygen availability at the tissue level.</p>
+        <br>
+        BHOC research and development is centered on the broader question of how hemoglobin-based oxygen transport can contribute to oxygen availability at the tissue level.
     </div>
 
-    <!-- How Oxygen Delivery Works -->
-    <div class="section-title">🔄 How Oxygen Delivery Works</div>
-    <div class="info-card">
-        <p>A simplified oxygen-delivery pathway can be represented as:</p>
-        <p style="font-weight:600; margin: 8px 0 12px;">Oxygen Loading → Transport → Distribution → Oxygen Unloading → Tissue Availability → Cellular Utilization</p>
-        <details style="margin-top: 6px;">
-            <summary style="font-weight:600; color:#1a365d; cursor:pointer;">📋 View important scientific concepts</summary>
-            <div style="background:#edf2f7; border-radius:12px; padding:12px 16px; margin-top:10px;">
-                <table style="width:100%; border-collapse:collapse; font-size:14px;">
-                    <tr><td style="padding:6px 8px; font-weight:600;">Hemoglobin</td><td>Hemoglobin, Oxygen binding, Oxygen dissociation, P50, Oxygen unloading, 2,3-DPG</td></tr>
-                    <tr><td style="padding:6px 8px; font-weight:600;">Physiology</td><td>Nitric oxide biology, Microcirculation, Oxygen extraction, DO₂, VO₂, Tissue oxygenation</td></tr>
-                    <tr><td style="padding:6px 8px; font-weight:600;">Pathology</td><td>Ischemia, Reperfusion</td></tr>
-                </table>
-            </div>
+    <!-- ===== HOW OXYGEN DELIVERY WORKS ===== -->
+    <h2 class="section-title">🔄 How Oxygen Delivery Works</h2>
+    <div class="content-card">
+        A simplified oxygen-delivery pathway can be represented as:
+        <br><br>
+        <strong>Oxygen Loading → Transport → Distribution → Oxygen Unloading → Tissue Availability → Cellular Utilization</strong>
+        <br><br>
+        <details>
+            <summary><strong>📋 View important scientific concepts</strong></summary>
+            <br>
+            <table style="width:100%; border-collapse: collapse; border: 1px solid #e2e8f0; font-size: 13px;">
+                <tr>
+                    <td style="border: 1px solid #e2e8f0; padding: 6px 12px; background-color: #f7fafc; font-weight:600;">Hemoglobin</td>
+                    <td style="border: 1px solid #e2e8f0; padding: 6px 12px;">Hemoglobin, Oxygen binding, Oxygen dissociation, P50, Oxygen unloading, 2,3-DPG</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #e2e8f0; padding: 6px 12px; background-color: #f7fafc; font-weight:600;">Physiology</td>
+                    <td style="border: 1px solid #e2e8f0; padding: 6px 12px;">Nitric oxide biology, Microcirculation, Oxygen extraction, DO₂, VO₂, Tissue oxygenation</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #e2e8f0; padding: 6px 12px; background-color: #f7fafc; font-weight:600;">Pathology</td>
+                    <td style="border: 1px solid #e2e8f0; padding: 6px 12px;">Ischemia, Reperfusion</td>
+                </tr>
+            </table>
         </details>
     </div>
 
-    <!-- BHOC and Blood -->
-    <div class="section-title">🩸 BHOC and Blood</div>
-    <div class="info-card">
-        <p>Blood performs many essential physiological functions, including:</p>
-        <ul>
-            <li>Oxygen carrier transport and distribution</li><li>Cellular and protein components that are critical to osmotic pressure fluid balance</li>
-            <li>Carbon dioxide transport</li><li>Coagulation</li>
-            <li>Immune system management functions</li><li>Acid-base regulation as well as ionic balance</li>
+    <!-- ===== BHOC AND BLOOD ===== -->
+    <h2 class="section-title">🩸 BHOC and Blood</h2>
+    <div class="content-card">
+        Blood performs many essential physiological functions, including:
+        <br><br>
+        <ul class="grid-2col">
+            <li>Oxygen carrier transport and distribution</li>
+            <li>Cellular and protein components that are critical to osmotic pressure fluid balance</li>
+            <li>Carbon dioxide transport</li>
+            <li>Coagulation</li>
+            <li>Immune system management functions</li>
+            <li>Acid-base regulation as well as ionic balance</li>
             <li>Signaling and other biological functions</li>
         </ul>
-        <p style="margin-top: 10px;">BHOC focuses specifically on the cooperative oxygen-delivery and distribution function.</p>
-        <p style="margin-top: 10px; font-weight:600;">Therefore, BHOCs have been developed and evaluated as an immediate and complementary oxygenation support, rather than as a substitute for all functions of blood.</p>
+        <br>
+        BHOC focuses specifically on the cooperative oxygen-delivery and distribution function.
+        <br><br>
+        <strong>Therefore, BHOCs have been developed and evaluated as an immediate and complementary oxygenation support, rather than as a substitute for all functions of blood.</strong>
     </div>
 
-    <!-- Research Areas -->
-    <div class="section-title">🔬 Research Areas</div>
-    <div class="info-card">
-        <p>BHOC is relevant to cellular regeneration research across many areas of life function support and "oxygen therapeutics" where transfusion and perfusion sciences are critical:</p>
-        <ul style="grid-template-columns:1fr 1fr;">
-            <li>Hemoglobin-Based Oxygen Carriers (HBOCs)</li><li>Oxygen Therapeutics</li>
-            <li>Precision Oxygenation</li><li>Tissue Oxygenation</li>
-            <li>Oxygen Delivery</li><li>Transfusion Medicine</li>
-            <li>Artificial Blood Research</li><li>Blood Substitutes</li>
-            <li>Microvascular Oxygenation</li><li>Ischemia and Reperfusion</li>
-            <li>Organ Preservation</li><li>Machine Perfusion</li>
-            <li>Trauma</li><li>Emergency Medicine</li>
-            <li>Prehospital Medicine</li><li>Surgery</li>
-            <li>Veterinary Medicine</li><li>Disease management and control</li>
+    <!-- ===== RESEARCH AREAS ===== -->
+    <h2 class="section-title">🔬 Research Areas</h2>
+    <div class="content-card">
+        BHOC is relevant to cellular regeneration research across many areas of life function support and "oxygen therapeutics" where transfusion and perfusion sciences are critical:
+        <br><br>
+        <ul class="grid-2col">
+            <li>Hemoglobin-Based Oxygen Carriers (HBOCs)</li>
+            <li>Oxygen Therapeutics</li>
+            <li>Precision Oxygenation</li>
+            <li>Tissue Oxygenation</li>
+            <li>Oxygen Delivery</li>
+            <li>Transfusion Medicine</li>
+            <li>Artificial Blood Research</li>
+            <li>Blood Substitutes</li>
+            <li>Microvascular Oxygenation</li>
+            <li>Ischemia and Reperfusion</li>
+            <li>Organ Preservation</li>
+            <li>Machine Perfusion</li>
+            <li>Trauma</li>
+            <li>Emergency Medicine</li>
+            <li>Prehospital Medicine</li>
+            <li>Surgery</li>
+            <li>Veterinary Medicine</li>
+            <li>Disease management and control</li>
         </ul>
     </div>
 
-    <!-- Potential Applications -->
-    <div class="section-title">🏥 Potential Applications</div>
-    <div class="info-card">
-        <p>Research (applied) and development may explore applications where oxygen delivery is compromised, delayed, limited, and/or pressure limited and requires additional support.</p>
-        <p style="margin-top:10px;">Potential areas include:</p>
-        <ul style="grid-template-columns:1fr 1fr;">
-            <li>Trauma and acute blood loss</li><li>Prehospital and emergency medicine</li>
-            <li>Surgery</li><li>Organ preservation and transplantation</li>
-            <li>Machine perfusion</li><li>Ischemia and reperfusion</li>
-            <li>Veterinary medicine and all animal health regardless of species</li><li>Blood-supply constrained environments</li>
+    <!-- ===== POTENTIAL APPLICATIONS ===== -->
+    <h2 class="section-title">🏥 Potential Applications</h2>
+    <div class="content-card">
+        Research (applied) and development may explore applications where oxygen delivery is compromised, delayed, limited, and/or pressure limited and requires additional support.
+        <br><br>
+        Potential areas include:
+        <br><br>
+        <ul class="grid-2col">
+            <li>Trauma and acute blood loss</li>
+            <li>Prehospital and emergency medicine</li>
+            <li>Surgery</li>
+            <li>Organ preservation and transplantation</li>
+            <li>Machine perfusion</li>
+            <li>Ischemia and reperfusion</li>
+            <li>Veterinary medicine and all animal health regardless of species</li>
+            <li>Blood-supply constrained environments</li>
             <li>Resource-limited healthcare settings</li>
         </ul>
-        <p style="margin-top:12px; font-style:italic;">Applications must be evaluated according to the available scientific and clinical evidence. Animal health models and experience can prescreen logistics and value of immediate intervention.</p>
+        <br>
+        <em>Applications must be evaluated according to the available scientific and clinical evidence. Animal health models and experience can prescreen logistics and value of immediate intervention.</em>
     </div>
 
-    <!-- Research & Evidence -->
-    <div class="section-title">📊 Research & Evidence</div>
-    <div class="info-card">
-        <p>This repository is intended to provide an open scientific entry point for information related to BHOC, hemoglobin-based oxygen carriers, oxygen therapeutics, and tissue-level oxygen delivery.</p>
-        <p style="margin-top:10px;">Future materials may include:</p>
-        <ul style="grid-template-columns:1fr 1fr 1fr;">
-            <li>Scientific publications</li><li>Research summaries</li><li>Preclinical studies</li>
-            <li>Clinical research</li><li>Oxygen physiology</li><li>Technology development</li>
-            <li>References and datasets</li><li>Scientific discussions</li>
+    <!-- ===== RESEARCH & EVIDENCE ===== -->
+    <h2 class="section-title">📊 Research & Evidence</h2>
+    <div class="content-card">
+        This repository is intended to provide an open scientific entry point for information related to BHOC, hemoglobin-based oxygen carriers, oxygen therapeutics, and tissue-level oxygen delivery.
+        <br><br>
+        Future materials may include:
+        <br><br>
+        <ul class="grid-3col">
+            <li>Scientific publications</li>
+            <li>Research summaries</li>
+            <li>Preclinical studies</li>
+            <li>Clinical research</li>
+            <li>Oxygen physiology</li>
+            <li>Technology development</li>
+            <li>References and datasets</li>
+            <li>Scientific discussions</li>
         </ul>
-        <p style="margin-top:10px; font-weight:600;">Scientific evidence, preclinical evidence, clinical evidence, and future hypotheses should be clearly distinguished.</p>
+        <br>
+        <strong>Scientific evidence, preclinical evidence, clinical evidence, and future hypotheses should be clearly distinguished.</strong>
     </div>
 
-    <!-- Publications (duplicate from text, but we keep as distinct) -->
-    <div class="section-title">📄 Publications</div>
-    <div class="info-card">
-        <p>This repository is intended to provide an open scientific entry point for information related to BHOC, hemoglobin-based oxygen carriers, oxygen therapeutics, and tissue-level oxygen delivery.</p>
-        <p style="margin-top:10px;">Future materials may include:</p>
-        <ul style="grid-template-columns:1fr 1fr 1fr;">
-            <li>Scientific publications</li><li>Research summaries</li><li>Preclinical studies</li>
-            <li>Clinical research</li><li>Oxygen physiology</li><li>Technology development</li>
-            <li>References and datasets</li><li>Scientific discussions</li>
+    <!-- ===== SCIENTIFIC PRINCIPLES 1 ===== -->
+    <h2 class="section-title">⚗️ Scientific Principles</h2>
+    <div class="content-card">
+        A growing collection of relevant scientific publications will be organized around:
+        <br><br>
+        <ul class="grid-3col">
+            <li>BHOC</li>
+            <li>HBOCs</li>
+            <li>Oxygen Therapeutics</li>
+            <li>Hemoglobin physiology</li>
+            <li>Oncology</li>
+            <li>Iron support</li>
+            <li>Wound healing</li>
+            <li>Metabolism and mitochondrial support</li>
+            <li>Oxygen delivery</li>
+            <li>Tissue oxygenation</li>
+            <li>Transfusion medicine</li>
+            <li>Organ preservation</li>
+            <li>Emergency medicine</li>
+            <li>Animal healthcare applications</li>
         </ul>
-        <p style="margin-top:10px; font-weight:600;">Scientific evidence, preclinical evidence, clinical evidence, and future hypotheses should be clearly distinguished.</p>
+        <br>
+        <em>Where available, publications should link to the original journal, DOI, PubMed record, or other primary scientific source.</em>
     </div>
 
-    <!-- Scientific Principles 1 -->
-    <div class="section-title">⚗️ Scientific Principles</div>
-    <div class="info-card">
-        <p>A growing collection of relevant scientific publications will be organized around:</p>
-        <ul style="grid-template-columns:1fr 1fr 1fr;">
-            <li>BHOC</li><li>HBOCs</li><li>Oxygen Therapeutics</li>
-            <li>Hemoglobin physiology</li><li>Oncology</li><li>Iron support</li>
-            <li>Wound healing</li><li>Metabolism and mitochondrial support</li><li>Oxygen delivery</li>
-            <li>Tissue oxygenation</li><li>Transfusion medicine</li><li>Organ preservation</li>
-            <li>Emergency medicine</li><li>Animal healthcare applications</li>
-        </ul>
-        <p style="margin-top:10px; font-style:italic;">Where available, publications should link to the original journal, DOI, PubMed record, or other primary scientific source.</p>
-    </div>
-
-    <!-- Scientific Principles 2 -->
-    <div class="section-title">🧬 Scientific Principles — Oxygen Pathway</div>
-    <div class="info-card">
-        <p>The development of Precision Oxygen Therapeutics requires understanding the relationship between:</p>
-        <div class="code-block">
+    <!-- ===== SCIENTIFIC PRINCIPLES 2 (Oxygen Pathway) ===== -->
+    <h2 class="section-title">🧬 Scientific Principles — Oxygen Pathway</h2>
+    <div class="content-card">
+        The development of Precision Oxygen Therapeutics requires understanding the relationship between:
+        <br><br>
+        <div class="inline-badge">
             <strong>Oxygen Supply</strong> (lung and membrane oxygenation and anti-oxidation control)<br>
             ↓<br>
             <strong>Oxygen Transport</strong> (rheology and diffusion support, ECMO)<br>
@@ -509,77 +577,40 @@
             ↓<br>
             <strong>Cellular Oxygen Utilization</strong>
         </div>
-        <p style="margin-top:10px; font-weight:600;">The ultimate biological objective of oxygen delivery is not simply the presence of oxygen in the circulation, but its exchange with tissues and cells.</p>
+        <strong>The ultimate biological objective of oxygen delivery is not simply the presence of oxygen in the circulation, but its exchange with tissues and cells.</strong>
     </div>
 
-    <!-- BHOC Vision -->
-    <div class="section-title">🌟 BHOC Vision</div>
-    <div class="info-card" style="background:#ebf8ff; border-color:#1a365d;">
-        <p>The long-term objective is to advance a scientific framework in which systemic and organ and tissue oxygen delivery can be regenerative as a therapeutic function:</p>
-        <div class="pill-box">
-            <span>📍 <strong>Where</strong> oxygen is needed</span>
-            <span>⏰ <strong>When</strong> oxygen is needed</span>
-            <span>📊 <strong>In the amount</strong> oxygen is needed</span>
-            <span>🎯 <strong>Continuously</strong> and controllably at the cell and mitochondrial level</span>
+    <!-- ===== BHOC VISION ===== -->
+    <h2 class="section-title">🌟 BHOC Vision</h2>
+    <div class="content-card blue-bg">
+        <div style="font-size: 16px; margin-bottom: 10px;">
+            The long-term objective is to advance a scientific framework in which systemic and organ and tissue oxygen delivery can be regenerative as a therapeutic function:
+        </div>
+        <div class="vision-list">
+            <span><strong>📍 Where</strong> oxygen is needed</span>
+            <span><strong>⏰ When</strong> oxygen is needed</span>
+            <span><strong>📊 In the amount</strong> oxygen is needed</span>
+            <span><strong>🎯 Continuously</strong> and controllably at the cell and mitochondrial level</span>
         </div>
     </div>
 
-    <!-- Disclaimer -->
-    <div class="section-title">⚠️ Disclaimer</div>
-    <div class="info-card" style="border-color:#c53030; background:#fff5f5; border-width:3px;">
-        <p><strong>BHOC and Precision Oxygen Therapeutics are presented here as a scientific and technology development platform.</strong></p>
-        <p style="margin-top:8px;">Information in this repository should not be interpreted as medical advice, a clinical recommendation, or evidence of regulatory approval.</p>
-        <p style="margin-top:8px;">Scientific claims should be supported by appropriate primary evidence, and ongoing research may change current understanding.</p>
+    <!-- ===== DISCLAIMER ===== -->
+    <h2 class="section-title">⚠️ Disclaimer</h2>
+    <div class="content-card warning">
+        <strong>BHOC and Precision Oxygen Therapeutics are presented here as a scientific and technology development platform.</strong>
+        <br><br>
+        Information in this repository should not be interpreted as medical advice, a clinical recommendation.
     </div>
 
-    <!-- ===== DATABASE SECTION (like screenshot) ===== -->
-    <div class="db-section">
-        <div class="db-header">
-            <h2>📘 Veterinary HBOC Publications Database</h2>
-            <span class="db-badge">Oxyglobin Focus</span>
-        </div>
-        <p style="font-weight:500; color:#1a365d; margin: 4px 0 4px; font-size:16px;">Comprehensive Literature Review on Hemoglobin-Based Oxygen Carriers — Oxyglobin Focus</p>
-        <div class="db-stats">
-            <span><i>📄</i> 200+ Records</span>
-            <span><i>🐾</i> 12+ Species</span>
-            <span><i>🐕</i> Canine</span>
-            <span><i>🐈</i> Feline</span>
-            <span><i>🐴</i> Equine</span>
-            <span><i>🐦</i> Avian</span>
-            <span><i>🦎</i> Exotic</span>
-        </div>
-
-        <div class="db-grid">
-            <div class="db-card">
-                <span class="db-icon">🔍</span>
-                <strong>Interactive Search Tool</strong>
-                <small>Search all 200+ publications by keyword, author, year, or journal</small>
-                <a href="#">Launch search →</a>
-            </div>
-            <div class="db-card">
-                <span class="db-icon">📋</span>
-                <strong>Oxyglobin Publications</strong>
-                <small>Full list of Oxyglobin-specific references with Vancouver-style citations</small>
-                <a href="#">View full list →</a>
-            </div>
-            <div class="db-card">
-                <span class="db-icon">📚</span>
-                <strong>About This Database</strong>
-                <small>Overview, usage guidelines, and how to contribute new publications</small>
-                <a href="#">Read more →</a>
-            </div>
-        </div>
-        <div class="db-note">📌 200+ records · 12+ species · continuously updated</div>
+    <!-- ===== CONTACT / FOOTER ===== -->
+    <hr>
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; padding: 6px 0 20px 0; color: #4a5568; font-size: 14px;">
+        <span><strong>📬 Contact</strong> Archil Jaliashvili</span>
+        <span>2026</span>
     </div>
 
-    <!-- Contact -->
-    <div class="section-title" style="margin-top: 16px;">📬 Contact</div>
-    <div class="info-card" style="border-color:#1a365d;">
-        <p style="font-size:15px;">For inquiries, collaborations, or to contribute to the BHOC platform, please reach out via the repository or connect on LinkedIn.</p>
-        <p style="margin-top:6px; font-size:14px; color:#2d3748;">📧 <a href="#" style="color:#1a365d; font-weight:500;">contact@bhoc-platform.org</a> (placeholder)</p>
-    </div>
-
-    <p style="text-align:center; font-size:13px; color:#718096; margin-top:30px; border-top:1px solid #e2e8f0; padding-top:20px;">BHOC — Biological Hemoglobin Oxygen Carrier · Open science platform</p>
 </div>
+<!-- end container -->
+
 </body>
 </html>
