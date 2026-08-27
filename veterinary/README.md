@@ -18,16 +18,37 @@
 
 ---
 
-## Quick Navigation
+## 📚 Quick Navigation
 
 | Link | Description |
 | :--- | :--- |
 | 🔍 **[Interactive Search Tool](search.html)** | Search all 200+ publications by keyword |
- 📋 **[Oxyglobin Publications](https://github.com/ArchilJali/BHOC-platform/blob/main/veterinary/03-publication-BHOC-Oxyglobin.md)** | Full list with Vancouver-style citations |
+| 📋 **[Oxyglobin Publications](03-publication-BHOC-Oxyglobin.md)** | Full list with Vancouver-style citations |
+| 📖 **[About This Database](#about-this-database)** | Overview and usage guidelines |
+
 ---
 
-## Species Distribution
+## 📋 Regulatory Approvals
+
+| Document | Description |
+| :--- | :--- |
+| 🏛️ **[FDA Approval Details](FDA-registry.md)** | FDA approval documentation for Oxyglobin |
+| 🇪🇺 **[EMA Approvals Summary](EMA-approvals-summary.md)** | European Medicines Agency approvals |
+
+---
+
+## 📄 Publications
+
+| Document | Description |
+| :--- | :--- |
+| 📋 **[Oxyglobin Publications](03-publication-BHOC-Oxyglobin.md)** | Complete list with Vancouver-style citations |
+
+---
+
+## 🌍 Species Distribution
+
 This database includes publications across **multiple species** — both veterinary and preclinical models.
+
 | Species | Number of Publications | Keywords to Search |
 | :--- | :---: | :--- |
 | 🐕 **Canine (Dog)** | 35+ | `canine`, `dog` |
@@ -45,7 +66,7 @@ This database includes publications across **multiple species** — both veterin
 
 ---
 
-## About This Database
+## <a id="about-this-database"></a>📖 About This Database
 
 This database compiles **200+ peer-reviewed publications** on hemoglobin-based oxygen carriers (HBOCs), with a special focus on **Oxyglobin** (hemoglobin glutamer-200, bovine) — the only FDA-approved HBOC for veterinary use.
 
@@ -63,7 +84,7 @@ This database compiles **200+ peer-reviewed publications** on hemoglobin-based o
 
 ---
 
-## How to Use
+## 🎯 How to Use
 
 ### For Researchers
 - Use the **Interactive Search Tool** to find publications by keyword
@@ -82,6 +103,16 @@ This database compiles **200+ peer-reviewed publications** on hemoglobin-based o
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 If you would like to correct or add new publications, please contact us!
+
+---
+
+## 📎 Related Documents
+
+| Document | Link |
+| :--- | :--- |
+| 📄 FDA Registry | [FDA-registry.md](FDA-registry.md) |
+| 📄 EMA Approvals | [EMA-approvals-summary.md](EMA-approvals-summary.md) |
+| 📄 Publications | [03-publication-BHOC-Oxyglobin.md](03-publication-BHOC-Oxyglobin.md) |
