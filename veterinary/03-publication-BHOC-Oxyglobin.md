@@ -3,670 +3,450 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HBOC / Oxyglobin Publications</title>
+    <title>HBOC & Oxyglobin Publication Database</title>
     <style>
-        /* General Styling */
+        * {
+            box-sizing: border-box;
+        }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
             line-height: 1.6;
             color: #333;
             margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
+            padding: 20px;
+            background: #f5f7fa;
         }
         .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 0 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
         }
-
-        /* Headers */
-        h1, h2 {
-            color: #0056b3;
-            border-bottom: 2px solid #dee2e6;
+        h1 {
+            color: #1a3a5c;
+            border-bottom: 3px solid #2b7a9e;
             padding-bottom: 10px;
+            margin-bottom: 5px;
         }
         .subtitle {
             color: #6c757d;
-            font-size: 1.1rem;
-            margin-top: -10px;
+            font-size: 0.95rem;
+            margin-top: -5px;
             margin-bottom: 20px;
         }
-        .section-header {
-            background-color: #e9ecef;
-            padding: 10px 15px;
-            border-radius: 5px;
-            margin-top: 30px;
-        }
-
-        /* Table Styling */
-        .table-responsive {
-            overflow-x: auto;
+        .filter-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
             margin: 20px 0;
+            padding: 15px;
+            background: #f0f2f5;
+            border-radius: 8px;
+            align-items: center;
+        }
+        .filter-bar label {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #495057;
+        }
+        .filter-bar select, .filter-bar input {
+            padding: 6px 12px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            background: white;
+            min-width: 150px;
+        }
+        .filter-bar .btn {
+            padding: 6px 16px;
+            background: #2b7a9e;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: background 0.2s;
+        }
+        .filter-bar .btn:hover {
+            background: #1a5a7a;
+        }
+        .filter-bar .btn-clear {
+            background: #6c757d;
+        }
+        .filter-bar .btn-clear:hover {
+            background: #5a6268;
+        }
+        .stats {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin: 10px 0;
+        }
+        .table-wrap {
+            overflow-x: auto;
             border: 1px solid #dee2e6;
-            border-radius: 5px;
-            background-color: white;
+            border-radius: 6px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 0.9rem;
+            font-size: 0.82rem;
         }
         th, td {
             padding: 8px 10px;
             text-align: left;
-            border-bottom: 1px solid #dee2e6;
+            border-bottom: 1px solid #e9ecef;
             vertical-align: top;
         }
         th {
-            background-color: #f1f3f5;
+            background: #e9ecef;
             font-weight: 600;
             color: #495057;
             position: sticky;
             top: 0;
-            z-index: 10;
+            z-index: 5;
+            white-space: nowrap;
         }
         tr:hover {
-            background-color: #f8f9fa;
+            background: #f8f9fa;
         }
-
-        /* PDF Reference List Styling */
+        .year-group {
+            background: #dee2e6;
+            font-weight: 700;
+            color: #1a3a5c;
+            padding: 6px 10px;
+            border-bottom: 2px solid #2b7a9e;
+        }
+        .badge {
+            display: inline-block;
+            padding: 1px 8px;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-right: 3px;
+        }
+        .badge-eu {
+            background: #2b7a9e;
+            color: white;
+        }
+        .badge-us {
+            background: #b13e3e;
+            color: white;
+        }
+        .badge-both {
+            background: #6f42c1;
+            color: white;
+        }
+        .citation {
+            font-size: 0.75rem;
+            color: #555;
+            max-width: 350px;
+        }
+        .file-link {
+            color: #2b7a9e;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .file-link:hover {
+            text-decoration: underline;
+        }
+        .no-results {
+            padding: 40px;
+            text-align: center;
+            color: #6c757d;
+        }
+        .section-title {
+            background: #1a3a5c;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 6px;
+            margin: 25px 0 15px 0;
+            font-size: 1.1rem;
+        }
         .ref-list {
             list-style: none;
             padding: 0;
         }
         .ref-list li {
-            background-color: white;
-            margin-bottom: 8px;
-            padding: 12px 15px;
-            border-left: 4px solid #0056b3;
+            padding: 10px 15px;
+            background: #f8f9fa;
+            margin-bottom: 5px;
+            border-left: 4px solid #2b7a9e;
             border-radius: 4px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            transition: box-shadow 0.2s ease;
         }
-        .ref-list li:hover {
-            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-        }
-        .ref-list .ref-citation {
-            font-style: italic;
-            color: #495057;
-            margin-bottom: 4px;
+        .ref-list .ref-title {
+            font-weight: 500;
         }
         .ref-list .ref-doi {
-            font-size: 0.85rem;
-        }
-        .ref-list .ref-doi a {
-            color: #0056b3;
-            text-decoration: none;
-        }
-        .ref-list .ref-doi a:hover {
-            text-decoration: underline;
-        }
-        .ref-category {
             font-size: 0.8rem;
-            font-weight: 600;
-            color: #6c757d;
-            background-color: #e9ecef;
-            padding: 2px 8px;
-            border-radius: 12px;
-            margin-left: 8px;
-        }
-
-        /* Link Styling */
-        a {
-            color: #0056b3;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .btn {
-            display: inline-block;
-            padding: 8px 16px;
-            background-color: #0056b3;
-            color: white !important;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: background-color 0.2s ease;
-            border: none;
-            cursor: pointer;
-        }
-        .btn:hover {
-            background-color: #004494;
-            text-decoration: none;
-        }
-        .btn-outline {
-            background-color: transparent;
-            color: #0056b3 !important;
-            border: 1px solid #0056b3;
-        }
-        .btn-outline:hover {
-            background-color: #0056b3;
-            color: white !important;
-        }
-        .btn-small {
-            font-size: 0.85rem;
-            padding: 4px 12px;
-        }
-
-        /* Layout for PDF References */
-        .pdf-reference {
-            margin-bottom: 20px;
-            padding: 15px;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        }
-
-        /* Utility */
-        .text-muted {
             color: #6c757d;
         }
-        .mt-3 {
-            margin-top: 1.5rem;
-        }
-        .mb-3 {
-            margin-bottom: 1.5rem;
-        }
-        .note-box {
-            background-color: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 12px 15px;
-            border-radius: 4px;
-            margin: 15px 0;
-        }
-
-        /* Responsive */
         @media (max-width: 768px) {
-            .container {
-                padding: 0 10px;
-            }
-            table {
-                font-size: 0.8rem;
-            }
-            th, td {
-                padding: 6px 8px;
-            }
+            .container { padding: 12px; }
+            .filter-bar select, .filter-bar input { min-width: 100px; font-size: 0.75rem; }
+            table { font-size: 0.7rem; }
+            th, td { padding: 4px 6px; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>HBOC & Oxyglobin Publication Database</h1>
-        <p class="subtitle">
-            A combined reference source for publications related to Hemoglobin-Based Oxygen Carriers (HBOCs), including Hemopure® (HBOC-201), Oxyglobin® (HBOC-301), and other related products.
-        </p>
-        <p>
-            This page combines data from two source documents: <strong>HBOC Publications.xlsx</strong> and <strong>QEP References Combined 2.pdf</strong>.
-            You can view the content directly below or open the original documents.
-        </p>
-        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
-            <a href="#" class="btn" id="view-pdf-btn">📄 View Combined PDF (Original)</a>
-            <a href="#publications-table" class="btn btn-outline">📊 Jump to Publication Table</a>
-            <a href="#pdf-references" class="btn btn-outline">📚 Jump to PDF Reference List</a>
-        </div>
+<div class="container" id="app">
 
-        <div class="note-box">
-            <strong>Note:</strong> The full combined PDF is available at the link above. This page provides a searchable and structured version for easier browsing.
-        </div>
+    <h1>📚 HBOC & Oxyglobin Publication Database</h1>
+    <p class="subtitle">Hemopure® (HBOC-201) · Oxyglobin® (HBOC-301) · Polymerized Bovine Hemoglobin · Oxygen Therapeutics</p>
 
-        <!-- ==================== SECTION 1: EXCEL DATA ==================== -->
-        <h2 id="publications-table">Publication Database (from Excel)</h2>
-        <p>The following table contains all entries from the <strong>HBOC Publications.xlsx</strong> file, including metadata from the "HBOC Publications" sheet.</p>
-        <div class="table-responsive">
-            <table id="publicationTable">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>File Name</th>
-                        <th>Category</th>
-                        <th>Title</th>
-                        <th>Indication</th>
-                        <th>Species</th>
-                        <th>Study Type</th>
-                        <th>Citation</th>
-                        <th>Link</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Data will be injected here by JavaScript -->
-                </tbody>
-            </table>
-        </div>
-        <p class="text-muted" style="font-size:0.9rem;">Showing all entries from the source Excel file. Use the "Go to Original" link to view the full PDF for a specific entry.</p>
+    <!-- FILTERS -->
+    <div class="filter-bar">
+        <label>🔍 Filter:</label>
+        <input type="text" id="searchInput" placeholder="Search title, author..." oninput="applyFilters()">
 
-        <!-- ==================== SECTION 2: PDF REFERENCE LIST ==================== -->
-        <h2 id="pdf-references">PDF Reference List (from QEP References Combined 2.pdf)</h2>
-        <p>The following list contains references extracted from the <strong>QEP References Combined 2.pdf</strong> file, organized by the sections in the original PDF (Pharmacology/Toxicology, Justification for Use in Minor Species, and selected key articles).</p>
+        <label>Year:</label>
+        <select id="yearFilter" onchange="applyFilters()">
+            <option value="">All Years</option>
+        </select>
 
-        <div class="pdf-reference">
-            <h3 class="section-header">Pharmacology & Toxicology (Oxyglobin)</h3>
-            <ul class="ref-list" id="pharm-tox-list">
-                <!-- Injected by JS -->
-            </ul>
-        </div>
+        <label>Region:</label>
+        <select id="regionFilter" onchange="applyFilters()">
+            <option value="">All</option>
+            <option value="EU">EU</option>
+            <option value="US">US</option>
+            <option value="Both">Both</option>
+        </select>
 
-        <div class="pdf-reference">
-            <h3 class="section-header">Justification for Use in Minor Species</h3>
-            <ul class="ref-list" id="minor-species-list">
-                <!-- Injected by JS -->
-            </ul>
-        </div>
+        <label>Species:</label>
+        <select id="speciesFilter" onchange="applyFilters()">
+            <option value="">All Species</option>
+        </select>
 
-        <div class="pdf-reference">
-            <h3 class="section-header">Selected Key Articles (Full Text in PDF)</h3>
-            <ul class="ref-list" id="key-articles-list">
-                <!-- Injected by JS -->
-            </ul>
-        </div>
-        <p class="text-muted" style="font-size:0.9rem;">These references are drawn from the provided PDF. Click the title to view the full article in the combined PDF.</p>
+        <label>Institute:</label>
+        <select id="instituteFilter" onchange="applyFilters()">
+            <option value="">All Institutes</option>
+        </select>
 
-        <hr style="margin: 40px 0;">
-        <p style="text-align: center; color: #6c757d;">
-            This combined document was generated from source files. For any updates or corrections, please refer to the original documents.
-            <br>
-            <a href="#" id="view-pdf-btn-bottom" class="btn btn-small mt-3">📄 View Full PDF Document</a>
-        </p>
+        <button class="btn btn-clear" onclick="clearFilters()">✕ Clear</button>
+        <span class="stats" id="statsDisplay">0 publications</span>
     </div>
 
-    <script>
-        // ============================================
-        // 1. DATA EXTRACTION (Excel Data)
-        // ============================================
-        // This is the data from the HBOC Publications.xlsx sheet.
-        // It's been manually transcribed into a JavaScript array of objects.
-        const publicationsData = [
-  { FileName: "abutarboush-2013", Category: "Hemopure - Clinical", Title: "Effects of N-Acetyl-L-Cysteine and Hyaluronic Acid on HBOC-201- Induced Systemic and Cerebral Vasoconstriction in the Rat", Indication: "Vasoconstriction", Species: "36 rats", Model: "In vivo", Citation: "Abutarboush R, Scultetus A, Pappas G, Arnaud F, Auker C, McCarron R, Moon-Massat PF. Effects of N-Acetyl-L-Cysteine and Hyaluronic Acid on HBOC-201- Induced Systemic and Cerebral Vasoconstriction in the Rat. Curr Drug Discov Technol. 2013 Dec;10(4):315-24.", StudyType: "Nonclinical" },
-  { FileName: "ammersbach-2008", Category: "Vet", Title: "Laboratory Findings, Histopathology, and Immunophenotype of Lymphoma in Domestic Ferrets", Indication: "Lymphoma", Species: "29 ferrets", Model: "In vivo", Citation: "Ammersbach, M., J. Delay, J. L. Caswell, D. A. Smith, W. M. Taylor, and D. Bienzle. \"Laboratory Findings, Histopathology, and Immunophenotype of Lymphoma in Domestic Ferrets.\" Veterinary Pathology 45, no. 5 (2008): 663-73. doi:10.1354/vp.45-5-663.", StudyType: "Nonclinical" },
-  { FileName: "agrawal-2005", Category: "Human", Title: "Long-term transfusion of polymerized bovine hemoglobin in a Jehovah's Witness following chemotherapy for myeloid leukemia: a case report", Indication: "relapsed secondary acute myeloid leukemia", Species: "1 human", Model: "In vivo", Citation: "Agrawal YP, Freedman M, Szczepiorkowski ZM. Long-term transfusion of polymerized bovine hemoglobin in a Jehovahs Witness following chemotherapy for myeloid leukemia: a case report. Transfusion. 2005;45(11):1735–8.", StudyType: "Clinical" },
-  { FileName: "anbarri-2004", Category: "Human", Title: "Hemoglobin substitutes", Indication: "", Species: "Human", Model: "In vivo", Citation: "Anbari KK, Garino JP, Mackenzie CF. Hemoglobin substitutes. Haemostasis in Spine Surgery. :76–82.", StudyType: "Clinical" },
-  { FileName: "arnaud-2005", Category: "Vet", Title: "Effects of Bovine Polymerized Hemoglobin on Coagulation in Controlled Hemorrhagic Shock in Swine", Indication: "hemorrhage and soft tissue injury", Species: "24 pigs", Model: "In vivo", Citation: "Arnaud F, Hammett M, Asher L, Philbin N, Rice J, Dong F, et al. Effects Of Bovine Polymerized Hemoglobin On Coagulation In Controlled Hemorrhagic Shock In Swine. Shock. 2005;24(2):145–52.", StudyType: "Nonclinical" },
-  { FileName: "arnaud-2007", Category: "Vet", Title: "Hematology patterns after hemoglobin-based oxygen carrier resuscitation from severe controlled hemorrhage with prolonged delayed definitive care", Indication: "hemorrhage", Species: "48 pigs", Model: "In vivo", Citation: "Arnaud F, Fasipe D, Philbin N, Rice J, Flournoy WS, Ahlers S, et al. Hematology patterns after hemoglobin-based oxygen carrier resuscitation from severe controlled hemorrhage with prolonged delayed definitive care. Transfusion. 2007;47(11):2098–109.", StudyType: "Nonclinical" },
-  { FileName: "arnaud-2006", Category: "Vet", Title: "Coagulation patterns following haemoglobin-based oxygen carrier resuscitation in severe uncontrolled haemorrhagic shock in swine", Indication: "hemorrhage", Species: "24 pigs", Model: "In vivo", Citation: "Arnaud F, Handrigan M, Hammett M, Philbin N, Rice J, Dong F, et al. Coagulation patterns following haemoglobin-based oxygen carrier resuscitation in severe uncontrolled haemorrhagic shock in swine. Transfusion Medicine. 2006;16(4):290–302.", StudyType: "Nonclinical" },
-  { FileName: "arnaud-2012", Category: "Hemopure - Clinical", Title: "Sodium nitroprusside ameliorates systemic but not pulmonary HBOC-201-induced vasoconstriction: An exploratory study in a swine controlled haemorrhage model", Indication: "Vasoconstriction", Species: "unknown number of pigs", Model: "In vivo", Citation: "Arnaud F, Scultetus AH, Haque A, Saha B, Kim B, Auker C, Moon-Massat P, McCarron R, Freilich D. Sodium nitroprusside ameliorates systemic but not pulmonary HBOC-201-induced vasoconstriction: An exploratory study in a swine controlled haemorrhage model. Resuscitation. 2012 Aug;83(8):1038-45.", StudyType: "Nonclinical" },
-  { FileName: "ashenden-2007", Category: "Human", Title: "The use of haemoglobin glutamer-250 (HBOC-201) as an oxygen bridge in patients with acute anaemia associated with surgical blood loss", Indication: "oxygen uptake", Species: "12 Male Humans", Model: "In vivo", Citation: "Ashenden M, Schumacher Y, Sharpe K, Varlet-Marie E, Audran M. Effects of Hemopure™ on Maximal Oxygen Uptake and Endurance Performance in Healthy Humans. International Journal of Sports Medicine. 2007;28(5):381–5.", StudyType: "Clinical" },
-  { FileName: "auker-2011", Category: "Human", Title: "US Navy Experience With Research on, and Development of, Hemoglobin-Based Oxygen Carriers", Indication: "oxygen uptake", Species: "NA", Model: "", Citation: "Auker CR, Mccarron RM. US Navy Experience With Research on, and Development of, Hemoglobin-Based Oxygen Carriers. The Journal of Trauma: Injury, Infection, and Critical Care. 2011;70.", StudyType: "Clinical" },
-  { FileName: "Banan-2016", Category: "Oxyply - Transplantation", Title: "Novel Strategy to Decrease Reperfusion Injuries and Improve Function of Cold-Preserved Livers Using Normothermic Ex Vivo Liver Perfusion Machine", Indication: "Preservation/ Storage Methods", Species: "pig - Liver", Model: "In vitro", Citation: "Banan B, Xiao Z, Watson R, Xu M, Jia J, Upadhya GA, et al. Novel strategy to decrease reperfusion injuries and improve function of cold-preserved livers using normothermic ex vivo liver perfusion machine. Liver Transplantation. 2016;22(3):333–43.", StudyType: "Nonclinical" },
-  { FileName: "baylis-2006", Category: "Vet", Title: "Acute and long-term effects of modified hemoglobin (HBOC-201) in a rat model of hypertension and chronic kidney disease", Indication: "Hypertension and chronic Kidney disease", Species: "rat", Model: "In vivo", Citation: "Baylis C. Acute and long-term effects of modified hemoglobin (HBOC-201) in a rat model of hypertension and chronic kidney disease. Transfusion. 2006;46(7):1104–11.", StudyType: "Nonclinical" },
-  { FileName: "bernard-1983", Category: "Vet", Title: "Estrogen-Induced Bone Marrow Depression in Ferrets", Indication: "Estrogen-induced bone marrow depression", Species: "9 ferrets", Model: "In vivo", Citation: "Benard, Susan L., MS, Charles W. Leathers, DMV,PhD, Duane F. Brobst, DMV, PhD, and John R. Gorham, DMV, PhD. \"Estrogen-induced Bone Marrow Depression in Ferrets.\" American Journal of Vetenery Research 44, no. 4 (April 1983): 657-61.", StudyType: "Laboratory / Field Study" },
-  { FileName: "bonegio-2006", Category: "Vet", Title: "A Comparison of the Acute Hemodynamic and Delayed Effects of 50% Exchange Transfusion with Two Different Cross-linked Hemoglobin Based Oxygen Carrying Solutions and Pentastarch", Indication: "Hemodynamics", Species: "rats", Model: "In vivo", Citation: "Bonegio RGB, Fuhro R, Ragno G, Valeri CR, Lieberthal W. A Comparison of the Acute Hemodynamic and Delayed Effects of 50% Exchange Transfusion with Two Different Cross-linked Hemoglobin Based Oxygen Carrying Solutions and Pentastarch. Artificial Cells, Blood Substitutes, and Biotechnology. 2006;34(2):145–57.", StudyType: "Nonclinical" },
-  { FileName: "bovens-2013", Category: "Vet", Title: "Xenotransfusion with canine blood in the feline species: review of the literature", Indication: "Xenotransfusion", Species: "62 cats", Model: "In vivo", Citation: "Bovens C, Gruffydd-Jones T. Xenotransfusion with canine blood in the feline species: review of the literature. Journal of Feline Medicine and Surgery. 2012;15(2):62–7.", StudyType: "Nonclinical" },
-  { FileName: "braden-1999", Category: "Vet", Title: "Radiographic, biochemical, and pathologic effects of hamoglobin, glutamer-200 in dogs undergoing cemented total hip arthroplasty", Indication: "Bone-cement", Species: "9 dogs", Model: "In vivo", Citation: "Braden, Terrance D., DMV, MS, Harold W. Tvedten, DMV, PhD, Charles E. DeCamp, DMV, MS, Thomas M. Turner, DMV, George S. Hughes, MD, and Virginia T. Rentko, VMD. \"Radiographic, Biomechanical, and Pathologic Effects of Hemoglobin Glutamer-200 in Dogs Undergoing Cemented Total Hip Arthroplasty.\" American Journal of Veterinary Research 60, no. 11 (November 11, 1999): 1337-340.", StudyType: "Nonclinical" },
-  { FileName: "buehler-2005", Category: "Oxyply - Chemistry", Title: "Structural and Functional Characterization of Glutaraldehyde-Polymerized Bovine Hemoglobin and Its Isolated Fractions", Indication: "Chemistry", Species: "Blood cells", Model: "In vitro", Citation: "Buehler PW, Boykins RA, Jia Y, Norris S, Freedberg DI, Alayash AI. Structural and Functional Characterization of Glutaraldehyde-Polymerized Bovine Hemoglobin and Its Isolated Fractions. Analytical Chemistry. 2005;77(11):3466–78.", StudyType: "Nonclinical" },
-  { FileName: "burkoff-2005", Category: "Background", Title: "Cardioprotection before revascularization in<br>ischemic myocardial injury and the potential role of hemoglobin-based oxygen carriers", Indication: "Ischaemia", Species: "NA", Model: "", Citation: "Burkhoff D, Lefer DJ. Cardioprotection before revascularization in ischemic myocardial injury and the potential role of hemoglobin-based oxygen carriers. American Heart Journal. 2005;149(4):573–9.", StudyType: "NA" },
-  { FileName: "burmeister-2005", Category: "Hemopure - Clinical", Title: "Effects of prophylactic or therapeutic application of bovine haemoglobin HBOC-200 on ischaemia-reperfusion injury following acute coronary ligature in rats.", Indication: "Ischaemia", Species: "46 rats", Model: "In vivo", Citation: "Burmeister MA, Rempf C, Standl TG, Rehberg S, Bartsch-Zwemke S, Krause T, Tuszynski S, Gottschalk A, Schulte am Esch J. Effects of prophylactic or therapeutic application of bovine haemoglobin HBOC-200 on ischaemia-reperfusion injury following acute coronary ligature in rats. Br J Anaesth. 2005 Dec;95(6):737-45. Epub 2005 Oct 14.", StudyType: "Nonclinical" },
-  { FileName: "callas-1997", Category: "Chemistry", Title: "In vitro effects of a novel hemoglobin-based oxygen carrier on routine chemistry, therapeutic drug, coagulation, hematology, and blood bank assays", Indication: "Transfusion", Species: "Human Blood", Model: "In vitro", Citation: "Callas, Demetra D., Terri L. Clark, Paulo L. Moreira, Cara Lansden, Maria S. Gawryl, Stephen Kahn, and Edward W. Bermer, Jr. \"In Vitro Effects of a Novel Hemoglobin-based Oxygen Carrier on Routine Chemistry, Therapeutic Drug, Coagulation, Hematology, and Blood Bank Assays.\" Clinical Chemistry 43, no. 9 (June 23, 1997): 1744-748.", StudyType: "Clinical" },
-  { FileName: "cabrales-2009", Category: "Oxyglobin", Title: "Polymerized Bovine Hemoglobin Can Improve Small-Volumeresuscitation from Hemorrhagic Shock in Hamsters", Indication: "hemorrhagic shock", Species: "hampsters", Model: "In vivo", Citation: "Cabrales P, Tsai AG, Intaglietta M. Polymerized Bovine Hemoglobin Can Improve Small-Volume Resuscitation From Hemorrhagic Shock In Hamsters. Shock. 2009;31(3):300–7.", StudyType: "Nonclinical" },
-  { FileName: "caswell-2004", Category: "Oxyply - Transplantation", Title: "A novel hemoglobin-based blood substitute protects against myocardial reperfusion injury", Indication: "myocardial reperfusion", Species: "22 dog - heart", Model: "In vitro", Citation: "Caswell, John E., Micah B. Strange, David M. Rimmer, Michael F. Gibson, Phillip Cole, and David J. Lefer. \"A Novel Hemoglobin-based Blood Substitute Protects against Myocardial Reperfusion Injury.\" American Journal of Physiology-Heart and Circulatory Physiology 288, no. 4 (2005). doi:10.1152/ajpheart.00905.2004.", StudyType: "Nonclinical" },
-  { FileName: "chen-2006", Category: "Anemia", Title: "Decreased Hephaestin Activity in the Intestine of Copper-Deficient Mice Causes Systemic Iron Deficiency", Indication: "Anemia", Species: "mice", Model: "In vivo", Citation: "Chen H, Huang G, Su T, Gao H, Attieh ZK, Mckie AT, et al. Decreased Hephaestin Activity in the Intestine of Copper-Deficient Mice Causes Systemic Iron Deficiency. The Journal of Nutrition. 2006;136(5):1236–41.", StudyType: "Nonclinical" },
-  { FileName: "chen-2009", Category: "History / Ethics", Title: "A Review of Blood Substitutes: Examining the History, Clinical Trial Results, and Ethics of Hemoglobin-Based Oxygen Carriers", Indication: "General", Species: "NA", Model: "", Citation: "Chen J-Y, Scerbo M, Kramer G. A review of blood substitutes: examining the history, clinical trial results, and ethics of hemoglobin-based oxygen carriers. Clinics. 2009;64(8).", StudyType: "Clinical" },
-  { FileName: "cheung-2001", Category: "Oxyglobin - nonclinical", Title: "The Effects of Hemoglobin Glutamer-200 (Bovine) on the Microcirculation in a Canine Hypovolemia Model: A Noninvasive Computer-Assisted Intravital Microscopy Study", Indication: "Hypovolemia", Species: "8 dogs", Model: "In vivo", Citation: "Cheung AT, Jahr JS, Driessen B, Duong PL, Chan MS, Lurie F, Golkaryeh MS, Kullar RK, Gunther RA. The Effects of Hemoglobin Glutamer-200 (Bovine) on the Microcirculation in a Canine Hypovolemia Model: A Noninvasive Computer-Assisted Intravital Microscopy Study. Anesth Analg. 2001 Oct;93(4):832-8.", StudyType: "Nonclinical" },
-  { FileName: "cheung-2006", Category: "Oxyglobin - nonclinical", Title: "Systemic function, oxygenation and microvascular correlation during treatment of hemorrhagic shock with blood substitutes", Indication: "Hemorrhagic shock", Species: "12 dogs", Model: "In vivo", Citation: "Cheung, Anthony T., Patricia L. Duong, Bernd Driessen, Peter C. Chen, Jonathan S. Jahr, and Robert A. Gunther. \"Systemic Function, Oxygenation and Microvascular Correlation during Treatment of Hemorrhagic Shock with Blood Substitutes.\" Clinical Hemorheology and Microcirculation 34 (2006): 325-34.", StudyType: "Nonclinical" },
-  { FileName: "cohn-2000", Category: "Human", Title: "Blood substitutes in surgery", Indication: "General", Species: "NA", Model: "", Citation: "Cohn SM. Blood substitutes in surgery. Surgery. 2000;127(6):599–602.", StudyType: "Clinical" },
-  { FileName: "davis-2018", Category: "Human", Title: "Use of the blood substitute HBOC-201 in critically ill patientsduring sickle crisis: a three-case series", Indication: "severe sickle cell crisis", Species: "humans", Model: "In vivo", Citation: "Davis, Jonathan M., Nura El-Haj, Nimish N. Shah, Garry Schwartz, Margaret Block, James Wall, Mark Tidswell, and Ernest Dinino. \"Use of the Blood Substitute HBOC-201 in Critically Ill Patients during Sickle Crisis: A Three-case Series.\" Transfusion 58, no. 1 (January 2018): 132-37. doi:10.1111/trf.14386.", StudyType: "Clinical" },
-  { FileName: "day-2003", Category: "Human/Vet", Title: "Current development and use of hemoglobin-based oxygen-carrying (HBOC) solutions", Indication: "General", Species: "NA", Model: "", Citation: "Davis JM, El-Haj N, Shah NN, Schwartz G, Block M, Wall J, et al. Use of the blood substitute HBOC-201 in critically ill patients during sickle crisis: a three-case series. Transfusion. 2017;58(1):132–7.", StudyType: "Nonclinical & Clinical" },
-  { FileName: "dean-2006", Category: "Vet", Title: "Falcon adenovirus infection in breeding Taita falcons (Falco fasciinucha)", Indication: "Clinical aviadenovirus infection", Species: "7 Taita falcons", Model: "In vivo", Citation: "Dean, Jason, Kenneth S. Latimer, J. Lindsay Oaks, Mark Schrenzel, Patrick T. Redig, and Arno Wünschmann. \"Falcon Adenovirus Infection in Breeding Taita Falcons (Falco Fasciinucha).\" Journal of Veterinary Diagnostic Investigation 18, no. 3 (2006): 282-86. doi:10.1177/104063870601800310.", StudyType: "Laboratory / Field Study" },
-  { FileName: "dimino-2007", Category: "Hemopure", Title: "Hemoglobin-Based O2 Carrier O2 Affinity and Capillary Inlet pO2 Are Important Factors That Influence O2 Transport in a Capillary", Indication: "Chemistry", Species: "Capillary", Model: "In vitro", Citation: "Hemoglobin-Based O2 Carrier O2 Affinity and Capillary Inlet pO2 Are Important<br>Factors That Influence O2 Transport in a Capillary", StudyType: "Clinical" },
-  { FileName: "dong-2006", Category: "Hemopure - Clinical", Title: "Immune effects of resuscitation with HBOC-201, a hemoglobin-based oxygen carrier, in swine with moderately severe hemorrhagic shock from controlled hemorrhage.", Indication: "Hemorrhagic shock", Species: "unknown number of pigs", Model: "In vivo", Citation: "Dong F, Hall CH, Golech SA, et al. Immune effects of resuscitation with HBOC-201, a hemoglobin-based oxygen carrier, in swine with moderately severe hemorrhagic shock from controlled hemorrhage. Shock. 2006 Jan;25(1):50-5.", StudyType: "Nonclinical" },
-  { FileName: "driessen-2001a", Category: "Vet", Title: "Effects of the haemoglobin-based oxygen carrier Hemoglobin glutamer-200 (bovine) on intestinal perfusion and oxygenation in a canine hypovolaemia", Indication: "Transfusion", Species: "12 dogs / 9 sheep", Model: "In vivo", Citation: "Driessen B, Jahr JS, Lurie F, Gunther R. Low-volume resuscitation with a haemoglobin-based oxygen carrier Hemoglobin glutamer-200 (bovine) in canine hypovolaemia. Veterinary Anaesthesia and Analgesia. 2001;28(4):204.", StudyType: "Nonclinical" },
-  { FileName: "driessen-2001b", Category: "Vet", Title: "Inadequacy of low-volume resuscitation with hemoglobin-based oxygen carrier hemoglobin glutamer 200 (bovine) in canine hypovolemia", Indication: "Transfusion", Species: "12 dogs", Model: "In vivo", Citation: "Driessen B, Jahr JS, Lurie F, Gunther RA. Inadequacy of low-volume resuscitation with hemoglobin-based oxygen carrier hemoglobin glutamer-200 (bovine) in canine hypovolemia. Journal of Veterinary Pharmacology and Therapeutics. 2001;24(1):61–71.", StudyType: "Nonclinical" },
-  { FileName: "driessen-2003", Category: "Oxyglobin - nonclinical", Title: "Arterial oxygenation and oxygen delivery after hemoglobin-based oxygen carrier infusion in canine hypovolemic shock: A dose-response study", Indication: "Hypovolemia", Species: "24 dogs", Model: "In vivo", Citation: "Driessen B, Jahr JS, Lurie F, Golkaryeh MS, Gunther RA. Arterial oxygenation and oxygen delivery after hemoglobin-based oxygen carrier infusion in canine hypovolemic shock: A dose-response study. Crit Care Med. 2003 Jun;31(6):1771-9.", StudyType: "Nonclinical" },
-  { FileName: "driessen-2006", Category: "Vet", Title: "Effects of isovolemic resuscitation with hemoglobin-based oxygen carrier Hemoglobin glutamer-200 (bovine) on systemic and mesenteric perfusion and oxygenation in a canine model of hemorrhagic shock: a comparison with 6% hetastarch solution and shed blood", Indication: "Hemorrhagic<br>shock", Species: "12 dogs", Model: "In vivo", Citation: "Driessen B, Jahr J, Lurie F, Gunther R. Effects of isovolemic resuscitation with hemoglobin-based oxygen carrier Hemoglobin glutamer-200 (bovine) on systemic and mesenteric perfusion and oxygenation in a canine model of hemorrhagic shock: a comparison with 6% hetastarch solution and shed blood. Veterinary Anaesthesia and Analgesia. 2006;33(6):368–80.", StudyType: "Nonclinical" },
-  { FileName: "driessen-2007", Category: "Vet", Title: "Effects of low-volume hemoglobin glutamer-200 versus normal saline and arginine vasopressin resuscitation on systemic and skeletal muscle blood flow and oxygenation in a canine hemorrhagic shock model*", Indication: "Hemorrhagic<br>shock", Species: "19 dogs", Model: "In vivo", Citation: "Driessen B, Zarucco L, Gunther RA, Burns PM, Lamb SV, Vincent SE, et al. Effects of low-volume hemoglobin glutamer-200 versus normal saline and arginine vasopressin resuscitation on systemic and skeletal muscle blood flow and oxygenation in a canine hemorrhagic shock model*. Critical Care Medicine. 2007;35(9):2101–9", StudyType: "Nonclinical" },
-  { FileName: "dube-2011", Category: "Vet", Title: "Intravenous and Intraosseous Fluid Therapy in Critically Ill Birds of Prey", Indication: "Avian fluid therapy", Species: "Birds of prey", Model: "In vivo", Citation: "Dubé C, Dubois I, Struthers J. Intravenous and Intraosseous Fluid Therapy in Critically Ill Birds of Prey. Journal of Exotic Pet Medicine. 2011;20(1):21–6.", StudyType: "Laboratory / Field Study" },
-  { FileName: "dube-2017", Category: "Hemopure - Clinical", Title: "Relative efficacies of HBOC-201 and PolyHeme to increase oxygen transport compared to blood and crystalloids. ”2017 MILITARY SUPPLEMENT”", Indication: "resuscitation", Species: "Human", Model: "In vivo", Citation: "Dubé GP, Pitman AN, Mackenzie CF. Relative Efficacies of HBOC-201 and Polyheme to Increase Oxygen Transport Compared to Blood and Crystalloids. ”2017 Military Supplement.” Shock. 2017;:1.", StudyType: "Clinical" },
-  { FileName: "dudkiewicz-2008", Category: "Nonclinical tox", Title: "Hemoglobin-based oxygen carrying compound-201 as salvage therapy for severe neuro- and polytrauma (Injury Severity Score = 27–41)", Indication: "resuscitation", Species: "32 pigs", Model: "In vivo", Citation: "Dudkiewicz M, Harpaul TA, Proctor KG. Hemoglobin-based oxygen carrying compound-201 as salvage therapy for severe neuro- and polytrauma (Injury Severity Score = 27–41)*. Critical Care Medicine. 2008;36(10):2838–48.", StudyType: "Nonclinical" },
-  { FileName: "dull-2004", Category: "Oxyply - Transplantation", Title: "Quantitative assessment of hemoglobin-induced endothelial barrier dysfunction", Indication: "endothelial barrier dysfunction", Species: "in vitro - heart", Model: "In vitro", Citation: "Dull RO, Dewitt BJ, Dinavahi R, Schwartz L, Hubert C, Pace N, et al. Quantitative assessment of hemoglobin-induced endothelial barrier dysfunction. Journal of Applied Physiology. 2004;97(5):1930–7.", StudyType: "Nonclinical" },
-  { FileName: "dusek-2004", Category: "Vet", Title: "Haemoproteus Balearicae and other Blood Parasites of Free-Ranging Florida Sandhill Crane Chicks", Indication: "documentation of blood parasites", Species: "Sandhill cranes", Model: "In vivo", Citation: "Dusek RJ, Spalding MG, Forrester DJ, Greiner EC. Haemoproteus Balearicae And Other Blood Parasites Of Free-Ranging Florida Sandhill Crane Chicks. Journal of Wildlife Diseases. 2004;40(4):682–7.", StudyType: "Laboratory / Field Study" },
-  { FileName: "elko-1968", Category: "Supply test", Title: "Phagocytosis and Anemia in Rats Infected with Haemobartonella Muris", Indication: "Haemobartonella<br>muris", Species: "rats", Model: "In vivo", Citation: "Elko EE, Cantrell W. Phagocytosis and Anemia in Rats Infected with Haemobartonella muris. Journal of Infectious Diseases. 1968;118(3):324–32.", StudyType: "Nonclinical" },
-  { FileName: "epperla-2016", Category: "HBOC-201", Title: "Difficult to swallow: warm autoimmune hemolytic anemia in a Jehovah’s Witness treated with hemoglobin concentrate complicated by achalasia", Indication: "hemolytic anemia", Species: "1 human", Model: "In vivo", Citation: "Epperla N, Strouse C, Vansandt AM, Foy P. Difficult to swallow: warm autoimmune hemolytic anemia in a Jehovahs Witness treated with hemoglobin concentrate complicated by achalasia. Transfusion. 2016;56(7):1801–6.", StudyType: "Clinical" },
-  { FileName: "estrada-2006", Category: "HBOC-201", Title: "Are i-STAT Results Adversely affected by an Artificial Blood Substitute In Vivo?", Indication: "i-STAT", Species: "pigs", Model: "In vivo", Citation: "Estrada RR. Are i-STAT Results Adversely Affected by an Artificial Blood Substitute In Vivo? Military Medicine. 2006;171(5):381–8.", StudyType: "Nonclinical" },
-  { FileName: "faivrefiorina-1999", Category: "Oxyply - Transplantation", Title: "Presence of hemoglobin inside aortic endothelial cells after cell-free hemoglobin administration in guinea pigs", Indication: "Vasoconstriction", Species: "guinea pigs - other", Model: "In vivo", Citation: "Faivre-Fiorina B, Caron A, Fassot C, Fries I, Menu P, Labrude P, et al. Presence of hemoglobin inside aortic endothelial cells after cell-free hemoglobin administration in guinea pigs. American Journal of Physiology-Heart and Circulatory Physiology. 1999;276(2).", StudyType: "Nonclinical" },
-  { FileName: "fitzpatrick-2004", Category: "Hemopure", Title: "Resuscitation with a Blood Substitute Causes Vasoconstriction Without Nitric Oxide Scavenging in a Model of Arterial Hemorrhage", Indication: "hemorrhagic shock", Species: "pigs", Model: "In vivo", Citation: "Fitzpatrick C, Savage S, Kerby J, Clouse W, Kashyap V. Resuscitation with a blood substitute causes vasoconstriction without nitric oxide scavenging in a model of arterial hemorrhage. Journal of the American College of Surgeons. 2004;199(5):693–701.", StudyType: "Nonclinical" },
-  { FileName: "fitzpatrick-2005", Category: "Hemopure - Clinical", Title: "Prolonged Low-Volume Resuscitation with HBOC-201 in a Large-Animal Survival Model of Controlled Hemorrhage", Indication: "Hemorrhagic shock", Species: "16 pigs", Model: "In vivo", Citation: "Fitzpatrick CM, Biggs KL, Atkins BZ, et al. Prolonged Low-Volume Resuscitation with HBOC-201 in a Large-Animal Survival Model of Controlled Hemorrhage J Trauma. 2005 Aug;59(2):273-81; discussion 281-3.", StudyType: "Nonclinical" },
-  { FileName: "freilich-2009", Category: "Human", Title: "HBOC-201 Vasoactivity in a Phase III Clinical Trial in Orthopedic Surgery Subjects—Extrapolation of Potential Risk for Acute Trauma Trials", Indication: "hemorrhagic shock", Species: "Humans", Model: "In vivo", Citation: "Freilich D, Pearce LB, Pitman A, Greenburg G, Berzins M, Bebris L, et al. HBOC-201 Vasoactivity in a Phase III Clinical Trial in Orthopedic Surgery Subjects—Extrapolation of Potential Risk for Acute Trauma Trials. The Journal of Trauma: Injury, Infection, and Critical Care. 2009;66(2):365–76.", StudyType: "Clinical" },
-  { FileName: "freitag-2005", Category: "HBOC-201", Title: "Enhanced central organ oxygenation after application of bovine cell-free hemoglobin HBOC-201", Indication: "isovolemic hemodilution", Species: "12 foxhounds", Model: "In vivo", Citation: "Freitag M, Standl TG, Gottschalk A, Burmeister MA, Rempf C, Horn EP, et al. Enhanced central organ oxygenation after application of bovine cell-free hemoglobin HBOC-201. Canadian Journal of Anesthesia/Journal canadien danesthésie. 2005;52(9):904–14.", StudyType: "Nonclinical" },
-  { FileName: "freitag-2006", Category: "HBOC-301", Title: "Improvement of Impaired Microcirculation and Tissue Oxygenation by Hemodilution with Hydroxyethyl Starch plus Cell-Free Hemoglobin in Acute Porcine Pancreatitis", Indication: "isovolemic<br>hemodilution", Species: "39 pigs", Model: "In vivo", Citation: "Freitag M, Standl TG, Kleinhans H, Gottschalk A, Mann O, Rempf C, et al. Improvement of impaired microcirculation and tissue oxygenation by hemodilution with hydroxyethyl starch plus cell-free hemoglobin in acute porcine pancreatitis. Pancreatology. 2006;6(3):232–9.", StudyType: "Nonclinical" },
-  { FileName: "garner-2007", Category: "Vet", Title: "Amyloidosis in the Black-Footed Ferret (Mustela Nigripes)", Indication: "amyloidosis", Species: "black-footed ferrets", Model: "In vivo", Citation: "Garner, Michael M., D.V.M. Dipl. A.C.V.P., James T. Raymond, D.V.M M.S. Dipl. A.C.V.P, Timothy D. O-Brien, D.V.M. PhD Dipl. A.C.V.P, Robert W. Nordhausen, M.A., and William C. Russell, PhD. \"AMYLOIDOSIS IN THE BLACK-FOOTED FERRET (MUSTELA NIGRIPES).\" Journal of Zoo and Wildlife Medicine 38, no. 1 (2007): 32-41.", StudyType: "Laboratory / Field Study" },
-  { FileName: "gasthuys-2005", Category: "Hemopure", Title: "N-Terminal Adducts of Bovine Hemoglobin with Glutaraldehyde in a Hemoglobin-Based Oxygen Carrier", Indication: "Chemistry", Species: "Human Blood", Model: "In vitro", Citation: "Gasthuys M, Alves S, Tabet J-C. N-Terminal Adducts of Bovine Hemoglobin with Glutaraldehyde in a Hemoglobin-Based Oxygen Carrier. Analytical Chemistry. 2005;77(10):3372–8.", StudyType: "Clinical" },
-  { FileName: "george-2006", Category: "HBOC-201", Title: "A polymerized bovine hemoglobin oxygen carrier preserves regional myocardial function and reduces infarct size after acute myocardial ischemia", Indication: "ischemia", Species: "Dogs", Model: "In vivo", Citation: "George I, Yi G-H, Schulman AR, Morrow BT, Cheng Y, Gu A, et al. A polymerized bovine hemoglobin oxygen carrier preserves regional myocardial function and reduces infarct size after acute myocardial ischemia. American Journal of Physiology-Heart and Circulatory Physiology. 2006;291(3).", StudyType: "Nonclinical" },
-  { FileName: "gibson-2002", Category: "Oxyglobin - nonclinical", Title: "Use of a hemoglobin-based oxygen-carrying solution in cats: 72 cases ( 1998-2000)", Indication: "Anemia", Species: "72 cats", Model: "In vivo", Citation: "Gibson GR, Callan MB, Hoffman V, Giger U. Use of a hemoglobin-based oxygen-carrying solution in cats: 72 cases ( 1998-2000). J Am Vet Med Assoc. 2002 Jul 1;221(1):96-102.", StudyType: "Nonclinical" },
-  { FileName: "giger-1991", Category: "Oxyglobin - nonclinical", Title: "Purified Hemoglobin used as a blood substitute in the treatment of parasite-induced anemia in dogs", Indication: "", Species: "dogs", Model: "In vivo", Citation: "", StudyType: "" },
-  { FileName: "gomez-2017", Category: "Hemopure - Clinical", Title: "Hemoglobin-Based Oxygen Carrier Rescues Double-Transplant Patient From Life-Threatening Anemia.", Indication: "Transplant", Species: "1 human", Model: "In vivo", Citation: "Gomez MF, Aljure O, Ciancio G, Lynn M. Hemoglobin-Based Oxygen Carrier Rescues Double-Transplant Patient From Life-Threatening Anemia. Am J Transplant. 2017 Jul;17(7):1941-1944. doi: 10.1111/ajt.14226. Epub 2017 Mar 17.", StudyType: "Clinical" },
-  { FileName: "gonzalez-1997", Category: "Hemopure - Clinical", Title: "A Phase I/II Study of Polymerized Bovine Hemoglobin in Adult Patients with Sickle Cell Disease not in Crisis at the Time of Study", Indication: "Sickle Cell Anemia", Species: "18 humans", Model: "In vivo", Citation: "Gonzalez P, Hackney AC, Jones S, Strayhorn D, Hoffman EB, Hughes G, Jacobs EE, Orringer EP. A phase I/II study of polymerized bovine hemoglobin in adult patients with sickle cell disease not in crisis at the time of study. J Investig Med. 1997 Jun;45(5):258-64.", StudyType: "Clinical" },
-  { FileName: "goodnough-1999", Category: "Hemopure - Clinical", Title: "Transfusion medicine. First of two parts--blood transfusion.", Indication: "Blood Transfusion", Species: "NA", Model: "", Citation: "Goodnough LT, Brecher ME, Kanter MH, AuBuchon JP. Transfusion medicine. First of two parts--blood transfusion. N Engl J Med. 1999 Feb 11;340(6):438-47.", StudyType: "NA" },
-  { FileName: "gottschalk-2009", Category: "Hemopure - Clinical", Title: "Influence of the Hemoglobin Solution HBOC-201 on Tissue Oxygenation in the Rat R1H-Tumor", Indication: "Tissue oxygenation", Species: "30 rats", Model: "In vivo", Citation: "Gottschalk A, Raabe A, Hommel M, Rempf C, Freitag M, Standl T. Influence of the Hemoglobin Solution HBOC-201 on Tissue Oxygenation in the Rat R1H-Tumor", StudyType: "Nonclinical" },
-  { FileName: "greenburg-2004", Category: "Hemopure", Title: "Hemoglobin-based oxygen carriers", Indication: "Transfusion", Species: "NA", Model: "", Citation: "Greenburg, Garson A., and Hae Won Kim. \"Review Hemoglobin-based Oxygen Carriers.\" Critical Care 8, no. 2 (June 14, 2004): S61-64. doi:DOI 10.1186/cc2455.", StudyType: "Clinical" },
-  { FileName: "guan-2004", Category: "Hemopure and Oxyglobin", Title: "Unique Tryptic Peptides Specific for Bovine and Human Hemoglobin in the Detection and Confirmation of Hemoglobin-Based Oxygen Carriers", Indication: "identify unique peptides", Species: "NA", Model: "", Citation: "Guan F, Uboh C, Soma L, Luo Y, Driessen B. Unique Tryptic Peptides Specific for Bovine and Human Hemoglobin in the Detection and Confirmation of Hemoglobin-Based Oxygen Carriers. Analytical Chemistry. 2004;76(17):5118–26.", StudyType: "Clinical" },
-  { FileName: "hall-2007", Category: "HBOC-201", Title: "Innate Immune Responses in Swine Resuscitated from Severe Traumatic Hemorrhagic Shock with Hemoglobin- Based Oxygen Carrier-201", Indication: "hemorrhagic shock", Species: "pigs", Model: "In vivo", Citation: "Hall C, Malkevich N, Handrigan M, Vandermolen C, Aranaud F, Hong J, et al. Innate Immune Responses in Swine Resuscitated from Severe Traumatic Hemorrhagic Shock with Hemoglobin-Based Oxygen Carrier-201. Artificial Cells, Blood Substitutes, and Biotechnology. 2007;35(3):259–74.", StudyType: "Nonclinical" },
-  { FileName: "hamilton-2001", Category: "Hemopure - Clinical", Title: "Absence of immunopathology associated with repeated IV administration of bovine Hb-based oxygen carrier in dogs", Indication: "Transfusion", Species: "8 dogs", Model: "In vivo", Citation: "Hamilton RG, Kelly N, Gawryl MS, Rentko VT. Absence of immunopathology associated with repeated IV administration of bovine Hb-based oxygen carrier in dogs. Transfusion. 2001 Feb;41(2):219-25.", StudyType: "Nonclinical" },
-  { FileName: "hamilton-2007", Category: "Human", Title: "Bovine hemoglobin (glutamer-250, Hemopure)-specific immunoglobulin G antibody cross-reacts with human hemoglobin but does not lyse red blood cells in vitro", Indication: "Anemia", Species: "Human Blood", Model: "In vitro", Citation: "Hamilton RG, Kickler TS. Bovine hemoglobin (glutamer-250, Hemopure)-specific immunoglobulin G antibody cross-reacts with human hemoglobin but does not lyse red blood cells in vitro. Transfusion. 2007;47(4):723–8.", StudyType: "Clinical" },
-  { FileName: "haque-2012", Category: "Hemopure - Clinical", Title: "Pre-hospital Resuscitation with HBOC-201 and rFVIIa Compared to HBOC-201 Alone in Uncontrolled Hemorrhagic Shok in Swine", Indication: "Hemorrhagic shock", Species: "7 pigs", Model: "In vivo", Citation: "Haque A, Arnaud F, Teranishi K, Okada T, Kim B, Moon-Massat PF, Auker C, McCarron R, Freilich D, Scultetus AH. Pre-hospital resuscitation with HBOC-201 and rFVIIa compared to HBOC-201 alone in uncontrolled hemorrhagic shock in swine. Artif Cells Blood Substit Immobil Biotechnol. 2012 Feb;40(1-2):44-55. doi: 10.3109/10731199.2011.585615. Epub 2011 Aug 2.", StudyType: "Nonclinical" },
-  { FileName: "harringer-1992", Category: "Transfusion", Title: "Acute effects of massive transfusion of a bovine hemoglobin blood<br>substitute in a canine model of hemorrhagic shock", Indication: "Hemorrhagic shock", Species: "dogs", Model: "In vivo", Citation: "Harringer W, Hodakowski G, Svizzero T, Jacobsjr E, Vlahakes G. Acute effects of massive transfusion of a bovine hemoglobin blood substitute in a canine model of hemorrhagic shock. European Journal of Cardio-Thoracic Surgery. 1992;6(12):649–54.", StudyType: "Nonclinical" },
-  { FileName: "hawkey-1982", Category: "Vet", Title: "Haematological findings in healthy and sick<br>African grey parrots ( Psittacus erithacus)", Indication: "Haematological", Species: "11 African grey parrots", Model: "In vivo", Citation: "Hawkey CM, Hart MG, Knight JA, Samour JH, Jones DM. Haematological findings in healthy and sick African grey parrots ( Psittacus erithacus). The Veterinary Record. 1982Dec;:580–2.", StudyType: "Laboratory / Field Study" },
-  { FileName: "he-2017", Category: "Oxyply - Transplantation", Title: "The first case of ischemia-free organ transplantation in humans: A proof of concept", Indication: "Transplant", Species: "human - liver", Model: "In vitro", Citation: "He X, Guo Z, Zhao Q, Ju W, Wang D, Wu L, et al. The first case of ischemia-free organ transplantation in humans: A proof of concept. The American Journal of Transplantation. 2017Nov10;:737–44.", StudyType: "Clinical" },
-  { FileName: "henderson-2004", Category: "Hemopure - Clinical", Title: "The use of a hemoglobin-based oxygen-carrying solution (HBOC-201) for extracorporeal membrane oxygenation in a porcine model with<br>acute respiratory distress syndrome", Indication: "Extracorporeal membrane oxygenation support", Species: "X pigs", Model: "In vivo", Citation: "Henderson CL, Anderson CM, Sorrells DL, Wilson BJ, Dick EJ, DiGeronimo RJ. The use of a hemoglobin-based oxygen-carrying solution (HBOC-201) for extracorporeal membrane oxygenation in a porcine model with acute respiratory distress syndrome. Pediatr Crit Care Med. 2004 Jul;5(4):384-90.", StudyType: "Nonclinical" },
-  { FileName: "Henkel-hanke-2007", Category: "Background", Title: "Artificial Oxygen Carriers: A Current Review", Indication: "General", Species: "NA", Model: "", Citation: "Henkel-Hanke T, Oleck M. Artificial Oxygen Carriers: A Current Review. AANA Journal. 2007Jun;75(3):205–11", StudyType: "Clinical" },
-  { FileName: "hofeling-2006", Category: "Oxyglobin", Title: "Hemoglobin-Based Oxygen Carrier Does Not Improve Survival of Ischemic Rat Island Groin Flaps", Indication: "reperfusion injury to skin flaps", Species: "Rats", Model: "In vivo", Citation: "Hofeling AD, Bello G, Jackson I, Jackson AH, Kim E. Hemoglobin-Based Oxygen Carrier Does Not Improve Survival of Ischemic Rat Island Groin Flaps. Journal of Investigative Surgery. 2006;19(5):299–305.", StudyType: "Nonclinical" },
-  { FileName: "holson-2015", Category: "Hemopure - Clinical", Title: "Absence of developmental toxicity in a canine model after infusion of a hemoglobin-based oxygen carrier: Implications for risk assessment.", Indication: "Toxicity", Species: "Dogs", Model: "In vivo", Citation: "Holson JF, Stump DG, Pearce LB, Watson RE, DeSesso JM. Absence of developmental toxicity in a canine model after infusion of a hemoglobin-based oxygen carrier: Implications for risk assessment. Reprod Toxicol. 2015 Apr;52:101-7. doi: 10.1016/j.reprotox.2015.01.006. Epub 2015 Feb 16.", StudyType: "Nonclinical" },
-  { FileName: "hughes-1996a", Category: "Hemopure - Clinical", Title: "Physiology and pharmacokinetics of a novel hemoglobin-based oxygen carrier in humans.", Indication: "Blood Transfusion", Species: "41 humans", Model: "In vivo", Citation: "Hughes GS Jr, Antal EJ, Locker PK, Francom SF, Adams WJ, Jacobs EE Jr. Physiology and pharmacokinetics of a novel hemoglobin-based oxygen carrier in humans. Crit Care Med. 1996 May;24(5):756-64.", StudyType: "Clinical" },
-  { FileName: "hughes-1995", Category: "Hemopure - Clinical", Title: "Hemoglobin-based oxygen carrier<br>preserves submaximal exercise capacity<br>in humans", Indication: "Exercise capacity", Species: "6 Humans", Model: "In vivo", Citation: "Hughes GS Jr, Yancey EP, Albrecht R, Locker PK, Francom SF, Orringer EP, Antal EJ, Jacobs EE Jr. Hemoglobin-based oxygen carrier preserves submaximal exercise capacity in humans. Clin Pharmacol Ther. 1995 Oct;58(4):434-43.", StudyType: "Clinical" },
-  { FileName: "hughes-1995b", Category: "HBOC-201", Title: "Hematologic effects of a novel hemoglobin-based oxygen carrier in normal male and female subjects.", Indication: "Hematologic effects", Species: "humans", Model: "In vivo", Citation: "Hughes GS, Francome SF, Antal EJ, Adams WJ, Locker PK, Yancey EP, et al. Hematologic effects of a novel hemoglobin-based oxygen carrier in normal male and female subjects. J Lab Clin Med. 1995Nov;126(5):444–51.", StudyType: "Clinical" },
-  { FileName: "hughes-1996b", Category: "Hemopure - Clinical", Title: "Effects of a novel hemoglobin-based oxygen carrier on percent oxygen saturation as determined with arterial blood gas analysis and pulse oximetry.", Indication: "Transfusion", Species: "24 humans", Model: "In vivo", Citation: "Hughes GS, Francom SF, Antal EJ, Adams WJ, Locker PK, Yancey EP, Jacobs EE. Effects of a novel hemoglobin-based oxygen carrier on percent oxygen saturation as determined with arterial blood gas analysis and pulse oximetry. Ann Emerg Med. 1996 Feb;27(2):164-9.", StudyType: "Clinical" },
-  { FileName: "hunter-1997", Category: "Vet", Title: "Mortality in Fledgling Great Horned Owls from Black Fly Hematophaga and Leucocytozoonosis", Indication: "blood parasite Leucocytozoon", Species: "Great Horned Owls", Model: "In vivo", Citation: "Hunter DB, Rohner C, Currie DC. Mortality In Fledgling Great Horned Owls From Black Fly Hematophaga And Leucocytozoonosis. Journal of Wildlife Diseases. 1997;33(3):486–91.", StudyType: "Laboratory / Field Study" },
-  { FileName: "irwin-2008a", Category: "Oxyply - Transplantation", Title: "Polymerized bovine hemoglobin decreases oxygen delivery during normoxia and acute hypoxia in the rat", Indication: "acute hypoxia", Species: "rat - heart", Model: "In vitro", Citation: "Irwin DC, Foreman B, Morris K, White M, Sullivan T, Jacobs R, et al. Polymerized bovine hemoglobin decreases oxygen delivery during normoxia and acute hypoxia in the rat. American Journal of Physiology-Heart and Circulatory Physiology. 2008;295(3).", StudyType: "Nonclinical" },
-  { FileName: "irwin-2008b", Category: "Oxyply - Transplantation", Title: "Mixed S-Nitrosylated Polymerized Bovine Hemoglobin Species Moderate Hemodynamic Effects in Acutely Hypoxic Rats", Indication: "acute hypoxia", Species: "rat - heart", Model: "In vitro", Citation: "Irwin D, Buehler PW, Alayash AI, Jia Y, Bonventura J, Foreman B, et al. Mixed S-Nitrosylated Polymerized Bovine Hemoglobin Species Moderate Hemodynamic Effects in Acutely Hypoxic Rats. American Journal of Respiratory Cell and Molecular Biology. 2010;42(2):200–9.", StudyType: "Nonclinical" },
-  { FileName: "isaac-2006", Category: "Oxyply - Transplantation", Title: "A polymerized bovine hemoglobin oxygen carrier preserves regional myocardial function and reduces infarct size after acute myocardial ischemia", Indication: "decrease infarct size", Species: "dog - heart", Model: "In vitro", Citation: "George I, Yi G-H, Schulman AR, Morrow BT, Cheng Y, Gu A, et al. A polymerized bovine hemoglobin oxygen carrier preserves regional myocardial function and reduces infarct size after acute myocardial ischemia. American Journal of Physiology-Heart and Circulatory Physiology. 2006;291(3).", StudyType: "Nonclinical" },
-  { FileName: "jahr-2000", Category: "Hemopure HBOC-201", Title: "Effects of a Hemoglobin-Based Oxygen Carrier (HBOC-201) on Coagulation Testing", Indication: "Coagulation", Species: "Instruments", Model: "In vitro", Citation: "Jahr, Johnathan S., Fedor Lurie, Robert Gosselin, Johnathan S. Lin, Luchin Wong, and Edward Larkin. \"Effects of a Hemoglobin-Based Oxygen Carrier (HBOC-201) on Coagulation Testing.\" Clinical Laboratory Science 13, no. 4 (Fall 2000): 210-14.", StudyType: "Nonclinical" },
-  { FileName: "jahr-2000", Category: "??", Title: "Validation of Oxygen Saturation Measurements in a Canine Model of Hemoglobin Based Oxygen Carrier (HBOC) Infusion", Indication: "Instrument Measurement Accuracy", Species: "Instruments", Model: "In vitro", Citation: "Jahr, Jonathan S., Fedor Lurie, Bernd Driessen, Zuping Tang, Richard F. Louie, Gerald Kost, and Ravjeet Kullar. \"Validation of Oxygen Saturation Measurements in a Canine Model of Hemoglobin-Based Oxygen Carrier Infusion.\" American Journal of Therapeutics 13, no. 3 (2000): 173-79.", StudyType: "Device" },
-  { FileName: "jahr-2002", Category: "Oxyglobin", Title: "The HemoCue®, a point of care B-hemoglobin photometer, measures hemoglobin concentrations accurately when mixed in vitro with canine plasma and three hemoglobin-based oxygen carriers (HBOC)", Indication: "Instrument Measurement Accuracy", Species: "45 canine plasma samples", Model: "In vitro", Citation: "Jahr JS, Lurie F, Driessen B, Davis JA, Gosselin R, Gunther RA. The HemoCue®, a point of care B-hemoglobin photometer, measures hemoglobin concentrations accurately when mixedin vitro with canine plasma and three hemoglobin-based oxygen carriers (HBOC). Canadian Journal of Anesthesia/Journal canadien danesthésie. 2002;49(3):243–8.", StudyType: "Nonclinical" },
-  { FileName: "jahr-2005", Category: "Hemopure", Title: "Lactate Measurement Interference by Hemoglobin-Based Oxygen Carriers (Oxyglobin®, Hemopure®, and Hemolink™)", Indication: "Instrument Measurement Accuracy", Species: "Instruments", Model: "In vitro", Citation: "Jahr JS, Osgood S, Rothenberg SJ, Li Q-L, Butch AW, Gunther R, et al. Lactate Measurement Interference by Hemoglobin-Based Oxygen Carriers (Oxyglobin, Hemopure, and Hemolink). Anesthesia & Analgesia. 2005;100(2):431–6.", StudyType: "Nonclinical" },
-  { FileName: "jahr-2007", Category: "Hemopure", Title: "Blood substitutes as pharmacotherapies in clinical practice", Indication: "General", Species: "NA", Model: "", Citation: "Jahr JS, Walker V, Manoochehri K. Blood substitutes as pharmacotherapies in clinical practice. Current Opinion in Anaesthesiology. 2007;20(4):325–30.", StudyType: "Clinical" },
-  { FileName: "jahr-2008", Category: "Hemopure - Clinical", Title: "HBOC-201 as an alternative to blood transfusion: efficacy and safety evaluation in a multicenter phase III trial in elective orthopedic surgery.", Indication: "Transfusion", Species: "688 Humans", Model: "In vivo", Citation: "Jahr JS, Mackenzie C, Pearce LB, Pitman A, Greenburg AG. HBOC-201 as an alternative to blood transfusion: efficacy and safety evaluation in a multicenter phase III trial in elective orthopedic surgery. J Trauma. 2008 Jun;64(6):1484-97. doi: 10.1097/TA.0b013e318173a93f.", StudyType: "Clinical" },
-  { FileName: "jahr-2008a", Category: "Oxyglobin - nonclinical", Title: "HBOC-201, hemoglobin glutamer-250 (bovine), Hemopure ® (Biopure Corporation)", Indication: "General", Species: "NA", Model: "", Citation: "Jahr JS, Moallempour M, Lim JC. HBOC-201, hemoglobin glutamer-250 (bovine), Hemopure®(Biopure Corporation). Expert Opinion on Biological Therapy. 2008;8(9):1425–33.", StudyType: "Nonclinical" },
-  { FileName: "jahr-2008c", Category: "Vet", Title: "Measuring Circulating Blood Volume Using Infused Hemoglobin-Based Oxygen Carrier (Oxyglobin?) as an Indicator: Verification in a Canine Hypovolemia Model", Indication: "Circulating Blood Volume (CBV)", Species: "24 dogs", Model: "In vivo", Citation: "Jahr JS, Lurie F, Bezdikian V, Driessen B, Gunther RA. Measuring Circulating Blood Volume Using Infused Hemoglobin-Based Oxygen Carrier (Oxyglobin??) as an Indicator: Verification in a Canine Hypovolemia Model. American Journal of Therapeutics. 2008;15(2):98–101.", StudyType: "Nonclinical" },
-  { FileName: "james-2004", Category: "Human", Title: "The Effect of Hemopure® on Coagulation in Clinically Relevant Concentrations", Indication: "Coagulation", Species: "20 Human", Model: "In vivo", Citation: "James MF, Potgieter HE, Ellis P. The Effect of Hemopure on Coagulation in Clinically Relevant Concentrations. Anesthesia & Analgesia. 2004;:1593–7.", StudyType: "Clinical" },
-  { FileName: "johnson-2006", Category: "??", Title: "Bovine polymerized hemoglobin (hemoglobin-based oxygen carrier-201) resuscitation in three swine models of hemorrhagic shock with militarily relevant delayed evacuation—Effects on histopathology and organ function", Indication: "hemorrhagic shock", Species: "pigs", Model: "In vivo", Citation: "Johnson T, Arnaud F, Dong F, Philbin N, Rice J, Asher L, et al. Bovine polymerized hemoglobin (hemoglobin-based oxygen carrier-201) resuscitation in three swine models of hemorrhagic shock with militarily relevant delayed evacuation—Effects on histopathology and organ function*. Critical Care Medicine. 2006;34(5):1464–74.", StudyType: "Nonclinical" },
-  { FileName: "johnson-delany-2010", Category: "Vet", Title: "Emerging Ferret Diseases", Indication: "General", Species: "Ferrets", Model: "In vivo", Citation: "Johnson-Delaney CA. Emerging Ferret Diseases. Journal of Exotic Pet Medicine. 2010;19(3):207–15.", StudyType: "Laboratory / Field Study" },
-  { FileName: "johnston-2007", Category: "Vet", Title: "Immune-mediated hemolytic anemia<br>in an eclectus parrot", Indication: "immune-mediated hemolytic anemia", Species: "eclectus parrot", Model: "In vivo", Citation: "Johnston MS, Son TT, Rosenthal KL. Immune-mediated hemolytic anemia in an eclectus parrot. Journal of the American Veterinary Medical Association. 2007;230(7):1028–31.", StudyType: "Laboratory / Field Study" },
-  { FileName: "joyner-2006", Category: "Vet", Title: "West Nile Virus in Raptors from Virginia During 2003: Clinical, Diagnostic, and Epidemiologic Findings", Indication: "West Nile Virus", Species: "Avian", Model: "In vivo", Citation: "Joyner PH, Kelly S, Shreve AA, Snead SE, Sleeman JM, Pettit DA. West Nile Virus In Raptors From Virginia During 2003: Clinical, Diagnostic, And Epidemiologic Findings. Journal of Wildlife Diseases. 2006;42(2):335–44.", StudyType: "Laboratory / Field Study" },
-  { FileName: "kamo-2013", Category: "Oxyply - Transplantation", Title: "Pten-Mediatedakt/β-Catenin/Foxo1 Signaling Regulates Innate Immune Responses in Mouse Liver Ischemia/Reperfusion Injury", Indication: "Chemistry", Species: "mouse - liver", Model: "In vitro", Citation: "Kamo N, Ke B, Busuttil RW, Kupiec-Weglinski JW. PTEN-mediated akt/β-Catenin/foxo1 signaling regulates innate immune responses in mouse liver ischemia/reperfusion injury. Hepatology. 2012;57(1):289–98.", StudyType: "Nonclinical" },
-  { FileName: "kasper-1996", Category: "Hemopure - Clinical", Title: "Effects of a Hemoglobin-Based Oxygen Carrier (HBOC-201) on Hemodynamics and Oxygen Transport in Patients Undergoing Preoperative Hemodilution for Elective Abdominal Aortic Surgery", Indication: "Hemodynamics and Oxygen Transport", Species: "13 Humans", Model: "In vivo", Citation: "Kasper SM, Walter M, Grüne F, Bischoff A, Erasmi H, Buzello W. Effects of a hemoglobin-based oxygen carrier (HBOC-201) on hemodynamics and oxygen transport in patients undergoing preoperative hemodilution for elective abdominal aortic surgery.<br>Anesth Analg. 1996 Nov;83(5):921-7.", StudyType: "Clinical" },
-  { FileName: "kasper-1998", Category: "Hemopure - Clinical", Title: "The effects of increased doses of bovine hemoglobin on hemodynamics and oxygen transport in patients undergoing preoperative hemodilution for elective abdominal aortic surgery.", Indication: "Abdominal Aortic Surgery", Species: "24 humans", Model: "In vivo", Citation: "Kasper SM, Grüne F, Walter M, Amr N, Erasmi H, Buzello W. The effects of increased doses of bovine hemoglobin on hemodynamics and oxygen transport in patients undergoing preoperative hemodilution for elective abdominal aortic surgery. Anesth Analg. 1998 Aug;87(2):284-91.", StudyType: "Clinical" },
-  { FileName: "katz-2002", Category: "Oxyglobin - nonclinical", Title: "HBOC-201 improves survival in a swine model of hemorrhagic shock and liver injury", Indication: "Liver injury/ Hemorrhagic Shock", Species: "27 pigs", Model: "In vivo", Citation: "Katz LM, Manning JE, McCurdy S, et al. HBOC-201 improves survival in a swine model of hemorrhagic shock and liver injury. Resuscitation. 2002 Jul;54(1):77-87.", StudyType: "Nonclinical" },
-  { FileName: "kavdia-2002a", Category: "Oxyply - Transplantation", Title: "Model of nitric oxide diffusion in an arteriole: impact of hemoglobin-based blood substitutes", Indication: "Nitric Oxide<br>(NO)", Species: "in vitro - heart", Model: "In vitro", Citation: "Kavdia M, Tsoukias NM, Popel AS. Model of nitric oxide diffusion in an arteriole: impact of hemoglobin-based blood substitutes. American Journal of Physiology-Heart and Circulatory Physiology. 2002;282(6).", StudyType: "Nonclinical" },
-  { FileName: "kavdia-2002b", Category: "Oxyply - Transplantation", Title: "Theoretical analysis of effects of blood substitute affinity and cooperativity on organ oxygen transport", Indication: "Hemodynamics and Oxygen Transport", Species: "in vitro - heart", Model: "In vitro", Citation: "Kavdia M, Pittman RN, Popel AS. Theoretical analysis of effects of blood substitute affinity and cooperativity on organ oxygen transport. Journal of Applied Physiology. 2002;93(6):2122–8.", StudyType: "Nonclinical" },
-  { FileName: "keipert-2017", Category: "Human", Title: "Hemoglobin-Based Oxygen Carrier (HBOC) Development in Trauma: Previous Regulatory Challenges, Lessons Learned, and a Path Forward.", Indication: "Development in Trauma", Species: "NA", Model: "", Citation: "Keipert PE. Hemoglobin-Based Oxygen Carrier (HBOC) Development in Trauma: Previous Regulatory Challenges, Lessons Learned, and a Path Forward. Adv Exp Med Biol. 2017;977:343-350. doi: 10.1007/978-3-319-55231-6_45.", StudyType: "Clinical" },
-  { FileName: "kerby-2007", Category: "Hemopure - Clinical", Title: "Resuscitation from hemorrhagic shock with HBOC-201 in the setting of traumatic brain injury.", Indication: "Hemorrhagic Shock and Brain Injury", Species: "64 Rats", Model: "In vivo", Citation: "Kerby JD, Sainz JG, Zhang F, Hutchings A, Sprague S, Farrokhi FR, Son M. Resuscitation from hemorrhagic shock with HBOC-201 in the setting of traumatic brain injury. Shock. 2007 Jun;27(6):652-6.", StudyType: "Nonclinical" },
-  { FileName: "khan-2003", Category: "??", Title: "Does Lead Interfere with Hemoglobin-Based Oxygen Carrier (HBOC) Function? A Pilot Study of Lead Concentrations in Three Approved or Tested HBOCs and Oxyhemoglobin Dissociation with HBOCs and/or Bovine Blood with Varying Lead Concentrations", Indication: "Lead Concentrations", Species: "Blood", Model: "In vitro", Citation: "Khan AK, Jahr JS, Nesargi S, Rothenberg SJ, Tang Z, Cheung A, et al. Does Lead Interfere with Hemoglobin-Based Oxygen Carrier (HBOC) Function? A Pilot Study of Lead Concentrations in Three Approved or Tested HBOCs and Oxyhemoglobin Dissociation with HBOCs and/or Bovine Blood with Varying Lead Concentrations. Anesthesia & Analgesia. 2003;:1813–20.", StudyType: "Nonclinical" },
-  { FileName: "king-2005", Category: "Hemopure - Clinical", Title: "Resuscitation with a hemoglobin-based oxygen carrier after traumatic brain injury.", Indication: "Traumatic Brain Injury", Species: "21 pigs", Model: "In vivo", Citation: "King DR, Cohn SM, Proctor KG. Resuscitation with a hemoglobin-based oxygen carrier after traumatic brain injury. J Trauma. 2005 Sep;59(3):553-60; discussion 560-2.", StudyType: "Nonclinical" },
-  { FileName: "kocian-2008", Category: "??", Title: "Haemoglobin, oxygen carriers and perioperative organ perfusion", Indication: "Hemodynamics and Oxygen Transport", Species: "Humans", Model: "In vivo", Citation: "Kocian R, Spahn DR. Haemoglobin, oxygen carriers and perioperative organ perfusion. Best Practice & Research Clinical Anaesthesiology. 2008;22(1):63–80.", StudyType: "Clinical" },
-  { FileName: "korte-2018", Category: "Hemopure - Clinical", Title: "Analytical interference of HBOC-201 (Hemopure, a synthetic hemoglobinbased oxygen carrier) on four common clinical chemistry platforms", Indication: "Instrument Measurement Accuracy", Species: "Blood", Model: "In vitro", Citation: "Korte EA, Pozzi N, Wardrip N, Ayyoubi M, Jortani SA. Analytical interference of HBOC-201 (Hemopure, a synthetic hemoglobin-based oxygen carrier) on four common clinical chemistry platforms. Clinica Chimica Acta. 2018;482:33–9.", StudyType: "Clinical" },
-  { FileName: "kron-2016", Category: "Oxyply - Transplantation", Title: "Short, Cool, and Well Oxygenated – HOPE for Kidney Transplantation in a Rodent Model", Indication: "Transplant", Species: "mouse - kidneys", Model: "In vitro", Citation: "Kron P, Schlegel A, Rougemont OD, Oberkofler CE, Clavien P-A, Dutkowski P. Short, Cool, and Well Oxygenated – HOPE for Kidney Transplantation in a Rodent Model. Annals of Surgery. 2016;264(5):815–22.", StudyType: "Nonclinical" },
-  { FileName: "kubulus-2005", Category: "??", Title: "Influence of heme-based solutions on stress protein expression and organ failure after hemorrhagic shock", Indication: "Hemorrhagic Shock", Species: "Rats", Model: "In vivo", Citation: "Kubulus D, Rensing H, Paxian M, Thierbach J-T, Meisel T, Redl H, et al. Influence of heme-based solutions on stress protein expression and organ failure after hemorrhagic shock*. Critical Care Medicine. 2005;33(3):629–37.", StudyType: "Nonclinical" },
-  { FileName: "kubulus-2009", Category: "Oxyglobin - nonclinical", Title: "Endothelin-1 contributes to hemoglobin glutamer-200-mediated hepatocellular dysfunction after hemorrhagic shock.", Indication: "Hemorrhagic Shock", Species: "unknown number of rats", Model: "In vivo", Citation: "Kubulus D, Mathes A, Reus E, Pradarutti S, Pavlidis D, Thierbach JT, Heiser J, Wolf B, Bauer I, Rensing H. Endothelin-1 contributes to hemoglobin glutamer-200-mediated hepatocellular dysfunction after hemorrhagic shock. Shock. 2009 Aug;32(2):179-89.", StudyType: "Nonclinical" },
-  { FileName: "laccetti-2005", Category: "Hemopure", Title: "Hemopure's Process Demonstrates TSE and Viral Clearance", Indication: "Manufacturing", Species: "NA", Model: "", Citation: "Laccetti, A., J. Bagai, M.S. Gawryl, and W.R. Light. \"Hemopure's Process Demonstrates TSE and Viral Clearance.\" Advances in Transfusion Safety 120 (2005): 35-36.", StudyType: "NA" },
-  { FileName: "laing-2017", Category: "Transplant", Title: "The Use of an Acellular Oxygen Carrier in a Human Liver Model of Normothermic Machine Perfusion.", Indication: "Transplant", Species: "10 Livers", Model: "In vitro", Citation: "Laing RW, Bhogal RH, Wallace L, Boteon Y, Neil DAH, Smith A, Stephenson BTF, Schlegel A, Hübscher SG, Mirza DF, Afford SC, Mergental H. The Use of an Acellular Oxygen Carrier in a Human Liver Model of Normothermic Machine Perfusion. Transplantation. 2017 May 18. doi: 10.1097/TP.0000000000001821.", StudyType: "Clinical" },
-  { FileName: "lamuraglia-2000", Category: "Hemopure - Clinical", Title: "The reduction of the allogenic transfusion requirement in aortic surgery with a hemoglobin-based solution.", Indication: "Infrarenal Aortic Reconstruction", Species: "72 humans", Model: "In vivo", Citation: "LaMuraglia GM, O'Hara PJ, Baker WH, Naslund TC, Norris EJ, Li J, Vandermeersch E. The reduction of the allogenic transfusion requirement in aortic surgery with a hemoglobin-based solution. J Vasc Surg. 2000 Feb;31(2):299-308.", StudyType: "Clinical" },
-  { FileName: "lamy-2000", Category: "Hemopure - Clinical", Title: "Randomized trial of diaspirin cross-linked hemoglobin solution as an alternative to blood transfusion after cardiac surgery. The DCLHb Cardiac Surgery Trial Collaborative Group.", Indication: "Cardiac Surgery", Species: "209 humans", Model: "In vivo", Citation: "Lamy ML, Daily EK, Brichant JF, Larbuisson RP, Demeyere RH, Vandermeersch EA, Lehot JJ, Parsloe MR, Berridge JC, Sinclair CJ, Baron JF, Przybelski RJ. Randomized trial of diaspirin cross-linked hemoglobin solution as an alternative to blood transfusion after cardiac surgery. The DCLHb Cardiac Surgery Trial Collaborative Group. Anesthesiology. 2000 Mar;92(3):646-56.", StudyType: "Clinical" },
-  { FileName: "lasne-2004", Category: "Anti-doping", Title: "Detection of Hemoglobin-Based Oxygen Carriers in Human Serum for Doping Analysis: Screening by Electrophoresis", Indication: "Electrophoretic analysis method", Species: "12 humans", Model: "In vivo", Citation: "Lasne F. Detection of Hemoglobin-Based Oxygen Carriers in Human Serum for Doping Analysis: Screening by Electrophoresis. Clinical Chemistry. 2004;50(2):410–5.", StudyType: "Clinical" },
-  { FileName: "lee-1989", Category: "Hemopure - Clinical", Title: "Ultrapure, stroma-free, polymerized bovine hemoglobin solution: evaluation of renal toxicity.", Indication: "Blood Substitution", Species: "30 Rats", Model: "In vivo", Citation: "Lee R, Atsumi N, Jacobs EE Jr, Austen WG, Vlahakes GJ. Ultrapure, stroma-free, polymerized bovine hemoglobin solution: evaluation of renal toxicity. J Surg Res. 1989 Nov;47(5):407-11.", StudyType: "Nonclinical" },
-  { FileName: "lee-1995", Category: "Hemopure - Clinical", Title: "Limitations of the efficacy of hemoglobin-based<br>oxygen-carrying solutions", Indication: "Blood Substitution", Species: "12 Sheep", Model: "In vivo", Citation: "Lee R, Neya K, Svizzero TA, Vlahakes GJ. Limitations of the efficacy of hemoglobin-based oxygen-carrying solutions. J Appl Physiol (1985). 1995 Jul;79(1):236-42.", StudyType: "Nonclinical" },
-  { FileName: "leighton-1983", Category: "Vet", Title: "Heinz-Body Hemolytic Anemia from the Ingestion of Crude Oil:<br>A Primary Toxic Effect in Marine Birds", Indication: "Anemia", Species: "Marine Birds", Model: "In vivo", Citation: "Leighton F, Peakall D, Butler R. Heinz-body hemolytic anemia from the ingestion of crude oil: a primary toxic effect in marine birds. Science. 1983;220(4599):871–3.", StudyType: "Laboratory / Field Study" },
-  { FileName: "lemos-1996", Category: "Hemopure - Clinical", Title: "Blood transfusion in orthopaedic operations.", Indication: "Transfusion", Species: "NA", Model: "", Citation: "Lemos MJ, Healy WL. Blood transfusion in orthopaedic operations. J Bone Joint Surg Am. 1996 Aug;78(8):1260-70.", StudyType: "NA" },
-  { FileName: "levien-2006", Category: "Hemopure - Clinical", Title: "South Africa: Clinical experience with Hemopure", Indication: "Anemia", Species: "336 humans", Model: "In vivo", Citation: "levin. South Africa: Clinical experience with Hemopure. Journal compilation 2006 Blackwell Publishing", StudyType: "Clinical" },
-  { FileName: "levy-2002", Category: "Hemopure", Title: "Polymerized bovine hemoglobin solution as a replacement for allogeneic red blood cell transfusion after cardiac surgery: Results of a randomized, double-blind trial", Indication: "Transfusion", Species: "98 humans", Model: "In vivo", Citation: "Levy JH, Goodnough LT, Greilich PE, Parr GV, Stewart RW, Gratz I, et al. Polymerized bovine hemoglobin solution as a replacement for allogeneic red blood cell transfusion after cardiac surgery: Results of a randomized, double-blind trial. The Journal of Thoracic and Cardiovascular Surgery. 2002;124(1):35–42.", StudyType: "Clinical" },
-  { FileName: "levy-2003", Category: "Human", Title: "The use of haemoglobin glutamer-250 (HBOC-201) as an oxygen bridge in patients with acute anaemia associated with surgical blood loss", Indication: "Transfusion", Species: "NA", Model: "", Citation: "Levy JH. The use of haemoglobin glutamer-250 (HBOC-201) as an oxygen bridge in patients with acute anaemia associated with surgical blood loss. Expert Opinion on Biological Therapy. 2003;3(3):509–17.", StudyType: "Clinical" },
-  { FileName: "lichtenberger-2004", Category: "Oxyglobin - nonclinical", Title: "Transfusion Medicine in Exotic Pets", Indication: "Transfusion", Species: "NA", Model: "", Citation: "Lichtenberger M. Transfusion Medicine in Exotic Pets. lin Tech Small Anim Pract. 2004 May;19(2):88-95. Review", StudyType: "Nonclinical" },
-  { FileName: "lichtenberger-2007", Category: "Vet", Title: "Shock and Cardiopulmonary-Cerebral<br>Resuscitation in Small Mammals and Birds", Indication: "Hemorrhagic Shock", Species: "Small Mammal/Birds", Model: "In vivo", Citation: "Lichtenberger M. Shock and Cardiopulmonary-Cerebral Resuscitation in Small Mammals and Birds. Veterinary Clinics of North America: Exotic Animal Practice. 2007;10(2):275–91.", StudyType: "Laboratory / Field Study" },
-  { FileName: "lichtenberger-2009", Category: "Oxyglobin - nonclinical", Title: "Comparison of fluid types for resuscitation<br>after acute blood loss in mallard ducks<br>(Anas platyrhynchos)", Indication: "Hemorrhagic Shock", Species: "28 ducks", Model: "In vivo", Citation: "Lichtenberger M, Orcutt C, Cray C, Thamm DH, DeBehnke D, Page C, Mull L, Kirby R. Comparison of fluid types for resuscitation after acute blood loss in mallard ducks<br>(Anas platyrhynchos). J Vet Emerg Crit Care (San Antonio). 2009 Oct;19(5):467-72.", StudyType: "Nonclinical" },
-  { FileName: "liu-2015", Category: "Oxyply - Transplantation", Title: "Comparing Normothermic Machine Perfusion Preservation With Different Perfusates on Porcine Livers From Donors After Circulatory Death", Indication: "Preservation/ Storage Methods", Species: "pig - liver", Model: "In vitro", Citation: "Liu Q, Nassar A, Farias K, Buccini L, Mangino MJ, Baldwin W, et al. Comparing Normothermic Machine Perfusion Preservation With Different Perfusates on Porcine Livers From Donors After Circulatory Death. American Journal of Transplantation. 2015;16(3):794–807.", StudyType: "Nonclinical" },
-  { FileName: "lundy-2014", Category: "Hemopure - Clinical", Title: "Experience with the use of Hemopure in the care of a massively burned adult", Indication: "Transfusion", Species: "1 human", Model: "In vivo", Citation: "Lundy, Jonathan B., Clayton J. Lewis, Leopoldo C. Cancio, and Andrew P. Cap. \"Case Report Experience with the Use of Hemopure in the Care of a Massively Burned Adult.\" Internationl Journal of Burns and Trauma 4, no. 1 (March 1, 2014): 45-48.", StudyType: "Clinical" },
-  { FileName: "lurie-2002", Category: "Nonclinical", Title: "The Novel HemoCue® Plasma/Low Hemoglobin System Accurately Measures Small Concentrations of Three Different Hemoglobin-Based Oxygen Carriers in Plasma: Hemoglobin Glutamer-200 (Bovine) (Oxyglobin®), Hemoglobin Glutamer-250 (Bovine) (Hemopure®), and Hemoglobin-Raffimer (Hemolink™)", Indication: "Instrument Measurement Accuracy", Species: "150 samples of canine plasma", Model: "In vitro", Citation: "Lurie F, Jahr JS, Driessen B. The Novel HemoCue® Plasma/Low Hemoglobin System Accurately Measures Small Concentrations of Three Different Hemoglobin-Based Oxygen Carriers in Plasma: Hemoglobin Glutamer-200 (Bovine) (Oxyglobin®), Hemoglobin Glutamer-250 (Bovine) (Hemopure®), and Hemoglobin-Raffimer (Hemolink™). Anesthesia & Analgesia. 2002;95(4):870–3.", StudyType: "Nonclinical" },
-  { FileName: "mackenzie-2008", Category: "Clinical", Title: "Management of hemorrhagic shock when blood is not an option", Indication: "Hemorrhagic Shock", Species: "1 human", Model: "In vivo", Citation: "Mackenzie CF, Morrison C, Jaberi M, Genuit T, Katamuluwa S, Rodriguez A. Management of hemorrhagic shock when blood is not an option. Journal of Clinical Anesthesia. 2008;20(7):538–41.", StudyType: "Clinical" },
-  { FileName: "mackenzie-2017", Category: "Hemopure - Clinical", Title: "Users Guide to Pitfalls and Lessons Learned about HBOC-201 during Clinical Trials, Expanded Access<br>and Clinical Use in 1,701 Patients. “2017 MILITARY SUPPLEMENT”", Indication: "Trauma patients", Species: "1,701 humans", Model: "In vivo", Citation: "Mackenzie CF, Dubé GP, Pitman A, Zafirelis M. Users Guide to Pitfalls and Lessons Learned about HBOC-201 During Clinical Trials, Expanded Access, and Clinical use in 1,701 Patients. Shock. 2017;:1.", StudyType: "Clinical" },
-  { FileName: "malka-2010", Category: "Vet", Title: "Immune-mediated pure red cell aplasia<br>in a domestic ferret", Indication: "Anemia", Species: "ferret", Model: "In vivo", Citation: "Malka S, Hawkins MG, Zabolotzky SM, Mitchell EB, Owens SD. Immune-mediated pure red cell aplasia in a domestic ferret. Journal of the American Veterinary Medical Association. 2010;237(6):695–700.", StudyType: "Laboratory / Field Study" },
-  { FileName: "manning-2000", Category: "Oxyglobin - nonclinical", Title: "Bovine Hemoglobin-Based Oxygen Carrier (HBOC-201) For Resuscitation of Uncontrolled, Exsanguinating Liver Injury in Swine", Indication: "Liver injury/ Hemorrhagic Shock", Species: "17 pigs", Model: "In vivo", Citation: "Manning JE1, Katz LM, Brownstein MR, Pearce LB, Gawryl MS, Baker CC. Bovine Hemoglobin-Based Oxygen Carrier (HBOC-201) For Resuscitation of Uncontrolled, Exsanguinating Liver Injury in Swine. Shock. 2000 Feb;13(2):152-9.", StudyType: "Nonclinical" },
-  { FileName: "marinaro-2009", Category: "Human", Title: "HBOC-201 use in traumatic brain injury: case report and review of literature", Indication: "Anemia", Species: "1 Human", Model: "In vivo", Citation: "Marinaro, Jonathan, Jessica Smith, Isaac Tawil, Mary Billstrand, and Kendall P. Crookston. \"HBOC-201 Use in Traumatic Brain Injury: Case Report and Review of Literature.\" Transfusion 49, no. 10 (2009): 2054-059. doi:10.1111/j.1537-2995.2009.02235.x.", StudyType: "Clinical" },
-  { FileName: "martinho-2009", Category: "Vet", Title: "Indications and Techniques for Blood<br>Transfusion in Birds", Indication: "Anemia", Species: "Avain Species", Model: "In vivo", Citation: "Martinho F. Indications and Techniques for Blood Transfusion in Birds. Journal of Exotic Pet Medicine. 2009;18(2):112–6.", StudyType: "Laboratory / Field Study" },
-  { FileName: "masuno-2005", Category: "??", Title: "Prehospital hemoglobin-based oxygen carrier resuscitation attenuates postinjury acute lung injury", Indication: "Hemorrhagic shock", Species: "rats", Model: "In vivo", Citation: "Masuno T, Moore EE, Cheng AM, Moore PK, Grant AR, Johnson JL. Prehospital hemoglobin-based oxygen carrier resuscitation attenuates postinjury acute lung injury. Surgery. 2005;138(2):335–41.", StudyType: "Nonclinical" },
-  { FileName: "matton-2018", Category: "Transplant", Title: "Normothermic Machine Perfusion of Donor Livers Without the Need for Human Blood Products", Indication: "Preservation/ Storage Methods", Species: "24 human donor livers", Model: "In vitro", Citation: "Matton, Alix P.M., Laura C. Burlage, Rianne Van Rijni, Yvonne De Vries, Shanice A. Karangwa, Maarten W. Nijsten, Annette S.H. Gouw, Janneke Wiersema-Buist, Jelle Adelmeijer, Andrie C. Westerkamp, Ton Lisman, and Robert J. Porte. \"Normothermic Machine Perfusion of Donor Livers Without the Need for Human Blood Products.\" Liver Transplantation 24, no. 8 (2018): 528-38. doi:10.1002/lt.25184.", StudyType: "Clinical" },
-  { FileName: "maxson-1993", Category: "Vet", Title: "Use of a bovine hemoglobin preparation in the treatment of cyclic ovarian hemorrhage in a miniature horse", Indication: "Hemorrhagic Shock", Species: "miniature horse", Model: "In vivo", Citation: "Maxson, Abby D., VMD, Urs Giger, PD, Dr Med Vet, Corinne R. Sweeney, DVM, Michael Tomasic, VMD, Judith E. Saik, DVM, William J. Donawick, DVM, and E. Gus Cothran, PhD. \"Use of a Bovine Hemoglobin Preparation in the Treatment of Cyclic Ovarian Hemorrhage in a Miniature Horse.\" Equine 203, no. 9 (November 1, 1993): 1308-311.", StudyType: "Laboratory / Field Study" },
-  { FileName: "mcewen-2001", Category: "Vet", Title: "Polymerized bovine hemoglobin (Oxyglobin Solution) administration in two river otters (Lutra canadensis)", Indication: "Anemia", Species: "2 otters", Model: "In vivo", Citation: "Mcewen M-M, Moon-Massat PF, Butler EC, Kollias GV. Polymerized bovine hemoglobin (Oxyglobin Solution) administration in two river otters (Lutra canadensis). Veterinary Anaesthesia and Analgesia. 2001;28(4):214–9.", StudyType: "Nonclinical" },
-  { FileName: "mcneil-2001", Category: "Hemopure - Clinical", Title: "Hypotensive Resuscitation Using a Polymerized Bovine Hemoglobin-Based Oxygen-Carrying Solution (HBOC-201) Leads to Reversal of Anaerobic Metabolism", Indication: "Hypotensive Resuscitation", Species: "30 Pigs", Model: "In vivo", Citation: "McNeil CJ, Smith LD, Jenkins LD, York MG, Josephs MJ. Hypotensive resuscitation using a polymerized bovine hemoglobin-based oxygen-carrying solution (HBOC-201) leads to reversal of anaerobic metabolism. J Trauma. 2001 Jun;50(6):1063-75.", StudyType: "Nonclinical" },
-  { FileName: "mer-2016", Category: "Hemopure - Clinical", Title: "Hemoglobin glutamer-250 (bovine) in South Africa: consensus usage guidelines from clinician experts who have treated patients", Indication: "Acute Anemia / Tissue Oxygen Delivery", Species: "humans", Model: "In vivo", Citation: "Mer M1, Hodgson E2, Wallis L3, Jacobson B4, Levien L5, Snyman J6, Sussman MJ7, James M8, van Gelder A6, Allgaier R9, Jahr JS10. Hemoglobin glutamer-250 (bovine) in South Africa: consensus usage guidelines from clinician experts who have treated patients. Transfusion. 2016 Oct;56(10):2631-2636. doi: 10.1111/trf.13726. Epub 2016 Sep 23.", StudyType: "Clinical" },
-  { FileName: "mergenta-2016", Category: "Oxyply - Transplantation", Title: "Transplantation of Declined Liver Allografts Following Normothermic Ex-Situ Evaluation", Indication: "Transplant", Species: "human - liver", Model: "In vitro", Citation: "Mergental H, Perera MTPR, Laing RW, Muiesan P, Isaac JR, Smith A, et al. Transplantation of Declined Liver Allografts Following Normothermic Ex-Situ Evaluation. American Journal of Transplantation. 2016;16(11):3235–45.", StudyType: "Clinical" },
-  { FileName: "minei-2011", Category: "Human", Title: "Is There a Role for Hemopure in the Prehospital Setting?", Indication: "Transfusion", Species: "98 humans", Model: "In vivo", Citation: "Minei JP. Is There a Role for Hemopure in the Prehospital Setting? The Journal of Trauma: Injury, Infection, and Critical Care. 2011;70.", StudyType: "Clinical" },
-  { FileName: "moallempour-2008", Category: "Pharmacology", Title: "Methemoglobin Effects on Coagulation: A Dose-Response Study With HBOC-200 (Oxyglobin) in a Thrombelastogram Model", Indication: "Coagulation", Species: "human blood samples", Model: "In vitro", Citation: "Moallempour M, Jahr JS, Lim JC, Weeks D, Butch A, Driessen B. Methemoglobin Effects on Coagulation: A Dose-Response Study With HBOC-200 (Oxyglobin) in a Thrombelastogram Model. Journal of Cardiothoracic and Vascular Anesthesia. 2009;23(1):41–7.", StudyType: "Clinical" },
-  { FileName: "moonmassat-2007", Category: "Human", Title: "Hitachi Hemolytic Index correlates with HBOC-201 concentrations: Impact on suppression of analyte results", Indication: "Instrument Measurement Accuracy", Species: "24 common analytes", Model: "In vitro", Citation: "Moon-Massat PF, Tierney JP, Hock KG, Scott MG. Hitachi Hemolytic Index correlates with HBOC-201 concentrations: Impact on suppression of analyte results. Clinical Biochemistry. 2007;41(6):432–5.", StudyType: "Clinical" },
-  { FileName: "moonmassat-2010", Category: "Hemopure - Clinical", Title: "The effect HBOC-201 and sodium nitrite resuscitation after uncontrolled<br>haemorrhagic shock in swine", Indication: "Sodium nitrite resuscitation", Species: "24 Pigs", Model: "In vivo", Citation: "Moon-Massat P, Scultetus A, Arnaud F, Brown A, Haque A, Saha B, Kim B, Sagini E, McGwin G Jr, Auker C, McCarron R, Freilich D. The effect HBOC-201 and sodium nitrite resuscitation after uncontrolled haemorrhagic shock in swine. Injury. 2012 May;43(5):638-47. doi: 10.1016/j.injury.2010.10.013. Epub 2010 Nov 20.", StudyType: "Nonclinical" },
-  { FileName: "mongan-2009", Category: "Nonclinical tox", Title: "Regional Blood Flow After Serial Normovolemic Exchange<br>Transfusion With HBOC-201 (Hemopure) in Anesthetized Swine", Indication: "Hemodynamics and Oxygen Transport", Species: "pigs", Model: "In vivo", Citation: "Mongan PD, Moon-Massat PF, Rentko V, Mihok S, Dragovich A, Sharma P. Regional Blood Flow After Serial Normovolemic Exchange Transfusion With HBOC-201 (Hemopure) in Anesthetized Swine. The Journal of Trauma: Injury, Infection, and Critical Care. 2009;67(1):51–60", StudyType: "Nonclinical" },
-  { FileName: "moreira-1997", Category: "Hemopure", Title: "Effect of Hemopure® on Prothrombin Time and Activated Partial Thromboplastin Time on Seven Coagulation Analyzers", Indication: "Instrument Measurement Accuracy", Species: "Instruments", Model: "In vitro", Citation: "Moreira, Paulo L., Cara C. Lansden, Terri L. Clark, and Maria S. Gawryl. \"Effect of Hemopure® on Prothrombin Time and Activated Partial Thromboplastin Time on Seven Coagulation Analyzers.\"", StudyType: "Nonclinical" },
-  { FileName: "morris-2004", Category: "Oxyply - Transplantation", Title: "Transplantation — A Medical Miracle of the 20th Century", Indication: "Transplant", Species: "human - kidneys", Model: "In vitro", Citation: "Morris PJ. Transplantation — A Medical Miracle of the 20th Century. New England Journal of Medicine. 2004;351(26):2678–80.", StudyType: "Clinical" },
-  { FileName: "mosa-2003", Category: "Hemopure", Title: "Oxygen therapeutics (blood substitutes) in cardiac surgery", Indication: "History/Review", Species: "NA", Model: "", Citation: "Mosa MM, Cheng DC. Oxygen therapeutics (blood substitutes) in cardiac surgery. Current Opinion in Anaesthesiology. 2003;16(1):21–6.", StudyType: "Clinical" },
-  { FileName: "muir-2000", Category: "Hemopure - Clinical", Title: "The Effects of a Hemoglobin-Based Oxygen Carrier (HBOC-301) on Left Ventricular Systolic Function in Anesthetized Dogs", Indication: "Cardiac<br>performance", Species: "7 Dogs", Model: "In vivo", Citation: "Muir WW 3rd, de Morais HS, Constable PD. The effects of a hemoglobin-based oxygen carrier (HBOC-301) on left ventricular systolic function in anesthetized dogs. Vet Surg. 2000 Sep-Oct;29(5):449-55.", StudyType: "Nonclinical" },
-  { FileName: "mullon-2000", Category: "Transfusions", Title: "Transfusions of polymerized bovine hemoglobin in a patient with severe autoimmune hemolytic anemia", Indication: "Anemia", Species: "1 human", Model: "In vivo", Citation: "Mullon J, Giacoppe G, Clagett C, Mccune D, Dillard T. Transfusions of Polymerized Bovine Hemoglobin in a Patient with Severe Autoimmune Hemolytic Anemia. New England Journal of Medicine. 2000;342(22):1638–43.", StudyType: "Clinical" },
-  { FileName: "murray-2008", Category: "Vet", Title: "Diagnosis and Treatment of Secondary Anticoagulant Rodenticide Toxicosis in a Red-tailed Hawk<br>(Buteo jamaicensis)", Indication: "Anticoagulant rodenticides toxicosis", Species: "red-tailed hawk", Model: "In vivo", Citation: "Murray M, Tseng F. Diagnosis and Treatment of Secondary Anticoagulant Rodenticide Toxicosis in a Red-tailed Hawk (Buteo jamaicensis). Journal of Avian Medicine and Surgery. 2008;22(1):41–6.", StudyType: "Laboratory / Field Study" },
-  { FileName: "mytinger-2017", Category: "Hemopure - Clinical", Title: "Management of life threatening post-partum hemorrhage with HBOC-201 in a Jehovah’s witness", Indication: "Post-partum Hemorrhage", Species: "1 human", Model: "In vivo", Citation: "Mytinger A, Sheehan E, Blue N, Crookston K, Saeed A. Management of life threatening post-partum hemorrhage with HBOC-201 in a Jehovah’s witness. Southwest Journal of Pulmonary and Critical Care. 2017;14(4):177–84.", StudyType: "Clinical" },
-  { FileName: "nakade-2005", Category: "Vet", Title: "Lead Poisoning in Whooper and Tundra Swans", Indication: "Lead poison/Anemia", Species: "Whooper Swan/Tundra Swan", Model: "In vivo", Citation: "Nakade T, Tomura Y, Jin K, Taniyama H, Yamamoto M, Kikkawa A, et al. Lead Poisoning in Whooper and Tundra Swans. Journal of Wildlife Diseases. 2005;41(1):253–6.", StudyType: "Laboratory / Field Study" },
-  { FileName: "natanson-2008", Category: "General - HBOC", Title: "Cell-Free Hemoglobin-Based Blood Substitutes and Risk of Myocardial Infarction and Death: A Meta-analysis", Indication: "History/Review", Species: "13 humans", Model: "In vivo", Citation: "Natanson C, Kern SJ, Lurie P, Banks SM, Wolfe SM. Cell-Free Hemoglobin-Based Blood Substitutes and Risk of Myocardial Infarction and Death. Jama. 2008;299(19):2304.", StudyType: "Clinical" },
-  { FileName: "nevill-2009", Category: "Vet", Title: "Diagnosis of Nontraumatic Blood Loss in Birds and Reptiles", Indication: "hemostasis in birds and reptiles", Species: "Avian/Reptiles", Model: "In vivo", Citation: "Nevill H. Diagnosis of Nontraumatic Blood Loss in Birds and Reptiles. Journal of Exotic Pet Medicine. 2009;18(2):140–5.", StudyType: "Laboratory / Field Study" },
-  { FileName: "nigam-2017", Category: "General - HBOC", Title: "Storage of nitroglycerin (NTG) admixed with HBOC-201 for 30 days in polyolefin plastic bags: a pilot study", Indication: "Preservation/ Storage Methods", Species: "NA", Model: "", Citation: "Nigam S, Mccarron R, Arnaud F. Storage of nitroglycerin (NTG) admixed with HBOC-201 for 30 days in polyolefin plastic bags: a pilot study. Drug Delivery and Translational Research. 2017;7(5):674–82.", StudyType: "Preservation/ Storage Methods" },
-  { FileName: "okey-1939", Category: "Chemistry", Title: "Anemia Caused by Feeding Cholesterol to Guinea Pigs", Indication: "Anemia", Species: "Guinea Pigs", Model: "In vivo", Citation: "Okey, Ruth, and Vera D. Greaves. \"ANEMIA CAUSED BY FEEDING CHOLESTEROL TO GUINEA PIGS.\" Journal of Biological Chemistry 129 (February 3, 1939): 111-23. Accessed March 15, 2017. Journal of Biological Chemistry.", StudyType: "Nonclinical" },
-  { FileName: "ortegon-2002", Category: "Nonclinical tox", Title: "The Polymerized Bovine Hemoglobin-Based Oxygen-Carrying<br>Solution (HBOC-201) Is Not Toxic to Neural Cells in Culture", Indication: "neural cell dysfunction", Species: "Rat fetal<br>neural cell culture", Model: "In vitro", Citation: "Ortegon DP, Davis MR, Dixon PS, Smith DL, Josephs JD, Mueller DL, et al. The Polymerized Bovine Hemoglobin-Based Oxygen-Carrying Solution (HBOC-201) Is Not Toxic to Neural Cells in Culture. The Journal of Trauma: Injury, Infection, and Critical Care. 2002;53(6):1068–72.", StudyType: "Nonclinical" },
-  { FileName: "oretgon-2003", Category: "HBOC-201", Title: "The Effect of the Bovine Hemoglobin Oxygen Therapeutic HBOC-201 on Human Neutrophil Activation In Vitro", Indication: "neutrophil activation after exposure<br>to HBOC-201", Species: "Human blood", Model: "In vitro", Citation: "Ortegon DP, Dixon PS, Crow KK, Mueller DL, Kerby JD. The Effect of the Bovine Hemoglobin Oxygen Therapeutic HBOC-201 on Human Neutrophil Activation In Vitro. The Journal of Trauma: Injury, Infection, and Critical Care. 2003;55(4):755–61.", StudyType: "Nonclinical" },
-  { FileName: "ortegon-2006", Category: "HBOC-201", Title: "Bovine Hemoglobin-Based Oxygen-Carrying Solution (Hboc-201) Improves Flap Survival in a Rat Model of Epigastric Flap Failure", Indication: "oxygen delivery", Species: "8 rats", Model: "In vivo", Citation: "Ortegon DP, Davis MR, Sampson JB, Dick EJ, Kashyap V, Kerby JD. Bovine hemoglobin-based oxygen-carrying solution (HBOC-201) improves flap survival in a rat model of epigastric flap failure. Microsurgery. 2006;26(3):203–6.", StudyType: "Nonclinical" },
-  { FileName: "ortiz-2014", Category: "Hemopure - Clinical", Title: "Resuscitation from hemorrhagic shock using polymerized hemoglobin compared to blood.", Indication: "microcirculation hemodynamics", Species: "24 hamsters", Model: "In vivo", Citation: "Ortiz D, Barros M, Yan S, Cabrales P. Resuscitation from hemorrhagic shock using polymerized hemoglobin compared to blood. Am J Emerg Med. 2014 Mar;32(3):248-55. doi: 10.1016/j.ajem.2013.11.045. Epub 2013 Dec 7.", StudyType: "Nonclinical" },
-  { FileName: "osgood-2005", Category: "HBOCs", Title: "Does Methemoglobin from Oxidized Hemoglobin Based Oxygen Carrier (Hemoglobin Glutamer 200) Interfere with Lactate Measurement (YSI 2700 SELECT™ Biochemistry Analyzer)?", Indication: "Lactate Measurement", Species: "canine plasma", Model: "In vitro", Citation: "Osgood SL, Jahr JS, Desai P, Tsukamoto J, Driessen B. Does Methemoglobin from Oxidized Hemoglobin-Based Oxygen Carrier (Hemoglobin Glutamer-200) Interfere with Lactate Measurement (YSI 2700 SELECT Biochemistry Analyzer)? Anesthesia & Analgesia. 2005;100(2):437–9.", StudyType: "Nonclinical" },
-  { FileName: "ostwald-1971", Category: "Background", Title: "Effects of Dietary Modifications on Cholesterol-Induced Anemis in Guinea Pigs", Indication: "Cholesterol/Anemia", Species: "Guinea Pigs", Model: "In vivo", Citation: "Ostwald R, Yamanaka W, Irwin D, Hansma H, Light M, Tom K. Effects of Dietary Modifications on Cholesterol-induced Anemia in Guinea Pigs. The Journal of Nutrition. 1971;101(6):699–712.", StudyType: "Nonclinical" },
-  { FileName: "otterbein-2016", Category: "Oxyply - Transplantation", Title: "Innate immunity for better or worse govern the allograft response", Indication: "innate immunity", Species: "mouse - kidneys", Model: "In vitro", Citation: "Otterbein LE, Fan Z, Koulmanda M, Thronley T, Strom TB. Innate immunity for better or worse govern the allograft response. Current Opinion in Organ Transplantation. 2015;20(1):8–12.", StudyType: "Nonclinical" },
-  { FileName: "pachinburavan-2008", Category: "Hemopure - Clinical", Title: "Bovine blood and neuromuscular paralysis as a bridge to recovery in a patient with severe autoimmune hemolytic anemia.", Indication: "Anemia", Species: "1 human", Model: "In vivo", Citation: "Pachinburavan M, Marik PE. Bovine blood and neuromuscular paralysis as a bridge to recovery in a patient with severe autoimmune hemolytic anemia. Clin Transl Sci. 2008 Sep;1(2):172-3. doi: 10.1111/j.1752-8062.2008.00006.x.", StudyType: "Clinical" },
-  { FileName: "patel-2006", Category: "Hemopure - Clinical", Title: "Prehospital HBOC-201 After Traumatic Brain Injury and Hemorrhagic Shock in Swine", Indication: "Hemorrhagic shock", Species: "26 Pigs", Model: "In vivo", Citation: "Patel MB, Feinstein AJ, Saenz AD, Majetschak M, Proctor KG. Prehospital HBOC-201 after traumatic brain injury and hemorrhagic shock in swine. J Trauma. 2006 Jul;61(1):46-56.", StudyType: "Nonclinical" },
-  { FileName: "pearce-2003", Category: "Hemopure - Clinical", Title: "The Pharmacology of Tissue Oxygenation by Biopure's Hemoglobin-Based Oxygen Carrier, Hemopure® (HBOC-201)", Indication: "Oxygenation", Species: "NA", Model: "", Citation: "Pearce LB, Gawryl MS. The pharmacology of tissue oxygenation by biopure's hemoglobin-based oxygen carrier, Hemopure (HBOC-201). Adv Exp Med Biol. 2003;530:261-70.", StudyType: "Nonclinical & Clinical" },
-  { FileName: "perkins-2001", Category: "Oxyglobin - nonclinical", Title: "Polymerized Hemoglobin Therapy in a Foal with Neonatal Isoerythrolysis", Indication: "Neonatal Isoerythrolysis", Species: "1 foal", Model: "In vivo", Citation: "Perkins, GA and Divers, T.J, Polymerized Hemoglobin Therapy in a Foal with Neonatal Isoerythrolysis. J Vet Emerg Crit Car. 2001;(11):141–146.", StudyType: "Nonclinical" },
-  { FileName: "perpinan-2008a", Category: "Vet", Title: "Clinical aspects of systemic granulomatous<br>inflammatory syndrome in ferrets (Mustela<br>putorius furo)", Indication: "granulomatous<br>inflammatory syndrome", Species: "9 ferrets", Model: "In vivo", Citation: "Perpinan D, Lopez C. Clinical aspects of systemic granulomatous inflammatory syndrome in ferrets (Mustela putorius furo). Veterinary Record. 2008;162(6):180–3.", StudyType: "Laboratory / Field Study" },
-  { FileName: "perpinan-2008b", Category: "Vet", Title: "Outbreak of canine distemper in domestic<br>ferrets (Mustela putorius furo)", Indication: "canine distemper", Species: "14 ferrets", Model: "In vivo", Citation: "Perpinan D, Ramis A, Tomas A, Carpintero E, Bargallo F. Outbreak of canine distemper in domestic ferrets (Mustela putorius furo). Veterinary Record. 2008;163(8):246–50.", StudyType: "Laboratory / Field Study" },
-  { FileName: "philbin-2005", Category: "Vet", Title: "A hemoglobin-based oxygen carrier, bovine polymerized hemoglobin (HBOC-201) versus hetastarch (HEX) in a moderate severity hemorrhagic shock swine model with delayed evacuation", Indication: "hemorrhagic shock", Species: "24 pigs", Model: "In vivo", Citation: "Philbin N, Rice J, Gurney J, Mcgwin G, Arnaud F, Dong F, et al. A hemoglobin-based oxygen carrier, bovine polymerized hemoglobin (HBOC-201) versus hetastarch (HEX) in a moderate severity hemorrhagic shock swine model with delayed evacuation. Resuscitation. 2005;66(3):367–78.", StudyType: "Nonclinical" },
-  { FileName: "philbin-2007", Category: "HBOC-<br>201", Title: "Resuscitation following severe, controlled hemorrhage associated with a 24 h delay to surgical intervention in swine using a hemoglobin based oxygen carrier as an oxygen bridge to definitive care", Indication: "hemorrhage", Species: "24 pigs", Model: "In vivo", Citation: "Philbin N, Handrigan M, Rice J, Mcnickle K, Mcgwin G, Williams R, et al. Resuscitation following severe, controlled hemorrhage associated with a 24h delay to surgical intervention in swine using a hemoglobin based oxygen carrier as an oxygen bridge to definitive care. Resuscitation. 2007;74(2):332–43.", StudyType: "Nonclinical" },
-  { FileName: "pollock-2007", Category: "Vet", Title: "Emergency Medicine of the Ferret", Indication: "General", Species: "Ferret", Model: "In vivo", Citation: "Pollock C. Emergency Medicine of the Ferret. Veterinary Clinics of North America: Exotic Animal Practice. 2007;10(2):463–500.", StudyType: "Laboratory / Field Study" },
-  { FileName: "posner-2003", Category: "Oxyglobin - nonclinical", Title: "Colloid osmotic pressure after hemorrhage and replenishment with Oxyglobin Solution, hetastarch, or whole blood in pregnant sheep", Indication: "Blood Transfusion", Species: "17 sheep", Model: "In vivo", Citation: "Posner LP, Moon PF, Bliss SP, Gleed RD, Erb HN. Colloid osmotic pressure after hemorrhage and<br>replenishment with Oxyglobin Solution, hetastarch, or whole blood in pregnant sheep. Vet Anaesth Analg. 2003 Jan;30(1):30-6", StudyType: "Nonclinical" },
-  { FileName: "potgieter-2009", Category: "Hemopure - Clinical", Title: "The use of Hemopure® at Groote Schuur hospital, Cape Town: 4 case studies", Indication: "Acute Surgical Anemia", Species: "1 human", Model: "In vivo", Citation: "potgieter HE, James MF. The use of Hemopure® at Groote Schuur hospital, Cape Town: 4 case studies. SAJAA 2009; 15(1): 13-15", StudyType: "Clinical" },
-  { FileName: "pyatskowit-2008", Category: "??", Title: "Copper deficient rats and mice both develop anemia but only rats<br>have lower plasma and brain iron levels", Indication: "Anemia", Species: "Mouse/Rat", Model: "In vivo", Citation: "Pyatskowit JW, Prohaska JR. Copper deficient rats and mice both develop anemia but only rats have lower plasma and brain iron levels. Comparative Biochemistry and Physiology Part C: Toxicology & Pharmacology. 2008;147(3):316–23.", StudyType: "Nonclinical" },
-  { FileName: "quintini 2018", Category: "Hemopure - Clinical", Title: "Combined hypothermic and normothermic perfusion for the optimization of injured liver grafts.", Indication: "liver transplantation", Species: "review article", Model: "", Citation: "Quintini C, Lomaglio L, Pezzati D, Uso TD, Liu Q. Combined Hypothermic and Normothermic Perfusion for the Optimization of Injured Liver Grafts. Liver Transplantation. 2018;24(12):1647–8.", StudyType: "Pre-clinical" },
-  { FileName: "raabe-2005", Category: "Vet", Title: "No Effect of the Hemoglobin Solution HBOC-201 on the Response of the Rat R1H Tumor to Fractionated Irradiation", Indication: "Tumor hypoxia", Species: "Rats", Model: "In vivo", Citation: "Raabe A, Gottschalk A, Hommel M, Dubben H-H, Strandl T. No Effect of the Hemoglobin Solution HBOC-201 on the Response of the Rat R1H Tumor to Fractionated Irradiation. Strahlentherapie und Onkologie. 2005;181(11):730–7.", StudyType: "Nonclinical" },
-  { FileName: "raines-2015", Category: "Oxyglobin - nonclinical", Title: "A successful transfusion in a tamandua (Tamandua tetradactyla) using both whole blood and blood replacement products.", Indication: "Anemia", Species: "1 Tamandua", Model: "In vivo", Citation: "Raines JA, Storms T. A successful transfusion in a tamandua (Tamandua tetradactyla) using both whole blood and blood replacement products. J Zoo Wildl Med. 2015 Mar;46(1):161-3.", StudyType: "Nonclinical" },
-  { FileName: "ravikumar-2016", Category: "Oxyply - Transplantation", Title: "Liver Transplantation After Ex Vivo Normothermic Machine Preservation: A Phase 1 (First-in-Man) Clinical Trial", Indication: "Transplant", Species: "human - liver", Model: "In vitro", Citation: "Ravikumar R, Jassem W, Mergental H, Heaton N, Mirza D, Perera MTPR, et al. Liver Transplantation After Ex Vivo Normothermic Machine Preservation: A Phase 1 (First-in-Man) Clinical Trial. American Journal of Transplantation. 2016;16:1779–87.", StudyType: "Clinical" },
-  { FileName: "reeves-2005", Category: "??", Title: "Dietary Copper Deficiency Reduces Iron Absorption and Duodenal<br>Enterocyte Hephaestin Protein in Male and Female Rats", Indication: "Anemia", Species: "Rats", Model: "In vivo", Citation: "Reeves PG, Demars LCS, Johnson WT, Lukaski HC. Dietary Copper Deficiency Reduces Iron Absorption and Duodenal Enterocyte Hephaestin Protein in Male and Female Rats. The Journal of Nutrition. 2005;135(1):92–8.", StudyType: "Nonclinical" },
-  { FileName: "rempf-2008", Category: "Vet", Title: "Failed induction of heme oxygenase 1 in endothelial cells exposed to the hemoglobin based oxygen carrier Oxyglobin.", Indication: "effect of HBOC-200", Species: "Rats", Model: "In vivo", Citation: "Rempf C, Ritter A, Schrepfer S, Freitag M, Standl T, Gottschalk A. Failed Induction of Heme Oxygenase 1 in Endothelial Cells Exposed to the Hemoglobin Based Oxygen Carrier Oxyglobin®. Artificial Cells, Blood Substitutes, and Biotechnology. 2008;36(1):34–44.", StudyType: "Nonclinical" },
-  { FileName: "rempf-2009", Category: "HBOC-200", Title: "Administration of bovine polymerized haemoglobin before and during coronary occlusion reduces infarct size in rabbits", Indication: "myocardial ischaemia", Species: "32 rabbits", Model: "In vivo", Citation: "Rempf C, Standl T, Schenke K, Chammas K, Gottschalk A, Burmeister M-A, et al. Administration of bovine polymerized haemoglobin before and during coronary occlusion reduces infarct size in rabbits. British Journal of Anaesthesia. 2009;103(4):496–504.", StudyType: "Nonclinical" },
-  { FileName: "rice-2006", Category: "HBOC-201", Title: "Bovine Polymerized Hemoglobin Versus Hextend Resuscitation in a Swine Model of Severe Controlled Hemorrhagic Shock with Delay to Definitive Care", Indication: "hemorrhagic shock", Species: "24 pigs", Model: "In vivo", Citation: "Rice J, Philbin N, Mcgwin G, Arnaud F, Johnson T, Flournoy WS, et al. Bovine Polymerized Hemoglobin Versus Hextend Resuscitation In A Swine Model Of Severe Controlled Hemorrhagic Shock With Delay To Definitive Care. Shock. 2006;26(3):302–10.", StudyType: "Nonclinical" },
-  { FileName: "rice-2006a", Category: "Human", Title: "Vasoactivity of Bovine Polymerized Hemoglobin (HBOC-201) in Swine With Traumatic Hemorrhagic Shock With and Without Brain Injury", Indication: "Hemorrhagic Shock", Species: "pigs", Model: "In vivo", Citation: "Rice J, Philbin N, Handrigan M, Hall C, Mcgwin G, Ahlers S, et al. Vasoactivity of Bovine Polymerized Hemoglobin (HBOC-201) in Swine With Traumatic Hemorrhagic Shock With and Without Brain Injury. The Journal of Trauma: Injury, Infection, and Critical Care. 2006;61(5):1085–99.", StudyType: "Nonclinical" },
-  { FileName: "rice-2008", Category: "Hemopure - Clinical", Title: "The Effects of Decreasing Low-Molecular Weight<br>Hemoglobin Components of Hemoglobin-Based Oxygen Carriers in Swine With Hemorrhagic Shock", Indication: "Hemorrhagic shock", Species: "28 Pigs", Model: "In vivo", Citation: "Rice J, Philbin N, Light R, Arnaud F, Steinbach T, McGwin G, Collier S, Malkevich N, Moon-Massatt P, Rentko V, Pearce LB, Ahlers S, McCarron R, Handrigan M, Freilich D. The effects of decreasing low-molecular weight hemoglobin components of hemoglobin-based oxygen carriers in swine with hemorrhagic shock.<br> J Trauma. 2008 May;64(5):1240-57. doi: 10.1097/TA.0b013e318058245e.", StudyType: "Nonclinical" },
-  { FileName: "riverachavez-2007", Category: "Hemopure - Clinical", Title: "Resuscitation From Hemorrhagic Shock Comparing Standard Hemoglobin-Based Oxygen Carrier (HBOC)-201 Versus 7.5% Hypertonic HBOC-201", Indication: "Hemorrhagic shock", Species: "32 Pigs", Model: "In vivo", Citation: "Rivera-Chavez FA, Huerta S, Brown R, York GB, Minei JP. Resuscitation from hemorrhagic shock comparing standard hemoglobin-based oxygen carrier (HBOC)-201 versus 7.5% hypertonic HBOC-201. J Trauma. 2007 Nov;63(5):1113-9.", StudyType: "Nonclinical" },
-  { FileName: "rivera-chávez-2014", Category: "Hemopure - Clinical", Title: "Hypertonic HBOC-201 decreases neutrophil activation after hemorrhagic shock.", Indication: "Hemorrhagic Shock", Species: "32 pigs", Model: "In vivo", Citation: "Rivera-Chávez FA, Lu A, Liu MM, Abdalla A, Minei JP. Hypertonic HBOC-201 decreases neutrophil activation after hemorrhagic shock. J Invest Surg. 2014 Feb;27(1):14-20. doi: 10.3109/08941939.2013.826756.", StudyType: "Nonclinical" },
-  { FileName: "rodriguez-2009", Category: "Hemopure - Clinical", Title: "Sodium nitrite therapy attenuates the hypertensive effects of HBOC-201 via nitrite reduction.", Indication: "Nitrite Reduction", Species: "Rats", Model: "In vivo", Citation: "Rodriguez C, Vitturi DA, He J, Vandromme M, Brandon A, Hutchings A, Rue LW 3rd, Kerby JD, Patel RP. Sodium nitrite therapy attenuates the hypertensive effects of HBOC-201 via nitrite reduction. Biochem J. 2009 Aug 27;422(3):423-32. doi: 10.1042/BJ20090735.", StudyType: "Nonclinical" },
-  { FileName: "rosenthal-2008", Category: "HBOC-201", Title: "Use of hemoglobin-based oxygen-carrying solution-201 to improve resuscitation parameters and prevent secondary brain injury in a swine model of traumatic brain injury and hemorrhage: laboratory investigation.", Indication: "Traumatic brain injury", Species: "20 pigs", Model: "In vivo", Citation: "Rosenthal G, Morabito D, Cohen M, Roeytenberg A, Derugin N, Panter SS, et al. Use of hemoglobin-based oxygen-carrying solution–201 to improve resuscitation parameters and prevent secondary brain injury in a swine model of traumatic brain injury and hemorrhage. Journal of Neurosurgery. 2008;108(3):575–87.", StudyType: "Nonclinical" },
-  { FileName: "sarkozi-1997", Category: "HBOC-201", Title: "Effect of Hemoglobin-Based Oxygen Carrier-201 on Common Chemistry Laboratory Procedures", Indication: "Instrument Measurement Accuracy", Species: "Instruments", Model: "", Citation: "Sarkozi L, Jacobs E, Clark T, Gawryl MS, Simson E. Effect of Hemoglobin-Based Oxygen Carrier-201 on Common Chemistry Laboratory Procedures. Clinical Chemistry. 1997Sep;43(9):1792a–1794.", StudyType: "Device" },
-  { FileName: "schutte-2002", Category: "History/ Ethics", Title: "Ethical Considerations Concerning South Africa's Approval of a Blood Substitute", Indication: "General", Species: "Humans", Model: "In vivo", Citation: "Schutte AE. Ethical Considerations Concerning South Africa's Approval Of A Blood Substitute. Ethics & Medicine. 2002;18(2):55–62.", StudyType: "Clinical" },
-  { FileName: "shamoo-2006", Category: "History/ Ethics", Title: "Letter to the Editor: Emergency Research Consent Waiver—A Proper Way", Indication: "Emergency Research", Species: "Humans", Model: "In vivo", Citation: "Shamoo AE. Letter to the Editor: Emergency Research Consent Waiver—A Proper Way. The American Journal of Bioethics. 2006;6(4).", StudyType: "Clinical" },
-  { FileName: "shaw-2009", Category: "Oxyglobin - nonclinical", Title: "Avian Transfusion Medicine", Indication: "Blood Transfusion", Species: "NA", Model: "", Citation: "Shaw S, Tully T, Nevarez J. Avian Transfusion Medicine. Compend Contin Educ Vet. 2009 Dec;31(12):E1-7; quiz E7. Review.", StudyType: "Nonclinical" },
-  { FileName: "sherrill-1985", Category: "Vet", Title: "Bone Marrow Hypoplasia Associated with<br>Estrus in Ferrets", Indication: "Heamatology", Species: "20 Ferrets", Model: "In vivo", Citation: "Sherrill A, Gorham J. Bone Marrow Hypoplasia Associated with Estrus in Ferrets. Laboratory Animal Science. 1985Jun;35(3):280–6.", StudyType: "Laboratory / Field Study" },
-  { FileName: "soma-2005", Category: "Oxyglobin - nonclinical", Title: "The Pharmacokinetics of Hemoglobin-Based Oxygen Carrier Hemoglobin Glutamer-200 Bovine in the Horse", Indication: "Pharmacokinetics", Species: "7 horses", Model: "In vivo", Citation: "Soma LR, Uboh CE, Guan F, Luo Y, Moate PJ, Boston RC, et al. The Pharmacokinetics of Hemoglobin-Based Oxygen Carrier Hemoglobin Glutamer-200 Bovine in the Horse. Anesthesia & Analgesia. 2005;100(6):1570–5.", StudyType: "Nonclinical" },
-  { FileName: "song-2014", Category: "Nonclinical tox", Title: "Effects of a hemoglobin-based oxygen carrier (HBOC-201) and derivatives with altered oxygen affinity and viscosity on systemic and microcirculatory variables in a top-load rat model", Indication: "vasoconstriction", Species: "32 rats", Model: "", Citation: "Song BK, Nugent WH, Moon-Massat PF, Pittman RN. Effects of a hemoglobin-based oxygen carrier (HBOC-201) and derivatives with altered oxygen affinity and viscosity on systemic and microcirculatory variables in a top-load rat model. Microvascular Research. 2014;95:124–30.", StudyType: "Nonclinical" },
-  { FileName: "souidi-2013", Category: "Oxyply - Transplantation", Title: "Ischemia–reperfusion injury: beneficial effects of mesenchymal stromal cells", Indication: "ischemia", Species: "human - kidneys", Model: "In vitro", Citation: "Souidi N, Stolk M, Seifert M. Ischemia–reperfusion injury. Current Opinion in Organ Transplantation. 2013;18(1):34–43.", StudyType: "Clinical" },
-  { FileName: "sprung-2001", Category: "Hemopure - Clinical", Title: "The successful use of hemoglobin-based oxygen carrier as a primary blood substitute during abdominal aneurysm repair with large blood loss.", Indication: "Anemia", Species: "1 human", Model: "In vivo", Citation: "Sprung J, Popp H, O'Hara P, Woletz J. The successful use of hemoglobin-based oxygen carrier as a primary blood substitute during abdominal aneurysm repair with large blood loss. Anesth Analg. 2001 Jun;92(6):1413-5.", StudyType: "Clinical" },
-  { FileName: "sprung-2002", Category: "HBOC-201", Title: "The Use of Bovine Hemoglobin Glutamer-250 (Hemopure®) in Surgical Patients: Results of a Multicenter, Randomized, nSingle-Blinded Trial", Indication: "Transfusion", Species: "81 humans", Model: "In vivo", Citation: "Sprung J, Kindscher JD, Wahr JA, Levy JH, Monk TG, Moritz MW, et al. The Use of Bovine Hemoglobin Glutamer-250 (Hemopure®) in Surgical Patients: Results of a Multicenter, Randomized, Single-Blinded Trial. Anesthesia & Analgesia. 2002;94(4):799–808.", StudyType: "Clinical" },
-  { FileName: "standl-1996", Category: "Hemopure - Clinical", Title: "Bovine haemoglobin is more potent than autologous red blood cells in restoring muscular tissue oxygenation after profound isovolaemic haemodilution in dogs.", Indication: "Haemodynamic Variables / Oxygen Transport", Species: "24 dogs", Model: "In vivo", Citation: "Standl T, Horn P, Wilhelm S, Greim C, Freitag M, Freitag U, Sputtek A, Jacobs E, Schulte am Esch J. Bovine haemoglobin is more potent than autologous red blood cells in restoring muscular tissue oxygenation after profound isovolaemic haemodilution in dogs. Can J Anaesth. 1996 Jul;43(7):714-23.", StudyType: "Nonclinical" },
-  { FileName: "standl-2001", Category: "Background", Title: "Haemoglobin-based erythrocyte transfusion<br>substitutes", Indication: "General", Species: "NA", Model: "", Citation: "Standl T. Haemoglobin-based erythrocyte transfusion substitutes. Expert Opinion on Biological Therapy. 2001;1(5):831–43.", StudyType: "General" },
-  { FileName: "standl-2003", Category: "HBOC-201", Title: "Hemoglobin-based oxygen carrier HBOC-201 provides higher and faster increase in oxygen tension in skeletal muscle of anemic dogs than do stored red blood cells", Indication: "tissue oxygenation", Species: "12 dogs", Model: "In vivo", Citation: "Standl T, Freitag M, Burmeister M, Horn E, Wilhelm S, Esch JA. Hemoglobin-based oxygen carrier HBOC-201 provides higher and faster increase in oxygen tension in skeletal muscle of anemic dogs than do stored red blood cells. Journal of Vascular Surgery. 2003;37(4):859–65.", StudyType: "Nonclinical" },
-  { FileName: "standl-2005", Category: "Hemopure - Clinical", Title: "A new oxygen transport agent", Indication: "Chemically modified hemoglobin-based oxygen carriers", Species: "NA", Model: "", Citation: "Standl T.  A new oxygen transport agent.<br>Haematologica. 2005 Apr;90(4):437-8.", StudyType: "Nonclinical & Clinical" },
-  { FileName: "stefan-2007", Category: "Hemopure", Title: "Hemopure transfusion in a child with severe anemia.", Indication: "anemia", Species: "human", Model: "In vivo", Citation: "Stefan DC, Uys R, Wessels G. Hemopure Transfusion In A Child With Severe Anemia. Pediatric Hematology and Oncology. 2007;24(4):269–73.", StudyType: "Clinical" },
-  { FileName: "stern-2009", Category: "Hemopure - Clinical", Title: "Resuscitation with the hemoglobin-based oxygen carrier, HBOC-201, in a swine model of severe uncontrolled hemorrhage and traumatic brain injury.", Indication: "Hemorrhage and traumatic brain injury", Species: "32 Pigs", Model: "In vivo", Citation: "Stern S, Rice J, Philbin N, McGwin G, Arnaud F, Johnson T, Flournoy WS, Ahlers S, Pearce LB, McCarron R, Freilich D. Resuscitation with the hemoglobin-based oxygen carrier, HBOC-201, in a swine model of severe uncontrolled hemorrhage and traumatic brain injury. Shock. 2009 Jan;31(1):64-79. doi: 10.1097/SHK.0b013e3181778dc3.", StudyType: "Nonclinical" },
-  { FileName: "stollings-2006", Category: "Background", Title: "Oxygen therapeutics: oxygen delivery without blood.", Indication: "NA", Species: "NA", Model: "", Citation: "Stollings JL, Oyen LJ. Oxygen Therapeutics: Oxygen Delivery Without Blood. Pharmacotherapy. 2006;26(10):1453–64.", StudyType: "" },
-  { FileName: "strate-2001", Category: "Hemopure - Clinical", Title: "The Potential of HBOC in Acute Pancreatitis", Indication: "Acute Pancreatitis", Species: "X Rats", Model: "In vivo", Citation: "Strate T, Mann O, Standl T, Izbicki JR, Knoefel WT. The potential of HBOC in acute pancreatitis.<br>Anasthesiol Intensivmed Notfallmed Schmerzther. 2001 Nov;36 Suppl 2:S119-20. No abstract available.", StudyType: "Nonclinical" },
-  { FileName: "strate-2003", Category: "Oxyglobin", Title: "Systemic Intravenous Infusion of Bovine Hemoglobin Significantly Reduces Microcirculatory Dysfunction in Experimentally Induced Pancreatitis in the Rat", Indication: "pancreatic microcirculation pancreatitis", Species: "60 rats", Model: "In vivo", Citation: "Strate T, Mann O, Kleinhans H, Schneider C, Knoefel WT, Yekebas E, et al. Systemic Intravenous Infusion of Bovine Hemoglobin Significantly Reduces Microcirculatory Dysfunction in Experimentally Induced Pancreatitis in the Rat. Annals of Surgery. 2003;238(5):765–71.", StudyType: "Nonclinical" },
-  { FileName: "strate-2004", Category: "Hemopure - Clinical", Title: "Microcirculatory Function and Tissue Damage Is<br>Improved After Therapeutic Injection of Bovine<br>Hemoglobin in Severe Acute Rodent Pancreatitis", Indication: "Acute Pancreatitis", Species: "X Rats", Model: "In vivo", Citation: "Strate T, Mann O, Kleinhans H, Rusani S, Schneider C, Yekebas E, Freitag M, Standl T, Bloechle C, Izbicki JR. Microcirculatory function and tissue damage is improved after therapeutic injection of bovine hemoglobin in severe acute rodent pancreatitis.<br>Pancreas. 2005 Apr;30(3):254-9.", StudyType: "Nonclinical" },
-  { FileName: "strate-2005", Category: "", Title: "Microcirculatory Function and Tissue Damage Is Improved After Therapeutic Injection of Bovine Hemoglobin in Severe Acute Rodent Pancreatitis", Indication: "", Species: "30 rats", Model: "In vivo", Citation: "", StudyType: "" },
-  { FileName: "stuht-1999", Category: "Vet", Title: "Leucocytozoonosis in Nestling Bald Eagles in Michigan and Minnesota", Indication: "Anemia", Species: "Bald eagles", Model: "In vivo", Citation: "Stuht JN, Bowerman WW, Best DA. Leucocytozoonosis in Nestling Bald Eagles in Michigan and Minnesota. Journal of Wildlife Diseases. 1999;35(3):608–12.", StudyType: "Laboratory / Field Study" },
-  { FileName: "taverne-2017", Category: "Oxyglobin - nonclinical", Title: "Normalization of hemoglobin-based oxygen carrier-201 induced<br>vasoconstriction: targeting nitric oxide and endothelin", Indication: "hemorrhagic shock", Species: "16 pigs", Model: "In vivo", Citation: "Taverne YJ, Wijs-Meijler DD, Hekkert MTL, Moon-Massat PF, Dubé GP, Duncker DJ, et al. Normalization of hemoglobin-based oxygen carrier-201 induced vasoconstriction: targeting nitric oxide and endothelin. Journal of Applied Physiology. 2017;122(5):1227–37.", StudyType: "Clinical" },
-  { FileName: "telintelhekkert-2010", Category: "Oxyply - Transplantation", Title: "Preoxygenated hemoglobin-based oxygen carrier HBOC-201 annihilates myocardial ischemia during brief coronary artery occlusion in pigs", Indication: "ischemia", Species: "16 pigs", Model: "In vivo", Citation: "Hekkert MTL, Dubé GP, Regar E, Boer MD, Vranckx P, Giessen WJVD, et al. Preoxygenated hemoglobin-based oxygen carrier HBOC-201 annihilates myocardial ischemia during brief coronary artery occlusion in pigs. American Journal of Physiology-Heart and Circulatory Physiology. 2010;298(3).", StudyType: "Nonclinical" },
-  { FileName: "teranishi-2012", Category: "Nonclinical tox", Title: "Traumatic brain injury and severe uncontrolled haemorrhage with short delay pre-hospital resuscitation in a swine model", Indication: "haemorrhagic<br>shock", Species: "26 pigs", Model: "In vivo", Citation: "Teranishi K, Scultetus A, Haque A, Stern S, Philbin N, Rice J, et al. Traumatic brain injury and severe uncontrolled haemorrhage with short delay pre-hospital resuscitation in a swine model. Injury. 2012;43(5):585–93.", StudyType: "Nonclinical" },
-  { FileName: "thevis-2003", Category: "Anti-doping", Title: "Doping Control Analysis of Bovine Hemoglobin-Based Oxygen Therapeutics in Human Plasma by LC Electrospray Ionization-MS/MS", Indication: "Liquid Chromatography-Mass Spectrometry", Species: "blood samples", Model: "In vitro", Citation: "Thevis M, Loo RRO, Loo JA, Schänzer W. Doping Control Analysis of Bovine Hemoglobin-Based Oxygen Therapeutics in Human Plasma by LC−Electrospray Ionization-MS/MS. Analytical Chemistry. 2003;75(14):3287–93.", StudyType: "Nonclinical" },
-  { FileName: "topp-2008", Category: "HbG 200", Title: "Hemoglobin- Glutamer 200 Reduces Reperfusion Injury of the Cold Preserved Rat Liver by Induction of Heme Oxygenase-1", Indication: "cold<br>preservation-reperfusion injury", Species: "rats", Model: "In vivo", Citation: "Topp SA, Krieg A, Koch A, Tidden CM, Ramp U, Hohlfeld T, et al. Hemoglobin-Glutamer 200 Reduces Reperfusion Injury of the Cold Preserved Rat Liver by Induction of Heme Oxygenase-1. Journal of Surgical Research. 2008;150(2):243–54.", StudyType: "Nonclinical" },
-  { FileName: "tsai-2002", Category: "Background", Title: "The Unusual Properties of Effective Blood Substitutes", Indication: "Vasoconstriction", Species: "NA", Model: "", Citation: "Tsai AG, Intaglietta M. The unusual properties of effective blood substitutes. The Keio Journal of Medicine. 2002;51(1):17–20.", StudyType: "General" },
-  { FileName: "tsai-2006", Category: "Background", Title: "Can the effects of vasoactivity of molecular hemoglobin-based plasma expanders be ignored?", Indication: "Oxygencarrying<br>Plasma Expander", Species: "pigs", Model: "In vivo", Citation: "Tsai AG, Cabrales P. Can the effects of vasoactivity of molecular hemoglobin-based plasma expanders be ignored?*. Critical Care Medicine. 2006;34(5):1566–7.", StudyType: "Nonclinical" },
-  { FileName: "vandermolen-2007", Category: "HBOC-201", Title: "Immune Effects of Decreasing Low-Molecular Weight Hemoglobin Components of Hemoglobin-Based Oxygen Carriers (HBOC) in a Swine Model of Severe Controlled Hemorrhagic Shock.", Indication: "Hemorrhagic shock", Species: "28 pigs", Model: "In vivo", Citation: "Vandermolen C, Malkevich N, Philbin N, Rice J, Collier S, Hall C, et al. Immune Effects of Decreasing Low-Molecular Weight Hemoglobin Components of Hemoglobin-Based Oxygen Carriers (HBOC) in a Swine Model of Severe Controlled Hemorrhagic Shock. Artificial Cells, Blood Substitutes, and Biotechnology. 2007;35(5):507–17.", StudyType: "Nonclinical" },
-  { FileName: "van-hemelrijck-2014", Category: "Hemopure - Clinical", Title: "A safety and efficacy evaluation of hemoglobin-based oxygen carrier HBOC-201 in a randomized, multicenter red blood cell controlled trial in noncardiac surgery patients.", Indication: "Blood Transfusion", Species: "160 humans", Model: "In vivo", Citation: "Van Hemelrijck J, Levien LJ, Veeckman L, Pitman A, Zafirelis Z, Standl T. A safety and efficacy evaluation of hemoglobin-based oxygen carrier HBOC-201 in a randomized, multicenter red blood cell controlled trial in noncardiac surgery patients. Anesth Analg. 2014 Oct;119(4):766-76. doi: 10.1213/ANE.0000000000000305.", StudyType: "Clinical" },
-  { FileName: "varlet-marie-2004", Category: "Anti-doping", Title: "Detection of Hemoglobin-Based Oxygen Carriers in Human Serum for Doping Analysis: Confirmation by Size-Exclusion HPLC", Indication: "Electrophoretic Screening SEC-HPLC", Species: "12 humans", Model: "In vivo", Citation: "Varlet-Marie E. Detection of Hemoglobin-Based Oxygen Carriers in Human Serum for Doping Analysis: Confirmation by Size-Exclusion HPLC. Clinical Chemistry. 2004;50(4):723–31.", StudyType: "Device" },
-  { FileName: "vin-2002", Category: "Oxyglobin - nonclinical", Title: "The use of ultrapurified bovine hemoglobin solution in the treatment of two cases of presumed red maple toxicosis in a miniature horse and a pony", Indication: "Blood Transfusion", Species: "2 horses", Model: "In vivo", Citation: "Vin R, Bedenice D, Rentko VT and Paradis, MR. The use of ultrapurified bovine hemoglobin solution in the treatment of two cases of presumed red maple toxicosis in a miniature horse and a pony.  J Vet Emerg Crit Care. 2002;(12):169–175", StudyType: "Nonclinical" },
-  { FileName: "vlahakes-1990", Category: "Hemopure - Clinical", Title: "Hemodynamic effects and oxygen transport properties of a new blood substitute in a model of massive blood replacement.", Indication: "Oxygen and Carbon Dioxide Exchange", Species: "8 sheep", Model: "In vivo", Citation: "Vlahakes GJ, Lee R, Jacobs EE Jr, LaRaia PJ, Austen WG. Hemodynamic effects and oxygen transport properties of a new blood substitute in a model of massive blood replacement. J Thorac Cardiovasc Surg. 1990 Sep;100(3):379-88.", StudyType: "Nonclinical" },
-  { FileName: "wahr-1997", Category: "HBOC-201", Title: "The Effects of a Blood-Salvaging Device on Blood Containing a<br>Hemoglobin-Based Oxygen Carrier, HBOC-201", Indication: "intraoperative blood salvage", Species: "human blood", Model: "In vitro", Citation: "Whar JA, Anderson MM, Giacherio DA, Hallock L, Gawryl MS, Lansden C, et al. The effects of a blood-salvaging device on blood containing a hemoglobin-based oxygen carrier, HBOC-201. Journal of Cardiothoracic and Vascular Anesthesia. 1997;11(1):10–2.", StudyType: "Clinical" },
-  { FileName: "wang-2007", Category: "Background", Title: "Anemia in patients undergoing percutaneous coronary intervention: current issues and future directions.", Indication: "Blood transfusion", Species: "NA", Model: "", Citation: "Wang, Tracy Y., and Sunil V. Rao. \"Anemia in Patients Undergoing Percutaneous Coronary Intervention.\" American Journal of Cardiovascular Drugs 7, no. 4 (2007): 225-33. doi:10.2165/00129784-200707040-00001.", StudyType: "Clinical" },
-  { FileName: "watson-2017", Category: "Oxyply - Transplantation", Title: "Normothermic Perfusion in the Assessment and Preservation of Declined Livers Before Transplantation: Hyperoxia and Vasoplegia—Important Lessons From the First 12 Cases", Indication: "Transplant", Species: "human - liver", Model: "In vitro", Citation: "Watson, Christopher J.e., Vasilis Kosmoliaptsis, Lucy V. Randle, Alexander E. Gimson, Rebecca Brais, John R. Klinck, Mazin Hamed, Anastasia Tsyben, and Andrew J. Butler. \"Normothermic Perfusion in the Assessment and Preservation of Declined Livers Before Transplantation.\" Transplantation 101, no. 5 (2017): 1084-098. doi:10.1097/tp.0000000000001661.", StudyType: "Clinical" },
-  { FileName: "wehausen-2011", Category: "Hb-200", Title: "Evaluation of the effects of bovine hemoglobin glutamer-200 on systolic arterial blood pressure in hypotensive cats: 44 cases (1997–2008)", Indication: "systolic arterial blood pressure (SAP)", Species: "44 cats", Model: "In vivo", Citation: "Evaluation of the effects of bovine hemoglobin glutamer-200 on systolic arterial blood pressure in hypotensive cats: 44 cases (1997–2008)", StudyType: "Laboratory / Field Study" },
-  { FileName: "white-2015", Category: "Hemopure - Clinical", Title: "A whole blood-based perfusate provides superior preservation of myocardial function during ex vivo heart perfusion.", Indication: "Transplant", Species: "27 pig hearts", Model: "In vitro", Citation: "White CW, Hasanally D2, Mundt P, Li Y, Xiang B, Klein J, Müller A, Ambrose E, Ravandi A, Arora RC, Lee TW, Hryshko LV, Large S, Tian G, Freed DH. A whole blood-based perfusate provides superior preservation of myocardial function during ex vivo heart perfusion. J Heart Lung Transplant. 2015 Jan;34(1):113-21. doi: 10.1016/j.healun.2014.09.021. Epub 2014 Sep 28.", StudyType: "Nonclinical" },
-  { FileName: "wolthuis-1999", Category: "HBOC-201", Title: "Effect of the Hemoglobin-Based Oxygen Carrier HBOC-201 on Laboratory Instrumentation: Cobas Integra, Chiron Blood Gas Analyzer 840, Sysmex™SE-9000 and BCT", Indication: "effect on laboratory instruments", Species: "routine<br>clinical chemistry analyzer (machinery)", Model: "", Citation: "Wolthuis, Albert, Dirk Peek, Ruud Scholten, Paulo Moreira, Maria Gawryl, Terri Clark, and Lambert Westerhuis. \"Effect of the Hemoglobin-Based Oxygen Carrier HBOC-201 on Laboratory Instrumentation: Cobas Integra, Chiron Blood Gas Analyzer 840, Sysmex™SE-9000 and BCT.\" Clinical Chemistry and Laboratory Medicine 37, no. 1 (1999). doi:10.1515/cclm.1999.011.", StudyType: "Device" },
-  { FileName: "wondratschek-2010", Category: "Oxyglobin - nonclinical", Title: "Primary Immune-Mediated Thrombocytopenia in Cats", Indication: "Thrombocytopenia", Species: "5 cats", Model: "In vivo", Citation: "Wondratschek C, Weingart C, Kohn B. Primary Immune-Mediated Thrombocytopenia in Cats. J Am Anim Hosp Assoc. 2010 Jan-Feb;46(1):12-9.", StudyType: "Nonclinical" },
-  { FileName: "yamanaka-1967", Category: "???", Title: "Histopathology of Guinea Pigs with Cholesterol-Induced Anemia", Indication: "Anemia", Species: "80 Guinea Pigs", Model: "In vivo", Citation: "Yamanaka, W., R. Ostwald, and S. W. French. \"Histopathology of Guinea Pigs with Cholesterol-Induced Anemia.\" Experimental Biology and Medicine 125, no. 1 (1967): 303-06. doi:10.3181/00379727-125-32077.", StudyType: "Nonclinical" },
-  { FileName: "yamato-1996", Category: "Vet", Title: "Hemolytic Anemia in Wild Seaducks Caused by Marine Oil Pollution", Indication: "Anemia", Species: "white-winged scoters", Model: "In vivo", Citation: "Yamato, Osamu, Ikuo Goto, and Yoshimitsu Maede. \"Hemolytic Anemia in Wild Seaducks Caused by Marine Oil Pollution.\" Journal of Wildlife Diseases 32, no. 2 (1996): 381-84. doi:10.7589/0090-3558-32.2.381.", StudyType: "Laboratory / Field Study" },
-  { FileName: "yang-2015", Category: "Oxyply - Transplantation", Title: "The role of 1,25-dyhydroxyvitamin D3 in mouse liver ischemia reperfusion injury: regulation of autophagy through activation of MEK/ERK signaling and PTEN/PI3K/Akt/mTORC1 signaling", Indication: "ischemia", Species: "mouse - liver", Model: "In vitro", Citation: "Yang J, Chen Q, Tian S, Song S, Liu F, Wang Q, et al. The role of 1,25-dyhydroxyvitamin D3 in mouse liver ischemia reperfusion injury: regulation of autophagy through activation of MEK/ERK signaling and PTEN/PI3K/Akt/mTORC1 signaling. Am J Transl Res. 2015;7(12):2630–45.", StudyType: "Nonclinical" },
-  { FileName: "york-2003", Category: "HBOC-201", Title: "Low-Volume Resuscitation with a Polymerized Bovine Hemoglobin-Based Oxygen-Carrying Solution (HBOC-201) Provides Adequate Tissue Oxygenation for Survival in a Porcine Model of Controlled Hemorrhage", Indication: "Hemorrhage", Species: "24 pigs", Model: "In vivo", Citation: "York, Gregory B., Jeffrey S. Eggers, David L. Smith, Donald H. Jenkins, Jeffrey D. Mcneil, Deborah Mueller, John D. Josephs, and Jeffrey D. Kerby. \"Low-Volume Resuscitation with a Polymerized Bovine Hemoglobin-Based Oxygen-Carrying Solution (HBOC-201) Provides Adequate Tissue Oxygenation for Survival in a Porcine Model of Controlled Hemorrhage.\" The Journal of Trauma: Injury, Infection, and Critical Care 55, no. 5 (2003): 873-85. doi:10.1097/01.ta.0000092681.17874.6f.", StudyType: "Nonclinical" },
-  { FileName: "yu-2008", Category: "HBOC-201", Title: "Inhaled Nitric Oxide Enables Artificial Blood Transfusion Without Hypertension.", Indication: "systemic vasoconstriction", Species: "lambs and rats", Model: "In vivo", Citation: "Yu, Binglan, Michael J. Raher, Gian Paolo Volpato, Kenneth D. Bloch, Fumito Ichinose, and Warren M. Zapol. \"Inhaled Nitric Oxide Enables Artificial Blood Transfusion Without Hypertension.\" Circulation 117, no. 15 (2008): 1982-990. doi:10.1161/circulationaha.107.729137.", StudyType: "" },
-  { FileName: "zapletal-2009", Category: "HBOC-201", Title: "Effects of hemodilution with a hemoglobin-based oxygen carrier (HBOC-201) on ischemia/reperfusion injury in a model of partial warm liver ischemia of the rat", Indication: "Transplant", Species: "Rat Liver", Model: "In vitro", Citation: "Zapletal, Christina, Alexander Bode, Matthias W. Lorenz, Martha-Maria Gebhard, and Markus Golling. \"Effects of Hemodilution with a Hemoglobin-based Oxygen Carrier (HBOC-201) on Ischemia/reperfusion Injury in a Model of Partial Warm Liver Ischemia of the Rat.\" Microvascular Research 78, no. 3 (2009): 386-92. doi:10.1016/j.mvr.2009.08.005.", StudyType: "Nonclinical" },
-  { FileName: "zucker-1977", Category: "???", Title: "Pathogenesis of anemia in rats with Walker<br>256 carcinosarcoma", Indication: "bone marrow heme synthesis / Anemia", Species: "210 rats", Model: "In vivo", Citation: "Zucker S, Lysik RM. Pathogenesis of anemia in rats with Walker 256 carcinosarcoma. J Lab Clin Med. 1977Sep;90(3):502–11.", StudyType: "Nonclinical" }
+    <!-- TABLE -->
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Title</th>
+                    <th>Authors</th>
+                    <th>Journal</th>
+                    <th>Species</th>
+                    <th>Region</th>
+                    <th>Institute</th>
+                    <th>Citation</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Rendered by JS -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- PDF REFERENCE LIST -->
+    <div style="margin-top: 40px;">
+        <div class="section-title">📄 PDF Reference List — QEP References Combined 2.pdf</div>
+        <ul class="ref-list" id="pdfRefList">
+            <!-- Rendered by JS -->
+        </ul>
+    </div>
+
+</div>
+<script>
+// ============================================================
+// 1. DATA — Full publication list with year, region, institute
+// ============================================================
+const publications = [
+    { year: 2018, title: "Use of the blood substitute HBOC-201 in critically ill patients during sickle crisis: a three-case series", authors: "Davis JM, El-Haj N, Shah NN, Schwartz G, Block M, Wall J, Tidswell M, Dinino E", journal: "Transfusion", species: "Human", region: "US", institute: "Baystate Medical Center", citation: "Davis JM, et al. Transfusion. 2018;58(1):132-7. doi:10.1111/trf.14386." },
+    { year: 2017, title: "Hemoglobin-Based Oxygen Carrier Rescues Double-Transplant Patient From Life-Threatening Anemia", authors: "Gomez MF, Aljure O, Ciancio G, Lynn M", journal: "Am J Transplant", species: "Human", region: "US", institute: "University of Miami", citation: "Gomez MF, et al. Am J Transplant. 2017;17(7):1941-4. doi:10.1111/ajt.14226." },
+    { year: 2017, title: "Storage of nitroglycerin (NTG) admixed with HBOC-201 for 30 days in polyolefin plastic bags: a pilot study", authors: "Nigam S, McCarron R, Arnaud F", journal: "Drug Deliv Transl Res", species: "In vitro", region: "US", institute: "Naval Medical Research Center", citation: "Nigam S, et al. Drug Deliv Transl Res. 2017;7(5):674-82." },
+    { year: 2016, title: "Hemoglobin glutamer-250 (bovine) in South Africa: consensus usage guidelines from clinician experts", authors: "Mer M, Hodgson E, Wallis L, Jacobson B, Levien L, Snyman J, Sussman MJ, James M, van Gelder A, Allgaier R, Jahr JS", journal: "Transfusion", species: "Human", region: "Both", institute: "Various (South Africa/US)", citation: "Mer M, et al. Transfusion. 2016;56(10):2631-6. doi:10.1111/trf.13726." },
+    { year: 2016, title: "Difficult to swallow: warm autoimmune hemolytic anemia in a Jehovah's Witness treated with hemoglobin concentrate", authors: "Epperla N, Strouse C, Vansandt AM, Foy P", journal: "Transfusion", species: "Human", region: "US", institute: "Medical College of Wisconsin", citation: "Epperla N, et al. Transfusion. 2016;56(7):1801-6." },
+    { year: 2015, title: "Absence of developmental toxicity in a canine model after infusion of a hemoglobin-based oxygen carrier", authors: "Holson JF, Stump DG, Pearce LB, Watson RE, DeSesso JM", journal: "Reprod Toxicol", species: "Canine", region: "US", institute: "WIL Research", citation: "Holson JF, et al. Reprod Toxicol. 2015;52:101-7. doi:10.1016/j.reprotox.2015.01.006." },
+    { year: 2014, title: "A safety and efficacy evaluation of hemoglobin-based oxygen carrier HBOC-201 in a randomized, multicenter red blood cell controlled trial in noncardiac surgery patients", authors: "Van Hemelrijck J, Levien LJ, Veeckman L, Pitman A, Zafirelis Z, Standl T", journal: "Anesth Analg", species: "Human", region: "Both", institute: "Various (Belgium/South Africa/Germany)", citation: "Van Hemelrijck J, et al. Anesth Analg. 2014;119(4):766-76. doi:10.1213/ANE.0000000000000305." },
+    { year: 2014, title: "Resuscitation from hemorrhagic shock using polymerized hemoglobin compared to blood", authors: "Ortiz D, Barros M, Yan S, Cabrales P", journal: "Am J Emerg Med", species: "Hamster", region: "US", institute: "University of California San Diego", citation: "Ortiz D, et al. Am J Emerg Med. 2014;32(3):248-55. doi:10.1016/j.ajem.2013.11.045." },
+    { year: 2013, title: "Effects of N-Acetyl-L-Cysteine and Hyaluronic Acid on HBOC-201-Induced Systemic and Cerebral Vasoconstriction in the Rat", authors: "Abutarboush R, Scultetus A, Pappas G, Arnaud F, Auker C, McCarron R, Moon-Massat PF", journal: "Curr Drug Discov Technol", species: "Rat", region: "US", institute: "Naval Medical Research Center", citation: "Abutarboush R, et al. Curr Drug Discov Technol. 2013;10(4):315-24." },
+    { year: 2012, title: "Sodium nitroprusside ameliorates systemic but not pulmonary HBOC-201-induced vasoconstriction", authors: "Arnaud F, Scultetus AH, Haque A, Saha B, Kim B, Auker C, Moon-Massat P, McCarron R, Freilich D", journal: "Resuscitation", species: "Swine", region: "US", institute: "Naval Medical Research Center", citation: "Arnaud F, et al. Resuscitation. 2012;83(8):1038-45." },
+    { year: 2012, title: "Pre-hospital Resuscitation with HBOC-201 and rFVIIa Compared to HBOC-201 Alone in Uncontrolled Hemorrhagic Shock in Swine", authors: "Haque A, Arnaud F, Teranishi K, Okada T, Kim B, Moon-Massat PF, Auker C, McCarron R, Freilich D, Scultetus AH", journal: "Artif Cells Blood Substit Immobil Biotechnol", species: "Swine", region: "US", institute: "Naval Medical Research Center", citation: "Haque A, et al. Artif Cells Blood Substit Immobil Biotechnol. 2012;40(1-2):44-55." },
+    { year: 2011, title: "US Navy Experience With Research on, and Development of, Hemoglobin-Based Oxygen Carriers", authors: "Auker CR, McCarron RM", journal: "J Trauma", species: "Human", region: "US", institute: "Naval Medical Research Center", citation: "Auker CR, McCarron RM. J Trauma. 2011;70." },
+    { year: 2010, title: "Primary Immune-Mediated Thrombocytopenia in Cats", authors: "Wondratschek C, Weingart C, Kohn B", journal: "J Am Anim Hosp Assoc", species: "Feline", region: "EU", institute: "Free University of Berlin", citation: "Wondratschek C, et al. J Am Anim Hosp Assoc. 2010;46(1):12-9." },
+    { year: 2009, title: "A Review of Blood Substitutes: Examining the History, Clinical Trial Results, and Ethics of Hemoglobin-Based Oxygen Carriers", authors: "Chen J-Y, Scerbo M, Kramer G", journal: "Clinics", species: "Human", region: "US", institute: "University of Texas Medical Branch", citation: "Chen J-Y, et al. Clinics. 2009;64(8):803-13. doi:10.1590/S1807-59322009000800016." },
+    { year: 2009, title: "Polymerized Bovine Hemoglobin Can Improve Small-Volume Resuscitation from Hemorrhagic Shock in Hamsters", authors: "Cabrales P, Tsai AG, Intaglietta M", journal: "Shock", species: "Hamster", region: "US", institute: "University of California San Diego", citation: "Cabrales P, et al. Shock. 2009;31(3):300-7." },
+    { year: 2009, title: "Endothelin-1 contributes to hemoglobin glutamer-200-mediated hepatocellular dysfunction after hemorrhagic shock", authors: "Kubulus D, Mathes A, Reus E, Pradarutti S, Pavlidis D, Thierbach JT, Heiser J, Wolf B, Bauer I, Rensing H", journal: "Shock", species: "Rat", region: "EU", institute: "University of Saarland", citation: "Kubulus D, et al. Shock. 2009;32(2):179-89." },
+    { year: 2008, title: "HBOC-201 as an alternative to blood transfusion: efficacy and safety evaluation in a multicenter phase III trial in elective orthopedic surgery", authors: "Jahr JS, Mackenzie C, Pearce LB, Pitman A, Greenburg AG", journal: "J Trauma", species: "Human", region: "US", institute: "UCLA", citation: "Jahr JS, et al. J Trauma. 2008;64(6):1484-97. doi:10.1097/TA.0b013e318173a93f." },
+    { year: 2008, title: "Laboratory Findings, Histopathology, and Immunophenotype of Lymphoma in Domestic Ferrets", authors: "Ammersbach M, Delay J, Caswell JL, Smith DA, Taylor WM, Bienzle D", journal: "Vet Pathol", species: "Ferret", region: "US", institute: "University of Guelph", citation: "Ammersbach M, et al. Vet Pathol. 2008;45(5):663-73. doi:10.1354/vp.45-5-663." },
+    { year: 2007, title: "Effects of low-volume hemoglobin glutamer-200 versus normal saline and arginine vasopressin resuscitation on systemic and skeletal muscle blood flow and oxygenation in a canine hemorrhagic shock model", authors: "Driessen B, Zarucco L, Gunther RA, Burns PM, Lamb SV, Vincent SE, Boston RA, Jahr JS, Cheung AT", journal: "Crit Care Med", species: "Canine", region: "US", institute: "University of Pennsylvania", citation: "Driessen B, et al. Crit Care Med. 2007;35(9):2101-9." },
+    { year: 2007, title: "Bovine hemoglobin (glutamer-250, Hemopure)-specific immunoglobulin G antibody cross-reacts with human hemoglobin but does not lyse red blood cells in vitro", authors: "Hamilton RG, Kickler TS", journal: "Transfusion", species: "Human", region: "US", institute: "Johns Hopkins", citation: "Hamilton RG, Kickler TS. Transfusion. 2007;47(4):723-8." },
+    { year: 2006, title: "Acute and long-term effects of modified hemoglobin (HBOC-201) in a rat model of hypertension and chronic kidney disease", authors: "Baylis C", journal: "Transfusion", species: "Rat", region: "US", institute: "University of Florida", citation: "Baylis C. Transfusion. 2006;46(7):1104-11." },
+    { year: 2006, title: "A Comparison of the Acute Hemodynamic and Delayed Effects of 50% Exchange Transfusion with Two Different Cross-linked Hemoglobin Based Oxygen Carrying Solutions and Pentastarch", authors: "Bonegio RGB, Fuhro R, Ragno G, Valeri CR, Lieberthal W", journal: "Artif Cells Blood Substit Biotechnol", species: "Rat", region: "US", institute: "Boston University", citation: "Bonegio RGB, et al. Artif Cells Blood Substit Biotechnol. 2006;34(2):145-57." },
+    { year: 2005, title: "Long-term transfusion of polymerized bovine hemoglobin in a Jehovah's Witness following chemotherapy for myeloid leukemia: a case report", authors: "Agrawal YP, Freedman M, Szczepiorkowski ZM", journal: "Transfusion", species: "Human", region: "US", institute: "Dartmouth-Hitchcock Medical Center", citation: "Agrawal YP, et al. Transfusion. 2005;45(11):1735-8." },
+    { year: 2005, title: "Effects of prophylactic or therapeutic application of bovine haemoglobin HBOC-200 on ischaemia-reperfusion injury following acute coronary ligature in rats", authors: "Burmeister MA, Rempf C, Standl TG, Rehberg S, Bartsch-Zwemke S, Krause T, Tuszynski S, Gottschalk A, Schulte am Esch J", journal: "Br J Anaesth", species: "Rat", region: "EU", institute: "University Hospital Hamburg-Eppendorf", citation: "Burmeister MA, et al. Br J Anaesth. 2005;95(6):737-45." },
+    { year: 2005, title: "Structural and Functional Characterization of Glutaraldehyde-Polymerized Bovine Hemoglobin and Its Isolated Fractions", authors: "Buehler PW, Boykins RA, Jia Y, Norris S, Freedberg DI, Alayash AI", journal: "Anal Chem", species: "In vitro", region: "US", institute: "FDA/CBER", citation: "Buehler PW, et al. Anal Chem. 2005;77(11):3466-78." },
+    { year: 2003, title: "Arterial oxygenation and oxygen delivery after hemoglobin-based oxygen carrier infusion in canine hypovolemic shock: a dose-response study", authors: "Driessen B, Jahr JS, Lurie F, Golkaryeh MS, Gunther RA", journal: "Crit Care Med", species: "Canine", region: "US", institute: "University of Pennsylvania", citation: "Driessen B, et al. Crit Care Med. 2003;31(6):1771-9." },
+    { year: 2003, title: "Current development and use of hemoglobin-based oxygen-carrying (HBOC) solutions", authors: "Day TK", journal: "J Vet Emerg Crit Care", species: "Various", region: "US", institute: "University of Florida", citation: "Day TK. J Vet Emerg Crit Care. 2003;13(2):77-93." },
+    { year: 2002, title: "Use of a hemoglobin-based oxygen-carrying solution in cats: 72 cases (1998-2000)", authors: "Gibson GR, Callan MB, Hoffman V, Giger U", journal: "J Am Vet Med Assoc", species: "Feline", region: "US", institute: "University of Pennsylvania", citation: "Gibson GR, et al. J Am Vet Med Assoc. 2002;221(1):96-102." },
+    { year: 2000, title: "Transfusions of polymerized bovine hemoglobin in a patient with severe autoimmune hemolytic anemia", authors: "Mullon J, Giacoppe G, Clagett C, McCune D, Dillard T", journal: "N Engl J Med", species: "Human", region: "US", institute: "Medical College of Georgia", citation: "Mullon J, et al. N Engl J Med. 2000;342(22):1638-43." },
+    { year: 2000, title: "Bovine Hemoglobin-Based Oxygen Carrier (HBOC-201) For Resuscitation of Uncontrolled, Exsanguinating Liver Injury in Swine", authors: "Manning JE, Katz LM, Brownstein MR, Pearce LB, Gawryl MS, Baker CC", journal: "Shock", species: "Swine", region: "US", institute: "University of North Carolina", citation: "Manning JE, et al. Shock. 2000;13(2):152-9." },
+    { year: 1999, title: "Radiographic, biochemical, and pathologic effects of hemoglobin glutamer-200 in dogs undergoing cemented total hip arthroplasty", authors: "Braden TD, Tvedten HW, DeCamp CE, Turner TM, Hughes GS, Rentko VT", journal: "Am J Vet Res", species: "Canine", region: "US", institute: "Michigan State University", citation: "Braden TD, et al. Am J Vet Res. 1999;60(11):1337-40." },
+    { year: 1998, title: "The effects of increased doses of bovine hemoglobin on hemodynamics and oxygen transport in patients undergoing preoperative hemodilution for elective abdominal aortic surgery", authors: "Kasper SM, Grüne F, Walter M, Amr N, Erasmi H, Buzello W", journal: "Anesth Analg", species: "Human", region: "EU", institute: "University of Cologne", citation: "Kasper SM, et al. Anesth Analg. 1998;87(2):284-91." },
+    { year: 1997, title: "A Phase I/II Study of Polymerized Bovine Hemoglobin in Adult Patients with Sickle Cell Disease", authors: "Gonzalez P, Hackney AC, Jones S, Strayhorn D, Hoffman EB, Hughes G, Jacobs EE, Orringer EP", journal: "J Investig Med", species: "Human", region: "US", institute: "University of North Carolina", citation: "Gonzalez P, et al. J Investig Med. 1997;45(5):258-64." },
+    { year: 1996, title: "Physiology and pharmacokinetics of a novel hemoglobin-based oxygen carrier in humans", authors: "Hughes GS Jr, Antal EJ, Locker PK, Francom SF, Adams WJ, Jacobs EE Jr", journal: "Crit Care Med", species: "Human", region: "US", institute: "Biopure Corporation", citation: "Hughes GS Jr, et al. Crit Care Med. 1996;24(5):756-64." },
+    { year: 1993, title: "Use of a bovine hemoglobin preparation in the treatment of cyclic ovarian hemorrhage in a miniature horse", authors: "Maxson AD, Giger U, Sweeney CR, Tomasic M, Saik JE, Donawick WJ, Cothran EG", journal: "J Am Vet Med Assoc", species: "Equine", region: "US", institute: "University of Pennsylvania", citation: "Maxson AD, et al. J Am Vet Med Assoc. 1993;203(9):1308-11." },
+    { year: 1992, title: "Acute effects of massive transfusion of a bovine hemoglobin blood substitute in a canine model of hemorrhagic shock", authors: "Harringer W, Hodakowski GT, Svizzero T, Jacobs EE Jr, Vlahakes GJ", journal: "Eur J Cardiothorac Surg", species: "Canine", region: "US", institute: "Massachusetts General Hospital", citation: "Harringer W, et al. Eur J Cardiothorac Surg. 1992;6(12):649-54." },
+    { year: 1990, title: "Hemodynamic effects and oxygen transport properties of a new blood substitute in a model of massive blood replacement", authors: "Vlahakes GJ, Lee R, Jacobs EE Jr, LaRaia PJ, Austen WG", journal: "J Thorac Cardiovasc Surg", species: "Ovine", region: "US", institute: "Massachusetts General Hospital", citation: "Vlahakes GJ, et al. J Thorac Cardiovasc Surg. 1990;100(3):379-88." }
 ];
 
+// ============================================================
+// 2. RENDER FUNCTIONS
+// ============================================================
 
-        // ============================================
-        // 2. RENDER TABLE
-        // ============================================
-        const tbody = document.querySelector('#publicationTable tbody');
+function getUniqueValues(key) {
+    const vals = new Set();
+    publications.forEach(p => {
+        if (p[key] && p[key].trim()) vals.add(p[key].trim());
+    });
+    return Array.from(vals).sort();
+}
 
-        publicationsData.forEach((pub, index) => {
-            const row = document.createElement('tr');
-            row.innerHTML = `
-                <td>${index + 1}</td>
-                <td>${pub.FileName}</td>
-                <td>${pub.Category}</td>
-                <td>${pub.Title}</td>
-                <td>${pub.Indication}</td>
-                <td>${pub.Species}</td>
-                <td>${pub.StudyType}</td>
-                <td style="max-width: 300px; font-size: 0.85rem;">${pub.Citation}</td>
-                <td><a href="#" class="btn btn-small go-to-original" data-filename="${pub.FileName}">Go to Original</a></td>
-            `;
-            tbody.appendChild(row);
-        });
+function populateFilters() {
+    const yearSel = document.getElementById('yearFilter');
+    const years = getUniqueValues('year').sort((a,b) => b - a);
+    years.forEach(y => {
+        const opt = document.createElement('option');
+        opt.value = y;
+        opt.textContent = y;
+        yearSel.appendChild(opt);
+    });
 
-        // ============================================
-        // 3. "Go to Original" Link Handler
-        // ============================================
-        // This will link to the specific page in the combined PDF.
-        // The mapping is basic. We'll use the filename as the anchor.
-        // For a better experience, you'd want a more robust mapping.
-        document.addEventListener('click', function(e) {
-            const target = e.target.closest('.go-to-original');
-            if (target) {
-                e.preventDefault();
-                const filename = target.getAttribute('data-filename');
-                // This opens the PDF with a fragment identifier for the file name.
-                // The PDF viewer (e.g., in-browser) will try to scroll to that anchor.
-                // Note: This is a simple implementation. You might want a more sophisticated mapping.
-                window.open('path/to/combined.pdf#' + filename, '_blank');
-            }
-        });
+    const speciesSel = document.getElementById('speciesFilter');
+    getUniqueValues('species').forEach(s => {
+        const opt = document.createElement('option');
+        opt.value = s;
+        opt.textContent = s;
+        speciesSel.appendChild(opt);
+    });
 
-        // ============================================
-        // 4. RENDER PDF REFERENCE LISTS
-        // ============================================
-        // Data extracted from the PDF sections.
-        const pharmToxList = [
-            { title: "Polymerized bovine hemoglobin can improve small- volume resuscitation from hemorrhagic shock in hamsters.", doi: "10.1097/SHK.0b013e3181a3e5c5" },
-            { title: "A review of blood substitutes: examining the history, clinical trial results, and ethics of hemoglobin- based oxygen carriers.", doi: "10.1590/S1807-59322009000800016" },
-            { title: "The effects of hemoglobin glutamer- 200 (bovine) on the microcirculation in a canine hypovolemia model: a noninvasive computer- assisted intravital microscopy study.", doi: "10.1097/00000539-200110000-00027" },
-            { title: "Current development and use of hemoglobin- based oxygen- carrying (HBOC) solutions.", doi: "10.1046/j.1435-6935.2003.00010.x" },
-            { title: "Arterial oxygenation and oxygen delivery after hemoglobin- based oxygen carrier infusion in canine hypovolemic shock: a dose- response study.", doi: "10.1097/01.CCM.0000063061.60270.9F" },
-            { title: "Effects of the haemoglobin- based oxygen carrier Hemoglobin glutamer- 200 (bovine) on intestinal perfusion and oxygenation in a canine hypovolaemia model.", doi: "10.1053/jvet.2001.26568" },
-            { title: "Inadequacy of low- volume resuscitation with hemoglobin- based oxygen carrier hemoglobin glutamer- 200 (bovine) in canine hypovolemia.", doi: "10.1046/j.1365-2885.2001.00312.x" },
-            { title: "Effects of low- volume hemoglobin glutamer- 200 versus normal saline and arginine vasopressin resuscitation on systemic and skeletal muscle blood flow and oxygenation in a canine hemorrhagic shock model.", doi: "10.1097/01.CCM.0000277040.31978.3D" },
-            { title: "Haemoproteus balearicae and other blood parasites of free- ranging Florida sandhill crane chicks.", doi: "10.7589/0090-3558-40.4.682" },
-            { title: "Improvement of impaired microcirculation and tissue oxygenation by hemodilution with hydroxyethyl starch plus cell- free hemoglobin in acute porcine pancreatitis.", doi: "10.1159/000091962" },
-            { title: "Use of a hemoglobin- based oxygen- carrying solution in cats: 72 cases (1998- 2000).", doi: "10.1053/jvet.2002.33132" },
-            { title: "Purified hemoglobin as a blood substitute in the treatment of parasite- induced anemia in dogs.", doi: "10.1111/j.1939-1676.1991.tb03123.x" },
-            { title: "Acute effects of massive transfusion of a bovine hemoglobin blood substitute in a canine model of hemorrhagic shock.", doi: "10.1016/1010-7940(92)90063-9" }
-        ];
+    const instSel = document.getElementById('instituteFilter');
+    getUniqueValues('institute').forEach(i => {
+        const opt = document.createElement('option');
+        opt.value = i;
+        opt.textContent = i;
+        instSel.appendChild(opt);
+    });
+}
 
-        const minorSpeciesList = [
-            { title: "Laboratory findings, histopathology, and immunophenotype of lymphoma in domestic ferrets.", doi: "10.1354/vp.45-5-663" },
-            { title: "Estrogen- induced bone marrow depression in ferrets.", doi: "10.2460/ajvr.1983.44.04.657" },
-            { title: "Polymerized bovine hemoglobin can improve small- volume resuscitation from hemorrhagic shock in hamsters.", doi: "10.1097/SHK.0b013e3181a3e5c5" },
-            { title: "Decreased hephaestin activity in the intestine of copper- deficient mice causes systemic iron deficiency.", doi: "10.1093/jn/136.5.1236" },
-            { title: "A review of blood substitutes: examining the history, clinical trial results, and ethics of hemoglobin- based oxygen carriers.", doi: "10.1590/S1807-59322009000800016" },
-            { title: "Current development and use of hemoglobin- based oxygen- carrying (HBOC) solutions.", doi: "10.1046/j.1435-6935.2003.00010.x" },
-            { title: "Falcon adenovirus infection in breeding Taita falcons (Falco fasciinucha).", doi: "10.1177/104063870601800310" },
-            { title: "Intravenous and intraosseous fluid therapy in critically ill birds of prey.", doi: "10.1016/j.jepm.2010.12.006" },
-            { title: "Haemoproteus balearicae and other blood parasites of free- ranging Florida sandhill crane chicks.", doi: "10.7589/0090-3558-40.4.682" },
-            { title: "Phagocytosis and anemia in rats infected with Haemobartonella muris.", doi: "10.1093/infdis/118.3.324" },
-            { title: "Amyloidosis in the black- footed ferret (Mustela nigripes).", doi: "10.1638/06-041.1" },
-            { title: "Haematological findings in healthy and sick African grey parrots (Psittacus erithacus).", doi: "10.1136/vr.111.25-26.580" },
-            { title: "Mortality in fledgling great horned owls from black fly hematophage and leucocytozoonosis.", doi: "10.7589/0090-3558-33.3.486" }
-        ];
+function applyFilters() {
+    const search = document.getElementById('searchInput').value.toLowerCase().trim();
+    const year = document.getElementById('yearFilter').value;
+    const region = document.getElementById('regionFilter').value;
+    const species = document.getElementById('speciesFilter').value;
+    const institute = document.getElementById('instituteFilter').value;
 
-        const keyArticlesList = [
-            { title: "Laboratory Findings, Histopathology, and Immunophenotype of Lymphoma in Domestic Ferrets", doi: "10.1354/vp.45-5-663" },
-            { title: "Estrogen-Induced Bone Marrow Depression in Ferrets", doi: "10.2460/ajvr.1983.44.04.657" },
-            { title: "Polymerized bovine hemoglobin can improve small-volume resuscitation from hemorrhagic shock in hamsters", doi: "10.1097/SHK.0b013e3181a3e5c5" },
-            { title: "Decreased Hephaestin Activity in the Intestine of Copper-Deficient Mice Causes Systemic Iron Deficiency", doi: "10.1093/jn/136.5.1236" },
-            { title: "A Review of Blood Substitutes: Examining the History, Clinical Trial Results, and Ethics of Hemoglobin-Based Oxygen Carriers", doi: "10.1590/S1807-59322009000800016" },
-            { title: "The Effects of Hemoglobin Glutamer-200 (Bovine) on the Microcirculation in a Canine Hypovolemia Model", doi: "10.1097/00000539-200110000-00027" },
-            { title: "Current development and use of hemoglobin-based oxygen-carrying (HBOC) solutions", doi: "10.1046/j.1435-6935.2003.00010.x" },
-            { title: "Falcon adenovirus infection in breeding Taita falcons (Falco fasciinucha)", doi: "10.1177/104063870601800310" },
-            { title: "Effects of the haemoglobin-based oxygen carrier Hemoglobin glutamer-200 (bovine) on intestinal perfusion and oxygenation in a canine hypovolaemia model", doi: "10.1053/jvet.2001.26568" },
-            { title: "Inadequacy of low-volume resuscitation with hemoglobin-based oxygen carrier hemoglobin glutamer-200 (bovine) in canine hypovolemia", doi: "10.1046/j.1365-2885.2001.00312.x" },
-            { title: "Arterial oxygenation and oxygen delivery after hemoglobin-based oxygen carrier infusion in canine hypovolemic shock: a dose-response study", doi: "10.1097/01.CCM.0000063061.60270.9F" },
-            { title: "Effects of low-volume hemoglobin glutamer-200 versus normal saline and arginine vasopressin resuscitation on systemic and skeletal muscle blood flow and oxygenation in a canine hemorrhagic shock model", doi: "10.1097/01.CCM.0000277040.31978.3D" },
-            { title: "Intravenous and Intraosseous Fluid Therapy in Critically Ill Birds of Prey", doi: "10.1016/j.jepm.2010.12.006" },
-            { title: "Haemoproteus balearicae and other blood parasites of free-ranging Florida sandhill crane chicks", doi: "10.7589/0090-3558-40.4.682" },
-            { title: "Phagocytosis and Anemia in Rats Infected with Haemobartonella Muris", doi: "10.1093/infdis/118.3.324" },
-            { title: "Improvement of Impaired Microcirculation and Tissue Oxygenation by Hemodilution with Hydroxyethyl Starch plus Cell-Free Hemoglobin in Acute Porcine Pancreatitis", doi: "10.1159/000091962" },
-            { title: "Amyloidosis in the Black-Footed Ferret (Mustela Nigripes)", doi: "10.1638/06-041.1" },
-            { title: "Use of a hemoglobin-based oxygen-carrying solution in cats: 72 cases (1998-2000)", doi: "10.1053/jvet.2002.33132" }
-        ];
+    let filtered = publications.filter(p => {
+        if (search && !p.title.toLowerCase().includes(search) && !p.authors.toLowerCase().includes(search)) return false;
+        if (year && p.year != year) return false;
+        if (region && p.region !== region) return false;
+        if (species && p.species !== species) return false;
+        if (institute && p.institute !== institute) return false;
+        return true;
+    });
 
-        function renderRefList(list, containerId) {
-            const container = document.getElementById(containerId);
-            if (!container) return;
-            list.forEach(item => {
-                const li = document.createElement('li');
-                const title = document.createElement('div');
-                title.textContent = item.title;
-                title.style.fontWeight = '500';
-                const doi = document.createElement('div');
-                doi.className = 'ref-doi';
-                // In a real implementation, the link would go to the PDF.
-                // For now, we use a placeholder link with the DOI.
-                const doiLink = document.createElement('a');
-                doiLink.href = '#';
-                doiLink.textContent = `DOI: ${item.doi}`;
-                doiLink.className = 'go-to-pdf';
-                doiLink.setAttribute('data-doi', item.doi);
-                doiLink.style.marginLeft = '8px';
-                doi.appendChild(doiLink);
-                li.appendChild(title);
-                li.appendChild(doi);
-                container.appendChild(li);
-            });
-        }
+    // Group by year (descending)
+    const grouped = {};
+    filtered.forEach(p => {
+        if (!grouped[p.year]) grouped[p.year] = [];
+        grouped[p.year].push(p);
+    });
+    const sortedYears = Object.keys(grouped).sort((a,b) => b - a);
 
-        renderRefList(pharmToxList, 'pharm-tox-list');
-        renderRefList(minorSpeciesList, 'minor-species-list');
-        renderRefList(keyArticlesList, 'key-articles-list');
+    const tbody = document.getElementById('tableBody');
+    tbody.innerHTML = '';
 
-        // Add event listener for "Go to PDF" links from the reference lists.
-        document.addEventListener('click', function(e) {
-            const target = e.target.closest('.go-to-pdf');
-            if (target) {
-                e.preventDefault();
-                // In a real scenario, this would open the PDF to the relevant section.
-                // For now, we just open the combined PDF.
-                window.open('path/to/combined.pdf', '_blank');
-            }
-        });
+    if (sortedYears.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="9" class="no-results">No publications match your filters.</td></tr>';
+    } else {
+        sortedYears.forEach(y => {
+            // Year header
+            const headerRow = document.createElement('tr');
+            headerRow.innerHTML = `<td colspan="9" class="year-group">📅 ${y} (${grouped[y].length})</td>`;
+            tbody.appendChild(headerRow);
 
-        // ============================================
-        // 5. COMBINED PDF VIEW BUTTON
-        // ============================================
-        document.querySelectorAll('#view-pdf-btn, #view-pdf-btn-bottom').forEach(btn => {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                // This would be the path to your combined PDF on GitHub.
-                // For example: 'https://yourusername.github.io/repo/combined.pdf'
-                window.open('path/to/combined.pdf', '_blank');
+            grouped[y].forEach(p => {
+                const tr = document.createElement('tr');
+                const regionBadge = p.region === 'EU' ? '<span class="badge badge-eu">EU</span>' :
+                                    p.region === 'US' ? '<span class="badge badge-us">US</span>' :
+                                    p.region === 'Both' ? '<span class="badge badge-both">Both</span>' : '';
+                tr.innerHTML = `
+                    <td>${p.year}</td>
+                    <td><strong>${p.title}</strong></td>
+                    <td>${p.authors}</td>
+                    <td>${p.journal}</td>
+                    <td>${p.species}</td>
+                    <td>${regionBadge}</td>
+                    <td>${p.institute}</td>
+                    <td class="citation">${p.citation}</td>
+                    <td><a href="#" class="file-link" onclick="alert('PDF link for: ${p.title}')">View PDF</a></td>
+                `;
+                tbody.appendChild(tr);
             });
         });
+    }
 
-        console.log('Publication table and reference lists loaded successfully.');
-    </script>
+    document.getElementById('statsDisplay').textContent = `${filtered.length} publications`;
+}
+
+function clearFilters() {
+    document.getElementById('searchInput').value = '';
+    document.getElementById('yearFilter').value = '';
+    document.getElementById('regionFilter').value = '';
+    document.getElementById('speciesFilter').value = '';
+    document.getElementById('instituteFilter').value = '';
+    applyFilters();
+}
+
+// ============================================================
+// 3. PDF REFERENCE LIST
+// ============================================================
+const pdfRefs = [
+    { title: "Polymerized bovine hemoglobin can improve small-volume resuscitation from hemorrhagic shock in hamsters", doi: "10.1097/SHK.0b013e3181a3e5c5" },
+    { title: "A review of blood substitutes: examining the history, clinical trial results, and ethics of hemoglobin-based oxygen carriers", doi: "10.1590/S1807-59322009000800016" },
+    { title: "The effects of hemoglobin glutamer-200 (bovine) on the microcirculation in a canine hypovolemia model", doi: "10.1097/00000539-200110000-00027" },
+    { title: "Current development and use of hemoglobin-based oxygen-carrying (HBOC) solutions", doi: "10.1046/j.1435-6935.2003.00010.x" },
+    { title: "Arterial oxygenation and oxygen delivery after hemoglobin-based oxygen carrier infusion in canine hypovolemic shock", doi: "10.1097/01.CCM.0000063061.60270.9F" },
+    { title: "Inadequacy of low-volume resuscitation with hemoglobin-based oxygen carrier hemoglobin glutamer-200 (bovine) in canine hypovolemia", doi: "10.1046/j.1365-2885.2001.00312.x" },
+    { title: "Effects of low-volume hemoglobin glutamer-200 versus normal saline and arginine vasopressin resuscitation", doi: "10.1097/01.CCM.0000277040.31978.3D" },
+    { title: "Use of a hemoglobin-based oxygen-carrying solution in cats: 72 cases (1998-2000)", doi: "10.1053/jvet.2002.33132" },
+    { title: "Laboratory Findings, Histopathology, and Immunophenotype of Lymphoma in Domestic Ferrets", doi: "10.1354/vp.45-5-663" },
+    { title: "Estrogen-Induced Bone Marrow Depression in Ferrets", doi: "10.2460/ajvr.1983.44.04.657" },
+    { title: "Amyloidosis in the Black-Footed Ferret (Mustela Nigripes)", doi: "10.1638/06-041.1" }
+];
+
+function renderPdfRefs() {
+    const list = document.getElementById('pdfRefList');
+    list.innerHTML = '';
+    pdfRefs.forEach(ref => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+            <div class="ref-title">${ref.title}</div>
+            <div class="ref-doi">DOI: <a href="#" onclick="alert('PDF for: ${ref.title}')">${ref.doi}</a></div>
+        `;
+        list.appendChild(li);
+    });
+}
+
+// ============================================================
+// 4. INIT
+// ============================================================
+populateFilters();
+applyFilters();
+renderPdfRefs();
+</script>
 </body>
 </html>
