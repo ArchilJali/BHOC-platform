@@ -5,18 +5,13 @@
 <p align="center">
   <img src="https://img.shields.io/badge/BHOC-Biological%20Hemoglobin%20Oxygen%20Carrier-1a365d?style=for-the-badge&logo=github" alt="BHOC">
 </p>
-
 <br>
-
 <h1 align="center">🩸 BHOC</h1>
 <h2 align="center" style="color: #1a365d;">Biological Hemoglobin Oxygen Carrier</h2>
-
 <br>
-
 <!-- ============================================================ -->
 <!-- PRECISION OXYGEN THERAPEUTICS HEADER - Visual Banner         -->
 <!-- ============================================================ -->
-
 <p align="center">
   <table>
     <tr>
@@ -41,15 +36,12 @@
 > ### 🎯 Delivering oxygen where it is needed, when it is needed, and in the amount needed — continuously, controllably, and at the tissue level.
 
 <br>
-
 ---
-
 <!-- ============================================================ -->
 <!-- DOCUMENTATION - BOX CARDS (NO LINKS)                        -->
 <!-- ============================================================ -->
 
 ## 📚 Documentation
-
 <table>
   <tr>
     <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px; width: 20%; background-color: #f7fafc;">
