@@ -65,7 +65,7 @@
       <strong style="font-size: 14px; color: #1a365d;">Veterinary</strong><br>
       <small style="font-size: 11px; color: #718096;">Application</small>
       <br><br>
-      <a href="https://github.com/ArchilJali/BHOC-platform/tree/main/veterinary" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
+      <a href="https://github.com/ArchilJali/BHOC-platform/tree/main/veterinary"/ style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
     </td>
     <td style="width: 12px;"></td>
     <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 16px; width: 140px; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
