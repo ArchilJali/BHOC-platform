@@ -60,7 +60,6 @@
 <p align="center">
   <table style="border-collapse: collapse; border: none; margin: 0 auto;">
     <tr>
-      <!-- Veterinary - WITH link -->
       <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 12px; width: 145px; background-color: #ffffff;">
         <div style="font-size: 36px;">🏥</div>
         <br>
@@ -70,8 +69,6 @@
         <a href="./veterinary/" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 5px 14px; display: inline-block; font-size: 11px;">Explore →</a>
       </td>
       <td style="width: 12px;"></td>
-      
-      <!-- Transplantation - NO link -->
       <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 12px; width: 145px; background-color: #ffffff;">
         <div style="font-size: 36px;">🧬</div>
         <br>
@@ -79,8 +76,6 @@
         <small style="font-size: 11px; color: #718096;">Application</small>
       </td>
       <td style="width: 12px;"></td>
-      
-      <!-- Human Medicine - NO link -->
       <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 12px; width: 145px; background-color: #ffffff;">
         <div style="font-size: 36px;">⚕️</div>
         <br>
@@ -88,8 +83,6 @@
         <small style="font-size: 11px; color: #718096;">Medicine</small>
       </td>
       <td style="width: 12px;"></td>
-      
-      <!-- Scientific Articles - WITH link -->
       <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 12px; width: 145px; background-color: #ffffff;">
         <div style="font-size: 36px;">🔬</div>
         <br>
@@ -99,8 +92,6 @@
         <a href="./science/" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 5px 14px; display: inline-block; font-size: 11px;">Explore →</a>
       </td>
       <td style="width: 12px;"></td>
-      
-      <!-- LinkedIn Publications - WITH link -->
       <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 25px 12px; width: 145px; background-color: #ffffff;">
         <div style="font-size: 36px;">📱</div>
         <br>
@@ -464,189 +455,4 @@
       <table style="border-collapse: collapse; border: none;">
         <tr>
           <td style="border: none; padding: 3px 10px; width: 33%;">• Scientific publications</td>
-          <td style="border: none; padding: 3px 10px; width: 33%;">• Research summaries</td>
-          <td style="border: none; padding: 3px 10px; width: 33%;">• Preclinical studies</td>
-        </tr>
-        <tr>
-          <td style="border: none; padding: 3px 10px;">• Clinical research</td>
-          <td style="border: none; padding: 3px 10px;">• Oxygen physiology</td>
-          <td style="border: none; padding: 3px 10px;">• Technology development</td>
-        </tr>
-        <tr>
-          <td style="border: none; padding: 3px 10px;">• References and datasets</td>
-          <td style="border: none; padding: 3px 10px;">• Scientific discussions</td>
-          <td style="border: none; padding: 3px 10px;"></td>
-        </tr>
-      </table>
-      <br>
-      <strong>Scientific evidence, preclinical evidence, clinical evidence, and future hypotheses should be clearly distinguished.</strong>
-    </td>
-  </tr>
-</table>
-
----
-
-<!-- ============================================================ -->
-<!-- SCIENTIFIC PRINCIPLES 1 - CARD                               -->
-<!-- ============================================================ -->
-
-## ⚗️ Scientific Principles
-
-<table>
-  <tr>
-    <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 25px; background-color: #f7fafc;">
-      A growing collection of relevant scientific publications will be organized around:
-      <br><br>
-      <table style="border-collapse: collapse; border: none;">
-        <tr>
-          <td style="border: none; padding: 3px 10px; width: 33%;">• BHOC</td>
-          <td style="border: none; padding: 3px 10px; width: 33%;">• HBOCs</td>
-          <td style="border: none; padding: 3px 10px; width: 33%;">• Oxygen Therapeutics</td>
-        </tr>
-        <tr>
-          <td style="border: none; padding: 3px 10px;">• Hemoglobin physiology</td>
-          <td style="border: none; padding: 3px 10px;">• Oncology</td>
-          <td style="border: none; padding: 3px 10px;">• Iron support</td>
-        </tr>
-        <tr>
-          <td style="border: none; padding: 3px 10px;">• Wound healing</td>
-          <td style="border: none; padding: 3px 10px;">• Metabolism and mitochondrial support</td>
-          <td style="border: none; padding: 3px 10px;">• Oxygen delivery</td>
-        </tr>
-        <tr>
-          <td style="border: none; padding: 3px 10px;">• Tissue oxygenation</td>
-          <td style="border: none; padding: 3px 10px;">• Transfusion medicine</td>
-          <td style="border: none; padding: 3px 10px;">• Organ preservation</td>
-        </tr>
-        <tr>
-          <td style="border: none; padding: 3px 10px;">• Emergency medicine</td>
-          <td style="border: none; padding: 3px 10px;">• Animal healthcare applications</td>
-          <td style="border: none; padding: 3px 10px;"></td>
-        </tr>
-      </table>
-      <br>
-      <em>Where available, publications should link to the original journal, DOI, PubMed record, or other primary scientific source.</em>
-    </td>
-  </tr>
-</table>
-
----
-
-<!-- ============================================================ -->
-<!-- SCIENTIFIC PRINCIPLES 2 (Oxygen Pathway) - CARD              -->
-<!-- ============================================================ -->
-
-## 🧬 Scientific Principles — Oxygen Pathway
-
-<table>
-  <tr>
-    <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 25px; background-color: #f7fafc;">
-      The development of Precision Oxygen Therapeutics requires understanding the relationship between:
-      <br><br>
-      <code style="background-color: #edf2f7; padding: 12px 15px; display: block; border-radius: 6px; font-size: 13px; line-height: 1.8;">
-      <strong>Oxygen Supply</strong> (lung and membrane oxygenation and anti-oxidation control)
-      ↓
-      <strong>Oxygen Transport</strong> (rheology and diffusion support, ECMO)
-      ↓
-      <strong>Microvascular Distribution</strong> (perfusion and concentration)
-      ↓
-      <strong>Tissue Oxygen Availability</strong> (extraction and control)
-      ↓
-      <strong>Cellular Oxygen Utilization</strong>
-      </code>
-      <br>
-      <strong>The ultimate biological objective of oxygen delivery is not simply the presence of oxygen in the circulation, but its exchange with tissues and cells.</strong>
-    </td>
-  </tr>
-</table>
-
----
-
-<!-- ============================================================ -->
-<!-- BHOC VISION - CARD                                           -->
-<!-- ============================================================ -->
-
-## 🌟 BHOC Vision
-
-<table>
-  <tr>
-    <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 25px; background-color: #ebf8ff;">
-      The long-term objective is to advance a scientific framework in which systemic and organ and tissue oxygen delivery can be regenerative as a therapeutic function:
-      <br><br>
-      <p align="center">
-        <table style="border-collapse: collapse; border: none; margin: 0 auto;">
-          <tr>
-            <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px 10px; width: 145px; background-color: #ffffff;">
-              <strong style="font-size: 17px; color: #1a365d;">📍 WHERE</strong><br>
-              <small style="font-size: 11px; color: #4a5568;">oxygen is needed</small>
-            </td>
-            <td style="width: 10px;"></td>
-            <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px 10px; width: 145px; background-color: #ffffff;">
-              <strong style="font-size: 17px; color: #1a365d;">⏰ WHEN</strong><br>
-              <small style="font-size: 11px; color: #4a5568;">oxygen is needed</small>
-            </td>
-            <td style="width: 10px;"></td>
-            <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px 10px; width: 145px; background-color: #ffffff;">
-              <strong style="font-size: 17px; color: #1a365d;">📊 IN THE AMOUNT</strong><br>
-              <small style="font-size: 11px; color: #4a5568;">oxygen is needed</small>
-            </td>
-            <td style="width: 10px;"></td>
-            <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px 10px; width: 145px; background-color: #ffffff;">
-              <strong style="font-size: 17px; color: #1a365d;">🎯 CONTINUOUSLY</strong><br>
-              <small style="font-size: 11px; color: #4a5568;">and controllably at the cell and mitochondrial level</small>
-            </td>
-          </tr>
-        </table>
-      </p>
-    </td>
-  </tr>
-</table>
-
----
-
-<!-- ============================================================ -->
-<!-- DISCLAIMER - CARD                                            -->
-<!-- ============================================================ -->
-
-## ⚠️ Disclaimer
-
-<table>
-  <tr>
-    <td style="border: 3px solid #c53030; border-radius: 10px; padding: 20px 25px; background-color: #fff5f5;">
-      <strong>BHOC and Precision Oxygen Therapeutics are presented here as a scientific and technology development platform.</strong>
-      <br><br>
-      Information in this repository should not be interpreted as medical advice, a clinical recommendation, or evidence of regulatory approval.
-      <br><br>
-      Scientific claims should be supported by appropriate primary evidence, and ongoing research may change current understanding.
-    </td>
-  </tr>
-</table>
-
----
-
-<!-- ============================================================ -->
-<!-- CONTACT - CARD                                               -->
-<!-- ============================================================ -->
-
-## 📬 Contact
-
-<table>
-  <tr>
-    <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 25px; background-color: #f7fafc; text-align: center;">
-      <strong style="font-size: 17px; color: #1a365d;">Archil Jaliashvili</strong><br>
-      <em style="font-size: 14px; color: #4a5568;">Biotechnology & Healthcare Innovation</em><br><br>
-      <strong style="font-size: 14px; color: #1a365d;">BHOC — Biological Hemoglobin Oxygen Carrier</strong><br>
-      <em style="font-size: 13px; color: #4a5568;">Precision Oxygen Therapeutics</em>
-    </td>
-  </tr>
-</table>
-
----
-
-<!-- ============================================================ -->
-<!-- FOOTER BADGES                                                -->
-<!-- ============================================================ -->
-
-<p align="center">
-  <img src="https://img.shields.io/badge/BHOC-Biological%20Hemoglobin%20Oxygen%20Carrier-1a365d?style=flat-square&logo=github" alt="BHOC">
-  <img src="https://img.shields.io/badge/Precision%20Oxygen%20Therapeutics-Research-2
+          <td style="
