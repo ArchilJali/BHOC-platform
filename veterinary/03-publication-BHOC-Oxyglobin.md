@@ -53,57 +53,7 @@ To find publications on a specific topic, use the interactive search tool above,
 | Review Articles | 25 |
 | Safety/Toxicology | 20 |
 
----
 
-## Full Publication List
-
-| # | Title | Authors | Year | Journal | Keywords |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Oxyglobin in Veterinary Emergency | Smith J., et al. | 2020 | J Vet Emerg Crit Care | HBOC, canine, blood substitute |
-| 2 | Clinical Efficacy of HBOC-201 | Jones M., Williams P. | 2018 | Transfusion Medicine | HBOC-201, trauma, human |
-| 3 | Safety Profile of HBOCs | Brown A., et al. | 2019 | Critical Care Medicine | safety, adverse effects, vasoconstriction |
-| 4 | Hemoglobin-Based Oxygen Carriers: Review | Davis R. | 2021 | Blood Reviews | review, HBOC, oxygen delivery |
-| 5 | Feline Application of Oxyglobin | Wilson K., Lee S. | 2019 | J Feline Med Surg | feline, Oxyglobin, veterinary |
-| 6 | HBOC-201 in Hemorrhagic Shock | Miller T., et al. | 2020 | J Trauma | hemorrhagic shock, resuscitation |
-| 7 | Renal Effects of HBOC Therapy | Garcia C., et al. | 2018 | Nephrol Dial Transplant | kidney, toxicity, HBOC |
-| 8 | Equine Use of Oxygen Carriers | Thompson R., et al. | 2020 | Equine Vet J | equine, horse, blood substitute |
-| 9 | Long-Term Safety of HBOCs | Anderson P., et al. | 2022 | Transfusion | long-term, safety, follow-up |
-| 10 | Oxyglobin vs. Blood Transfusion | Roberts D., et al. | 2019 | J Vet Intern Med | Oxyglobin, transfusion, comparison |
-| 11 | Microcirculatory Effects of HBOCs | Chen L., et al. | 2021 | Microcirculation | microcirculation, vasodilation |
-| 12 | HBOC Development Pipeline | Patel R., et al. | 2020 | Biotechnol Adv | development, biotechnology, future |
-| 13 | Pediatric Applications | White S., et al. | 2021 | Pediatrics | children, pediatric, HBOC |
-| 14 | Cardiac Effects of HBOC-201 | Kim J., et al. | 2019 | J Cardiothorac Vasc Anesth | cardiovascular, heart, safety |
-| 15 | Neuroprotection with HBOCs | Yamamoto H., et al. | 2020 | Stroke | brain, neuroprotection, ischemia |
-
----
-
-## Categories
-
-### Veterinary
-- Canine
-- Feline
-- Equine
-- Emergency Medicine
-- Surgery
-
-### Human
-- Trauma
-- Surgery
-- Critical Care
-- Anemia
-
-### Preclinical
-- In vitro studies
-- Animal models
-- Pharmacokinetics
-
-### Safety & Toxicology
-- Renal effects
-- Cardiovascular effects
-- Vasoconstriction
-- Inflammation
-
----
 
 ## Species Index
 
