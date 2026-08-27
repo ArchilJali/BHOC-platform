@@ -80,4 +80,4 @@ This database compiles **200+ peer-reviewed publications** on hemoglobin-based o
 
 ## Contributing
 
-To correct or add new publications, please contact 
+If you would like to correct or add new publications, please contact !
