@@ -1,28 +1,38 @@
-# 🩸 BHOC — Biological Hemoglobin Oxygen Carrier
+<!-- HEADER BANNER -->
+<p align="center">
+  <img src="https://img.shields.io/badge/BHOC-Biological%20Hemoglobin%20Oxygen%20Carrier-blue?style=for-the-badge&logo=github" alt="BHOC">
+</p>
 
-## Precision Oxygen Therapeutics · Tissue-Level Oxygen Delivery · Oxygenation
+<h1 align="center">🩸 BHOC — Biological Hemoglobin Oxygen Carrier</h1>
 
-> **Delivering oxygen where it is needed, when it is needed, and in the amount needed — continuously, controllably, and at the tissue level.**
+<h2 align="center">Precision Oxygen Therapeutics · Tissue-Level Oxygen Delivery · Oxygenation</h2>
 
----
+<p align="center">
+  <strong>Delivering oxygen where it is needed, when it is needed, and in the amount needed — continuously, controllably, and at the tissue level.</strong>
+</p>
 
-[![Version](https://img.shields.io/badge/Version-2.0-blue.svg)](https://github.com)
-[![Records](https://img.shields.io/badge/Records-200%2B-green.svg)](https://github.com)
-[![License](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-2.0-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/Records-200%2B-green.svg" alt="Records">
+  <img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" alt="License">
+</p>
 
 ---
 
 ## 📚 Documentation
 
-| Section | Link |
-| :--- | :--- |
-| 🧪 **Related Scientific Articles** | [./science/](./science/) |
-| 🏥 **Veterinary Application** | [./veterinary/](./veterinary/) |
-| 🧬 **Transplantation Application** | Coming Soon |
-| ⚕️ **Human Medicine** | Coming Soon |
-| 📱 **LinkedIn Publications** | [./social-media/linkedin/](./social-media/linkedin/) |
+| Section | Link | Status |
+| :--- | :--- | :---: |
+| 🧪 **Related Scientific Articles** | [./science/](./science/) | 📝 Coming Soon |
+| 🏥 **Veterinary Application** | [./veterinary/](./veterinary/) | ✅ Available |
+| 🧬 **Transplantation Application** | Coming Soon | 📝 Coming Soon |
+| ⚕️ **Human Medicine** | Coming Soon | 📝 Coming Soon |
+| 📱 **LinkedIn Publications** | [./social-media/linkedin/](./social-media/linkedin/) | 📝 Coming Soon |
 
 ---
+
+## 📂 Repository Structure
+
 
 ## 📂 Repository Structure
 
