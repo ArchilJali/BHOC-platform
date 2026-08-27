@@ -1,12 +1,12 @@
 <!-- ============================================================ -->
-<!-- HEADER                                                        -->
+<!-- HEADER - Visual Banner (not a link)                          -->
 <!-- ============================================================ -->
 
 <p align="center">
-  <img src="https://img.shields.io/badge/BHOC-Biological%20Hemoglobin%20Oxygen%20Carrier-1a365d?style=for-the-badge&logo=github" alt="BHOC">
+  <span style="background-color: #1a365d; color: #ffffff; padding: 10px 30px; border-radius: 8px; font-weight: 700; font-size: 18px; display: inline-block; letter-spacing: 1px;">
+    BHOC — Biological Hemoglobin Oxygen Carrier
+  </span>
 </p>
-
-<br>
 
 <h1 align="center" style="color: #1a365d; font-size: 36px; font-weight: 700; margin: 0;">🩸 BHOC</h1>
 <h2 align="center" style="color: #2d3748; font-size: 22px; font-weight: 400; margin: 5px 0 20px 0;">Biological Hemoglobin Oxygen Carrier</h2>
