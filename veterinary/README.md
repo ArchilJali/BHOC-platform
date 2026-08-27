@@ -13,7 +13,7 @@
 | Link | Description |
 | :--- | :--- |
 | 🔍 **[Interactive Search Tool](search.html)** | Search all 200+ publications by keyword |
-| 📋 **[Oxyglobin Publications](03-publication-BHOC-Oxyglobin.md)** | Full list with Vancouver-style citations |
+| 📋 **[Oxyglobin Publications](03-publication-BHOC-Oxyglobin.md )** | Full list with Vancouver-style citations |
 | 📖 **[About This Database](#about-this-database)** | Overview and usage guidelines |
 
 ---
