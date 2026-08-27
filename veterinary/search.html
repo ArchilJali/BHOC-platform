@@ -1,222 +1,387 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Поиск публикаций HBOC</title>
+    <title>HBOC Publications Database - Search</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #f5f7fa;
-        }
-        h1 {
-            color: #2c3e50;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
-        }
-        .search-box {
-            width: 100%;
-            padding: 15px 20px;
-            font-size: 18px;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-            margin: 20px 0;
+        * {
             box-sizing: border-box;
         }
-        .search-box:focus {
-            border-color: #3498db;
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f0f4f8;
+        }
+        .header {
+            background: linear-gradient(135deg, #1a365d, #2b6cb0);
+            color: white;
+            padding: 30px 40px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+        .header h1 {
+            margin: 0 0 8px 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .header p {
+            margin: 0;
+            opacity: 0.85;
+            font-size: 16px;
+        }
+        .header .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-right: 10px;
+        }
+        .search-section {
+            background: white;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+        }
+        .search-row {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .search-row input {
+            flex: 1;
+            min-width: 250px;
+            padding: 14px 20px;
+            font-size: 17px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            transition: border-color 0.2s;
             outline: none;
-            box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+        }
+        .search-row input:focus {
+            border-color: #2b6cb0;
+            box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.15);
+        }
+        .search-row button {
+            padding: 14px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .btn-search {
+            background: #2b6cb0;
+            color: white;
+        }
+        .btn-search:hover {
+            background: #1a4f8a;
+        }
+        .btn-clear {
+            background: #e2e8f0;
+            color: #2d3748;
+        }
+        .btn-clear:hover {
+            background: #cbd5e0;
         }
         .stats {
-            color: #7f8c8d;
-            margin-bottom: 20px;
+            color: #4a5568;
             font-size: 14px;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #edf2f7;
+        }
+        .stats strong {
+            color: #2d3748;
+        }
+        .table-wrapper {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+        .table-scroll {
+            overflow-x: auto;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            font-size: 14px;
+        }
+        thead {
+            background: #edf2f7;
         }
         th {
-            background: #2c3e50;
-            color: white;
-            padding: 12px 15px;
+            padding: 14px 16px;
             text-align: left;
             font-weight: 600;
+            color: #2d3748;
+            border-bottom: 2px solid #e2e8f0;
+            white-space: nowrap;
+            position: sticky;
+            top: 0;
+            background: #edf2f7;
+            z-index: 5;
         }
         td {
-            padding: 12px 15px;
-            border-bottom: 1px solid #ecf0f1;
+            padding: 12px 16px;
+            border-bottom: 1px solid #edf2f7;
             vertical-align: top;
+            line-height: 1.5;
         }
-        tr:hover {
-            background: #f8f9fa;
-        }
-        .highlight {
-            background: #fff3cd;
-        }
-        .no-results {
-            text-align: center;
-            padding: 40px;
-            color: #95a5a6;
-            font-size: 18px;
+        tr:hover td {
+            background: #f7fafc;
         }
         .keyword-tag {
             display: inline-block;
-            background: #e8f4f8;
-            color: #2980b9;
-            padding: 2px 8px;
-            border-radius: 4px;
+            background: #ebf8ff;
+            color: #2b6cb0;
+            padding: 2px 10px;
+            border-radius: 12px;
             font-size: 12px;
-            margin: 2px;
+            margin: 2px 3px 2px 0;
+            white-space: nowrap;
         }
-        #clearBtn {
-            background: #e74c3c;
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 14px;
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: #718096;
+            font-size: 18px;
         }
-        #clearBtn:hover {
-            background: #c0392b;
+        .no-results .icon {
+            font-size: 48px;
+            display: block;
+            margin-bottom: 15px;
+        }
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+            color: #718096;
+        }
+        .loading .spinner {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 4px solid #e2e8f0;
+            border-top: 4px solid #2b6cb0;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .highlight {
+            background: #fefcbf;
+            padding: 0 2px;
+            border-radius: 2px;
+        }
+        .footer {
+            text-align: center;
+            color: #a0aec0;
+            font-size: 13px;
+            margin-top: 25px;
+            padding: 15px;
+        }
+        @media (max-width: 768px) {
+            .header { padding: 20px; }
+            .header h1 { font-size: 22px; }
+            .search-section { padding: 15px; }
+            .search-row input { font-size: 15px; padding: 12px 16px; }
+            .search-row button { padding: 12px 20px; font-size: 14px; }
+            th, td { padding: 8px 10px; font-size: 13px; }
         }
     </style>
 </head>
 <body>
 
-    <h1>🔬 HBOC Publications Database</h1>
-    <p>Поиск по публикациям о гемоглобин-содержащих кислородных переносчиках (HBOC)</p>
-
-    <input type="text" id="searchInput" class="search-box" placeholder="🔍 Введите ключевое слово (например: canine, trauma, safety, Oxyglobin)..." onkeyup="searchPublications()">
-
-    <div style="display: flex; justify-content: space-between; align-items: center;">
-        <div class="stats" id="stats">Загружается...</div>
-        <button id="clearBtn" onclick="clearSearch()">✕ Очистить</button>
+    <div class="header">
+        <h1>🔬 HBOC Publications Database</h1>
+        <p>Hemoglobin-Based Oxygen Carriers — Comprehensive Literature Review</p>
+        <div style="margin-top: 12px;">
+            <span class="badge">📄 200+ Records</span>
+            <span class="badge">📅 1939–2018</span>
+            <span class="badge">🔍 Search by Keyword</span>
+        </div>
     </div>
 
-    <div id="results">
-        <table>
-            <thead>
-                <tr>
-                    <th style="width: 30%;">Название</th>
-                    <th style="width: 20%;">Авторы</th>
-                    <th style="width: 10%;">Год</th>
-                    <th style="width: 20%;">Журнал</th>
-                    <th style="width: 20%;">Ключевые слова</th>
-                </tr>
-            </thead>
-            <tbody id="tableBody">
-                <tr><td colspan="5" class="no-results">Загрузка данных...</td></tr>
-            </tbody>
-        </table>
+    <div class="search-section">
+        <div class="search-row">
+            <input type="text" id="searchInput" placeholder="🔍 Search by keyword... (e.g., canine, trauma, Oxyglobin, safety, clinical trial)" autofocus>
+            <button class="btn-search" onclick="searchPublications()">Search</button>
+            <button class="btn-clear" onclick="clearSearch()">✕ Clear</button>
+        </div>
+        <div class="stats" id="stats">
+            <strong>📚 Loading...</strong>
+        </div>
+    </div>
+
+    <div class="table-wrapper">
+        <div class="table-scroll">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 28%;">Title</th>
+                        <th style="width: 22%;">Authors</th>
+                        <th style="width: 8%;">Year</th>
+                        <th style="width: 18%;">Journal</th>
+                        <th style="width: 24%;">Keywords</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <td colspan="5">
+                            <div class="loading">
+                                <div class="spinner"></div>
+                                <p style="margin-top: 15px;">Loading publications...</p>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="footer">
+        HBOC Publications Database &bull; Data compiled from peer-reviewed literature &bull; Last updated: 2026
     </div>
 
     <script>
         let allPublications = [];
+        let currentFiltered = [];
 
-        // Загружаем данные из publications.json
+        // Load data from publications.json
         fetch('publications.json')
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('Не удалось загрузить publications.json');
+                    throw new Error('Unable to load publications.json. Make sure the file exists in the same folder.');
                 }
                 return response.json();
             })
             .then(data => {
                 allPublications = data;
-                document.getElementById('stats').textContent = `📚 Всего публикаций: ${allPublications.length}`;
+                currentFiltered = data;
+                document.getElementById('stats').innerHTML = `<strong>📚 Total publications:</strong> ${allPublications.length}`;
                 renderTable(allPublications);
             })
             .catch(error => {
-                console.error('Ошибка:', error);
+                console.error('Error:', error);
                 document.getElementById('tableBody').innerHTML = `
-                    <tr><td colspan="5" class="no-results">
-                        ⚠️ Не удалось загрузить базу данных. 
-                        Убедитесь, что файл <strong>publications.json</strong> существует в той же папке.
-                    </td></tr>
+                    <tr>
+                        <td colspan="5">
+                            <div class="no-results">
+                                <span class="icon">⚠️</span>
+                                <strong>Failed to load database.</strong><br>
+                                Please make sure <strong>publications.json</strong> exists in the same folder as this page.
+                                <br><br>
+                                <span style="font-size: 14px; color: #a0aec0;">Error: ${error.message}</span>
+                            </div>
+                        </td>
+                    </tr>
                 `;
-                document.getElementById('stats').textContent = '❌ Ошибка загрузки';
+                document.getElementById('stats').innerHTML = '❌ Error loading data';
             });
 
-        // Функция поиска
+        // Search function
         function searchPublications() {
             const keyword = document.getElementById('searchInput').value.toLowerCase().trim();
-            
+
             if (keyword === '') {
+                currentFiltered = allPublications;
                 renderTable(allPublications);
-                document.getElementById('stats').textContent = `📚 Всего публикаций: ${allPublications.length}`;
+                document.getElementById('stats').innerHTML = `<strong>📚 Total publications:</strong> ${allPublications.length}`;
                 return;
             }
 
             const filtered = allPublications.filter(pub => {
-                // Ищем во всех полях
                 const searchable = [
-                    pub.title,
-                    pub.authors,
-                    pub.year,
-                    pub.journal,
-                    pub.keywords
+                    pub.title || '',
+                    pub.authors || '',
+                    pub.year || '',
+                    pub.journal || '',
+                    pub.keywords || ''
                 ].join(' ').toLowerCase();
-                
                 return searchable.includes(keyword);
             });
 
+            currentFiltered = filtered;
             renderTable(filtered);
-            document.getElementById('stats').textContent = 
-                `🔍 Найдено: ${filtered.length} из ${allPublications.length} публикаций`;
+            document.getElementById('stats').innerHTML =
+                `<strong>🔍 Found:</strong> ${filtered.length} of ${allPublications.length} publications matching "<strong>${keyword}</strong>"`;
         }
 
-        // Функция отрисовки таблицы
+        // Render table
         function renderTable(publications) {
             const tbody = document.getElementById('tableBody');
-            
+
             if (publications.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="5" class="no-results">😕 Ничего не найдено. Попробуйте другое ключевое слово.</td></tr>`;
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="5">
+                            <div class="no-results">
+                                <span class="icon">😕</span>
+                                <strong>No publications found.</strong><br>
+                                Try a different keyword or clear the search.
+                            </div>
+                        </td>
+                    </tr>
+                `;
                 return;
             }
 
             let html = '';
-            publications.forEach(pub => {
-                // Разбиваем ключевые слова для красивых тегов
+            publications.forEach((pub, index) => {
                 const keywords = pub.keywords ? pub.keywords.split(',').map(k => k.trim()) : [];
-                const keywordTags = keywords.map(k => `<span class="keyword-tag">${k}</span>`).join(' ');
-                
+                const keywordTags = keywords.map(k => `<span class="keyword-tag">${escapeHtml(k)}</span>`).join(' ');
+
                 html += `
                     <tr>
-                        <td><strong>${pub.title}</strong></td>
-                        <td>${pub.authors}</td>
-                        <td>${pub.year}</td>
-                        <td>${pub.journal}</td>
+                        <td><strong>${escapeHtml(pub.title || '')}</strong></td>
+                        <td>${escapeHtml(pub.authors || '')}</td>
+                        <td>${escapeHtml(pub.year || '')}</td>
+                        <td>${escapeHtml(pub.journal || '')}</td>
                         <td>${keywordTags}</td>
                     </tr>
                 `;
             });
-            
+
             tbody.innerHTML = html;
         }
 
-        // Функция очистки поиска
+        // Simple escape to prevent XSS
+        function escapeHtml(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Clear search
         function clearSearch() {
             document.getElementById('searchInput').value = '';
+            currentFiltered = allPublications;
             renderTable(allPublications);
-            document.getElementById('stats').textContent = `📚 Всего публикаций: ${allPublications.length}`;
+            document.getElementById('stats').innerHTML = `<strong>📚 Total publications:</strong> ${allPublications.length}`;
             document.getElementById('searchInput').focus();
         }
 
-        // Поиск при нажатии Enter (для удобства)
+        // Search on Enter key
         document.getElementById('searchInput').addEventListener('keyup', function(event) {
             if (event.key === 'Enter') {
                 searchPublications();
             }
+        });
+
+        // Search as you type (with debounce)
+        let debounceTimer;
+        document.getElementById('searchInput').addEventListener('input', function() {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(searchPublications, 300);
         });
     </script>
 
