@@ -112,12 +112,4 @@ This database compiles **200+ peer-reviewed publications** on hemoglobin-based o
 
 ## Contributing
 
-To add new publications, please:
-
-1. Fork this repository
-2. Add your publication to `publications.json`
-3. Submit a pull request
-
-**Format for new entries:**
- Please contact if you found mistake or would like to add publication 
- Thank you 
+To correct or add new publications, please contact 
