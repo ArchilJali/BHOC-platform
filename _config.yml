@@ -1,0 +1,16 @@
+title: BHOC — Biological Hemoglobin Oxygen Carrier
+description: Scientific evidence, source records and precision oxygenation therapeutics
+url: https://archiljali.github.io
+baseurl: /BHOC-platform
+exclude:
+  - scripts
+  - tests
+  - README.md
+  - science/index.md
+  - social-media/linkedin/readme.md
+  - veterinary/README.md
+  - veterinary/Vet-README.md
+  - veterinary/Vet-EMA-approvals-summary.md
+  - veterinary/Vet-FDA-registry.md
+  - veterinary/Vet-03-publication-BHOC-Oxyglobin.md
+  - veterinary/Vet-business-concept.md

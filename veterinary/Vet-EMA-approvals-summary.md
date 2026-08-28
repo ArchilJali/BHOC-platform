@@ -23,7 +23,7 @@ The European Commission granted the original marketing authorisation on **29 Nov
 
 - <a href="https://www.ema.europa.eu/en/medicines/veterinary/EPAR/oxyglobin" target="_blank">EMA Oxyglobin regulatory record</a>
 - <a href="https://ec.europa.eu/health/documents/community-register/1999/199911293347/anx_3347_en.pdf" target="_blank">Original 1999 European Commission Annexes</a>
-- <a href="https://ec.europa.eu/health/documents/community-register/2021/20210215152609/anx_152609_en.pdf" target="_blank">2021 European Commission decision and consolidated approval</a>
+- <a href="https://ec.europa.eu/health/documents/community-register/2021/20211018153269/dec_153269_en.pdf" target="_blank">2021 European Commission authorisation amendment (18 October)</a>
 
 ---
 
@@ -42,7 +42,7 @@ The European Commission granted the original marketing authorisation on **29 Nov
 | Version | Presentation |
 |---------|--------------|
 | **Original (1999)** | Box containing **two separately wrapped 125 mL bags** |
-| **Consolidated (2021)** | Individual **60 mL** and **125 mL** presentations |
+| **Subsequent presentations (see current EMA product information)** | Individual **60 mL** and **125 mL** presentations |
 
 ---
 

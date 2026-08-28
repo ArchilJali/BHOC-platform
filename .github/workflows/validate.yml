@@ -1,0 +1,25 @@
+name: Validate evidence hub
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  static-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Search and metadata regression tests
+        run: node --test tests/publications.test.cjs
+      - name: JavaScript syntax
+        run: |
+          node --check assets/publications.js
+          node --check assets/publications-core.js
+      - name: Internal pages and anchors
+        run: python3 scripts/check_links.py
+      - name: Veterinary overview agrees with the bibliography
+        run: node scripts/build_veterinary_overview.cjs --check
