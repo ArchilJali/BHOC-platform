@@ -41,3 +41,11 @@ Run `node scripts/build_veterinary_overview.cjs` after changing publication data
 The ten displayed species/model groups and the publication explorer share `speciesGroups` and `matchesSpecies` in `assets/publications-core.js`. Composite groups count unique records within a group; records can still appear in several groups. Journal counts are explicitly unnormalised journal labels, not unique journals. Author suggestions are extracted from the recorded author lists. Institution labels describe author affiliations, not necessarily study sites.
 
 The clinical highlight cites the original FDA FOI summary: 64 dogs; intent-to-treat success 22/30 versus 10/34; endpoint was no additional oxygen-carrying support for 24 hours, not survival. Adverse reactions are disclosed. Do not substitute the per-protocol 95% figure or broaden the product/species scope.
+
+## Source provenance continuation
+
+The 28 August continuation identified 13 of the 14 previously unresolved citations: three additional PubMed records and ten publisher/DOI records. `metadata_status: matched` now means identified original citation, not necessarily PubMed indexing. `pubmed_citations` and `publisher_only_citations` distinguish these in the audit. The original 1991 Giger abstract remains unresolved; its review citation is explicitly secondary.
+
+`affiliation_source_url` records a separately consulted article affiliation source. `study_sites` contains a separate institution, location, source URL, locator, evidence note and check date; no site is inferred from an affiliation. Only one record currently has explicit site evidence. `provenance-review.json` lists the reviewed records and remaining limits. Four false Porcine labels on guinea-pig records were removed.
+
+After data edits run `node scripts/build_source_pages.cjs` followed by `node scripts/build_veterinary_overview.cjs`. Both scripts accept `--check`, and CI checks their generated pages for drift.

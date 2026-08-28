@@ -9,7 +9,7 @@
       "tags": [
         "Canine"
       ],
-      "count": 24
+      "count": 25
     },
     {
       "value": "Feline",
@@ -36,7 +36,7 @@
       "tags": [
         "Porcine"
       ],
-      "count": 42
+      "count": 38
     },
     {
       "value": "Ovine",
@@ -83,7 +83,7 @@
       "tags": [
         "Human"
       ],
-      "count": 85
+      "count": 89
     },
     {
       "value": "__other_models__",
@@ -93,17 +93,20 @@
         "In vitro"
       ],
       "includeUnspecified": true,
-      "count": 25
+      "count": 21
     }
   ],
   "journalLabels": 130,
-  "institutions": 150,
-  "linked": 222,
-  "dois": 204,
-  "unspecified": 19,
+  "institutions": 154,
+  "linked": 235,
+  "pubmed": 225,
+  "dois": 217,
+  "unspecified": 13,
+  "siteRecords": 1,
+  "sites": 1,
   "notes": {
     "counts": "Counts are records carrying indexed species or model labels, not counts of confirmed treatment studies. A record can appear in several groups; group counts must not be added to obtain the total. Labels may be incomplete.",
-    "groups": "Exotic / other animals combines ferret, rabbit and other-animal labels, counting each record once. It does not imply wildlife use. Other / In vitro includes in-vitro labels and 19 records with no species label.",
+    "groups": "Exotic / other animals combines ferret, rabbit and other-animal labels, counting each record once. It does not imply wildlife use. Other / In vitro includes in-vitro labels and 13 records with no species label.",
     "journals": "Journal labels are distinct names as stored in the bibliography; full names and abbreviations have not been merged. This is not a verified count of unique journals."
   }
 }
