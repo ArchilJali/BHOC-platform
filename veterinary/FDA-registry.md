@@ -20,9 +20,8 @@ Oxyglobin was approved by the FDA under **New Animal Drug Application NADA 141-0
 
 ### Official Records
 
-- [FDA Freedom of Information Summary for the original approval — NADA 141-067](https://animaldrugsatfda.fda.gov/adafda/views/#/home/previewapproval/141-067)
-- [FDA supplemental approval record and revised dosage information](https://animaldrugsatfda.fda.gov/adafda/views/#/home/previewapproval/141-067)
-- [Current FDA Approved Animal Drug Products listing](https://www.fda.gov/animal-veterinary/product-safety-information/fda-approved-animal-drug-products-green-book)
+- [FDA Freedom of Information Summary for the original approval — NADA 141-067](https://animaldrugsatfda.fda.gov/adafda/views/#/home/previewapproval/141-067){:target="_blank"}
+- [FDA supplemental approval record and revised dosage information](https://animaldrugsatfda.fda.gov/adafda/views/#/home/previewapproval/141-067){:target="_blank"}
 
 ---
 
