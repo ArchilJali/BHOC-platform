@@ -394,7 +394,7 @@
             <h3>About This Database</h3>
             <p>Overview and usage guidelines</p>
         </a>
-        <a href="05-concept.md" class="quick-card">
+        <a href="concept.html" class="quick-card">
             <span class="icon">💡</span>
             <h3>Concept Overview</h3>
             <p>BHOC veterinary concept documentation</p>
@@ -405,8 +405,8 @@
     <h2 class="section-title">🏛️ Regulatory Approvals</h2>
     <div class="content-card">
         <div class="doc-grid">
-            <a href="FDA-registry.md"><i class="fas fa-file-pdf"></i> FDA Approval Details</a>
-            <a href="EMA-approvals-summary.md"><i class="fas fa-file-pdf"></i> EMA Approvals Summary</a>
+            <a href="fda-approval.html"><i class="fas fa-file-pdf"></i> FDA Approval Details</a>
+            <a href="ema-approval.html"><i class="fas fa-file-pdf"></i> EMA Approvals Summary</a>
         </div>
         <div style="margin-top:0.8rem;padding:0.8rem 1rem;background:#f8fafc;border-radius:1rem;font-size:0.9rem;">
             <p><strong>📋 FDA Approval:</strong> Oxyglobin (hemoglobin glutamer-200, bovine) — approved for canine anemia treatment.</p>
@@ -427,8 +427,8 @@
             <a href="publications.json" class="btn-outline" target="_blank">
                 <i class="fas fa-file-code"></i> View JSON
             </a>
-            <a href="03-publication-BHOC-Oxyglobin.md" class="btn-outline" target="_blank">
-                <i class="fas fa-file-alt"></i> View Markdown
+            <a href="publications.html" class="btn-outline">
+                <i class="fas fa-file-alt"></i> View Full List
             </a>
         </div>
         <div id="jsonViewerContainer">
@@ -495,6 +495,8 @@
         <p style="margin-bottom:0.8rem;">
             This database compiles <strong>200+ peer-reviewed publications</strong> on hemoglobin-based oxygen carriers (HBOCs), with a special focus on <strong>Oxyglobin</strong> (hemoglobin glutamer-200, bovine) — the only FDA-approved HBOC for veterinary use.
         </p>
+
+        <p style="margin-top:12px;font-weight:600;color:#1a365d;">Coverage Includes:</p>
         <div class="about-grid">
             <div class="about-item"><i class="fas fa-tint"></i> Oxyglobin</div>
             <div class="about-item"><i class="fas fa-tint"></i> HBOC-201 / Hemopure</div>
@@ -504,7 +506,7 @@
             <div class="about-item"><i class="fas fa-users"></i> Special Populations</div>
             <div class="about-item"><i class="fas fa-hand-holding-heart"></i> Transplantation</div>
         </div>
-        <div style="margin-top:0.5rem;font-size:0.9rem;color:#334155;">
+        <div style="margin-top:0.8rem;font-size:0.9rem;color:#334155;background:#f8fafc;padding:0.8rem 1rem;border-radius:0.75rem;">
             <i class="fas fa-circle-check" style="color:#1a365d;"></i> Coverage: veterinary applications, human clinical trials, adverse effects, oxygen delivery, NO scavenging, microcirculation, HBOC vs blood transfusion, Jehovah's Witnesses, sickle cell, trauma, machine perfusion, organ preservation.
         </div>
     </div>
@@ -516,7 +518,7 @@
         <p style="margin-top:8px;">The central concept is <strong>Precision Oxygen Therapeutics</strong>: focusing on oxygen delivery at the tissue level rather than on blood hemoglobin concentration alone.</p>
         <p style="margin-top:8px;">BHOC is intended as a complementary approach to the oxygen-delivery function of blood, while recognizing that blood performs many other essential physiological functions.</p>
         <p style="margin-top:12px;">
-            <a href="05-concept.md" class="btn-primary">
+            <a href="concept.html" class="btn-primary">
                 <i class="fas fa-book"></i> Read Full Concept
             </a>
         </p>
@@ -546,6 +548,8 @@
         Information in this repository should not be interpreted as medical advice, a clinical recommendation, or evidence of regulatory approval.
         <br><br>
         Scientific claims should be supported by appropriate primary evidence, and ongoing research may change current understanding.
+        <br><br>
+        <strong>This database is for informational purposes only.</strong>
     </div>
 
     <!-- ===== CONTACT ===== -->
@@ -558,7 +562,7 @@
 
     <div class="footer">
         BHOC — Veterinary HBOC Database &bull; Oxyglobin Literature Review &bull;
-        <a href="README.md">README</a> &bull;
+        <a href="about.html">About</a> &bull;
         <a href="https://github.com/ArchilJali/BHOC-platform" target="_blank">View on GitHub</a>
     </div>
 
@@ -583,7 +587,6 @@
                 if (Array.isArray(data)) {
                     allPublications = data;
                     renderPublications('');
-                    // Update count
                     document.getElementById('pubCount').textContent = allPublications.length;
                     return data;
                 } else {
@@ -609,25 +612,4 @@
             { id: 7, title: "Avian HBOC pharmacology in ducks", authors: "Andersson E, Nilsson T", journal: "Avian Dis", year: 2020, species: "avian", keywords: "duck, bird, pharmacology" },
             { id: 8, title: "Oxyglobin in ferrets with anemia", authors: "White S, Black R", journal: "Exotic Anim Pract", year: 2021, species: "exotic", keywords: "ferret, anemia" },
             { id: 9, title: "Human phase I trial of HBOC-201", authors: "Johnson M, Williams T", journal: "Crit Care Med", year: 2019, species: "human", keywords: "clinical, phase I, safety" },
-            { id: 10, title: "In vitro oxygen release kinetics", authors: "Chen Y, Liu Z", journal: "Artif Cells Nanomed Biotechnol", year: 2020, species: "in vitro", keywords: "kinetics, cell culture" }
-        ];
-    }
-
-    function renderPublications(filter = '') {
-        const list = document.getElementById('pubList');
-        const q = filter.toLowerCase().trim();
-
-        let filtered = allPublications;
-        if (q) {
-            filtered = allPublications.filter(p =>
-                (p.title && p.title.toLowerCase().includes(q)) ||
-                (p.authors && p.authors.toLowerCase().includes(q)) ||
-                (p.journal && p.journal.toLowerCase().includes(q)) ||
-                (p.species && p.species.toLowerCase().includes(q)) ||
-                (p.keywords && p.keywords.toLowerCase().includes(q)) ||
-                (p.year && p.year.toString().includes(q))
-            );
-        }
-
-        if (filtered.length === 0) {
-            list.innerHTML = `<div class="no-results"><i class="fas fa-search
+           
