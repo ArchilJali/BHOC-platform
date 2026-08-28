@@ -1,23 +1,31 @@
 # HBOC Publications Database
-## Hemoglobin-Based Oxygen Carriers - Comprehensive Literature Review
+
+## Hemoglobin-Based Oxygen Carriers — Comprehensive Literature Review
+
+---
+
+## 🔙 Back to Veterinary
+
+- <a href="../Vet-index.html">← Back to Veterinary Database</a>
+
 ---
 
 ## 📊 Full Publication List
 
-**All 200+ publications are available in the [Interactive Search Tool](search.html) above.**
+**All 200+ publications are available in the <a href="../Vet-search.html" target="_blank">Interactive Search Tool</a>.**
+
 > Search by: title, authors, year, journal, keywords (e.g., canine, trauma, Oxyglobin, safety, clinical trial)
 
 Below is a summary of key publications and categories.
+
 ---
 
 ## Quick Navigation
 
-- [Search Guide](#search-guide)
-- [Statistics](#statistics)
-- [Full Publication List](#full-publication-list)
-- [Categories](#categories)
-- [Species Index](#species-index)
-- [Journal Index](#journal-index)
+- <a href="#search-guide">Search Guide</a>
+- <a href="#statistics">Statistics</a>
+- <a href="#species-index">Species Index</a>
+- <a href="#journal-index">Journal Index</a>
 
 ---
 
@@ -28,17 +36,20 @@ Below is a summary of key publications and categories.
 To find publications on a specific topic, use the interactive search tool above, or use your browser's **Ctrl+F** (or **Cmd+F** on Mac) to search within this page.
 
 **Common search terms:**
-- `canine` - veterinary applications in dogs
-- `feline` - veterinary applications in cats
-- `equine` - veterinary applications in horses
-- `human` - clinical trials in humans
-- `trauma` - hemorrhagic shock, injury
-- `safety` - adverse effects, toxicity
-- `efficacy` - therapeutic effectiveness
-- `Oxyglobin` - specific HBOC product
-- `HBOC-201` - specific HBOC product
-- `vasoconstriction` - vascular effects
-- `oxygen delivery` - tissue oxygenation
+
+| Term | Application |
+| :--- | :--- |
+| `canine` | Veterinary applications in dogs |
+| `feline` | Veterinary applications in cats |
+| `equine` | Veterinary applications in horses |
+| `human` | Clinical trials in humans |
+| `trauma` | Hemorrhagic shock, injury |
+| `safety` | Adverse effects, toxicity |
+| `efficacy` | Therapeutic effectiveness |
+| `Oxyglobin` | Specific HBOC product |
+| `HBOC-201` | Specific HBOC product |
+| `vasoconstriction` | Vascular effects |
+| `oxygen delivery` | Tissue oxygenation |
 
 ---
 
@@ -47,18 +58,19 @@ To find publications on a specific topic, use the interactive search tool above,
 | Category | Count |
 | :--- | :--- |
 | Total Publications | 200+ |
+| Species Covered | 12+ |
 | Veterinary Studies | 45 |
 | Human Clinical Trials | 38 |
 | Preclinical Studies | 72 |
 | Review Articles | 25 |
-| Safety/Toxicology | 20 |
+| Safety / Toxicology | 20 |
 
-
+---
 
 ## Species Index
 
 | Species | Number of Publications |
-| :--- | :--- |
+| :--- | :---: |
 | Human | 38 |
 | Canine (Dog) | 25 |
 | Feline (Cat) | 12 |
@@ -74,7 +86,7 @@ To find publications on a specific topic, use the interactive search tool above,
 ## Journal Index
 
 | Journal Name | Publications |
-| :--- | :--- |
+| :--- | :---: |
 | J Vet Emerg Crit Care | 12 |
 | Transfusion Medicine | 10 |
 | Critical Care Medicine | 8 |
@@ -96,8 +108,7 @@ To find publications on a specific topic, use the interactive search tool above,
 ## How to Use This Database
 
 ### For Researchers
-- Use the **Interactive Search Tool** to find publications by keyword
-- Browse by **Category** to find specific areas of interest
+- Use the <a href="../Vet-search.html" target="_blank">Interactive Search Tool</a> to find publications by keyword
 - Check the **Species Index** for veterinary applications
 
 ### For Clinicians
@@ -112,13 +123,16 @@ To find publications on a specific topic, use the interactive search tool above,
 
 ---
 
+## 🔙 Back to Veterinary
+
+- <a href="../Vet-index.html">← Back to Veterinary Database</a>
+
+---
+
 ## Contributing
 
-To suggest additions or corrections, please:
-1. Fork this repository
-2. Add your publication to the list
-3. Submit a pull request
+To suggest additions or corrections, please contact us.
 
-**Required format for new entries:**
-```markdown
-| 16 | Title of Publication | Author Names | Year | Journal Name | keyword1, keyword2, keyword3 |
+---
+
+*Last updated: 2026.08*
