@@ -21,9 +21,9 @@ The European Commission granted the original marketing authorisation on **29 Nov
 
 ### Official Records
 
-- [EMA Oxyglobin regulatory record](https://www.ema.europa.eu/en/medicines/veterinary/EPAR/oxyglobin)
-- [Original 1999 European Commission Annexes](https://ec.europa.eu/health/documents/community-register/1999/199911293347/anx_3347_en.pdf)
-- [2021 European Commission decision and consolidated approval](https://ec.europa.eu/health/documents/community-register/2021/20210215152609/anx_152609_en.pdf)
+- <a href="https://www.ema.europa.eu/en/medicines/veterinary/EPAR/oxyglobin" target="_blank">EMA Oxyglobin regulatory record</a>
+- <a href="https://ec.europa.eu/health/documents/community-register/1999/199911293347/anx_3347_en.pdf" target="_blank">Original 1999 European Commission Annexes</a>
+- <a href="https://ec.europa.eu/health/documents/community-register/2021/20210215152609/anx_152609_en.pdf" target="_blank">2021 European Commission decision and consolidated approval</a>
 
 ---
 
@@ -99,3 +99,7 @@ Oxyglobin provides oxygen-carrying support to dogs and improves clinical signs o
 ## Source
 
 EMA Assessment Report — Oxyglobin (EU/2/99/015)
+
+---
+
+*Last updated: 2026.08*
