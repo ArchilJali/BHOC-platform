@@ -2,7 +2,7 @@
 
 ## Oxyglobin — The Only FDA-Approved HBOC for Veterinary Use
 
-Welcome to the **Veterinary HBOC Database** — the most comprehensive collection of peer-reviewed publications, regulatory documents, and scientific resources on **Oxyglobin** (hemoglobin glutamer-200, bovine) and hemoglobin-based oxygen carriers (HBOCs) in veterinary medicine.
+Welcome to the **Veterinary HBOC Database** — a curated collection of peer-reviewed publications, regulatory documents, and scientific resources on **Oxyglobin** (hemoglobin glutamer-200, bovine) and hemoglobin-based oxygen carriers (HBOCs) in veterinary medicine.
 
 ---
 
@@ -17,7 +17,7 @@ Welcome to the **Veterinary HBOC Database** — the most comprehensive collectio
 | **Product** | Oxyglobin (hemoglobin glutamer-200, bovine) |
 | **Indication** | Treatment of anemia in dogs |
 | **FDA Approval** | 1998 (veterinary) |
-| **EMA Approval** | Conditional approval in Europe |
+| **EMA Approval** | Original European marketing authorisation: 29 November 1999 |
 | **Status** | The only FDA-approved HBOC for veterinary use |
 | **Unique Feature** | Immediate oxygen-carrying capacity without cross-matching |
 
@@ -31,7 +31,7 @@ Welcome to the **Veterinary HBOC Database** — the most comprehensive collectio
 | **Species Covered** | 10+ (canine, feline, equine, porcine, ovine, rodent, avian, exotic, human, in vitro) |
 | **Journals** | 50+ |
 | **FDA Approved** | ✅ Yes (1998) |
-| **EMA Approved** | ✅ Yes (conditional) |
+| **EMA Approved** | Historical authorisation: 1999 |
 
 ---
 
@@ -41,9 +41,9 @@ Welcome to the **Veterinary HBOC Database** — the most comprehensive collectio
 | :--- | :--- |
 | `Vet-FDA-registry.md` | Complete FDA approval documentation for Oxyglobin |
 | `Vet-EMA-approvals-summary.md` | EMA approval summary for Oxyglobin |
-| `Vet-03-publication-list.md` | Full list of 200+ publications with DOI/PubMed links |
-| `Vet-05-concept.md` | BHOC concept — Precision Oxygen Therapeutics |
-| `Vet-case-studies-description.md` | Overview of the Case Study Booklet |
+| `Vet-search.html` | Searchable catalogue with recovered original links and missing-source labels |
+| `Vet-business-concept.html` | BHOC concept — Precision Oxygen Therapeutics |
+| `documents.html` | Source documents and PDF availability |
 
 ---
 
@@ -51,14 +51,14 @@ Welcome to the **Veterinary HBOC Database** — the most comprehensive collectio
 
 ### For Researchers
 - Use the **Interactive Search Tool** to find publications by keyword, author, year, journal, or species.
-- Browse the full publication list in **Vet-03-publication-list.md**.
+- Browse the full publication list in **Vet-search.html**.
 
 ### For Clinicians
 - Review FDA and EMA approval details in **Vet-FDA-registry.md** and **Vet-EMA-approvals-summary.md**.
 - Explore clinical applications and safety data.
 
 ### For Students
-- Learn about the science of HBOCs in **Vet-05-concept.md**.
+- Learn about the science of HBOCs in **Vet-business-concept.html**.
 - Track research trends and key publications over time.
 
 ---
@@ -72,32 +72,20 @@ Welcome to the **Veterinary HBOC Database** — the most comprehensive collectio
 - **Full Documentation:** `Vet-FDA-registry.md`
 
 ### EMA — Oxyglobin
-- **Approval Status:** Conditional approval in Europe
+- **Approval Status:** Original European marketing authorisation: 29 November 1999
 - **Full Documentation:** `Vet-EMA-approvals-summary.md`
 
 ---
 
 ## 🌍 Species Distribution
 
-| Species | Publications |
-| :--- | :---: |
-| 🐕 Canine (Dog) | 35+ |
-| 🐈 Feline (Cat) | 15+ |
-| 🐴 Equine (Horse) | 8+ |
-| 🐖 Porcine (Pig) | 18+ |
-| 🐑 Ovine (Sheep) | 6+ |
-| 🐀 Rodent | 32+ |
-| 🦅 Avian (Birds) | 15+ |
-| 🦦 Exotic / Wildlife | 12+ |
-| 👤 Human | 38+ |
-| 🧪 Other / In Vitro | 20+ |
-| **Total** | **200+** |
+[Browse current counts and filter by species](Vet-index.html). Counts are calculated from the catalogue, not estimated.
 
 ---
 
 ## 📖 About This Database
 
-This database compiles **200+ peer-reviewed publications** on hemoglobin-based oxygen carriers (HBOCs), with a special focus on **Oxyglobin** — the only FDA-approved HBOC for veterinary use.
+This database compiles **bibliographic records, including studies, reviews and background references** on hemoglobin-based oxygen carriers (HBOCs), with a special focus on **Oxyglobin** — the only FDA-approved HBOC for veterinary use.
 
 ### Coverage Includes
 
@@ -117,7 +105,7 @@ The central concept is **Precision Oxygen Therapeutics**: focusing on oxygen del
 
 BHOC is intended as a complementary approach to the oxygen-delivery function of blood, while recognizing that blood performs many other essential physiological functions.
 
-📄 Read the full concept in `Vet-05-concept.md`
+📄 Read the full concept in `Vet-business-concept.html`
 
 ---
 
@@ -150,3 +138,8 @@ Precision Oxygen Therapeutics
 ---
 
 *Last updated: 2026*
+
+
+## Research institutions
+
+[Browse institutions and study topics](institutions.html). Affiliation coverage is incomplete and source-checked names do not imply endorsement.

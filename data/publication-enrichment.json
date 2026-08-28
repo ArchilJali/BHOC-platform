@@ -1,0 +1,300 @@
+{
+  "ammersbach-2008": {
+    "qep_page": 6,
+    "institutions": [
+      "University of Guelph"
+    ],
+    "institution_status": "Affiliations checked against supplied full text",
+    "summary": "A retrospective pathology study characterising lymphoma in 29 ferrets. This is background disease evidence, not a trial of Oxyglobin efficacy.",
+    "summary_status": "Summary checked against supplied full text"
+  },
+  "cabrales-2009": {
+    "qep_page": 22,
+    "institutions": [
+      "La Jolla Bioengineering Institute",
+      "University of California, San Diego"
+    ],
+    "institution_status": "Affiliations checked against supplied full text",
+    "summary": "A hamster haemorrhagic-shock study comparing polymerized bovine haemoglobin concentrations. Dilution changed microvascular perfusion; higher arterial pressure did not necessarily mean better tissue perfusion.",
+    "summary_status": "Summary checked against supplied full text",
+    "doi": "10.1097/SHK.0b013e318180ff63",
+    "link": "https://doi.org/10.1097/SHK.0b013e318180ff63",
+    "link_status": "DOI checked in supplied full text"
+  },
+  "chen-2006": {
+    "qep_page": 30,
+    "institutions": [
+      "University of California, Berkeley",
+      "American University of Beirut",
+      "King’s College London",
+      "Queensland Institute of Medical Research",
+      "University of Queensland"
+    ],
+    "institution_status": "Affiliations checked against supplied full text",
+    "summary": "A mouse study of copper deficiency, hephaestin and iron metabolism. Background physiology; not a direct HBOC treatment trial.",
+    "summary_status": "Summary checked against supplied full text"
+  },
+  "chen-2009": {
+    "qep_page": 36,
+    "institutions": [
+      "University of Texas Medical Branch"
+    ],
+    "institution_status": "Affiliations checked against supplied full text",
+    "summary": "A review of HBOC development and clinical trials, including oxygen transport, adverse cardiovascular effects, trial design and ethics. It discusses limitations as well as potential utility.",
+    "summary_status": "Summary checked against supplied full text",
+    "doi": "10.1590/S1807-59322009000800016",
+    "link": "https://doi.org/10.1590/S1807-59322009000800016",
+    "link_status": "DOI checked in supplied full text"
+  },
+  "cheung-2001": {
+    "qep_page": 47,
+    "institutions": [
+      "University of California, Davis",
+      "University of Pennsylvania"
+    ],
+    "institution_status": "Affiliations checked against supplied full text",
+    "summary": "A canine hypovolaemia study comparing microvascular and systemic responses after shed-blood or haemoglobin glutamer-200 resuscitation.",
+    "summary_status": "Summary checked against supplied full text"
+  },
+  "dean-2006": {
+    "qep_page": 71,
+    "institutions": [
+      "University of Minnesota",
+      "University of Georgia",
+      "Washington State University",
+      "Zoological Society of San Diego"
+    ],
+    "institution_status": "Affiliations checked against supplied full text"
+  },
+  "driessen-2001b": {
+    "qep_page": 78,
+    "institutions": [
+      "University of Pennsylvania",
+      "University of California, Davis"
+    ],
+    "institution_status": "Affiliations checked against supplied full text",
+    "summary": "A canine hypovolaemia experiment examining the limitations of low-volume haemoglobin glutamer-200 resuscitation and conventional physiological treatment targets.",
+    "summary_status": "Summary checked against supplied full text"
+  },
+  "driessen-2003": {
+    "qep_page": 89,
+    "institutions": [
+      "University of Pennsylvania",
+      "University of California, Los Angeles",
+      "Charles R. Drew University of Medicine and Science",
+      "University of California, Davis",
+      "University of Hawaii"
+    ],
+    "institution_status": "Affiliations checked against supplied full text",
+    "summary": "A dose-response study in 24 dogs examining arterial oxygenation and oxygen delivery after haemoglobin glutamer-200 infusion in haemorrhagic shock.",
+    "summary_status": "Summary checked against supplied full text",
+    "doi": "10.1097/01.CCM.0000063476.79749.C1",
+    "link": "https://doi.org/10.1097/01.CCM.0000063476.79749.C1",
+    "link_status": "DOI checked in supplied full text"
+  },
+  "driessen-2007": {
+    "qep_page": 98,
+    "institutions": [
+      "University of Pennsylvania",
+      "University of California, Davis",
+      "Cornell University"
+    ],
+    "institution_status": "Affiliations checked against supplied full text",
+    "doi": "10.1097/01.CCM.0000277040.31978.3D",
+    "link": "https://doi.org/10.1097/01.CCM.0000277040.31978.3D",
+    "link_status": "DOI checked in supplied full text"
+  },
+  "dusek-2004": {
+    "qep_page": 113,
+    "institutions": [
+      "University of Florida"
+    ],
+    "institution_status": "Affiliations checked against supplied full text"
+  },
+  "elko-1968": {
+    "qep_page": 119,
+    "institutions": [
+      "University of Tennessee"
+    ],
+    "institution_status": "Affiliations checked against supplied full text"
+  },
+  "freitag-2006": {
+    "qep_page": 128,
+    "institutions": [
+      "University Hospital Hamburg-Eppendorf"
+    ],
+    "institution_status": "Affiliations checked against supplied full text"
+  },
+  "garner-2007": {
+    "qep_page": 136,
+    "institutions": [
+      "Northwest ZooPath",
+      "University of Minnesota",
+      "University of California, Davis",
+      "University of Wyoming"
+    ],
+    "institution_status": "Affiliations checked against supplied full text"
+  },
+  "gibson-2002": {
+    "qep_page": 146,
+    "institutions": [
+      "University of Pennsylvania"
+    ],
+    "institution_status": "Affiliations checked against supplied full text",
+    "summary": "A retrospective series of 72 cats receiving an HBOC solution. The report records clinical improvements and adverse events, including pulmonary oedema and pleural effusion; it does not establish a licensed feline indication.",
+    "summary_status": "Summary checked against supplied full text"
+  },
+  "harringer-1992": {
+    "qep_page": 195,
+    "institutions": [
+      "Massachusetts General Hospital",
+      "Harvard Medical School"
+    ],
+    "institution_status": "Affiliations checked against supplied full text"
+  },
+  "hawkey-1982": {
+    "qep_page": 201,
+    "institutions": [
+      "Institute of Zoology, Zoological Society of London"
+    ],
+    "institution_status": "Affiliations checked against supplied full text"
+  },
+  "hunter-1997": {
+    "qep_page": 204,
+    "institutions": [
+      "University of Guelph",
+      "University of British Columbia",
+      "Royal Ontario Museum"
+    ],
+    "institution_status": "Affiliations checked against supplied full text"
+  },
+  "joyner-2006": {
+    "qep_page": 223,
+    "institutions": [
+      "Wildlife Center of Virginia",
+      "Virginia Division of Consolidated Laboratory Services"
+    ],
+    "institution_status": "Affiliations checked against supplied full text"
+  },
+  "katz-2002": {
+    "qep_page": 233,
+    "institutions": [
+      "University of North Carolina at Chapel Hill",
+      "Biopure Corporation"
+    ],
+    "institution_status": "Affiliations checked against supplied full text",
+    "summary": "A swine liver-injury and haemorrhagic-shock study evaluating HBOC-201 against hetastarch and no fluid. This is preclinical Hemopure evidence, not an Oxyglobin veterinary approval.",
+    "summary_status": "Summary checked against supplied full text"
+  },
+  "malka-2010": {
+    "qep_page": 289,
+    "institutions": [
+      "University of California, Davis"
+    ],
+    "institution_status": "Affiliations checked against supplied full text"
+  },
+  "martinho-2009": {
+    "qep_page": 303,
+    "institutions": [
+      "Universidade Lusófona de Humanidades e Tecnologia"
+    ],
+    "institution_status": "Affiliations checked against supplied full text",
+    "doi": "10.1053/j.jepm.2009.04.001",
+    "link": "https://doi.org/10.1053/j.jepm.2009.04.001",
+    "link_status": "DOI checked in supplied full text"
+  },
+  "murray-2008": {
+    "qep_page": 313,
+    "institutions": [
+      "Tufts University"
+    ],
+    "institution_status": "Affiliations checked against supplied full text"
+  },
+  "nakade-2005": {
+    "qep_page": 319,
+    "institutions": [
+      "Rakuno Gakuen University",
+      "Hokkaido Institute of Public Health"
+    ],
+    "institution_status": "Affiliations checked against supplied full text"
+  },
+  "nevill-2009": {
+    "qep_page": 323,
+    "institutions": [
+      "International Bird Rescue Research Center"
+    ],
+    "institution_status": "Affiliations checked against supplied full text",
+    "doi": "10.1053/j.jepm.2009.04.011",
+    "link": "https://doi.org/10.1053/j.jepm.2009.04.011",
+    "link_status": "DOI checked in supplied full text"
+  },
+  "perkins-2001": {
+    "qep_page": 357,
+    "institutions": [
+      "Cornell University"
+    ],
+    "institution_status": "Affiliations checked against supplied full text",
+    "summary": "A case report describing polymerized bovine haemoglobin as temporary support for a foal with neonatal isoerythrolysis while appropriate red cells were being obtained.",
+    "summary_status": "Summary checked against supplied full text"
+  },
+  "posner-2003": {
+    "qep_page": 410,
+    "institutions": [
+      "Cornell University"
+    ],
+    "institution_status": "Affiliations checked against supplied full text"
+  },
+  "pyatskowit-2008": {
+    "qep_page": 417,
+    "institutions": [
+      "University of Minnesota Duluth"
+    ],
+    "institution_status": "Affiliations checked against supplied full text"
+  },
+  "raines-2015": {
+    "qep_page": 431,
+    "institutions": [
+      "Dallas Zoo and Children’s Aquarium at Fair Park"
+    ],
+    "institution_status": "Affiliations checked against supplied full text"
+  },
+  "sherrill-1985": {
+    "qep_page": 449,
+    "institutions": [
+      "Washington State University",
+      "US Department of Agriculture"
+    ],
+    "institution_status": "Affiliations checked against supplied full text"
+  },
+  "stuht-1999": {
+    "qep_page": 456,
+    "institutions": [
+      "Michigan State University",
+      "Lake Superior State University",
+      "US Fish and Wildlife Service"
+    ],
+    "institution_status": "Affiliations checked against supplied full text"
+  },
+  "wondratschek-2010": {
+    "qep_page": 482,
+    "institutions": [
+      "Free University of Berlin"
+    ],
+    "institution_status": "Affiliations checked against supplied full text"
+  },
+  "yamato-1996": {
+    "qep_page": 494,
+    "institutions": [
+      "Hokkaido University"
+    ],
+    "institution_status": "Affiliations checked against supplied full text"
+  },
+  "zucker-1977": {
+    "qep_page": 498,
+    "institutions": [
+      "Veterans Administration Hospital, Northport",
+      "State University of New York, Stony Brook"
+    ],
+    "institution_status": "Affiliations checked against supplied full text"
+  }
+}

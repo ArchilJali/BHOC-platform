@@ -6,13 +6,13 @@
 
 ## 🔙 Back to Veterinary
 
-- <a href="../Vet-index.html">← Back to Veterinary Database</a>
+- <a href="Vet-index.html">← Back to Veterinary Database</a>
 
 ---
 
 ## 📊 Full Publication List
 
-**All 200+ publications are available in the <a href="../Vet-search.html" target="_blank">Interactive Search Tool</a>.**
+**All 200+ publications are available in the <a href="Vet-search.html" target="_blank">Interactive Search Tool</a>.**
 
 > Search by: title, authors, year, journal, keywords (e.g., canine, trauma, Oxyglobin, safety, clinical trial)
 
@@ -22,10 +22,10 @@ Below is a summary of key publications and categories.
 
 ## Quick Navigation
 
-- <a href="#search-guide">Search Guide</a>
-- <a href="#statistics">Statistics</a>
-- <a href="#species-index">Species Index</a>
-- <a href="#journal-index">Journal Index</a>
+- <a href="Vet-search.html">Search Guide</a>
+- <a href="Vet-search.html">Statistics</a>
+- <a href="Vet-search.html">Species Index</a>
+- <a href="Vet-search.html">Journal Index</a>
 
 ---
 
@@ -108,7 +108,7 @@ To find publications on a specific topic, use the interactive search tool above,
 ## How to Use This Database
 
 ### For Researchers
-- Use the <a href="../Vet-search.html" target="_blank">Interactive Search Tool</a> to find publications by keyword
+- Use the <a href="Vet-search.html" target="_blank">Interactive Search Tool</a> to find publications by keyword
 - Check the **Species Index** for veterinary applications
 
 ### For Clinicians
@@ -125,7 +125,7 @@ To find publications on a specific topic, use the interactive search tool above,
 
 ## 🔙 Back to Veterinary
 
-- <a href="../Vet-index.html">← Back to Veterinary </a>
+- <a href="Vet-index.html">← Back to Veterinary </a>
 
 ---
 
@@ -136,3 +136,4 @@ To suggest additions or corrections, please contact us.
 ---
 
 *Last updated: 2026.08*
+
