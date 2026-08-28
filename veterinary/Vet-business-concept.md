@@ -6,7 +6,7 @@
 
 ## 🔙 Back to Veterinary
 
-- <a href="../Vet-index.html">← Back to Veterinary Database</a>
+- <a href="Vet-index.html">← Back to Veterinary Database</a>
 
 ---
 
@@ -84,8 +84,9 @@ To request access, please contact us with your credentials and area of interest.
 
 ## 🔙 Back to Veterinary
 
-- <a href="../Vet-index.html">← Back to Veterinary Database</a>
+- <a href="Vet-index.html">← Back to Veterinary Database</a>
 
 ---
 
 *Last updated: 2026.08*
+
