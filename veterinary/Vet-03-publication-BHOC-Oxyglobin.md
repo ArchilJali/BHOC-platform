@@ -125,7 +125,7 @@ To find publications on a specific topic, use the interactive search tool above,
 
 ## 🔙 Back to Veterinary
 
-- <a href="../Vet-index.html">← Back to Veterinary Database</a>
+- <a href="../Vet-index.html">← Back to Veterinary </a>
 
 ---
 
