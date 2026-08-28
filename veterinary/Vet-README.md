@@ -17,7 +17,7 @@ Welcome to the **Veterinary HBOC Database** — the most comprehensive collectio
 | **Product** | Oxyglobin (hemoglobin glutamer-200, bovine) |
 | **Indication** | Treatment of anemia in dogs |
 | **FDA Approval** | 1998 (veterinary) |
-| **EMA Approval** | Conditional approval in Europe |
+| **EMA Approval** | EU marketing authorisation (1999) |
 | **Status** | The only FDA-approved HBOC for veterinary use |
 | **Unique Feature** | Immediate oxygen-carrying capacity without cross-matching |
 
@@ -31,7 +31,7 @@ Welcome to the **Veterinary HBOC Database** — the most comprehensive collectio
 | **Species Covered** | 10+ (canine, feline, equine, porcine, ovine, rodent, avian, exotic, human, in vitro) |
 | **Journals** | 50+ |
 | **FDA Approved** | ✅ Yes (1998) |
-| **EMA Approved** | ✅ Yes (conditional) |
+| **EMA Approved** | ✅ Original authorisation: 1999 |
 
 ---
 
@@ -41,9 +41,9 @@ Welcome to the **Veterinary HBOC Database** — the most comprehensive collectio
 | :--- | :--- |
 | `Vet-FDA-registry.md` | Complete FDA approval documentation for Oxyglobin |
 | `Vet-EMA-approvals-summary.md` | EMA approval summary for Oxyglobin |
-| `Vet-03-publication-list.md` | Full list of 200+ publications with DOI/PubMed links |
-| `Vet-05-concept.md` | BHOC concept — Precision Oxygen Therapeutics |
-| `Vet-case-studies-description.md` | Overview of the Case Study Booklet |
+| `Vet-03-publication-BHOC-Oxyglobin.md` | Full list of 200+ publications with DOI/PubMed links |
+| `Vet-business-concept.md` | BHOC concept — Precision Oxygen Therapeutics |
+| `publication-methodology.html` | Source matching, affiliation attribution and evidence limits |
 
 ---
 
@@ -51,14 +51,14 @@ Welcome to the **Veterinary HBOC Database** — the most comprehensive collectio
 
 ### For Researchers
 - Use the **Interactive Search Tool** to find publications by keyword, author, year, journal, or species.
-- Browse the full publication list in **Vet-03-publication-list.md**.
+- Browse the full publication list in **Vet-03-publication-BHOC-Oxyglobin.md**.
 
 ### For Clinicians
 - Review FDA and EMA approval details in **Vet-FDA-registry.md** and **Vet-EMA-approvals-summary.md**.
 - Explore clinical applications and safety data.
 
 ### For Students
-- Learn about the science of HBOCs in **Vet-05-concept.md**.
+- Learn about the science of HBOCs in **Vet-business-concept.md**.
 - Track research trends and key publications over time.
 
 ---
@@ -72,7 +72,7 @@ Welcome to the **Veterinary HBOC Database** — the most comprehensive collectio
 - **Full Documentation:** `Vet-FDA-registry.md`
 
 ### EMA — Oxyglobin
-- **Approval Status:** Conditional approval in Europe
+- **Approval Status:** EU marketing authorisation (1999)
 - **Full Documentation:** `Vet-EMA-approvals-summary.md`
 
 ---
@@ -117,7 +117,7 @@ The central concept is **Precision Oxygen Therapeutics**: focusing on oxygen del
 
 BHOC is intended as a complementary approach to the oxygen-delivery function of blood, while recognizing that blood performs many other essential physiological functions.
 
-📄 Read the full concept in `Vet-05-concept.md`
+📄 Read the full concept in `Vet-business-concept.md`
 
 ---
 
