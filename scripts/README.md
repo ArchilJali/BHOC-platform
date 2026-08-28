@@ -33,3 +33,11 @@ The main-site `sitemap.xml` is a static URL list and should be updated when addi
 ## Regulatory sources
 
 The new regulatory page uses direct original and supplemental FDA documents and the correct 18 October 2021 European Commission amendment. The attachment's purported current FDA product-list link was excluded after its downloaded file was found to be an unrelated FOIA request log. The archived detailed FDA/EMA notes are preserved with a notice that not every clinical/numerical statement was revalidated. These are historical reference materials, not prescribing guidance.
+
+## Veterinary overview
+
+Run `node scripts/build_veterinary_overview.cjs` after changing publication data or overview content. This generates the hub, the GitHub directory README, the section guide and `overview-statistics.json`. `node scripts/build_veterinary_overview.cjs --check` fails when the checked-in overview is stale.
+
+The ten displayed species/model groups and the publication explorer share `speciesGroups` and `matchesSpecies` in `assets/publications-core.js`. Composite groups count unique records within a group; records can still appear in several groups. Journal counts are explicitly unnormalised journal labels, not unique journals. Author suggestions are extracted from the recorded author lists. Institution labels describe author affiliations, not necessarily study sites.
+
+The clinical highlight cites the original FDA FOI summary: 64 dogs; intent-to-treat success 22/30 versus 10/34; endpoint was no additional oxygen-carrying support for 24 hours, not survival. Adverse reactions are disclosed. Do not substitute the per-protocol 95% figure or broaden the product/species scope.

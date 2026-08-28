@@ -8,6 +8,7 @@ exclude:
   - README.md
   - science/index.md
   - social-media/linkedin/readme.md
+  - veterinary/README.md
   - veterinary/Vet-README.md
   - veterinary/Vet-EMA-approvals-summary.md
   - veterinary/Vet-FDA-registry.md

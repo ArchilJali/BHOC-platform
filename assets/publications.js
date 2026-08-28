@@ -42,10 +42,12 @@
     try{
       const response=await fetch('Vet-publications.json');if(!response.ok)throw new Error('Data unavailable');data=C.validate(await response.json());
       options=C.institutionOptions(data);
+      $('authorOptions').innerHTML=C.authorOptions(data).map(name=>`<option value="${esc(name)}"></option>`).join('');
       const years=[...new Set(data.map(p=>String(p.year)))].sort((a,b)=>Number(b)-Number(a));
       $('yearSelect').innerHTML='<option value="">All years</option>'+years.map(y=>`<option value="${esc(y)}">${esc(y)}</option>`).join('');
       const species=[...new Set(data.flatMap(C.species))].sort();
-      $('speciesInput').innerHTML='<option value="">All species / models</option>'+species.map(s=>`<option value="${esc(s)}">${esc(s)}</option>`).join('')+`<option value="${C.OTHER}">Not specified</option>`;
+      const groups=C.speciesGroups.filter(g=>g.value.startsWith('__'));
+      $('speciesInput').innerHTML='<option value="">All species / models</option>'+species.map(s=>`<option value="${esc(s)}">${esc(s)}</option>`).join('')+`<option value="${C.OTHER}">Not specified</option>`+'<optgroup label="Overview groups">'+groups.map(g=>`<option value="${esc(g.value)}">${esc(g.label)}</option>`).join('')+'</optgroup>';
       const params=new URLSearchParams(location.search);for(const [key,id]of Object.entries(fields))$(id).value=params.get(key)||'';
       selectedInstitution=options.some(o=>o.value===params.get('institution'))?params.get('institution'):'';
       if(['newest','oldest','title'].includes(params.get('sort')))$('sortSelect').value=params.get('sort');page=Number(params.get('page'))||1;

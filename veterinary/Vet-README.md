@@ -1,8 +1,8 @@
 # Veterinary HBOC Database
 
-## Oxyglobin — The Only FDA-Approved HBOC for Veterinary Use
+## Oxyglobin — Veterinary Regulatory History and HBOC Research
 
-Welcome to the **Veterinary HBOC Database** — the most comprehensive collection of peer-reviewed publications, regulatory documents, and scientific resources on **Oxyglobin** (hemoglobin glutamer-200, bovine) and hemoglobin-based oxygen carriers (HBOCs) in veterinary medicine.
+Welcome to the **Veterinary HBOC Database** — a source-linked collection of publications, regulatory documents, and scientific resources on **Oxyglobin** (hemoglobin glutamer-200, bovine) and hemoglobin-based oxygen carriers (HBOCs) in veterinary medicine.
 
 ---
 
@@ -27,11 +27,17 @@ Welcome to the **Veterinary HBOC Database** — the most comprehensive collectio
 
 | Metric | Value |
 | :--- | :--- |
-| **Total Publications** | 200+ |
-| **Species Covered** | 10+ (canine, feline, equine, porcine, ovine, rodent, avian, exotic, human, in vitro) |
-| **Journals** | 50+ |
-| **FDA Approved** | ✅ Yes (1998) |
-| **EMA Approved** | ✅ Original authorisation: 1999 |
+| **Total Publications** | **236 bibliographic records** |
+| **Species / Model Groups** | 10 groups, including human and in-vitro context |
+| **Journals** | 130 distinct journal labels; abbreviations not merged |
+| **Author Institutions** | 150 labels from indexed affiliations |
+| **Original Citation Links** | 222 PubMed records; 204 DOI links |
+| **FDA — Oxyglobin** | [Original approval: 12 January 1998; dogs](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700) |
+| **EU / EMA — Oxyglobin** | [Original EU authorisation: 1999; amendment: 2021](https://ec.europa.eu/health/documents/community-register/2021/20211018153269/dec_153269_en.pdf) |
+
+Journal labels are distinct names as stored in the bibliography; full names and abbreviations have not been merged. This is not a verified count of unique journals.
+
+Historical authorisations concern Oxyglobin for dogs; they are not approval of a new BHOC product or a claim of current availability.
 
 ---
 
@@ -41,7 +47,7 @@ Welcome to the **Veterinary HBOC Database** — the most comprehensive collectio
 | :--- | :--- |
 | `Vet-FDA-registry.md` | Complete FDA approval documentation for Oxyglobin |
 | `Vet-EMA-approvals-summary.md` | EMA approval summary for Oxyglobin |
-| `Vet-03-publication-BHOC-Oxyglobin.md` | Full list of 200+ publications with DOI/PubMed links |
+| `Vet-03-publication-BHOC-Oxyglobin.md` | Full list of 236 publications with DOI/PubMed links |
 | `Vet-business-concept.md` | BHOC concept — Precision Oxygen Therapeutics |
 | `publication-methodology.html` | Source matching, affiliation attribution and evidence limits |
 
@@ -79,25 +85,31 @@ Welcome to the **Veterinary HBOC Database** — the most comprehensive collectio
 
 ## 🌍 Species Distribution
 
-| Species | Publications |
-| :--- | :---: |
-| 🐕 Canine (Dog) | 35+ |
-| 🐈 Feline (Cat) | 15+ |
-| 🐴 Equine (Horse) | 8+ |
-| 🐖 Porcine (Pig) | 18+ |
-| 🐑 Ovine (Sheep) | 6+ |
-| 🐀 Rodent | 32+ |
-| 🦅 Avian (Birds) | 15+ |
-| 🦦 Exotic / Wildlife | 12+ |
-| 👤 Human | 38+ |
-| 🧪 Other / In Vitro | 20+ |
-| **Total** | **200+** |
+| Species / model group | Indexed publications |
+| :--- | ---: |
+| 🐕 [Canine (Dog)](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Canine) | 24 |
+| 🐈 [Feline (Cat)](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Feline) | 6 |
+| 🐴 [Equine (Horse)](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Equine) | 4 |
+| 🐖 [Porcine (Pig)](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Porcine) | 42 |
+| 🐑 [Ovine (Sheep)](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Ovine) | 4 |
+| 🐀 [Rodent](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Rodent) | 39 |
+| 🦅 [Avian (Birds)](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Avian) | 18 |
+| 🦦 [Exotic / other animals](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=__exotic__) | 15 |
+| 👤 [Human](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Human) | 85 |
+| 🧪 [Other / In vitro](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=__other_models__) | 25 |
+| **Total bibliography (not the sum of groups)** | **236** |
+
+Counts are records carrying indexed species or model labels, not counts of confirmed treatment studies. A record can appear in several groups; group counts must not be added to obtain the total. Labels may be incomplete.
+
+Exotic / other animals combines ferret, rabbit and other-animal labels, counting each record once. It does not imply wildlife use. Other / In vitro includes in-vitro labels and 19 records with no species label.
+
+[Source data](Vet-publications.json) · [Methodology](https://archiljali.github.io/BHOC-platform/veterinary/publication-methodology.html)
 
 ---
 
 ## 📖 About This Database
 
-This database compiles **200+ peer-reviewed publications** on hemoglobin-based oxygen carriers (HBOCs), with a special focus on **Oxyglobin** — the only FDA-approved HBOC for veterinary use.
+This database compiles **236 bibliographic records** on hemoglobin-based oxygen carriers (HBOCs), with a special focus on **Oxyglobin** — the only FDA-approved HBOC for veterinary use.
 
 ### Coverage Includes
 

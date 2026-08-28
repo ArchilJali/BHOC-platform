@@ -21,3 +21,5 @@ jobs:
           node --check assets/publications-core.js
       - name: Internal pages and anchors
         run: python3 scripts/check_links.py
+      - name: Veterinary overview agrees with the bibliography
+        run: node scripts/build_veterinary_overview.cjs --check
