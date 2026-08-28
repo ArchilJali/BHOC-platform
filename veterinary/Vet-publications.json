@@ -973,12 +973,29 @@
     "journal": "J Vet Emerg Crit Care",
     "keywords": "HBOC, veterinary, development, review",
     "id": "bhoc-029",
-    "institutions": [],
-    "affiliations": [],
+    "institutions": [
+      "Louisville Veterinary Specialty and Emergency Services"
+    ],
+    "affiliations": [
+      "Louisville Veterinary Specialty and Emergency Services"
+    ],
     "species_tags": [],
-    "metadata_status": "not_matched",
+    "metadata_status": "matched",
     "species_basis": "Explicit title words only",
-    "species": ""
+    "species": "",
+    "doi": "10.1046/j.1435-6935.2003.00084.x",
+    "source_title": "Current development and use of hemoglobin-based oxygen-carrying (HBOC) solutions",
+    "source_authors": "Day TK",
+    "source_url": "https://onlinelibrary.wiley.com/doi/abs/10.1046/j.1435-6935.2003.00084.x",
+    "doi_url": "https://doi.org/10.1046/j.1435-6935.2003.00084.x",
+    "link": "https://doi.org/10.1046/j.1435-6935.2003.00084.x",
+    "metadata_source": "Publisher article",
+    "metadata_url": "https://onlinelibrary.wiley.com/doi/abs/10.1046/j.1435-6935.2003.00084.x",
+    "metadata_checked": "2026-08-28",
+    "source_review_note": "Citation and author information manually checked on the journal article page. Not represented as a PubMed-indexed record.",
+    "affiliation_source_url": "https://onlinelibrary.wiley.com/doi/abs/10.1046/j.1435-6935.2003.00084.x",
+    "affiliation_source_type": "Publisher article affiliation",
+    "affiliation_source_locator": "Author information / affiliation"
   },
   {
     "title": "Falcon adenovirus infection in breeding Taita falcons (Falco fasciinucha)",
@@ -1269,9 +1286,18 @@
     "species_tags": [
       "Avian"
     ],
-    "metadata_status": "not_matched",
+    "metadata_status": "matched",
     "species_basis": "Explicit title words only",
-    "species": "Avian"
+    "species": "Avian",
+    "doi": "10.1053/j.jepm.2010.11.008",
+    "doi_url": "https://doi.org/10.1053/j.jepm.2010.11.008",
+    "link": "https://doi.org/10.1053/j.jepm.2010.11.008",
+    "metadata_source": "Publisher / Crossref",
+    "metadata_url": "https://doi.org/10.1053/j.jepm.2010.11.008",
+    "metadata_checked": "2026-08-28",
+    "source_title": "Intravenous and Intraosseous Fluid Therapy in Critically Ill Birds of Prey",
+    "source_authors": "Dubé C, Dubois I, Struthers J",
+    "source_review_note": "Title, authors, journal and original publication year checked against the publisher and DOI registration. Not represented as a PubMed-indexed record."
   },
   {
     "title": "Relative efficacies of HBOC-201 and PolyHeme to increase oxygen transport compared to blood and crystalloids",
@@ -1529,7 +1555,6 @@
       "Laboratoire d'Hématologie-Physiologie, Faculté de Pharmacie, Université Henri Poincaré-Nancy 1, F-54001 Nancy Cedex, France"
     ],
     "species_tags": [
-      "Porcine",
       "Rodent"
     ],
     "pmid": "9950880",
@@ -1547,7 +1572,8 @@
     ],
     "metadata_status": "matched",
     "species_basis": "Indexed MeSH terms and explicit title words",
-    "species": "Porcine, Rodent"
+    "species": "Rodent",
+    "species_correction_note": "Removed false Porcine label caused by matching pig inside guinea pig; the guinea-pig model remains Rodent."
   },
   {
     "title": "Resuscitation with a blood substitute causes vasoconstriction without nitric oxide scavenging in a model of arterial hemorrhage",
@@ -1869,7 +1895,10 @@
     ],
     "metadata_status": "not_matched",
     "species_basis": "Explicit title words only",
-    "species": "Canine"
+    "species": "Canine",
+    "secondary_source_url": "https://onlinelibrary.wiley.com/doi/abs/10.1046/j.1435-6935.2003.00084.x",
+    "source_review_note": "Reference 86 in Day (2003) cites this 1991 work, with differing author spellings. The original abstract has not been retrieved; no DOI, PubMed ID or institution is assigned by inference.",
+    "metadata_checked": "2026-08-28"
   },
   {
     "title": "Hemoglobin-Based Oxygen Carrier Rescues Double-Transplant Patient From Life-Threatening Anemia",
@@ -3456,12 +3485,36 @@
     "journal": "Anesthesia & Analgesia",
     "keywords": "lead, HBOC, function, in vitro",
     "id": "bhoc-102",
-    "institutions": [],
-    "affiliations": [],
-    "species_tags": [],
-    "metadata_status": "not_matched",
-    "species_basis": "Explicit title words only",
-    "species": ""
+    "institutions": [
+      "Charles R. Drew University of Medicine and Science",
+      "National Institute of Public Health, Mexico",
+      "University of California, Davis",
+      "University of California, Los Angeles",
+      "University of Pennsylvania"
+    ],
+    "affiliations": [
+      "*Department of Anesthesiology, Charles R. Drew University of Medicine and Science, King/Drew Medical Center, Los Angeles, California; †Department of Clinical Anesthesiology, David Geffen School of Medicine at UCLA, Los Angeles; ‡Department of Anesthesiology and Toxicology Laboratory, Charles R. Drew University of Medicine and Science, Los Angeles, and §Center for Research in Population Health, National Institute of Public Health, Cuernavaca, Mexico; Departments of ¶Medical Pathology and #Surgery, University of California-Davis School of Medicine, Davis, California; and **Department of Clinical Studies, New Bolton Center-School of Veterinary Medicine, University of Pennsylvania, Kennett Square, Pennsylvania"
+    ],
+    "species_tags": [
+      "In vitro"
+    ],
+    "metadata_status": "matched",
+    "species_basis": "Indexed MeSH terms, manually reviewed",
+    "species": "In vitro",
+    "pmid": "12761018",
+    "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/12761018/",
+    "doi": "10.1213/01.ane.0000062517.13989.b5",
+    "doi_url": "https://doi.org/10.1213/01.ane.0000062517.13989.b5",
+    "link": "https://doi.org/10.1213/01.ane.0000062517.13989.b5",
+    "metadata_source": "Europe PMC / PubMed",
+    "metadata_url": "https://europepmc.org/article/MED/12761018",
+    "metadata_checked": "2026-08-28",
+    "source_title": "Does lead interfere with hemoglobin-based oxygen carrier (HBOC) function? A pilot study of lead concentrations in three approved or tested HBOCs and oxyhemoglobin dissociation with HBOCs and/or bovine blood with varying lead concentrations.",
+    "source_authors": "Khan AK, Jahr JS, Nesargi S, Rothenberg SJ, Tang Z, Cheung A, Gunther RA, Kost GJ, Driessen B.",
+    "publication_types": [
+      "Journal Article"
+    ],
+    "source_review_note": "Manually matched shortened supplied title to full indexed title; authors, year and article identity agree."
   },
   {
     "title": "Resuscitation with a hemoglobin-based oxygen carrier after traumatic brain injury",
@@ -3779,12 +3832,36 @@
     "journal": "Anesthesiology",
     "keywords": "DCLHb, cardiac surgery, transfusion, clinical trial",
     "id": "bhoc-112",
-    "institutions": [],
-    "affiliations": [],
-    "species_tags": [],
-    "metadata_status": "not_matched",
-    "species_basis": "Explicit title words only",
-    "species": ""
+    "institutions": [
+      "Centre Hospitalier Universitaire, Liège",
+      "University of Liège"
+    ],
+    "affiliations": [
+      "Department of Anesthesia and Intensive Care Medicine of the University of Liège, Centre Hospitalier Universitaire, Belgium"
+    ],
+    "species_tags": [
+      "Human"
+    ],
+    "metadata_status": "matched",
+    "species_basis": "Indexed MeSH terms, manually reviewed",
+    "species": "Human",
+    "pmid": "10719942",
+    "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/10719942/",
+    "doi": "10.1097/00000542-200003000-00007",
+    "doi_url": "https://doi.org/10.1097/00000542-200003000-00007",
+    "link": "https://doi.org/10.1097/00000542-200003000-00007",
+    "metadata_source": "Europe PMC / PubMed",
+    "metadata_url": "https://europepmc.org/article/MED/10719942",
+    "metadata_checked": "2026-08-28",
+    "source_title": "Randomized trial of diaspirin cross-linked hemoglobin solution as an alternative to blood transfusion after cardiac surgery. The DCLHb Cardiac Surgery Trial Collaborative Group.",
+    "source_authors": "Lamy ML, Daily EK, Brichant JF, Larbuisson RP, Demeyere RH, Vandermeersch EA, Lehot JJ, Parsloe MR, Berridge JC, Sinclair CJ, Baron JF, Przybelski RJ.",
+    "publication_types": [
+      "Clinical Trial",
+      "Research Support, Non-U.S. Gov't",
+      "Randomized Controlled Trial",
+      "Journal Article"
+    ],
+    "source_review_note": "Manually matched shortened supplied title to full indexed title; authors, year and article identity agree."
   },
   {
     "title": "Detection of Hemoglobin-Based Oxygen Carriers in Human Serum for Doping Analysis: Screening by Electrophoresis",
@@ -3955,15 +4032,34 @@
     "title": "South Africa: Clinical experience with Hemopure",
     "authors": "Levien",
     "year": "2006",
-    "journal": "Journal compilation Blackwell Publishing",
+    "journal": "ISBT Science Series",
     "keywords": "Hemopure, South Africa, clinical experience",
     "id": "bhoc-118",
-    "institutions": [],
-    "affiliations": [],
-    "species_tags": [],
-    "metadata_status": "not_matched",
-    "species_basis": "Explicit title words only",
-    "species": ""
+    "institutions": [
+      "Milpark Hospital"
+    ],
+    "affiliations": [
+      "Milpark Hospital, Johannesburg, South Africa"
+    ],
+    "species_tags": [
+      "Human"
+    ],
+    "metadata_status": "matched",
+    "species_basis": "Explicit adult patient cohort in the journal abstract, manually reviewed",
+    "species": "Human",
+    "doi": "10.1111/j.1751-2824.2006.00025.x",
+    "doi_url": "https://doi.org/10.1111/j.1751-2824.2006.00025.x",
+    "link": "https://doi.org/10.1111/j.1751-2824.2006.00025.x",
+    "metadata_source": "Publisher / Crossref",
+    "metadata_url": "https://doi.org/10.1111/j.1751-2824.2006.00025.x",
+    "metadata_checked": "2026-08-28",
+    "source_title": "South Africa: clinical experience with Hemopure",
+    "source_authors": "Levien LJ",
+    "source_review_note": "Title, authors, journal and original publication year checked against the publisher and DOI registration. Not represented as a PubMed-indexed record.",
+    "supplied_journal": "Journal compilation Blackwell Publishing",
+    "affiliation_source_url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1751-2824.2006.00025.x",
+    "affiliation_source_type": "Publisher article affiliation",
+    "affiliation_source_locator": "Author information / affiliation"
   },
   {
     "title": "Polymerized bovine hemoglobin solution as a replacement for allogeneic red blood cell transfusion after cardiac surgery: Results of a randomized, double-blind trial",
@@ -4213,12 +4309,36 @@
     "journal": "Anesthesia & Analgesia",
     "keywords": "HemoCue, Oxyglobin, Hemopure, Hemolink, measurement",
     "id": "bhoc-126",
-    "institutions": [],
-    "affiliations": [],
-    "species_tags": [],
-    "metadata_status": "not_matched",
-    "species_basis": "Explicit title words only",
-    "species": ""
+    "institutions": [
+      "University of Hawaii"
+    ],
+    "affiliations": [
+      "Department of Surgery, John A. Burns School of Medicine, University of Hawaii, Honolulu, Hawaii, USA"
+    ],
+    "species_tags": [
+      "Canine",
+      "In vitro"
+    ],
+    "metadata_status": "matched",
+    "species_basis": "Indexed MeSH terms, manually reviewed",
+    "species": "Canine, In vitro",
+    "pmid": "12351259",
+    "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/12351259/",
+    "doi": "10.1097/00000539-200210000-00014",
+    "doi_url": "https://doi.org/10.1097/00000539-200210000-00014",
+    "link": "https://doi.org/10.1097/00000539-200210000-00014",
+    "metadata_source": "Europe PMC / PubMed",
+    "metadata_url": "https://europepmc.org/article/MED/12351259",
+    "metadata_checked": "2026-08-28",
+    "source_title": "The novel HemoCu plasma/low hemoglobin system accurately measures small concentrations of three different hemoglobin-based oxygen carriers in plasma: hemoglobin glutamer-200 (bovine) (Oxyglobin), hemoglobin glutamer-250 (bovine) (Hemopure), and hemoglobin-Raffimer (Hemolink).",
+    "source_authors": "Lurie F, Jahr JS, Driessen B.",
+    "publication_types": [
+      "Comparative Study",
+      "Research Support, Non-U.S. Gov't",
+      "Evaluation Study",
+      "Journal Article"
+    ],
+    "source_review_note": "Manually matched shortened supplied title to full indexed title; authors, year and article identity agree."
   },
   {
     "title": "Management of hemorrhagic shock when blood is not an option",
@@ -4404,9 +4524,18 @@
     "species_tags": [
       "Avian"
     ],
-    "metadata_status": "not_matched",
+    "metadata_status": "matched",
     "species_basis": "Explicit title words only",
-    "species": "Avian"
+    "species": "Avian",
+    "doi": "10.1053/j.jepm.2009.04.001",
+    "doi_url": "https://doi.org/10.1053/j.jepm.2009.04.001",
+    "link": "https://doi.org/10.1053/j.jepm.2009.04.001",
+    "metadata_source": "Publisher / Crossref",
+    "metadata_url": "https://doi.org/10.1053/j.jepm.2009.04.001",
+    "metadata_checked": "2026-08-28",
+    "source_title": "Indications and Techniques for Blood Transfusion in Birds",
+    "source_authors": "Martinho F",
+    "source_review_note": "Title, authors, journal and original publication year checked against the publisher and DOI registration. Not represented as a PubMed-indexed record."
   },
   {
     "title": "Prehospital hemoglobin-based oxygen carrier resuscitation attenuates postinjury acute lung injury",
@@ -5058,12 +5187,31 @@
     "journal": "Southwest Journal of Pulmonary and Critical Care",
     "keywords": "HBOC-201, post-partum hemorrhage, Jehovah's Witness",
     "id": "bhoc-151",
-    "institutions": [],
-    "affiliations": [],
-    "species_tags": [],
-    "metadata_status": "not_matched",
-    "species_basis": "Explicit title words only",
-    "species": ""
+    "institutions": [
+      "University of New Mexico"
+    ],
+    "affiliations": [
+      "University of New Mexico School of Medicine, Albuquerque, NM, USA"
+    ],
+    "species_tags": [
+      "Human"
+    ],
+    "metadata_status": "matched",
+    "species_basis": "Explicit human patient case in the journal article, manually reviewed",
+    "species": "Human",
+    "doi": "10.13175/swjpcc031-17",
+    "source_title": "Management of Life Threatening Post-Partum Hemorrhage with HBOC-201 in a Jehovah’s Witness",
+    "source_authors": "Mytinger A, Sheehan E, Blue N, Crookston KP, Saeed AI",
+    "source_url": "https://ereece.squarespace.com/critical-care/2017/4/28/management-of-life-threatening-post-partum-hemorrhage-with-h.html",
+    "doi_url": "https://doi.org/10.13175/swjpcc031-17",
+    "link": "https://doi.org/10.13175/swjpcc031-17",
+    "metadata_source": "Publisher article",
+    "metadata_url": "https://ereece.squarespace.com/critical-care/2017/4/28/management-of-life-threatening-post-partum-hemorrhage-with-h.html",
+    "metadata_checked": "2026-08-28",
+    "source_review_note": "Citation and author information manually checked on the journal article page. Not represented as a PubMed-indexed record.",
+    "affiliation_source_url": "https://ereece.squarespace.com/critical-care/2017/4/28/management-of-life-threatening-post-partum-hemorrhage-with-h.html",
+    "affiliation_source_type": "Publisher article affiliation",
+    "affiliation_source_locator": "Author information / affiliation"
   },
   {
     "title": "Lead Poisoning in Whooper and Tundra Swans",
@@ -5149,9 +5297,18 @@
       "Avian",
       "Other animal"
     ],
-    "metadata_status": "not_matched",
+    "metadata_status": "matched",
     "species_basis": "Explicit title words only",
-    "species": "Avian, Other animal"
+    "species": "Avian, Other animal",
+    "doi": "10.1053/j.jepm.2009.04.011",
+    "doi_url": "https://doi.org/10.1053/j.jepm.2009.04.011",
+    "link": "https://doi.org/10.1053/j.jepm.2009.04.011",
+    "metadata_source": "Publisher / Crossref",
+    "metadata_url": "https://doi.org/10.1053/j.jepm.2009.04.011",
+    "metadata_checked": "2026-08-28",
+    "source_title": "Diagnosis of Nontraumatic Blood Loss in Birds and Reptiles",
+    "source_authors": "Nevill H",
+    "source_review_note": "Title, authors, journal and original publication year checked against the publisher and DOI registration. Not represented as a PubMed-indexed record."
   },
   {
     "title": "Storage of nitroglycerin (NTG) admixed with HBOC-201 for 30 days in polyolefin plastic bags: a pilot study",
@@ -5195,15 +5352,31 @@
     "journal": "Journal of Biological Chemistry",
     "keywords": "anemia, cholesterol, guinea pig",
     "id": "bhoc-156",
-    "institutions": [],
-    "affiliations": [],
+    "institutions": [
+      "University of California, Berkeley"
+    ],
+    "affiliations": [
+      "Division of Home Economics, College of Agriculture, University of California, Berkeley"
+    ],
     "species_tags": [
-      "Porcine",
       "Rodent"
     ],
-    "metadata_status": "not_matched",
+    "metadata_status": "matched",
     "species_basis": "Explicit title words only",
-    "species": "Porcine, Rodent"
+    "species": "Rodent",
+    "doi": "10.1016/s0021-9258(18)73656-9",
+    "doi_url": "https://doi.org/10.1016/s0021-9258(18)73656-9",
+    "link": "https://doi.org/10.1016/s0021-9258(18)73656-9",
+    "metadata_source": "Publisher / Crossref",
+    "metadata_url": "https://doi.org/10.1016/s0021-9258(18)73656-9",
+    "metadata_checked": "2026-08-28",
+    "source_title": "ANEMIA CAUSED BY FEEDING CHOLESTEROL TO GUINEA PIGS",
+    "source_authors": "Okey R, Greaves VD",
+    "source_review_note": "Title, authors, journal and original publication year checked against the publisher and DOI registration. Not represented as a PubMed-indexed record.",
+    "affiliation_source_url": "https://www.researchgate.net/publication/232309960_Anemia_caused_by_feeding_cholesterol_to_guinea_pigs",
+    "affiliation_source_type": "Original article first page (public copy)",
+    "affiliation_source_locator": "First page, author affiliation",
+    "species_correction_note": "Removed false Porcine label caused by matching pig inside guinea pig; the guinea-pig model remains Rodent."
   },
   {
     "title": "The Polymerized Bovine Hemoglobin-Based Oxygen-Carrying Solution (HBOC-201) Is Not Toxic to Neural Cells in Culture",
@@ -5392,7 +5565,6 @@
     "institutions": [],
     "affiliations": [],
     "species_tags": [
-      "Porcine",
       "Rodent"
     ],
     "pmid": "5108515",
@@ -5410,7 +5582,8 @@
     ],
     "metadata_status": "matched",
     "species_basis": "Indexed MeSH terms and explicit title words",
-    "species": "Porcine, Rodent"
+    "species": "Rodent",
+    "species_correction_note": "Removed false Porcine label caused by matching pig inside guinea pig; the guinea-pig model remains Rodent."
   },
   {
     "title": "Innate immunity for better or worse govern the allograft response",
@@ -5560,14 +5733,30 @@
     "journal": "J Vet Emerg Crit Care",
     "keywords": "Oxyglobin, neonatal isoerythrolysis, foal",
     "id": "bhoc-167",
-    "institutions": [],
-    "affiliations": [],
+    "institutions": [
+      "Cornell University"
+    ],
+    "affiliations": [
+      "Department of Clinical Sciences, College of Veterinary Medicine, Cornell University"
+    ],
     "species_tags": [
       "Equine"
     ],
-    "metadata_status": "not_matched",
+    "metadata_status": "matched",
     "species_basis": "Explicit title words only",
-    "species": "Equine"
+    "species": "Equine",
+    "doi": "10.1111/j.1476-4431.2001.tb00079.x",
+    "doi_url": "https://doi.org/10.1111/j.1476-4431.2001.tb00079.x",
+    "link": "https://doi.org/10.1111/j.1476-4431.2001.tb00079.x",
+    "metadata_source": "Publisher / Crossref",
+    "metadata_url": "https://doi.org/10.1111/j.1476-4431.2001.tb00079.x",
+    "metadata_checked": "2026-08-28",
+    "source_title": "Polymerized Hemoglobin Therapy in a Foal with Neonatal Isoerythrolysis",
+    "source_authors": "Perkins GA, Divers TJ",
+    "source_review_note": "Title, authors, journal and original publication year checked against the publisher and DOI registration. Not represented as a PubMed-indexed record. The issue year is 2001; the later online posting date is not the original publication year.",
+    "affiliation_source_url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1476-4431.2001.tb00079.x",
+    "affiliation_source_type": "Publisher article affiliation",
+    "affiliation_source_locator": "Author information / affiliation"
   },
   {
     "title": "Clinical aspects of systemic granulomatous inflammatory syndrome in ferrets (Mustela putorius furo)",
@@ -5780,12 +5969,41 @@
     "journal": "SAJAA",
     "keywords": "Hemopure, case studies, South Africa",
     "id": "bhoc-174",
-    "institutions": [],
-    "affiliations": [],
-    "species_tags": [],
-    "metadata_status": "not_matched",
-    "species_basis": "Explicit title words only",
-    "species": ""
+    "institutions": [
+      "University of Cape Town"
+    ],
+    "affiliations": [
+      "Department of Anaesthetics, University of Cape Town"
+    ],
+    "species_tags": [
+      "Human"
+    ],
+    "metadata_status": "matched",
+    "species_basis": "Explicit human patient cases in the journal abstract, manually reviewed",
+    "species": "Human",
+    "doi": "10.1080/22201173.2009.10872581",
+    "doi_url": "https://doi.org/10.1080/22201173.2009.10872581",
+    "link": "https://doi.org/10.1080/22201173.2009.10872581",
+    "metadata_source": "Publisher / Crossref",
+    "metadata_url": "https://doi.org/10.1080/22201173.2009.10872581",
+    "metadata_checked": "2026-08-28",
+    "source_title": "The use of Hemopure® at Groote Schuur hospital, Cape Town: 4 case studies",
+    "source_authors": "Potgieter HE, James MF",
+    "source_review_note": "Title, authors, journal and original publication year checked against the publisher and DOI registration. Not represented as a PubMed-indexed record. The issue year is 2009; platform upload dates of 2010/2014 are not the original publication year.",
+    "affiliation_source_url": "https://www.tandfonline.com/doi/abs/10.1080/22201173.2009.10872581",
+    "affiliation_source_type": "Publisher article affiliation",
+    "affiliation_source_locator": "Author information / affiliation",
+    "study_sites": [
+      {
+        "institution": "Groote Schuur Hospital",
+        "location": "Cape Town, South Africa",
+        "source_url": "https://www.ajol.info/index.php/sajaa/article/view/62253",
+        "source_type": "Journal article",
+        "locator": "Article title and abstract",
+        "evidence_note": "The title names Groote Schuur Hospital; the abstract locates the four clinical cases in that Cape Town hospital.",
+        "checked": "2026-08-28"
+      }
+    ]
   },
   {
     "title": "Copper deficient rats and mice both develop anemia but only rats have lower plasma and brain iron levels",
@@ -7364,14 +7582,31 @@
     "journal": "J Vet Emerg Crit Care",
     "keywords": "Oxyglobin, red maple toxicosis, horse, case report",
     "id": "bhoc-221",
-    "institutions": [],
-    "affiliations": [],
+    "institutions": [
+      "Biopure Corporation",
+      "Tufts University"
+    ],
+    "affiliations": [
+      "Department of Clinical Sciences, Tufts University School of Veterinary Medicine; Biopure Corporation"
+    ],
     "species_tags": [
       "Equine"
     ],
-    "metadata_status": "not_matched",
+    "metadata_status": "matched",
     "species_basis": "Explicit title words only",
-    "species": "Equine"
+    "species": "Equine",
+    "doi": "10.1046/j.1435-6935.2002.00013.x",
+    "doi_url": "https://doi.org/10.1046/j.1435-6935.2002.00013.x",
+    "link": "https://doi.org/10.1046/j.1435-6935.2002.00013.x",
+    "metadata_source": "Publisher / Crossref",
+    "metadata_url": "https://doi.org/10.1046/j.1435-6935.2002.00013.x",
+    "metadata_checked": "2026-08-28",
+    "source_title": "The use of ultrapurified bovine hemoglobin solution in the treatment of two cases of presumed red maple toxicosis in a miniature horse and a pony",
+    "source_authors": "Vin R, Bedenice D, Rentko VT, Paradis MR",
+    "source_review_note": "Title, authors, journal and original publication year checked against the publisher and DOI registration. Not represented as a PubMed-indexed record.",
+    "affiliation_source_url": "https://onlinelibrary.wiley.com/doi/abs/10.1046/j.1435-6935.2002.00013.x",
+    "affiliation_source_type": "Publisher article affiliation",
+    "affiliation_source_locator": "Author information / affiliation"
   },
   {
     "title": "Hemodynamic effects and oxygen transport properties of a new blood substitute in a model of massive blood replacement",
@@ -7665,7 +7900,6 @@
     "institutions": [],
     "affiliations": [],
     "species_tags": [
-      "Porcine",
       "Rodent"
     ],
     "pmid": "6027547",
@@ -7683,7 +7917,8 @@
     ],
     "metadata_status": "matched",
     "species_basis": "Indexed MeSH terms and explicit title words",
-    "species": "Porcine, Rodent"
+    "species": "Rodent",
+    "species_correction_note": "Removed false Porcine label caused by matching pig inside guinea pig; the guinea-pig model remains Rodent."
   },
   {
     "title": "Hemolytic Anemia in Wild Seaducks Caused by Marine Oil Pollution",

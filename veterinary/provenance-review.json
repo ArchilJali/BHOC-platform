@@ -1,0 +1,47 @@
+{
+  "checked": "2026-08-28",
+  "baseline_commit": "dda605193e89d482ad6ba76efdee5704edf5bfb3",
+  "newly_matched_citations": [
+    "bhoc-102",
+    "bhoc-112",
+    "bhoc-126",
+    "bhoc-038",
+    "bhoc-118",
+    "bhoc-132",
+    "bhoc-154",
+    "bhoc-156",
+    "bhoc-167",
+    "bhoc-174",
+    "bhoc-221",
+    "bhoc-029",
+    "bhoc-151"
+  ],
+  "confirmed_site_records": [
+    "bhoc-174"
+  ],
+  "species_corrections": [
+    "bhoc-046",
+    "bhoc-156",
+    "bhoc-162",
+    "bhoc-230"
+  ],
+  "remaining_unmatched": [
+    "bhoc-056"
+  ],
+  "reviewed_existing_records_without_affiliations": [
+    "bhoc-013",
+    "bhoc-043",
+    "bhoc-068",
+    "bhoc-116",
+    "bhoc-122",
+    "bhoc-162",
+    "bhoc-172",
+    "bhoc-178",
+    "bhoc-192",
+    "bhoc-194",
+    "bhoc-217",
+    "bhoc-230",
+    "bhoc-236"
+  ],
+  "limits": "No institution was inferred from a current author profile, email address or private address. Existing no-affiliation records remain unassigned. Study-site review is partial, not a full audit of all studies."
+}

@@ -23,3 +23,6 @@ jobs:
         run: python3 scripts/check_links.py
       - name: Veterinary overview agrees with the bibliography
         run: node scripts/build_veterinary_overview.cjs --check
+
+      - name: Source coverage and provenance pages agree with the bibliography
+        run: node scripts/build_source_pages.cjs --check
