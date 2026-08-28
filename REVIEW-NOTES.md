@@ -46,3 +46,13 @@ The site is static HTML/CSS/JavaScript; GitHub Pages needs no new package or bui
 - To reimport a spreadsheet, use `python3 scripts/import_publications.py /path/to/workbook.xlsx` (requires openpyxl). Curated enrichments are kept in `data/publication-enrichment.json`; the original legacy catalogue remains in `data/legacy-publications.json` for reconciliation.
 - Add a verified `pdf_url` to a publication only when that file is available. Keep article summaries, source notes and downloadable files distinct.
 - Source-note HTML and Markdown are paired documents: update both when changing their content.
+
+
+## Follow-up: separate Biopure annual report pages
+
+- Added independent 2001 and 2002 English summaries, each with a corresponding original PDF and cover image. PDFs are byte-identical to the supplied uploads.
+- Source links cite PDF page numbers; cumulative sales are not patient counts. FDA acceptance for review is not approval, and the Saxon case is described as a testimonial rather than trial evidence.
+- Added unique titles, descriptions, canonical URLs, Article/Report structured data, Open Graph and Twitter metadata, descriptive image alt text, contextual keywords and sitemap entries. Archil Jaliashvili is identified with the BHOC commentary; Carl W. Rausch with his historical Biopure role.
+- Annual report files are now supplied and included; earlier notes about missing annual reports are superseded. The QEP collection and individual research PDFs remain unpublished.
+- After regenerating the catalogue with `scripts/build_site.py`, run `python3 scripts/build_reports.py` to restore report entry points and the sitemap.
+- Local link check now covers 19 HTML pages and 703 links. SEO markup is technical preparation, not a promise of indexing or ranking. Real-browser visual verification remains pending.
