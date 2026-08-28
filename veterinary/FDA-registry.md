@@ -80,3 +80,7 @@ The original FDA approval states the indication as:
 ## Source
 
 FDA documents (NADA 141-067, supplements)
+
+---
+
+*Last updated: 2026.08*
