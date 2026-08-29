@@ -96,7 +96,7 @@
       "count": 21
     }
   ],
-  "journalLabels": 130,
+  "journalLabels": 109,
   "institutions": 154,
   "linked": 235,
   "pubmed": 225,
@@ -107,6 +107,6 @@
   "notes": {
     "counts": "Counts are records carrying indexed species or model labels, not counts of confirmed treatment studies. A record can appear in several groups; group counts must not be added to obtain the total. Labels may be incomplete.",
     "groups": "Exotic / other animals combines ferret, rabbit and other-animal labels, counting each record once. It does not imply wildlife use. Other / In vitro includes in-vitro labels and 13 records with no species label.",
-    "journals": "Journal labels are distinct names as stored in the bibliography; full names and abbreviations have not been merged. This is not a verified count of unique journals."
+    "journals": "Journal names are normalized for the publication filter: known abbreviations and full-name variants are merged, while non-journal or unclassified source labels appear under Other."
   }
 }
