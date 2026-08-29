@@ -4,7 +4,7 @@
 
 [**Open the Veterinary website →**](https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html) · [Publication explorer](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html) · [FDA & EMA records](https://archiljali.github.io/BHOC-platform/veterinary/Vet-fda-ema.html)
 
-Explore species, author institutions and original citations. Historical Oxyglobin approvals, broader research and the proposed BHOC veterinary concept are presented separately.
+Explore species, author institutions, normalized journals and original citations. Historical Oxyglobin approvals, broader research and the proposed BHOC veterinary concept are presented separately.
 
 ## Database at a glance
 
@@ -12,13 +12,13 @@ Explore species, author institutions and original citations. Historical Oxyglobi
 | :--- | :--- |
 | **Total Publications** | **236 bibliographic records** |
 | **Species / Model Groups** | 10 groups, including human and in-vitro context |
-| **Journals** | 130 distinct journal labels; abbreviations not merged |
+| **Journals** | 109 normalized journal choices; unclassified labels grouped as Other |
 | **Author Institutions** | 154 labels from article-level affiliations |
 | **Original Citation Links** | 235 original citations: 225 PubMed; 217 DOI links |
 | **FDA — Oxyglobin** | [Original approval: 12 January 1998; dogs](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700) |
 | **EU / EMA — Oxyglobin** | [Original EU authorisation: 1999; amendment: 2021](https://ec.europa.eu/health/documents/community-register/2021/20211018153269/dec_153269_en.pdf) |
 
-Journal labels are distinct names as stored in the bibliography; full names and abbreviations have not been merged. This is not a verified count of unique journals.
+Journal names are normalized for the publication filter: known abbreviations and full-name variants are merged, while non-journal or unclassified source labels appear under Other.
 
 ## Species Distribution
 
@@ -49,8 +49,9 @@ In the randomised field trial of 64 anaemic dogs, treatment success was reported
 ## Explore the section
 
 - [Choose or search an author](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html#authorInput)
-- [Confirmed study locations — partial review](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html#studySiteSelect)
-- [Author institutions and original publications](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html)
+- [Browse normalized journal names](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html#journalInput)
+- [Separate focused and background literature](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html#scopeSelect)
+- [Author institutions and original publications](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html#institutionSearch)
 - [Source matching, species labels and evidence limits](https://archiljali.github.io/BHOC-platform/veterinary/publication-methodology.html)
 - [Veterinary development concept](https://archiljali.github.io/BHOC-platform/veterinary/business/BHOC-Veterinary-Concept.htm)
 - [Detailed section guide](Vet-README.md)
