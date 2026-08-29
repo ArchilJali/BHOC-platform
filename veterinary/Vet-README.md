@@ -29,13 +29,13 @@ Welcome to the **Veterinary HBOC Database** — a source-linked collection of pu
 | :--- | :--- |
 | **Total Publications** | **236 bibliographic records** |
 | **Species / Model Groups** | 10 groups, including human and in-vitro context |
-| **Journals** | 130 distinct journal labels; abbreviations not merged |
+| **Journals** | 109 normalized journal choices; unclassified labels grouped as Other |
 | **Author Institutions** | 154 labels from article-level affiliations |
 | **Original Citation Links** | 235 original citations: 225 PubMed; 217 DOI links |
 | **FDA — Oxyglobin** | [Original approval: 12 January 1998; dogs](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700) |
 | **EU / EMA — Oxyglobin** | [Original EU authorisation: 1999; amendment: 2021](https://ec.europa.eu/health/documents/community-register/2021/20211018153269/dec_153269_en.pdf) |
 
-Journal labels are distinct names as stored in the bibliography; full names and abbreviations have not been merged. This is not a verified count of unique journals.
+Journal names are normalized for the publication filter: known abbreviations and full-name variants are merged, while non-journal or unclassified source labels appear under Other.
 
 Historical authorisations concern Oxyglobin for dogs; they are not approval of a new BHOC product or a claim of current availability.
 
@@ -162,3 +162,4 @@ Precision Oxygen Therapeutics
 ---
 
 *Last updated: 2026*
+
