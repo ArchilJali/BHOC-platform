@@ -5,270 +5,399 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BHOC — Biological Hemoglobin Oxygen Carrier</title>
     <style>
+        :root {
+            --ink: #132d42;
+            --muted: #536774;
+            --teal: #096b65;
+            --teal-dark: #075852;
+            --line: #dbe4e8;
+            --paper: #ffffff;
+            --wash: #f4f7f8;
+            --soft: #e9f4f1;
+            --deep: #153a47;
+            --radius: 12px;
+            --shadow: 0 10px 28px rgba(19, 45, 66, 0.045);
+        }
+
         * {
-            margin: 0;
-            padding: 0;
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            background-color: #f0f4f8;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            padding: 40px 20px;
-            color: #1a202c;
-            display: flex;
-            justify-content: center;
+            margin: 0;
+            background: var(--wash);
+            color: var(--ink);
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--teal);
+            text-underline-offset: 3px;
+        }
+
+        :focus-visible {
+            outline: 3px solid #368ca3;
+            outline-offset: 3px;
         }
 
         .container {
-            max-width: 900px;
-            width: 100%;
-            background-color: #ffffff;
-            border-radius: 12px;
-            padding: 50px 60px;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            width: min(1280px, 100%);
+            margin: 0 auto;
+            padding: 48px 32px 42px;
+            background: transparent;
         }
 
-        /* ===== ЗАГОЛОВОК ===== */
         .main-title {
-            color: #1a365d;
-            font-size: 30px;
-            font-weight: 700;
-            margin: 0 0 6px 0;
-            letter-spacing: -0.5px;
+            margin: 0 0 3px;
+            color: var(--ink);
+            font-size: clamp(34px, 4.5vw, 52px);
+            font-weight: 720;
+            letter-spacing: -1.8px;
+            line-height: 1.08;
         }
 
         .sub-title {
-            color: #2d3748;
-            font-size: 17px;
-            font-weight: 400;
-            margin: 0 0 18px 0;
+            margin: 0 0 18px;
+            color: var(--muted);
+            font-size: 18px;
+            font-weight: 450;
+            letter-spacing: -0.2px;
         }
 
-        /* ===== МАРКЕРЫ ===== */
         .features {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px 28px;
-            margin: 16px 0 24px 0;
+            gap: 8px 20px;
+            margin: 0;
             padding: 0;
             list-style: none;
         }
 
         .features li {
-            font-size: 15px;
-            color: #2d3748;
-            font-weight: 500;
+            color: var(--teal);
+            font-size: 11px;
+            font-weight: 750;
+            letter-spacing: 1.25px;
+            text-transform: uppercase;
         }
 
         .features li::before {
-            content: "• ";
-            color: #1a365d;
-            font-weight: 700;
+            content: "•";
+            margin-right: 8px;
+            color: #7eaaa2;
         }
 
         hr {
-            margin: 28px 0 28px 0;
+            margin: 30px 0;
             border: 0;
-            border-top: 2px solid #e2e8f0;
+            border-top: 1px solid var(--line);
         }
 
-        /* ===== РАЗДЕЛЫ ===== */
-        .section {
-            margin-bottom: 28px;
-        }
-
-        .section h3 {
-            color: #1a365d;
-            font-size: 18px;
-            font-weight: 700;
-            margin: 0 0 6px 0;
-        }
-
-        .section p {
-            color: #4a5568;
-            font-size: 15px;
-            line-height: 1.7;
-            margin: 0 0 6px 0;
-        }
-
-        /* ===== ДОКУМЕНТАЦИЯ (карточки) ===== */
         .doc-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 14px;
-            margin: 14px 0 6px 0;
+            grid-template-columns: repeat(6, minmax(0, 1fr));
+            gap: 13px;
+            margin: 0;
         }
 
         .doc-item {
-            text-align: center;
-            padding: 16px 12px 14px 12px;
-            border: 2px solid #e2e8f0;
-            border-radius: 8px;
-            background-color: #fafbfc;
-            transition: 0.2s;
+            min-width: 0;
+            min-height: 154px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
+            text-align: left;
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: border-color .18s ease, transform .18s ease, box-shadow .18s ease;
         }
 
         .doc-item:hover {
-            border-color: #1a365d;
-            background-color: #ffffff;
+            border-color: #8eaaa5;
+            transform: translateY(-2px);
+            box-shadow: 0 14px 32px rgba(19, 45, 66, .075);
         }
 
         .doc-item .icon {
-            font-size: 28px;
             display: block;
-            margin-bottom: 4px;
+            margin: 0 0 12px;
+            font-size: 27px;
+            line-height: 1;
         }
 
         .doc-item .label {
-            font-weight: 600;
-            font-size: 13px;
-            color: #1a365d;
             display: block;
+            color: var(--ink);
+            font-size: 14px;
+            font-weight: 720;
+            line-height: 1.25;
         }
 
         .doc-item .sub {
-            font-size: 11px;
-            color: #718096;
             display: block;
-            margin-bottom: 8px;
+            min-height: 28px;
+            margin: 3px 0 13px;
+            color: var(--muted);
+            font-size: 11px;
+            line-height: 1.35;
+        }
+
+        .btn-link,
+        .btn-disabled {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 34px;
+            margin-top: auto;
+            padding: 7px 11px;
+            border-radius: 7px;
+            font-size: 11px;
+            font-weight: 700;
+            text-decoration: none;
         }
 
         .btn-link {
-            display: inline-block;
-            text-decoration: none;
-            color: #1a365d;
-            font-weight: 600;
-            border: 2px solid #1a365d;
-            border-radius: 6px;
-            padding: 3px 14px;
-            font-size: 11px;
-            transition: 0.15s;
+            color: #fff;
+            background: var(--teal);
+            border: 1px solid var(--teal);
         }
 
         .btn-link:hover {
-            background-color: #1a365d;
-            color: #ffffff;
+            color: #fff;
+            background: var(--teal-dark);
+            border-color: var(--teal-dark);
         }
 
         .btn-disabled {
-            display: inline-block;
-            color: #a0aec0;
-            border: 2px solid #a0aec0;
-            border-radius: 6px;
-            padding: 3px 14px;
-            font-size: 11px;
+            color: #82929c;
+            background: var(--wash);
+            border: 1px solid var(--line);
             pointer-events: none;
         }
 
-        /* ===== СПИСКИ ===== */
-        .list-two {
+        .section {
+            margin: 0 0 18px;
+            padding: 28px 30px;
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+        }
+
+        .section h3 {
+            margin: 0 0 10px;
+            color: var(--ink);
+            font-size: 23px;
+            font-weight: 670;
+            letter-spacing: -0.55px;
+            line-height: 1.28;
+        }
+
+        .section p {
+            max-width: 1040px;
+            margin: 0 0 8px;
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.75;
+        }
+
+        .section strong {
+            color: var(--ink);
+        }
+
+        .list-two,
+        .list-three {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2px 30px;
-            list-style: none;
+            gap: 3px 28px;
+            margin: 13px 0 16px;
             padding: 0;
-            margin: 8px 0 10px 0;
+            list-style: none;
+        }
+
+        .list-two {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
         .list-three {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 2px 24px;
-            list-style: none;
-            padding: 0;
-            margin: 8px 0 10px 0;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
         }
 
         .list-two li,
         .list-three li {
-            padding: 3px 0;
-            font-size: 14px;
-            color: #2d3748;
+            position: relative;
+            padding: 7px 0 7px 15px;
+            color: var(--muted);
+            border-bottom: 1px solid #edf1f3;
+            font-size: 13px;
+            line-height: 1.5;
         }
 
         .list-two li::before,
         .list-three li::before {
-            content: "• ";
-            color: #1a365d;
-            font-weight: 700;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 15px;
+            width: 5px;
+            height: 5px;
+            background: var(--teal);
+            border-radius: 50%;
         }
 
-        /* ===== БОКСЫ ===== */
         .box {
-            padding: 14px 18px;
-            border-radius: 6px;
-            margin: 10px 0 6px 0;
-            font-size: 14px;
-            line-height: 1.6;
+            margin: 17px 0 3px;
+            padding: 16px 18px;
+            color: var(--muted);
+            border-radius: 8px;
+            font-size: 13px;
+            line-height: 1.7;
         }
 
-        .box-light {
-            background-color: #f7fafc;
-            border-left: 4px solid #1a365d;
-        }
-
+        .box-light,
         .box-blue {
-            background-color: #ebf8ff;
-            border-left: 4px solid #2b6cb0;
+            background: var(--soft);
+            border-left: 3px solid #89b3aa;
         }
 
         .box-warning {
-            background-color: #fff5f5;
-            border-left: 4px solid #c53030;
+            background: #fff6ef;
+            border-left: 3px solid #b97821;
         }
 
         .code-block {
-            background-color: #edf2f7;
-            padding: 12px 16px;
-            border-radius: 6px;
-            font-size: 13px;
+            margin: 14px 0;
+            padding: 15px 18px;
+            color: var(--ink);
+            background: var(--wash);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+            font-size: 12px;
             line-height: 1.9;
-            font-family: monospace;
-            margin: 8px 0 10px 0;
         }
 
-        /* ===== ФУТЕР ===== */
+        details {
+            margin-top: 14px !important;
+            color: var(--muted);
+        }
+
+        details summary {
+            color: var(--teal) !important;
+            font-size: 13px;
+            font-weight: 700 !important;
+        }
+
+        details > div {
+            border-color: var(--line) !important;
+            border-radius: 8px !important;
+        }
+
+        details table td {
+            border-color: var(--line) !important;
+            color: var(--muted);
+        }
+
+        details table td:first-child {
+            color: var(--ink);
+            background: var(--wash) !important;
+        }
+
         .footer {
-            margin-top: 24px;
-            padding-top: 18px;
-            border-top: 2px solid #e2e8f0;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            color: #4a5568;
-            font-size: 14px;
+            gap: 12px;
+            margin-top: 30px;
+            padding: 24px 0 5px;
+            color: var(--muted);
+            border-top: 1px solid var(--line);
+            font-size: 12px;
         }
 
-        /* ===== АДАПТИВ ===== */
-        @media (max-width: 700px) {
+        @media (max-width: 1120px) {
+            .doc-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 760px) {
             .container {
-                padding: 30px 24px;
+                padding: 30px 18px;
             }
+
             .main-title {
-                font-size: 26px;
+                letter-spacing: -1.2px;
             }
+
             .features {
-                gap: 6px 16px;
+                gap: 7px 14px;
             }
-            .features li {
-                font-size: 14px;
+
+            .doc-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
             }
+
+            .section {
+                padding: 23px 21px;
+            }
+
+            .list-three {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                padding: 24px 14px;
+            }
+
+            .sub-title {
+                font-size: 16px;
+            }
+
+            .features {
+                display: grid;
+                gap: 5px;
+            }
+
+            .doc-grid,
             .list-two,
             .list-three {
                 grid-template-columns: 1fr;
             }
-            .doc-grid {
-                grid-template-columns: 1fr 1fr;
+
+            .doc-item {
+                min-height: 140px;
+            }
+
+            .section {
+                padding: 21px 18px;
+            }
+
+            .section h3 {
+                font-size: 20px;
+            }
+
+            .footer {
+                flex-direction: column;
             }
         }
 
-        @media (max-width: 450px) {
-            .container {
-                padding: 20px 16px;
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
             }
-            .doc-grid {
-                grid-template-columns: 1fr;
+
+            * {
+                transition: none !important;
             }
         }
     </style>
