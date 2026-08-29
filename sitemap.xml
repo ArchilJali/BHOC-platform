@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://archiljali.github.io/BHOC-platform/</loc></url>
-<url><loc>https://archiljali.github.io/BHOC-platform/science/index.html</loc></url>
-<url><loc>https://archiljali.github.io/BHOC-platform/science/oxygen-delivery-potency.html</loc></url>
-<url><loc>https://archiljali.github.io/BHOC-platform/historical-sources/</loc></url>
-<url><loc>https://archiljali.github.io/BHOC-platform/historical-sources/biopure-standing-on-the-shoulders-of-giants/</loc></url>
-<url><loc>https://archiljali.github.io/BHOC-platform/social-media/linkedin/index.html</loc></url>
-<url><loc>https://archiljali.github.io/BHOC-platform/veterinary/Vet-03-publication-BHOC-Oxyglobin.html</loc></url>
-<url><loc>https://archiljali.github.io/BHOC-platform/veterinary/Vet-EMA-approvals-summary.html</loc></url>
-<url><loc>https://archiljali.github.io/BHOC-platform/veterinary/Vet-FDA-registry.html</loc></url>
-<url><loc>https://archiljali.github.io/BHOC-platform/veterinary/Vet-README.html</loc></url>
-<url><loc>https://archiljali.github.io/BHOC-platform/veterinary/Vet-business-concept.html</loc></url>
-<url><loc>https://archiljali.github.io/BHOC-platform/veterinary/Vet-fda-ema.html</loc></url>
-<url><loc>https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html</loc></url>
-<url><loc>https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html</loc></url>
-<url><loc>https://archiljali.github.io/BHOC-platform/veterinary/publication-catalogue.html</loc></url>
-<url><loc>https://archiljali.github.io/BHOC-platform/veterinary/publication-methodology.html</loc></url>
-<url><loc>https://archiljali.github.io/BHOC-platform/veterinary/business/BHOC-Veterinary-Concept.htm</loc></url>
+  <url><loc>https://archiljali.github.io/BHOC-platform/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://archiljali.github.io/BHOC-platform/science/index.html</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://archiljali.github.io/BHOC-platform/science/oxygen-delivery-potency.html</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://archiljali.github.io/BHOC-platform/historical-sources/</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://archiljali.github.io/BHOC-platform/historical-sources/biopure-standing-on-the-shoulders-of-giants/</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://archiljali.github.io/BHOC-platform/social-media/linkedin/index.html</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://archiljali.github.io/BHOC-platform/veterinary/Vet-03-publication-BHOC-Oxyglobin.html</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://archiljali.github.io/BHOC-platform/veterinary/Vet-EMA-approvals-summary.html</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://archiljali.github.io/BHOC-platform/veterinary/Vet-FDA-registry.html</loc><lastmod>2026-08-29</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://archiljali.github.io/BHOC-platform/veterinary/Vet-README.html</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://archiljali.github.io/BHOC-platform/veterinary/Vet-business-concept.html</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://archiljali.github.io/BHOC-platform/veterinary/Vet-fda-ema.html</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://archiljali.github.io/BHOC-platform/veterinary/publication-catalogue.html</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://archiljali.github.io/BHOC-platform/veterinary/publication-methodology.html</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://archiljali.github.io/BHOC-platform/veterinary/business/BHOC-Veterinary-Concept.htm</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
