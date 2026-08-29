@@ -1,10 +1,11 @@
-title: BHOC — Biological Hemoglobin Oxygen Carrier
-description: Scientific evidence, source records and precision oxygenation therapeutics
+title: BHOC — Biological Hemoglobin Oxygen Carrier Evidence
+description: Source-linked BHOC evidence for oxygen delivery, blood transfusion, veterinary medicine, organ preservation and perfusion
 url: https://archiljali.github.io
 baseurl: /BHOC-platform
 exclude:
   - scripts
   - tests
+  - seo
   - README.md
   - science/index.md
   - social-media/linkedin/readme.md
