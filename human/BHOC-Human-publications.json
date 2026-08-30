@@ -20,7 +20,8 @@
     "verification": "Single-source — review",
     "sourceRows": "HBO2 4",
     "citation": "Jahr JS, Williams JP. Am J Ther. 2022 May-Jun 01;29(3):e279-e286. Epub 2022 Apr 14. PMID: 35421008.",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 288,
@@ -43,7 +44,8 @@
     "verification": "Single-source — review",
     "sourceRows": "HBO2 9",
     "citation": "Jahr JS, Tseng K, Brown AP, Dubé GP. NANOBIOTHERAPEUTIC BASED BLOOD SUBSTITUTES. 2022:207-47.",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 286,
@@ -66,7 +68,8 @@
     "verification": "Single-source — review",
     "sourceRows": "HBO2 7",
     "citation": "Barrett CD, Theodore S, Dechert T, et al. Transfusion. 2022 Aug;62 Suppl 1:S218-S223. doi: 10.1111/trf.16973. Epub 2022 Jun 24. PMID: 35748693.",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 296,
@@ -89,7 +92,8 @@
     "verification": "Single-source — review",
     "sourceRows": "HBO2 17",
     "citation": "Weiskopf RB, Davenport R, Cap AP, et al. J Trauma Acute Care Surg. 2021 Aug 1;91(2S Suppl 2):S182-S185.",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 294,
@@ -112,7 +116,8 @@
     "verification": "Single-source — review",
     "sourceRows": "HBO2 15",
     "citation": "Guinn NR, Resar LM, Frank SM. Perioperative Anesthesiology. 2021 Jun;134(6):939-48.",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 303,
@@ -135,7 +140,8 @@
     "verification": "Single-source — review",
     "sourceRows": "HBO2 24",
     "citation": "Zumberg M, Gorlin J, Griffiths EA, Schwartz G, Fletcher BS, Walsh K, et al. Transfusion. 2020 May 1. [Epub ahead of print]",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 307,
@@ -158,7 +164,8 @@
     "verification": "Single-source — review",
     "sourceRows": "HBO2 28",
     "citation": "Stankiewicz J, Jeyaraju M, Maheshwari S, et al. In A44. CRITICAL CARE CASE REPORTS: HEMATOLOGY AND ONCOLOGY 2020 May (pp. A1721-A1721). American Thoracic Society.",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 302,
@@ -181,7 +188,8 @@
     "verification": "Single-source — review",
     "sourceRows": "HBO2 23",
     "citation": "Nellis JR, Devinney MJ, Young CC (2020) Hemopure, HBOC-201, for Life Threatening Anemia in a Jehovah's Witness. Int J Blood Res Disord 7:052. doi.org/10.23937/2469-5696/1410052",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 301,
@@ -204,7 +212,8 @@
     "verification": "Single-source — review",
     "sourceRows": "HBO2 22",
     "citation": "Weiskopf RB, Glassberg E, Guinn NR, James MFM, Ness PM, Pusateri AE. Transfusion. 2020 Dec;60(12):3039-3045. Epub 2020 Nov 20.",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 306,
@@ -227,7 +236,8 @@
     "verification": "Single-source — review",
     "sourceRows": "HBO2 27",
     "citation": "Chhabria MS, Sharma N, Tong Q, Manogna D, Sheppard TJ. CRITICAL CARE CASE REPORTS: HEMATOLOGY AND ONCOLOGY 2020 May (pp. A1734-A1734). American Thoracic Society.",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 312,
@@ -250,7 +260,8 @@
     "verification": "Single-source — review",
     "sourceRows": "HBO2 35",
     "citation": "Meledeo MA, Peltier GC, McIntosh CS, Taylor AS, Bynum JA, Pusateri AE, Cap AP. J Trauma Acute Care Surg. 2019 Jul;87(1S Suppl 1):S83-S90.",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 316,
@@ -273,7 +284,8 @@
     "verification": "Single-source — review",
     "sourceRows": "HBO2 41",
     "citation": "Pusateri AE, Glassberg E, Weiskopf RB. Shock. 2019;52(1S Suppl 1):55‐59.",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 308,
@@ -296,7 +308,8 @@
     "verification": "Single-source — review",
     "sourceRows": "HBO2 29",
     "citation": "Hoops HE, Manning JE, Graham TL, et al. J Trauma Acute Care Surg. 2019 Aug;87(2):263-273.",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 314,
@@ -319,7 +332,8 @@
     "verification": "Single-source — review",
     "sourceRows": "HBO2 37",
     "citation": "Epstein SS, Hadley TJ. J Clin Pharm Ther. 2019 Oct;44(5):815-818. Epub 2019 Jun 25.",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 384,
@@ -342,7 +356,10 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 158",
     "citation": "Okey, Ruth, and Vera D. Greaves. \"ANEMIA CAUSED BY FEEDING CHOLESTEROL TO GUINEA PIGS.\" Journal of Biological Chemistry 129 (February 3, 1939): 111-23. Accessed March 15, 2017. Journal of Biological Chemistry.",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "University of California, Berkeley"
+    ]
   },
   {
     "id": 339,
@@ -365,7 +382,10 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 30",
     "citation": "Davis JM, El-Haj N, Shah NN, Schwartz G, Block M, Wall J, et al. Use of the blood substitute HBOC-201 in critically ill patients during sickle crisis: a three-case series. Transfusion. 2017;58(1):132–7.",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Louisville Veterinary Specialty and Emergency Services"
+    ]
   },
   {
     "id": 15,
@@ -388,7 +408,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 102; PDF 15",
     "citation": "Hemoglobin-Based Oxygen Carrier (HBOC) Development in Trauma: Previous Regulatory Challenges, Lessons Learned, and a Path Forward. Keipert PE. Adv Exp Med Biol. 2017;977:343-350. doi: 10.1007/978-3-319-55231-6_45. Review. PMID: 28685464 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Keipert Corp. Life Sciences Consulting"
+    ]
   },
   {
     "id": 381,
@@ -411,7 +434,10 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 153",
     "citation": "Mytinger A, Sheehan E, Blue N, Crookston K, Saeed A. Management of life threatening post-partum hemorrhage with HBOC-201 in a Jehovah’s witness. Southwest Journal of Pulmonary and Critical Care. 2017;14(4):177–84.",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "University of New Mexico"
+    ]
   },
   {
     "id": 319,
@@ -434,7 +460,8 @@
     "verification": "Single-source — review",
     "sourceRows": "HBO2 47",
     "citation": "Salmen M, Hendriksen S, Gorlin J, LeClaire M, Prekker ME. Oxygen Delivery during Severe Anemia When Blood Transfusion Is Refused on Religious Grounds. Ann Am Thorac Soc. 2017 Jul;14(7):1216-1220. doi: 10.1513/AnnalsATS.201612-1039CC. PubMed PMID: 28665709.",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 1,
@@ -457,7 +484,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 40; HBO2 39; PDF 1",
     "citation": "Relative Efficacies of HBOC-201 and Polyheme to Increase Oxygen Transport Compared to Blood and Crystalloids. \"2017 Military Supplement\". Dubé GP, Pitman AN, Mackenzie CF. Shock. 2017 Nov 14. doi: 10.1097/SHK.0000000000001058. [Epub ahead of print] PMID: 29140831 [PubMed - as supplied by publisher] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "University of Maryland"
+    ]
   },
   {
     "id": 321,
@@ -480,7 +510,8 @@
     "verification": "Single-source — review",
     "sourceRows": "HBO2 56",
     "citation": "Ayyoubi MT, Manapuram S, Hashmi H, McDaniel K, Basu SK, Tse W, Krem MM. Use of a hemoglobin substitute (HBOC-201) to treat acute anemia in a leukemic patient with anti-Vel antibodies. Blood. 2017 Dec 8;130:4928.",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 12,
@@ -503,7 +534,14 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 29; HBO2 52; PDF 12",
     "citation": "Use of the blood substitute HBOC-201 in critically ill patients during sickle crisis: a three-case series. Davis JM, El-Haj N, Shah NN, Schwartz G, Block M, Wall J, Tidswell M, DiNino E. Transfusion. 2018 Jan;58(1):132-137. doi: 10.1111/trf.14386. Epub 2017 Oct 26. PMID: 29076161 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Baystate Medical Center",
+      "Creighton University",
+      "Levine Cancer Institute",
+      "Methodist Health System",
+      "Tufts University"
+    ]
   },
   {
     "id": 372,
@@ -526,7 +564,8 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 130",
     "citation": "Mackenzie CF, Dubé GP, Pitman A, Zafirelis M. Users Guide to Pitfalls and Lessons Learned about HBOC-201 During Clinical Trials, Expanded Access, and Clinical use in 1,701 Patients. Shock. 2017;:1.",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 3,
@@ -549,7 +588,10 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 38; PDF 3",
     "citation": "Users Guide to Pitfalls and Lessons Learned about HBOC-201 During Clinical Trials, Expanded Access, and Clinical use in 1,701 Patients. Mackenzie CF, Dubé GP, Pitman A, Zafirelis M. Shock. 2017 Oct 25. doi: 10.1097/SHK.0000000000001038. [Epub ahead of print] PMID: 29076972 [PubMed - as supplied by publisher] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "University of Maryland"
+    ]
   },
   {
     "id": 158,
@@ -572,7 +614,11 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 45; HBO2 58; PDF 160",
     "citation": "Difficult to swallow: warm autoimmune hemolytic anemia in a Jehovah's Witness treated with hemoglobin concentrate complicated by achalasia. Epperla N, Strouse C, VanSandt AM, Foy P. Transfusion. 2016 Jul;56(7):1801-6. doi: 10.1111/trf.13607. Epub 2016 Apr 6. PMID: 27062564 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Medical College of Wisconsin",
+      "Oregon Health and Science University"
+    ]
   },
   {
     "id": 21,
@@ -595,7 +641,21 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 140; HBO2 57; PDF 21",
     "citation": "Hemoglobin glutamer-250 (bovine) in South Africa: consensus usage guidelines from clinician experts who have treated patients. Mer M, Hodgson E, Wallis L, Jacobson B, Levien L, Snyman J, Sussman MJ, James M, van Gelder A, Allgaier R, Jahr JS. Transfusion. 2016 Oct;56(10):2631-2636. doi: 10.1111/trf.13726. Epub 2016 Sep 23. PMID: 27658499 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Charlotte Maxeke Johannesburg Academic Hospital",
+      "Groote Schuur Hospital",
+      "Milpark Hospital",
+      "National Health Laboratory Service",
+      "Nkosi Albert Luthuli Hospital",
+      "Stellenbosch University",
+      "Steve Biko Academic Hospital",
+      "Sunninghill Hospital",
+      "University of California, Los Angeles",
+      "University of Cape Town",
+      "University of Pretoria",
+      "University of the Witwatersrand"
+    ]
   },
   {
     "id": 25,
@@ -618,7 +678,12 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 222; HBO2 66; PDF 25",
     "citation": "A safety and efficacy evaluation of hemoglobin-based oxygen carrier HBOC-201 in a randomized, multicenter red blood cell controlled trial in noncardiac surgery patients. Van Hemelrijck J, Levien LJ, Veeckman L, Pitman A, Zafirelis Z, Standl T. Anesth Analg. 2014 Oct;119(4):766-76. doi: 10.1213/ANE.0000000000000305. PMID: 24977631 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "KU Leuven University Hospitals",
+      "Milpark Hospital",
+      "University Medical Center Hamburg-Eppendorf"
+    ]
   },
   {
     "id": 8,
@@ -641,7 +706,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 127; HBO2 64; PDF 8",
     "citation": "Experience with the use of Hemopure in the care of a massively burned adult. Lundy JB, Lewis CJ, Cancio LC, Cap AP. Int J Burns Trauma. 2014 Feb 22;4(1):45-8. eCollection 2014. PMID: 24624314 [PubMed] Free PMC Article Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "U.S. Army Institute of Surgical Research"
+    ]
   },
   {
     "id": 5,
@@ -664,7 +732,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 189; HBO2 67; PDF 5",
     "citation": "Hypertonic HBOC-201 decreases neutrophil activation after hemorrhagic shock. Rivera-Chávez FA, Lu A, Liu MM, Abdalla A, Minei JP. J Invest Surg. 2014 Feb;27(1):14-20. doi: 10.3109/08941939.2013.826756. PMID: 24456255 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "University of Texas Southwestern Medical Center"
+    ]
   },
   {
     "id": 43,
@@ -687,7 +758,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 162; HBO2 68; PDF 43",
     "citation": "Resuscitation from hemorrhagic shock using polymerized hemoglobin compared to blood. Ortiz D, Barros M, Yan S, Cabrales P. Am J Emerg Med. 2014 Mar;32(3):248-55. doi: 10.1016/j.ajem.2013.11.045. Epub 2013 Dec 7. PMID: 24418449 [PubMed - indexed for MEDLINE] Free PMC Article Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "University of California, San Diego"
+    ]
   },
   {
     "id": 212,
@@ -710,7 +784,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 70; PDF 215",
     "citation": "Bovine hemoglobin: a nontraditional approach to the management of acute anemia in a Jehovah's Witness patient with autoimmune hemolytic anemia. Jordan SD, Alexander E. J Pharm Pract. 2013 Jun;26(3):257-60. doi: 10.1177/0897190012451928. Epub 2012 Aug 6. PMID: 22869910 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 143,
@@ -733,7 +808,8 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 145",
     "citation": "Cardiopulmonary interventions to decrease blood loss and blood transfusion requirements for liver resection. Gurusamy KS, Li J, Vaughan J, Sharma D, Davidson BR. Cochrane Database Syst Rev. 2012 May 16;(5):CD007338. doi: 10.1002/14651858.CD007338.pub3. Review. PMID: 22592720 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 109,
@@ -756,7 +832,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 74; PDF 109",
     "citation": "New and future resuscitation fluids for trauma patients using hemoglobin and hypertonic saline. Galvagno SM Jr, Mackenzie CF. Anesthesiol Clin. 2013 Mar;31(1):1-19. doi: 10.1016/j.anclin.2012.10.004. Epub 2012 Dec 6. Review. PMID: 23351531 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 60,
@@ -779,7 +856,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 9; PDF 60",
     "citation": "Sodium nitroprusside ameliorates systemic but not pulmonary HBOC-201-induced vasoconstriction: an exploratory study in a swine controlled haemorrhage model. Arnaud F, Scultetus AH, Haque A, Saha B, Kim B, Auker C, Moon-Massat P, McCarron R, Freilich D. Resuscitation. 2012 Aug;83(8):1038-45. doi: 10.1016/j.resuscitation.2012.01.018. Epub 2012 Jan 28. PMID: 22286048 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Naval Medical Research Center"
+    ]
   },
   {
     "id": 204,
@@ -802,7 +882,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 84; PDF 207",
     "citation": "A synthetic haemoglobin-based oxygen carrier and the reversal of cardiac hypoxia secondary to severe anaemia following trauma. Fitzgerald MC, Chan JY, Ross AW, Liew SM, Butt WW, Baguley D, Salem HH, Russ MK, Deasy C, Martin KE, Mathew JK, Rosenfeld JV. Med J Aust. 2011 May 2;194(9):471-3. PMID: 21534906 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 247,
@@ -825,7 +906,8 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 250",
     "citation": "Dilate, dilute, constrict, or else in treating hemorrhage? Friedman JM. Crit Care Med. 2011 Jun;39(6):1591-2. doi: 10.1097/CCM.0b013e3182185480. No abstract available. PMID: 21610642 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 341,
@@ -848,7 +930,8 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 39",
     "citation": "Dubé C, Dubois I, Struthers J. Intravenous and Intraosseous Fluid Therapy in Critically Ill Birds of Prey. Journal of Exotic Pet Medicine. 2011;20(1):21–6.",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 378,
@@ -871,7 +954,10 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 142",
     "citation": "Minei JP. Is There a Role for Hemopure in the Prehospital Setting? The Journal of Trauma: Injury, Infection, and Critical Care. 2011;70.",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "University of Texas Southwestern Medical Center"
+    ]
   },
   {
     "id": 53,
@@ -894,7 +980,10 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 82; PDF 53",
     "citation": "Is there a role for hemopure in the prehospital setting? Minei JP. J Trauma. 2011 May;70(5 Suppl):S38-9. doi: 10.1097/TA.0b013e31821a5a09. Review. No abstract available. PMID: 21841569 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "University of Texas Southwestern Medical Center"
+    ]
   },
   {
     "id": 30,
@@ -917,7 +1006,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 67; HBO2 72; PDF 30",
     "citation": "Pre-hospital resuscitation with HBOC-201 and rFVIIa compared to HBOC-201 alone in uncontrolled hemorrhagic shock in swine. Haque A, Arnaud F, Teranishi K, Okada T, Kim B, Moon-Massat PF, Auker C, McCarron R, Freilich D, Scultetus AH. Artif Cells Blood Substit Immobil Biotechnol. 2012 Feb;40(1-2):44-55. doi: 10.3109/10731199.2011.585615. Epub 2011 Aug 2. PMID: 21806503 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Naval Medical Research Center"
+    ]
   },
   {
     "id": 205,
@@ -940,7 +1032,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 11; PDF 208",
     "citation": "US Navy experience with research on, and development of, hemoglobin-based oxygen carriers. Auker CR, McCarron RM. J Trauma. 2011 May;70(5 Suppl):S40-1. doi: 10.1097/TA.0b013e31821a5a1e. Review. No abstract available. PMID: 21841570 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Naval Medical Research Center"
+    ]
   },
   {
     "id": 189,
@@ -963,7 +1058,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 83; PDF 191",
     "citation": "Vasoactive hemoglobin solution improves survival in hemodilution followed by hemorrhagic shock. Vázquez BY, Hightower CM, Martini J, Messmer C, Frienesenecker B, Corbels P, Tsai AG, Intaglietta M. Crit Care Med. 2011 Jun;39(6):1461-6. doi: 10.1097/CCM.0b013e3182120cdb. PMID: 21336111 [PubMed - indexed for MEDLINE] Free PMC Article Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 27,
@@ -986,7 +1082,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 79; PDF 27",
     "citation": "Vital organ tissue oxygenation after serial normovolemic exchange transfusion with HBOC-201 in anesthetized swine. Muir WW, Ilangovan G, Zweier JL, Moon-Massat PF, Rentko VT. Shock. 2011 Jun;35(6):597-603. doi: 10.1097/SHK.0b013e31821366f6. PMID: 21330945 [PubMed - indexed for MEDLINE] Free PMC Article Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 79,
@@ -1009,7 +1106,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 81; PDF 79",
     "citation": "A bovine hemoglobin-based oxygen carrier as pump prime for cardiopulmonary bypass: reduced systemic lactic acidosis and improved cerebral oxygen metabolism during low flow in a porcine model. McNeil JD, Propper B, Walker J, Holguin L, Evans L, Lee K, Fox PT, Michalek JE, Baisden CE. J Thorac Cardiovasc Surg. 2011 Aug;142(2):411-7. doi: 10.1016/j.jtcvs.2010.11.017. PMID: 21641005 [PubMed - indexed for MEDLINE] Free Article Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 28,
@@ -1032,7 +1130,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 80; PDF 28",
     "citation": "Amylase and lipase detection in hemorrhaged animals treated with HBOC-201. Arnaud F, McCarron R, Freilich D. Artif Cells Blood Substit Immobil Biotechnol. 2011 Jun;39(3):155-61. doi: 10.3109/10731199.2010.516260. Epub 2010 Dec 21. PMID: 21171938 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 17,
@@ -1055,7 +1154,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 85; PDF 17",
     "citation": "Does HBOC-201 (Hemopure) affect platelet function in orthopedic surgery: a single-site analysis from a multicenter study. Jahr JS, Liu H, Albert OK, Gull A, Moallempour M, Lim J, Gosselin R. Am J Ther. 2010 Mar-Apr;17(2):140-7. doi: 10.1097/MJT.0b013e3181a2b08d. PMID: 19417588 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 99,
@@ -1078,7 +1178,8 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 99",
     "citation": "Dose response of sodium nitrite on vasoactivity associated with HBOC-201 in a swine model of controlled hemorrhage. Arnaud F, Scultetus AH, Kim B, Haque A, Saha B, Nigam S, Moon-Massat P, Auker C, McCarron R, Freilich D. Artif Cells Blood Substit Immobil Biotechnol. 2011 Aug;39(4):195-205. doi: 10.3109/10731199.2010.533126. Epub 2010 Dec 6. PMID: 21133651 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 225,
@@ -1101,7 +1202,8 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 228",
     "citation": "Evaluation of coagulation stages of hemorrhaged swine: comparison of thromboelastography and rotational elastometry. Tomori T, Hupalo D, Teranishi K, Michaud S, Hammett M, Freilich D, McCarron R, Arnaud F. Blood Coagul Fibrinolysis. 2010 Jan;21(1):20-7. doi: 10.1097/MBC.0b013e32833113e9. PMID: 20010092 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 166,
@@ -1124,7 +1226,8 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 168",
     "citation": "Fluid resuscitation: past, present, and the future. Santry HP, Alam HB. Shock. 2010 Mar;33(3):229-41. doi: 10.1097/SHK.0b013e3181c30f0c. Review. PMID: 20160609 [PubMed - indexed for MEDLINE] Free PMC Article Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 114,
@@ -1147,7 +1250,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 78; PDF 114",
     "citation": "Hemoglobin-based oxygen carrier (HBOC-201) and escalating doses of recombinant factor VIIa (rFVIIa) as a novel pre-hospital resuscitation fluid in a swine model of severe uncontrolled hemorrhage. Scultetus A, Arnaud F, Kaplan L, Shander A, Philbin N, Rice J, McCarron R, Freilich D. Artif Cells Blood Substit Immobil Biotechnol. 2011 Apr;39(2):59-68. doi: 10.3109/10731199.2010.501755. Epub 2010 Jul 20. PMID: 20645681 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 96,
@@ -1170,7 +1274,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 91; PDF 96",
     "citation": "Management of acute anemia in a Jehovah's Witness patient with acute lymphoblastic leukemia with polymerized bovine hemoglobin-based oxygen carrier: a case report and review of literature. Donahue LL, Shapira I, Shander A, Kolitz J, Allen S, Greenburg G. Transfusion. 2010 Jul;50(7):1561-7. doi: 10.1111/j.1537-2995.2010.02603.x. Epub 2010 Apr 23. Review. PMID: 20456679 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 39,
@@ -1193,7 +1298,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 89; PDF 39",
     "citation": "Nitroglycerin attenuates vasoconstriction of HBOC-201 during hemorrhagic shock resuscitation. Katz LM, Manning JE, McCurdy S, Sproule C, McGwin G Jr, Moon-Massat P, Cairns CB, Freilich D. Resuscitation. 2010 Apr;81(4):481-7. doi: 10.1016/j.resuscitation.2009.12.015. Epub 2010 Jan 18. PMID: 20080328 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 233,
@@ -1216,7 +1322,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 88; PDF 236",
     "citation": "Reconstructing hemoglobin-based oxygen carriers. Greenburg AG, Light WR, Dubé GP. Transfusion. 2010 Dec;50(12):2764-7; author reply 2767. doi: 10.1111/j.1537- 2995.2010.02814.x. No abstract available. PMID: 21126254 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 49,
@@ -1239,7 +1346,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 145; HBO2 73; PDF 49",
     "citation": "The effect HBOC-201 and sodium nitrite resuscitation after uncontrolled haemorrhagic shock in swine. Moon-Massat P, Scultetus A, Arnaud F, Brown A, Haque A, Saha B, Kim B, Sagini E, McGwin G Jr, Auker C, McCarron R, Freilich D. Injury. 2012 May;43(5):638-47. doi: 10.1016/j.injury.2010.10.013. Epub 2010 Nov 20. PMID: 21094491 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Naval Medical Research Center"
+    ]
   },
   {
     "id": 54,
@@ -1262,7 +1372,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 216; HBO2 76; PDF 54",
     "citation": "Traumatic brain injury and severe uncontrolled haemorrhage with short delay pre- hospital resuscitation in a swine model. Teranishi K, Scultetus A, Haque A, Stern S, Philbin N, Rice J, Johnson T, Auker C, McCarron R, Freilich D, Arnaud F. Injury. 2012 May;43(5):585-93. doi: 10.1016/j.injury.2010.09.042. Epub 2010 Oct 30. PMID: 21036354 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Naval Medical Research Center"
+    ]
   },
   {
     "id": 70,
@@ -1285,7 +1398,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 90; PDF 70",
     "citation": "When blood is not an option: factors affecting survival after the use of a hemoglobin-based oxygen carrier in 54 patients with life-threatening anemia. Mackenzie CF, Moon-Massat PF, Shander A, Javidroozi M, Greenburg AG. Anesth Analg. 2010 Mar 1;110(3):685-93. doi: 10.1213/ANE.0b013e3181cd473b. PMID: 20042443 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 167,
@@ -1308,7 +1422,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 184; HBO2 102; PDF 169",
     "citation": "Administration of bovine polymerized haemoglobin before and during coronary occlusion reduces infarct size in rabbits. Rempf C, Standl T, Schenke K, Chammas K, Gottschalk A, Burmeister MA, Gottschalk A. Br J Anaesth. 2009 Oct;103(4):496-504. doi: 10.1093/bja/aep233. Epub 2009 Aug 26. PMID: 19710071 [PubMed - indexed for MEDLINE] Free Article Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "University Medical Center Schleswig-Holstein"
+    ]
   },
   {
     "id": 197,
@@ -1331,7 +1448,10 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 200",
     "citation": "Avian transfusion medicine. Shaw S, Tully T, Nevarez J. Compend Contin Educ Vet. 2009 Dec;31(12):E1-7; quiz E7. Review. PMID: 20180223 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Oklahoma City Zoo"
+    ]
   },
   {
     "id": 274,
@@ -1354,7 +1474,8 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 280",
     "citation": "Broadband diffuse optical spectroscopy assessment of hemorrhage- and hemoglobin-based blood substitute resuscitation. Lee J, Kim JG, Mahon S, Tromberg BJ, Mukai D, Kreuter K, Saltzman D, Patino R, Goldberg R, Brenner M. J Biomed Opt. 2009 Jul-Aug;14(4):044027. doi: 10.1117/1.3200932. PMID: 19725738 [PubMed - indexed for MEDLINE] Free PMC Article Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 383,
@@ -1377,7 +1498,8 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 156",
     "citation": "Nevill H. Diagnosis of Nontraumatic Blood Loss in Birds and Reptiles. Journal of Exotic Pet Medicine. 2009;18(2):140–5.",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 124,
@@ -1400,7 +1522,8 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 124",
     "citation": "Differential sensitivities of pulmonary and coronary arteries to hemoglobin-based oxygen carriers and nitrovasodilators: study in a bovine ex vivo model of vascular strips. Fonseca V, Avizinis J, Moon-Massat P, Freilich D, Kim HW, Hai CM. Vascul Pharmacol. 2010 May-Jun;52(5-6):215-23. doi: 10.1016/j.vph.2009.12.005. Epub 2009 Dec 22. PMID: 20026426 [PubMed - indexed for MEDLINE] Free PMC Article Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 264,
@@ -1423,7 +1546,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 104; PDF 269",
     "citation": "Do approved blood substitutes reduce myocardial infarction size: is this the critical question? Jahr J. Br J Anaesth. 2009 Oct;103(4):470-1. doi: 10.1093/bja/aep227. No abstract available. PMID: 19749116 [PubMed - indexed for MEDLINE] Free Article Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 32,
@@ -1446,7 +1570,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 133; HBO2 86; PDF 32",
     "citation": "HBOC-201 use in traumatic brain injury: case report and review of literature. Marinaro J, Smith J, Tawil I, Billstrand M, Crookston KP. Transfusion. 2009 Oct;49(10):2054-9. doi: 10.1111/j.1537-2995.2009.02235.x. Epub 2009 May 27. Review. PMID: 19497051 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "University of New Mexico"
+    ]
   },
   {
     "id": 52,
@@ -1469,7 +1596,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 50; HBO2 95; PDF 52",
     "citation": "HBOC-201 vasoactivity in a phase III clinical trial in orthopedic surgery subjects-- extrapolation of potential risk for acute trauma trials. Freilich D, Pearce LB, Pitman A, Greenburg G, Berzins M, Bebris L, Ahlers S, McCarron R. J Trauma. 2009 Feb;66(2):365-76. doi: 10.1097/TA.0b013e3181820d5c. PMID: 19204509 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Naval Medical Research Center"
+    ]
   },
   {
     "id": 11,
@@ -1492,7 +1622,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 146; HBO2 101; PDF 11",
     "citation": "Regional blood flow after serial normovolemic exchange transfusion with HBOC- 201 (Hemopure) in anesthetized swine. Mongan PD, Moon-Massat PF, Rentko V, Mihok S, Dragovich A, Sharma P. J Trauma. 2009 Jul;67(1):51-60. doi: 10.1097/TA.0b013e3181838030. PMID: 19590308 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Uniformed Services University"
+    ]
   },
   {
     "id": 51,
@@ -1515,7 +1648,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 207; HBO2 94; PDF 51",
     "citation": "Resuscitation with the hemoglobin-based oxygen carrier, HBOC-201, in a swine model of severe uncontrolled hemorrhage and traumatic brain injury. Stern S, Rice J, Philbin N, McGwin G, Arnaud F, Johnson T, Flournoy WS, Ahlers S, Pearce LB, McCarron R, Freilich D. Shock. 2009 Jan;31(1):64-79. doi: 10.1097/SHK.0b013e3181778dc3. PMID: 18497706 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "University of Michigan"
+    ]
   },
   {
     "id": 391,
@@ -1538,7 +1674,10 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 176",
     "citation": "potgieter HE, James MF. The use of Hemopure® at Groote Schuur hospital, Cape Town: 4 case studies. SAJAA 2009; 15(1): 13-15",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "University of Cape Town"
+    ]
   },
   {
     "id": 217,
@@ -1561,7 +1700,8 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 220",
     "citation": "Acellular haemoglobin attenuates hypoxia-inducible factor-1alpha (HIF-1alpha) and its target genes in haemodiluted rats. Manalo DJ, Buehler PW, Baek JH, Butt O, D'agnillo F, Alayash AI. Biochem J. 2008 Sep 15;414(3):461-9. doi: 10.1042/BJ20080313. PMID: 18498252 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 207,
@@ -1584,7 +1724,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 166; HBO2 113; PDF 210",
     "citation": "Bovine blood and neuromuscular paralysis as a bridge to recovery in a patient with severe autoimmune hemolytic anemia. Pachinburavan M, Marik PE. Clin Transl Sci. 2008 Sep;1(2):172-3. doi: 10.1111/j.1752-8062.2008.00006.x. PMID: 20443842 [PubMed - indexed for MEDLINE] Free PMC Article Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Thomas Jefferson University"
+    ]
   },
   {
     "id": 139,
@@ -1607,7 +1750,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 155; PDF 140",
     "citation": "Cell-free hemoglobin-based blood substitutes and risk of myocardial infarction and death: a meta-analysis. Natanson C, Kern SJ, Lurie P, Banks SM, Wolfe SM. JAMA. 2008 May 21;299(19):2304-12. doi: 10.1001/jama.299.19.jrv80007. Epub 2008 Apr 28. Erratum in: JAMA. 2008 Sep 17;300(11): 1300. PMID: 18443023 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "National Institutes of Health"
+    ]
   },
   {
     "id": 392,
@@ -1630,7 +1776,10 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 177",
     "citation": "Pyatskowit JW, Prohaska JR. Copper deficient rats and mice both develop anemia but only rats have lower plasma and brain iron levels. Comparative Biochemistry and Physiology Part C: Toxicology & Pharmacology. 2008;147(3):316–23.",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "University of Minnesota"
+    ]
   },
   {
     "id": 380,
@@ -1653,7 +1802,10 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 152",
     "citation": "Murray M, Tseng F. Diagnosis and Treatment of Secondary Anticoagulant Rodenticide Toxicosis in a Red-tailed Hawk (Buteo jamaicensis). Journal of Avian Medicine and Surgery. 2008;22(1):41–6.",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Tufts University"
+    ]
   },
   {
     "id": 218,
@@ -1676,7 +1828,8 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 221",
     "citation": "Even in trauma, time is brain. Fraser JF, Härtl R. Crit Care Med. 2008 Oct;36(10):2951-2. doi: 10.1097/CCM.0b013e31818724f2. No abstract available. PMID: 18812808 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 90,
@@ -1699,7 +1852,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 125; PDF 90",
     "citation": "Haemodynamic effects, safety, and tolerability of haemoglobin-based oxygen carrier-201 in patients undergoing PCI for CAD. Serruys PW, Vranckx P, Slagboom T, Regar E, Meliga E, de Winter RJ, Heyndrickx G, Schuler G, van Remortel EA, Dubé GP, Symons J. EuroIntervention. 2008 Mar;3(5):600-9. PMID: 19608488 [PubMed] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 94,
@@ -1722,7 +1876,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 88; HBO2 111; PDF 94",
     "citation": "HBOC-201 as an alternative to blood transfusion: efficacy and safety evaluation in a multicenter phase III trial in elective orthopedic surgery. Jahr JS, Mackenzie C, Pearce LB, Pitman A, Greenburg AG. J Trauma. 2008 Jun;64(6):1484-97. doi: 10.1097/TA.0b013e318173a93f. PMID: 18545113 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "University of California, Los Angeles"
+    ]
   },
   {
     "id": 175,
@@ -1745,7 +1902,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 109; PDF 177",
     "citation": "Hematologic effects of recombinant factor VIIa combined with hemoglobin-based oxygen carrier-201 for prehospital resuscitation of swine with severe uncontrolled hemorrhage due to liver injury. Arnaud F, Hammett M, Philbin N, Scultetus A, McCarron R, Freilich D. Blood Coagul Fibrinolysis. 2008 Oct;19(7):669-77. doi: 10.1097/MBC.0b013e3283089198. PMID: 18832908 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 262,
@@ -1768,7 +1926,8 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 267",
     "citation": "Hemoglobin-based blood substitutes and risk of myocardial infarction and death. Levien LJ, Hodgson RE, James MF. JAMA. 2008 Sep 17;300(11):1295; author reply 1298-9. doi: 10.1001/jama.300.11.1295-a. No abstract available. PMID: 18799436 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 177,
@@ -1791,7 +1950,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 124; PDF 179",
     "citation": "Hemoglobin-based oxygen carrier enhanced tumor oxygenation: a novel strategy for cancer therapy. Gundersen SI, Palmer AF. Biotechnol Prog. 2008 Nov-Dec;24(6):1353-64. doi: 10.1002/btpr.56. PMID: 19194950 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 42,
@@ -1814,7 +1974,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 41; HBO2 115; PDF 42",
     "citation": "Hemoglobin-based oxygen carrying compound-201 as salvage therapy for severe neuro- and polytrauma (Injury Severity Score = 27-41). Dudkiewicz M, Harpaul TA, Proctor KG. Crit Care Med. 2008 Oct;36(10):2838-48. doi: 10.1097/CCM.0b013e318186f6b3. PMID: 18766094 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "University of Miami"
+    ]
   },
   {
     "id": 140,
@@ -1837,7 +2000,11 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 237; PDF 142",
     "citation": "Inhaled nitric oxide enables artificial blood transfusion without hypertension. Yu B, Raher MJ, Volpato GP, Bloch KD, Ichinose F, Zapol WM. Circulation. 2008 Apr 15;117(15):1982-90. doi: 10.1161/CIRCULATIONAHA.107.729137. Epub 2008 Apr 7. PMID: 18391111 [PubMed - indexed for MEDLINE] Free PMC Article Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Harvard Medical School",
+      "Massachusetts General Hospital"
+    ]
   },
   {
     "id": 116,
@@ -1860,7 +2027,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 126; PDF 116",
     "citation": "Innate immune response after resuscitation with hemoglobin-based oxygen carrier and recombinant factor VIIA in uncontrolled hemorrhagic shock in a swine model. Malkevich NV, Dong F, Vandermolen CA, Philbin NB, Rice JP, Scultetus A, Hong J, Arnaud F, Hall CH, McGwin G Jr, Pearce LB, Handrigan M, Ahlers S, McCarron RM, Freilich D. J Trauma. 2008 Jun;64(6):1498-510. doi: 10.1097/TA.0b013e3181454a05. PMID: 18545114 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 200,
@@ -1883,7 +2051,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 129; HBO2 118; PDF 203",
     "citation": "Management of hemorrhagic shock when blood is not an option. Mackenzie CF, Morrison C, Jaberi M, Genuit T, Katamuluwa S, Rodriguez A. J Clin Anesth. 2008 Nov;20(7):538-41. doi: 10.1016/j.jclinane.2008.05.012. Epub 2008 Nov 18. PMID: 19019664 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "University of Maryland"
+    ]
   },
   {
     "id": 271,
@@ -1906,7 +2077,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 116; PDF 277",
     "citation": "Metanalysis critical of blood alternative product challenged. Bateman C. S Afr Med J. 2008 Oct;98(10):746, 748. No abstract available. PMID: 19115744 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 127,
@@ -1929,7 +2101,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 122; PDF 127",
     "citation": "Proof-of-concept trial to evaluate haemoglobin based oxygen therapeutics in elective percutaneous coronary revascularisation. Rationale, protocol design and haemodynamic results. Meliga E, Vranckx P, Regar E, Kint PP, Duncker DJ, Serruys PW. EuroIntervention. 2008 May;4(1):99-107. PMID: 19112786 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 135,
@@ -1952,7 +2125,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 187; PDF 135",
     "citation": "The effects of decreasing low-molecular weight hemoglobin components of hemoglobin-based oxygen carriers in swine with hemorrhagic shock. Rice J, Philbin N, Light R, Arnaud F, Steinbach T, McGwin G, Collier S, Malkevich N, Moon-Massatt P, Rentko V, Pearce LB, Ahlers S, McCarron R, Handrigan M, Freilich D. J Trauma. 2008 May;64(5):1240-57. doi: 10.1097/TA.0b013e318058245e. PMID: 18469646 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Naval Medical Research Center"
+    ]
   },
   {
     "id": 88,
@@ -1975,7 +2151,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 191; HBO2 117; PDF 88",
     "citation": "Use of hemoglobin-based oxygen-carrying solution-201 to improve resuscitation parameters and prevent secondary brain injury in a swine model of traumatic brain injury and hemorrhage: laboratory investigation. Rosenthal G, Morabito D, Cohen M, Roeytenberg A, Derugin N, Panter SS, Knudson MM, Manley G. J Neurosurg. 2008 Mar;108(3):575-87. doi: 10.3171/JNS/2008/108/3/0575. PMID: 18312106 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "University of California, San Francisco"
+    ]
   },
   {
     "id": 226,
@@ -1998,7 +2177,11 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 227; PDF 229",
     "citation": "Anemia in patients undergoing percutaneous coronary intervention: current issues and future directions. Wang TY, Rao SV. Am J Cardiovasc Drugs. 2007;7(4):225-33. Review. PMID: 17696564 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Duke University",
+      "Durham VA Medical Center"
+    ]
   },
   {
     "id": 19,
@@ -2021,7 +2204,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 66; HBO2 135; PDF 19",
     "citation": "Bovine hemoglobin (glutamer-250, Hemopure)-specific immunoglobulin G antibody cross-reacts with human hemoglobin but does not lyse red blood cells in vitro. Hamilton RG, Kickler TS. Transfusion. 2007 Apr;47(4):723-8. PMID: 17381632 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Johns Hopkins University"
+    ]
   },
   {
     "id": 182,
@@ -2044,7 +2230,8 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 184",
     "citation": "Comparison of treatment modalities for hemorrhagic shock. Cheung AT, To PL, Chan DM, Ramanujam S, Barbosa MA, Chen PC, Driessen B, Jahr JS, Gunther RA. Artif Cells Blood Substit Immobil Biotechnol. 2007;35(2):173-90. PMID: 17453703 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 89,
@@ -2067,7 +2254,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 7; HBO2 138; PDF 89",
     "citation": "Hematology patterns after hemoglobin-based oxygen carrier resuscitation from severe controlled hemorrhage with prolonged delayed definitive care. Arnaud F, Fasipe D, Philbin N, Rice J, Flournoy WS, Ahlers S, McCarron R, Freilich D. Transfusion. 2007 Nov;47(11):2098-109. PMID: 17958540 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Naval Medical Research Center"
+    ]
   },
   {
     "id": 115,
@@ -2090,7 +2280,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 206; HBO2 134; PDF 115",
     "citation": "Hemopure transfusion in a child with severe anemia. Stefan DC, Uys R, Wessels G. Pediatr Hematol Oncol. 2007 Jun;24(4):269-73. PMID: 17613869 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Tygerberg Children's Hospital"
+    ]
   },
   {
     "id": 41,
@@ -2113,7 +2306,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 144; PDF 41",
     "citation": "Hitachi Hemolytic Index correlates with HBOC-201 concentrations: impact on suppression of analyte results. Moon-Massat PF, Tierney JP, Hock KG, Scott MG. Clin Biochem. 2008 Apr;41(6):432-5. doi: 10.1016/j.clinbiochem.2007.12.003. Epub 2007 Dec 23. PMID: 18178161 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Biopure Corporation"
+    ]
   },
   {
     "id": 154,
@@ -2136,7 +2332,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 221; HBO2 137; PDF 156",
     "citation": "Immune effects of decreasing low-molecular weight hemoglobin components of hemoglobin-based oxygen carriers (HBOC) in a swine model of severe controlled hemorrhagic shock. VanderMolen C, Malkevich N, Philbin N, Rice J, Collier S, Hall C, Ahlers S, McCarron R, Freilich D, McGwin G, Pearce LB. Artif Cells Blood Substit Immobil Biotechnol. 2007;35(5):507-17. PMID: 17922315 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Naval Medical Research Center"
+    ]
   },
   {
     "id": 108,
@@ -2159,7 +2358,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 64; HBO2 139; PDF 108",
     "citation": "Innate immune responses in Swine resuscitated from severe traumatic hemorrhagic shock with hemoglobin-based oxygen carrier-201. Hall C, Malkevich N, Handrigan M, Vandermolen C, Aranaud F, Hong J, Dong F, Rice J, Philbin N, Ahlers S, McCarron R, Freilich D, McGwin G, Flournoy WS, Pearce LB. Artif Cells Blood Substit Immobil Biotechnol. 2007;35(3):259-74. PMID: 17573626 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Naval Medical Research Center"
+    ]
   },
   {
     "id": 92,
@@ -2182,7 +2384,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 173; HBO2 140; PDF 92",
     "citation": "Resuscitation following severe, controlled hemorrhage associated with a 24 h delay to surgical intervention in swine using a hemoglobin based oxygen carrier as an oxygen bridge to definitive care. Philbin N, Handrigan M, Rice J, McNickle K, McGwin G, Williams R, Warndorf M, Arnaud F, Malkevich N, McCarron R, Freilich D. Resuscitation. 2007 Aug;74(2):332-43. Epub 2007 Mar 23. PMID: 17383073 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Naval Medical Research Center"
+    ]
   },
   {
     "id": 24,
@@ -2205,7 +2410,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 188; HBO2 130; PDF 24",
     "citation": "Resuscitation from hemorrhagic shock comparing standard hemoglobin-based oxygen carrier (HBOC)-201 versus 7.5% hypertonic HBOC-201. Rivera-Chavez FA, Huerta S, Brown R, York GB, Minei JP. J Trauma. 2007 Nov;63(5):1113-9. PMID: 17993959 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "University of Texas Southwestern Medical Center"
+    ]
   },
   {
     "id": 106,
@@ -2228,7 +2436,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 103; HBO2 129; PDF 106",
     "citation": "Resuscitation from hemorrhagic shock with HBOC-201 in the setting of traumatic brain injury. Kerby JD, Sainz JG, Zhang F, Hutchings A, Sprague S, Farrokhi FR, Son M. Shock. 2007 Jun;27(6):652-6. PMID: 17505305 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "University of Alabama at Birmingham"
+    ]
   },
   {
     "id": 181,
@@ -2251,7 +2462,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 15; HBO2 151; PDF 183",
     "citation": "A comparison of the acute hemodynamic and delayed effects of 50% exchange transfusion with two different cross-linked hemoglobin based oxygen carrying solutions and Pentastarch. Bonegio RG, Fuhro R, Ragno G, Robert Valeri C, Lieberthal W. Artif Cells Blood Substit Immobil Biotechnol. 2006;34(2):145-57. PMID: 16537171 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Boston Medical Center"
+    ]
   },
   {
     "id": 59,
@@ -2274,7 +2488,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 13; HBO2 143; PDF 59",
     "citation": "Acute and long-term effects of modified hemoglobin (HBOC-201) in a rat model of hypertension and chronic kidney disease. Baylis C. Transfusion. 2006 Jul;46(7):1104-11. PMID: 16836556 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "University of Florida"
+    ]
   },
   {
     "id": 104,
@@ -2297,7 +2514,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 161; HBO2 142; PDF 104",
     "citation": "Bovine hemoglobin-based oxygen-carrying solution (HBOC-201) improves flap survival in a rat model of epigastric flap failure. Ortegon DP, Davis MR, Sampson JB, Dick EJ, Kashyap V, Kerby JD. Microsurgery. 2006;26(3):203-6. PMID: 16493668 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "University of Texas Health Science Center at San Antonio"
+    ]
   },
   {
     "id": 110,
@@ -2320,7 +2540,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 92; HBO2 149; PDF 110",
     "citation": "Bovine polymerized hemoglobin (hemoglobin-based oxygen carrier-201) resuscitation in three swine models of hemorrhagic shock with militarily relevant delayed evacuation--effects on histopathology and organ function. Johnson T, Arnaud F, Dong F, Philbin N, Rice J, Asher L, Arrisueno M, Warndorf M, Gurney J, McGwin G, Kaplan L, Flournoy WS, Apple FS, Pearce LB, Ahlers S, McCarron R, Freilich D. Crit Care Med. 2006 May;34(5):1464-74. PMID: 16540964 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Naval Medical Research Center"
+    ]
   },
   {
     "id": 98,
@@ -2343,7 +2566,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 185; HBO2 148; PDF 98",
     "citation": "Bovine polymerized hemoglobin versus Hextend resuscitation in a swine model of severe controlled hemorrhagic shock with delay to definitive care. Rice J, Philbin N, McGwin G, Arnaud F, Johnson T, Flournoy WS, Pearce LB, McCarron R, Kaplan L, Handrigan M, Freilich D. Shock. 2006 Sep;26(3):302-10. PMID: 16912657 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Naval Medical Research Center"
+    ]
   },
   {
     "id": 169,
@@ -2366,7 +2592,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 8; HBO2 153; PDF 171",
     "citation": "Coagulation patterns following haemoglobin-based oxygen carrier resuscitation in severe uncontrolled haemorrhagic shock in swine. Arnaud F, Handrigan M, Hammett M, Philbin N, Rice J, Dong F, Pearce LB, McCarron R, Freilich D. Transfus Med. 2006 Aug;16(4):290-302. PMID: 16879158 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Naval Medical Research Center"
+    ]
   },
   {
     "id": 337,
@@ -2389,7 +2618,10 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 24",
     "citation": "Chen H, Huang G, Su T, Gao H, Attieh ZK, Mckie AT, et al. Decreased Hephaestin Activity in the Intestine of Copper-Deficient Mice Causes Systemic Iron Deficiency. The Journal of Nutrition. 2006;136(5):1236–41.",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "University of California, Berkeley"
+    ]
   },
   {
     "id": 74,
@@ -2412,7 +2644,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 33; HBO2 144; PDF 74",
     "citation": "Immune effects of resuscitation with HBOC-201, a hemoglobin-based oxygen carrier, in swine with moderately severe hemorrhagic shock from controlled hemorrhage. Dong F, Hall CH, Golech SA, Philbin NB, Rice JP, Gurney J, Arnaud FG, Hammett M, Ma X, Flournoy WS, Hong J, Kaplan LJ, Pearce LB, McGwin G, Ahlers S, McCarron R, Freilich D. Shock. 2006 Jan;25(1):50-5. PMID: 16369186 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Naval Medical Research Center"
+    ]
   },
   {
     "id": 149,
@@ -2435,7 +2670,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 208; PDF 151",
     "citation": "Oxygen therapeutics: oxygen delivery without blood. Stollings JL, Oyen LJ. Pharmacotherapy. 2006 Oct;26(10):1453-64. Review. PMID: 16999656 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Mayo Clinic"
+    ]
   },
   {
     "id": 117,
@@ -2458,7 +2696,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 167; HBO2 147; PDF 117",
     "citation": "Prehospital HBOC-201 after traumatic brain injury and hemorrhagic shock in swine. Patel MB, Feinstein AJ, Saenz AD, Majetschak M, Proctor KG. J Trauma. 2006 Jul;61(1):46-56. PMID: 16832248 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "University of Miami"
+    ]
   },
   {
     "id": 151,
@@ -2481,7 +2722,8 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 153",
     "citation": "Resuscitation from hemorrhagic shock: fluid selection and infusion strategy drives unmeasured ion genesis. Kaplan LJ, Philbin N, Arnaud F, Rice J, Dong F, Freilich D. J Trauma. 2006 Jul;61(1):90-7; discussion 97-8. PMID: 16832254 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 369,
@@ -2504,7 +2746,10 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 120",
     "citation": "levin. South Africa: Clinical experience with Hemopure. Journal compilation 2006 Blackwell Publishing",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Milpark Hospital"
+    ]
   },
   {
     "id": 56,
@@ -2527,7 +2772,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 186; PDF 56",
     "citation": "Vasoactivity of bovine polymerized hemoglobin (HBOC-201) in swine with traumatic hemorrhagic shock with and without brain injury. Rice J, Philbin N, Handrigan M, Hall C, McGwin G, Ahlers S, Pearce LB, Arnaud F, McCarron R, Freilich D. J Trauma. 2006 Nov;61(5):1085-99. PMID: 17099513 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Naval Medical Research Center"
+    ]
   },
   {
     "id": 195,
@@ -2550,7 +2798,8 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 197",
     "citation": "[Artificial oxygen carriers as an alternative to red blood cell transfusion]. Habler O, Pape A, Meier J, Zwissler B. Anaesthesist. 2005 Aug;54(8):741-54. Review. German. PMID: 16021390 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 172,
@@ -2573,7 +2822,8 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 174",
     "citation": "[Autologous transfusion - from euphoria to reason: clinical practice based on scientific knowledge. (Part IV). Artificial oxygen carriers: cell-free hemoglobin solutions -- current status 2004]. Standl T. Anasthesiol Intensivmed Notfallmed Schmerzther. 2005 Jan;40(1):38-45. German. PMID: 15645386 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 48,
@@ -2596,7 +2846,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 172; HBO2 168; PDF 48",
     "citation": "A hemoglobin-based oxygen carrier, bovine polymerized hemoglobin (HBOC-201) versus hetastarch (HEX) in a moderate severity hemorrhagic shock swine model with delayed evacuation. Philbin N, Rice J, Gurney J, McGwin G, Arnaud F, Dong F, Johnson T, Flournoy WS, Ahlers S, Pearce LB, McCarron R, Freilich D. Resuscitation. 2005 Sep;66(3):367-78. PMID: 16081200 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Naval Medical Research Center"
+    ]
   },
   {
     "id": 227,
@@ -2619,7 +2872,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 19; HBO2 158; PDF 230",
     "citation": "Cardioprotection before revascularization in ischemic myocardial injury and the potential role of hemoglobin-based oxygen carriers. Burkhoff D, Lefer DJ. Am Heart J. 2005 Apr;149(4):573-9. Review. PMID: 15990736 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Columbia University"
+    ]
   },
   {
     "id": 395,
@@ -2642,7 +2898,10 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 182",
     "citation": "Reeves PG, Demars LCS, Johnson WT, Lukaski HC. Dietary Copper Deficiency Reduces Iron Absorption and Duodenal Enterocyte Hephaestin Protein in Male and Female Rats. The Journal of Nutrition. 2005;135(1):92–8.",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "U.S. Department of Agriculture"
+    ]
   },
   {
     "id": 156,
@@ -2665,7 +2924,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 6; HBO2 161; PDF 158",
     "citation": "Effects of bovine polymerized hemoglobin on coagulation in controlled hemorrhagic shock in swine. Arnaud F, Hammett M, Asher L, Philbin N, Rice J, Dong F, Pearce B, Flournoy WS, Nicholson C, McCarron R, Freilich D. Shock. 2005 Aug;24(2):145-52. PMID: 16044085 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Naval Medical Research Center"
+    ]
   },
   {
     "id": 69,
@@ -2688,7 +2950,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 51; HBO2 166; PDF 69",
     "citation": "Enhanced central organ oxygenation after application of bovine cell-free hemoglobin HBOC-201. Freitag M, Standl TG, Gottschalk A, Burmeister MA, Rempf C, Horn EP, Strate T, Schulte Am Esch J. Can J Anaesth. 2005 Nov;52(9):904-14. PMID: 16251554 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "University Medical Center Hamburg-Eppendorf"
+    ]
   },
   {
     "id": 201,
@@ -2711,7 +2976,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 109; PDF 204",
     "citation": "Influence of heme-based solutions on stress protein expression and organ failure after hemorrhagic shock. Kubulus D, Rensing H, Paxian M, Thierbach JT, Meisel T, Redl H, Bauer M, Bauer I. Crit Care Med. 2005 Mar;33(3):629-37. PMID: 15753757 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Saarland University"
+    ]
   },
   {
     "id": 34,
@@ -2734,7 +3002,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 61; HBO2 167; PDF 34",
     "citation": "Influence of the hemoglobin solution HBOC-201 on tissue oxygenation in the rat R1H-tumor. Gottschalk A, Raabe A, Hommel M, Rempf C, Freitag M, Standl T. Artif Cells Blood Substit Immobil Biotechnol. 2005;33(4):379-89. PMID: 16317957 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "University Medical Center Hamburg-Eppendorf"
+    ]
   },
   {
     "id": 382,
@@ -2757,7 +3028,10 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 154",
     "citation": "Nakade T, Tomura Y, Jin K, Taniyama H, Yamamoto M, Kikkawa A, et al. Lead Poisoning in Whooper and Tundra Swans. Journal of Wildlife Diseases. 2005;41(1):253–6.",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Rakuno Gakuen University"
+    ]
   },
   {
     "id": 152,
@@ -2780,7 +3054,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 4; HBO2 157; PDF 154",
     "citation": "Long-term transfusion of polymerized bovine hemoglobin in a Jehovah's Witness following chemotherapy for myeloid leukemia: a case report. Agrawal YP, Freedman M, Szczepiorkowski ZM. Transfusion. 2005 Nov;45(11):1735-8. PMID: 16271098 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Massachusetts General Hospital"
+    ]
   },
   {
     "id": 26,
@@ -2803,7 +3080,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 179; PDF 26",
     "citation": "No effect of the hemoglobin solution HBOC-201 on the response of the rat R1H tumor to fractionated irradiation. Raabe A, Gottschalk A, Hommel M, Dubben HH, Strandl T. Strahlenther Onkol. 2005 Nov;181(11):730-7. PMID: 16254709 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "University Medical Center Hamburg-Eppendorf"
+    ]
   },
   {
     "id": 150,
@@ -2826,7 +3106,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 135; PDF 152",
     "citation": "Prehospital hemoglobin-based oxygen carrier resuscitation attenuates postinjury acute lung injury. Masuno T, Moore EE, Cheng AM, Moore PK, Grant AR, Johnson JL. Surgery. 2005 Aug;138(2):335-41. PMID: 16153445 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Denver Health Medical Center"
+    ]
   },
   {
     "id": 62,
@@ -2849,7 +3132,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 49; HBO2 156; PDF 62",
     "citation": "Prolonged low-volume resuscitation with HBOC-201 in a large-animal survival model of controlled hemorrhage. Fitzpatrick CM, Biggs KL, Atkins BZ, Quance-Fitch FJ, Dixon PS, Savage SA, Jenkins DH, Kerby JD. J Trauma. 2005 Aug;59(2):273-81; discussion 281-3. PMID: 16294065 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Wilford Hall Medical Center"
+    ]
   },
   {
     "id": 157,
@@ -2872,7 +3158,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 105; HBO2 163; PDF 159",
     "citation": "Resuscitation with a hemoglobin-based oxygen carrier after traumatic brain injury. King DR, Cohn SM, Proctor KG. J Trauma. 2005 Sep;59(3):553-60; discussion 560-2. PMID: 16361895 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "University of Miami"
+    ]
   },
   {
     "id": 58,
@@ -2895,7 +3184,8 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 58",
     "citation": "A hemoglobin based oxygen carrier, bovine polymerized hemoglobin (HBOC-201) versus Hetastarch (HEX) in an uncontrolled liver injury hemorrhagic shock swine model with delayed evacuation. Gurney J, Philbin N, Rice J, Arnaud F, Dong F, Wulster-Radcliffe M, Pearce LB, Kaplan L, McCarron R, Freilich D. J Trauma. 2004 Oct;57(4):726-38. PMID: 15514525 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 187,
@@ -2918,7 +3208,8 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 189",
     "citation": "Blood substitute resuscitation as a treatment modality for moderate hypovolemia. Cheung AT, Driessen B, Jahr JS, Duong PL, Ramanujam S, Chen PC, Gunther RA. Artif Cells Blood Substit Immobil Biotechnol. 2004 May;32(2):189-207. PMID: 15274428 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 91,
@@ -2941,7 +3232,10 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 170; PDF 91",
     "citation": "Hemoglobin substitutes. Anbari KK, Garino JP, Mackenzie CF. Eur Spine J. 2004 Oct;13 Suppl 1:S76-82. Epub 2004 May 27. Review. PMID: 15168238 [PubMed - indexed for MEDLINE] Free PMC Article Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "University of Pennsylvania"
+    ]
   },
   {
     "id": 134,
@@ -2964,7 +3258,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 62; HBO2 171; PDF 134",
     "citation": "Hemoglobin-based oxygen carriers. Greenburg AG, Kim HW. Crit Care. 2004;8 Suppl 2:S61-4. Epub 2004 Jun 14. Review. PMID: 15196328 [PubMed - indexed for MEDLINE] Free PMC Article Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Brown University"
+    ]
   },
   {
     "id": 230,
@@ -2987,7 +3284,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 173; PDF 233",
     "citation": "Hope for reducing SA's trauma deaths? Bateman C. S Afr Med J. 2004 Sep;94(9):728-9. No abstract available. PMID: 15487829 [PubMed - indexed for MEDLINE] Free Article Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 165,
@@ -3010,7 +3308,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 48; HBO2 179; PDF 167",
     "citation": "Resuscitation with a blood substitute causes vasoconstriction without nitric oxide scavenging in a model of arterial hemorrhage. Fitzpatrick CM, Savage SA, Kerby JD, Clouse WD, Kashyap VS. J Am Coll Surg. 2004 Nov;199(5):693-701. PMID: 15501108 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Wilford Hall Medical Center"
+    ]
   },
   {
     "id": 171,
@@ -3033,7 +3334,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 178; PDF 173",
     "citation": "The effects of a polymerized bovine-derived hemoglobin solution in a rabbit model of arterial thrombosis and bleeding. Marret E, Bonnin P, Mazoyer E, Riou B, Jacobs T, Coriat P, Samama CM. Anesth Analg. 2004 Mar;98(3):604-10, table of contents. PMID: 14980905 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 119,
@@ -3056,7 +3358,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 71; HBO2 174; PDF 119",
     "citation": "The use of a hemoglobin-based oxygen-carrying solution (HBOC-201) for extracorporeal membrane oxygenation in a porcine model with acute respiratory distress syndrome. Henderson CL, Anderson CM, Sorrells DL, Wilson BJ, Dick EJ, DiGeronimo RJ. Pediatr Crit Care Med. 2004 Jul;5(4):384-90. PMID: 15215011 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Wilford Hall Medical Center"
+    ]
   },
   {
     "id": 55,
@@ -3079,7 +3384,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 194; PDF 55",
     "citation": "A comparison of the hemoglobin-based oxygen carrier HBOC-201 to other low- volume resuscitation fluids in a model of controlled hemorrhagic shock. Sampson JB, Davis MR, Mueller DL, Kashyap VS, Jenkins DH, Kerby JD. J Trauma. 2003 Oct;55(4):747-54. PMID: 14566133 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 81,
@@ -3102,7 +3408,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 236; HBO2 195; PDF 81",
     "citation": "Low-volume resuscitation with a polymerized bovine hemoglobin-based oxygen- carrying solution (HBOC-201) provides adequate tissue oxygenation for survival in a porcine model of controlled hemorrhage. York GB, Eggers JS, Smith DL, Jenkins DH, McNeil JD, Mueller D, Josephs JD, Kerby JD. J Trauma. 2003 Nov;55(5):873-85. PMID: 14608160 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Wilford Hall Medical Center"
+    ]
   },
   {
     "id": 208,
@@ -3125,7 +3434,8 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 211",
     "citation": "New drugs for childhood anemia. La Spina M, Russo G. Minerva Pediatr. 2003 Oct;55(5):483-93, 493-8. Review. English, Italian. PMID: 14608271 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 249,
@@ -3148,7 +3458,11 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 149; PDF 252",
     "citation": "Oxygen therapeutics (blood substitutes) in cardiac surgery. Mosa MM, Cheng DC. Curr Opin Anaesthesiol. 2003 Feb;16(1):21-6. PMID: 17021438 [PubMed] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "London Health Sciences Center",
+      "University of Western Ontario"
+    ]
   },
   {
     "id": 121,
@@ -3171,7 +3485,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 185; PDF 121",
     "citation": "Small-volume resuscitation with the hemoglobin substitute HBOC-201: effect on brain tissue oxygenation. Manley GT, Hemphill JC, Morabito D, Erickson V, Holcroft JJ, Derugin N, Knudson MM. Adv Exp Med Biol. 2003;530:311-7. PMID: 14562727 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 68,
@@ -3194,7 +3509,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 160; HBO2 184; PDF 68",
     "citation": "The effect of the bovine hemoglobin oxygen therapeutic HBOC-201 on human neutrophil activation in vitro. Ortegon DP, Dixon PS, Crow KK, Mueller DL, Kerby JD. J Trauma. 2003 Oct;55(4):755-60; discussion 760-1. PMID: 14566134 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "University of Texas Health Science Center at San Antonio"
+    ]
   },
   {
     "id": 22,
@@ -3217,7 +3535,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 168; HBO2 192; PDF 22",
     "citation": "The pharmacology of tissue oxygenation by biopure's hemoglobin-based oxygen carrier, Hemopure (HBOC-201). Pearce LB, Gawryl MS. Adv Exp Med Biol. 2003;530:261-70. PMID: 14562723 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Biopure Corporation"
+    ]
   },
   {
     "id": 44,
@@ -3240,7 +3561,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 122; HBO2 183; PDF 44",
     "citation": "The use of haemoglobin glutamer-250 (HBOC-201) as an oxygen bridge in patients with acute anaemia associated with surgical blood loss. Levy JH. Expert Opin Biol Ther. 2003 Jun;3(3):509-17. Review. Erratum in: Expert Opin Biol Ther. 2003 Sep;3(6):1017. PMID: 12783619 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Emory University"
+    ]
   },
   {
     "id": 67,
@@ -3263,7 +3587,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 181; PDF 67",
     "citation": "Tissue oxygen monitoring during hemorrhagic shock and resuscitation: a comparison of lactated Ringer's solution, hypertonic saline dextran, and HBOC- 201. Knudson MM, Lee S, Erickson V, Morabito D, Derugin N, Manley GT. J Trauma. 2003 Feb;54(2):242-52. PMID: 12579047 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 97,
@@ -3286,7 +3611,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 196; PDF 97",
     "citation": "Extracorporeal membrane oxygenation in piglets using a polymerized bovine hemoglobin-based oxygen-carrying solution (HBOC-201). York GB, DiGeronimo RJ, Wilson BJ, Cofer BR, Breuer CK, Josephs JD, Smith DL, Sorrells DL. J Pediatr Surg. 2002 Oct;37(10):1387-92. PMID: 12378440 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 136,
@@ -3309,7 +3635,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 121; HBO2 205; PDF 136",
     "citation": "Polymerized bovine hemoglobin solution as a replacement for allogeneic red blood cell transfusion after cardiac surgery: results of a randomized, double-blind trial. Levy JH, Goodnough LT, Greilich PE, Parr GV, Stewart RW, Gratz I, Wahr J, Williams J, Comunale ME, Doblar D, Silvay G, Cohen M, Jahr JS, Vlahakes GJ. J Thorac Cardiovasc Surg. 2002 Jul;124(1):35-42. PMID: 12091806 [PubMed - indexed for MEDLINE] Free Article Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Emory University"
+    ]
   },
   {
     "id": 257,
@@ -3332,7 +3661,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 204; PDF 261",
     "citation": "Severe anemia after gastrointestinal hemorrhage in a Jehovah's Witness: new treatment strategies. Gannon CJ, Napolitano LM. Crit Care Med. 2002 Aug;30(8):1893-5. PMID: 12163811 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 73,
@@ -3355,7 +3685,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 200; PDF 73",
     "citation": "Small-volume resuscitation with HBOC-201: effects on cardiovascular parameters and brain tissue oxygen tension in an out-of-hospital model of hemorrhage in swine. Lee SK, Morabito D, Hemphill JC, Erickson V, Holcroft JJ, Derugin N, Knudson MM, Manley GT. Acad Emerg Med. 2002 Oct;9(10):969-76. PMID: 12359531 [PubMed - indexed for MEDLINE] Free Article Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 57,
@@ -3378,7 +3709,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 159; HBO2 203; PDF 57",
     "citation": "The polymerized bovine hemoglobin-based oxygen-carrying solution (HBOC-201) is not toxic to neural cells in culture. Ortegon DP, Davis MR, Dixon PS, Smith DL, Josephs JD, Mueller DL, Jenkins DH, Kerby JD. J Trauma. 2002 Dec;53(6):1068-72. PMID: 12478030 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "University of Texas Health Science Center at San Antonio"
+    ]
   },
   {
     "id": 23,
@@ -3401,7 +3735,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 201; HBO2 206; PDF 23",
     "citation": "The use of bovine hemoglobin glutamer-250 (Hemopure) in surgical patients: results of a multicenter, randomized, single-blinded trial. Sprung J, Kindscher JD, Wahr JA, Levy JH, Monk TG, Moritz MW, O'Hara PJ. Anesth Analg. 2002 Apr;94(4):799-808, table of contents. PMID: 11916776 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Cleveland Clinic"
+    ]
   },
   {
     "id": 168,
@@ -3424,7 +3761,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 218; PDF 170",
     "citation": "Bovine hemoglobin (HBOC-201) restores tissue oxygen tension during peripheral and coronary artery stenosis under extended hemodilution. Horn EP, Burmeister MA. Anasthesiol Intensivmed Notfallmed Schmerzther. 2001 Nov;36 Suppl 2:S117-8. No abstract available. PMID: 11753715 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 278,
@@ -3447,7 +3785,8 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 284",
     "citation": "Differing opinions on treatment of immune-mediated hemolytic anemia. Day TK, Macintire DK, Murtaugh RJ, Mathews KA. J Am Vet Med Assoc. 2001 May 1;218(9):1414-5. No abstract available. PMID: 11345298 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 128,
@@ -3470,7 +3809,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 203; HBO2 222; PDF 128",
     "citation": "Haemoglobin-based erythrocyte transfusion substitutes. Standl T. Expert Opin Biol Ther. 2001 Sep;1(5):831-43. Review. PMID: 11728218 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "University Medical Center Hamburg-Eppendorf"
+    ]
   },
   {
     "id": 112,
@@ -3493,7 +3835,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 139; HBO2 213; PDF 112",
     "citation": "Hypotensive resuscitation using a polymerized bovine hemoglobin-based oxygen- carrying solution (HBOC-201) leads to reversal of anaerobic metabolism. McNeil CJ, Smith LD, Jenkins LD, York MG, Josephs MJ. J Trauma. 2001 Jun;50(6):1063-75. PMID: 11426122 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Wilford Hall Medical Center"
+    ]
   },
   {
     "id": 183,
@@ -3516,7 +3861,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 209; PDF 185",
     "citation": "Potential of hemoglobin-based oxygen carriers in trauma patients. Arnoldo BD, Minei JP. Curr Opin Crit Care. 2001 Dec;7(6):431-6. Review. PMID: 11805546 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 144,
@@ -3539,7 +3885,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 223; PDF 146",
     "citation": "Selective aortic arch perfusion with hemoglobin-based oxygen carrier-201 for resuscitation from exsanguinating cardiac arrest in swine. Manning JE, Katz LM, Pearce LB, Batson DN, McCurdy SL, Gawryl MS, Baker CC. Crit Care Med. 2001 Nov;29(11):2067-74. PMID: 11700396 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 270,
@@ -3562,7 +3909,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 200; HBO2 219; PDF 275",
     "citation": "The successful use of hemoglobin-based oxygen carrier as a primary blood substitute during abdominal aneurysm repair with large blood loss. Sprung J, Popp H, O'Hara P, Woletz J. Anesth Analg. 2001 Jun;92(6):1413-5. No abstract available. PMID: 11375814 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Mayo Clinic"
+    ]
   },
   {
     "id": 232,
@@ -3585,7 +3935,8 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 235",
     "citation": "Validation of in vivo MR measurement of oxygen saturation after resuscitation with a hemoglobin-based oxygen carrier in a rabbit model. Chan FP, Jahr JS, Driessen B, Daunt DA, Li KC. Acad Radiol. 2001 Jul;8(7):583-90. PMID: 11450958 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 239,
@@ -3608,7 +3959,8 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 242",
     "citation": "Arificial Oxygen Carriers as Red Blood Cell Substitutes - Perfluorocarbons and Cell-Free Hemoglobin. Standl T. Infusionsther Transfusionsmed. 2000 May;27(3):128-137. PMID: 10878481 [PubMed - as supplied by publisher] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 155,
@@ -3631,7 +3983,10 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 157",
     "citation": "Blood substitutes in surgery. Cohn SM. Surgery. 2000 Jun;127(6):599-602. Review. No abstract available. PMID: 10840352 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "University of Miami"
+    ]
   },
   {
     "id": 338,
@@ -3654,7 +4009,10 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 28",
     "citation": "Cohn SM. Blood substitutes in surgery. Surgery. 2000;127(6):599–602.",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "University of Miami"
+    ]
   },
   {
     "id": 37,
@@ -3677,7 +4035,10 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 227; PDF 37",
     "citation": "Bovine hemoglobin-based oxygen carrier (HBOC-201) for resuscitation of uncontrolled, exsanguinating liver injury in swine. Carolina Resuscitation Research Group. Manning JE, Katz LM, Brownstein MR, Pearce LB, Gawryl MS, Baker CC. Shock. 2000 Feb;13(2):152-9. PMID: 10670846 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "University of North Carolina"
+    ]
   },
   {
     "id": 364,
@@ -3700,7 +4061,8 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 114",
     "citation": "Lamy ML, Daily EK, Brichant JF, Larbuisson RP, Demeyere RH, Vandermeersch EA, Lehot JJ, Parsloe MR, Berridge JC, Sinclair CJ, Baron JF, Przybelski RJ. Randomized trial of diaspirin cross-linked hemoglobin solution as an alternative to blood transfusion after cardiac surgery. The DCLHb Cardiac Surgery Trial Collaborative Group. Anesthesiology. 2000 Mar;92(3):646-56.",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 147,
@@ -3723,7 +4085,11 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 113; HBO2 231; PDF 149",
     "citation": "The reduction of the allogenic transfusion requirement in aortic surgery with a hemoglobin-based solution. LaMuraglia GM, O'Hara PJ, Baker WH, Naslund TC, Norris EJ, Li J, Vandermeersch E. J Vasc Surg. 2000 Feb;31(2):299-308. PMID: 10664499 [PubMed - indexed for MEDLINE] Free Article Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Harvard Medical School",
+      "Massachusetts General Hospital"
+    ]
   },
   {
     "id": 261,
@@ -3746,7 +4112,8 @@
     "verification": "Single-source — review",
     "sourceRows": "PDF 266",
     "citation": "Transfusion of soluble hemoglobin. Roth RI, Levin J. N Engl J Med. 2000 Oct 26;343(17):1273. No abstract available. PMID: 11183359 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 267,
@@ -3769,7 +4136,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 151; HBO2 232; PDF 272",
     "citation": "Transfusions of polymerized bovine hemoglobin in a patient with severe autoimmune hemolytic anemia. Mullon J, Giacoppe G, Clagett C, McCune D, Dillard T. N Engl J Med. 2000 Jun 1;342(22):1638-43. No abstract available. PMID: 10836875 [PubMed - indexed for MEDLINE] Free Article Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Madigan Army Medical Center"
+    ]
   },
   {
     "id": 122,
@@ -3792,7 +4162,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 234; PDF 122",
     "citation": "Administration of polymerized bovine hemoglobin improves survival in a rat model of traumatic shock. Hayward R, Lefer AM. Methods Find Exp Clin Pharmacol. 1999 Jul-Aug;21(6):427-33. PMID: 10445236 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 402,
@@ -3815,7 +4186,10 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 213",
     "citation": "Stuht JN, Bowerman WW, Best DA. Leucocytozoonosis in Nestling Bald Eagles in Michigan and Minnesota. Journal of Wildlife Diseases. 1999;35(3):608–12.",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Michigan State University"
+    ]
   },
   {
     "id": 349,
@@ -3838,7 +4212,10 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 60",
     "citation": "Goodnough LT, Brecher ME, Kanter MH, AuBuchon JP. Transfusion medicine. First of two parts--blood transfusion. N Engl J Med. 1999 Feb 11;340(6):438-47.",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Washington University in St. Louis"
+    ]
   },
   {
     "id": 111,
@@ -3861,7 +4238,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 236; PDF 111",
     "citation": "Bovine haemoglobin-based oxygen carrier for patients undergoing haemodilution before liver resection. Standl T, Burmeister MA, Horn EP, Wilhelm S, Knoefel WT, Schulte am Esch J. Br J Anaesth. 1998 Feb;80(2):189-94. PMID: 9602583 [PubMed - indexed for MEDLINE] Free Article Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 196,
@@ -3884,7 +4262,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 98; HBO2 238; PDF 199",
     "citation": "The effects of increased doses of bovine hemoglobin on hemodynamics and oxygen transport in patients undergoing preoperative hemodilution for elective abdominal aortic surgery. Kasper SM, Grüne F, Walter M, Amr N, Erasmi H, Buzello W. Anesth Analg. 1998 Aug;87(2):284-91. PMID: 9706917 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "University of Cologne"
+    ]
   },
   {
     "id": 146,
@@ -3907,7 +4288,8 @@
     "verification": "Matched across sources",
     "sourceRows": "HBO2 240; PDF 148",
     "citation": "[Preoperative hemodilution with bovine hemoglobin. Acute hemodynamic effects in liver surgery patients ]. Standl T, Wilhelm S, Horn EP, Burmeister M, Gundlach M, Schulte am Esch J. Anaesthesist. 1997 Sep;46(9):763-70. German. PMID: 9412256 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 129,
@@ -3930,7 +4312,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 59; HBO2 241; PDF 129",
     "citation": "A phase I/II study of polymerized bovine hemoglobin in adult patients with sickle cell disease not in crisis at the time of study. Gonzalez P, Hackney AC, Jones S, Strayhorn D, Hoffman EB, Hughes G, Jacobs EE, Orringer EP. J Investig Med. 1997 Jun;45(5):258-64. PMID: 9249998 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "University of North Carolina"
+    ]
   },
   {
     "id": 148,
@@ -3953,7 +4338,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 21; PDF 150",
     "citation": "In vitro effects of a novel hemoglobin-based oxygen carrier on routine chemistry, therapeutic drug, coagulation, hematology, and blood bank assays. Callas DD, Clark TL, Moreira PL, Lansden C, Gawryl MS, Kahn S, Bermes EW Jr. Clin Chem. 1997 Sep;43(9):1744-8. PMID: 9299970 [PubMed - indexed for MEDLINE] Free Article Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Loyola University Medical Center"
+    ]
   },
   {
     "id": 368,
@@ -3976,7 +4364,10 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 119",
     "citation": "Lemos MJ, Healy WL. Blood transfusion in orthopaedic operations. J Bone Joint Surg Am. 1996 Aug;78(8):1260-70.",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": [
+      "Lahey Hitchcock Medical Center"
+    ]
   },
   {
     "id": 82,
@@ -3999,7 +4390,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 97; HBO2 242; PDF 82",
     "citation": "Effects of a hemoglobin-based oxygen carrier (HBOC-201) on hemodynamics and oxygen transport in patients undergoing preoperative hemodilution for elective abdominal aortic surgery. Kasper SM, Walter M, Grüne F, Bischoff A, Erasmi H, Buzello W. Anesth Analg. 1996 Nov;83(5):921-7. PMID: 8895264 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "University of Cologne"
+    ]
   },
   {
     "id": 105,
@@ -4022,7 +4416,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 78; HBO2 244; PDF 105",
     "citation": "Effects of a novel hemoglobin-based oxygen carrier on percent oxygen saturation as determined with arterial blood gas analysis and pulse oximetry. Hughes GS, Francom SF, Antal EJ, Adams WJ, Locker PK, Yancey EP, Jacobs EE. Ann Emerg Med. 1996 Feb;27(2):164-9. PMID: 8629746 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Upjohn / Pharmacia and Upjohn"
+    ]
   },
   {
     "id": 409,
@@ -4045,7 +4442,10 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 234",
     "citation": "Yamato, Osamu, Ikuo Goto, and Yoshimitsu Maede. \"Hemolytic Anemia in Wild Seaducks Caused by Marine Oil Pollution.\" Journal of Wildlife Diseases 32, no. 2 (1996): 381-84. doi:10.7589/0090-3558-32.2.381.",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Hokkaido University"
+    ]
   },
   {
     "id": 353,
@@ -4068,7 +4468,10 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 75",
     "citation": "Hughes GS Jr, Antal EJ, Locker PK, Francom SF, Adams WJ, Jacobs EE Jr. Physiology and pharmacokinetics of a novel hemoglobin-based oxygen carrier in humans. Crit Care Med. 1996 May;24(5):756-64.",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Upjohn / Pharmacia and Upjohn"
+    ]
   },
   {
     "id": 120,
@@ -4091,7 +4494,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 77; HBO2 245; PDF 120",
     "citation": "Hematologic effects of a novel hemoglobin-based oxygen carrier in normal male and female subjects. Hughes GS Jr, Francome SF, Antal EJ, Adams WJ, Locker PK, Yancey EP, Jacobs EE Jr. J Lab Clin Med. 1995 Nov;126(5):444-51. PMID: 7595029 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Upjohn / Pharmacia and Upjohn"
+    ]
   },
   {
     "id": 65,
@@ -4114,7 +4520,10 @@
     "verification": "Matched across sources",
     "sourceRows": "Excel 76; HBO2 246; PDF 65",
     "citation": "Hemoglobin-based oxygen carrier preserves submaximal exercise capacity in humans. Hughes GS Jr, Yancey EP, Albrecht R, Locker PK, Francom SF, Orringer EP, Antal EJ, Jacobs EE Jr. Clin Pharmacol Ther. 1995 Oct;58(4):434-43. PMID: 7586936 [PubMed - indexed for MEDLINE] Similar articles",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "Upjohn / Pharmacia and Upjohn"
+    ]
   },
   {
     "id": 367,
@@ -4137,7 +4546,8 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 118",
     "citation": "Leighton F, Peakall D, Butler R. Heinz-body hemolytic anemia from the ingestion of crude oil: a primary toxic effect in marine birds. Science. 1983;220(4599):871–3.",
-    "note": ""
+    "note": "",
+    "institutions": []
   },
   {
     "id": 344,
@@ -4160,7 +4570,8 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 44",
     "citation": "Elko EE, Cantrell W. Phagocytosis and Anemia in Rats Infected with Haemobartonella muris. Journal of Infectious Diseases. 1968;118(3):324–32.",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 408,
@@ -4183,7 +4594,8 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 233",
     "citation": "Yamanaka, W., R. Ostwald, and S. W. French. \"Histopathology of Guinea Pigs with Cholesterol-Induced Anemia.\" Experimental Biology and Medicine 125, no. 1 (1967): 303-06. doi:10.3181/00379727-125-32077.",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   },
   {
     "id": 333,
@@ -4206,7 +4618,10 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 5",
     "citation": "Anbari KK, Garino JP, Mackenzie CF. Hemoglobin substitutes. Haemostasis in Spine Surgery. :76–82.",
-    "note": ""
+    "note": "",
+    "institutions": [
+      "University of Pennsylvania"
+    ]
   },
   {
     "id": 411,
@@ -4229,6 +4644,7 @@
     "verification": "Single-source — review",
     "sourceRows": "Excel 239",
     "citation": "Zucker S, Lysik RM. Pathogenesis of anemia in rats with Walker 256 carcinosarcoma. J Lab Clin Med. 1977Sep;90(3):502–11.",
-    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence."
+    "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
+    "institutions": []
   }
 ]

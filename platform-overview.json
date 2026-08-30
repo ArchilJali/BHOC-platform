@@ -1,0 +1,20 @@
+{
+  "snapshot": "2026-08-30",
+  "uniquePublications": 335,
+  "hubPlacements": 473,
+  "evidenceHubs": 3,
+  "indexedAuthorInstitutions": 154,
+  "normalizedJournalLabels": 168,
+  "animalEvidenceLabels": 10,
+  "hubs": {
+    "veterinary": 236,
+    "transplantation": 53,
+    "humanUse": 184
+  },
+  "notes": {
+    "uniquePublications": "Deduplicated across hubs by DOI, PMID and normalized title.",
+    "hubPlacements": "A publication may be indexed in more than one evidence hub.",
+    "institutions": "Indexed author affiliations, not endorsements or confirmed study locations.",
+    "animalEvidenceLabels": "Includes named animal/model labels plus Other animal; it is not a count of approved species."
+  }
+}
