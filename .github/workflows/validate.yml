@@ -19,10 +19,16 @@ jobs:
         run: |
           node --check assets/publications.js
           node --check assets/publications-core.js
+          node --check assets/evidence-search.js
+          node --check scripts/enrich_directional_metadata.cjs
+          node --check scripts/build_platform_overview.cjs
       - name: Internal pages and anchors
         run: python3 scripts/check_links.py
       - name: Veterinary overview agrees with the bibliography
         run: node scripts/build_veterinary_overview.cjs --check
+
+      - name: Platform overview agrees with all evidence hubs
+        run: node scripts/build_platform_overview.cjs --check
 
       - name: Source coverage and provenance pages agree with the bibliography
         run: node scripts/build_source_pages.cjs --check

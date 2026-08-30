@@ -20,7 +20,8 @@
     "sourceRows": "HBO2 12",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Andrijevic D, Vrselja Z, Lysyy T, Zhang S, Skarica M, Spajic A, et al.Nature. 2022 Aug 3. Epub ahead of print.",
-    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) Unclear — verify full text"
+    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) Unclear — verify full text",
+    "institutions": []
   },
   {
     "id": 284,
@@ -43,7 +44,8 @@
     "sourceRows": "HBO2 5",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Porte RJ. Improved organ recovery after oxygen deprivation. Nature. 2022 Aug 3. doi: 10.1038/d41586-022-01995-3. Epub ahead of print.",
-    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) Unclear — verify full text"
+    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) Unclear — verify full text",
+    "institutions": []
   },
   {
     "id": 78,
@@ -66,7 +68,8 @@
     "sourceRows": "HBO2 33; PDF 78",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Anti-N and anti-Do<sup>a</sup> immunoglobulin G alloantibody-mediated delayed hemolytic transfusion reaction with hyperhemolysis in sickle cell disease treated with eculizumab and HBOC-201: case report and review of the literature. Unnikrishnan A, Pelletier JPR, Bari S, Zumberg M, Shahmohamadi A, Spiess BD, Michael MJ, Harris N, Harrell D, Mandernach MW. Transfusion. 2019 Feb 15. doi: 10.1111/trf.15198. [Epub ahead of print] PMID: 30768787 [PubMed - as supplied by publisher] Similar articles",
-    "keywords": "General Organ Perfusion & Preservation HBOC-201 / Hemopure Review / Editorial / Policy"
+    "keywords": "General Organ Perfusion & Preservation HBOC-201 / Hemopure Review / Editorial / Policy",
+    "institutions": []
   },
   {
     "id": 311,
@@ -89,7 +92,8 @@
     "sourceRows": "HBO2 34",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Vrselja Z., Daniele, S.G., Silbereis, J. et al. Nature 568, 336–343 (2019)",
-    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) Preclinical animal"
+    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) Preclinical animal",
+    "institutions": []
   },
   {
     "id": 83,
@@ -99,8 +103,8 @@
     "direction": "Transplantation — General Organ Perfusion & Preservation",
     "product": "HBOC-201 / Hemopure",
     "evidence": "Human clinical",
-    "authors": "",
-    "journal": "",
+    "authors": "Gomez MF, Aljure O, Ciancio G, Lynn M",
+    "journal": "American Journal of Transplantation",
     "institution": "",
     "pmid": "28188676",
     "doi": "10.1111/ajt.14226",
@@ -112,7 +116,11 @@
     "sourceRows": "Excel 58; HBO2 54; PDF 83",
     "hbo2Category": "Case Reports, Reviews and Editorials",
     "citation": "Hemoglobin-Based Oxygen Carrier Rescues Double-Transplant Patient From Life- Threatening Anemia. Gomez MF, Aljure O, Ciancio G, Lynn M. Am J Transplant. 2017 Jul;17(7):1941-1944. doi: 10.1111/ajt.14226. Epub 2017 Mar 17. PMID: 28188676 [PubMed - indexed for MEDLINE] Free Article Similar articles",
-    "keywords": "General Organ Perfusion & Preservation HBOC-201 / Hemopure Human clinical Transplant"
+    "keywords": "General Organ Perfusion & Preservation HBOC-201 / Hemopure Human clinical Transplant",
+    "institutions": [
+      "Jackson Memorial Hospital",
+      "University of Miami"
+    ]
   },
   {
     "id": 386,
@@ -122,20 +130,24 @@
     "direction": "Transplantation — General Organ Perfusion & Preservation",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "In vitro / analytical",
-    "authors": "",
-    "journal": "",
+    "authors": "Otterbein LE, Fan Z, Koulmanda M, Thronley T, Strom TB",
+    "journal": "Current Opinion in Organ Transplantation",
     "institution": "",
-    "pmid": "",
-    "doi": "",
-    "pubmedUrl": "",
-    "doiUrl": "",
+    "pmid": "25563986",
+    "doi": "10.1097/mot.0000000000000152",
+    "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/25563986/",
+    "doiUrl": "https://doi.org/10.1097/mot.0000000000000152",
     "originalUrl": "",
     "sources": "Excel",
     "verification": "Single-source — review",
     "sourceRows": "Excel 165",
     "hbo2Category": "",
     "citation": "Otterbein LE, Fan Z, Koulmanda M, Thronley T, Strom TB. Innate immunity for better or worse govern the allograft response. Current Opinion in Organ Transplantation. 2015;20(1):8–12.",
-    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) In vitro / analytical innate immunity"
+    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) In vitro / analytical innate immunity",
+    "institutions": [
+      "Beth Israel Deaconess Medical Center",
+      "Harvard Medical School"
+    ]
   },
   {
     "id": 398,
@@ -145,20 +157,23 @@
     "direction": "Transplantation — General Organ Perfusion & Preservation",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "Human clinical",
-    "authors": "",
-    "journal": "",
+    "authors": "Souidi N, Stolk M, Seifert M",
+    "journal": "Current Opinion in Organ Transplantation",
     "institution": "",
-    "pmid": "",
-    "doi": "",
-    "pubmedUrl": "",
-    "doiUrl": "",
+    "pmid": "23254704",
+    "doi": "10.1097/mot.0b013e32835c2a05",
+    "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/23254704/",
+    "doiUrl": "https://doi.org/10.1097/mot.0b013e32835c2a05",
     "originalUrl": "",
     "sources": "Excel",
     "verification": "Single-source — review",
     "sourceRows": "Excel 199",
     "hbo2Category": "",
     "citation": "Souidi N, Stolk M, Seifert M. Ischemia–reperfusion injury. Current Opinion in Organ Transplantation. 2013;18(1):34–43.",
-    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) Human clinical ischemia"
+    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) Human clinical ischemia",
+    "institutions": [
+      "Charité Universitätsmedizin Berlin"
+    ]
   },
   {
     "id": 356,
@@ -168,20 +183,23 @@
     "direction": "Transplantation — General Organ Perfusion & Preservation",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "In vitro / analytical",
-    "authors": "",
-    "journal": "",
+    "authors": "Irwin D, Buehler PW, Alayash AI, Jia Y, Bonventura J, Foreman B, et al.",
+    "journal": "American Journal of Respiratory Cell and Molecular Biology",
     "institution": "",
-    "pmid": "",
-    "doi": "",
-    "pubmedUrl": "",
-    "doiUrl": "",
+    "pmid": "19395680",
+    "doi": "10.1165/rcmb.2008-0364oc",
+    "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/19395680/",
+    "doiUrl": "https://doi.org/10.1165/rcmb.2008-0364oc",
     "originalUrl": "",
     "sources": "Excel",
     "verification": "Single-source — review",
     "sourceRows": "Excel 81",
     "hbo2Category": "",
     "citation": "Irwin D, Buehler PW, Alayash AI, Jia Y, Bonventura J, Foreman B, et al. Mixed S-Nitrosylated Polymerized Bovine Hemoglobin Species Moderate Hemodynamic Effects in Acutely Hypoxic Rats. American Journal of Respiratory Cell and Molecular Biology. 2010;42(2):200–9.",
-    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) In vitro / analytical acute hypoxia"
+    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) In vitro / analytical acute hypoxia",
+    "institutions": [
+      "University of Colorado"
+    ]
   },
   {
     "id": 161,
@@ -191,20 +209,23 @@
     "direction": "Transplantation — General Organ Perfusion & Preservation",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "Review / Editorial / Policy",
-    "authors": "",
-    "journal": "",
+    "authors": "Kocian R, Spahn DR",
+    "journal": "Best Practice & Research Clinical Anaesthesiology",
     "institution": "",
     "pmid": "18494389",
-    "doi": "",
+    "doi": "10.1016/j.bpa.2007.10.003",
     "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/18494389/",
-    "doiUrl": "",
+    "doiUrl": "https://doi.org/10.1016/j.bpa.2007.10.003",
     "originalUrl": "https://www.ncbi.nlm.nih.gov/pubmed/18494389",
     "sources": "Excel; HBO2; PDF",
     "verification": "Matched across sources",
     "sourceRows": "Excel 106; HBO2 121; PDF 163",
     "hbo2Category": "Surgery",
     "citation": "Haemoglobin, oxygen carriers and perioperative organ perfusion. Kocian R, Spahn DR. Best Pract Res Clin Anaesthesiol. 2008 Mar;22(1):63-80. Review. PMID: 18494389 [PubMed - indexed for MEDLINE] Free Article Similar articles",
-    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) Review / Editorial / Policy Hemodynamics and Oxygen Transport"
+    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) Review / Editorial / Policy Hemodynamics and Oxygen Transport",
+    "institutions": [
+      "University Hospital Zurich"
+    ]
   },
   {
     "id": 379,
@@ -214,20 +235,23 @@
     "direction": "Transplantation — General Organ Perfusion & Preservation",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "Human clinical",
-    "authors": "",
-    "journal": "",
+    "authors": "Morris PJ",
+    "journal": "New England Journal of Medicine",
     "institution": "",
-    "pmid": "",
-    "doi": "",
-    "pubmedUrl": "",
-    "doiUrl": "",
+    "pmid": "15616201",
+    "doi": "10.1056/nejmp048256",
+    "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/15616201/",
+    "doiUrl": "https://doi.org/10.1056/nejmp048256",
     "originalUrl": "",
     "sources": "Excel",
     "verification": "Single-source — review",
     "sourceRows": "Excel 148",
     "hbo2Category": "",
     "citation": "Morris PJ. Transplantation — A Medical Miracle of the 20th Century. New England Journal of Medicine. 2004;351(26):2678–80.",
-    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) Human clinical Transplant"
+    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) Human clinical Transplant",
+    "institutions": [
+      "Royal College of Surgeons of England"
+    ]
   },
   {
     "id": 362,
@@ -237,20 +261,23 @@
     "direction": "Transplantation — General Organ Perfusion & Preservation",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "In vitro / analytical",
-    "authors": "",
-    "journal": "",
+    "authors": "Kavdia M, Pittman RN, Popel AS",
+    "journal": "Journal of Applied Physiology",
     "institution": "",
-    "pmid": "",
-    "doi": "",
-    "pubmedUrl": "",
-    "doiUrl": "",
+    "pmid": "12391075",
+    "doi": "10.1152/japplphysiol.00676.2002",
+    "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/12391075/",
+    "doiUrl": "https://doi.org/10.1152/japplphysiol.00676.2002",
     "originalUrl": "",
     "sources": "Excel",
     "verification": "Single-source — review",
     "sourceRows": "Excel 101",
     "hbo2Category": "",
     "citation": "Kavdia M, Pittman RN, Popel AS. Theoretical analysis of effects of blood substitute affinity and cooperativity on organ oxygen transport. Journal of Applied Physiology. 2002;93(6):2122–8.",
-    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) In vitro / analytical Hemodynamics and Oxygen Transport"
+    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) In vitro / analytical Hemodynamics and Oxygen Transport",
+    "institutions": [
+      "Johns Hopkins University"
+    ]
   },
   {
     "id": 342,
@@ -260,20 +287,23 @@
     "direction": "Transplantation — General Organ Perfusion & Preservation",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "In vitro / analytical",
-    "authors": "",
-    "journal": "",
+    "authors": "Dull RO, Dewitt BJ, Dinavahi R, Schwartz L, Hubert C, Pace N, et al.",
+    "journal": "Journal of Applied Physiology",
     "institution": "",
-    "pmid": "",
-    "doi": "",
-    "pubmedUrl": "",
-    "doiUrl": "",
+    "pmid": "15273237",
+    "doi": "10.1152/japplphysiol.00102.2004",
+    "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/15273237/",
+    "doiUrl": "https://doi.org/10.1152/japplphysiol.00102.2004",
     "originalUrl": "",
     "sources": "Excel",
     "verification": "Single-source — review",
     "sourceRows": "Excel 42",
     "hbo2Category": "",
     "citation": "Dull RO, Dewitt BJ, Dinavahi R, Schwartz L, Hubert C, Pace N, et al. Quantitative assessment of hemoglobin-induced endothelial barrier dysfunction. Journal of Applied Physiology. 2004;97(5):1930–7.",
-    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) In vitro / analytical endothelial barrier dysfunction"
+    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) In vitro / analytical endothelial barrier dysfunction",
+    "institutions": [
+      "Johns Hopkins University"
+    ]
   },
   {
     "id": 352,
@@ -283,20 +313,27 @@
     "direction": "Transplantation — General Organ Perfusion & Preservation",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "Human clinical",
-    "authors": "",
-    "journal": "",
+    "authors": "He X, Guo Z, Zhao Q, Ju W, Wang D, Wu L, et al.",
+    "journal": "The American Journal of Transplantation",
     "institution": "",
-    "pmid": "",
-    "doi": "",
-    "pubmedUrl": "",
-    "doiUrl": "",
+    "pmid": "29127685",
+    "doi": "10.1111/ajt.14583",
+    "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/29127685/",
+    "doiUrl": "https://doi.org/10.1111/ajt.14583",
     "originalUrl": "",
     "sources": "Excel",
     "verification": "Single-source — review",
     "sourceRows": "Excel 70",
     "hbo2Category": "",
     "citation": "He X, Guo Z, Zhao Q, Ju W, Wang D, Wu L, et al. The first case of ischemia-free organ transplantation in humans: A proof of concept. The American Journal of Transplantation. 2017Nov10;:737–44.",
-    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) Human clinical Transplant"
+    "keywords": "General Organ Perfusion & Preservation HBOC / oxygen carrier (general or other) Human clinical Transplant",
+    "institutions": [
+      "Guangdong Provincial International Cooperation Base of Science and Technology (Organ Transplantation)",
+      "Guangdong Provincial Key Laboratory of Organ Donation and Transplant Immunology",
+      "Houston Methodist Research Institute",
+      "Peking Union Medical College Hospital",
+      "Sun Yat-sen University"
+    ]
   },
   {
     "id": 407,
@@ -306,12 +343,12 @@
     "direction": "Transplantation — Heart",
     "product": "HBOC-201 / Hemopure",
     "evidence": "In vitro / analytical",
-    "authors": "",
-    "journal": "",
+    "authors": "White CW, Hasanally D, Mundt P, Li Y, Xiang B, Klein J, Müller A, Ambrose E, Ravandi A, Arora RC, Lee TW, Hryshko LV, Large S, Tian G, Freed DH",
+    "journal": "J Heart Lung Transplant",
     "institution": "",
-    "pmid": "",
+    "pmid": "25447577",
     "doi": "10.1016/j.healun.2014.09.021",
-    "pubmedUrl": "",
+    "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/25447577/",
     "doiUrl": "https://doi.org/10.1016/j.healun.2014.09.021",
     "originalUrl": "",
     "sources": "Excel",
@@ -319,7 +356,14 @@
     "sourceRows": "Excel 230",
     "hbo2Category": "",
     "citation": "White CW, Hasanally D2, Mundt P, Li Y, Xiang B, Klein J, Müller A, Ambrose E, Ravandi A, Arora RC, Lee TW, Hryshko LV, Large S, Tian G, Freed DH. A whole blood-based perfusate provides superior preservation of myocardial function during ex vivo heart perfusion. J Heart Lung Transplant. 2015 Jan;34(1):113-21. doi: 10.1016/j.healun.2014.09.021. Epub 2014 Sep 28.",
-    "keywords": "Heart HBOC-201 / Hemopure In vitro / analytical Transplant"
+    "keywords": "Heart HBOC-201 / Hemopure In vitro / analytical Transplant",
+    "institutions": [
+      "National Research Council Institute for Biodiagnostics",
+      "Papworth Hospital",
+      "St. Boniface Hospital",
+      "University of Alberta",
+      "University of Manitoba"
+    ]
   },
   {
     "id": 61,
@@ -329,8 +373,8 @@
     "direction": "Transplantation — Heart",
     "product": "HBOC-201 / Hemopure",
     "evidence": "Preclinical animal",
-    "authors": "",
-    "journal": "",
+    "authors": "Hekkert MTL, Dubé GP, Regar E, Boer MD, Vranckx P, Giessen WJVD, et al.",
+    "journal": "American Journal of Physiology",
     "institution": "",
     "pmid": "20061545",
     "doi": "10.1152/ajpheart.00667.2009",
@@ -342,7 +386,10 @@
     "sourceRows": "Excel 215; HBO2 87; PDF 61",
     "hbo2Category": "Cardiovascular",
     "citation": "Preoxygenated hemoglobin-based oxygen carrier HBOC-201 annihilates myocardial ischemia during brief coronary artery occlusion in pigs. Te Lintel Hekkert M, Dubé GP, Regar E, de Boer M, Vranckx P, van der Giessen WJ, Serruys PW, Duncker DJ. Am J Physiol Heart Circ Physiol. 2010 Mar;298(3):H1103-13. doi: 10.1152/ajpheart.00667.2009. Epub 2010 Jan 8. PMID: 20061545 [PubMed - indexed for MEDLINE] Free Article Similar articles",
-    "keywords": "Heart HBOC-201 / Hemopure Preclinical animal ischemia"
+    "keywords": "Heart HBOC-201 / Hemopure Preclinical animal ischemia",
+    "institutions": [
+      "Erasmus MC"
+    ]
   },
   {
     "id": 123,
@@ -352,20 +399,24 @@
     "direction": "Transplantation — Heart",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "Veterinary clinical / research",
-    "authors": "",
-    "journal": "",
+    "authors": "George I, Yi G-H, Schulman AR, Morrow BT, Cheng Y, Gu A, et al.",
+    "journal": "American Journal of Physiology",
     "institution": "",
     "pmid": "16617139",
-    "doi": "",
+    "doi": "10.1152/ajpheart.00076.2006",
     "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/16617139/",
-    "doiUrl": "",
+    "doiUrl": "https://doi.org/10.1152/ajpheart.00076.2006",
     "originalUrl": "https://www.ncbi.nlm.nih.gov/pubmed/16617139",
     "sources": "Excel; HBO2; PDF",
     "verification": "Matched across sources",
     "sourceRows": "Excel 82; HBO2 150; PDF 123",
     "hbo2Category": "Cardiovascular",
     "citation": "A polymerized bovine hemoglobin oxygen carrier preserves regional myocardial function and reduces infarct size after acute myocardial ischemia. George I, Yi GH, Schulman AR, Morrow BT, Cheng Y, Gu A, Zhang G, Oz MC, Burkhoff D, Wang J. Am J Physiol Heart Circ Physiol. 2006 Sep;291(3):H1126-37. Epub 2006 Apr 14. PMID: 16617139 [PubMed - indexed for MEDLINE] Free Article Similar articles",
-    "keywords": "Heart HBOC / oxygen carrier (general or other) Veterinary clinical / research decrease infarct size"
+    "keywords": "Heart HBOC / oxygen carrier (general or other) Veterinary clinical / research decrease infarct size",
+    "institutions": [
+      "Cardiovascular Research Foundation",
+      "Columbia University"
+    ]
   },
   {
     "id": 103,
@@ -375,8 +426,8 @@
     "direction": "Transplantation — Heart",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "Veterinary clinical / research",
-    "authors": "",
-    "journal": "",
+    "authors": "Caswell JE, Strange MB, Rimmer DM, Gibson MF, Cole P, Lefer DJ",
+    "journal": "American Journal of Physiology",
     "institution": "",
     "pmid": "15772335",
     "doi": "10.1152/ajpheart.00905.2004",
@@ -388,7 +439,10 @@
     "sourceRows": "Excel 23; HBO2 155; PDF 103",
     "hbo2Category": "Cardiovascular",
     "citation": "A novel hemoglobin-based blood substitute protects against myocardial reperfusion injury. Caswell JE, Strange MB, Rimmer DM 3rd, Gibson MF, Cole P, Lefer DJ. Am J Physiol Heart Circ Physiol. 2005 Apr;288(4):H1796-801. PMID: 15772335 [PubMed - indexed for MEDLINE] Free Article Similar articles",
-    "keywords": "Heart HBOC / oxygen carrier (general or other) Veterinary clinical / research myocardial reperfusion"
+    "keywords": "Heart HBOC / oxygen carrier (general or other) Veterinary clinical / research myocardial reperfusion",
+    "institutions": [
+      "Louisiana State University"
+    ]
   },
   {
     "id": 361,
@@ -398,20 +452,23 @@
     "direction": "Transplantation — Heart",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "In vitro / analytical",
-    "authors": "",
-    "journal": "",
+    "authors": "Kavdia M, Tsoukias NM, Popel AS",
+    "journal": "American Journal of Physiology",
     "institution": "",
-    "pmid": "",
-    "doi": "",
-    "pubmedUrl": "",
-    "doiUrl": "",
+    "pmid": "12003834",
+    "doi": "10.1152/ajpheart.00972.2001",
+    "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/12003834/",
+    "doiUrl": "https://doi.org/10.1152/ajpheart.00972.2001",
     "originalUrl": "",
     "sources": "Excel",
     "verification": "Single-source — review",
     "sourceRows": "Excel 100",
     "hbo2Category": "",
     "citation": "Kavdia M, Tsoukias NM, Popel AS. Model of nitric oxide diffusion in an arteriole: impact of hemoglobin-based blood substitutes. American Journal of Physiology-Heart and Circulatory Physiology. 2002;282(6).",
-    "keywords": "Heart HBOC / oxygen carrier (general or other) In vitro / analytical Nitric Oxide (NO)"
+    "keywords": "Heart HBOC / oxygen carrier (general or other) In vitro / analytical Nitric Oxide (NO)",
+    "institutions": [
+      "Johns Hopkins University"
+    ]
   },
   {
     "id": 345,
@@ -421,20 +478,23 @@
     "direction": "Transplantation — Heart",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "Preclinical animal",
-    "authors": "",
-    "journal": "",
+    "authors": "Faivre-Fiorina B, Caron A, Fassot C, Fries I, Menu P, Labrude P, et al.",
+    "journal": "American Journal of Physiology",
     "institution": "",
-    "pmid": "",
-    "doi": "",
-    "pubmedUrl": "",
-    "doiUrl": "",
+    "pmid": "9950880",
+    "doi": "10.1152/ajpheart.1999.276.2.h766",
+    "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/9950880/",
+    "doiUrl": "https://doi.org/10.1152/ajpheart.1999.276.2.h766",
     "originalUrl": "",
     "sources": "Excel",
     "verification": "Single-source — review",
     "sourceRows": "Excel 47",
     "hbo2Category": "",
     "citation": "Faivre-Fiorina B, Caron A, Fassot C, Fries I, Menu P, Labrude P, et al. Presence of hemoglobin inside aortic endothelial cells after cell-free hemoglobin administration in guinea pigs. American Journal of Physiology-Heart and Circulatory Physiology. 1999;276(2).",
-    "keywords": "Heart HBOC / oxygen carrier (general or other) Preclinical animal Vasoconstriction"
+    "keywords": "Heart HBOC / oxygen carrier (general or other) Preclinical animal Vasoconstriction",
+    "institutions": [
+      "Université Henri Poincaré-Nancy 1"
+    ]
   },
   {
     "id": 280,
@@ -457,7 +517,8 @@
     "sourceRows": "HBO2 1",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Taka MA, Sener A. PD31-06 THE EFFECT OF KIDNEY PRESERVATION AT 10° C WITH HEMOPURE AND HYDROGEN SULFIDE DONOR, SODIUM THIOSULFATE, IN A SYNGENEIC RAT RENAL TRANSPLANTATION MODEL. The Journal of Urology. 2023 Apr;209(Supplement 4):e902.",
-    "keywords": "Kidney HBOC-201 / Hemopure Preclinical animal"
+    "keywords": "Kidney HBOC-201 / Hemopure Preclinical animal",
+    "institutions": []
   },
   {
     "id": 289,
@@ -480,7 +541,8 @@
     "sourceRows": "HBO2 10",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Fard A, Pearson R, Lathan R, Mark PB, Clancy MJ. Transpl Int. 2022 May 11;35:10236. doi: 10.3389/ti.2022.10236. PMID: 35634582; PMCID: PMC9130468.",
-    "keywords": "Kidney HBOC / oxygen carrier (general or other) Review / Editorial / Policy"
+    "keywords": "Kidney HBOC / oxygen carrier (general or other) Review / Editorial / Policy",
+    "institutions": []
   },
   {
     "id": 295,
@@ -503,7 +565,8 @@
     "sourceRows": "HBO2 16",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Juriasingani S, Jackson A, Zhang MY, et al. International Journal of Molecular Sciences. 2021; 22(13):7180.",
-    "keywords": "Kidney HBOC / oxygen carrier (general or other) Unclear — verify full text"
+    "keywords": "Kidney HBOC / oxygen carrier (general or other) Unclear — verify full text",
+    "institutions": []
   },
   {
     "id": 318,
@@ -526,7 +589,8 @@
     "sourceRows": "HBO2 43",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Aburawi MM, Fontan FM, Karimian N, et al. Am J Transplant. 2019 Oct;19(10):2814-2824. Epub 2019 Apr 26.",
-    "keywords": "Kidney HBOC / oxygen carrier (general or other) Unclear — verify full text"
+    "keywords": "Kidney HBOC / oxygen carrier (general or other) Unclear — verify full text",
+    "institutions": []
   },
   {
     "id": 304,
@@ -549,7 +613,8 @@
     "sourceRows": "HBO2 25",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Mahboub P, Aburawi M, Karimian N, et al. Artif Organs. 2020 Jan;44(1):81-90. Epub 2019 Aug 1.",
-    "keywords": "Kidney HBOC-201 / Hemopure Preclinical animal"
+    "keywords": "Kidney HBOC-201 / Hemopure Preclinical animal",
+    "institutions": []
   },
   {
     "id": 363,
@@ -559,20 +624,23 @@
     "direction": "Transplantation — Kidney",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "In vitro / analytical",
-    "authors": "",
-    "journal": "",
+    "authors": "Kron P, Schlegel A, Rougemont OD, Oberkofler CE, Clavien P-A, Dutkowski P",
+    "journal": "Annals of Surgery",
     "institution": "",
-    "pmid": "",
-    "doi": "",
-    "pubmedUrl": "",
-    "doiUrl": "",
+    "pmid": "27584571",
+    "doi": "10.1097/sla.0000000000001766",
+    "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/27584571/",
+    "doiUrl": "https://doi.org/10.1097/sla.0000000000001766",
     "originalUrl": "",
     "sources": "Excel",
     "verification": "Single-source — review",
     "sourceRows": "Excel 108",
     "hbo2Category": "",
     "citation": "Kron P, Schlegel A, Rougemont OD, Oberkofler CE, Clavien P-A, Dutkowski P. Short, Cool, and Well Oxygenated – HOPE for Kidney Transplantation in a Rodent Model. Annals of Surgery. 2016;264(5):815–22.",
-    "keywords": "Kidney HBOC / oxygen carrier (general or other) In vitro / analytical Transplant"
+    "keywords": "Kidney HBOC / oxygen carrier (general or other) In vitro / analytical Transplant",
+    "institutions": [
+      "University Hospital Zurich"
+    ]
   },
   {
     "id": 298,
@@ -595,7 +663,8 @@
     "sourceRows": "HBO2 19",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Luke PPW, Jiang L, Ruthirakanthan A, et al. Journal of Investigative Surgery, 35:1, 104-110.",
-    "keywords": "Kidney HBOC / oxygen carrier (general or other) Unclear — verify full text"
+    "keywords": "Kidney HBOC / oxygen carrier (general or other) Unclear — verify full text",
+    "institutions": []
   },
   {
     "id": 281,
@@ -618,7 +687,8 @@
     "sourceRows": "HBO2 2",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Meyers A, Duarte-Bateman D, Almalak M, Kopparthy V, Rampazzo A, Gharb BB. EX-VIVO LIMB PERFUSION. European Journal of Transplantation. 2023 Mar 21:143-54.",
-    "keywords": "Limb & Composite Tissue HBOC / oxygen carrier (general or other) Unclear — verify full text"
+    "keywords": "Limb & Composite Tissue HBOC / oxygen carrier (general or other) Unclear — verify full text",
+    "institutions": []
   },
   {
     "id": 290,
@@ -641,7 +711,8 @@
     "sourceRows": "HBO2 11",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Figueroa BA, Said SA, Ordenana C, Rezaei M, et al.. J Trauma Acute Care Surg. 2022 Feb 1;92(2):388-397.",
-    "keywords": "Limb & Composite Tissue HBOC / oxygen carrier (general or other) Unclear — verify full text"
+    "keywords": "Limb & Composite Tissue HBOC / oxygen carrier (general or other) Unclear — verify full text",
+    "institutions": []
   },
   {
     "id": 299,
@@ -664,7 +735,8 @@
     "sourceRows": "HBO2 20",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Said SA, Ordeñana CX, Rezaei M, et al. Mil Med. 2020 Jan 7;185(Suppl 1):110-120.",
-    "keywords": "Limb & Composite Tissue HBOC / oxygen carrier (general or other) Unclear — verify full text"
+    "keywords": "Limb & Composite Tissue HBOC / oxygen carrier (general or other) Unclear — verify full text",
+    "institutions": []
   },
   {
     "id": 282,
@@ -687,7 +759,8 @@
     "sourceRows": "HBO2 3",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Kharga A, Chen H, Taggart M, Mojoudi M, Yeh H, Uygun K, Markmann JF. 338.3: Utilization of oxygenated hemopure based University of Wisconsin solution during simulated procurement, back-benching, and graft implantation to minimize ischemic reperfusion injury in a rat liver transplantation simulated on pump. Transplantation. 2023 Oct 1;107(10S2):147-8.",
-    "keywords": "Liver HBOC-201 / Hemopure Preclinical animal"
+    "keywords": "Liver HBOC-201 / Hemopure Preclinical animal",
+    "institutions": []
   },
   {
     "id": 293,
@@ -710,7 +783,8 @@
     "sourceRows": "HBO2 14",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Kanani T, Isherwood J, Chung WY, Tang S, Alnabati N, Haigh R, West K, Oggioni MR, Garcea G, Dennison A. A O03 Ex vivo perfusion of isolated human liver segments: the development of a novel model for ethical, translational research. British Journal of Surgery. 2022 Dec 14;109(Supplement_9):znac404-003.",
-    "keywords": "Liver HBOC / oxygen carrier (general or other) Review / Editorial / Policy"
+    "keywords": "Liver HBOC / oxygen carrier (general or other) Review / Editorial / Policy",
+    "institutions": []
   },
   {
     "id": 292,
@@ -733,7 +807,8 @@
     "sourceRows": "HBO2 13",
     "hbo2Category": "Organ Perfusion/Transplantation (All)",
     "citation": "Moein M, Ahmed M, Arafa F, Saidi RF. Hemoglobin-Based Oxygen Carriers: Clinical Application of HBOC-201 As an Alternative to Red Blood Cells for Machine Perfusion in Liver Transplantation. Surgery in Practice and Science. 2022 Aug 20:100120.",
-    "keywords": "Liver HBOC-201 / Hemopure Veterinary clinical / research"
+    "keywords": "Liver HBOC-201 / Hemopure Veterinary clinical / research",
+    "institutions": []
   },
   {
     "id": 285,
@@ -756,7 +831,8 @@
     "sourceRows": "HBO2 6",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Jennings H, Carlson KN, Little C, Verhagen JC, Nagendran J, Liu Y, et al. Front Immunol. 2022 Jun 22;13:833243. doi: 10.3389/fimmu.2022.833243.",
-    "keywords": "Liver HBOC / oxygen carrier (general or other) Unclear — verify full text"
+    "keywords": "Liver HBOC / oxygen carrier (general or other) Unclear — verify full text",
+    "institutions": []
   },
   {
     "id": 300,
@@ -779,7 +855,8 @@
     "sourceRows": "HBO2 21",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Bodewes SB, van Leeuwen OB, Thorne AM, et al. International Journal of Molecular Sciences. 2021; 22(1):235.",
-    "keywords": "Liver HBOC / oxygen carrier (general or other) Unclear — verify full text"
+    "keywords": "Liver HBOC / oxygen carrier (general or other) Unclear — verify full text",
+    "institutions": []
   },
   {
     "id": 305,
@@ -802,7 +879,8 @@
     "sourceRows": "HBO2 26",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Raigani S, Karimian N, Huang V, Zhang AM, Beijert I, Geerts S, et al. PLoS One. 2020 Jan 24;15(1):e0228011.",
-    "keywords": "Liver HBOC / oxygen carrier (general or other) Review / Editorial / Policy"
+    "keywords": "Liver HBOC / oxygen carrier (general or other) Review / Editorial / Policy",
+    "institutions": []
   },
   {
     "id": 315,
@@ -825,7 +903,8 @@
     "sourceRows": "HBO2 40",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "de Vries Y, Matton APM, Nijsten MWN, Werner MJM, van den Berg AP, de Boer MT, et. al. Am J Transplant. 2019 Apr;19(4):1202-1211. . Epub 2019 Jan 23.",
-    "keywords": "Liver HBOC / oxygen carrier (general or other) Unclear — verify full text"
+    "keywords": "Liver HBOC / oxygen carrier (general or other) Unclear — verify full text",
+    "institutions": []
   },
   {
     "id": 309,
@@ -848,7 +927,8 @@
     "sourceRows": "HBO2 30",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Boteon YL, Laing RW, Schlegel A, et al. PLoS One. 2019 Oct 23;14(10):e0224066. eCollection 2019.",
-    "keywords": "Liver HBOC / oxygen carrier (general or other) Unclear — verify full text"
+    "keywords": "Liver HBOC / oxygen carrier (general or other) Unclear — verify full text",
+    "institutions": []
   },
   {
     "id": 313,
@@ -871,7 +951,8 @@
     "sourceRows": "HBO2 36",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "van Leeuwen OB, de Vries Y, Fujiyoshi M, Nijsten MWN, Ubbink R, Pelgrim GJ, et. al. Transplantation of High-risk Donor Livers After Ex Situ Resuscitation and Assessment Using Combined Hypo- and Normothermic Machine Perfusion: A Prospective Clinical Trial. Ann Surg. 2019 Nov;270(5):906-914. doi: 10.1097/SLA.0000000000003540. PubMed PMID: 31633615.",
-    "keywords": "Liver HBOC / oxygen carrier (general or other) Human clinical"
+    "keywords": "Liver HBOC / oxygen carrier (general or other) Human clinical",
+    "institutions": []
   },
   {
     "id": 393,
@@ -881,20 +962,24 @@
     "direction": "Transplantation — Liver",
     "product": "HBOC-201 / Hemopure",
     "evidence": "Review / Editorial / Policy",
-    "authors": "",
-    "journal": "",
+    "authors": "Quintini C, Lomaglio L, Pezzati D, Uso TD, Liu Q",
+    "journal": "Liver Transplantation",
     "institution": "",
-    "pmid": "",
-    "doi": "",
-    "pubmedUrl": "",
-    "doiUrl": "",
+    "pmid": "30371975",
+    "doi": "10.1002/lt.25370",
+    "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/30371975/",
+    "doiUrl": "https://doi.org/10.1002/lt.25370",
     "originalUrl": "",
     "sources": "Excel",
     "verification": "Single-source — review",
     "sourceRows": "Excel 178",
     "hbo2Category": "",
     "citation": "Quintini C, Lomaglio L, Pezzati D, Uso TD, Liu Q. Combined Hypothermic and Normothermic Perfusion for the Optimization of Injured Liver Grafts. Liver Transplantation. 2018;24(12):1647–8.",
-    "keywords": "Liver HBOC-201 / Hemopure Review / Editorial / Policy liver transplantation"
+    "keywords": "Liver HBOC-201 / Hemopure Review / Editorial / Policy liver transplantation",
+    "institutions": [
+      "Cleveland Clinic",
+      "University of Pisa"
+    ]
   },
   {
     "id": 18,
@@ -904,8 +989,8 @@
     "direction": "Transplantation — Liver",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "Human clinical",
-    "authors": "",
-    "journal": "",
+    "authors": "Matton APM, Burlage LC, Van Rijni R, De Vries Y, Karangwa SA, Nijsten MW, Gouw ASH, Wiersema-Buist J, Adelmeijer J, Westerkamp AC, Lisman T, Porte RJ",
+    "journal": "Liver Transplantation",
     "institution": "",
     "pmid": "29281862",
     "doi": "10.1002/lt.25005",
@@ -917,7 +1002,11 @@
     "sourceRows": "Excel 136; HBO2 45; PDF 18",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Normothermic machine perfusion of donor livers without the need for human blood products. Matton APM, Burlage LC, van Rijn R, de Vries Y, Karangwa SA, Nijsten MW, Gouw ASH, Wiersema-Buist J, Adelmeijer J, Westerkamp AC, Lisman T, Porte RJ. Liver Transpl. 2018 Apr;24(4):528-538. doi: 10.1002/lt.25005. Erratum in: Liver Transpl. 2018 Aug;24(8):1151. PMID: 29281862 [PubMed - indexed for MEDLINE] Free PMC Article Similar articles",
-    "keywords": "Liver HBOC / oxygen carrier (general or other) Human clinical Preservation/ Storage Methods"
+    "keywords": "Liver HBOC / oxygen carrier (general or other) Human clinical Preservation/ Storage Methods",
+    "institutions": [
+      "University Medical Center Groningen",
+      "University of Groningen"
+    ]
   },
   {
     "id": 310,
@@ -940,7 +1029,8 @@
     "sourceRows": "HBO2 31",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "de Vries Y, Berendsen TA, Fujiyoshi M, van den Berg AP, Blokzijl H, de Boer MT, et al. BMJ Open. 2019 Aug 15;9(8):e028596. doi: 10.1136/bmjopen-2018-028596.",
-    "keywords": "Liver HBOC / oxygen carrier (general or other) Unclear — verify full text"
+    "keywords": "Liver HBOC / oxygen carrier (general or other) Unclear — verify full text",
+    "institutions": []
   },
   {
     "id": 9,
@@ -963,7 +1053,8 @@
     "sourceRows": "HBO2 55; PDF 9",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Bloodless reperfusion with the oxygen carrier HBOC-201 in acute myocardial infarction: a novel platform for cardioprotective probes delivery. García-Ruiz JM, Galán-Arriola C, Fernández-Jiménez R, Aguero J, Sánchez- González J, García-Alvarez A, Nuno-Ayala M, Dubé GP, Zafirelis Z, López-Martín GJ, Bernal JA, Lara-Pezzi E, Fuster V, Ibáñez B. Basic Res Cardiol. 2017 Mar;112(2):17. doi: 10.1007/s00395-017-0605-6. Epub 2017 Feb 10. PMID: 28188434 [PubMed - indexed for MEDLINE] Similar articles",
-    "keywords": "Liver HBOC-201 / Hemopure Unclear — verify full text"
+    "keywords": "Liver HBOC-201 / Hemopure Unclear — verify full text",
+    "institutions": []
   },
   {
     "id": 406,
@@ -973,12 +1064,12 @@
     "direction": "Transplantation — Liver",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "Human clinical",
-    "authors": "",
-    "journal": "",
+    "authors": "Watson CJE, Kosmoliaptsis V, Randle LV, Gimson AE, Brais R, Klinck JR, Hamed M, Tsyben A, Butler AJ",
+    "journal": "Transplantation",
     "institution": "",
-    "pmid": "",
+    "pmid": "28437389",
     "doi": "10.1097/tp.0000000000001661",
-    "pubmedUrl": "",
+    "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/28437389/",
     "doiUrl": "https://doi.org/10.1097/tp.0000000000001661",
     "originalUrl": "",
     "sources": "Excel",
@@ -986,7 +1077,11 @@
     "sourceRows": "Excel 228",
     "hbo2Category": "",
     "citation": "Watson, Christopher J.e., Vasilis Kosmoliaptsis, Lucy V. Randle, Alexander E. Gimson, Rebecca Brais, John R. Klinck, Mazin Hamed, Anastasia Tsyben, and Andrew J. Butler. \"Normothermic Perfusion in the Assessment and Preservation of Declined Livers Before Transplantation.\" Transplantation 101, no. 5 (2017): 1084-098. doi:10.1097/tp.0000000000001661.",
-    "keywords": "Liver HBOC / oxygen carrier (general or other) Human clinical Transplant"
+    "keywords": "Liver HBOC / oxygen carrier (general or other) Human clinical Transplant",
+    "institutions": [
+      "Addenbrooke's Hospital",
+      "University of Cambridge"
+    ]
   },
   {
     "id": 10,
@@ -996,8 +1091,8 @@
     "direction": "Transplantation — Liver",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "Human clinical",
-    "authors": "",
-    "journal": "",
+    "authors": "Laing RW, Bhogal RH, Wallace L, Boteon Y, Neil DAH, Smith A, Stephenson BTF, Schlegel A, Hübscher SG, Mirza DF, Afford SC, Mergental H",
+    "journal": "Transplantation",
     "institution": "",
     "pmid": "28520579",
     "doi": "10.1097/tp.0000000000001821",
@@ -1009,7 +1104,12 @@
     "sourceRows": "Excel 112; HBO2 48; PDF 10",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "The Use of an Acellular Oxygen Carrier in a Human Liver Model of Normothermic Machine Perfusion. Laing RW, Bhogal RH, Wallace L, Boteon Y, Neil DAH, Smith A, Stephenson BTF, Schlegel A, Hübscher SG, Mirza DF, Afford SC, Mergental H. Transplantation. 2017 Nov;101(11):2746-2756. doi: 10.1097/TP.0000000000001821. PMID: 28520579 [PubMed - indexed for MEDLINE] Free PMC Article Similar articles",
-    "keywords": "Liver HBOC / oxygen carrier (general or other) Human clinical Transplant"
+    "keywords": "Liver HBOC / oxygen carrier (general or other) Human clinical Transplant",
+    "institutions": [
+      "Queen Elizabeth Hospital Birmingham",
+      "University Hospitals Birmingham",
+      "University of Birmingham"
+    ]
   },
   {
     "id": 394,
@@ -1019,20 +1119,25 @@
     "direction": "Transplantation — Liver",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "Human clinical",
-    "authors": "",
-    "journal": "",
+    "authors": "Ravikumar R, Jassem W, Mergental H, Heaton N, Mirza D, Perera MTPR, et al.",
+    "journal": "American Journal of Transplantation",
     "institution": "",
-    "pmid": "",
-    "doi": "",
-    "pubmedUrl": "",
-    "doiUrl": "",
+    "pmid": "26752191",
+    "doi": "10.1111/ajt.13708",
+    "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/26752191/",
+    "doiUrl": "https://doi.org/10.1111/ajt.13708",
     "originalUrl": "",
     "sources": "Excel",
     "verification": "Single-source — review",
     "sourceRows": "Excel 181",
     "hbo2Category": "",
     "citation": "Ravikumar R, Jassem W, Mergental H, Heaton N, Mirza D, Perera MTPR, et al. Liver Transplantation After Ex Vivo Normothermic Machine Preservation: A Phase 1 (First-in-Man) Clinical Trial. American Journal of Transplantation. 2016;16:1779–87.",
-    "keywords": "Liver HBOC / oxygen carrier (general or other) Human clinical Transplant"
+    "keywords": "Liver HBOC / oxygen carrier (general or other) Human clinical Transplant",
+    "institutions": [
+      "King's College Hospital",
+      "University Hospitals Birmingham",
+      "University of Oxford"
+    ]
   },
   {
     "id": 334,
@@ -1042,20 +1147,24 @@
     "direction": "Transplantation — Liver",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "In vitro / analytical",
-    "authors": "",
-    "journal": "",
+    "authors": "Banan B, Xiao Z, Watson R, Xu M, Jia J, Upadhya GA, et al.",
+    "journal": "Liver Transplantation",
     "institution": "",
-    "pmid": "",
-    "doi": "",
-    "pubmedUrl": "",
-    "doiUrl": "",
+    "pmid": "26439190",
+    "doi": "10.1002/lt.24352",
+    "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/26439190/",
+    "doiUrl": "https://doi.org/10.1002/lt.24352",
     "originalUrl": "",
     "sources": "Excel",
     "verification": "Single-source — review",
     "sourceRows": "Excel 12",
     "hbo2Category": "",
     "citation": "Banan B, Xiao Z, Watson R, Xu M, Jia J, Upadhya GA, et al. Novel strategy to decrease reperfusion injuries and improve function of cold-preserved livers using normothermic ex vivo liver perfusion machine. Liver Transplantation. 2016;22(3):333–43.",
-    "keywords": "Liver HBOC / oxygen carrier (general or other) In vitro / analytical Preservation/ Storage Methods"
+    "keywords": "Liver HBOC / oxygen carrier (general or other) In vitro / analytical Preservation/ Storage Methods",
+    "institutions": [
+      "University of Wisconsin",
+      "Washington University in St. Louis"
+    ]
   },
   {
     "id": 377,
@@ -1065,20 +1174,25 @@
     "direction": "Transplantation — Liver",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "Human clinical",
-    "authors": "",
-    "journal": "",
+    "authors": "Mergental H, Perera MTPR, Laing RW, Muiesan P, Isaac JR, Smith A, et al.",
+    "journal": "American Journal of Transplantation",
     "institution": "",
-    "pmid": "",
-    "doi": "",
-    "pubmedUrl": "",
-    "doiUrl": "",
+    "pmid": "27192971",
+    "doi": "10.1111/ajt.13875",
+    "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/27192971/",
+    "doiUrl": "https://doi.org/10.1111/ajt.13875",
     "originalUrl": "",
     "sources": "Excel",
     "verification": "Single-source — review",
     "sourceRows": "Excel 141",
     "hbo2Category": "",
     "citation": "Mergental H, Perera MTPR, Laing RW, Muiesan P, Isaac JR, Smith A, et al. Transplantation of Declined Liver Allografts Following Normothermic Ex-Situ Evaluation. American Journal of Transplantation. 2016;16(11):3235–45.",
-    "keywords": "Liver HBOC / oxygen carrier (general or other) Human clinical Transplant"
+    "keywords": "Liver HBOC / oxygen carrier (general or other) Human clinical Transplant",
+    "institutions": [
+      "Queen Elizabeth Hospital Birmingham",
+      "University Hospitals Birmingham",
+      "University of Birmingham"
+    ]
   },
   {
     "id": 371,
@@ -1088,20 +1202,24 @@
     "direction": "Transplantation — Liver",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "In vitro / analytical",
-    "authors": "",
-    "journal": "",
+    "authors": "Liu Q, Nassar A, Farias K, Buccini L, Mangino MJ, Baldwin W, et al.",
+    "journal": "American Journal of Transplantation",
     "institution": "",
-    "pmid": "",
-    "doi": "",
-    "pubmedUrl": "",
-    "doiUrl": "",
+    "pmid": "26663737",
+    "doi": "10.1111/ajt.13546",
+    "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/26663737/",
+    "doiUrl": "https://doi.org/10.1111/ajt.13546",
     "originalUrl": "",
     "sources": "Excel",
     "verification": "Single-source — review",
     "sourceRows": "Excel 126",
     "hbo2Category": "",
     "citation": "Liu Q, Nassar A, Farias K, Buccini L, Mangino MJ, Baldwin W, et al. Comparing Normothermic Machine Perfusion Preservation With Different Perfusates on Porcine Livers From Donors After Circulatory Death. American Journal of Transplantation. 2015;16(3):794–807.",
-    "keywords": "Liver HBOC / oxygen carrier (general or other) In vitro / analytical Preservation/ Storage Methods"
+    "keywords": "Liver HBOC / oxygen carrier (general or other) In vitro / analytical Preservation/ Storage Methods",
+    "institutions": [
+      "Cleveland Clinic",
+      "Virginia Commonwealth University"
+    ]
   },
   {
     "id": 322,
@@ -1124,7 +1242,8 @@
     "sourceRows": "HBO2 62",
     "hbo2Category": "Organ Perfusion/Transplantation",
     "citation": "Fontes P, Lopez R, van der Plaats A, Vodovotz Y, Minervini M, Scott V, et al. Liver preservation with machine perfusion and a newly developed cell-free oxygen carrier solution under subnormothermic conditions. Am J Transplant. 2015 Feb;15(2):381-94. PubMed PMID: 25612645",
-    "keywords": "Liver HBOC / oxygen carrier (general or other) Unclear — verify full text"
+    "keywords": "Liver HBOC / oxygen carrier (general or other) Unclear — verify full text",
+    "institutions": []
   },
   {
     "id": 410,
@@ -1134,12 +1253,12 @@
     "direction": "Transplantation — Liver",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "In vitro / analytical",
-    "authors": "",
-    "journal": "",
+    "authors": "Yang J, Chen Q, Tian S, Song S, Liu F, Wang Q, et al.",
+    "journal": "Am J Transl Res",
     "institution": "",
-    "pmid": "",
+    "pmid": "26885262",
     "doi": "",
-    "pubmedUrl": "",
+    "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/26885262/",
     "doiUrl": "",
     "originalUrl": "",
     "sources": "Excel",
@@ -1147,7 +1266,11 @@
     "sourceRows": "Excel 235",
     "hbo2Category": "",
     "citation": "Yang J, Chen Q, Tian S, Song S, Liu F, Wang Q, et al. The role of 1,25-dyhydroxyvitamin D3 in mouse liver ischemia reperfusion injury: regulation of autophagy through activation of MEK/ERK signaling and PTEN/PI3K/Akt/mTORC1 signaling. Am J Transl Res. 2015;7(12):2630–45.",
-    "keywords": "Liver HBOC / oxygen carrier (general or other) In vitro / analytical ischemia"
+    "keywords": "Liver HBOC / oxygen carrier (general or other) In vitro / analytical ischemia",
+    "institutions": [
+      "Second Military Medical University",
+      "Shanghai Changzheng Hospital"
+    ]
   },
   {
     "id": 360,
@@ -1170,7 +1293,8 @@
     "sourceRows": "Excel 96",
     "hbo2Category": "",
     "citation": "Kamo N, Ke B, Busuttil RW, Kupiec-Weglinski JW. PTEN-mediated akt/β-Catenin/foxo1 signaling regulates innate immune responses in mouse liver ischemia/reperfusion injury. Hepatology. 2012;57(1):289–98.",
-    "keywords": "Liver HBOC / oxygen carrier (general or other) Veterinary clinical / research Chemistry"
+    "keywords": "Liver HBOC / oxygen carrier (general or other) Veterinary clinical / research Chemistry",
+    "institutions": []
   },
   {
     "id": 118,
@@ -1180,8 +1304,8 @@
     "direction": "Transplantation — Liver",
     "product": "HBOC-201 / Hemopure",
     "evidence": "In vitro / analytical",
-    "authors": "",
-    "journal": "",
+    "authors": "Zapletal C, Bode A, Lorenz MW, Gebhard M-M, Golling M",
+    "journal": "Microvascular Research",
     "institution": "",
     "pmid": "19715706",
     "doi": "10.1016/j.mvr.2009.08.005",
@@ -1193,7 +1317,10 @@
     "sourceRows": "Excel 238; HBO2 96; PDF 118",
     "hbo2Category": "Cardiovascular",
     "citation": "Effects of hemodilution with a hemoglobin-based oxygen carrier (HBOC-201) on ischemia/reperfusion injury in a model of partial warm liver ischemia of the rat. Zapletal C, Bode A, Lorenz MW, Gebhard MM, Golling M. Microvasc Res. 2009 Dec;78(3):386-92. doi: 10.1016/j.mvr.2009.08.005. Epub 2009 Aug 26. PMID: 19715706 [PubMed - indexed for MEDLINE] Similar articles",
-    "keywords": "Liver HBOC-201 / Hemopure In vitro / analytical Transplant"
+    "keywords": "Liver HBOC-201 / Hemopure In vitro / analytical Transplant",
+    "institutions": [
+      "Goethe University Frankfurt"
+    ]
   },
   {
     "id": 355,
@@ -1203,19 +1330,22 @@
     "direction": "Transplantation — Liver",
     "product": "HBOC / oxygen carrier (general or other)",
     "evidence": "In vitro / analytical",
-    "authors": "",
-    "journal": "",
+    "authors": "Irwin DC, Foreman B, Morris K, White M, Sullivan T, Jacobs R, et al.",
+    "journal": "American Journal of Physiology",
     "institution": "",
-    "pmid": "",
-    "doi": "",
-    "pubmedUrl": "",
-    "doiUrl": "",
+    "pmid": "18567708",
+    "doi": "10.1152/ajpheart.00303.2008",
+    "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/18567708/",
+    "doiUrl": "https://doi.org/10.1152/ajpheart.00303.2008",
     "originalUrl": "",
     "sources": "Excel",
     "verification": "Single-source — review",
     "sourceRows": "Excel 80",
     "hbo2Category": "",
     "citation": "Irwin DC, Foreman B, Morris K, White M, Sullivan T, Jacobs R, et al. Polymerized bovine hemoglobin decreases oxygen delivery during normoxia and acute hypoxia in the rat. American Journal of Physiology-Heart and Circulatory Physiology. 2008;295(3).",
-    "keywords": "Liver HBOC / oxygen carrier (general or other) In vitro / analytical acute hypoxia"
+    "keywords": "Liver HBOC / oxygen carrier (general or other) In vitro / analytical acute hypoxia",
+    "institutions": [
+      "University of Colorado"
+    ]
   }
 ]
