@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /BHOC-platform/seo/
 
 Sitemap: https://archiljali.github.io/BHOC-platform/sitemap.xml
