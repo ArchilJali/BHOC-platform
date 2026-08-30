@@ -1,0 +1,62 @@
+name: Platform version stamp
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'version.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  stamp:
+    if: ${{ !contains(github.event.head_commit.message || '', '[version-stamp]') }}
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Tbilisi
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Update visible version metadata
+        shell: bash
+        run: |
+          VERSION="$(TZ=Asia/Tbilisi date +'%y.%m.%d')"
+          UPDATED="$(TZ=Asia/Tbilisi date +'%d %b %Y')"
+          ISO="$(TZ=Asia/Tbilisi date +'%Y-%m-%d')"
+          python3 - "$VERSION" "$UPDATED" "$ISO" <<'PY'
+          from pathlib import Path
+          import json, re, sys
+          version, updated, iso = sys.argv[1:]
+          Path('version.json').write_text(json.dumps({
+              'version': version,
+              'updated': updated,
+              'updated_iso': iso,
+              'timezone': 'Asia/Tbilisi'
+          }, indent=2) + '\n', encoding='utf-8')
+          marker = f'<p class="platform-version" data-platform-version>Updated {updated} · Version {version}</p>'
+          targets = [Path('index.html'), Path('veterinary/Vet-index.html'), Path('transplant/Transplant-index.html'), Path('human/BHOC-Human-index.html')]
+          for p in targets:
+              if not p.exists():
+                  continue
+              s = p.read_text(encoding='utf-8')
+              s2, n = re.subn(r'<p class="platform-version" data-platform-version>.*?</p>', marker, s, flags=re.S)
+              if not n:
+                  if '</footer>' in s2:
+                      s2 = s2.replace('</footer>', marker + '</footer>', 1)
+                  elif '</body>' in s2:
+                      s2 = s2.replace('</body>', marker + '</body>', 1)
+              p.write_text(s2, encoding='utf-8')
+          PY
+      - name: Commit stamp
+        shell: bash
+        run: |
+          git config user.name "BHOC Platform Automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add version.json index.html veterinary/Vet-index.html transplant/Transplant-index.html human/BHOC-Human-index.html
+          if git diff --cached --quiet; then exit 0; fi
+          VERSION="$(TZ=Asia/Tbilisi date +'%y.%m.%d')"
+          git commit -m "Update platform stamp to ${VERSION} [version-stamp]"
+          git push
