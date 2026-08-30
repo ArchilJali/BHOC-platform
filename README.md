@@ -21,11 +21,11 @@
   <table style="border-collapse: collapse; border: none; margin: 0 auto;">
     <tr>
       <td align="center" style="border: 2px solid #1a365d; border-radius: 8px; padding: 12px 20px; background-color: #ebf8ff; font-weight: 600; font-size: 13px; color: #1a365d;">
-        PRECISION OXYGENATION<br>THERAPEUTICS
+        PRECISION OXYGEN<br>THERAPEUTICS
       </td>
       <td style="width: 12px;"></td>
       <td align="center" style="border: 2px solid #1a365d; border-radius: 8px; padding: 12px 20px; background-color: #e6fffa; font-weight: 600; font-size: 13px; color: #1a365d;">
-        EMERGENCY &amp;<br>PREHOSPITAL
+        TISSUE LEVEL<br>DELIVERY
       </td>
       <td style="width: 12px;"></td>
       <td align="center" style="border: 2px solid #1a365d; border-radius: 8px; padding: 12px 20px; background-color: #fefcbf; font-weight: 600; font-size: 13px; color: #1a365d;">
@@ -42,28 +42,10 @@
 <br>
 
 <p align="center" style="font-size: 15px; color: #2d3748; max-width: 700px; margin: 0 auto; font-style: italic;">
-  Delivering oxygen where it is needed, when it is needed, and in the amount needed — continuously and controllably.
+  Delivering oxygen where it is needed, when it is needed, and in the amount needed — continuously, controllable, and at the tissue level.
 </p>
 
 <br>
-
----
-
-## 🧭 Clinical and Operational Research Context
-
-BHOC evidence and development are organized around defined search and research contexts:
-
-- **Emergency and prehospital:** emergency oxygenation, prehospital resuscitation, hemorrhagic shock and acute blood loss.
-- **Bloodless care and anemia:** bloodless resuscitation, acute anemia, severe anemia and transfusion-free care.
-- **Ischemia and hypoxia:** impaired oxygen delivery, myocardial infarction, heart attack and cardiac arrest.
-- **Surgery and maternal emergencies:** surgical blood loss, patient blood management and postpartum hemorrhage (PPH).
-- **Hematology:** sickle cell disease (SCD), sickle cell anemia (SCA) and transfusion support.
-- **Transplantation:** organ transplantation, kidney, liver and heart perfusion, organ preservation and preservation solutions.
-- **Humanitarian and remote care:** emergency blood access, disaster medicine, battlefield medicine and resource-limited healthcare.
-- **Veterinary medicine:** veterinary oxygen carriers, animal anemia and veterinary blood transfusion.
-
-These areas are research and evidence contexts, not statements of approved indications for a future BHOC formulation.
-
 
 ---
 
@@ -83,7 +65,7 @@ These areas are research and evidence contexts, not statements of approved indic
       <strong style="font-size: 14px; color: #1a365d;">Veterinary</strong><br>
       <small style="font-size: 11px; color: #718096;">Application</small>
       <br><br>
-      <a href="https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html" target="_blank" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
+      <a href="/BHOC-platform/veterinary/Vet-index.html" target="_blank" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
     </td>
     <td style="width: 12px;"></td>
     <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 16px; width: 140px; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
@@ -92,7 +74,7 @@ These areas are research and evidence contexts, not statements of approved indic
       <strong style="font-size: 14px; color: #1a365d;">Transplantation</strong><br>
       <small style="font-size: 11px; color: #718096;">Application</small>
       <br><br>
-      <span style="color: #a0aec0; font-size: 11px;">Coming soon</span>
+      <a href="/BHOC-platform/transplant/Transplant-index.html" target="_blank" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
     </td>
     <td style="width: 12px;"></td>
     <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 16px; width: 140px; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
@@ -110,7 +92,7 @@ These areas are research and evidence contexts, not statements of approved indic
       <strong style="font-size: 14px; color: #1a365d;">Scientific</strong><br>
       <small style="font-size: 11px; color: #718096;">Articles</small>
       <br><br>
-      <a href="https://archiljali.github.io/BHOC-platform/science/" target="_blank" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
+      <a href="/BHOC-platform/science/" target="_blank" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
     </td>
     <td style="width: 12px;"></td>
     <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 16px; width: 140px; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
@@ -119,7 +101,7 @@ These areas are research and evidence contexts, not statements of approved indic
       <strong style="font-size: 14px; color: #1a365d;">LinkedIn</strong><br>
       <small style="font-size: 11px; color: #718096;">Publications</small>
       <br><br>
-      <a href="https://archiljali.github.io/BHOC-platform/social-media/linkedin/" target="_blank" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
+      <a href="/BHOC-platform/social-media/linkedin/" target="_blank" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
     </td>
   </tr>
 </table>
@@ -138,7 +120,7 @@ These areas are research and evidence contexts, not statements of approved indic
     <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 25px; background-color: #f7fafc; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
       <strong>BHOC (Biological Hemoglobin Oxygen Carrier)</strong> is a hemoglobin-based oxygen carrier platform focused on supporting oxygen delivery beyond the conventional red blood cell transfusion model.
       <br><br>
-      The central concept is <strong>Precision Oxygenation Therapeutics</strong>: focusing on oxygen delivery as a measurable therapeutic function rather than on blood hemoglobin concentration alone.
+      The central concept is <strong>Precision Oxygen Therapeutics</strong>: focusing on oxygen delivery at the tissue level rather than on blood hemoglobin concentration alone.
       <br><br>
       BHOC is intended as a complementary approach to the oxygen-delivery function of blood, while recognizing that blood performs many other essential physiological functions.
     </td>
@@ -151,9 +133,9 @@ These areas are research and evidence contexts, not statements of approved indic
 <!-- PRECISION OXYGEN THERAPEUTICS - 4 CARDS                      -->
 <!-- ============================================================ -->
 
-## 🎯 Precision Oxygenation Therapeutics
+## 🎯 Precision Oxygen Therapeutics
 
-<p style="font-size: 14px; color: #4a5568;">Precision Oxygenation Therapeutics focuses on four fundamental questions:</p>
+<p style="font-size: 14px; color: #4a5568;">Precision Oxygen Therapeutics focuses on four fundamental questions:</p>
 
 <br>
 
@@ -177,7 +159,7 @@ These areas are research and evidence contexts, not statements of approved indic
       <div style="font-size: 28px;">📊</div>
       <br>
       <strong style="font-size: 17px; color: #1a365d;">HOW MUCH</strong><br>
-      <small style="font-size: 10px; color: #4a5568;">How much oxygen delivery is required?</small>
+      <small style="font-size: 10px; color: #4a5568;">How much oxygen is required to support tissue demand?</small>
     </td>
     <td style="width: 10px;"></td>
     <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 18px 12px; width: 140px; background-color: #fed7d0; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
@@ -194,7 +176,7 @@ These areas are research and evidence contexts, not statements of approved indic
 <table>
   <tr>
     <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 15px 20px; background-color: #f7fafc; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-      The objective is to move the focus from simply increasing circulating hemoglobin toward understanding and supporting <strong>effective oxygen availability and delivery</strong>.
+      The objective is to move the focus from simply increasing circulating hemoglobin toward understanding and supporting <strong>oxygen availability at the tissue level</strong>.
     </td>
   </tr>
 </table>
@@ -202,17 +184,17 @@ These areas are research and evidence contexts, not statements of approved indic
 ---
 
 <!-- ============================================================ -->
-<!-- OXYGEN DELIVERY - CARD                          -->
+<!-- TISSUE-LEVEL OXYGEN DELIVERY - CARD                          -->
 <!-- ============================================================ -->
 
-## 🫁 Oxygen Delivery
+## 🫁 Tissue-Level Oxygen Delivery
 
 <table>
   <tr>
     <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 25px; background-color: #f7fafc; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
       Systemic measurements such as hemoglobin concentration and arterial oxygen saturation are important indicators of oxygen transport.
       <br><br>
-      However, effective oxygenation is influenced by multiple physiological processes, including:
+      However, tissue oxygenation is influenced by multiple physiological processes, including:
       <br><br>
       <table style="border-collapse: collapse; border: none;">
         <tr>
@@ -233,7 +215,7 @@ These areas are research and evidence contexts, not statements of approved indic
         </tr>
       </table>
       <br>
-      BHOC research and development is centered on the broader question of how hemoglobin-based oxygen transport can contribute to effective oxygen availability and delivery.
+      BHOC research and development is centered on the broader question of how hemoglobin-based oxygen transport can contribute to oxygen availability at the tissue level.
     </td>
   </tr>
 </table>
@@ -334,7 +316,7 @@ These areas are research and evidence contexts, not statements of approved indic
         </tr>
         <tr>
           <td style="border: none; padding: 3px 10px;">• Precision Oxygenation</td>
-          <td style="border: none; padding: 3px 10px;">• Oxygenation</td>
+          <td style="border: none; padding: 3px 10px;">• Tissue Oxygenation</td>
         </tr>
         <tr>
           <td style="border: none; padding: 3px 10px;">• Oxygen Delivery</td>
@@ -345,7 +327,7 @@ These areas are research and evidence contexts, not statements of approved indic
           <td style="border: none; padding: 3px 10px;">• Blood Substitutes</td>
         </tr>
         <tr>
-          <td style="border: none; padding: 3px 10px;">• Organ Perfusion</td>
+          <td style="border: none; padding: 3px 10px;">• Microvascular Oxygenation</td>
           <td style="border: none; padding: 3px 10px;">• Ischemia and Reperfusion</td>
         </tr>
         <tr>
@@ -423,7 +405,7 @@ These areas are research and evidence contexts, not statements of approved indic
 <table>
   <tr>
     <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 25px; background-color: #f7fafc; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-      This repository is intended to provide an open scientific entry point for information related to BHOC, hemoglobin-based oxygen carriers, oxygen therapeutics, and oxygen delivery.
+      This repository is intended to provide an open scientific entry point for information related to BHOC, hemoglobin-based oxygen carriers, oxygen therapeutics, and tissue-level oxygen delivery.
       <br><br>
       Future materials may include:
       <br><br>
@@ -461,7 +443,7 @@ These areas are research and evidence contexts, not statements of approved indic
 <table>
   <tr>
     <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 25px; background-color: #f7fafc; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-      This repository is intended to provide an open scientific entry point for information related to BHOC, hemoglobin-based oxygen carriers, oxygen therapeutics, and oxygen delivery.
+      This repository is intended to provide an open scientific entry point for information related to BHOC, hemoglobin-based oxygen carriers, oxygen therapeutics, and tissue-level oxygen delivery.
       <br><br>
       Future materials may include:
       <br><br>
@@ -545,7 +527,7 @@ These areas are research and evidence contexts, not statements of approved indic
 <table>
   <tr>
     <td style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 25px; background-color: #f7fafc; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-      The development of Precision Oxygenation Therapeutics requires understanding the relationship between:
+      The development of Precision Oxygen Therapeutics requires understanding the relationship between:
       <br><br>
       <code style="background-color: #edf2f7; padding: 12px 15px; display: block; border-radius: 6px; font-size: 13px; line-height: 1.8;">
       <strong>Oxygen Supply</strong> (lung and membrane oxygenation and anti-oxidation control)
@@ -598,7 +580,7 @@ These areas are research and evidence contexts, not statements of approved indic
 <table>
   <tr>
     <td style="border: 3px solid #c53030; border-radius: 10px; padding: 20px 25px; background-color: #fff5f5; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-      <strong>BHOC and Precision Oxygenation Therapeutics are presented here as a scientific and technology development platform.</strong>
+      <strong>BHOC and Precision Oxygen Therapeutics are presented here as a scientific and technology development platform.</strong>
       <br><br>
       Information in this repository should not be interpreted as medical advice, a clinical recommendation.
       <br>
@@ -615,10 +597,3 @@ These areas are research and evidence contexts, not statements of approved indic
 ## 📬 Contact
 Archil Jaliashvili 
 2026 August 
-
-
----
-
-## 🔎 SEO ownership
-
-The page-specific search-intent map is maintained in [`seo/page-keyword-map.md`](./seo/page-keyword-map.md). The master keyword architecture is maintained separately in [BHOC-Therapeutics](https://github.com/ArchilJali/BHOC-Therapeutics/tree/main/seo) so the evidence repository remains focused on scientific sources.
