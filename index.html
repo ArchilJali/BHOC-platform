@@ -38,6 +38,7 @@
 .home-hero>p{max-width:940px;margin:14px auto 0;color:var(--muted);font-size:15px;line-height:1.55}
 .home-hero>p strong{color:var(--ink);font-weight:700}
 .home-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.regulatory-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:16px 0 10px}.regulatory-item{display:grid;grid-template-columns:auto 1fr;column-gap:11px;align-items:center;padding:13px 16px;color:var(--ink);text-decoration:none;border-right:1px solid var(--line);min-width:0}.regulatory-item:last-child{border-right:0}.regulatory-item:hover{background:var(--wash)}.regulatory-flag{font-size:20px;grid-row:1/4}.regulatory-item small{font-size:9px;text-transform:uppercase;letter-spacing:.7px;color:var(--teal);font-weight:750}.regulatory-item strong{font-size:14px;line-height:1.25}.regulatory-item span:last-child{font-size:10px;color:var(--muted)}
 .platform-stats{grid-template-columns:repeat(4,minmax(0,1fr))}
 .platform-stats{margin:16px 0}
 .platform-stats .overview-stat{padding:14px 16px}
@@ -79,6 +80,7 @@
 @media(max-width:980px){.hub-grid{grid-template-columns:1fr}
 .hub-card{min-height:auto}
 .platform-grid{grid-template-columns:1fr}
+.regulatory-strip{grid-template-columns:1fr}.regulatory-item{border-right:0;border-bottom:1px solid var(--line)}.regulatory-item:last-child{border-bottom:0}
 .platform-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
 .platform-stats .overview-stat:nth-child(even){border-right:0}
 .platform-stats .overview-stat:nth-child(n+3){border-top:1px solid var(--line)}
@@ -110,6 +112,8 @@
   <header class="site-header"><nav class="site-nav" aria-label="Main navigation"><a class="brand" href="index.html" aria-current="page">BHOC<span>Evidence &amp; Science</span></a><div class="nav-links"><a href="veterinary/Vet-index.html">Veterinary</a><a href="transplant/Transplant-index.html">Transplantation</a><a href="human/BHOC-Human-index.html">Human Use</a><a href="science/">Science</a><a href="historical-sources/">History</a></div></nav></header>
   <main id="main" class="shell">
     <section class="home-hero"><div class="eyebrow">BHOC · Biological Hemoglobin Oxygen Carrier</div><h1>Precision Oxygenation Therapeutics</h1><p>A structured scientific evidence platform connecting historical HBOC terminology with tissue-level oxygen delivery across veterinary medicine, transplantation and human-use research. <strong>Blood is a system. Oxygen delivery is a function.</strong></p><div class="home-actions"><a class="button" href="#evidence-hubs">Explore the evidence →</a><a class="button secondary" href="science/oxygen-delivery-potency.html">Read the science →</a></div></section>
+
+    <section class="regulatory-strip" aria-label="Hemopure human regulatory status"><a class="regulatory-item" href="human/BHOC-Human-fda-expanded-access.html"><span class="regulatory-flag" aria-hidden="true">🇺🇸</span><small>United States</small><strong>FDA Expanded Access</strong><span>Not FDA approved · Open official records →</span></a><a class="regulatory-item" href="human/BHOC-Human-index.html#south-africa-status"><span class="regulatory-flag" aria-hidden="true">🇿🇦</span><small>South Africa</small><strong>Full clinical approval</strong><span>Approved since 2001 · Open source →</span></a><a class="regulatory-item" href="human/BHOC-Human-index.html#russia-status"><span class="regulatory-flag" aria-hidden="true">🇷🇺</span><small>Russia</small><strong>Historical full approval</strong><span>Registered 2010–2015 · Open record →</span></a></section>
 
     <section class="overview-stats platform-stats" aria-label="Platform evidence statistics"><a class="overview-stat" href="#evidence-hubs"><strong>473</strong><span>Publication &amp; evidence records</span><small>Indexed across three application hubs</small></a><a class="overview-stat" href="#institutions-note"><strong>154</strong><span>Author institutions</span><small>267 hub-level directory entries</small></a><a class="overview-stat" href="#institutions-note"><strong>168</strong><span>Scientific journals</span><small>218 hub-level journal entries</small></a><a class="overview-stat" href="veterinary/Vet-index.html#species-distribution"><strong>141</strong><span>Animal-labelled records</span><small>Across 10 species and model categories</small></a></section>
     <p class="metric-note" id="institutions-note">Evidence records are organised by application, so one publication may appear in more than one hub. Hub-level directory and journal entries include repeated labels across sections. Institutions are indexed author affiliations, not endorsements or automatically confirmed study locations.</p>
