@@ -1,6 +1,10 @@
 name: Weekly protected backup
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/weekly-backup.yml'
   schedule:
     - cron: '0 4 * * 1'
   workflow_dispatch:
@@ -31,7 +35,7 @@ jobs:
       - name: Store backup artifact
         uses: actions/upload-artifact@v4
         with:
-          name: BHOC-platform-backup-v${{ steps.version.outputs.version }}
+          name: BHOC-platform_BACKUP_v${{ steps.version.outputs.version }}
           path: |
             BHOC-platform_v${{ steps.version.outputs.version }}.bundle
             BHOC-platform_v${{ steps.version.outputs.version }}_site.tar.gz
