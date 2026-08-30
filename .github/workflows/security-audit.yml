@@ -1,0 +1,51 @@
+name: Repository security audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '30 3 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check tracked files for high-risk secret patterns
+        shell: bash
+        run: |
+          set -euo pipefail
+          PATTERN='BEGIN (RSA|OPENSSH|EC|DSA) PRIVATE KEY|ghp_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|AKIA[0-9A-Z]{16}'
+          if git grep -I -n -E "$PATTERN" -- . ':!*.pdf' ':!*.png' ':!*.jpg' ':!*.jpeg' ':!*.gif' ':!*.zip' ':!*.tar.gz'; then
+            echo 'Potential secret material detected in tracked text files.' >&2
+            exit 1
+          fi
+          echo 'No high-risk secret patterns found.'
+      - name: Verify required governance files
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f SECURITY.md
+          test -f COPYRIGHT.md
+          test -f .github/CODEOWNERS
+          test -f version.json
+      - name: Verify public pages retain SEO essentials
+        shell: bash
+        run: |
+          set -euo pipefail
+          for page in index.html veterinary/Vet-index.html transplant/Transplant-index.html human/BHOC-Human-index.html; do
+            test -f "$page"
+            grep -qi '<title>' "$page"
+            grep -qi 'name="description"' "$page"
+            grep -qi 'rel="canonical"' "$page"
+            grep -qi 'name="robots"' "$page"
+          done
+          echo 'SEO essentials are present on core public pages.'
