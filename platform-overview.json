@@ -5,6 +5,7 @@
   "evidenceHubs": 3,
   "indexedAuthorInstitutions": 154,
   "normalizedJournalLabels": 168,
+  "animalLabelledRecords": 141,
   "animalEvidenceLabels": 10,
   "hubs": {
     "veterinary": 236,
@@ -15,6 +16,7 @@
     "uniquePublications": "Deduplicated across hubs by DOI, PMID and normalized title.",
     "hubPlacements": "A publication may be indexed in more than one evidence hub.",
     "institutions": "Indexed author affiliations, not endorsements or confirmed study locations.",
+    "animalLabelledRecords": "Veterinary catalogue records carrying at least one non-human, non-in-vitro animal label.",
     "animalEvidenceLabels": "Includes named animal/model labels plus Other animal; it is not a count of approved species."
   }
 }

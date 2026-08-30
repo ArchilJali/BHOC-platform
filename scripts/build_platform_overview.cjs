@@ -48,6 +48,7 @@ records.forEach((publication, index) => {
 
 const institutions = new Set(records.flatMap(publication => Array.isArray(publication.institutions) ? publication.institutions : []));
 const animalLabels = new Set(veterinary.flatMap(publication => publication.species_tags || []).filter(label => !['Human', 'In vitro'].includes(label)));
+const animalLabelledRecords = veterinary.filter(publication => (publication.species_tags || []).some(label => !['Human', 'In vitro'].includes(label))).length;
 const overview = {
   snapshot: '2026-08-30',
   uniquePublications: new Set(records.map((_, index) => root(index))).size,
@@ -55,6 +56,7 @@ const overview = {
   evidenceHubs: 3,
   indexedAuthorInstitutions: institutions.size,
   normalizedJournalLabels: C.journalOptions(records).filter(option => option.value !== C.OTHER).length,
+  animalLabelledRecords,
   animalEvidenceLabels: animalLabels.size,
   hubs: {
     veterinary: veterinary.length,
@@ -65,6 +67,7 @@ const overview = {
     uniquePublications: 'Deduplicated across hubs by DOI, PMID and normalized title.',
     hubPlacements: 'A publication may be indexed in more than one evidence hub.',
     institutions: 'Indexed author affiliations, not endorsements or confirmed study locations.',
+    animalLabelledRecords: 'Veterinary catalogue records carrying at least one non-human, non-in-vitro animal label.',
     animalEvidenceLabels: 'Includes named animal/model labels plus Other animal; it is not a count of approved species.'
   }
 };
