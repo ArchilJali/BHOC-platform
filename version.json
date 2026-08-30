@@ -1,8 +1,6 @@
 {
-  "platform": "BHOC Evidence Platform",
   "version": "26.08.31",
-  "updated": "2026-08-31",
-  "display_updated": "31 Aug 2026",
-  "versioning": "YY.MM.DD",
-  "notes": "Increment the displayed date and version on every production content update. If more than one formal release is needed on the same date, append a revision suffix such as 26.08.31.2."
+  "updated": "31 Aug 2026",
+  "updated_iso": "2026-08-31",
+  "timezone": "Asia/Tbilisi"
 }
