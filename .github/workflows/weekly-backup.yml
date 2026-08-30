@@ -28,17 +28,17 @@ jobs:
       - name: Build full repository backup
         shell: bash
         run: |
+          set -euo pipefail
           VERSION='${{ steps.version.outputs.version }}'
-          git bundle create "BHOC-platform_v${VERSION}.bundle" --all
-          tar --exclude='.git' -czf "BHOC-platform_v${VERSION}_site.tar.gz" .
-          sha256sum "BHOC-platform_v${VERSION}.bundle" "BHOC-platform_v${VERSION}_site.tar.gz" > "BHOC-platform_v${VERSION}_SHA256.txt"
+          OUT="$RUNNER_TEMP/bhoc-backup"
+          mkdir -p "$OUT"
+          git bundle create "$OUT/BHOC-platform_v${VERSION}_FULL.bundle" --all
+          git archive --format=tar.gz --output="$OUT/BHOC-platform_v${VERSION}_SITE.tar.gz" HEAD
+          sha256sum "$OUT/BHOC-platform_v${VERSION}_FULL.bundle" "$OUT/BHOC-platform_v${VERSION}_SITE.tar.gz" > "$OUT/BHOC-platform_v${VERSION}_SHA256.txt"
       - name: Store backup artifact
         uses: actions/upload-artifact@v4
         with:
           name: BHOC-platform_BACKUP_v${{ steps.version.outputs.version }}
-          path: |
-            BHOC-platform_v${{ steps.version.outputs.version }}.bundle
-            BHOC-platform_v${{ steps.version.outputs.version }}_site.tar.gz
-            BHOC-platform_v${{ steps.version.outputs.version }}_SHA256.txt
+          path: ${{ runner.temp }}/bhoc-backup/
           retention-days: 90
           if-no-files-found: error
