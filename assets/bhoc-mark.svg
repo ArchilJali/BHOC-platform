@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">BHOC Evidence Platform</title>
+  <rect width="64" height="64" rx="14" fill="#102f49"/>
+  <circle cx="32" cy="32" r="19" fill="none" stroke="#ffffff" stroke-width="5"/>
+  <circle cx="32" cy="32" r="7" fill="#ff6400"/>
+  <path d="M32 7v10M32 47v10M7 32h10M47 32h10" stroke="#91d4cf" stroke-width="4" stroke-linecap="round"/>
+</svg>

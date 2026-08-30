@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">BHOC Evidence Platform</title>
+  <desc id="desc">Precision Oxygenation Therapeutics scientific evidence across veterinary medicine, transplantation and human-use research.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102f49"/>
+      <stop offset="1" stop-color="#087a76"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="400" height="10" x="0" fill="#ff6400"/>
+  <rect width="400" height="10" x="400" fill="#aa2e3f"/>
+  <rect width="400" height="10" x="800" fill="#91d4cf"/>
+  <circle cx="1010" cy="315" r="142" fill="none" stroke="#ffffff" stroke-opacity=".16" stroke-width="34"/>
+  <circle cx="1010" cy="315" r="50" fill="#ff6400" fill-opacity=".95"/>
+  <text x="82" y="126" fill="#91d4cf" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" letter-spacing="5">BIOLOGICAL HEMOGLOBIN OXYGEN CARRIER</text>
+  <text x="82" y="255" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="700">BHOC Evidence</text>
+  <text x="82" y="337" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="700">Platform</text>
+  <text x="82" y="416" fill="#dce8ec" font-family="Arial, Helvetica, sans-serif" font-size="34">Precision Oxygenation Therapeutics</text>
+  <text x="82" y="510" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="600">Veterinary  •  Transplantation  •  Human Use</text>
+  <text x="82" y="565" fill="#b9d7dd" font-family="Arial, Helvetica, sans-serif" font-size="22">Source-linked scientific evidence and historical records</text>
+</svg>
