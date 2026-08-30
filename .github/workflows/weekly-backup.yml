@@ -1,0 +1,40 @@
+name: Weekly protected backup
+
+on:
+  schedule:
+    - cron: '0 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Read version
+        id: version
+        shell: bash
+        run: |
+          VERSION=$(python3 -c "import json; print(json.load(open('version.json'))['version'])")
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+      - name: Build full repository backup
+        shell: bash
+        run: |
+          VERSION='${{ steps.version.outputs.version }}'
+          git bundle create "BHOC-platform_v${VERSION}.bundle" --all
+          tar --exclude='.git' -czf "BHOC-platform_v${VERSION}_site.tar.gz" .
+          sha256sum "BHOC-platform_v${VERSION}.bundle" "BHOC-platform_v${VERSION}_site.tar.gz" > "BHOC-platform_v${VERSION}_SHA256.txt"
+      - name: Store backup artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: BHOC-platform-backup-v${{ steps.version.outputs.version }}
+          path: |
+            BHOC-platform_v${{ steps.version.outputs.version }}.bundle
+            BHOC-platform_v${{ steps.version.outputs.version }}_site.tar.gz
+            BHOC-platform_v${{ steps.version.outputs.version }}_SHA256.txt
+          retention-days: 90
+          if-no-files-found: error
