@@ -8,6 +8,7 @@ The published website is static HTML, CSS and JavaScript. No runtime package ins
 node --test tests/publications.test.cjs
 node --check assets/publications.js
 python3 scripts/check_links.py
+node scripts/apply_seo_metadata.cjs --check
 ```
 
 The GitHub workflow runs these checks for pull requests and pushes to main. Browser interaction and visual tests are separate; they were not completed for the initial redesign because browser access was not permitted in the editing session.
@@ -28,7 +29,13 @@ When editing citations, update the coverage audit, accessible HTML catalogue and
 
 GitHub-readable Markdown notes are retained. Their explicit HTML counterparts are the website presentation. `_config.yml` excludes the Markdown copies from Jekyll output to prevent filename collisions and inconsistent automatic styling. Update both formats together. Original raw notes remain accessible through GitHub.
 
-The main-site `sitemap.xml` is a static URL list and should be updated when adding or removing a canonical HTML page. A robots.txt file under a GitHub project subdirectory would not control host-level crawling; no such misleading file is added.
+The project sitemap is regenerated from the canonical page map. The repository also exposes a project-level `robots.txt` for direct discovery, but GitHub Pages serves host-level crawler rules from `archiljali.github.io/robots.txt`; the project file cannot override that host-level policy.
+
+## SEO metadata
+
+Canonical titles, descriptions, page-level keyword taxonomy, social previews, favicons and breadcrumb structured data are defined in `seo/page-metadata.json`. Run `node scripts/apply_seo_metadata.cjs` after changing that file or adding a canonical page. The same command regenerates `sitemap.xml`; `--check` verifies that the checked-in HTML and sitemap remain synchronized.
+
+The keywords meta tag is retained as an internal taxonomy and for non-Google consumers. Google ranking intent is expressed through unique titles, H1 headings, visible source-backed content, descriptive internal links and canonical page separation rather than keyword repetition.
 
 ## Regulatory sources
 
