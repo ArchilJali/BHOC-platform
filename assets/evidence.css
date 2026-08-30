@@ -1,7 +1,7 @@
 :root{--ink:#132d42;--muted:#536774;--teal:#096b65;--line:#dbe4e8;--paper:#fff;--wash:#f4f7f8;--soft:#e9f4f1;--amber:#80530d;--radius:12px}
 body.theme-main{--ink:#102f49;--muted:#526a78;--teal:#087a76;--line:#d8e3e8;--wash:#f2f6f7;--soft:#e5f3f1}
 body.theme-human{--ink:#132d42;--muted:#536774;--teal:#096b65;--line:#dbe4e8;--wash:#f4f7f8;--soft:#e9f4f1}
-body.theme-vet{--ink:#31243f;--muted:#695f73;--teal:#6c3ba4;--line:#e4dced;--wash:#f7f4fa;--soft:#f0e8f8}
+body.theme-vet{--ink:#3d2a21;--muted:#725d52;--teal:#c64d00;--line:#f0ddd2;--wash:#fff8f4;--soft:#fff0e6}
 body.theme-transplant{--ink:#293944;--muted:#66727a;--teal:#aa2e3f;--line:#e5dadd;--wash:#f7f4f5;--soft:#f8e9eb}
 
 *{box-sizing:border-box}
@@ -16,6 +16,7 @@ button:disabled{cursor:default;opacity:.45}
 .skip{position:absolute;left:12px;top:-100px;background:#fff;padding:12px;z-index:100}
 .skip:focus{top:12px}
 .site-header{background:#fff;border-bottom:1px solid var(--line)}
+.theme-vet .site-header{border-top:4px solid #ff6400}
 .site-nav{max-width:1280px;margin:auto;min-height:78px;padding:15px 32px;display:flex;gap:24px;align-items:center;justify-content:space-between}
 .brand{font-size:23px;font-weight:780;letter-spacing:-1px;text-decoration:none;color:var(--ink)}
 .brand span{color:var(--teal);font-size:11px;font-weight:650;letter-spacing:1.5px;margin-left:12px;text-transform:uppercase}
@@ -190,10 +191,11 @@ input::placeholder{color:#687b88}
 .clinical-highlight .clinical-limit{font-size:12px;border-top:1px solid #41606a;padding-top:18px}
 .theme-vet .regulatory-overview,.theme-vet .notice,.theme-transplant .regulatory-overview,.theme-transplant .notice{background:var(--soft);border-color:var(--line)}
 .theme-vet .milestone,.theme-transplant .evidence-row{border-color:var(--line)}
-.theme-vet .clinical-highlight{background:#3d2753}
-.theme-vet .clinical-highlight .eyebrow{color:#d9c5ee}
-.theme-vet .clinical-highlight p{color:#eee7f4}
-.theme-vet .clinical-highlight a{color:#e1c9f7}
+.theme-vet .species-track>span{background:#ff6400}
+.theme-vet .clinical-highlight{background:#652b0e}
+.theme-vet .clinical-highlight .eyebrow{color:#ffc59f}
+.theme-vet .clinical-highlight p{color:#fff2e9}
+.theme-vet .clinical-highlight a{color:#ffd0b2}
 .theme-transplant .transplant-highlight,.theme-transplant .pathway div{background:#4b2630}
 .theme-transplant .pathway{background:#7b4a56}
 .theme-transplant .transplant-highlight .eyebrow,.theme-transplant .pathway small{color:#f2bdc5}
