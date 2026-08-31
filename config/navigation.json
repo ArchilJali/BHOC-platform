@@ -9,7 +9,7 @@
     {"label": "Transplantation", "href": "/BHOC-platform/transplant/Transplant-index.html", "section": "transplant"},
     {"label": "Human Use", "href": "/BHOC-platform/human/BHOC-Human-index.html", "section": "human"},
     {"label": "LinkedIn Publications", "href": "/BHOC-platform/social-media/linkedin/", "section": "linkedin"},
-    {"label": "Science", "href": "/BHOC-platform/science/", "section": "science"},
+    {"label": "Scientific Evidence", "href": "/BHOC-platform/science/", "section": "science"},
     {"label": "History", "href": "/BHOC-platform/historical-sources/", "section": "history"}
   ]
 }
