@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://archiljali.github.io/BHOC-platform/</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
   </url>
   <url>
     <loc>https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
   </url>
   <url>
     <loc>https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html</loc>
@@ -46,7 +46,7 @@
   </url>
   <url>
     <loc>https://archiljali.github.io/BHOC-platform/transplant/Transplant-index.html</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
   </url>
   <url>
     <loc>https://archiljali.github.io/BHOC-platform/transplant/Transplant-search.html</loc>
@@ -54,7 +54,7 @@
   </url>
   <url>
     <loc>https://archiljali.github.io/BHOC-platform/human/BHOC-Human-index.html</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
   </url>
   <url>
     <loc>https://archiljali.github.io/BHOC-platform/human/BHOC-Human-search.html</loc>
@@ -66,15 +66,19 @@
   </url>
   <url>
     <loc>https://archiljali.github.io/BHOC-platform/science/index.html</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
   </url>
   <url>
     <loc>https://archiljali.github.io/BHOC-platform/science/oxygen-delivery-potency.html</loc>
     <lastmod>2026-08-30</lastmod>
   </url>
   <url>
+    <loc>https://archiljali.github.io/BHOC-platform/science/nobel-foundations-oxygen-metabolism-physiology.html</loc>
+    <lastmod>2026-09-01</lastmod>
+  </url>
+  <url>
     <loc>https://archiljali.github.io/BHOC-platform/historical-sources/</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
   </url>
   <url>
     <loc>https://archiljali.github.io/BHOC-platform/historical-sources/biopure-standing-on-the-shoulders-of-giants/</loc>
@@ -82,6 +86,6 @@
   </url>
   <url>
     <loc>https://archiljali.github.io/BHOC-platform/social-media/linkedin/</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
   </url>
 </urlset>
