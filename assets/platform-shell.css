@@ -1,0 +1,52 @@
+/* BHOC shared visual shell.
+   This file owns the common platform chrome and reusable knowledge-page primitives.
+   Application hubs may keep their own theme colors and content-specific layouts. */
+
+.site-header{background:#fff;border-bottom:1px solid var(--line)}
+.site-nav{max-width:1280px;margin:auto;min-height:64px;padding:10px 32px;display:flex;gap:24px;align-items:center;justify-content:space-between}
+.brand{font-size:23px;font-weight:780;letter-spacing:-1px;text-decoration:none;color:var(--ink)}
+.brand span{color:var(--teal);font-size:11px;font-weight:650;letter-spacing:1.5px;margin-left:12px;text-transform:uppercase}
+.nav-links{display:flex;gap:23px;align-items:center;flex-wrap:wrap}
+.nav-links a{font-size:13px;font-weight:600;text-decoration:none;color:var(--muted)}
+.nav-links a:hover,.nav-links a[aria-current=page]{color:var(--teal)}
+
+.shell{max-width:1280px;margin:auto;padding:22px 32px 42px}
+
+/* Main-platform / knowledge-page hero */
+.knowledge-hero{position:relative;overflow:hidden;text-align:center;background:#fff;border:1px solid var(--line);border-radius:18px;padding:34px 32px 30px;margin-bottom:18px}
+.knowledge-hero:before{content:"";position:absolute;inset:0 0 auto;height:6px;background:linear-gradient(90deg,#ff6400 0 33.3%,#aa2e3f 33.3% 66.6%,#096b65 66.6%)}
+.knowledge-hero .eyebrow{margin-bottom:10px}
+.knowledge-hero h1{max-width:980px;margin:0 auto;font-size:clamp(32px,4.2vw,54px);line-height:1.07;letter-spacing:-1.8px;font-weight:660}
+.knowledge-hero>p{max-width:940px;margin:14px auto 0;color:var(--muted);font-size:15px;line-height:1.55}
+.knowledge-hero>p strong{color:var(--ink);font-weight:700}
+.knowledge-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+
+/* Reusable editorial shell components */
+.shell-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);gap:18px;margin:18px 0 26px}
+.shell-card{padding:28px}
+.shell-card h2{font-size:29px;line-height:1.2;letter-spacing:-.6px;margin:8px 0 12px}
+.shell-card p{color:var(--muted);font-size:13px;line-height:1.65}
+.shell-dark{background:#102f49;color:#fff;border-radius:14px;padding:28px}
+.shell-dark .eyebrow{color:#91d4cf}
+.shell-dark h2{font-size:28px;line-height:1.2;margin:9px 0 14px}
+.shell-dark p{color:#dce8ec;font-size:13px;line-height:1.7}
+.shell-dark a{color:#fff;font-size:12px;font-weight:700}
+
+.site-footer{max-width:1280px;margin:0 auto;padding:24px 32px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:12px}
+
+@media(max-width:950px){
+  .site-nav,.shell{padding-left:22px;padding-right:22px}
+  .brand span{display:none}
+}
+@media(max-width:850px){
+  .shell-grid{grid-template-columns:1fr}
+}
+@media(max-width:680px){
+  .site-nav{align-items:flex-start;flex-direction:column;gap:9px;padding:16px 18px}
+  .nav-links{gap:16px}
+  .shell{padding:16px 16px 34px}
+  .knowledge-hero{padding:30px 18px 26px}
+  .knowledge-hero h1{letter-spacing:-1.2px}
+  .shell-card,.shell-dark{padding:22px}
+  .site-footer{flex-direction:column;padding:22px 18px;gap:8px}
+}
