@@ -4,6 +4,7 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const config = JSON.parse(fs.readFileSync(path.join(ROOT, 'config/navigation.json'), 'utf8'));
 const SKIP_DIRS = new Set(['.git', 'node_modules']);
+const SHELL_HREF = '/BHOC-platform/assets/platform-shell.css';
 
 function walk(dir) {
   const out = [];
@@ -39,6 +40,12 @@ function navHtml(section) {
   return `<header class="site-header"><nav class="site-nav" aria-label="Main navigation"><a class="brand" href="${config.brand.href}"${brandCurrent}>${config.brand.label}<span>${config.brand.subLabel.replace('&', '&amp;')}</span></a><div class="nav-links">${links}</div></nav></header>`;
 }
 
+function ensureShellStylesheet(src) {
+  if (src.includes(SHELL_HREF)) return src;
+  if (!/<\/head>/i.test(src)) return src;
+  return src.replace(/<\/head>/i, `  <link rel="stylesheet" href="${SHELL_HREF}">\n</head>`);
+}
+
 const headerRe = /<header class="site-header">[\s\S]*?<\/header>/i;
 let changed = 0;
 let skipped = 0;
@@ -50,7 +57,10 @@ for (const file of walk(ROOT)) {
     skipped++;
     continue;
   }
-  const next = src.replace(headerRe, navHtml(sectionFor(rel)));
+
+  let next = src.replace(headerRe, navHtml(sectionFor(rel)));
+  next = ensureShellStylesheet(next);
+
   if (next !== src) {
     fs.writeFileSync(file, next);
     changed++;
@@ -58,4 +68,4 @@ for (const file of walk(ROOT)) {
   }
 }
 
-console.log(`Navigation sync complete: ${changed} updated, ${skipped} without site-header.`);
+console.log(`Navigation + visual shell sync complete: ${changed} updated, ${skipped} without site-header.`);
