@@ -9,6 +9,8 @@
 .nav-links{display:flex;gap:23px;align-items:center;flex-wrap:wrap}
 .nav-links a{font-size:13px;font-weight:600;text-decoration:none;color:var(--muted)}
 .nav-links a:hover,.nav-links a[aria-current=page]{color:var(--teal)}
+.nav-links a.nav-corporate{color:var(--navy);border:1px solid var(--line);border-radius:999px;padding:7px 10px;background:#fff;font-weight:750;white-space:nowrap}
+.nav-links a.nav-corporate:hover{color:var(--teal);border-color:var(--teal);background:var(--wash)}
 
 .shell{max-width:1280px;margin:auto;padding:22px 32px 42px}
 
