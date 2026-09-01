@@ -319,8 +319,8 @@
   },
   "science/index.html": {
     "title": "BHOC Scientific Publications | Oxygen Carrier Evidence",
-    "description": "Browse source-linked scientific publications on Biological Hemoglobin Oxygen Carriers, oxygen delivery potency, blood transfusion and translational research.",
-    "keywords": "BHOC scientific publications, Biological Hemoglobin Oxygen Carrier, oxygen carrier evidence, oxygen delivery research, hemoglobin physiology, blood transfusion research, translational evidence",
+    "description": "Browse source-linked BHOC science on oxygen delivery, hemoglobin-based oxygen carriers, nitric oxide scavenging, HBOC vasoconstriction, microcirculation and translational research.",
+    "keywords": "BHOC scientific publications, Biological Hemoglobin Oxygen Carrier, hemoglobin-based oxygen carriers, HBOC vasoconstriction, nitric oxide scavenging, cell-free hemoglobin, hypoxic vasodilation, microcirculation, tissue oxygenation, oxygen delivery research, hemoglobin physiology, translational evidence",
     "url": "https://archiljali.github.io/BHOC-platform/science/index.html",
     "type": "website",
     "breadcrumbs": [
@@ -428,6 +428,27 @@
       [
         "Hemoglobin βCys93 and NO",
         "/social-media/linkedin/hemoglobin-beta-cys93-nitric-oxide-tissue-oxygenation.html"
+      ]
+    ]
+  },
+  "science/nitric-oxide-scavenging-hboc-vasoconstriction.html": {
+    "title": "Nitric Oxide Scavenging & HBOC Vasoconstriction | BHOC",
+    "description": "Scientific summary of hemoglobin βCys93, nitric oxide scavenging, HBOC vasoconstriction, hypoxic vasodilation, microcirculation and tissue oxygenation.",
+    "keywords": "nitric oxide scavenging, HBOC vasoconstriction, hemoglobin-based oxygen carriers, cell-free hemoglobin, hemoglobin nitric oxide, hypoxic vasodilation, microcirculation, tissue oxygenation, βCys93, S-nitrosohemoglobin, SNO-Hb, BHOC, oxygen delivery",
+    "url": "https://archiljali.github.io/BHOC-platform/science/nitric-oxide-scavenging-hboc-vasoconstriction.html",
+    "type": "article",
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Scientific publications",
+        "/science/index.html"
+      ],
+      [
+        "Nitric oxide and HBOC vasoconstriction",
+        "/science/nitric-oxide-scavenging-hboc-vasoconstriction.html"
       ]
     ]
   }
