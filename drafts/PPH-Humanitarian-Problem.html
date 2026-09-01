@@ -18,7 +18,7 @@
     .impact-hero h1{font-size:clamp(38px,5.5vw,64px);line-height:.98;letter-spacing:-2.3px;max-width:950px;margin:12px 0 16px}
     .impact-hero>p{max-width:920px;color:var(--muted);font-size:16px;line-height:1.65}
     .hero-tag{display:inline-flex;padding:7px 10px;border-radius:999px;background:#f8e9eb;color:#8f3347;border:1px solid #ead4da;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
-    .impact-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:24px}
+    .headline-impact{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:24px}.headline-stat{border-radius:14px;padding:24px 26px;background:#542633;color:#fff;border:1px solid #542633}.headline-stat:nth-child(2){background:#8f3347;border-color:#8f3347}.headline-stat strong{display:block;font-size:clamp(28px,3.2vw,46px);line-height:1.05;letter-spacing:-1.2px}.headline-stat span{display:block;font-size:12px;font-weight:800;margin-top:10px;text-transform:uppercase;letter-spacing:.06em}.headline-stat small{display:block;color:#f1dfe4;font-size:11px;line-height:1.5;margin-top:7px}.impact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}
     .impact-stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px}
     .impact-stat strong{display:block;font-size:34px;line-height:1;letter-spacing:-1px}
     .impact-stat span{display:block;font-size:12px;font-weight:750;margin-top:8px}
@@ -47,8 +47,8 @@
     .evidence-links{display:grid;gap:9px;margin-top:14px}
     .evidence-links a{display:flex;justify-content:space-between;gap:15px;border-top:1px solid var(--line);padding:13px 0;text-decoration:none;font-size:12px;font-weight:700}
     .notice{font-size:11.5px}
-    @media(max-width:900px){.impact-grid{grid-template-columns:repeat(2,1fr)}.two-col{grid-template-columns:1fr}.source-grid{grid-template-columns:1fr 1fr}.logic-flow{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:560px){.impact-grid,.source-grid,.logic-flow{grid-template-columns:1fr}.impact-hero{padding:30px 20px}.section{padding:22px}}
+    @media(max-width:900px){.headline-impact,.impact-grid{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr}.source-grid{grid-template-columns:1fr 1fr}.logic-flow{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){.headline-impact,.impact-grid,.source-grid,.logic-flow{grid-template-columns:1fr}.impact-hero{padding:30px 20px}.section{padding:22px}}
   </style>
 </head>
 <body class="theme-main">
@@ -60,9 +60,11 @@
       <h1>Every 3 minutes, a mother dies. Every minute, 2 newborns die in the WHO African Region.</h1>
       <p>These deaths are not all caused by postpartum haemorrhage, and they are not all caused by lack of donor blood. But severe PPH exposes the system at its weakest point: survival can depend on whether blood, transfusion infrastructure, transport, trained teams and definitive emergency care are available in time.</p>
       <p><strong>Every mother matters. Every child matters. We believe more of these lives can be saved.</strong></p>
+      <div class="headline-impact" aria-label="Key maternal and newborn mortality statistics">
+        <div class="headline-stat"><strong>1 maternal death / 3 min</strong><span>WHO African Region</span><small>Approximately 20 maternal deaths every hour.</small></div>
+        <div class="headline-stat"><strong>2 newborn deaths / min</strong><span>WHO African Region</span><small>Approximately 120 newborn deaths every hour.</small></div>
+      </div>
       <div class="impact-grid">
-        <div class="impact-stat primary"><strong>1 maternal death / 3 min</strong><span>WHO African Region</span><small>Approximately 20 maternal deaths every hour.</small></div>
-        <div class="impact-stat"><strong>2 newborn deaths / min</strong><span>WHO African Region</span><small>Approximately 120 newborn deaths every hour.</small></div>
         <div class="impact-stat"><strong>178,000</strong><span>maternal deaths / year</span><small>WHO African Region estimate; many maternal deaths are preventable.</small></div>
         <div class="impact-stat"><strong>1 million</strong><span>newborn deaths / year</span><small>WHO African Region estimate; many newborn deaths are preventable.</small></div>
       </div>
@@ -106,27 +108,7 @@
         <a class="source-card" href="https://www.who.int/news/item/11-10-2023-who-issues-global-plan-to-tackle-leading-cause-of-death-in-childbirth" target="_blank" rel="noopener"><small>WHO roadmap</small><strong>PPH 2023–2030</strong><span>Global roadmap and implementation priorities.</span></a>
       </div>
     </section>
-
-    <div class="two-col">
-      <section class="section">
-        <div class="eyebrow">04 / Evidence already in BHOC-platform</div>
-        <h2>Use the existing database, not a second bibliography.</h2>
-        <div class="evidence-links">
-          <a href="../human/BHOC-Human-search.html?direction=Trauma%2C%20Hemorrhage%20%26%20Emergency%20Care"><span>Trauma, hemorrhage & emergency-care evidence</span><span>Open →</span></a>
-          <a href="../human/BHOC-Human-search.html?direction=Surgery%20%26%20Perioperative%20Blood%20Management"><span>Surgery & perioperative blood-management evidence</span><span>Open →</span></a>
-          <a href="../science/oxygen-delivery-potency.html"><span>Oxygen delivery & functional potency</span><span>Open →</span></a>
-          <a href="../science/nitric-oxide-scavenging-hboc-vasoconstriction.html"><span>NO scavenging, vasoconstriction & tissue oxygenation</span><span>Open →</span></a>
-        </div>
-      </section>
-      <section class="section">
-        <div class="eyebrow">05 / BHOC research relevance</div>
-        <h2>The future question is operational as much as molecular.</h2>
-        <p>If an oxygen-delivery therapeutic can be stored, deployed and administered under conditions where donor blood is delayed or unavailable, that could create a meaningful research hypothesis for PPH and humanitarian medicine. But the page should explicitly separate <strong>clinical need</strong> from <strong>proven product benefit</strong>.</p>
-        <p><strong>Research framing:</strong> Could a validated oxygen-delivery therapeutic extend the physiologic bridge to definitive haemorrhage control in selected PPH settings?</p>
-      </section>
-    </div>
-
-    <section class="section">
+<section class="section">
       <div class="eyebrow">Primary sources</div>
       <div class="source-grid">
         <a class="source-card" href="https://www.who.int/news-room/fact-sheets/detail/maternal-mortality" target="_blank" rel="noopener"><small>WHO · 2025</small><strong>Maternal mortality</strong><span>182,000 maternal deaths in sub-Saharan Africa in 2023.</span></a>
