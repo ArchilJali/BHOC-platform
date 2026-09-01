@@ -12,7 +12,16 @@
     "keywords": "veterinary oxygen carrier, Oxyglobin, veterinary transfusion, canine anemia, animal oxygenation, veterinary hemoglobin oxygen carrier, BHOC veterinary evidence, FDA Oxyglobin, EMA Oxyglobin",
     "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html",
     "type": "website",
-    "breadcrumbs": [["Home", "/"], ["Veterinary evidence", "/veterinary/Vet-index.html"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Veterinary evidence",
+        "/veterinary/Vet-index.html"
+      ]
+    ]
   },
   "veterinary/Vet-search.html": {
     "title": "Veterinary Oxygen Carrier Publication Search | BHOC",
@@ -20,7 +29,20 @@
     "keywords": "veterinary oxygen carrier publications, Oxyglobin publications, veterinary transfusion research, canine anemia research, animal oxygenation, PubMed, DOI, author institutions",
     "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html",
     "type": "website",
-    "breadcrumbs": [["Home", "/"], ["Veterinary evidence", "/veterinary/Vet-index.html"], ["Publication search", "/veterinary/Vet-search.html"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Veterinary evidence",
+        "/veterinary/Vet-index.html"
+      ],
+      [
+        "Publication search",
+        "/veterinary/Vet-search.html"
+      ]
+    ]
   },
   "veterinary/publication-catalogue.html": {
     "title": "Oxyglobin & Veterinary HBOC Publication Catalogue | BHOC",
@@ -28,7 +50,20 @@
     "keywords": "Oxyglobin publication catalogue, veterinary HBOC literature, veterinary oxygen carrier bibliography, animal anemia, veterinary transfusion, PubMed, DOI",
     "url": "https://archiljali.github.io/BHOC-platform/veterinary/publication-catalogue.html",
     "type": "website",
-    "breadcrumbs": [["Home", "/"], ["Veterinary evidence", "/veterinary/Vet-index.html"], ["Publication catalogue", "/veterinary/publication-catalogue.html"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Veterinary evidence",
+        "/veterinary/Vet-index.html"
+      ],
+      [
+        "Publication catalogue",
+        "/veterinary/publication-catalogue.html"
+      ]
+    ]
   },
   "veterinary/publication-methodology.html": {
     "title": "Veterinary Evidence Methodology | BHOC Oxygen Carriers",
@@ -36,7 +71,20 @@
     "keywords": "veterinary evidence methodology, BHOC publication methodology, source provenance, author affiliations, species classification, veterinary oxygen carrier evidence",
     "url": "https://archiljali.github.io/BHOC-platform/veterinary/publication-methodology.html",
     "type": "article",
-    "breadcrumbs": [["Home", "/"], ["Veterinary evidence", "/veterinary/Vet-index.html"], ["Methodology", "/veterinary/publication-methodology.html"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Veterinary evidence",
+        "/veterinary/Vet-index.html"
+      ],
+      [
+        "Methodology",
+        "/veterinary/publication-methodology.html"
+      ]
+    ]
   },
   "veterinary/Vet-fda-ema.html": {
     "title": "Oxyglobin FDA & EMA Regulatory Records | BHOC",
@@ -44,7 +92,20 @@
     "keywords": "Oxyglobin FDA approval, Oxyglobin EMA approval, veterinary oxygen carrier regulation, NADA 141-067, canine anemia, veterinary HBOC",
     "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-fda-ema.html",
     "type": "website",
-    "breadcrumbs": [["Home", "/"], ["Veterinary evidence", "/veterinary/Vet-index.html"], ["FDA and EMA records", "/veterinary/Vet-fda-ema.html"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Veterinary evidence",
+        "/veterinary/Vet-index.html"
+      ],
+      [
+        "FDA and EMA records",
+        "/veterinary/Vet-fda-ema.html"
+      ]
+    ]
   },
   "veterinary/Vet-FDA-registry.html": {
     "title": "Oxyglobin FDA Approval | NADA 141-067 Veterinary Record",
@@ -52,7 +113,24 @@
     "keywords": "Oxyglobin FDA approval, NADA 141-067, canine anemia, veterinary oxygen carrier, FDA veterinary record, hemoglobin oxygen carrier",
     "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-FDA-registry.html",
     "type": "article",
-    "breadcrumbs": [["Home", "/"], ["Veterinary evidence", "/veterinary/Vet-index.html"], ["FDA and EMA records", "/veterinary/Vet-fda-ema.html"], ["FDA record", "/veterinary/Vet-FDA-registry.html"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Veterinary evidence",
+        "/veterinary/Vet-index.html"
+      ],
+      [
+        "FDA and EMA records",
+        "/veterinary/Vet-fda-ema.html"
+      ],
+      [
+        "FDA record",
+        "/veterinary/Vet-FDA-registry.html"
+      ]
+    ]
   },
   "veterinary/Vet-EMA-approvals-summary.html": {
     "title": "Oxyglobin EMA Approval | Veterinary Oxygen Carrier Record",
@@ -60,7 +138,24 @@
     "keywords": "Oxyglobin EMA approval, European veterinary authorization, canine anemia, veterinary oxygen carrier, hemoglobin oxygen carrier",
     "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-EMA-approvals-summary.html",
     "type": "article",
-    "breadcrumbs": [["Home", "/"], ["Veterinary evidence", "/veterinary/Vet-index.html"], ["FDA and EMA records", "/veterinary/Vet-fda-ema.html"], ["EMA record", "/veterinary/Vet-EMA-approvals-summary.html"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Veterinary evidence",
+        "/veterinary/Vet-index.html"
+      ],
+      [
+        "FDA and EMA records",
+        "/veterinary/Vet-fda-ema.html"
+      ],
+      [
+        "EMA record",
+        "/veterinary/Vet-EMA-approvals-summary.html"
+      ]
+    ]
   },
   "veterinary/Vet-03-publication-BHOC-Oxyglobin.html": {
     "title": "Oxyglobin & Veterinary HBOC Publications | BHOC",
@@ -68,7 +163,20 @@
     "keywords": "Oxyglobin publications, veterinary HBOC publications, animal anemia research, veterinary transfusion, oxygen delivery evidence, hemoglobin oxygen carrier",
     "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-03-publication-BHOC-Oxyglobin.html",
     "type": "website",
-    "breadcrumbs": [["Home", "/"], ["Veterinary evidence", "/veterinary/Vet-index.html"], ["Oxyglobin publications", "/veterinary/Vet-03-publication-BHOC-Oxyglobin.html"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Veterinary evidence",
+        "/veterinary/Vet-index.html"
+      ],
+      [
+        "Oxyglobin publications",
+        "/veterinary/Vet-03-publication-BHOC-Oxyglobin.html"
+      ]
+    ]
   },
   "veterinary/Vet-README.html": {
     "title": "Veterinary Oxygen Carrier Evidence Guide | BHOC",
@@ -76,7 +184,20 @@
     "keywords": "veterinary oxygen carrier evidence guide, BHOC veterinary evidence, Oxyglobin research, animal anemia, veterinary transfusion, regulatory records",
     "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-README.html",
     "type": "website",
-    "breadcrumbs": [["Home", "/"], ["Veterinary evidence", "/veterinary/Vet-index.html"], ["Evidence guide", "/veterinary/Vet-README.html"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Veterinary evidence",
+        "/veterinary/Vet-index.html"
+      ],
+      [
+        "Evidence guide",
+        "/veterinary/Vet-README.html"
+      ]
+    ]
   },
   "veterinary/Vet-business-concept.html": {
     "title": "Veterinary Oxygen Therapeutics Evidence Context | BHOC",
@@ -84,7 +205,20 @@
     "keywords": "veterinary oxygen therapeutics, veterinary oxygen carrier, animal anemia, emergency veterinary care, veterinary blood access, BHOC research context",
     "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-business-concept.html",
     "type": "article",
-    "breadcrumbs": [["Home", "/"], ["Veterinary evidence", "/veterinary/Vet-index.html"], ["Evidence context", "/veterinary/Vet-business-concept.html"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Veterinary evidence",
+        "/veterinary/Vet-index.html"
+      ],
+      [
+        "Evidence context",
+        "/veterinary/Vet-business-concept.html"
+      ]
+    ]
   },
   "transplant/Transplant-index.html": {
     "title": "Transplantation Evidence Hub | BHOC Oxygen Therapeutics",
@@ -92,7 +226,16 @@
     "keywords": "BHOC transplantation, oxygen carriers in transplantation, organ perfusion, machine perfusion, organ preservation, liver transplantation, kidney transplantation, heart transplantation, ischemia reperfusion, HBOC-201",
     "url": "https://archiljali.github.io/BHOC-platform/transplant/Transplant-index.html",
     "type": "website",
-    "breadcrumbs": [["Home", "/"], ["Transplantation evidence", "/transplant/Transplant-index.html"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Transplantation evidence",
+        "/transplant/Transplant-index.html"
+      ]
+    ]
   },
   "transplant/Transplant-search.html": {
     "title": "Transplant Publication Search | BHOC Oxygen Evidence",
@@ -100,7 +243,20 @@
     "keywords": "transplant publication search, organ perfusion publications, machine perfusion evidence, organ preservation research, liver transplant, kidney transplant, heart transplant, HBOC-201",
     "url": "https://archiljali.github.io/BHOC-platform/transplant/Transplant-search.html",
     "type": "website",
-    "breadcrumbs": [["Home", "/"], ["Transplantation evidence", "/transplant/Transplant-index.html"], ["Publication search", "/transplant/Transplant-search.html"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Transplantation evidence",
+        "/transplant/Transplant-index.html"
+      ],
+      [
+        "Publication search",
+        "/transplant/Transplant-search.html"
+      ]
+    ]
   },
   "human/BHOC-Human-index.html": {
     "title": "Human-Use Oxygen Carrier Evidence | BHOC & HBOC-201",
@@ -108,7 +264,16 @@
     "keywords": "BHOC human use, HBOC-201 evidence, Hemopure publications, human oxygen carrier evidence, severe anemia, hemorrhage, trauma resuscitation, surgery, emergency oxygenation, clinical evidence",
     "url": "https://archiljali.github.io/BHOC-platform/human/BHOC-Human-index.html",
     "type": "website",
-    "breadcrumbs": [["Home", "/"], ["Human-use evidence", "/human/BHOC-Human-index.html"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Human-use evidence",
+        "/human/BHOC-Human-index.html"
+      ]
+    ]
   },
   "human/BHOC-Human-search.html": {
     "title": "Human-Use Publication Search | BHOC & HBOC-201",
@@ -116,7 +281,20 @@
     "keywords": "human-use oxygen carrier publications, HBOC-201 publications, Hemopure clinical evidence, severe anemia research, trauma resuscitation, surgery, emergency oxygenation, author institutions",
     "url": "https://archiljali.github.io/BHOC-platform/human/BHOC-Human-search.html",
     "type": "website",
-    "breadcrumbs": [["Home", "/"], ["Human-use evidence", "/human/BHOC-Human-index.html"], ["Publication search", "/human/BHOC-Human-search.html"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Human-use evidence",
+        "/human/BHOC-Human-index.html"
+      ],
+      [
+        "Publication search",
+        "/human/BHOC-Human-search.html"
+      ]
+    ]
   },
   "human/BHOC-Human-fda-expanded-access.html": {
     "title": "FDA Expanded Access IND | HBOC-201 & Hemopure",
@@ -124,7 +302,20 @@
     "keywords": "FDA expanded access, emergency IND, single-patient IND, HBOC-201, Hemopure, NCT01881503, severe anemia, oxygen carrier regulatory evidence",
     "url": "https://archiljali.github.io/BHOC-platform/human/BHOC-Human-fda-expanded-access.html",
     "type": "article",
-    "breadcrumbs": [["Home", "/"], ["Human-use evidence", "/human/BHOC-Human-index.html"], ["FDA Expanded Access", "/human/BHOC-Human-fda-expanded-access.html"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Human-use evidence",
+        "/human/BHOC-Human-index.html"
+      ],
+      [
+        "FDA Expanded Access",
+        "/human/BHOC-Human-fda-expanded-access.html"
+      ]
+    ]
   },
   "science/index.html": {
     "title": "BHOC Scientific Publications | Oxygen Carrier Evidence",
@@ -132,7 +323,16 @@
     "keywords": "BHOC scientific publications, Biological Hemoglobin Oxygen Carrier, oxygen carrier evidence, oxygen delivery research, hemoglobin physiology, blood transfusion research, translational evidence",
     "url": "https://archiljali.github.io/BHOC-platform/science/index.html",
     "type": "website",
-    "breadcrumbs": [["Home", "/"], ["Scientific publications", "/science/index.html"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Scientific publications",
+        "/science/index.html"
+      ]
+    ]
   },
   "science/oxygen-delivery-potency.html": {
     "title": "Oxygen Delivery Potency of Blood Products | BHOC",
@@ -140,7 +340,20 @@
     "keywords": "oxygen delivery potency, L-TOF, stored red blood cells, fresh blood, hemoglobin oxygen carriers, oxygen transport, blood products, BHOC science",
     "url": "https://archiljali.github.io/BHOC-platform/science/oxygen-delivery-potency.html",
     "type": "article",
-    "breadcrumbs": [["Home", "/"], ["Scientific publications", "/science/index.html"], ["Oxygen delivery potency", "/science/oxygen-delivery-potency.html"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Scientific publications",
+        "/science/index.html"
+      ],
+      [
+        "Oxygen delivery potency",
+        "/science/oxygen-delivery-potency.html"
+      ]
+    ]
   },
   "historical-sources/index.html": {
     "title": "BHOC Historical Sources | Biopure, Hemopure & Oxyglobin",
@@ -148,7 +361,16 @@
     "keywords": "HBOC history, Biopure history, Hemopure history, Oxyglobin history, hemoglobin oxygen carrier history, oxygen therapeutics history, primary documents",
     "url": "https://archiljali.github.io/BHOC-platform/historical-sources/",
     "type": "website",
-    "breadcrumbs": [["Home", "/"], ["Historical sources", "/historical-sources/"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Historical sources",
+        "/historical-sources/"
+      ]
+    ]
   },
   "historical-sources/biopure-standing-on-the-shoulders-of-giants/index.html": {
     "title": "Biopure History & Early Oxygen Therapeutics | BHOC",
@@ -156,14 +378,57 @@
     "keywords": "Biopure history, Carl W. Rausch, Hemopure history, Oxyglobin history, HBOC history, oxygen therapeutics history, biologics manufacturing",
     "url": "https://archiljali.github.io/BHOC-platform/historical-sources/biopure-standing-on-the-shoulders-of-giants/",
     "type": "article",
-    "breadcrumbs": [["Home", "/"], ["Historical sources", "/historical-sources/"], ["Biopure history", "/historical-sources/biopure-standing-on-the-shoulders-of-giants/"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Historical sources",
+        "/historical-sources/"
+      ],
+      [
+        "Biopure history",
+        "/historical-sources/biopure-standing-on-the-shoulders-of-giants/"
+      ]
+    ]
   },
   "social-media/linkedin/index.html": {
     "title": "BHOC LinkedIn Publications | Oxygen Delivery & Transfusion",
-    "description": "Browse LinkedIn articles and discussions by Archil Jaliashvili on BHOC, oxygen delivery, blood transfusion, emergency care, transplantation and veterinary medicine.",
-    "keywords": "BHOC LinkedIn publications, Archil Jaliashvili, oxygen delivery, blood transfusion, emergency medicine, transplantation, veterinary medicine, Precision Oxygenation Therapeutics",
+    "description": "Browse BHOC LinkedIn publications on oxygen delivery, hemoglobin physiology, nitric oxide, microcirculation, transfusion, emergency care, transplantation and veterinary medicine.",
+    "keywords": "BHOC LinkedIn publications, Archil Jaliashvili, BHOC, Biological Hemoglobin Oxygen Carrier, hemoglobin beta Cys93, βCys93, nitric oxide, S-nitrosohemoglobin, hypoxic vasodilation, microcirculation, tissue oxygenation, NO scavenging, HBOC, oxygen delivery, blood transfusion, emergency medicine, transplantation, veterinary medicine, Precision Oxygenation Therapeutics",
     "url": "https://archiljali.github.io/BHOC-platform/social-media/linkedin/",
     "type": "website",
-    "breadcrumbs": [["Home", "/"], ["LinkedIn publications", "/social-media/linkedin/"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "LinkedIn publications",
+        "/social-media/linkedin/"
+      ]
+    ]
+  },
+  "social-media/linkedin/hemoglobin-beta-cys93-nitric-oxide-tissue-oxygenation.html": {
+    "title": "Hemoglobin βCys93, Nitric Oxide & Tissue Oxygenation | BHOC",
+    "description": "BHOC scientific context for the PNAS βCys93 study linking hemoglobin NO bioactivity, hypoxic vasodilation, microcirculatory blood flow and tissue oxygenation.",
+    "keywords": "hemoglobin βCys93, beta Cys93, nitric oxide hemoglobin, S-nitrosohemoglobin, SNO-Hb, hypoxic vasodilation, microcirculation, tissue oxygenation, hemoglobin NO interaction, NO scavenging, HBOC, BHOC, oxygen delivery",
+    "url": "https://archiljali.github.io/BHOC-platform/social-media/linkedin/hemoglobin-beta-cys93-nitric-oxide-tissue-oxygenation.html",
+    "type": "article",
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "LinkedIn publications",
+        "/social-media/linkedin/"
+      ],
+      [
+        "Hemoglobin βCys93 and NO",
+        "/social-media/linkedin/hemoglobin-beta-cys93-nitric-oxide-tissue-oxygenation.html"
+      ]
+    ]
   }
 }
