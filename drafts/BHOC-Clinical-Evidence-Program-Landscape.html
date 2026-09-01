@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DRAFT | BHOC Clinical Evidence & Program Landscape</title>
+  <meta name="description" content="Draft prototype for a BHOC clinical evidence and program landscape connecting existing evidence, real-world programs, clinical gaps and research relevance.">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="author" content="Archil Jaliashvili">
+  <link rel="icon" href="../assets/bhoc-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/evidence.css">
+  <link rel="stylesheet" href="../assets/platform-shell.css">
+  <style>
+    body{--accent:#087a76;--navy:#102f49;background:#f2f6f7}
+    .draft-ribbon{display:flex;justify-content:center;gap:12px;align-items:center;padding:8px 16px;background:#fff3d8;border-bottom:1px solid #ead59c;color:#6a4b05;font-size:11px;font-weight:750;letter-spacing:.08em;text-transform:uppercase}
+    .landscape-hero{position:relative;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:18px;padding:38px 38px 34px;margin-bottom:20px}
+    .landscape-hero:before{content:"";position:absolute;inset:0 0 auto;height:6px;background:linear-gradient(90deg,#087a76 0 24%,#aa2e3f 24% 49%,#ff6400 49% 74%,#5f6fc5 74% 100%)}
+    .landscape-hero h1{max-width:960px;font-size:clamp(34px,5vw,58px);line-height:1.03;letter-spacing:-2px;margin:10px 0 15px;font-weight:670}
+    .landscape-hero>p{max-width:930px;color:var(--muted);font-size:16px;line-height:1.65;margin:0}
+    .hero-note{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+    .status-pill{display:inline-flex;align-items:center;gap:6px;padding:7px 10px;border-radius:999px;background:var(--wash);border:1px solid var(--line);font-size:10px;font-weight:750;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+    .status-pill.live{background:#eaf5f1;color:#096b65;border-color:#cde4dc}
+    .status-pill.new{background:#fff0e6;color:#a64200;border-color:#f1d5c3}
+    .section-kicker{display:flex;justify-content:space-between;align-items:end;gap:20px;margin:30px 0 14px}
+    .section-kicker h2{margin:5px 0 0;font-size:30px;line-height:1.15;letter-spacing:-.8px}
+    .section-kicker p{max-width:560px;margin:0;color:var(--muted);font-size:12px}
+    .vertical-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .vertical-card{position:relative;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:14px;padding:21px;min-height:260px;display:flex;flex-direction:column;text-decoration:none;color:var(--ink)}
+    .vertical-card:before{content:"";position:absolute;inset:0 0 auto;height:4px;background:var(--card-accent,#087a76)}
+    .vertical-card:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(16,47,73,.08)}
+    .vertical-card .index{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--soft);font-size:10px;font-weight:800;color:var(--card-accent,#087a76)}
+    .vertical-card h3{font-size:20px;line-height:1.2;margin:13px 0 7px;letter-spacing:-.35px}
+    .vertical-card p{font-size:12px;line-height:1.55;color:var(--muted);margin:0 0 14px}
+    .card-meta{margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:7px}
+    .card-meta span{border-top:1px solid var(--line);padding-top:8px;font-size:10px;color:var(--muted)}
+    .card-meta strong{display:block;color:var(--ink);font-size:12px;margin-top:2px}
+    .prehospital{--card-accent:#087a76}.sickle{--card-accent:#aa2e3f}.pph{--card-accent:#d45b28}.dfu{--card-accent:#5f6fc5}.oncology{--card-accent:#7b4a8b}.transplant{--card-accent:#9a3342}
+    .prototype-note{margin:16px 0 26px;padding:14px 17px;background:#fff;border:1px dashed #afc3cb;border-radius:10px;color:var(--muted);font-size:11.5px}
+    .feature-shell{background:#102f49;color:#fff;border-radius:18px;padding:34px;margin:34px 0 22px}
+    .feature-shell .eyebrow{color:#8fd4cd}
+    .feature-shell h2{font-size:clamp(30px,4vw,44px);line-height:1.08;margin:8px 0 12px;letter-spacing:-1.2px}
+    .feature-shell>p{max-width:900px;color:#dbe8ed;margin:0;font-size:14px}
+    .feature-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+    .feature-tabs span{padding:7px 10px;border:1px solid #3f6273;border-radius:999px;font-size:10px;color:#dce8ec}
+    .two-col{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(290px,.8fr);gap:18px;margin:18px 0}
+    .content-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px}
+    .content-card h3{margin:7px 0 11px;font-size:23px;line-height:1.2;letter-spacing:-.45px}
+    .content-card p,.content-card li{color:var(--muted);font-size:12.5px;line-height:1.7}
+    .content-card ul{margin:12px 0 0;padding-left:18px}
+    .gap-card{background:#e9f4f1;border-color:#c9dfd9}
+    .gap-card blockquote{margin:16px 0 0;padding:16px 18px;border-left:3px solid #087a76;background:#fff;color:#183c4b;font-size:14px;line-height:1.6}
+    .program-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:15px}
+    .program-box{border:1px solid var(--line);border-radius:10px;padding:15px;background:var(--wash)}
+    .program-box small{display:block;color:var(--teal);font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px;font-size:9px}
+    .program-box strong{display:block;font-size:13px;line-height:1.3}
+    .program-box p{font-size:10.5px;line-height:1.45;margin:6px 0 0}
+    .evidence-list{display:grid;gap:9px;margin-top:14px}
+    .evidence-link{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;padding:13px 0;border-top:1px solid var(--line);text-decoration:none;color:var(--ink)}
+    .evidence-link:first-child{border-top:0}
+    .evidence-link .e-icon{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--soft);color:var(--teal);font-size:9px;font-weight:800}
+    .evidence-link strong{display:block;font-size:12.5px;line-height:1.35}
+    .evidence-link small{display:block;color:var(--muted);font-size:10.5px;margin-top:2px}
+    .evidence-link>span:last-child{font-size:11px;color:var(--teal);font-weight:750}
+    .case-flow{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));align-items:stretch;gap:8px;margin-top:16px}
+    .case-step{position:relative;padding:14px 10px;background:#fff;border:1px solid var(--line);border-radius:10px;text-align:center;min-height:105px;display:flex;flex-direction:column;justify-content:center}
+    .case-step small{font-size:8.5px;color:var(--teal);text-transform:uppercase;letter-spacing:.08em;font-weight:800}
+    .case-step strong{font-size:11px;line-height:1.35;margin-top:5px}
+    .case-step:not(:last-child):after{content:"→";position:absolute;right:-10px;top:43%;z-index:2;color:#7d919a;font-weight:800}
+    .intervention{background:#102f49;color:#fff;border-color:#102f49}
+    .intervention small{color:#8fd4cd}
+    .framework{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;margin:18px 0 30px}
+    .framework div{padding:16px 12px;background:#fff;border:1px solid var(--line);border-radius:10px}
+    .framework small{display:block;color:var(--teal);font-size:9px;font-weight:800;letter-spacing:.08em}
+    .framework strong{display:block;margin-top:6px;font-size:11px;line-height:1.35}
+    .footer-draft{color:#8a5a00;font-weight:750}
+    @media(max-width:1000px){.vertical-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.program-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.case-flow,.framework{grid-template-columns:1fr 1fr}.case-step:not(:last-child):after{display:none}}
+    @media(max-width:760px){.landscape-hero{padding:30px 22px}.two-col,.vertical-grid{grid-template-columns:1fr}.program-grid{grid-template-columns:1fr 1fr}.case-flow,.framework{grid-template-columns:1fr}.section-kicker{align-items:flex-start;flex-direction:column}.content-card,.feature-shell{padding:22px}}
+    @media(max-width:480px){.program-grid{grid-template-columns:1fr}.card-meta{grid-template-columns:1fr}}
+  </style>
+</head>
+<body class="theme-main">
+  <div class="draft-ribbon">Prototype only · Noindex · Not linked from navigation or sitemap</div>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="brand" href="../index.html">BHOC<span>Evidence &amp; Science</span></a>
+      <div class="nav-links">
+        <a href="../veterinary/Vet-index.html">Veterinary</a>
+        <a href="../transplant/Transplant-index.html">Transplantation</a>
+        <a href="../human/BHOC-Human-index.html">Human Use</a>
+        <a href="../social-media/linkedin/">LinkedIn Publications</a>
+        <a href="../science/">Science</a>
+        <a href="../historical-sources/">History</a>
+        <a class="nav-corporate" href="https://bhoctherapeutics.com/" target="_blank" rel="noopener">BHOC Therapeutics ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="shell">
+    <section class="landscape-hero">
+      <div class="eyebrow">Clinical intelligence layer · prototype</div>
+      <h1>Where oxygen-delivery science meets clinical need.</h1>
+      <p>A proposed layer above the existing BHOC evidence library: organize published evidence by clinical problem, map what is being implemented in the real world, identify the unresolved gap, and explain why the question matters for future oxygen-delivery research.</p>
+      <div class="hero-note">
+        <span class="status-pill live">Existing evidence stays in place</span>
+        <span class="status-pill">No duplicate library</span>
+        <span class="status-pill new">Programs + case studies added</span>
+        <span class="status-pill">Living updates by direction</span>
+      </div>
+    </section>
+
+    <div class="section-kicker">
+      <div><div class="eyebrow">Clinical verticals</div><h2>One platform. Different oxygen-critical problems.</h2></div>
+      <p>Each direction links back to the existing source library, then adds program intelligence, clinical context and a defined research question.</p>
+    </div>
+
+    <section class="vertical-grid" aria-label="Proposed clinical directions">
+      <article class="vertical-card prehospital">
+        <span class="index">EMS</span>
+        <h3>Prehospital, EMS &amp; Hemorrhage</h3>
+        <p>Time-critical resuscitation before definitive hospital care, where blood availability, transport time and logistics can shape oxygen-delivery options.</p>
+        <div class="card-meta"><span>Related evidence<strong>37 current emergency records</strong></span><span>New layer<strong>Program map + case study</strong></span></div>
+      </article>
+      <article class="vertical-card sickle">
+        <span class="index">SCD</span>
+        <h3>Sickle Cell &amp; Severe Anemia</h3>
+        <p>Microvascular obstruction, anemia and tissue hypoxia viewed through the interaction between oxygen delivery, hemoglobin biology and existing care pathways.</p>
+        <div class="card-meta"><span>Related evidence<strong>49 hematology records</strong></span><span>Core question<strong>Hypoxia in vaso-occlusion</strong></span></div>
+      </article>
+      <article class="vertical-card pph">
+        <span class="index">PPH</span>
+        <h3>Postpartum Hemorrhage</h3>
+        <p>Maternal hemorrhage as an oxygen-delivery and blood-access problem spanning rapid blood loss, transfusion logistics and resource-limited care.</p>
+        <div class="card-meta"><span>Evidence source<strong>Emergency + surgery sets</strong></span><span>New layer<strong>Maternal program map</strong></span></div>
+      </article>
+      <article class="vertical-card dfu">
+        <span class="index">DFU</span>
+        <h3>Diabetic Foot &amp; Limb Ischemia</h3>
+        <p>Microvascular dysfunction, impaired perfusion and tissue hypoxia considered alongside revascularization, wound care and oxygen-based strategies.</p>
+        <div class="card-meta"><span>Status<strong>New evidence mapping</strong></span><span>Core question<strong>Tissue-level oxygen access</strong></span></div>
+      </article>
+      <article class="vertical-card oncology">
+        <span class="index">O₂</span>
+        <h3>Tumor Hypoxia &amp; Oxygenation</h3>
+        <p>Hypoxia, HIF biology, treatment resistance and tumor oxygenation presented as a research landscape rather than a therapeutic claim.</p>
+        <div class="card-meta"><span>Direct catalogue<strong>1 oncology record</strong></span><span>Broader base<strong>Hypoxia + metabolism science</strong></span></div>
+      </article>
+      <article class="vertical-card transplant">
+        <span class="index">Tx</span>
+        <h3>Transplantation &amp; Organ Perfusion</h3>
+        <p>An existing mature evidence hub showing how the same model can connect literature, organ-specific questions and oxygenated perfusion.</p>
+        <div class="card-meta"><span>Existing hub<strong>53 source-linked records</strong></span><span>Role<strong>Reference architecture</strong></span></div>
+      </article>
+    </section>
+
+    <div class="prototype-note"><strong>Important:</strong> numbers above are deliberately described as related catalogue records, not disease-specific efficacy evidence. PPH and diabetic-foot counts should only be assigned after dedicated tagging of the existing database.</div>
+
+    <section class="feature-shell">
+      <div class="eyebrow">Example direction / Prehospital &amp; EMS</div>
+      <h2>From “blood before hospital” to an oxygen-delivery systems question.</h2>
+      <p>This is how one clinical vertical could look when fully developed. The page does not replace the existing Human Use or Science libraries; it explains why selected evidence matters in a specific real-world setting.</p>
+      <div class="feature-tabs"><span>Clinical problem</span><span>Why it matters</span><span>Current programs</span><span>Existing evidence</span><span>Unresolved gap</span><span>BHOC relevance</span><span>Case study</span></div>
+    </section>
+
+    <div class="two-col">
+      <section class="content-card">
+        <div class="eyebrow">01 / Why this matters</div>
+        <h3>The treatment clock starts before the hospital.</h3>
+        <p>Severe hemorrhage creates a period in which circulating volume, oxygen-carrying capacity, perfusion and transport time interact. The prehospital question is therefore not only whether transfusion is clinically valuable, but how oxygen-carrying support can be delivered safely across very different EMS environments.</p>
+        <ul>
+          <li>Distance and time to definitive care</li>
+          <li>Blood storage, inventory and wastage constraints</li>
+          <li>Compatibility and operational requirements</li>
+          <li>Ground EMS, air medical, military and rural differences</li>
+          <li>Need for evidence-linked endpoints beyond a single hemoglobin value</li>
+        </ul>
+      </section>
+      <aside class="content-card gap-card">
+        <div class="eyebrow">Research question</div>
+        <h3>The unresolved gap</h3>
+        <p>The growth of prehospital blood programs demonstrates how important early oxygen-carrying support can be. It also makes the infrastructure requirement visible.</p>
+        <blockquote>Where could an oxygen-delivery therapeutic complement donor blood when blood is unavailable, delayed or operationally difficult to deploy?</blockquote>
+      </aside>
+    </div>
+
+    <section class="content-card">
+      <div class="eyebrow">02 / Program landscape</div>
+      <h3>Track what is actually being implemented.</h3>
+      <p>Instead of a static list of articles, each clinical vertical would maintain a dated, source-linked map of programs, guidance, reimbursement changes, pilots and operational models.</p>
+      <div class="program-grid">
+        <div class="program-box"><small>Ground EMS</small><strong>Blood-on-ambulance programs</strong><p>Program name · geography · blood product · start/status · source · last checked.</p></div>
+        <div class="program-box"><small>Air medical</small><strong>Helicopter / critical care transport</strong><p>Operational model, storage approach, transfusion protocol and evidence source.</p></div>
+        <div class="program-box"><small>Military</small><strong>Battlefield resuscitation</strong><p>Doctrine, product logistics, research programs and relevant publications.</p></div>
+        <div class="program-box"><small>Access gap</small><strong>Rural / humanitarian systems</strong><p>Where blood infrastructure is limited and transport-to-care intervals are prolonged.</p></div>
+      </div>
+    </section>
+
+    <div class="two-col">
+      <section class="content-card">
+        <div class="eyebrow">03 / Evidence already in BHOC-platform</div>
+        <h3>Reuse the library. Do not duplicate it.</h3>
+        <p>The clinical page becomes an intelligent index into the evidence already collected.</p>
+        <div class="evidence-list">
+          <a class="evidence-link" href="../human/BHOC-Human-search.html?direction=Trauma%2C%20Hemorrhage%20%26%20Emergency%20Care"><span class="e-icon">ER</span><span><strong>Trauma, hemorrhage &amp; emergency care</strong><small>37 related records in the current Human Use catalogue</small></span><span>Open ↗</span></a>
+          <a class="evidence-link" href="../science/oxygen-delivery-potency.html"><span class="e-icon">O₂</span><span><strong>Oxygen delivery and functional potency</strong><small>Physiology layer: carrying capacity, flow and tissue delivery</small></span><span>Open ↗</span></a>
+          <a class="evidence-link" href="../science/nitric-oxide-scavenging-hboc-vasoconstriction.html"><span class="e-icon">NO</span><span><strong>NO scavenging, vasoconstriction &amp; tissue oxygenation</strong><small>Why vascular response must be assessed together with oxygen transport</small></span><span>Open ↗</span></a>
+        </div>
+      </section>
+      <aside class="content-card">
+        <div class="eyebrow">04 / BHOC research relevance</div>
+        <h3>Explain relevance without overclaiming.</h3>
+        <p>A short evidence-disciplined section would connect the clinical gap with properties relevant to oxygen-delivery research, while explicitly avoiding a universal “blood replacement” claim.</p>
+        <ul>
+          <li>Rapidly deployable oxygen-carrying support as a research objective</li>
+          <li>Compatibility and storage as operational design questions</li>
+          <li>Microcirculation and tissue oxygenation as functional endpoints</li>
+          <li>Potential complementarity with whole blood / RBC pathways</li>
+          <li>Product-specific safety and vascular physiology remain essential</li>
+        </ul>
+      </aside>
+    </div>
+
+    <section class="content-card">
+      <div class="eyebrow">05 / Case-study view</div>
+      <h3>Show the exact point where the clinical gap appears.</h3>
+      <p>A simple visual pathway makes the application logic understandable to clinicians, partners and non-specialists without turning the page into marketing.</p>
+      <div class="case-flow" aria-label="Prehospital case study flow">
+        <div class="case-step"><small>01</small><strong>Severe injury / hemorrhage</strong></div>
+        <div class="case-step"><small>02</small><strong>Reduced circulating O₂ capacity</strong></div>
+        <div class="case-step"><small>03</small><strong>Transport interval</strong></div>
+        <div class="case-step"><small>04</small><strong>Blood availability decision</strong></div>
+        <div class="case-step intervention"><small>Research point</small><strong>Complementary oxygen-delivery option?</strong></div>
+        <div class="case-step"><small>06</small><strong>Hospital / definitive control</strong></div>
+        <div class="case-step"><small>07</small><strong>Outcome + tissue endpoints</strong></div>
+      </div>
+    </section>
+
+    <div class="section-kicker">
+      <div><div class="eyebrow">Reusable template</div><h2>The same logic for every direction.</h2></div>
+      <p>SCD, PPH, diabetic foot and tumor hypoxia can use the same architecture while keeping their clinical questions and evidence boundaries distinct.</p>
+    </div>
+    <section class="framework" aria-label="Reusable clinical vertical framework">
+      <div><small>01</small><strong>Clinical problem</strong></div>
+      <div><small>02</small><strong>Why it matters</strong></div>
+      <div><small>03</small><strong>Programs &amp; activity</strong></div>
+      <div><small>04</small><strong>Existing evidence</strong></div>
+      <div><small>05</small><strong>Unresolved gap</strong></div>
+      <div><small>06</small><strong>BHOC relevance</strong></div>
+      <div><small>07</small><strong>Case study / endpoints</strong></div>
+    </section>
+
+    <p class="notice">Prototype architecture only. Scientific and educational information; not clinical advice. Clinical evidence, program status and regulatory claims should remain source-linked, jurisdiction-specific and date-stamped. BHOC relevance should be framed as a research or development question unless supported by product-specific clinical evidence.</p>
+  </main>
+
+  <footer class="site-footer">
+    <span>BHOC · Biological Hemoglobin Oxygen Carrier<br><span class="footer-draft">Draft prototype · not indexed</span></span>
+    <span><a href="../index.html">Platform home</a> · <a href="https://github.com/ArchilJali/BHOC-platform">GitHub</a></span>
+    <p class="platform-version">Prototype created 01 Sep 2026 · Not part of live navigation</p>
+  </footer>
+</body>
+</html>
