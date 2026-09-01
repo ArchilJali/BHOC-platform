@@ -1,10 +1,10 @@
 ---
-title: Scientific Publications — BHOC
+title: Scientific Evidence Relevant to BHOC and Oxygen Therapeutics
 ---
 
-# 🔬 Scientific Publications
+# 🔬 Scientific Evidence Relevant to BHOC and Oxygen Therapeutics
 
-> Collection of peer-reviewed articles and scientific references supporting BHOC (Biological Hemoglobin Oxygen Carrier) technology.
+> Collection of peer-reviewed articles and scientific references relevant to BHOC (Biological Hemoglobin Oxygen Carrier), HBOC research, oxygen-delivery physiology and Precision Oxygen Therapeutics.
 
 ---
 
