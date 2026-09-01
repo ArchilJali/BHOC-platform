@@ -10,6 +10,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: platform-version-stamp
+  cancel-in-progress: false
+
 jobs:
   stamp:
     if: ${{ !contains(github.event.head_commit.message || '', '[version-stamp]') }}
@@ -20,43 +24,68 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Update visible version metadata
+
+      - name: Update live platform status
         shell: bash
         run: |
+          git pull --rebase origin main
           VERSION="$(TZ=Asia/Tbilisi date +'%y.%m.%d')"
           UPDATED="$(TZ=Asia/Tbilisi date +'%d %b %Y')"
           ISO="$(TZ=Asia/Tbilisi date +'%Y-%m-%d')"
           python3 - "$VERSION" "$UPDATED" "$ISO" <<'PY'
           from pathlib import Path
           import json, re, sys
+
           version, updated, iso = sys.argv[1:]
-          Path('version.json').write_text(json.dumps({
+          version_file = Path('version.json')
+
+          if version_file.exists():
+              try:
+                  current = json.loads(version_file.read_text(encoding='utf-8'))
+              except Exception:
+                  current = {}
+          else:
+              current = {}
+
+          first_published = current.get('first_published', '20 Aug 2026')
+          first_published_iso = current.get('first_published_iso', '2026-08-20')
+          updates = int(current.get('updates', 14)) + 1
+
+          version_file.write_text(json.dumps({
               'version': version,
+              'first_published': first_published,
+              'first_published_iso': first_published_iso,
+              'updates': updates,
               'updated': updated,
               'updated_iso': iso,
               'timezone': 'Asia/Tbilisi'
           }, indent=2) + '\n', encoding='utf-8')
-          marker = f'<p class="platform-version" data-platform-version>Updated {updated} · Version {version}</p>'
-          targets = [Path('index.html'), Path('veterinary/Vet-index.html'), Path('transplant/Transplant-index.html'), Path('human/BHOC-Human-index.html')]
-          for p in targets:
-              if not p.exists():
+
+          marker = (
+              f'<p class="platform-version" data-platform-version>'
+              f'First published {first_published} · {updates} updates · '
+              f'Last updated {updated} · Version {version}</p>'
+          )
+
+          pattern = r'<p class="platform-version" data-platform-version>.*?</p>'
+          for p in Path('.').rglob('*.html'):
+              if '.git' in p.parts:
                   continue
               s = p.read_text(encoding='utf-8')
-              s2, n = re.subn(r'<p class="platform-version" data-platform-version>.*?</p>', marker, s, flags=re.S)
-              if not n:
-                  if '</footer>' in s2:
-                      s2 = s2.replace('</footer>', marker + '</footer>', 1)
-                  elif '</body>' in s2:
-                      s2 = s2.replace('</body>', marker + '</body>', 1)
-              p.write_text(s2, encoding='utf-8')
+              if 'data-platform-version' not in s:
+                  continue
+              s2 = re.sub(pattern, marker, s, flags=re.S)
+              if s2 != s:
+                  p.write_text(s2, encoding='utf-8')
           PY
-      - name: Commit stamp
+
+      - name: Commit live status
         shell: bash
         run: |
           git config user.name "BHOC Platform Automation"
           git config user.email "actions@users.noreply.github.com"
-          git add version.json index.html veterinary/Vet-index.html transplant/Transplant-index.html human/BHOC-Human-index.html
+          git add -u
           if git diff --cached --quiet; then exit 0; fi
           VERSION="$(TZ=Asia/Tbilisi date +'%y.%m.%d')"
-          git commit -m "Update platform stamp to ${VERSION} [version-stamp]"
+          git commit -m "Update live platform status to ${VERSION} [version-stamp]"
           git push
