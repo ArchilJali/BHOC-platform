@@ -16,6 +16,11 @@ This folder contains all LinkedIn publications from BHOC-platform.
 
 
 
+
+- [Hemoglobin βCys93, nitric oxide signaling and tissue oxygen delivery](https://www.linkedin.com/posts/bhoc-therapeutics_hemoglobin-%CE%B2cys93-is-essential-for-cardiovascular-activity-7436875803931566080-yQDt?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEQr9jgBTdhh4g1EK3Oh0sejDsmLfy_HLHk)
+- *BHOC discussion of the 2015 PNAS study on the conserved hemoglobin βCys93 residue, S-nitrosothiol/NO bioactivity, hypoxic vasodilation and tissue oxygenation. The study showed that disrupting βCys93 in mice impaired blood-flow autoregulation and tissue oxygenation despite preserved hemoglobin oxygen-carrying capacity. The BHOC relevance is the broader physiology: effective oxygen delivery depends on oxygen carriage, vascular signaling and microcirculatory flow, while NO interactions of cell-free hemoglobin oxygen carriers require technology-specific evaluation.*
+- [Indexed BHOC summary](./hemoglobin-beta-cys93-nitric-oxide-tissue-oxygenation.html)
+
 ---
 
 **[⬅ Back to project homepage](../../README.md)**
