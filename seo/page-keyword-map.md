@@ -37,6 +37,7 @@ Use naturally where relevant, not as a repeated block:
 | `/human/BHOC-Human-fda-expanded-access.html` | HBOC-201 FDA expanded access | emergency IND; single-patient IND; NCT01881503; severe anemia; regulatory evidence |
 | `/science/` | BHOC scientific publications | oxygen carrier evidence; oxygen delivery research; hemoglobin physiology; transfusion research |
 | `/science/oxygen-delivery-potency.html` | oxygen delivery potency of blood products | L-TOF; fresh blood; stored red blood cells; hemoglobin oxygen carriers; oxygen transport |
+| `/science/sepsis-microcirculation-tissue-oxygenation-bhoc.html` | tissue oxygenation and microcirculation in severe inflammation | BHOC; HBOC; Biological Hemoglobin Oxygen Carrier; Precision Oxygenation Therapeutics; sepsis; endothelial dysfunction; nitric oxide; oxygen delivery; HBOC-201; Hemopure; Oxyglobin; Biopure |
 | `/historical-sources/` | HBOC historical sources | Biopure; Hemopure history; Oxyglobin history; primary documents; oxygen therapeutics history |
 | `/historical-sources/biopure-standing-on-the-shoulders-of-giants/` | Biopure history | Carl W. Rausch; HBOC history; biologics manufacturing; institutional history |
 | `/social-media/linkedin/` | BHOC LinkedIn publications | Archil Jaliashvili; oxygen delivery; transfusion; emergency medicine; transplantation; veterinary medicine |
