@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DRAFT | PPH Humanitarian Problem | BHOC Clinical Landscape</title>
+  <meta name="description" content="Draft humanitarian evidence page on postpartum haemorrhage, maternal mortality, newborn burden, blood access and oxygen-delivery research relevance.">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="author" content="Archil Jaliashvili">
+  <link rel="icon" href="../assets/bhoc-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/evidence.css">
+  <link rel="stylesheet" href="../assets/platform-shell.css">
+  <style>
+    body{--navy:#102f49;--teal:#8f3347;background:#f6f3f4}
+    .draft-ribbon{display:flex;justify-content:center;padding:8px 16px;background:#fff3d8;border-bottom:1px solid #ead59c;color:#6a4b05;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .impact-hero{position:relative;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:18px;padding:40px 38px 34px;margin-bottom:18px}
+    .impact-hero:before{content:"";position:absolute;inset:0 0 auto;height:6px;background:linear-gradient(90deg,#8f3347,#c64d00)}
+    .impact-hero h1{font-size:clamp(38px,5.5vw,64px);line-height:.98;letter-spacing:-2.3px;max-width:950px;margin:12px 0 16px}
+    .impact-hero>p{max-width:920px;color:var(--muted);font-size:16px;line-height:1.65}
+    .hero-tag{display:inline-flex;padding:7px 10px;border-radius:999px;background:#f8e9eb;color:#8f3347;border:1px solid #ead4da;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .impact-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:24px}
+    .impact-stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px}
+    .impact-stat strong{display:block;font-size:34px;line-height:1;letter-spacing:-1px}
+    .impact-stat span{display:block;font-size:12px;font-weight:750;margin-top:8px}
+    .impact-stat small{display:block;color:var(--muted);font-size:10.5px;line-height:1.45;margin-top:6px}
+    .impact-stat.primary{background:#542633;color:#fff;border-color:#542633}
+    .impact-stat.primary small{color:#f1dfe4}
+    .section{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px;margin:18px 0}
+    .section h2{font-size:29px;line-height:1.15;letter-spacing:-.7px;margin:8px 0 12px}
+    .section p,.section li{color:var(--muted);font-size:13px;line-height:1.7}
+    .eyebrow{color:#8f3347}
+    .two-col{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(300px,.8fr);gap:18px}
+    .dark{background:#542633;color:#fff;border-color:#542633}
+    .dark .eyebrow{color:#efb6c2}.dark h2{color:#fff}.dark p,.dark li{color:#f4e6e9}
+    .question{padding:18px;border-left:4px solid #c64d00;background:#fff8f4;color:#5e3424;font-size:16px;line-height:1.55;margin-top:18px}
+    .logic-flow{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin-top:18px}
+    .logic-step{position:relative;text-align:center;padding:15px 10px;background:#f7f4f5;border:1px solid var(--line);border-radius:10px;min-height:110px;display:flex;flex-direction:column;justify-content:center}
+    .logic-step small{font-size:8px;color:#8f3347;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .logic-step strong{font-size:11px;line-height:1.35;margin-top:5px}
+    .logic-step.emphasis{background:#542633;color:#fff;border-color:#542633}
+    .logic-step.emphasis small{color:#efb6c2}
+    .source-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:16px}
+    .source-card{display:flex;flex-direction:column;padding:16px;border:1px solid var(--line);border-radius:10px;background:#faf8f9;text-decoration:none;color:var(--ink)}
+    .source-card small{font-size:9px;color:#8f3347;text-transform:uppercase;font-weight:800;letter-spacing:.08em}
+    .source-card strong{font-size:12px;line-height:1.35;margin-top:5px}
+    .source-card span{font-size:10.5px;color:var(--muted);margin-top:6px}
+    .evidence-links{display:grid;gap:9px;margin-top:14px}
+    .evidence-links a{display:flex;justify-content:space-between;gap:15px;border-top:1px solid var(--line);padding:13px 0;text-decoration:none;font-size:12px;font-weight:700}
+    .notice{font-size:11.5px}
+    @media(max-width:900px){.impact-grid{grid-template-columns:repeat(2,1fr)}.two-col{grid-template-columns:1fr}.source-grid{grid-template-columns:1fr 1fr}.logic-flow{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){.impact-grid,.source-grid,.logic-flow{grid-template-columns:1fr}.impact-hero{padding:30px 20px}.section{padding:22px}}
+  </style>
+</head>
+<body class="theme-main">
+  <div class="draft-ribbon">Draft prototype · noindex · not linked from menu or sitemap</div>
+  <header class="site-header"><nav class="site-nav"><a class="brand" href="../index.html">BHOC<span>Evidence &amp; Science</span></a><div class="nav-links"><a href="../human/BHOC-Human-index.html">Human Use</a><a href="../science/">Science</a><a href="https://bhoctherapeutics.com/" target="_blank" rel="noopener" class="nav-corporate">BHOC Therapeutics ↗</a></div></nav></header>
+  <main class="shell">
+    <section class="impact-hero">
+      <span class="hero-tag">PPH · Humanitarian problem</span>
+      <h1>One maternal death about every three minutes in sub-Saharan Africa.</h1>
+      <p>Postpartum haemorrhage is not only an obstetric emergency. In many settings it becomes a systems problem: rapid blood loss, delayed recognition, limited transfusion infrastructure, distance to definitive care and a shrinking window in which tissue oxygen delivery can be preserved.</p>
+      <div class="impact-grid">
+        <div class="impact-stat primary"><strong>182,000</strong><span>maternal deaths</span><small>Sub-Saharan Africa, 2023 — around 70% of the global maternal mortality burden.</small></div>
+        <div class="impact-stat"><strong>≈500/day</strong><span>women lost</span><small>Derived from the 182,000 annual estimate — about one maternal death every 2.9 minutes.</small></div>
+        <div class="impact-stat"><strong>1 million</strong><span>newborn deaths / year</span><small>WHO African Region estimate; many maternal and newborn deaths remain preventable.</small></div>
+        <div class="impact-stat"><strong>PPH</strong><span>leading emergency</span><small>WHO, FIGO and ICM continue to identify postpartum haemorrhage as a major cause of preventable maternal death.</small></div>
+      </div>
+    </section>
+
+    <div class="two-col">
+      <section class="section">
+        <div class="eyebrow">01 / The humanitarian reality</div>
+        <h2>The problem is not lack of knowledge alone. It is speed, access and implementation.</h2>
+        <p>Modern obstetric care has effective tools for prevention, diagnosis and treatment of postpartum haemorrhage. Yet outcomes remain sharply unequal. In conflict-affected, rural and resource-limited settings, the time between blood loss and definitive treatment may be prolonged while blood products, surgery, transport, laboratory support or trained teams are not immediately available.</p>
+        <div class="question"><strong>The question:</strong> how do we preserve oxygen delivery during the interval between catastrophic blood loss and definitive haemorrhage control?</div>
+      </section>
+      <section class="section dark">
+        <div class="eyebrow">Why oxygen delivery enters the discussion</div>
+        <h2>Bleeding is visible. Tissue hypoxia is the downstream threat.</h2>
+        <p>PPH management must stop the bleeding first. But severe blood loss can also reduce circulating oxygen-carrying capacity and perfusion. That makes oxygen delivery a physiological endpoint worth tracking alongside haemorrhage control, transfusion and resuscitation.</p>
+        <ul><li>Haemorrhage control remains primary.</li><li>Transfusion and blood components remain standard when indicated and available.</li><li>Any future oxygen-delivery therapeutic would need product-specific evidence and should be evaluated as a complement, not a universal blood replacement.</li></ul>
+      </section>
+    </div>
+
+    <section class="section">
+      <div class="eyebrow">02 / From event to risk</div>
+      <h2>Where the treatment gap appears.</h2>
+      <div class="logic-flow">
+        <div class="logic-step"><small>01</small><strong>Childbirth</strong></div>
+        <div class="logic-step"><small>02</small><strong>Severe postpartum bleeding</strong></div>
+        <div class="logic-step"><small>03</small><strong>Rapid loss of volume & oxygen-carrying capacity</strong></div>
+        <div class="logic-step"><small>04</small><strong>Delay / limited blood / transport constraints</strong></div>
+        <div class="logic-step emphasis"><small>Critical interval</small><strong>Falling tissue oxygen delivery</strong></div>
+        <div class="logic-step"><small>06</small><strong>Definitive control + transfusion / surgery</strong></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="eyebrow">03 / What the world is doing now</div>
+      <h2>Existing programs first. Innovation second.</h2>
+      <p>This page should track the solutions already being deployed — faster diagnosis, uterotonics, tranexamic acid, bundled treatment protocols, transfusion capacity, blood-bank strengthening, transport systems and maternal emergency programs — before asking where a new oxygen-delivery technology might eventually fit.</p>
+      <div class="source-grid">
+        <a class="source-card" href="https://www.who.int/publications/i/item/9789240115637" target="_blank" rel="noopener"><small>WHO · FIGO · ICM · 2025</small><strong>Consolidated PPH guidelines</strong><span>Prevention, earlier diagnosis and rapid treatment.</span></a>
+        <a class="source-card" href="https://www.who.int/news/item/05-10-2025-global-health-agencies-issue-new-recommendations-to-help-end-deaths-from-postpartum-haemorrhage" target="_blank" rel="noopener"><small>Global recommendations</small><strong>End deaths from postpartum haemorrhage</strong><span>Current global implementation framing.</span></a>
+        <a class="source-card" href="https://www.who.int/news/item/11-10-2023-who-issues-global-plan-to-tackle-leading-cause-of-death-in-childbirth" target="_blank" rel="noopener"><small>WHO roadmap</small><strong>PPH 2023–2030</strong><span>Global roadmap and implementation priorities.</span></a>
+      </div>
+    </section>
+
+    <div class="two-col">
+      <section class="section">
+        <div class="eyebrow">04 / Evidence already in BHOC-platform</div>
+        <h2>Use the existing database, not a second bibliography.</h2>
+        <div class="evidence-links">
+          <a href="../human/BHOC-Human-search.html?direction=Trauma%2C%20Hemorrhage%20%26%20Emergency%20Care"><span>Trauma, hemorrhage & emergency-care evidence</span><span>Open →</span></a>
+          <a href="../human/BHOC-Human-search.html?direction=Surgery%20%26%20Perioperative%20Blood%20Management"><span>Surgery & perioperative blood-management evidence</span><span>Open →</span></a>
+          <a href="../science/oxygen-delivery-potency.html"><span>Oxygen delivery & functional potency</span><span>Open →</span></a>
+          <a href="../science/nitric-oxide-scavenging-hboc-vasoconstriction.html"><span>NO scavenging, vasoconstriction & tissue oxygenation</span><span>Open →</span></a>
+        </div>
+      </section>
+      <section class="section">
+        <div class="eyebrow">05 / BHOC research relevance</div>
+        <h2>The future question is operational as much as molecular.</h2>
+        <p>If an oxygen-delivery therapeutic can be stored, deployed and administered under conditions where donor blood is delayed or unavailable, that could create a meaningful research hypothesis for PPH and humanitarian medicine. But the page should explicitly separate <strong>clinical need</strong> from <strong>proven product benefit</strong>.</p>
+        <p><strong>Research framing:</strong> Could a validated oxygen-delivery therapeutic extend the physiologic bridge to definitive haemorrhage control in selected PPH settings?</p>
+      </section>
+    </div>
+
+    <section class="section">
+      <div class="eyebrow">Primary sources</div>
+      <div class="source-grid">
+        <a class="source-card" href="https://www.who.int/news-room/fact-sheets/detail/maternal-mortality" target="_blank" rel="noopener"><small>WHO · 2025</small><strong>Maternal mortality</strong><span>182,000 maternal deaths in sub-Saharan Africa in 2023.</span></a>
+        <a class="source-card" href="https://www.afro.who.int/news/african-regions-maternal-and-newborn-mortality-declining-progress-still-slow" target="_blank" rel="noopener"><small>WHO Africa · 2025</small><strong>Maternal & newborn mortality</strong><span>≈178,000 mothers and 1 million newborns die each year in the WHO African Region.</span></a>
+        <a class="source-card" href="https://www.who.int/publications/i/item/9789240115637" target="_blank" rel="noopener"><small>WHO · FIGO · ICM · 2025</small><strong>PPH guideline</strong><span>Current prevention, diagnosis and treatment guidance.</span></a>
+      </div>
+    </section>
+
+    <p class="notice">Draft educational page. The maternal mortality figures describe all maternal causes, not PPH alone. The approximately one-every-three-minutes figure is derived from the WHO estimate of 182,000 maternal deaths in sub-Saharan Africa in 2023. Newborn mortality is a separate WHO African Region statistic and is not presented as mortality caused by PPH. BHOC relevance is a research hypothesis, not a claim of approved treatment or demonstrated clinical benefit.</p>
+  </main>
+  <footer class="site-footer"><span>BHOC · Biological Hemoglobin Oxygen Carrier<br>Draft clinical-intelligence prototype</span><span>Created 02 Sep 2026 · Not indexed</span></footer>
+</body>
+</html>
