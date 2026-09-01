@@ -451,5 +451,26 @@
         "/science/nitric-oxide-scavenging-hboc-vasoconstriction.html"
       ]
     ]
+  },
+  "science/sepsis-microcirculation-tissue-oxygenation-bhoc.html": {
+    "title": "Tissue Oxygenation & Microcirculation | BHOC Science",
+    "description": "Scientific context for tissue oxygenation, microcirculation, sepsis and endothelial dysfunction, with relevance to BHOC, HBOC and Precision Oxygenation Therapeutics.",
+    "keywords": "BHOC, HBOC, Biological Hemoglobin Oxygen Carrier, hemoglobin-based oxygen carrier, Precision Oxygenation Therapeutics, oxygen therapeutics, tissue oxygenation, microcirculation, sepsis, septic shock, endothelial dysfunction, nitric oxide, oxygen delivery, HBOC-201, Hemopure, Oxyglobin, Biopure, next generation HBOC",
+    "url": "https://archiljali.github.io/BHOC-platform/science/sepsis-microcirculation-tissue-oxygenation-bhoc.html",
+    "type": "article",
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Scientific publications",
+        "/science/index.html"
+      ],
+      [
+        "Tissue oxygenation and microcirculation",
+        "/science/sepsis-microcirculation-tissue-oxygenation-bhoc.html"
+      ]
+    ]
   }
 }
