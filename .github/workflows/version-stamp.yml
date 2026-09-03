@@ -67,14 +67,24 @@ jobs:
               f'Last updated {updated} · Version {version}</p>'
           )
 
-          pattern = r'<p class="platform-version" data-platform-version>.*?</p>'
+          pattern = re.compile(
+              r'<p\b[^>]*\bclass\s*=\s*["\'][^"\']*\bplatform-version\b[^"\']*["\'][^>]*>.*?</p>',
+              flags=re.I | re.S
+          )
+          verification_file = 'google3023721c92b6366f.html'
+
           for p in Path('.').rglob('*.html'):
-              if '.git' in p.parts:
+              if '.git' in p.parts or p.name == verification_file:
                   continue
               s = p.read_text(encoding='utf-8')
-              if 'data-platform-version' not in s:
-                  continue
-              s2 = re.sub(pattern, marker, s, flags=re.S)
+              if pattern.search(s):
+                  s2 = pattern.sub(marker, s, count=1)
+              elif re.search(r'</footer>', s, flags=re.I):
+                  s2 = re.sub(r'</footer>', f'  {marker}\n</footer>', s, count=1, flags=re.I)
+              elif re.search(r'</body>', s, flags=re.I):
+                  s2 = re.sub(r'</body>', f'<footer class="site-footer">\n  {marker}\n</footer>\n</body>', s, count=1, flags=re.I)
+              else:
+                  s2 = s
               if s2 != s:
                   p.write_text(s2, encoding='utf-8')
           PY
