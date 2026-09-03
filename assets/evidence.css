@@ -312,6 +312,39 @@ input::placeholder{color:#687b88}
   .vet-pub-metrics{grid-template-columns:1fr 1fr}
 }
 
+
+/* Veterinary homepage: compact top routes + FDA efficacy hook. */
+.vet-route-strip-top{margin:4px 0 12px;padding:8px;background:#fff;border:1px solid var(--line);border-radius:10px}
+.vet-route-strip-top a{min-height:32px;padding:6px 9px;font-size:10.5px}
+.clinical-highlight-compact{grid-template-columns:minmax(0,1.4fr) minmax(360px,.8fr);gap:20px;align-items:center;padding:18px 22px;margin:0 0 16px}
+.clinical-highlight-compact .clinical-hook-copy h2{font-size:22px;line-height:1.1;margin:5px 0 7px}
+.clinical-highlight-compact .clinical-hook-copy h2 strong{font-size:34px;letter-spacing:-1px;color:#fff}
+.clinical-highlight-compact .clinical-hook-copy h2 span{font-size:15px;font-weight:600;color:#d9d9d9}
+.clinical-highlight-compact .clinical-hook-copy p{font-size:11.5px;line-height:1.5;margin:0}
+.clinical-stats-compact{grid-template-columns:1fr 1fr .75fr;gap:8px;margin:0}
+.clinical-stats-compact div{padding-left:10px;border-left:1px solid rgba(255,255,255,.18)}
+.clinical-stats-compact dt{font-size:8.5px;line-height:1.3}
+.clinical-stats-compact dd{font-size:22px;margin-top:3px}
+.clinical-stats-compact dd span{font-size:13px}
+.clinical-source-link{grid-column:1/-1;justify-self:end;font-size:10.5px!important;margin-top:-4px}
+@media(max-width:850px){
+  .clinical-highlight-compact{grid-template-columns:1fr;gap:10px}
+  .clinical-stats-compact{max-width:none}
+  .clinical-source-link{justify-self:start}
+}
+@media(max-width:480px){
+  .vet-route-strip-top{gap:6px}
+  .vet-route-strip-top a{flex:1 1 calc(50% - 6px);justify-content:center;text-align:center}
+  .vet-route-strip-top a.primary{flex-basis:100%}
+  .clinical-highlight-compact{padding:16px}
+  .clinical-highlight-compact .clinical-hook-copy h2{font-size:19px}
+  .clinical-highlight-compact .clinical-hook-copy h2 strong{font-size:30px}
+  .clinical-stats-compact{grid-template-columns:1fr 1fr 1fr}
+  .clinical-stats-compact div{padding-left:7px}
+  .clinical-stats-compact dd{font-size:19px}
+  .clinical-stats-compact dd span{font-size:11px}
+}
+
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
 *{transition:none!important}
 }
