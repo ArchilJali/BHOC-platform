@@ -62,3 +62,66 @@
 .science-boundary{font-size:9.5px;color:var(--muted);margin:11px 2px 0}
 @media(max-width:1100px){.carrier-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:650px){.carrier-grid{grid-template-columns:1fr 1fr}.tetrapyrrole-note{grid-template-columns:1fr}.tetra-icon{text-align:left}}
+
+/* Compact Red Book Mission v2 */
+.brand-zone{display:flex;align-items:center;gap:14px}
+.redbook-mini{display:flex;align-items:center;gap:7px;text-decoration:none;border-left:1px solid var(--line);padding-left:13px}
+.rb-icon{position:relative;width:31px;height:35px;border:2px solid #a92f16;border-radius:9px 9px 14px 14px;display:flex;align-items:center;justify-content:center;background:#fff7f3;color:#a92f16}
+.rb-icon b{font-size:14px;position:relative;z-index:2}.rb-icon i{position:absolute;font-style:normal;font-size:18px;transform:rotate(-25deg);opacity:.35}
+.redbook-mini>span:last-child{display:flex;flex-direction:column;line-height:.92}.redbook-mini strong{font-size:8px;letter-spacing:.12em;color:#a92f16}.redbook-mini small{font-size:7px;letter-spacing:.14em;color:#555;font-weight:800;margin-top:3px}
+
+.mission-hero{padding:10px 0 8px!important}
+.mission-hero-grid{grid-template-columns:1.14fr .86fr!important;min-height:292px!important;border-radius:14px!important;background:linear-gradient(108deg,#9f2e17 0%,#c84318 58%,#fff 58%)!important}
+.mission-hero-copy{padding:18px 23px!important;justify-content:flex-start!important}
+.mission-topline{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:8px}
+.redbook-logo{display:flex;align-items:center;gap:9px}
+.rb-shield{position:relative;width:45px;height:50px;border:2px solid rgba(255,255,255,.92);border-radius:12px 12px 20px 20px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.09)}
+.rb-shield b{font-size:20px;position:relative;z-index:2}.rb-shield i{position:absolute;font-style:normal;font-size:27px;transform:rotate(-28deg);opacity:.3}
+.rb-words{display:flex;flex-direction:column;line-height:.92}.rb-words strong{font-size:8px;letter-spacing:.16em;color:#ffd8c7}.rb-words b{font-family:Georgia,serif;font-size:15px;font-weight:600;margin-top:4px}.rb-words small{font-size:7px;letter-spacing:.11em;color:#ffe8de;margin-top:4px}
+.iucn-source-link{font-size:8px;font-weight:800;color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.42);padding:5px 8px;border-radius:999px;white-space:nowrap}
+.iucn-source-link:hover{background:rgba(255,255,255,.12)}
+
+.mission-title-row{display:grid;grid-template-columns:minmax(270px,.9fr) 1.1fr;gap:16px;align-items:end}
+.mission-eye{color:#ffd9ca!important;font-size:8px!important;margin-bottom:4px!important}
+.mission-hero h1{font-size:clamp(32px,3.7vw,49px)!important;line-height:.92!important;margin:3px 0 4px!important}
+.iucn-stats{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:7px}
+.stat{border:1px solid rgba(255,255,255,.3);border-radius:8px;padding:8px 9px;background:rgba(255,255,255,.08)}
+.stat.primary{background:rgba(255,255,255,.13)}
+.stat strong{display:block;font-family:Georgia,serif;font-size:20px;line-height:1;color:#fff}
+.stat span{display:block;font-size:7.5px;line-height:1.25;color:#ffe9e1;margin-top:3px}
+
+.mission-lead{font-size:10.5px!important;line-height:1.42!important;margin:8px 0 6px!important;max-width:none!important}
+.mission-manifesto{display:grid;grid-template-columns:.9fr 1.5fr;gap:12px;padding:7px 9px;border-left:3px solid #ff8d56;background:rgba(255,255,255,.07);border-radius:0 7px 7px 0}
+.mission-manifesto strong{font-family:Georgia,serif;font-size:11px;line-height:1.2}.mission-manifesto span{font-size:8px;line-height:1.38;color:#ffece5}
+.oxygen-statement{font-size:9.2px!important;line-height:1.35!important;margin:7px 0 0!important;color:#fff!important}
+.mission-bottomline{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-top:7px;padding-top:6px;border-top:1px solid rgba(255,255,255,.22)}
+.mission-bottomline span{font-size:8px;color:#ffe7de}.mission-bottomline strong{font-family:Georgia,serif;font-size:10px;text-align:right}
+.mission-hero-photo{min-height:292px!important}
+.mission-hero-photo img{object-position:center 48%}
+.photo-label{left:12px!important;right:12px!important;bottom:10px!important;padding:7px 9px!important}
+.photo-label strong{font-size:15px!important}.photo-label span{font-size:8px!important}
+
+.science-hero{padding:7px 0 2px!important}
+.science-hero-grid{gap:17px!important;padding-bottom:8px!important}
+.science-copy h2{font-size:clamp(23px,2.6vw,33px)!important;margin:2px 0 5px!important}
+.science-copy p{font-size:10px!important}
+.science-copy .buttons{margin:7px 0 0!important}
+.science-copy .btn{padding:8px 13px!important;font-size:9px!important}
+.science-hero .pillar span{font-size:18px!important}.science-hero .pillar strong{font-size:9px!important}.science-hero .pillar small{font-size:7.5px!important}
+.species{padding-top:7px!important}
+
+@media(max-width:1100px){
+  .nav{grid-template-columns:260px 1fr auto!important}
+  .mission-title-row{grid-template-columns:1fr}
+  .iucn-stats{max-width:520px}
+  .mission-hero-grid{grid-template-columns:1fr!important;background:#a93517!important}
+  .mission-hero-photo{min-height:260px!important}
+}
+@media(max-width:760px){
+  .redbook-mini{display:none}
+  .mission-topline{align-items:flex-start}
+  .mission-title-row{display:block}
+  .iucn-stats{margin-top:8px}
+  .mission-manifesto{grid-template-columns:1fr}
+  .mission-bottomline{display:block}.mission-bottomline strong{display:block;text-align:left;margin-top:4px}
+}
