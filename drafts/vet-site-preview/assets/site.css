@@ -228,3 +228,80 @@
   .iucn-stats{grid-template-columns:1.2fr .8fr .8fr!important}
   .mission-hero-photo{height:235px!important}
 }
+
+/* Width correction v4 */
+/* Make the mission module visibly narrower and more compact */
+.mission-hero-grid{
+  max-width:1180px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  grid-template-columns:minmax(0,1fr) 248px!important;
+  height:300px!important;
+}
+.mission-hero-photo{
+  width:248px!important;
+  height:300px!important;
+}
+.mission-hero-photo img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center 42%!important;
+}
+
+/* Keep the statement band aligned to the same narrower width */
+.oxygen-band-grid{
+  max-width:1180px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+
+/* Slightly tighten content after reducing photo width */
+.mission-core{
+  grid-template-columns:minmax(300px,1fr) 300px!important;
+  gap:14px!important;
+}
+.mission-hero-copy{
+  padding:14px 18px!important;
+}
+.mission-copy-block h1{
+  font-size:clamp(32px,3vw,43px)!important;
+}
+.mission-copy-block p{
+  font-size:9px!important;
+}
+.mission-responsibility{
+  margin-top:7px!important;
+  padding:6px 8px!important;
+}
+
+@media(max-width:1180px){
+  .mission-hero-grid{
+    max-width:calc(100% - 32px)!important;
+    grid-template-columns:minmax(0,1fr) 230px!important;
+    height:295px!important;
+  }
+  .mission-hero-photo{
+    width:230px!important;
+    height:295px!important;
+  }
+  .oxygen-band-grid{
+    max-width:calc(100% - 32px)!important;
+  }
+  .mission-core{
+    grid-template-columns:1fr 280px!important;
+  }
+}
+@media(max-width:920px){
+  .mission-hero-grid{
+    grid-template-columns:1fr!important;
+    height:auto!important;
+  }
+  .mission-hero-photo{
+    width:100%!important;
+    height:225px!important;
+  }
+  .mission-core{
+    grid-template-columns:1fr!important;
+  }
+}
