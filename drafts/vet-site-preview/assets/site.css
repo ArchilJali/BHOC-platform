@@ -40,3 +40,25 @@
   .mission-hero .red-tags{grid-template-columns:1fr}
   .mission-hero-photo{min-height:260px}
 }
+/* Hemoglobin & oxygen carriers section */
+.hb-foundation{margin:10px 0 0!important;font-size:11px!important;line-height:1.4!important;color:#fff!important}
+.science-note-link{display:inline-flex;margin-left:3px;color:#fff;font-size:15px;font-weight:900;text-decoration:none;vertical-align:super;line-height:1}
+.science-note-link:hover{color:#ffd2bf}
+.science-carriers{padding:26px 0 30px;background:#fff}
+.science-head{align-items:start}
+.science-head h2{font-family:Georgia,serif;font-size:30px;font-weight:500;margin:0}
+.science-head p{max-width:680px;line-height:1.5}
+.carrier-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.carrier-card{border:1px solid var(--line);border-radius:11px;padding:15px 12px;background:#fff;min-height:160px}
+.carrier-card.featured{background:#fff7f1;border-color:#f2b28f}
+.carrier-card.exception{background:#f6f8f9}
+.carrier-symbol{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#fff0e7;color:var(--orange);font-weight:900;font-size:11px;margin-bottom:9px}
+.carrier-card strong{display:block;font-size:11px;margin-bottom:6px}
+.carrier-card small{display:block;color:var(--muted);font-size:9px;line-height:1.45}
+.tetrapyrrole-note{display:grid;grid-template-columns:90px 1fr;gap:16px;align-items:center;margin-top:13px;border:1px solid #e9e9e9;border-radius:11px;padding:15px;background:linear-gradient(90deg,#fff,#fbfaf6)}
+.tetra-icon{font-family:Georgia,serif;font-size:22px;color:var(--orange);text-align:center}
+.tetrapyrrole-note strong{font-family:Georgia,serif;font-size:16px}
+.tetrapyrrole-note p{font-size:10px;line-height:1.55;color:var(--muted);margin:5px 0 0}
+.science-boundary{font-size:9.5px;color:var(--muted);margin:11px 2px 0}
+@media(max-width:1100px){.carrier-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:650px){.carrier-grid{grid-template-columns:1fr 1fr}.tetrapyrrole-note{grid-template-columns:1fr}.tetra-icon{text-align:left}}
