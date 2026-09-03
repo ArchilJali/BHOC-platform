@@ -1,7 +1,7 @@
 :root{--ink:#132d42;--muted:#536774;--teal:#096b65;--line:#dbe4e8;--paper:#fff;--wash:#f4f7f8;--soft:#e9f4f1;--amber:#80530d;--radius:12px}
 body.theme-main{--ink:#102f49;--muted:#526a78;--teal:#087a76;--line:#d8e3e8;--wash:#f2f6f7;--soft:#e5f3f1}
 body.theme-human{--ink:#132d42;--muted:#536774;--teal:#096b65;--line:#dbe4e8;--wash:#f4f7f8;--soft:#e9f4f1}
-body.theme-vet{--ink:#3d2a21;--muted:#725d52;--teal:#c64d00;--line:#f0ddd2;--wash:#fff8f4;--soft:#fff0e6}
+body.theme-vet{--ink:#3a3a3a;--muted:#666666;--teal:#f65c00;--line:#e7e7e7;--wash:#f7f7f5;--soft:#fff0e6}
 body.theme-transplant{--ink:#293944;--muted:#66727a;--teal:#aa2e3f;--line:#e5dadd;--wash:#f7f4f5;--soft:#f8e9eb}
 
 *{box-sizing:border-box}
@@ -192,9 +192,9 @@ input::placeholder{color:#687b88}
 .theme-vet .regulatory-overview,.theme-vet .notice,.theme-transplant .regulatory-overview,.theme-transplant .notice{background:var(--soft);border-color:var(--line)}
 .theme-vet .milestone,.theme-transplant .evidence-row{border-color:var(--line)}
 .theme-vet .species-track>span{background:#ff6400}
-.theme-vet .clinical-highlight{background:#652b0e}
-.theme-vet .clinical-highlight .eyebrow{color:#ffc59f}
-.theme-vet .clinical-highlight p{color:#fff2e9}
+.theme-vet .clinical-highlight{background:#585858}
+.theme-vet .clinical-highlight .eyebrow{color:#faad7f}
+.theme-vet .clinical-highlight p{color:#f3f3f3}
 .theme-vet .clinical-highlight a{color:#ffd0b2}
 .theme-transplant .transplant-highlight,.theme-transplant .pathway div{background:#4b2630}
 .theme-transplant .pathway{background:#7b4a56}
@@ -234,6 +234,41 @@ input::placeholder{color:#687b88}
 .clinical-stats{gap:8px;grid-template-columns:.8fr 1.6fr 1fr}
 .clinical-stats dd{font-size:25px}
 .clinical-stats dd span{font-size:15px}
+}
+
+
+/* VET detail pages: compact Zoetis-inspired orange / white / dark-gray identity. */
+.theme-vet .reading.vet-detail{max-width:1060px}
+.theme-vet .vet-detail .panel{padding:24px 28px}
+.theme-vet .vet-detail h1{letter-spacing:-1px}
+.theme-vet .vet-detail h2{margin-top:27px;margin-bottom:10px;font-size:22px;line-height:1.25}
+.theme-vet .vet-detail h3{margin:18px 0 8px;font-size:15px}
+.theme-vet .vet-detail p,.theme-vet .vet-detail li{font-size:13px;line-height:1.6}
+.theme-vet .vet-detail table{font-size:12.5px;margin:8px 0 18px}
+.theme-vet .vet-detail th,.theme-vet .vet-detail td{padding:8px 10px;vertical-align:top}
+.theme-vet .vet-detail th{background:#f3f3f1;color:#4c4c4c;font-size:10px;letter-spacing:.05em;text-transform:uppercase}
+.vet-efficacy{margin:12px 0 20px}
+.vet-efficacy-overall{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0}
+.vet-result-card{background:#585858;color:#fff;border-radius:10px;padding:15px 17px}
+.vet-result-card small{display:block;color:#faad7f;font-size:9px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:5px}
+.vet-result-card strong{display:block;font-size:22px;line-height:1.15;letter-spacing:-.4px}
+.vet-result-card span{display:block;color:#f2f2f2;font-size:10.5px;line-height:1.45;margin-top:5px}
+.vet-cause-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:10px 0}
+.vet-cause-card{background:#fff;border:1px solid var(--line);border-top:3px solid var(--teal);border-radius:9px;padding:13px 14px}
+.vet-cause-card h3{font-size:12px!important;line-height:1.35!important;margin:0 0 10px!important}
+.vet-cause-result{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.vet-cause-result div{background:var(--wash);border-radius:6px;padding:8px}
+.vet-cause-result small{display:block;color:var(--muted);font-size:8.5px;text-transform:uppercase;letter-spacing:.05em}
+.vet-cause-result strong{font-size:18px;color:var(--ink)}
+.vet-endpoint-note{background:var(--soft);border-left:3px solid var(--teal);padding:11px 13px;margin:12px 0;font-size:11.5px!important;color:var(--muted)!important}
+.vet-related{display:flex;gap:8px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:15px;margin-top:20px}
+.vet-related a{display:inline-flex;align-items:center;min-height:34px;padding:7px 10px;background:#fff;border:1px solid var(--line);border-radius:6px;text-decoration:none;font-size:10.5px;font-weight:700}
+.vet-route-strip{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 22px}
+.vet-route-strip a{display:inline-flex;align-items:center;min-height:36px;padding:8px 11px;background:#fff;border:1px solid var(--line);border-radius:7px;text-decoration:none;font-size:11px;font-weight:700}
+.vet-route-strip a.primary{background:var(--teal);border-color:var(--teal);color:#fff}
+@media(max-width:700px){
+  .vet-efficacy-overall,.vet-cause-grid{grid-template-columns:1fr}
+  .theme-vet .vet-detail .panel{padding:20px}
 }
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
