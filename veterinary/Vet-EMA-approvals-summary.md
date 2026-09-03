@@ -74,14 +74,26 @@ Oxyglobin provides oxygen-carrying support to dogs and improves clinical signs o
 
 ---
 
-## Efficacy Data
+## Field-Trial Treatment Success
 
-| Parameter | Result |
-|-----------|--------|
-| **Field Trial Success Rate** | 95% treated vs 32% untreated controls |
-| **Blood Loss** | 90% vs 45% |
-| **Hemolysis** | 100% vs 9% |
-| **Ineffective Erythropoiesis** | 100% vs 50% |
+These percentages are **treatment-success rates**, not the frequency or severity of the cause of anaemia. Success meant **no need for additional oxygen-carrying support during the 24-hour efficacy window**; it was not a survival endpoint.
+
+| Analysis | Oxyglobin success | Control success | Result |
+|---|---:|---:|---|
+| **Efficacy population** | **20/21 (95%)** | **9/28 (32%)** | Oxyglobin higher; p≤0.001 |
+| **Intent-to-treat** | **22/30 (73%)** | **10/34 (29%)** | Oxyglobin higher; p≤0.001 |
+
+### Treatment success by cause of anaemia
+
+| Cause of anaemia | Oxyglobin success | Control success |
+|---|---:|---:|
+| **Blood-loss anaemia** | **90%** | **45%** |
+| **Haemolytic anaemia** | **100%** | **9%** |
+| **Anaemia from ineffective erythropoiesis** | **100%** | **50%** |
+
+**Interpretation:** “100%” means all evaluable Oxyglobin-treated dogs in that cause-of-anaemia stratum met the 24-hour treatment-success endpoint. It does **not** mean “100% ineffective erythropoiesis” or “100% haemolysis.”
+
+Sources: [EMA Oxyglobin EPAR / Scientific Discussion](https://www.ema.europa.eu/en/medicines/veterinary/EPAR/oxyglobin) · [FDA FOI field-trial endpoint and denominators](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700)
 
 ---
 
@@ -111,6 +123,8 @@ Oxyglobin provides oxygen-carrying support to dogs and improves clinical signs o
 EMA Oxyglobin regulatory record and European Commission primary documents for Oxyglobin (EU/2/99/015), including the 18 December 2001 revised Annexes.
 
 [Open the Oxyglobin EU regulatory chronology](Vet-fda-ema.html#eu-primary-documents)
+
+Related: [Veterinary Evidence Hub](Vet-index.html) · [FDA Oxyglobin detail](Vet-FDA-registry.html) · [Oxyglobin & Veterinary HBOC catalogue](publication-catalogue.html)
 
 ---
 

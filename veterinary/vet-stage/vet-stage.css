@@ -1,6 +1,6 @@
 /* BHOC VET staging layout.
    Visual reference: Zoetis-style animal-health palette — orange, white, dark gray.
-   Kept in staging only; live Veterinary theme is unchanged. */
+   The same core VET identity is now shared with live Veterinary pages. */
 body.theme-vet{
   min-height:100vh;
   --ink:#3a3a3a;

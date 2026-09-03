@@ -55,13 +55,17 @@ The original FDA approval states the indication as:
 
 ## Key Regulatory Evidence
 
+**FDA endpoint:** treatment success = no additional oxygen-carrying support required for 24 hours. This was not a survival endpoint.
+
+
 | Parameter | Result |
 |-----------|--------|
-| **Pivotal Field Trial** | 64 client-owned anemic dogs |
-| **Success Rate (Efficacy Population)** | 95% (20/21) vs 32% (9/28); p≤0.001 |
-| **Success Rate (ITT)** | 73% (22/30) vs 29% (10/34); p≤0.001 |
-| **Time to Failure** | Significantly longer for Oxyglobin (p<0.001) |
-| **Clinical Improvement** | Plasma hemoglobin and physical-condition scores improved significantly (p<0.001) |
+| **Pivotal Field Trial** | 64 client-owned anaemic dogs; 30 randomized to Oxyglobin and 34 to control |
+| **Treatment success — efficacy population** | 95% (20/21) Oxyglobin vs 32% (9/28) control; p≤0.001 |
+| **Treatment success — ITT** | 73% (22/30) Oxyglobin vs 29% (10/34) control; p≤0.001 |
+| **Time to Failure** | Significantly longer for Oxyglobin in efficacy and ITT analyses (p<0.001) |
+| **Plasma hemoglobin** | ITT mean change +4.16 g/dL immediately and +2.84 g/dL at 24 h; p<0.001 |
+| **Physical Condition Scale** | Improved from pretreatment through 24 h; p<0.001 |
 
 ---
 
@@ -76,10 +80,12 @@ The original FDA approval states the indication as:
 
 ---
 
-## Source
+## Sources
 
-FDA documents (NADA 141-067, supplements)
+FDA documents (NADA 141-067, supplements). Cause-stratified success rates are kept on the EMA / EU detail page rather than duplicated here.
+
+Related: [Veterinary Evidence Hub](Vet-index.html) · [FDA / EMA regulatory hub](Vet-fda-ema.html) · [EMA treatment-success detail](Vet-EMA-approvals-summary.html#efficacy-data) · [Oxyglobin & Veterinary HBOC catalogue](publication-catalogue.html)
 
 ---
 
-*Last updated: 2026.08*
+*Last updated: 3 September 2026*
