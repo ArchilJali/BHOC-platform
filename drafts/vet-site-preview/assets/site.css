@@ -305,3 +305,134 @@
     grid-template-columns:1fr!important;
   }
 }
+
+/* Approved compact geometry v5 */
+/* Restore the approved visual geometry: wide page, compact vertical rhythm */
+.mission-hero{padding:7px 0 5px!important}
+.mission-hero-grid{
+  width:100%!important;
+  max-width:1360px!important;
+  margin:0 auto!important;
+  grid-template-columns:minmax(0,1fr) 286px!important;
+  height:276px!important;
+  min-height:276px!important;
+  border-radius:14px!important;
+  overflow:hidden!important;
+}
+.mission-hero-copy{
+  padding:13px 17px 12px!important;
+}
+.mission-hero-photo{
+  width:286px!important;
+  height:276px!important;
+  min-height:276px!important;
+}
+.mission-hero-photo img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center 44%!important;
+}
+
+/* Proper logo — no emoji/currentColor fallbacks */
+.rb-mark-svg{display:block;flex:0 0 auto}
+.rb-mark-header{width:31px!important;height:35px!important}
+.rb-mark-light{width:43px!important;height:49px!important}
+.redbook-mini{gap:8px!important;padding-left:12px!important;color:inherit!important}
+.redbook-mini .mini-copy strong{color:#A83018!important;font-size:7.8px!important}
+.redbook-mini .mini-copy small{font-size:6.5px!important;color:#60666A!important}
+.redbook-logo{display:flex!important;align-items:center!important;gap:9px!important}
+.rb-lockup strong{font-size:14px!important}
+.rb-lockup span{font-size:7.8px!important}
+
+/* Compact mission copy, closer to approved mockup density */
+.mission-brand-line{margin-bottom:6px!important}
+.mission-core{
+  grid-template-columns:minmax(330px,1fr) 292px!important;
+  gap:13px!important;
+  align-items:end!important;
+}
+.mission-philosophy{font-size:7.6px!important;margin-bottom:2px!important}
+.mission-copy-block h1{
+  font-size:clamp(30px,2.9vw,41px)!important;
+  line-height:.93!important;
+  margin:1px 0 5px!important;
+}
+.mission-copy-block p{
+  font-size:8.7px!important;
+  line-height:1.34!important;
+  margin:0!important;
+}
+.iucn-stats{gap:5px!important}
+.stat{padding:6px 7px!important}
+.stat strong{font-size:17px!important}
+.stat span{font-size:6.7px!important}
+.mission-responsibility{
+  margin-top:6px!important;
+  padding:5px 8px!important;
+  grid-template-columns:.8fr 1.45fr!important;
+}
+.mission-responsibility strong{font-size:9.2px!important}
+.mission-responsibility span{font-size:7.2px!important}
+
+/* Smaller photo caption like a card, not a full-width banner */
+.photo-label{
+  left:10px!important;
+  right:10px!important;
+  bottom:8px!important;
+  padding:6px 8px!important;
+}
+.photo-label strong{font-size:13px!important}
+.photo-label span{font-size:7.2px!important}
+
+/* Statement band aligned with the same approved width */
+.oxygen-band{padding:2px 0 6px!important}
+.oxygen-band-grid{
+  width:100%!important;
+  max-width:1360px!important;
+  margin:0 auto!important;
+  grid-template-columns:1.08fr .92fr!important;
+  padding:8px 12px!important;
+  gap:14px!important;
+}
+.oxygen-main strong{font-size:13.5px!important}
+.oxygen-main span{font-size:8.2px!important}
+.oxygen-question span{font-size:7.4px!important}
+.oxygen-question strong{font-size:10.2px!important}
+
+/* Keep following blocks dense like the approved mockup */
+.science-hero{padding:4px 0 1px!important}
+.science-hero-grid{gap:14px!important;padding-bottom:6px!important}
+.science-copy h2{font-size:clamp(21px,2.3vw,29px)!important}
+.science-copy p{font-size:9.2px!important}
+.science-copy .btn{padding:7px 12px!important;font-size:8.4px!important}
+.science-hero .pillar span{font-size:16px!important}
+.science-hero .pillar strong{font-size:8.5px!important}
+.science-hero .pillar small{font-size:7px!important}
+.species{padding-top:5px!important;padding-bottom:8px!important}
+.species-grid{gap:8px!important}
+.species-card{min-height:145px!important}
+.species-card img{height:78px!important}
+
+/* Ensure previous width overrides cannot win */
+@media(min-width:1181px){
+  .mission-hero-grid{max-width:1360px!important;grid-template-columns:minmax(0,1fr) 286px!important;height:276px!important}
+  .mission-hero-photo{width:286px!important;height:276px!important}
+  .oxygen-band-grid{max-width:1360px!important}
+}
+@media(max-width:1180px){
+  .mission-hero-grid{
+    max-width:calc(100% - 24px)!important;
+    grid-template-columns:minmax(0,1fr) 250px!important;
+    height:270px!important;
+  }
+  .mission-hero-photo{width:250px!important;height:270px!important}
+  .mission-core{grid-template-columns:1fr 270px!important}
+  .oxygen-band-grid{max-width:calc(100% - 24px)!important}
+}
+@media(max-width:920px){
+  .mission-hero-grid{grid-template-columns:1fr!important;height:auto!important}
+  .mission-hero-photo{width:100%!important;height:220px!important;min-height:220px!important}
+  .mission-core{grid-template-columns:1fr!important}
+  .oxygen-band-grid{grid-template-columns:1fr!important}
+}
