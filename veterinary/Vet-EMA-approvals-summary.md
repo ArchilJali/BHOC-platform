@@ -23,7 +23,17 @@ The European Commission granted the original marketing authorisation on **29 Nov
 
 - <a href="https://www.ema.europa.eu/en/medicines/veterinary/EPAR/oxyglobin" target="_blank">EMA Oxyglobin regulatory record</a>
 - <a href="https://ec.europa.eu/health/documents/community-register/1999/199911293347/anx_3347_en.pdf" target="_blank">Original 1999 European Commission Annexes</a>
+- <a href="regulatory/oxyglobin/Oxyglobin-EC-Annexes-2001.pdf" target="_blank"><strong>2001 European Commission Annexes — archived repository copy (18 December)</strong></a>
+- <a href="https://ec.europa.eu/health/documents/community-register/2001/200112184765/anx_4765_en.pdf" target="_blank">2001 European Commission Annexes — verify at official EC source</a>
 - <a href="https://ec.europa.eu/health/documents/community-register/2021/20211018153269/dec_153269_en.pdf" target="_blank">2021 European Commission authorisation amendment (18 October)</a>
+
+---
+
+## 2001 Revised Product Information
+
+The European Commission annexes dated **18 December 2001** provide a primary regulatory source for Oxyglobin 130 mg/mL solution for infusion in dogs. They state that Oxyglobin is a haemoglobin-based oxygen-carrying fluid, identify haemoglobin glutamer-200 (bovine) at 130 mg/mL, and document product-specific pharmacokinetic, compatibility and storage information. This historical Oxyglobin record supports veterinary HBOC context; it does not establish approval of BHOC or another future formulation.
+
+[Open the archived 2001 European Commission Annexes](regulatory/oxyglobin/Oxyglobin-EC-Annexes-2001.pdf) · [Verify at the official European Commission source](https://ec.europa.eu/health/documents/community-register/2001/200112184765/anx_4765_en.pdf)
 
 ---
 
@@ -90,16 +100,18 @@ Oxyglobin provides oxygen-carrying support to dogs and improves clinical signs o
 
 | Parameter | Detail |
 |-----------|--------|
-| **Storage Temperature** | 2–30°C |
-| **Shelf Life** | 3 years (approved extension, 1 September 2000) |
+| **Storage Condition** | Do not store above 30°C |
+| **Shelf Life** | 3 years (documented in the 18 December 2001 European Commission Annexes) |
 | **Do Not Freeze** | Yes |
 
 ---
 
-## Source
+## Sources
 
-EMA Assessment Report — Oxyglobin (EU/2/99/015)
+EMA Oxyglobin regulatory record and European Commission primary documents for Oxyglobin (EU/2/99/015), including the 18 December 2001 revised Annexes.
+
+[Open the Oxyglobin EU regulatory chronology](Vet-fda-ema.html#eu-primary-documents)
 
 ---
 
-*Last updated: 2026.08*
+*Last updated: 3 September 2026*

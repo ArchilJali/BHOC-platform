@@ -88,8 +88,8 @@
   },
   "veterinary/Vet-fda-ema.html": {
     "title": "Oxyglobin FDA & EMA Regulatory Records | BHOC",
-    "description": "Review source-linked FDA and European regulatory records for Oxyglobin, separated from wider veterinary HBOC research and future BHOC development.",
-    "keywords": "Oxyglobin FDA approval, Oxyglobin EMA approval, veterinary oxygen carrier regulation, NADA 141-067, canine anemia, veterinary HBOC",
+    "description": "Source-linked FDA and EU/EMA records for Oxyglobin (hemoglobin glutamer-200), including 1999, 2001 and 2021 EC documents and HBOC/BHOC context.",
+    "keywords": "Oxyglobin FDA approval, Oxyglobin EMA authorization, Oxyglobin veterinary, Oxyglobin dog, hemoglobin glutamer-200, veterinary HBOC, veterinary oxygen carrier regulation, NADA 141-067, EU/2/99/015, canine anemia, BHOC veterinary evidence, Biological Hemoglobin Oxygen Carrier",
     "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-fda-ema.html",
     "type": "website",
     "breadcrumbs": [
@@ -133,9 +133,9 @@
     ]
   },
   "veterinary/Vet-EMA-approvals-summary.html": {
-    "title": "Oxyglobin EMA Approval | Veterinary Oxygen Carrier Record",
-    "description": "Source summary of the European regulatory record for Oxyglobin, a veterinary hemoglobin oxygen carrier authorised for anemia in dogs.",
-    "keywords": "Oxyglobin EMA approval, European veterinary authorization, canine anemia, veterinary oxygen carrier, hemoglobin oxygen carrier",
+    "title": "Oxyglobin EMA Approval & EU Regulatory Record | BHOC",
+    "description": "European regulatory record for Oxyglobin in dogs, including EU/2/99/015, 2001 EC product information, 3-year shelf life and veterinary HBOC context.",
+    "keywords": "Oxyglobin EMA approval, Oxyglobin EU authorization, EU/2/99/015, hemoglobin glutamer-200, Oxyglobin dog, canine anemia, veterinary HBOC, veterinary oxygen carrier, BHOC veterinary evidence, Biological Hemoglobin Oxygen Carrier",
     "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-EMA-approvals-summary.html",
     "type": "article",
     "breadcrumbs": [
