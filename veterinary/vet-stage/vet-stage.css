@@ -1,5 +1,18 @@
-/* BHOC VET staging layout. Colors inherit the live veterinary theme from evidence.css. */
-body.theme-vet{min-height:100vh}
+/* BHOC VET staging layout.
+   Visual reference: Zoetis-style animal-health palette — orange, white, dark gray.
+   Kept in staging only; live Veterinary theme is unchanged. */
+body.theme-vet{
+  min-height:100vh;
+  --ink:#3a3a3a;
+  --muted:#666666;
+  --teal:#f65c00;
+  --line:#e7e7e7;
+  --paper:#ffffff;
+  --wash:#f7f7f5;
+  --soft:#fff0e6;
+  background:var(--wash);
+}
+body.theme-vet .site-header{border-top-color:#f65c00}
 .stage-banner{max-width:1280px;margin:18px auto 0;padding:10px 16px;background:var(--soft);border:1px dashed var(--line);border-radius:9px;color:var(--muted);font-size:11px;display:flex;justify-content:space-between;gap:16px}
 .stage-banner strong{color:var(--teal);letter-spacing:.08em;text-transform:uppercase}
 .vet-stage-hero{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(300px,.82fr);gap:22px;margin-bottom:24px}
@@ -7,13 +20,13 @@ body.theme-vet{min-height:100vh}
 .vet-stage-hero .page-intro h1{font-size:clamp(36px,5vw,62px);line-height:1.03;max-width:860px}
 .vet-stage-hero .page-intro p{max-width:760px}
 .stage-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-.stage-side{background:#652b0e;color:#fff;border-radius:var(--radius);padding:27px}
-.stage-side .eyebrow{color:#ffc59f}
+.stage-side{background:#585858;color:#fff;border-radius:var(--radius);padding:27px}
+.stage-side .eyebrow{color:#faad7f}
 .stage-side h2{font-size:25px;line-height:1.25;margin:8px 0 16px}
-.stage-side p{color:#fff2e9;font-size:12px;line-height:1.65}
+.stage-side p{color:#f3f3f3;font-size:12px;line-height:1.65}
 .stage-side dl{margin:20px 0 0}
 .stage-side dl div{padding:13px 0;border-top:1px solid rgba(255,255,255,.18)}
-.stage-side dt{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#ffc59f}
+.stage-side dt{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#faad7f}
 .stage-side dd{margin:4px 0 0;font-size:13px;font-weight:700}
 .stage-bridge{background:var(--soft);border:1px solid var(--line);border-radius:var(--radius);padding:19px 22px;margin:24px 0}
 .stage-bridge .bridge-flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:8px}
@@ -31,17 +44,17 @@ body.theme-vet{min-height:100vh}
 .stage-tag{display:inline-block;margin-top:14px;padding:4px 7px;border-radius:4px;background:var(--soft);color:var(--teal);font-size:9px;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
 .stage-clinical{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .stage-clinical .index{font-size:27px;line-height:1;color:var(--teal);font-weight:700}
-.stage-evidence{display:grid;grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);background:#652b0e;color:#fff;border-radius:var(--radius);overflow:hidden;margin-top:34px}
+.stage-evidence{display:grid;grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);background:#585858;color:#fff;border-radius:var(--radius);overflow:hidden;margin-top:34px}
 .stage-evidence-intro{padding:30px}
-.stage-evidence-intro .eyebrow{color:#ffc59f}
+.stage-evidence-intro .eyebrow{color:#faad7f}
 .stage-evidence-intro h2{font-size:27px;line-height:1.25;margin:8px 0 12px}
-.stage-evidence-intro p{font-size:12px;line-height:1.7;color:#fff2e9}
+.stage-evidence-intro p{font-size:12px;line-height:1.7;color:#f3f3f3}
 .stage-evidence-links{border-left:1px solid rgba(255,255,255,.18)}
 .stage-evidence-links a{display:grid;grid-template-columns:100px 1fr auto;gap:12px;align-items:center;padding:17px 20px;border-bottom:1px solid rgba(255,255,255,.16);color:#fff;text-decoration:none}
 .stage-evidence-links a:last-child{border-bottom:0}
-.stage-evidence-links small{font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:#ffc59f}
+.stage-evidence-links small{font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:#faad7f}
 .stage-evidence-links strong{font-size:12px}
-.stage-evidence-links span{font-size:11px;color:#ffd0b2}
+.stage-evidence-links span{font-size:11px;color:#faad7f}
 .stage-boundary{margin:20px 0 0;background:var(--paper);border-left:3px solid var(--teal);padding:14px 17px;color:var(--muted);font-size:11px;line-height:1.65}
 @media(max-width:1000px){.vet-stage-hero{grid-template-columns:1fr}.stage-species{grid-template-columns:repeat(2,minmax(0,1fr))}.stage-clinical{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.stage-banner{margin:12px 16px 0;flex-direction:column}.stage-section-head{align-items:flex-start;flex-direction:column;gap:8px}.stage-species,.stage-clinical{grid-template-columns:1fr}.stage-evidence{grid-template-columns:1fr}.stage-evidence-links{border-left:0;border-top:1px solid rgba(255,255,255,.18)}.stage-evidence-links a{grid-template-columns:1fr;gap:5px}}
