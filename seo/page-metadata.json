@@ -109,8 +109,8 @@
   },
   "veterinary/Vet-FDA-registry.html": {
     "title": "Oxyglobin FDA Approval | NADA 141-067 Veterinary Record",
-    "description": "Source summary of the FDA approval record for Oxyglobin, including NADA 141-067 and the defined veterinary indication for anemia in dogs.",
-    "keywords": "Oxyglobin FDA approval, NADA 141-067, canine anemia, veterinary oxygen carrier, FDA veterinary record, hemoglobin oxygen carrier",
+    "description": "FDA record for Oxyglobin in anemic dogs: NADA 141-067, the 24-hour treatment-success endpoint, efficacy and ITT results, and the original FOI source.",
+    "keywords": "Oxyglobin FDA approval, NADA 141-067, Oxyglobin dog, canine anemia, Oxyglobin treatment success, 24-hour efficacy endpoint, veterinary HBOC, veterinary oxygen carrier, FDA veterinary record, BHOC veterinary evidence",
     "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-FDA-registry.html",
     "type": "article",
     "breadcrumbs": [
@@ -134,8 +134,8 @@
   },
   "veterinary/Vet-EMA-approvals-summary.html": {
     "title": "Oxyglobin EMA Approval & EU Regulatory Record | BHOC",
-    "description": "European regulatory record for Oxyglobin in dogs, including EU/2/99/015, 2001 EC product information, 3-year shelf life and veterinary HBOC context.",
-    "keywords": "Oxyglobin EMA approval, Oxyglobin EU authorization, EU/2/99/015, hemoglobin glutamer-200, Oxyglobin dog, canine anemia, veterinary HBOC, veterinary oxygen carrier, BHOC veterinary evidence, Biological Hemoglobin Oxygen Carrier",
+    "description": "Oxyglobin EU/EMA regulatory evidence in dogs: EU/2/99/015, 2001 EC product information and field-trial treatment-success results by anemia cause.",
+    "keywords": "Oxyglobin EMA approval, Oxyglobin EU authorization, EU/2/99/015, hemoglobin glutamer-200, Oxyglobin dog, canine anemia, Oxyglobin treatment success, blood loss anemia, hemolytic anemia, ineffective erythropoiesis, veterinary HBOC, BHOC veterinary evidence",
     "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-EMA-approvals-summary.html",
     "type": "article",
     "breadcrumbs": [
