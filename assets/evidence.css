@@ -271,6 +271,47 @@ input::placeholder{color:#687b88}
   .theme-vet .vet-detail .panel{padding:20px}
 }
 
+
+/* Oxyglobin / veterinary HBOC publications gateway */
+.vet-publications-page{max-width:1180px}
+.vet-pub-hero{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(280px,.55fr);gap:16px;margin-bottom:14px}
+.vet-pub-hero>div,.vet-pub-side{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.vet-pub-hero h1{font-size:clamp(34px,4.6vw,54px);line-height:1.04;letter-spacing:-1.5px;margin:8px 0 12px;max-width:760px}
+.vet-pub-hero p{color:var(--muted);font-size:13px;line-height:1.65;max-width:760px;margin:0}
+.vet-pub-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.vet-pub-actions .button{min-height:39px;padding:8px 13px;font-size:11px}
+.vet-pub-side{background:#585858;color:#fff}
+.vet-pub-side .eyebrow{color:#faad7f}
+.vet-pub-side>strong{display:block;font-size:28px;line-height:1.1;margin:10px 0 8px}
+.vet-pub-side>span{display:block;font-size:12px;font-weight:700;padding:6px 0;border-top:1px solid rgba(255,255,255,.16)}
+.vet-pub-side p{color:#f2f2f2;font-size:11.5px;margin-top:14px}
+.vet-pub-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin:14px 0}
+.vet-pub-metrics a{padding:15px 17px;text-decoration:none;color:var(--ink);border-right:1px solid var(--line)}
+.vet-pub-metrics a:last-child{border-right:0}
+.vet-pub-metrics a:hover{background:var(--soft)}
+.vet-pub-metrics strong{display:block;font-size:27px;line-height:1;color:var(--teal)}
+.vet-pub-metrics span{display:block;font-size:10.5px;color:var(--muted);margin-top:6px}
+.vet-pub-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0}
+.vet-pub-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.vet-pub-card h2{font-size:18px;line-height:1.25;margin:7px 0 8px}
+.vet-pub-card p{font-size:11.5px;color:var(--muted);line-height:1.6;margin:0 0 14px}
+.vet-pub-card>a{font-size:11px;font-weight:750}
+.vet-pub-boundary{display:grid;grid-template-columns:minmax(220px,.55fr) minmax(0,1.45fr);gap:24px;align-items:start;background:var(--soft);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;margin:14px 0}
+.vet-pub-boundary h2{font-size:20px;line-height:1.25;margin:7px 0 0}
+.vet-pub-boundary p{font-size:11.5px;line-height:1.65;color:var(--muted);margin:0}
+@media(max-width:850px){
+  .vet-pub-hero{grid-template-columns:1fr}
+  .vet-pub-grid{grid-template-columns:1fr}
+  .vet-pub-metrics{grid-template-columns:1fr 1fr}
+  .vet-pub-metrics a:nth-child(2){border-right:0}
+  .vet-pub-metrics a:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .vet-pub-boundary{grid-template-columns:1fr;gap:8px}
+}
+@media(max-width:480px){
+  .vet-pub-hero>div,.vet-pub-side{padding:20px}
+  .vet-pub-metrics{grid-template-columns:1fr 1fr}
+}
+
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
 *{transition:none!important}
 }
