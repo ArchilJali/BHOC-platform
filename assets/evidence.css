@@ -348,3 +348,15 @@ input::placeholder{color:#687b88}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
 *{transition:none!important}
 }
+
+
+/* Veterinary platform cross-link: distinct science and evidence destination. */
+.vet-platform-banner{display:flex;align-items:center;justify-content:space-between;gap:24px;background:#585858;border:1px solid #585858;border-radius:var(--radius);padding:20px 24px;margin:0 0 12px;color:#fff;box-shadow:0 8px 22px rgba(70,70,70,.12)}
+.vet-platform-banner-copy{min-width:0}
+.vet-platform-banner .eyebrow{color:#faad7f}
+.vet-platform-banner h2{font-size:24px;line-height:1.2;letter-spacing:-.4px;margin:5px 0 6px;color:#fff}
+.vet-platform-banner p{font-size:12px;line-height:1.55;color:#f2f2f2;margin:0;max-width:760px}
+.vet-platform-banner-button{display:inline-flex;align-items:center;justify-content:center;gap:9px;flex:0 0 auto;min-height:45px;padding:10px 16px;border:1px solid #ff9c68;border-radius:7px;background:#ff6400;color:#fff;text-decoration:none;font-size:12px;font-weight:750;white-space:nowrap}
+.vet-platform-banner-button:hover{background:#e95700;border-color:#e95700}
+.vet-platform-banner-button span{font-size:16px;line-height:1}
+@media(max-width:680px){.vet-platform-banner{display:block;padding:18px;margin-bottom:12px}.vet-platform-banner-button{width:100%;margin-top:14px}}
