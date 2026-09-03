@@ -125,3 +125,106 @@
   .mission-manifesto{grid-template-columns:1fr}
   .mission-bottomline{display:block}.mission-bottomline strong{display:block;text-align:left;margin-top:4px}
 }
+
+/* FINAL Red Book compact brand v3 */
+/* Custom BHOC Red Book Mission mark */
+.rb-mark-svg{width:44px;height:50px;flex:0 0 auto}
+.rb-shield-path{fill:none;stroke:currentColor;stroke-width:2.4}
+.rb-leaf-path,.rb-leaf-vein{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+.rb-o2-ring{fill:none;stroke:currentColor;stroke-width:1.5;opacity:.4}
+.rb-paw-dot,.rb-paw-pad{fill:currentColor}
+
+/* Header lockup */
+.brand-zone{display:flex;align-items:center;gap:13px}
+.redbook-mini{display:flex;align-items:center;gap:7px;text-decoration:none;border-left:1px solid var(--line);padding-left:12px;color:#a73518}
+.redbook-mini .rb-mark-svg{width:30px;height:34px}
+.mini-copy{display:flex;flex-direction:column;line-height:1}
+.mini-copy strong{font-size:7.5px;letter-spacing:.11em;color:#9f2e17}
+.mini-copy small{font-size:6.5px;color:#62686d;margin-top:4px;white-space:nowrap}
+
+/* First screen: deliberately compact */
+.mission-hero{padding:8px 0 5px!important;background:#fff!important}
+.mission-hero-grid{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) 330px!important;
+  min-height:0!important;
+  height:318px!important;
+  overflow:hidden!important;
+  border:1px solid var(--line)!important;
+  border-radius:14px!important;
+  background:linear-gradient(112deg,#9f2d16 0%,#c94a1b 72%,#fff 72%)!important
+}
+.mission-hero-copy{padding:16px 20px!important;color:#fff!important;display:block!important}
+.mission-brand-line{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:9px}
+.redbook-logo{display:flex;align-items:center;gap:9px;color:#fff}
+.redbook-logo .rb-mark-svg{width:42px;height:48px}
+.rb-lockup{display:flex;flex-direction:column;line-height:.95}
+.rb-lockup small{font-size:7px;letter-spacing:.16em;color:#ffd6c7;font-weight:850}
+.rb-lockup strong{font-family:Georgia,serif;font-size:15px;font-weight:600;margin-top:4px}
+.rb-lockup span{font-size:8px;color:#ffe9df;margin-top:5px;font-weight:800;letter-spacing:.02em}
+.iucn-source-link{font-size:7.5px!important;padding:5px 8px!important;color:#fff!important;border:1px solid rgba(255,255,255,.42)!important;border-radius:999px!important;text-decoration:none!important;white-space:nowrap}
+
+.mission-core{display:grid;grid-template-columns:minmax(300px,1fr) 330px;gap:18px;align-items:end}
+.mission-philosophy{font-size:8px;font-weight:900;letter-spacing:.11em;text-transform:uppercase;color:#ffd2c0;margin-bottom:3px}
+.mission-copy-block h1{font-family:Georgia,serif;font-size:clamp(34px,3.4vw,47px)!important;line-height:.92!important;font-weight:500!important;letter-spacing:-1.2px!important;margin:2px 0 7px!important}
+.mission-copy-block p{font-size:9.5px!important;line-height:1.4!important;max-width:650px!important;margin:0!important;color:#fff7f3!important}
+
+.iucn-stats{display:grid!important;grid-template-columns:1.3fr .8fr .8fr!important;gap:6px!important}
+.stat{padding:7px 8px!important;border-radius:8px!important;border:1px solid rgba(255,255,255,.28)!important;background:rgba(255,255,255,.07)!important}
+.stat.primary{background:rgba(255,255,255,.13)!important}
+.stat strong{font-family:Georgia,serif!important;font-size:19px!important;line-height:1!important;color:#fff!important}
+.stat span{font-size:7px!important;line-height:1.18!important;color:#ffe8df!important;margin-top:3px!important}
+
+.mission-responsibility{display:grid;grid-template-columns:.75fr 1.35fr;gap:12px;margin-top:9px;padding:7px 9px;border-left:3px solid #ff8b54;background:rgba(255,255,255,.07);border-radius:0 7px 7px 0}
+.mission-responsibility strong{font-family:Georgia,serif;font-size:10px;line-height:1.18}
+.mission-responsibility span{font-size:7.8px;line-height:1.35;color:#ffece5}
+
+/* Smaller Rem & Eva image — preserve sharpness by not stretching it */
+.mission-hero-photo{position:relative!important;width:330px!important;min-height:0!important;height:318px!important;background:#2a2a2a!important;overflow:hidden!important}
+.mission-hero-photo img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 44%!important;display:block!important;image-rendering:auto!important}
+.photo-label{left:10px!important;right:10px!important;bottom:9px!important;padding:7px 9px!important;border-radius:8px!important;background:rgba(24,26,27,.76)!important}
+.photo-label strong{font-family:Georgia,serif!important;font-size:14px!important}
+.photo-label span{font-size:7.8px!important;color:#e9eaeb!important}
+
+/* Strong statement below first screen, not inside it */
+.oxygen-band{padding:3px 0 7px;background:#fff}
+.oxygen-band-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:18px;align-items:center;border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+.oxygen-main strong{display:block;font-family:Georgia,serif;font-size:15px;line-height:1.1}
+.oxygen-main span{display:block;font-size:9px;color:var(--muted);margin-top:4px}
+.oxygen-main .science-note-link{color:var(--orange)!important;font-size:13px!important}
+.oxygen-question{border-left:1px solid var(--line);padding-left:15px}
+.oxygen-question span{display:block;font-size:8px;color:var(--muted);margin-bottom:3px}
+.oxygen-question strong{display:block;font-family:Georgia,serif;font-size:11px;line-height:1.18}
+
+/* Keep the next block compact too */
+.science-hero{padding:5px 0 2px!important}
+.science-hero-grid{padding-bottom:7px!important}
+.science-copy h2{font-size:clamp(22px,2.4vw,31px)!important}
+.species{padding-top:6px!important}
+
+/* Neutralize previous mission rules that can re-expand the section */
+.mission-title-row,.mission-manifesto,.mission-bottomline,.oxygen-statement,.mission-topline{display:none!important}
+
+@media(max-width:1180px){
+  .mission-hero-grid{grid-template-columns:minmax(0,1fr) 285px!important;height:315px!important}
+  .mission-hero-photo{width:285px!important;height:315px!important}
+  .mission-core{grid-template-columns:1fr 300px}
+  .links{gap:15px!important}
+}
+@media(max-width:920px){
+  .mission-hero-grid{grid-template-columns:1fr!important;height:auto!important;background:#a83518!important}
+  .mission-core{grid-template-columns:1fr}
+  .mission-hero-photo{width:100%!important;height:255px!important}
+  .mission-responsibility{grid-template-columns:1fr}
+  .iucn-stats{max-width:520px}
+  .oxygen-band-grid{grid-template-columns:1fr}
+  .oxygen-question{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:8px}
+}
+@media(max-width:760px){
+  .redbook-mini{display:none!important}
+  .mission-hero-copy{padding:15px 16px!important}
+  .mission-brand-line{align-items:flex-start}
+  .iucn-source-link{font-size:6.8px!important}
+  .iucn-stats{grid-template-columns:1.2fr .8fr .8fr!important}
+  .mission-hero-photo{height:235px!important}
+}
