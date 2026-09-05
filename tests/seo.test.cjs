@@ -6,6 +6,8 @@ const path=require('path');
 const root=path.resolve(__dirname,'..');
 const config=JSON.parse(fs.readFileSync(path.join(root,'seo/page-metadata.json'),'utf8'));
 const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
+const initiativePreview='https://bhoctherapeutics.com/assets/bhoc-social-preview-20260905-initiative-logo.png';
+const initiativeMark='https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
 
 function html(file){return fs.readFileSync(path.join(root,file),'utf8')}
 function count(source,pattern){return [...source.matchAll(pattern)].length}
@@ -24,7 +26,7 @@ test('canonical SEO pages have unique search titles and descriptions',()=>{
   }
 });
 
-test('managed metadata, canonical, social preview and H1 are complete',()=>{
+test('managed metadata, canonical, initiative branding and H1 are complete',()=>{
   for(const [file,data] of Object.entries(config)){
     const source=html(file);
     assert.equal(count(source,/<title>/g),1,`${file}: title count`);
@@ -33,7 +35,8 @@ test('managed metadata, canonical, social preview and H1 are complete',()=>{
     assert.equal(count(source,/<h1\b/gi),1,`${file}: H1 count`);
     assert.ok(source.includes(`<title>${data.title}</title>`),`${file}: configured title missing`);
     assert.ok(source.includes(`<link rel="canonical" href="${data.url}">`),`${file}: configured canonical missing`);
-    assert.ok(source.includes('property="og:image" content="https://archiljali.github.io/BHOC-platform/assets/bhoc-evidence-social.png"'),`${file}: OG image missing`);
+    assert.ok(source.includes(`property="og:image" content="${initiativePreview}"`),`${file}: initiative OG image missing`);
+    assert.ok(source.includes(`<link rel="icon" href="${initiativeMark}" type="image/png">`),`${file}: initiative favicon missing`);
     assert.ok(source.includes('name="twitter:card" content="summary_large_image"'),`${file}: Twitter card missing`);
   }
 });
@@ -58,7 +61,7 @@ test('sitemap contains every canonical indexable page exactly once',()=>{
   }
 });
 
-test('social preview is a crawlable 1200 by 630 PNG',()=>{
+test('local fallback social preview remains a valid 1200 by 630 PNG',()=>{
   const png=fs.readFileSync(path.join(root,'assets/bhoc-evidence-social.png'));
   assert.equal(png.toString('hex',0,8),'89504e470d0a1a0a');
   assert.equal(png.readUInt32BE(16),1200);
