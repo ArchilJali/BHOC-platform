@@ -57,7 +57,7 @@ body{
   letter-spacing:0!important;
   font-family:Arial,Helvetica,sans-serif!important;
 }
-.brand img{display:block;width:30px;height:30px;object-fit:contain;flex:0 0 auto}
+.brand img,.brand-initiative-mark{display:block!important;width:38px!important;height:35px!important;object-fit:contain!important;flex:0 0 auto}
 .brand-word{display:inline!important;font-size:22px!important;font-weight:800!important;letter-spacing:.025em!important;color:var(--bhoc-navy)!important}
 .brand-sub{
   display:inline!important;
@@ -246,7 +246,7 @@ body.theme-transplant .hub-mark,body.theme-transplant .tag.year{color:#9a2638}
     gap:10px 14px!important;
   }
   .brand{min-width:0}
-  .brand img{width:28px;height:28px}
+  .brand img,.brand-initiative-mark{width:34px!important;height:31px!important}
   .brand-word{display:inline!important;font-size:20px!important}
   .brand-sub{display:inline!important;font-size:7.5px!important;white-space:normal;max-width:128px}
   .nav-toggle{display:inline-flex!important;justify-self:end}
