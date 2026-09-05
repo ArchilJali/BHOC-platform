@@ -1,0 +1,287 @@
+/* BHOC Scientific Intelligence visual layer - 2026
+   Visual-only enhancement. Existing URLs, evidence architecture and page intent remain unchanged. */
+
+:root{
+  --bhoc-navy:#082d68;
+  --bhoc-blue:#164caa;
+  --bhoc-red:#f22c26;
+  --bhoc-paper:#ffffff;
+  --bhoc-wash:#f5f8fc;
+  --bhoc-line:#dce6f2;
+  --bhoc-muted:#5c7394;
+  --bhoc-shadow:0 12px 34px rgba(20,58,107,.07);
+  --bhoc-shadow-soft:0 6px 18px rgba(20,58,107,.055);
+  --section-accent:var(--bhoc-red);
+}
+
+body.theme-main{--section-accent:var(--bhoc-red)}
+body.theme-human{--section-accent:#087a76}
+body.theme-vet{--section-accent:#f65c00}
+body.theme-transplant{--section-accent:#aa2e3f}
+
+html{background:#fff}
+body{
+  background:linear-gradient(180deg,#fff 0,#f7f9fc 360px,#f5f8fb 100%);
+  color:#173651;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+/* Unified BHOC family header */
+.site-header{
+  position:relative;
+  z-index:60;
+  background:rgba(255,255,255,.97)!important;
+  border-top:0!important;
+  border-bottom:1px solid var(--bhoc-line)!important;
+  box-shadow:0 3px 18px rgba(8,45,104,.035);
+}
+.site-nav{
+  max-width:1280px!important;
+  min-height:68px!important;
+  margin:auto!important;
+  padding:10px 32px!important;
+  display:grid!important;
+  grid-template-columns:auto minmax(0,1fr)!important;
+  gap:24px!important;
+  align-items:center!important;
+}
+.brand{
+  min-width:max-content;
+  display:inline-flex!important;
+  align-items:center!important;
+  gap:8px!important;
+  padding:0!important;
+  color:var(--bhoc-navy)!important;
+  text-decoration:none!important;
+  letter-spacing:0!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+}
+.brand img{display:block;width:30px;height:30px;object-fit:contain;flex:0 0 auto}
+.brand-word{font-size:22px!important;font-weight:800!important;letter-spacing:.025em!important;color:var(--bhoc-navy)!important}
+.brand-sub{
+  margin-left:2px!important;
+  padding-left:10px!important;
+  border-left:1px solid var(--bhoc-line);
+  color:#6b7f9a!important;
+  font-size:8.5px!important;
+  line-height:1.15!important;
+  font-weight:800!important;
+  letter-spacing:.15em!important;
+  text-transform:uppercase!important;
+  white-space:nowrap;
+}
+.nav-links{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:8px 20px!important;
+  flex-wrap:wrap!important;
+}
+.nav-links>a,
+.nav-links summary{
+  color:#405b7d!important;
+  font-size:11.5px!important;
+  line-height:1.2!important;
+  font-weight:700!important;
+  text-decoration:none!important;
+  white-space:nowrap;
+}
+.nav-links>a:hover,.nav-links>a[aria-current=page]{color:var(--section-accent)!important}
+.nav-links>a[aria-current=page]{position:relative}
+.nav-links>a[aria-current=page]:after{
+  content:"";
+  position:absolute;
+  left:0;right:0;bottom:-9px;
+  height:2px;
+  background:var(--section-accent);
+  border-radius:2px;
+}
+.nav-links a.nav-corporate{
+  display:inline-flex!important;
+  align-items:center!important;
+  gap:7px!important;
+  margin-left:2px!important;
+  padding:7px 10px!important;
+  border:1px solid #ccd9e9!important;
+  border-radius:7px!important;
+  background:#fff!important;
+  color:var(--bhoc-navy)!important;
+  font-size:10px!important;
+  font-weight:800!important;
+  box-shadow:0 3px 10px rgba(8,45,104,.035);
+}
+.nav-links a.nav-corporate:before{
+  content:"WWW";
+  padding-right:7px;
+  border-right:1px solid #d9e3ef;
+  color:var(--bhoc-red);
+  font-size:7px;
+  letter-spacing:.12em;
+}
+.nav-links a.nav-corporate:after{display:none!important}
+.nav-links a.nav-corporate:hover{border-color:#9bb4d2!important;background:#f8fbff!important;color:var(--bhoc-blue)!important}
+.nav-toggle{display:none;border:0;background:transparent;color:var(--bhoc-navy);padding:6px 0;font:700 11px/1 Arial,sans-serif;align-items:center;gap:7px}
+.nav-toggle b{font-size:20px;font-weight:400;line-height:1}
+
+/* Editorial scientific typography */
+.knowledge-hero h1,.home-hero h1,.impact-hero h1,.page-intro h1,
+.platform-panel h2,.shell-card h2,.shell-dark h2,.section h2,.reading h2,
+.reg-card h2,.wide-panel h2,.overview-heading h2,.regulatory-overview h2,
+.section-heading,.hub-card h2,.foundation h2{
+  font-family:Georgia,"Times New Roman",serif!important;
+  font-weight:500!important;
+  color:var(--bhoc-navy);
+  text-wrap:balance;
+}
+.shell-dark h2,.foundation h2,.gap-panel h2{color:#fff!important}
+.knowledge-hero h1,.home-hero h1,.impact-hero h1{
+  color:var(--bhoc-navy)!important;
+  letter-spacing:-.035em!important;
+}
+.eyebrow,.hero-tag{
+  color:var(--section-accent)!important;
+  letter-spacing:.14em!important;
+  font-weight:850!important;
+}
+
+/* More premium page surfaces, without changing information architecture */
+.shell{max-width:1280px!important;padding-top:24px!important}
+.panel,.section,.hub-card,.platform-panel,.reg-card,.wide-panel,.search-panel,.record,
+.home-nobel-feature,.source-card,.program,.impact-stat,.function-step{
+  border-color:var(--bhoc-line)!important;
+}
+.panel,.section,.hub-card,.platform-panel,.reg-card,.wide-panel,.search-panel{
+  background:rgba(255,255,255,.97)!important;
+  box-shadow:var(--bhoc-shadow-soft);
+}
+.knowledge-hero,.home-hero,.impact-hero{
+  background:linear-gradient(135deg,#fff 0%,#fbfdff 58%,#f3f7fc 100%)!important;
+  border:1px solid var(--bhoc-line)!important;
+  box-shadow:var(--bhoc-shadow)!important;
+}
+.knowledge-hero:before,.home-hero:before{
+  height:4px!important;
+  background:linear-gradient(90deg,var(--bhoc-red),var(--bhoc-navy))!important;
+}
+.impact-hero:before{height:4px!important;background:linear-gradient(90deg,var(--section-accent),var(--bhoc-navy))!important}
+.knowledge-hero>p,.home-hero>p,.impact-hero>p,.page-intro p{color:var(--bhoc-muted)!important}
+
+/* Cards should read as evidence objects, not landing-page tiles */
+.hub-card,.quick-card,.record,.source-card,.program,.function-step,.impact-stat{
+  border-radius:11px!important;
+  box-shadow:none!important;
+}
+.hub-card{transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.hub-card:hover{transform:translateY(-2px);box-shadow:var(--bhoc-shadow-soft)!important;border-color:#c8d8e9!important}
+.record{background:#fff!important;transition:border-color .16s ease,box-shadow .16s ease!important}
+.record:hover{border-color:#b7cae0!important;box-shadow:0 5px 16px rgba(8,45,104,.045)}
+.record h3{color:#173651!important}
+.record h3 a{color:#173651!important}
+.tag{border-radius:5px!important}
+
+/* Brand hierarchy for calls to action */
+.button{
+  min-height:42px!important;
+  border-radius:7px!important;
+  background:var(--section-accent)!important;
+  border-color:var(--section-accent)!important;
+  color:#fff!important;
+  font-weight:750!important;
+  box-shadow:0 6px 14px rgba(8,45,104,.06);
+}
+.button.secondary{background:#fff!important;color:var(--bhoc-navy)!important;border-color:#cad8e7!important;box-shadow:none}
+.button:hover{filter:saturate(1.05);transform:translateY(-1px)}
+
+/* Data and regulatory presentation */
+.overview-stats,.regulatory-strip{
+  border-color:var(--bhoc-line)!important;
+  box-shadow:var(--bhoc-shadow-soft);
+}
+.overview-stat strong{font-family:Georgia,"Times New Roman",serif;font-weight:500!important;color:var(--bhoc-navy)}
+.overview-stat>span{color:#2c4c70}
+.regulatory-item strong{color:var(--bhoc-navy)}
+.regulatory-item:hover,.overview-stat:hover{background:#f8fbff!important}
+
+/* Scientific reading pages */
+.reading{max-width:920px!important}
+.reading p,.reading li{color:#526b88!important;line-height:1.75!important}
+.reading table{background:#fff}
+.reading th{color:var(--bhoc-navy);font-size:12px}
+.reading th,.reading td{border-color:#e1e9f2!important}
+.notice,.evidence-note{border-left-color:var(--section-accent)!important;background:#f3f7fb!important}
+
+/* Section identity remains visible but secondary to BHOC master brand */
+body.theme-vet .hub-mark,body.theme-vet .tag.year{color:#c94d00}
+body.theme-human .hub-mark,body.theme-human .tag.year{color:#087a76}
+body.theme-transplant .hub-mark,body.theme-transplant .tag.year{color:#9a2638}
+.theme-vet .site-header{border-top:0!important}
+
+/* Footer becomes the common institutional close */
+.site-footer{
+  max-width:1280px!important;
+  margin:24px auto 0!important;
+  padding:22px 28px!important;
+  border:0!important;
+  border-radius:14px 14px 0 0;
+  background:var(--bhoc-navy)!important;
+  color:#c8d9ed!important;
+  font-size:10.5px!important;
+}
+.site-footer a{color:#fff!important}
+.site-footer strong,.home-footer-lead{color:#fff!important}
+
+@media(max-width:1100px){
+  .site-nav{grid-template-columns:1fr!important;gap:8px!important;align-items:start!important}
+  .nav-links{justify-content:flex-start!important}
+  .nav-links>a[aria-current=page]:after{bottom:-5px}
+}
+
+@media(max-width:760px){
+  .site-nav{
+    min-height:58px!important;
+    padding:11px 16px!important;
+    grid-template-columns:minmax(0,1fr) auto!important;
+    gap:10px 14px!important;
+  }
+  .brand{min-width:0}
+  .brand img{width:28px;height:28px}
+  .brand-word{font-size:20px!important}
+  .brand-sub{font-size:7.5px!important;white-space:normal;max-width:128px}
+  .nav-toggle{display:inline-flex!important;justify-self:end}
+  .nav-links{
+    display:none!important;
+    grid-column:1/-1;
+    width:100%!important;
+    padding:9px 0 4px!important;
+    border-top:1px solid var(--bhoc-line);
+    gap:0!important;
+    align-items:stretch!important;
+  }
+  .nav-links.is-open{display:grid!important;grid-template-columns:1fr 1fr!important}
+  .nav-links>a{
+    display:block!important;
+    padding:10px 8px!important;
+    border-bottom:1px solid #edf2f7;
+    white-space:normal!important;
+    font-size:11px!important;
+  }
+  .nav-links>a[aria-current=page]:after{display:none!important}
+  .nav-links>a[aria-current=page]{background:#f5f8fc;color:var(--section-accent)!important}
+  .nav-links a.nav-corporate{
+    grid-column:1/-1!important;
+    margin:8px 0 0!important;
+    justify-content:center!important;
+    padding:10px!important;
+  }
+  .shell{padding:16px 14px 32px!important}
+  .knowledge-hero,.home-hero,.impact-hero{border-radius:13px!important;box-shadow:0 7px 22px rgba(8,45,104,.06)!important}
+  .knowledge-hero h1,.home-hero h1,.impact-hero h1{font-size:clamp(32px,10vw,44px)!important;line-height:1.02!important}
+  .site-footer{margin-top:16px!important;border-radius:0!important;padding:20px 16px!important}
+}
+
+@media(max-width:430px){
+  .brand-sub{display:none!important}
+  .nav-links.is-open{grid-template-columns:1fr!important}
+  .nav-links a.nav-corporate{grid-column:1!important}
+}
