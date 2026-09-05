@@ -87,10 +87,17 @@
     if (/^Open the publication explorer\s*→?$/i.test(label)) link.textContent = 'Open Publication Explorer →';
   });
 
-  // On regulatory and application pages, literature links should land directly in Explorer.
-  // The static citation index is still available from Search as the HTML/accessibility fallback.
-  const directExplorerPages = path.endsWith('/veterinary/Vet-fda-ema.html') || path.includes('/veterinary/vet-stage/');
-  if (directExplorerPages) {
+  // From evidence, application and regulatory detail pages, literature links go straight
+  // to Explorer. The static citation index remains available only where its technical role
+  // is useful: the Explorer fallback, the citation-index page itself and the dedicated
+  // organic-search publication landing page.
+  const catalogueRolePages = [
+    '/veterinary/Vet-search.html',
+    '/veterinary/publication-catalogue.html',
+    '/veterinary/Vet-03-publication-BHOC-Oxyglobin.html'
+  ];
+  const keepCatalogueRoute = catalogueRolePages.some(page => path.endsWith(page));
+  if (!keepCatalogueRoute) {
     document.querySelectorAll('a[href*="publication-catalogue.html"]').forEach(link => {
       if (link.closest('footer, .notice')) return;
       link.setAttribute('href', localHref('Vet-search.html'));
