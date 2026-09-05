@@ -3,6 +3,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const config = JSON.parse(fs.readFileSync(path.join(ROOT, 'config/navigation.json'), 'utf8'));
+const version = JSON.parse(fs.readFileSync(path.join(ROOT, 'version.json'), 'utf8'));
 const SKIP_DIRS = new Set(['.git', 'node_modules']);
 const SHELL_HREF = '/BHOC-platform/assets/platform-shell.css';
 const INTELLIGENCE_HREF = '/BHOC-platform/assets/intelligence-2026.css';
@@ -66,12 +67,19 @@ function normalizeAuthorIdentity(src) {
     .replaceAll('"author": {"@type": "Person", "name": "Archil Jaliashvili"}', `"author": {"@type": "Person", "name": "Archil Jaliashvili", "url": "${AUTHOR_PROFILE}"}`);
 }
 
+function normalizeHomeIdentity(src) {
+  return src
+    .replace('A structured scientific evidence platform connecting historical HBOC terminology with tissue-level oxygen delivery across veterinary medicine, transplantation and human-use research.', 'A scientific intelligence platform connecting source-linked evidence, historical HBOC terminology and tissue-level oxygen delivery across veterinary medicine, transplantation and human-use research.')
+    .replace('"description":"A structured evidence platform for Precision Oxygenation Therapeutics across veterinary medicine, transplantation and human-use research."', '"description":"A scientific intelligence platform for Precision Oxygenation Therapeutics, source-linked evidence and oxygen-delivery research across veterinary medicine, transplantation and human-use research."')
+    .replace(/<span class="tag">Updated \d{2} [A-Z][a-z]{2} \d{4}<\/span>/, `<span class="tag">Updated ${version.updated}</span>`);
+}
+
 const headerRe = /<header class="site-header">[\s\S]*?<\/header>/i;
 let changed = 0;
 let skipped = 0;
 
 for (const file of walk(ROOT)) {
-  const rel = path.relative(ROOT, file);
+  const rel = path.relative(ROOT, file).replace(/\\/g, '/');
   const src = fs.readFileSync(file, 'utf8');
   if (!headerRe.test(src)) {
     skipped++;
@@ -81,6 +89,7 @@ for (const file of walk(ROOT)) {
   let next = src.replace(headerRe, navHtml(sectionFor(rel)));
   next = ensurePlatformAssets(next);
   next = normalizeAuthorIdentity(next);
+  if (rel === 'index.html') next = normalizeHomeIdentity(next);
 
   if (next !== src) {
     fs.writeFileSync(file, next);
