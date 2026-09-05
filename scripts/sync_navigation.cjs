@@ -9,6 +9,7 @@ const SHELL_HREF = '/BHOC-platform/assets/platform-shell.css';
 const INTELLIGENCE_HREF = '/BHOC-platform/assets/intelligence-2026.css';
 const NAV_SCRIPT = '/BHOC-platform/assets/navigation.js';
 const AUTHOR_PROFILE = 'https://www.linkedin.com/in/archil-jaliashvili-98804927b/';
+const BRAND_MARK = 'https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
 
 function walk(dir) {
   const out = [];
@@ -45,7 +46,7 @@ function navHtml(section) {
   const corporate = config.corporate
     ? `<a href="${config.corporate.href}" target="_blank" rel="noopener" class="nav-corporate">${config.corporate.label}</a>`
     : '';
-  return `<header class="site-header"><nav class="site-nav" aria-label="Main navigation"><a class="brand" href="${config.brand.href}"${brandCurrent}><img src="/BHOC-platform/assets/bhoc-mark.svg" alt="" width="30" height="30"><span class="brand-word">${config.brand.label}</span><span class="brand-sub">${config.brand.subLabel.replaceAll('&', '&amp;')}</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="bhoc-nav"><span>Menu</span><b aria-hidden="true">☰</b></button><div class="nav-links" id="bhoc-nav">${links}${corporate}</div></nav></header>`;
+  return `<header class="site-header"><nav class="site-nav" aria-label="Main navigation"><a class="brand" href="${config.brand.href}"${brandCurrent}><img class="brand-initiative-mark" src="${BRAND_MARK}" alt="BHOC Species &amp; Biodiversity Protection Initiative" width="38" height="35" decoding="async"><span class="brand-word">${config.brand.label}</span><span class="brand-sub">${config.brand.subLabel.replaceAll('&', '&amp;')}</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="bhoc-nav"><span>Menu</span><b aria-hidden="true">☰</b></button><div class="nav-links" id="bhoc-nav">${links}${corporate}</div></nav></header>`;
 }
 
 function ensurePlatformAssets(src) {
@@ -56,6 +57,12 @@ function ensurePlatformAssets(src) {
   if (!next.includes(NAV_SCRIPT)) next = next.replace(/<\/head>/i, `  <script src="${NAV_SCRIPT}" defer></script>\n</head>`);
   if (!next.includes(`rel="author" href="${AUTHOR_PROFILE}"`)) next = next.replace(/<\/head>/i, `  <link rel="author" href="${AUTHOR_PROFILE}">\n</head>`);
   return next;
+}
+
+function normalizeBrandIdentity(src) {
+  return src
+    .replace(/<link\s+rel=["']icon["'][^>]*bhoc-mark\.svg[^>]*>/gi, `<link rel="icon" href="${BRAND_MARK}" type="image/png">`)
+    .replaceAll('/BHOC-platform/assets/bhoc-mark.svg', BRAND_MARK);
 }
 
 function normalizeAuthorIdentity(src) {
@@ -81,13 +88,21 @@ let skipped = 0;
 for (const file of walk(ROOT)) {
   const rel = path.relative(ROOT, file).replace(/\\/g, '/');
   const src = fs.readFileSync(file, 'utf8');
-  if (!headerRe.test(src)) {
+  let next = normalizeBrandIdentity(src);
+
+  if (!headerRe.test(next)) {
     skipped++;
+    if (next !== src) {
+      fs.writeFileSync(file, next);
+      changed++;
+      console.log(`updated ${rel}`);
+    }
     continue;
   }
 
-  let next = src.replace(headerRe, navHtml(sectionFor(rel)));
+  next = next.replace(headerRe, navHtml(sectionFor(rel)));
   next = ensurePlatformAssets(next);
+  next = normalizeBrandIdentity(next);
   next = normalizeAuthorIdentity(next);
   if (rel === 'index.html') next = normalizeHomeIdentity(next);
 
