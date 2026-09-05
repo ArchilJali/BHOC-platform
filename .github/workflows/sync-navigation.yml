@@ -15,7 +15,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: bhoc-navigation-sync
+  group: bhoc-platform-content-write
   cancel-in-progress: false
 
 jobs:
