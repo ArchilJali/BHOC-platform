@@ -53,6 +53,7 @@ function ensurePlatformAssets(src) {
   if (!next.includes(SHELL_HREF)) next = next.replace(/<\/head>/i, `  <link rel="stylesheet" href="${SHELL_HREF}">\n</head>`);
   if (!next.includes(INTELLIGENCE_HREF)) next = next.replace(/<\/head>/i, `  <link rel="stylesheet" href="${INTELLIGENCE_HREF}">\n</head>`);
   if (!next.includes(NAV_SCRIPT)) next = next.replace(/<\/head>/i, `  <script src="${NAV_SCRIPT}" defer></script>\n</head>`);
+  if (!next.includes(`rel="author" href="${AUTHOR_PROFILE}"`)) next = next.replace(/<\/head>/i, `  <link rel="author" href="${AUTHOR_PROFILE}">\n</head>`);
   return next;
 }
 
