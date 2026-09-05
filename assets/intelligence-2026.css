@@ -58,8 +58,9 @@ body{
   font-family:Arial,Helvetica,sans-serif!important;
 }
 .brand img{display:block;width:30px;height:30px;object-fit:contain;flex:0 0 auto}
-.brand-word{font-size:22px!important;font-weight:800!important;letter-spacing:.025em!important;color:var(--bhoc-navy)!important}
+.brand-word{display:inline!important;font-size:22px!important;font-weight:800!important;letter-spacing:.025em!important;color:var(--bhoc-navy)!important}
 .brand-sub{
+  display:inline!important;
   margin-left:2px!important;
   padding-left:10px!important;
   border-left:1px solid var(--bhoc-line);
@@ -246,8 +247,8 @@ body.theme-transplant .hub-mark,body.theme-transplant .tag.year{color:#9a2638}
   }
   .brand{min-width:0}
   .brand img{width:28px;height:28px}
-  .brand-word{font-size:20px!important}
-  .brand-sub{font-size:7.5px!important;white-space:normal;max-width:128px}
+  .brand-word{display:inline!important;font-size:20px!important}
+  .brand-sub{display:inline!important;font-size:7.5px!important;white-space:normal;max-width:128px}
   .nav-toggle{display:inline-flex!important;justify-self:end}
   .nav-links{
     display:none!important;
