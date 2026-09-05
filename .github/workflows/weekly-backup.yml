@@ -36,7 +36,7 @@ jobs:
           git archive --format=tar.gz --output="$OUT/BHOC-platform_v${VERSION}_SITE.tar.gz" HEAD
           sha256sum "$OUT/BHOC-platform_v${VERSION}_FULL.bundle" "$OUT/BHOC-platform_v${VERSION}_SITE.tar.gz" > "$OUT/BHOC-platform_v${VERSION}_SHA256.txt"
       - name: Store backup artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: BHOC-platform_BACKUP_v${{ steps.version.outputs.version }}
           path: ${{ runner.temp }}/bhoc-backup/
