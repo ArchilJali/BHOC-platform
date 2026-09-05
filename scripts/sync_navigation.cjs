@@ -61,7 +61,9 @@ function normalizeAuthorIdentity(src) {
   return src
     .replaceAll('"url":"https://www.linkedin.com/in/archil-jaliashvili-bhoc/"', `"url":"${AUTHOR_PROFILE}"`)
     .replaceAll('"url": "https://www.linkedin.com/in/archil-jaliashvili-bhoc/"', `"url": "${AUTHOR_PROFILE}"`)
-    .replaceAll('href="https://www.linkedin.com/in/archil-jaliashvili-bhoc/"', `href="${AUTHOR_PROFILE}"`);
+    .replaceAll('href="https://www.linkedin.com/in/archil-jaliashvili-bhoc/"', `href="${AUTHOR_PROFILE}"`)
+    .replaceAll('"author":{"@type":"Person","name":"Archil Jaliashvili"}', `"author":{"@type":"Person","name":"Archil Jaliashvili","url":"${AUTHOR_PROFILE}"}`)
+    .replaceAll('"author": {"@type": "Person", "name": "Archil Jaliashvili"}', `"author": {"@type": "Person", "name": "Archil Jaliashvili", "url": "${AUTHOR_PROFILE}"}`);
 }
 
 const headerRe = /<header class="site-header">[\s\S]*?<\/header>/i;
