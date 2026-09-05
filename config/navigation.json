@@ -1,15 +1,20 @@
 {
   "brand": {
     "label": "BHOC",
-    "subLabel": "Evidence & Science",
+    "subLabel": "Scientific Intelligence",
     "href": "/BHOC-platform/index.html"
   },
   "links": [
     {"label": "Veterinary", "href": "/BHOC-platform/veterinary/Vet-index.html", "section": "veterinary"},
     {"label": "Transplantation", "href": "/BHOC-platform/transplant/Transplant-index.html", "section": "transplant"},
     {"label": "Human Use", "href": "/BHOC-platform/human/BHOC-Human-index.html", "section": "human"},
+    {"label": "Applications", "href": "/BHOC-platform/clinical/", "section": "clinical"},
     {"label": "LinkedIn Publications", "href": "/BHOC-platform/social-media/linkedin/", "section": "linkedin"},
     {"label": "Science", "href": "/BHOC-platform/science/", "section": "science"},
     {"label": "History", "href": "/BHOC-platform/historical-sources/", "section": "history"}
-  ]
+  ],
+  "corporate": {
+    "label": "BHOC Therapeutics ↗",
+    "href": "https://bhoctherapeutics.com/"
+  }
 }
