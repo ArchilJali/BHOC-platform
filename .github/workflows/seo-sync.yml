@@ -1,0 +1,48 @@
+name: Sync SEO metadata and sitemap
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'seo/page-metadata.json'
+      - 'scripts/apply_seo_metadata.cjs'
+      - 'version.json'
+      - '.github/workflows/seo-sync.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bhoc-seo-sync
+  cancel-in-progress: false
+
+jobs:
+  sync-seo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Apply canonical SEO metadata
+        run: |
+          git pull --rebase origin main
+          node scripts/apply_seo_metadata.cjs
+
+      - name: Commit generated SEO outputs
+        run: |
+          git config user.name "BHOC SEO Automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add sitemap.xml '*.html' '**/*.html'
+          if git diff --cached --quiet; then
+            echo "SEO metadata and sitemap already synchronized."
+            exit 0
+          fi
+          git commit -m "Sync BHOC SEO metadata and sitemap [version-stamp]"
+          git pull --rebase origin main
+          git push
