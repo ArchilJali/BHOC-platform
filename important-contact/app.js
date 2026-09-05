@@ -1,4 +1,5 @@
 'use strict';
+const networkStyles=document.createElement('link');networkStyles.rel='stylesheet';networkStyles.href='network.css';document.head.append(networkStyles);
 const cards=[...document.querySelectorAll('.contact-card')];
 const search=document.getElementById('search');
 const country=document.getElementById('country');
