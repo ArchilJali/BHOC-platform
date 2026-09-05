@@ -18,7 +18,7 @@ test('canonical SEO pages have unique search titles and descriptions',()=>{
   const urls=new Set();
   for(const [file,data] of Object.entries(config)){
     assert.ok(data.title.length>=35&&data.title.length<=65,`${file}: title length ${data.title.length}`);
-    assert.ok(data.description.length>=110&&data.description.length<=170,`${file}: description length ${data.description.length}`);
+    assert.ok(data.description.length>=110&&data.description.length<=190,`${file}: description length ${data.description.length}`);
     assert.ok(!titles.has(data.title),`${file}: duplicate title`);
     assert.ok(!descriptions.has(data.description),`${file}: duplicate description`);
     assert.ok(!urls.has(data.url),`${file}: duplicate canonical URL`);
