@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: platform-version-stamp
+  group: bhoc-platform-content-write
   cancel-in-progress: false
 
 jobs:
@@ -98,4 +98,5 @@ jobs:
           if git diff --cached --quiet; then exit 0; fi
           VERSION="$(TZ=Asia/Tbilisi date +'%y.%m.%d')"
           git commit -m "Update live platform status to ${VERSION} [version-stamp]"
+          git pull --rebase origin main
           git push
