@@ -53,7 +53,95 @@
     }
   };
 
+  const addExplorerContext = () => {
+    const routes = [
+      {
+        match: '/veterinary/Vet-search.html',
+        href: 'Vet-index.html',
+        label: '← Veterinary Evidence Hub',
+        extraHref: 'Vet-fda-ema.html',
+        extraLabel: 'Regulatory Evidence'
+      },
+      {
+        match: '/human/BHOC-Human-search.html',
+        href: 'BHOC-Human-index.html',
+        label: '← Human Use Evidence Hub'
+      },
+      {
+        match: '/transplant/Transplant-search.html',
+        href: 'Transplant-index.html',
+        label: '← Transplantation Evidence Hub'
+      }
+    ];
+    const route = routes.find(item => path.endsWith(item.match));
+    if (!route) return;
+    const main = document.querySelector('main');
+    const intro = main?.querySelector('.page-intro');
+    if (!main || !intro || main.querySelector('.context-return')) return;
+
+    if (!document.querySelector('#context-return-style')) {
+      const style = document.createElement('style');
+      style.id = 'context-return-style';
+      style.textContent = '.context-return{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:16px 0 10px;font-size:11px;font-weight:700}.context-return a{text-decoration:none}.context-return span{color:var(--muted)}';
+      document.head.appendChild(style);
+    }
+
+    const context = document.createElement('nav');
+    context.className = 'context-return';
+    context.setAttribute('aria-label', 'Evidence section navigation');
+    const back = document.createElement('a');
+    back.href = route.href;
+    back.textContent = route.label;
+    context.appendChild(back);
+    if (route.extraHref) {
+      const separator = document.createElement('span');
+      separator.setAttribute('aria-hidden', 'true');
+      separator.textContent = '·';
+      const extra = document.createElement('a');
+      extra.href = route.extraHref;
+      extra.textContent = route.extraLabel;
+      context.append(separator, extra);
+    }
+    main.insertBefore(context, intro);
+  };
+
+  const enhanceApplicationCards = () => {
+    if (!(path.endsWith('/clinical/') || path.endsWith('/clinical/index.html'))) return;
+    const routes = [
+      ['.vertical-card.sickle', '/BHOC-platform/human/BHOC-Human-search.html?direction=Hematology%2C%20Sickle%20Cell%20%26%20Severe%20Anemia', 'Open sickle cell and severe anemia evidence'],
+      ['.vertical-card.oncology', '/BHOC-platform/human/BHOC-Human-search.html?direction=Oncology%20%26%20Tumor%20Oxygenation', 'Open oncology and tumor oxygenation evidence'],
+      ['.vertical-card.transplant', '/BHOC-platform/transplant/Transplant-index.html', 'Open transplantation evidence hub']
+    ];
+
+    routes.forEach(([selector, href, label]) => {
+      const card = document.querySelector(selector);
+      if (!card || card.tagName === 'A') return;
+      card.setAttribute('role', 'link');
+      card.setAttribute('tabindex', '0');
+      card.setAttribute('aria-label', label);
+      card.style.cursor = 'pointer';
+      const open = () => { window.location.href = href; };
+      card.addEventListener('click', event => {
+        if (!event.target.closest('a, button, input, select, textarea')) open();
+      });
+      card.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          open();
+        }
+      });
+    });
+
+    const dfu = document.querySelector('.vertical-card.dfu');
+    if (dfu && dfu.tagName !== 'A') {
+      dfu.style.cursor = 'default';
+      dfu.setAttribute('title', 'Evidence mapping in development');
+    }
+  };
+
   normalizePrimaryExplorerCTA();
+  addExplorerContext();
+  enhanceApplicationCards();
 
   if (!path.includes('/veterinary/')) return;
 
