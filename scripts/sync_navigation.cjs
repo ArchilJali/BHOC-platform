@@ -12,8 +12,10 @@ const AUTHOR_PROFILE = 'https://www.linkedin.com/in/archil-jaliashvili-98804927b
 const BRAND_MARK = 'https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
 const VET_MARK = 'https://bhocvet.com/assets/bhoc-veterinary-organization-logo.svg';
 
-const wordmark = className => `<span class="${className}">BH<span class="brand-o">O</span>C</span>`;
-const veterinaryWordmark = () => '<span class="vet-wordmark">BH<span class="vet-o">O</span>C</span>';
+// Keep BHOC as one continuous wordmark. The O is a semantic child only for colour,
+// never a separate spaced span. This avoids legacy `.brand span` rules inserting gaps.
+const wordmark = className => `<strong class="${className}">BH<b class="brand-o">O</b>C</strong>`;
+const veterinaryWordmark = () => '<strong class="vet-wordmark">BH<b class="vet-o">O</b>C</strong>';
 
 function walk(dir) {
   const out = [];
@@ -86,7 +88,7 @@ function normalizeAuthorIdentity(src) {
 function normalizeVeterinaryBranding(src, section) {
   if (section !== 'veterinary') return src;
   return src
-    .replaceAll('<span>BHOC · Biological Hemoglobin Oxygen Carrier', '<span>BH<span class="vet-o">O</span>C · Biological Hemoglobin Oxygen Carrier')
+    .replaceAll('<span>BHOC · Biological Hemoglobin Oxygen Carrier', '<span>BH<b class="vet-o">O</b>C · Biological Hemoglobin Oxygen Carrier')
     .replaceAll('>BHOC Veterinary</a>', `>${veterinaryWordmark()} Veterinary</a>`)
     .replaceAll('>BHOC Veterinary Site</a>', `>${veterinaryWordmark()} Veterinary Site</a>`);
 }
