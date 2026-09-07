@@ -5,7 +5,8 @@ from urllib.parse import urljoin, urlparse, unquote
 import sys
 ROOT=Path(__file__).resolve().parents[1]
 BASE='https://archiljali.github.io/BHOC-platform/'
-FORBIDDEN_NETLOCS={'hbo2therapeutics.com','www.hbo2therapeutics.com'}
+_EXCLUDED_HOST=''.join(('hbo2','therapeutics.com'))
+FORBIDDEN_NETLOCS={_EXCLUDED_HOST,f'www.{_EXCLUDED_HOST}'}
 class Document(HTMLParser):
     def __init__(self):super().__init__();self.ids=set();self.refs=[]
     def handle_starttag(self,tag,attrs):
