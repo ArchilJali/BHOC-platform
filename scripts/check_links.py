@@ -5,6 +5,7 @@ from urllib.parse import urljoin, urlparse, unquote
 import sys
 ROOT=Path(__file__).resolve().parents[1]
 BASE='https://archiljali.github.io/BHOC-platform/'
+FORBIDDEN_NETLOCS={'hbo2therapeutics.com','www.hbo2therapeutics.com'}
 class Document(HTMLParser):
     def __init__(self):super().__init__();self.ids=set();self.refs=[]
     def handle_starttag(self,tag,attrs):
@@ -22,6 +23,9 @@ for p,d in documents.items():
     url=BASE+p.relative_to(ROOT).as_posix()
     for ref in d.refs:
         dest=urlparse(urljoin(url,ref))
+        if dest.netloc.lower() in FORBIDDEN_NETLOCS:
+            errors.append(f'{p.relative_to(ROOT)}: forbidden outbound link {ref}')
+            continue
         if dest.netloc!='archiljali.github.io' or not dest.path.startswith('/BHOC-platform/'):continue
         rel=unquote(dest.path[len('/BHOC-platform/'):]);target=(ROOT/rel).resolve()
         if target.is_dir():target=target/'index.html'
