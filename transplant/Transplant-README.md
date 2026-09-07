@@ -17,4 +17,4 @@ This section organizes transplantation, organ perfusion and preservation publica
 - Limb and composite tissue: 3
 - Total: 53
 
-The HBO2 Therapeutics website is treated as an external reference source. Records appearing in only one supplied source remain marked for review until their original DOI, PubMed record or full text is verified.
+Company corporate websites are not used as outbound evidence links. Records appearing in only one supplied source remain marked for review until their original DOI, PubMed record, regulator record or full text is verified.
