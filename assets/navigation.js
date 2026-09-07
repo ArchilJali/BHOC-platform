@@ -139,6 +139,25 @@
     }
   };
 
+  const removePublicGitHubLinks = () => {
+    document.querySelectorAll('a').forEach(link => {
+      const label = link.textContent.trim();
+      const href = link.getAttribute('href') || '';
+      if (!/^https:\/\/github\.com\/ArchilJali\//i.test(href)) return;
+      if (!/^(GitHub|Main Repository)$/i.test(label)) return;
+
+      const previous = link.previousSibling;
+      const next = link.nextSibling;
+      if (previous && previous.nodeType === Node.TEXT_NODE && /·\s*$/.test(previous.textContent || '')) {
+        previous.textContent = (previous.textContent || '').replace(/\s*·\s*$/, '');
+      } else if (next && next.nodeType === Node.TEXT_NODE && /^\s*·/.test(next.textContent || '')) {
+        next.textContent = (next.textContent || '').replace(/^\s*·\s*/, '');
+      }
+      link.remove();
+    });
+  };
+
+  removePublicGitHubLinks();
   normalizePrimaryExplorerCTA();
   addExplorerContext();
   enhanceApplicationCards();
