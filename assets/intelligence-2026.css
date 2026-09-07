@@ -59,7 +59,7 @@ body{
 }
 .brand img,.brand-initiative-mark{display:block!important;width:38px!important;height:35px!important;object-fit:contain!important;flex:0 0 auto}
 .brand-word{display:inline!important;font-size:22px!important;font-weight:800!important;letter-spacing:.025em!important;color:var(--bhoc-navy)!important}
-.brand-o{color:inherit}.vet-wordmark{font-family:Georgia,"Times New Roman",serif;letter-spacing:-.03em}.vet-o,body.theme-vet .brand-word .brand-o{color:#f65c00!important}
+.brand-o{color:inherit}.vet-wordmark{font-family:Georgia,"Times New Roman",serif;letter-spacing:-.03em}.vet-o,body.theme-vet .brand-word .brand-o{color:#f65c00!important;font-size:1em!important;line-height:inherit!important;vertical-align:baseline!important;display:inline!important}
 .brand-sub{
   display:inline!important;
   margin-left:2px!important;
