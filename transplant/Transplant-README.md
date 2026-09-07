@@ -4,9 +4,9 @@ This section organizes transplantation, organ perfusion and preservation publica
 
 ## Files
 
-- `Transplant-index.html` — section landing page.
-- `Transplant-search.html` — searchable publication catalogue.
-- `Transplant-publications.json` — structured publication data.
+- `Transplant-index.html` - section landing page.
+- `Transplant-search.html` - searchable publication catalogue.
+- `Transplant-publications.json` - structured publication data.
 
 ## Current catalogue
 

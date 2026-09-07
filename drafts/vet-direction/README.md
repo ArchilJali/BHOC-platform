@@ -1,4 +1,4 @@
-# BHOC VET Direction — private staging
+# BHOC VET Direction - private staging
 
 Status: **PRIVATE STAGING / NOT FOR INDEXING**
 
@@ -15,8 +15,8 @@ Purpose: develop the future Veterinary Applications / BHOC VET mini-site away fr
 
 ## Current staging pages
 
-- `index.html` — VET Direction landing / visual system / navigation logic.
-- `oxyglobin-veterinary.html` — cornerstone draft for Oxyglobin → HBOC → BHOC.
+- `index.html` - VET Direction landing / visual system / navigation logic.
+- `oxyglobin-veterinary.html` - cornerstone draft for Oxyglobin → HBOC → BHOC.
 
 ## Target public architecture after approval
 

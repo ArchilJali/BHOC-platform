@@ -179,7 +179,7 @@
 .mission-responsibility strong{font-family:Georgia,serif;font-size:10px;line-height:1.18}
 .mission-responsibility span{font-size:7.8px;line-height:1.35;color:#ffece5}
 
-/* Smaller Rem & Eva image — preserve sharpness by not stretching it */
+/* Smaller Rem & Eva image - preserve sharpness by not stretching it */
 .mission-hero-photo{position:relative!important;width:330px!important;min-height:0!important;height:318px!important;background:#2a2a2a!important;overflow:hidden!important}
 .mission-hero-photo img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 44%!important;display:block!important;image-rendering:auto!important}
 .photo-label{left:10px!important;right:10px!important;bottom:9px!important;padding:7px 9px!important;border-radius:8px!important;background:rgba(24,26,27,.76)!important}
@@ -334,7 +334,7 @@
   object-position:center 44%!important;
 }
 
-/* Proper logo — no emoji/currentColor fallbacks */
+/* Proper logo - no emoji/currentColor fallbacks */
 .rb-mark-svg{display:block;flex:0 0 auto}
 .rb-mark-header{width:31px!important;height:35px!important}
 .rb-mark-light{width:43px!important;height:49px!important}

@@ -81,7 +81,7 @@
   "veterinary/Vet-business-concept.html": {
     "title": "Veterinary Oxygen Therapeutics Evidence Context | BHOC",
     "description": "Evidence-informed context for veterinary oxygen carriers, animal anemia, emergency veterinary care and blood-access limitations, without product claims.",
-    "keywords": "veterinary oxygen therapeutics, veterinary oxygen carrier, animal anemia, emergency veterinary care, veterinary blood access, BHOC research context",
+    "keywords": "veterinary oxygen therapeutics, veterinary oxygen carrier, animal anemia, emergency veterinary care, veterinary blood access, BHOC development context",
     "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-business-concept.html",
     "type": "article",
     "breadcrumbs": [["Home", "/"], ["Veterinary evidence", "/veterinary/Vet-index.html"], ["Evidence context", "/veterinary/Vet-business-concept.html"]]
@@ -144,7 +144,7 @@
   },
   "science/nobel-foundations-oxygen-metabolism-physiology.html": {
     "title": "Nobel Foundations of Oxygen, Metabolism & Physiology | BHOC",
-    "description": "Nobel-recognized discoveries that shaped modern understanding of circulation, oxygen physiology, cellular respiration, metabolism, vascular signaling, HIF and hypoxia relevant to Precision Oxygenation Therapeutics.",
+    "description": "Nobel-recognized discoveries connecting circulation, oxygen physiology, cellular respiration, metabolism, vascular signaling, HIF and hypoxia to Precision Oxygenation Therapeutics.",
     "keywords": "oxygen physiology, oxygen metabolism, oxygen sensing, HIF, hypoxia, cellular respiration, microcirculation, vascular physiology, Precision Oxygenation Therapeutics, BHOC",
     "url": "https://archiljali.github.io/BHOC-platform/science/nobel-foundations-oxygen-metabolism-physiology.html",
     "type": "article",
@@ -183,16 +183,16 @@
     "breadcrumbs": [["Home", "/"], ["Historical sources", "/historical-sources/"], ["Biopure history", "/historical-sources/biopure-standing-on-the-shoulders-of-giants/"]]
   },
   "historical-sources/biopure-annual-report-2001/index.html": {
-    "title": "Biopure Annual Report 2001 | Hemopure, Oxyglobin & Oxygen Therapeutics History",
-    "description": "Historical source note on Biopure's 2001 Annual Report covering Hemopure, Oxyglobin, oxygen therapeutics, South Africa approval, Phase III development, prehospital blood logistics and manufacturing scale-up.",
+    "title": "Biopure 2001 Annual Report | Hemopure & Oxyglobin History",
+    "description": "Historical review of Biopure's 2001 Annual Report covering Hemopure, Oxyglobin, South African approval, Phase III development, prehospital logistics and manufacturing.",
     "keywords": "Biopure Annual Report 2001, Biopure, Hemopure, HBOC-201, Oxyglobin, HBOC history, oxygen therapeutics history, prehospital blood logistics, acute anemia, BHOC",
     "url": "https://archiljali.github.io/BHOC-platform/historical-sources/biopure-annual-report-2001/",
     "type": "article",
     "breadcrumbs": [["Home", "/"], ["Historical sources", "/historical-sources/"], ["Biopure Annual Report 2001", "/historical-sources/biopure-annual-report-2001/"]]
   },
   "historical-sources/biopure-annual-report-2002/index.html": {
-    "title": "Biopure Annual Report 2002 | Hemopure, Prehospital Trauma & Oxygen Therapeutics",
-    "description": "Historical source note on Biopure's 2002 Annual Report covering Hemopure, HBOC-201, Oxyglobin, FDA BLA review, South Africa approval, prehospital trauma, military research and oxygen therapeutics.",
+    "title": "Biopure 2002 Annual Report | Hemopure & Trauma History",
+    "description": "Historical review of Biopure's 2002 Annual Report covering Hemopure, HBOC-201, Oxyglobin, FDA BLA review, South African approval, trauma research and oxygen therapeutics.",
     "keywords": "Biopure Annual Report 2002, Biopure, Hemopure, HBOC-201, Oxyglobin, prehospital trauma, military research, FDA BLA, oxygen therapeutics history, BHOC",
     "url": "https://archiljali.github.io/BHOC-platform/historical-sources/biopure-annual-report-2002/",
     "type": "article",
@@ -215,7 +215,7 @@
     "breadcrumbs": [["Home", "/"], ["LinkedIn publications", "/social-media/linkedin/"], ["Tissue oxygenation and HBOC", "/social-media/linkedin/hemoglobin-beta-cys93-nitric-oxide-tissue-oxygenation.html"]]
   },
   "clinical/index.html": {
-    "title": "BHOC Applications | Prehospital EMS, PPH & Precision Oxygen Therapeutics",
+    "title": "BHOC Applications | EMS, PPH & Oxygen Therapeutics",
     "description": "Explore BHOC and HBOC applications across prehospital EMS, emergency blood transfusion, postpartum hemorrhage, donor blood, PBM and tissue oxygenation.",
     "keywords": "BHOC applications, HBOC applications, Precision Oxygen Therapeutics, prehospital EMS, emergency blood transfusion, postpartum hemorrhage, PPH, donor blood, patient blood management, PBM, oxygen delivery, tissue oxygenation",
     "url": "https://archiljali.github.io/BHOC-platform/clinical/",
@@ -223,7 +223,7 @@
     "breadcrumbs": [["Home", "/"], ["Applications", "/clinical/"]]
   },
   "clinical/prehospital-ems.html": {
-    "title": "Prehospital EMS & Emergency Blood Transfusion | BHOC Precision Oxygen Therapeutics",
+    "title": "Prehospital EMS & Emergency Transfusion | BHOC",
     "description": "Prehospital EMS and emergency blood transfusion evidence for severe hemorrhage: EMS blood programs, donor blood shortages, tissue oxygenation and BHOC Precision Oxygen Therapeutics.",
     "keywords": "prehospital EMS, emergency blood transfusion, prehospital blood transfusion, EMS blood, severe hemorrhage, hemorrhagic shock, donor blood, blood availability, oxygen delivery, tissue oxygenation, BHOC, HBOC",
     "url": "https://archiljali.github.io/BHOC-platform/clinical/prehospital-ems.html",

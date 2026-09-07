@@ -1,8 +1,8 @@
 # Veterinary HBOC Database
 
-## Oxyglobin — Veterinary Regulatory History and HBOC Research
+## Oxyglobin - Veterinary Regulatory History and HBOC Research
 
-Welcome to the **Veterinary HBOC Database** — a source-linked collection of publications, regulatory documents, and scientific resources on **Oxyglobin** (hemoglobin glutamer-200, bovine) and hemoglobin-based oxygen carriers (HBOCs) in veterinary medicine.
+Welcome to the **Veterinary HBOC Database** - a source-linked collection of publications, regulatory documents, and scientific resources on **Oxyglobin** (hemoglobin glutamer-200, bovine) and hemoglobin-based oxygen carriers (HBOCs) in veterinary medicine.
 
 ---
 
@@ -32,8 +32,8 @@ Welcome to the **Veterinary HBOC Database** — a source-linked collection of pu
 | **Journals** | 109 normalized journal choices; unclassified labels grouped as Other |
 | **Author Institutions** | 154 labels from article-level affiliations |
 | **Original Citation Links** | 235 original citations: 225 PubMed; 217 DOI links |
-| **FDA — Oxyglobin** | [Original approval: 12 January 1998; dogs](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700) |
-| **EU / EMA — Oxyglobin** | [Original EU authorisation: 1999; amendment: 2021](https://ec.europa.eu/health/documents/community-register/2021/20211018153269/dec_153269_en.pdf) |
+| **FDA: Oxyglobin** | [Original approval: 12 January 1998; dogs](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700) |
+| **EU / EMA: Oxyglobin** | [Original EU authorisation: 1999; amendment: 2021](https://ec.europa.eu/health/documents/community-register/2021/20211018153269/dec_153269_en.pdf) |
 
 Journal names are normalized for the publication filter: known abbreviations and full-name variants are merged, while non-journal or unclassified source labels appear under Other.
 
@@ -48,7 +48,7 @@ Historical authorisations concern Oxyglobin for dogs; they are not approval of a
 | `Vet-FDA-registry.md` | Complete FDA approval documentation for Oxyglobin |
 | `Vet-EMA-approvals-summary.md` | EMA approval summary for Oxyglobin |
 | `Vet-03-publication-BHOC-Oxyglobin.md` | Full list of 236 publications with DOI/PubMed links |
-| `Vet-business-concept.md` | BHOC concept — Precision Oxygen Therapeutics |
+| `Vet-business-concept.md` | BHOC concept - Precision Oxygen Therapeutics |
 | `publication-methodology.html` | Source matching, affiliation attribution and evidence limits |
 
 ---
@@ -71,13 +71,13 @@ Historical authorisations concern Oxyglobin for dogs; they are not approval of a
 
 ## 📚 Regulatory Approvals
 
-### FDA — Oxyglobin
+### FDA - Oxyglobin
 - **Approval Year:** 1998
 - **Indication:** Treatment of anemia in dogs
 - **Status:** The only FDA-approved HBOC for veterinary use
 - **Full Documentation:** `Vet-FDA-registry.md`
 
-### EMA — Oxyglobin
+### EMA - Oxyglobin
 - **Approval Status:** EU marketing authorisation (1999)
 - **Full Documentation:** `Vet-EMA-approvals-summary.md`
 
@@ -109,7 +109,7 @@ Exotic / other animals combines ferret, rabbit and other-animal labels, counting
 
 ## 📖 About This Database
 
-This database compiles **236 bibliographic records** on hemoglobin-based oxygen carriers (HBOCs), with a special focus on **Oxyglobin** — the only FDA-approved HBOC for veterinary use.
+This database compiles **236 bibliographic records** on hemoglobin-based oxygen carriers (HBOCs), with a special focus on **Oxyglobin** - the only FDA-approved HBOC for veterinary use.
 
 ### Coverage Includes
 
@@ -123,7 +123,7 @@ This database compiles **236 bibliographic records** on hemoglobin-based oxygen 
 
 ---
 
-## 🧬 Scientific Concept — Precision Oxygen Therapeutics
+## 🧬 Scientific Concept - Precision Oxygen Therapeutics
 
 The central concept is **Precision Oxygen Therapeutics**: focusing on oxygen delivery at the tissue level rather than on blood hemoglobin concentration alone.
 
@@ -147,8 +147,8 @@ Scientific claims should be supported by appropriate primary evidence, and ongoi
 
 ## 📬 Contact
 
-**Archil Jaliashvili**  
-BHOC — Biological Hemoglobin Oxygen Carrier  
+**Archil Jaliashvili**<br>
+BHOC - Biological Hemoglobin Oxygen Carrier<br>
 Precision Oxygen Therapeutics
 
 ---
@@ -162,4 +162,3 @@ Precision Oxygen Therapeutics
 ---
 
 *Last updated: 2026*
-

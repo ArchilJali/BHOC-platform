@@ -2,9 +2,17 @@
 <!-- HEADER - Visual Banner (not a link)                          -->
 <!-- ============================================================ -->
 
+## BHOC websites
+
+- [BHOC Therapeutics](https://bhoctherapeutics.com/)
+- [BHOC Veterinary](https://bhocvet.com/)
+- BHOC Transplant: coming soon at `bhoctransplant.com`
+
+Veterinary entry points: [BHOC Veterinary site](https://bhocvet.com/) and [Veterinary Evidence Library](https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html).
+
 <p align="center">
   <span style="background-color: #1a365d; color: #ffffff; padding: 10px 30px; border-radius: 8px; font-weight: 700; font-size: 18px; display: inline-block; letter-spacing: 1px;">
-    BHOC — Biological Hemoglobin Oxygen Carrier
+    BHOC: Biological Hemoglobin Oxygen Carrier
   </span>
 </p>
 
@@ -42,7 +50,7 @@
 <br>
 
 <p align="center" style="font-size: 15px; color: #2d3748; max-width: 700px; margin: 0 auto; font-style: italic;">
-  Delivering oxygen where it is needed, when it is needed, and in the amount needed — continuously, controllable, and at the tissue level.
+  Delivering oxygen where it is needed, when it is needed, and in the amount needed: continuously, controllably, and at the tissue level.
 </p>
 
 <br>
@@ -522,7 +530,7 @@
 <!-- SCIENTIFIC PRINCIPLES 2 (Oxygen Pathway) - CARD              -->
 <!-- ============================================================ -->
 
-## 🧬 Scientific Principles — Oxygen Pathway
+## 🧬 Scientific Principles: Oxygen Pathway
 
 <table>
   <tr>

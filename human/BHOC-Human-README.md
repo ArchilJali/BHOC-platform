@@ -17,7 +17,7 @@ Animal and relevant veterinary records are retained only when the source catalog
 
 ## Verification
 
-Records preserve PubMed, DOI and external-source links where available. `Matched across sources` means a record was found in at least two supplied catalogues. `Single-source — review` remains pending verification against an original identifier or full text.
+Records preserve PubMed, DOI and external-source links where available. `Matched across sources` means a record was found in at least two supplied catalogues. `Single-source - review` remains pending verification against an original identifier or full text.
 
 The catalogue maps evidence. It does not make a regulatory claim, establish clinical efficacy, or provide a clinical recommendation.
 
@@ -27,5 +27,5 @@ The Human Use section includes a separate page on **FDA Expanded Access under an
 
 ## Excluded from Human Use
 
-- Record 375: Indications and Techniques for Blood Transfusion in Birds — Veterinary-only record without a clear BHOC/HBOC translational link.
-- Record 385: Effects of Dietary Modifications on Cholesterol-Induced Anemis in Guinea Pigs — Veterinary-only record without a clear BHOC/HBOC translational link.
+- Record 375: Indications and Techniques for Blood Transfusion in Birds - Veterinary-only record without a clear BHOC/HBOC translational link.
+- Record 385: Effects of Dietary Modifications on Cholesterol-Induced Anemis in Guinea Pigs - Veterinary-only record without a clear BHOC/HBOC translational link.

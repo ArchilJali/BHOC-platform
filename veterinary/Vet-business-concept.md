@@ -1,4 +1,4 @@
-# BHOC — Business & Market Concept
+# BHOC - Business & Market Concept
 
 ## Precision Oxygen Therapeutics
 
@@ -25,7 +25,7 @@ The **Veterinary HBOC** market represents a unique opportunity in the field of t
 
 ---
 
-## 🎯 Precision Oxygen Therapeutics — New Concept
+## 🎯 Precision Oxygen Therapeutics - New Concept
 
 The central concept is **Precision Oxygen Therapeutics**:
 
@@ -70,7 +70,7 @@ This section is available to **approved partners only**.
 For more information, please contact:
 
 **Archil Jaliashvili**  
-BHOC — Biological Hemoglobin Oxygen Carrier
+BHOC - Biological Hemoglobin Oxygen Carrier
 
 ---
 

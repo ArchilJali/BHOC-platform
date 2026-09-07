@@ -147,7 +147,7 @@
     const start = items.length ? (page - 1) * PAGE_SIZE + 1 : 0;
     const end = Math.min(page * PAGE_SIZE, items.length);
     const shown = items.slice(start ? start - 1 : 0, end);
-    $('stats').textContent = `${start}–${end} of ${items.length} publications`;
+    $('stats').textContent = `${start}-${end} of ${items.length} publications`;
     $('page').textContent = `Page ${page} of ${totalPages}`;
     $('prev').disabled = page === 1;
     $('next').disabled = page === totalPages;

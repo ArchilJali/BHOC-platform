@@ -13,8 +13,21 @@
     {"label": "Science", "href": "/BHOC-platform/science/", "section": "science"},
     {"label": "History", "href": "/BHOC-platform/historical-sources/", "section": "history"}
   ],
-  "corporate": {
-    "label": "BHOC Therapeutics ↗",
-    "href": "https://bhoctherapeutics.com/"
-  }
+  "network": [
+    {
+      "label": "BHOC Therapeutics",
+      "href": "https://bhoctherapeutics.com/",
+      "enabled": true
+    },
+    {
+      "label": "BHOC Veterinary",
+      "href": "https://bhocvet.com/",
+      "enabled": true,
+      "theme": "vet"
+    },
+    {
+      "label": "BHOC Transplant",
+      "enabled": false
+    }
+  ]
 }

@@ -20,7 +20,7 @@ In the 1980s, this question acquired new urgency. HIV/AIDS had transformed the p
 
 The resulting search for alternatives attracted major pharmaceutical companies, biotechnology ventures, government researchers and academic laboratories. Yet the field discovered that carrying oxygen was only the beginning. Cell-free hemoglobin interacted with vascular physiology in ways that were not equivalent to hemoglobin enclosed within a red blood cell. Development programs failed, clinical results disappointed, safety concerns emerged and regulatory scrutiny intensified.[3](#ref-3),[4](#ref-4)
 
-Biopure continued through this increasingly difficult environment. Its history is important not because it was an uninterrupted success—it was not—but because it connected more parts of the translational chain than most programs in the field. This article argues that the company's distinguishing asset was not only its technology. It was the unusual combination of people capable of moving the technology from science to manufacturing, regulation and clinical use.
+Biopure continued through this increasingly difficult environment. Its history is important not because it was an uninterrupted success-it was not-but because it connected more parts of the translational chain than most programs in the field. This article argues that the company's distinguishing asset was not only its technology. It was the unusual combination of people capable of moving the technology from science to manufacturing, regulation and clinical use.
 
 This is a historical perspective rather than a systematic review or a modern benefit-risk assessment. It prioritizes contemporaneous regulatory records and corporate filings, followed by institutional archives and peer-reviewed literature. Statements originating in Biopure materials are treated as company-reported historical evidence when independent confirmation is unavailable.
 
@@ -43,7 +43,7 @@ Their importance was not ceremonial. Each represented a capability that the oxyg
 
 ### 2.1. Carl W. Rausch: The Integrating Figure
 
-At the center was **Carl W. Rausch**, Biopure's co-founder, long-serving Chairman and Chief Executive Officer, and later Chief Technology Officer. Before Biopure, Rausch worked in preparative and process chromatography at the Waters Associates division of Millipore. His earlier work involved developing process-scale chromatographic separation capability for industrial use—a background directly relevant to the challenge Biopure would later confront.[5](#ref-5),[6](#ref-6),[17](#ref-17)
+At the center was **Carl W. Rausch**, Biopure's co-founder, long-serving Chairman and Chief Executive Officer, and later Chief Technology Officer. Before Biopure, Rausch worked in preparative and process chromatography at the Waters Associates division of Millipore. His earlier work involved developing process-scale chromatographic separation capability for industrial use-a background directly relevant to the challenge Biopure would later confront.[5](#ref-5),[6](#ref-6),[17](#ref-17)
 
 This detail matters. Biopure was not simply trying to discover whether hemoglobin could carry oxygen; nature had already answered that question. The central industrial challenge was whether large quantities of biological material could be purified, modified, standardized and reproduced under pharmaceutical conditions.
 
@@ -55,7 +55,7 @@ There is also a quieter leadership achievement. Around Rausch, Biopure assembled
 
 **David N. Judelson** brought a radically different background. He had co-founded Gulf & Western Industries and served as its President and Chief Operating Officer from 1967 to 1983. The major conglomerate included Paramount Pictures. Judelson was also a mechanical engineer.[14](#ref-14)
 
-He became a co-founder and Vice Chairman of Biopure. The transition—from constructing one of America's best-known industrial conglomerates to supporting a biotechnology company in Cambridge—appears surprising only if biotechnology is viewed as laboratory science alone.
+He became a co-founder and Vice Chairman of Biopure. The transition-from constructing one of America's best-known industrial conglomerates to supporting a biotechnology company in Cambridge-appears surprising only if biotechnology is viewed as laboratory science alone.
 
 A scientific discovery does not automatically become an organization. It needs capital, structure, negotiation, facilities, management and the ability to survive the long distance between an experiment and a market. Judelson represented industrial imagination: the belief that a technically difficult process could be organized, financed and scaled into a real enterprise.
 
@@ -93,7 +93,7 @@ His presence also sharpened the historical question. Why would a physician who h
 
 **Joachim Schnell, Ph.D.** spent nearly four decades at B. Braun. He joined the company as a scientist, became head of research and development, entered its Management Board in 1971 and later held responsibility for research and technology, pharmaceuticals, Medical, Hospital Care and international operations. He also served for many years as Deputy Chairman of the Management Board.[16](#ref-16)
 
-Through Schnell and B. Braun, a different form of expertise entered the Biopure story: not only pharmaceutical development, but the infrastructure through which medicine actually reaches hospitals—infusion systems, clinical products, manufacturing, distribution and European operations.
+Through Schnell and B. Braun, a different form of expertise entered the Biopure story: not only pharmaceutical development, but the infrastructure through which medicine actually reaches hospitals-infusion systems, clinical products, manufacturing, distribution and European operations.
 
 That distinction is important. Translational biotechnology does not end when a molecule works or when a regulator reviews a dossier. The final product must be manufactured, packaged, distributed, stored and placed into a clinician's hand in a form that can be used safely. B. Braun understood that last mile better than most organizations.
 
@@ -187,7 +187,7 @@ Eventually, the product left the building.
 
 Somewhere far from the boardroom, a clinician opened a package. At that moment, there was no Chairman, CEO, Surgeon General, pharmaceutical executive, industrialist or biotechnology founder.
 
-There was only a patient—and oxygen that needed to reach tissue.
+There was only a patient-and oxygen that needed to reach tissue.
 
 **Perhaps that was the point all along.**
 

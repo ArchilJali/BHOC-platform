@@ -1,4 +1,4 @@
-# FDA Approval — Oxyglobin (NADA 141-067)
+# FDA Approval - Oxyglobin (NADA 141-067)
 
 ## Overview
 
@@ -20,7 +20,7 @@ Oxyglobin was approved by the FDA under **New Animal Drug Application NADA 141-0
 
 ### Official Records
 
-- <a href="https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700" target="_blank">FDA Freedom of Information Summary for the original approval — NADA 141-067</a>
+- <a href="https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700" target="_blank">FDA Freedom of Information Summary for the original approval - NADA 141-067</a>
 - <a href="https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/603" target="_blank">FDA supplemental approval record and revised dosage information</a>
 
 ---
@@ -45,7 +45,7 @@ The original FDA approval states the indication as:
 | Parameter | Detail |
 |-----------|--------|
 | **Original Dose (1998)** | 30 mL/kg once |
-| **Supplemental Approval (2006)** | 10–30 mL/kg once |
+| **Supplemental Approval (2006)** | 10-30 mL/kg once |
 | **Infusion Rate** | Up to 10 mL/kg/hour |
 | **Route** | Intravenous (central or peripheral) |
 | **Cross-matching** | Not required |
@@ -61,8 +61,8 @@ The original FDA approval states the indication as:
 | Parameter | Result |
 |-----------|--------|
 | **Pivotal Field Trial** | 64 client-owned anaemic dogs; 30 randomized to Oxyglobin and 34 to control |
-| **Treatment success — efficacy population** | 95% (20/21) Oxyglobin vs 32% (9/28) control; p≤0.001 |
-| **Treatment success — ITT** | 73% (22/30) Oxyglobin vs 29% (10/34) control; p≤0.001 |
+| **Treatment success - efficacy population** | 95% (20/21) Oxyglobin vs 32% (9/28) control; p≤0.001 |
+| **Treatment success - ITT** | 73% (22/30) Oxyglobin vs 29% (10/34) control; p≤0.001 |
 | **Time to Failure** | Significantly longer for Oxyglobin in efficacy and ITT analyses (p<0.001) |
 | **Plasma hemoglobin** | ITT mean change +4.16 g/dL immediately and +2.84 g/dL at 24 h; p<0.001 |
 | **Physical Condition Scale** | Improved from pretreatment through 24 h; p<0.001 |

@@ -32,7 +32,7 @@
     const filtered=C.sort(C.filter(data,readFilters()),$('sortSelect').value);
     const p=C.paginate(filtered,page,$('pageSize').value);page=p.page;
     $('results').innerHTML=p.items.length?p.items.map(card).join(''):'<div class="empty"><h3>No matching publications</h3><p>Try fewer filters, another spelling, or select All institutions.</p></div>';
-    $('resultSummary').textContent=p.total?`${p.start}–${p.end} of ${p.total} publications`:'0 matching publications';
+    $('resultSummary').textContent=p.total?`${p.start}-${p.end} of ${p.total} publications`:'0 matching publications';
     $('pageLabel').textContent=`Page ${p.page} of ${p.totalPages}`;
     $('previousPage').disabled=page<=1;$('nextPage').disabled=page>=p.totalPages;
     $('selectedLabel').textContent=selectedInstitution?(selectedInstitution===C.OTHER?'Other / institution not identified':selectedInstitution):'All institutions';

@@ -15,8 +15,8 @@ Explore species, author institutions, normalized journals and original citations
 | **Journals** | 109 normalized journal choices; unclassified labels grouped as Other |
 | **Author Institutions** | 154 labels from article-level affiliations |
 | **Original Citation Links** | 235 original citations: 225 PubMed; 217 DOI links |
-| **FDA — Oxyglobin** | [Original approval: 12 January 1998; dogs](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700) |
-| **EU / EMA — Oxyglobin** | [Original EU authorisation: 1999; amendment: 2021](https://ec.europa.eu/health/documents/community-register/2021/20211018153269/dec_153269_en.pdf) |
+| **FDA: Oxyglobin** | [Original approval: 12 January 1998; dogs](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700) |
+| **EU / EMA: Oxyglobin** | [Original EU authorisation: 1999; amendment: 2021](https://ec.europa.eu/health/documents/community-register/2021/20211018153269/dec_153269_en.pdf) |
 
 Journal names are normalized for the publication filter: known abbreviations and full-name variants are merged, while non-journal or unclassified source labels appear under Other.
 
@@ -44,7 +44,7 @@ Exotic / other animals combines ferret, rabbit and other-animal labels, counting
 
 ## A clinical milestone in the FDA record
 
-In the randomised field trial of 64 anaemic dogs, treatment success was reported in **22/30 (73%)** Oxyglobin-treated dogs versus **10/34 (29%)** controls (intent-to-treat population). Success meant no additional oxygen-carrying support for 24 hours, not survival. Adverse reactions, including pulmonary oedema, were reported. [Read the original FDA summary, pp. 4–8](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700).
+In the randomised field trial of 64 anaemic dogs, treatment success was reported in **22/30 (73%)** Oxyglobin-treated dogs versus **10/34 (29%)** controls (intent-to-treat population). Success meant no additional oxygen-carrying support for 24 hours, not survival. Adverse reactions, including pulmonary oedema, were reported. [Read the original FDA summary, pp. 4 to 8](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700).
 
 ## Explore the section
 

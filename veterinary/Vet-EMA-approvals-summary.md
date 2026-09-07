@@ -1,4 +1,4 @@
-# EMA Approval — Oxyglobin (EU/2/99/015)
+# EMA Approval - Oxyglobin (EU/2/99/015)
 
 ## Field-Trial Treatment Success
 
@@ -46,8 +46,8 @@ The European Commission granted the original marketing authorisation on **29 Nov
 
 - <a href="https://www.ema.europa.eu/en/medicines/veterinary/EPAR/oxyglobin" target="_blank">EMA Oxyglobin regulatory record</a>
 - <a href="https://ec.europa.eu/health/documents/community-register/1999/199911293347/anx_3347_en.pdf" target="_blank">Original 1999 European Commission Annexes</a>
-- <a href="regulatory/oxyglobin/Oxyglobin-EC-Annexes-2001.pdf" target="_blank"><strong>2001 European Commission Annexes — archived repository copy (18 December)</strong></a>
-- <a href="https://ec.europa.eu/health/documents/community-register/2001/200112184765/anx_4765_en.pdf" target="_blank">2001 European Commission Annexes — verify at official EC source</a>
+- <a href="regulatory/oxyglobin/Oxyglobin-EC-Annexes-2001.pdf" target="_blank"><strong>2001 European Commission Annexes - archived repository copy (18 December)</strong></a>
+- <a href="https://ec.europa.eu/health/documents/community-register/2001/200112184765/anx_4765_en.pdf" target="_blank">2001 European Commission Annexes - verify at official EC source</a>
 - <a href="https://ec.europa.eu/health/documents/community-register/2021/20211018153269/dec_153269_en.pdf" target="_blank">2021 European Commission authorisation amendment (18 October)</a>
 
 ---
@@ -83,7 +83,7 @@ The European Commission annexes dated **18 December 2001** provide a primary reg
 
 Oxyglobin provides oxygen-carrying support to dogs and improves clinical signs of anemia for at least 24 hours, **independent of the underlying condition**.
 
-> *"Oxyglobin provides oxygen-carrying support to dogs for at least 24 hours."* — EMA Assessment Report
+> *"Oxyglobin provides oxygen-carrying support to dogs for at least 24 hours."* - EMA Assessment Report
 
 ---
 
@@ -91,8 +91,8 @@ Oxyglobin provides oxygen-carrying support to dogs and improves clinical signs o
 
 | Parameter | Detail |
 |-----------|--------|
-| **Plasma Half-life** | Approximately 30–40 hours |
-| **Complete Elimination** | 5–7 days |
+| **Plasma Half-life** | Approximately 30-40 hours |
+| **Complete Elimination** | 5-7 days |
 | **Transient Hemoglobinuria** | <4 hours (<5% tetramer fraction) |
 
 ---

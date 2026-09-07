@@ -89,6 +89,7 @@ input::placeholder{color:#687b88}
 .facts dd{margin:4px 0 0;font-size:14px;font-weight:650}
 .document-link{display:flex;justify-content:space-between;align-items:flex-start;gap:15px;text-decoration:none;padding:14px 0;border-bottom:1px solid var(--line);font-size:13px;font-weight:650}
 .document-link small{font-size:10px;white-space:nowrap;font-weight:550;color:var(--muted)}
+.document-link[aria-disabled="true"]{color:var(--muted);cursor:default;opacity:.72}
 .reg-card details{margin-top:20px;font-size:13px;color:var(--muted)}
 .reg-card summary{font-weight:650;cursor:pointer;color:var(--ink)}
 .wide-panel{padding:28px;margin-top:24px}

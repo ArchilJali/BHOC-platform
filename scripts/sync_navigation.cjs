@@ -10,6 +10,10 @@ const INTELLIGENCE_HREF = '/BHOC-platform/assets/intelligence-2026.css';
 const NAV_SCRIPT = '/BHOC-platform/assets/navigation.js';
 const AUTHOR_PROFILE = 'https://www.linkedin.com/in/archil-jaliashvili-98804927b/';
 const BRAND_MARK = 'https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
+const VET_MARK = 'https://bhocvet.com/assets/bhoc-veterinary-organization-logo.svg';
+
+const wordmark = className => `<span class="${className}">BH<span class="brand-o">O</span>C</span>`;
+const veterinaryWordmark = () => '<span class="vet-wordmark">BH<span class="vet-o">O</span>C</span>';
 
 function walk(dir) {
   const out = [];
@@ -43,10 +47,15 @@ function navHtml(section) {
     const current = link.section === section ? ' aria-current="page"' : '';
     return `<a href="${link.href}"${current}>${link.label}</a>`;
   }).join('');
-  const corporate = config.corporate
-    ? `<a href="${config.corporate.href}" target="_blank" rel="noopener" class="nav-corporate">${config.corporate.label}</a>`
+  const network = config.network?.length
+    ? `<div class="nav-network" role="group" aria-label="BHOC websites">${config.network.map(item => item.enabled
+      ? `<a class="nav-network-link" href="${item.href}">${item.theme === 'vet' ? `${veterinaryWordmark()} Veterinary` : item.label}</a>`
+      : `<span class="nav-network-link nav-network-pending" aria-disabled="true" title="Coming soon">${item.label}<small>coming soon</small></span>`
+    ).join('')}</div>`
     : '';
-  return `<header class="site-header"><nav class="site-nav" aria-label="Main navigation"><a class="brand" href="${config.brand.href}"${brandCurrent}><img class="brand-initiative-mark" src="${BRAND_MARK}" alt="BHOC Species &amp; Biodiversity Protection Initiative" width="38" height="35" decoding="async"><span class="brand-word">${config.brand.label}</span><span class="brand-sub">${config.brand.subLabel.replaceAll('&', '&amp;')}</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="bhoc-nav"><span>Menu</span><b aria-hidden="true">☰</b></button><div class="nav-links" id="bhoc-nav">${links}${corporate}</div></nav></header>`;
+  const mark = section === 'veterinary' ? VET_MARK : BRAND_MARK;
+  const markAlt = section === 'veterinary' ? 'BHOC Veterinary logo' : 'BHOC Species &amp; Biodiversity Protection Initiative';
+  return `<header class="site-header"><nav class="site-nav" aria-label="Main navigation"><a class="brand" href="${config.brand.href}"${brandCurrent}><img class="brand-initiative-mark" src="${mark}" alt="${markAlt}" width="38" height="35" decoding="async">${wordmark('brand-word')}<span class="brand-sub">${config.brand.subLabel.replaceAll('&', '&amp;')}</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="bhoc-nav"><span>Menu</span><b aria-hidden="true">☰</b></button><div class="nav-links" id="bhoc-nav">${links}${network}</div></nav></header>`;
 }
 
 function ensurePlatformAssets(src) {
@@ -74,6 +83,14 @@ function normalizeAuthorIdentity(src) {
     .replaceAll('"author": {"@type": "Person", "name": "Archil Jaliashvili"}', `"author": {"@type": "Person", "name": "Archil Jaliashvili", "url": "${AUTHOR_PROFILE}"}`);
 }
 
+function normalizeVeterinaryBranding(src, section) {
+  if (section !== 'veterinary') return src;
+  return src
+    .replaceAll('<span>BHOC · Biological Hemoglobin Oxygen Carrier', '<span>BH<span class="vet-o">O</span>C · Biological Hemoglobin Oxygen Carrier')
+    .replaceAll('>BHOC Veterinary</a>', `>${veterinaryWordmark()} Veterinary</a>`)
+    .replaceAll('>BHOC Veterinary Site</a>', `>${veterinaryWordmark()} Veterinary Site</a>`);
+}
+
 function normalizeHomeIdentity(src) {
   return src
     .replace('A structured scientific evidence platform connecting historical HBOC terminology with tissue-level oxygen delivery across veterinary medicine, transplantation and human-use research.', 'A scientific intelligence platform connecting source-linked evidence, historical HBOC terminology and tissue-level oxygen delivery across veterinary medicine, transplantation and human-use research.')
@@ -88,7 +105,8 @@ let skipped = 0;
 for (const file of walk(ROOT)) {
   const rel = path.relative(ROOT, file).replace(/\\/g, '/');
   const src = fs.readFileSync(file, 'utf8');
-  let next = normalizeBrandIdentity(src);
+  const section = sectionFor(rel);
+  let next = normalizeVeterinaryBranding(normalizeBrandIdentity(src), section);
 
   if (!headerRe.test(next)) {
     skipped++;
@@ -100,7 +118,7 @@ for (const file of walk(ROOT)) {
     continue;
   }
 
-  next = next.replace(headerRe, navHtml(sectionFor(rel)));
+  next = next.replace(headerRe, navHtml(section));
   next = ensurePlatformAssets(next);
   next = normalizeBrandIdentity(next);
   next = normalizeAuthorIdentity(next);

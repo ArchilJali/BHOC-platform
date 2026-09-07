@@ -8,6 +8,8 @@ const config=JSON.parse(fs.readFileSync(path.join(root,'seo/page-metadata.json')
 const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 const initiativePreview='https://bhoctherapeutics.com/assets/bhoc-social-preview-20260905-initiative-logo.png';
 const initiativeMark='https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
+const veterinaryPreview='https://bhocvet.com/assets/bhoc-wildlife-pencil-20260907.png';
+const veterinaryMark='https://bhocvet.com/assets/favicon.svg';
 
 function html(file){return fs.readFileSync(path.join(root,file),'utf8')}
 function count(source,pattern){return [...source.matchAll(pattern)].length}
@@ -35,8 +37,9 @@ test('managed metadata, canonical, initiative branding and H1 are complete',()=>
     assert.equal(count(source,/<h1\b/gi),1,`${file}: H1 count`);
     assert.ok(source.includes(`<title>${data.title}</title>`),`${file}: configured title missing`);
     assert.ok(source.includes(`<link rel="canonical" href="${data.url}">`),`${file}: configured canonical missing`);
-    assert.ok(source.includes(`property="og:image" content="${initiativePreview}"`),`${file}: initiative OG image missing`);
-    assert.ok(source.includes(`<link rel="icon" href="${initiativeMark}" type="image/png">`),`${file}: initiative favicon missing`);
+    const isVeterinary=file.startsWith('veterinary/');
+    assert.ok(source.includes(`property="og:image" content="${isVeterinary?veterinaryPreview:initiativePreview}"`),`${file}: correct OG image missing`);
+    assert.ok(source.includes(`<link rel="icon" href="${isVeterinary?veterinaryMark:initiativeMark}" type="${isVeterinary?'image/svg+xml':'image/png'}">`),`${file}: correct favicon missing`);
     assert.ok(source.includes('name="twitter:card" content="summary_large_image"'),`${file}: Twitter card missing`);
   }
 });
@@ -66,4 +69,28 @@ test('local fallback social preview remains a valid 1200 by 630 PNG',()=>{
   assert.equal(png.toString('hex',0,8),'89504e470d0a1a0a');
   assert.equal(png.readUInt32BE(16),1200);
   assert.equal(png.readUInt32BE(20),630);
+});
+
+test('every shared platform header exposes the complete BHOC website network',()=>{
+  const pages=[];
+  const walk=dir=>{
+    for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
+      if(entry.name.startsWith('.')||entry.name==='node_modules')continue;
+      const full=path.join(dir,entry.name);
+      if(entry.isDirectory())walk(full);
+      else if(entry.isFile()&&entry.name.endsWith('.html')&&html(path.relative(root,full)).includes('class="site-header"'))pages.push(path.relative(root,full));
+    }
+  };
+  walk(root);
+  assert.ok(pages.length>=30,'shared header page coverage');
+  for(const file of pages){
+    const source=html(file);
+    assert.ok(source.includes('href="https://bhoctherapeutics.com/"'),`${file}: Therapeutics route`);
+    assert.ok(source.includes('>BHOC Therapeutics</a>'),`${file}: Therapeutics label`);
+    assert.ok(source.includes('href="https://bhocvet.com/"'),`${file}: Veterinary route`);
+    assert.ok(source.includes('<span class="vet-wordmark">BH<span class="vet-o">O</span>C</span> Veterinary</a>'),`${file}: Veterinary label and orange O`);
+    assert.ok(source.includes('class="nav-network-link nav-network-pending" aria-disabled="true"'),`${file}: inactive Transplant route`);
+    assert.ok(source.includes('BHOC Transplant<small>coming soon</small>'),`${file}: Transplant label`);
+    assert.ok(!source.includes('target="_blank" rel="noopener">BHOC Therapeutics'),`${file}: owned network routes stay in the same tab`);
+  }
 });
