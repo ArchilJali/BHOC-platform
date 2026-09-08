@@ -157,10 +157,30 @@
     });
   };
 
+  const restoreVetFdaEfficacyHighlight = () => {
+    if (!path.endsWith('/veterinary/Vet-index.html')) return;
+    const intro = document.querySelector('.page-intro.overview-intro');
+    if (!intro || document.querySelector('.vet-fda-efficacy-highlight')) return;
+
+    if (!document.querySelector('#vet-fda-efficacy-highlight-style')) {
+      const style = document.createElement('style');
+      style.id = 'vet-fda-efficacy-highlight-style';
+      style.textContent = '.vet-fda-efficacy-highlight{margin:20px 0 26px}.vet-fda-efficacy-highlight .vet-fda-hero-number{display:block;font-size:clamp(52px,7vw,84px);line-height:.95;font-weight:850;letter-spacing:-.045em;color:#fff}.vet-fda-efficacy-highlight .vet-fda-vs{display:block;margin:5px 0 12px;font-size:20px;font-weight:750;color:#ffd0b2}.vet-fda-efficacy-highlight .vet-fda-source{display:inline-block;margin-top:7px;font-weight:750}.vet-fda-efficacy-highlight .clinical-limit{margin-top:12px}';
+      document.head.appendChild(style);
+    }
+
+    const section = document.createElement('section');
+    section.className = 'clinical-highlight vet-fda-efficacy-highlight';
+    section.setAttribute('aria-labelledby', 'vet-fda-efficacy-heading');
+    section.innerHTML = '<div><div class="eyebrow">Original FDA canine field trial</div><h2 id="vet-fda-efficacy-heading">Field-Trial Treatment Success</h2><p><strong class="vet-fda-hero-number">95%</strong><span class="vet-fda-vs">vs 32% control</span></p><p>Efficacy population: Oxyglobin 20/21 · Control 9/28 · p≤0.001.</p><a class="vet-fda-source" href="https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700" target="_blank" rel="noopener noreferrer">FDA Freedom of Information Summary, pp. 4-9 ↗</a></div><div><dl class="clinical-stats"><div><dt>Efficacy population</dt><dd>95% <span>/ 32%</span></dd></div><div><dt>Intent-to-treat</dt><dd>73% <span>/ 29%</span></dd></div><div><dt>Endpoint window</dt><dd>24 <span>hours</span></dd></div></dl><p class="clinical-limit">FDA-defined treatment success meant no additional oxygen-carrying support was required for 24 hours. This is an efficacy endpoint, not a survival endpoint.</p><p><a href="Vet-FDA-registry.html">Open full FDA evidence detail →</a></p></div>';
+    intro.insertAdjacentElement('afterend', section);
+  };
+
   removePublicGitHubLinks();
   normalizePrimaryExplorerCTA();
   addExplorerContext();
   enhanceApplicationCards();
+  restoreVetFdaEfficacyHighlight();
 
   if (!path.includes('/veterinary/')) return;
 
