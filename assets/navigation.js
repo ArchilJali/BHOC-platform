@@ -40,6 +40,25 @@
     }
   }
 
+  const publicKnowledgeBaseRoutes = new Map([
+    ['https://github.com/archiljali/bhoc-vet-platform', 'https://archiljali.github.io/BHOC-VET-platform/'],
+    ['https://github.com/archiljali/bhoc-vet-platform/', 'https://archiljali.github.io/BHOC-VET-platform/'],
+    ['https://github.com/archiljali/oxygen-delivery-evidence', 'https://archiljali.github.io/BHOC-platform/real-world-evidence/'],
+    ['https://github.com/archiljali/oxygen-delivery-evidence/', 'https://archiljali.github.io/BHOC-platform/real-world-evidence/']
+  ]);
+
+  const rewriteKnowledgeBaseRepoLinks = () => {
+    document.querySelectorAll('a[href]').forEach(link => {
+      const href = (link.getAttribute('href') || '').trim();
+      const publicHref = publicKnowledgeBaseRoutes.get(href.toLowerCase());
+      if (!publicHref) return;
+      link.setAttribute('href', publicHref);
+      link.removeAttribute('target');
+      link.removeAttribute('rel');
+      link.removeAttribute('download');
+    });
+  };
+
   const addEcosystemNavigation = () => {
     const network = document.querySelector('.nav-network');
     if (!network || network.dataset.ecosystemEnhanced === 'true') return;
@@ -60,21 +79,17 @@
 
     const veterinary = document.createElement('a');
     veterinary.className = 'nav-network-link nav-network-knowledge';
-    veterinary.href = 'https://github.com/ArchilJali/BHOC-VET-platform';
-    veterinary.target = '_blank';
-    veterinary.rel = 'noopener noreferrer';
+    veterinary.href = 'https://archiljali.github.io/BHOC-VET-platform/';
     veterinary.textContent = 'Veterinary Direction';
     veterinary.title = 'Knowledge Base · BHOC VET-platform';
-    veterinary.setAttribute('aria-label', 'Veterinary Direction knowledge base, BHOC VET-platform repository');
+    veterinary.setAttribute('aria-label', 'Veterinary Direction knowledge base, public BHOC VET-platform');
 
     const realWorld = document.createElement('a');
     realWorld.className = 'nav-network-link nav-network-knowledge';
-    realWorld.href = 'https://github.com/ArchilJali/Oxygen-Delivery-Evidence';
-    realWorld.target = '_blank';
-    realWorld.rel = 'noopener noreferrer';
+    realWorld.href = 'https://archiljali.github.io/BHOC-platform/real-world-evidence/';
     realWorld.textContent = 'Real-World Evidence';
     realWorld.title = 'Knowledge Base · Oxygen Delivery Evidence';
-    realWorld.setAttribute('aria-label', 'Real-World Evidence knowledge base, Oxygen Delivery Evidence repository');
+    realWorld.setAttribute('aria-label', 'Real-World Evidence knowledge base, public Oxygen Delivery Evidence page');
 
     network.append(separator, knowledgeLabel, veterinary, realWorld);
   };
@@ -215,7 +230,9 @@
     intro.insertAdjacentElement('afterend', section);
   };
 
+  rewriteKnowledgeBaseRepoLinks();
   addEcosystemNavigation();
+  rewriteKnowledgeBaseRepoLinks();
   removePublicGitHubLinks();
   normalizePrimaryExplorerCTA();
   addExplorerContext();
@@ -229,8 +246,6 @@
     return href;
   };
 
-  // Keep the main VET route strip task-oriented. Technical/SEO pages remain crawlable,
-  // but they no longer compete with the three primary user destinations.
   document.querySelectorAll('.vet-route-strip-top a').forEach(link => {
     const href = link.getAttribute('href') || '';
     if (href.includes('publication-catalogue.html') || href.includes('Vet-03-publication-BHOC-Oxyglobin.html')) {
@@ -240,12 +255,10 @@
     if (href.includes('Vet-search.html')) link.textContent = 'Publication Explorer';
   });
 
-  // Database totals should open the interactive evidence set, not an intermediate static list.
   document.querySelectorAll('.overview-stat[href*="publication-catalogue.html"], .vet-pub-metrics a[href*="publication-catalogue.html"]').forEach(link => {
     link.setAttribute('href', localHref('Vet-search.html'));
   });
 
-  // Normalize visible search labels across the VET evidence experience.
   document.querySelectorAll('a[href*="Vet-search.html"]').forEach(link => {
     const label = link.textContent.trim();
     if (/^Publication Search$/i.test(label)) link.textContent = 'Publication Explorer';
@@ -254,10 +267,6 @@
     if (/^Open the publication explorer\s*→?$/i.test(label)) link.textContent = 'Open Publication Explorer →';
   });
 
-  // From evidence, application and regulatory detail pages, literature links go straight
-  // to Explorer. The static citation index remains available only where its technical role
-  // is useful: the Explorer fallback, the citation-index page itself and the dedicated
-  // organic-search publication landing page.
   const catalogueRolePages = [
     '/veterinary/Vet-search.html',
     '/veterinary/publication-catalogue.html',
@@ -279,7 +288,6 @@
     });
   }
 
-  // The full static page has a clear technical role: crawlable and accessible citation index.
   if (path.endsWith('/veterinary/publication-catalogue.html')) {
     const heading = document.querySelector('main h1');
     if (heading && /publication catalogue/i.test(heading.textContent)) heading.textContent = 'Full citation index.';
@@ -288,7 +296,6 @@
     });
   }
 
-  // Keep technical fallback links explicit instead of presenting them as a second search route.
   document.querySelectorAll('.notice a[href*="publication-catalogue.html"], footer a[href*="publication-catalogue.html"], p a[href*="publication-catalogue.html"]').forEach(link => {
     const label = link.textContent.trim();
     if (/full citation catalogue/i.test(label) || /accessible publication catalogue/i.test(label)) {
