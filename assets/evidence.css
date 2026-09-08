@@ -361,3 +361,6 @@ input::placeholder{color:#687b88}
 .vet-platform-banner-button:hover{background:#e95700;border-color:#e95700}
 .vet-platform-banner-button span{font-size:16px;line-height:1}
 @media(max-width:680px){.vet-platform-banner{display:block;padding:18px;margin-bottom:12px}.vet-platform-banner-button{width:100%;margin-top:14px}}
+
+/* Keep the O visible on the orange BHOC Veterinary primary button without making it heavy. */
+.theme-vet .overview-actions .button:not(.secondary) .vet-o{color:#143d8d;font-weight:400}
