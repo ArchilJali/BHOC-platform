@@ -10,7 +10,6 @@ const INTELLIGENCE_HREF = '/BHOC-platform/assets/intelligence-2026.css';
 const NAV_SCRIPT = '/BHOC-platform/assets/navigation.js';
 const AUTHOR_PROFILE = 'https://www.linkedin.com/in/archil-jaliashvili-98804927b/';
 const BRAND_MARK = 'https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
-const VET_MARK = 'https://bhocvet.com/assets/bhoc-veterinary-organization-logo.svg';
 
 // Keep BHOC as one continuous wordmark. The O is a semantic child only for colour,
 // never a separate spaced span. This avoids legacy `.brand span` rules inserting gaps.
@@ -55,9 +54,7 @@ function navHtml(section) {
       : `<span class="nav-network-link nav-network-pending" aria-disabled="true" title="Coming soon">${item.label}<small>coming soon</small></span>`
     ).join('')}</div>`
     : '';
-  const mark = section === 'veterinary' ? VET_MARK : BRAND_MARK;
-  const markAlt = section === 'veterinary' ? 'BHOC Veterinary logo' : 'BHOC Species &amp; Biodiversity Protection Initiative';
-  return `<header class="site-header"><nav class="site-nav" aria-label="Main navigation"><a class="brand" href="${config.brand.href}"${brandCurrent}><img class="brand-initiative-mark" src="${mark}" alt="${markAlt}" width="38" height="35" decoding="async">${wordmark('brand-word')}<span class="brand-sub">${config.brand.subLabel.replaceAll('&', '&amp;')}</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="bhoc-nav"><span>Menu</span><b aria-hidden="true">☰</b></button><div class="nav-links" id="bhoc-nav">${links}${network}</div></nav></header>`;
+  return `<header class="site-header"><nav class="site-nav" aria-label="Main navigation"><a class="brand" href="${config.brand.href}"${brandCurrent}>${wordmark('brand-word')}<span class="brand-sub">${config.brand.subLabel.replaceAll('&', '&amp;')}</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="bhoc-nav"><span>Menu</span><b aria-hidden="true">☰</b></button><div class="nav-links" id="bhoc-nav">${links}${network}</div></nav></header>`;
 }
 
 function ensurePlatformAssets(src) {
@@ -96,7 +93,9 @@ function normalizeVeterinaryBranding(src, section) {
 function normalizeHomeIdentity(src) {
   return src
     .replace('A structured scientific evidence platform connecting historical HBOC terminology with tissue-level oxygen delivery across veterinary medicine, transplantation and human-use research.', 'A scientific intelligence platform connecting source-linked evidence, historical HBOC terminology and tissue-level oxygen delivery across veterinary medicine, transplantation and human-use research.')
-    .replace('"description":"A structured evidence platform for Precision Oxygenation Therapeutics across veterinary medicine, transplantation and human-use research."', '"description":"A scientific intelligence platform for Precision Oxygenation Therapeutics, source-linked evidence and oxygen-delivery research across veterinary medicine, transplantation and human-use research."')
+    .replace('"description":"A structured evidence platform for Precision Oxygenation Therapeutics across veterinary medicine, transplantation and human-use research."', '"description":"A scientific intelligence platform for Precision Oxygen Therapeutics, source-linked evidence and oxygen-delivery research across veterinary medicine, transplantation and human-use research."')
+    .replaceAll('"name":"BHOC Evidence Platform"', '"name":"BHOC Therapeutics Platform"')
+    .replaceAll('"name":"BHOC Evidence Platform | Precision Oxygen Therapeutics"', '"name":"BHOC Therapeutics Platform | Precision Oxygen Therapeutics"')
     .replace(/<span class="tag">Updated \d{2} [A-Z][a-z]{2} \d{4}<\/span>/, `<span class="tag">Updated ${version.updated}</span>`);
 }
 
