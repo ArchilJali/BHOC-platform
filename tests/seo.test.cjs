@@ -6,9 +6,7 @@ const path=require('path');
 const root=path.resolve(__dirname,'..');
 const config=JSON.parse(fs.readFileSync(path.join(root,'seo/page-metadata.json'),'utf8'));
 const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
-const initiativePreview='https://bhoctherapeutics.com/assets/bhoc-social-preview-20260905-initiative-logo.png';
 const initiativeMark='https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
-const veterinaryPreview='https://bhocvet.com/assets/bhoc-wildlife-pencil-20260907.png';
 const veterinaryMark='https://bhocvet.com/assets/favicon.svg';
 
 function html(file){return fs.readFileSync(path.join(root,file),'utf8')}
@@ -28,7 +26,7 @@ test('canonical SEO pages have unique search titles and descriptions',()=>{
   }
 });
 
-test('managed metadata, canonical, initiative branding and H1 are complete',()=>{
+test('managed metadata, canonical, text-only social cards and H1 are complete',()=>{
   for(const [file,data] of Object.entries(config)){
     const source=html(file);
     assert.equal(count(source,/<title>/g),1,`${file}: title count`);
@@ -38,9 +36,11 @@ test('managed metadata, canonical, initiative branding and H1 are complete',()=>
     assert.ok(source.includes(`<title>${data.title}</title>`),`${file}: configured title missing`);
     assert.ok(source.includes(`<link rel="canonical" href="${data.url}">`),`${file}: configured canonical missing`);
     const isVeterinary=file.startsWith('veterinary/');
-    assert.ok(source.includes(`property="og:image" content="${isVeterinary?veterinaryPreview:initiativePreview}"`),`${file}: correct OG image missing`);
+    assert.ok(!source.includes('property="og:image"'),`${file}: OG image should be absent`);
+    assert.ok(!source.includes('name="twitter:image"'),`${file}: Twitter image should be absent`);
     assert.ok(source.includes(`<link rel="icon" href="${isVeterinary?veterinaryMark:initiativeMark}" type="${isVeterinary?'image/svg+xml':'image/png'}">`),`${file}: correct favicon missing`);
-    assert.ok(source.includes('name="twitter:card" content="summary_large_image"'),`${file}: Twitter card missing`);
+    assert.ok(source.includes('name="twitter:card" content="summary"'),`${file}: Twitter card missing`);
+    assert.ok(source.includes('property="og:site_name" content="BHOC Therapeutics Platform"'),`${file}: platform social name missing`);
   }
 });
 
