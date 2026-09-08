@@ -40,6 +40,45 @@
     }
   }
 
+  const addEcosystemNavigation = () => {
+    const network = document.querySelector('.nav-network');
+    if (!network || network.dataset.ecosystemEnhanced === 'true') return;
+    network.dataset.ecosystemEnhanced = 'true';
+
+    const websiteLabel = document.createElement('span');
+    websiteLabel.className = 'nav-network-label';
+    websiteLabel.textContent = 'Websites';
+    network.prepend(websiteLabel);
+
+    const separator = document.createElement('span');
+    separator.className = 'nav-network-separator';
+    separator.setAttribute('aria-hidden', 'true');
+
+    const knowledgeLabel = document.createElement('span');
+    knowledgeLabel.className = 'nav-network-label';
+    knowledgeLabel.textContent = 'Knowledge bases';
+
+    const veterinary = document.createElement('a');
+    veterinary.className = 'nav-network-link nav-network-knowledge';
+    veterinary.href = 'https://github.com/ArchilJali/BHOC-VET-platform';
+    veterinary.target = '_blank';
+    veterinary.rel = 'noopener noreferrer';
+    veterinary.textContent = 'Veterinary Direction';
+    veterinary.title = 'Knowledge Base · BHOC VET-platform';
+    veterinary.setAttribute('aria-label', 'Veterinary Direction knowledge base, BHOC VET-platform repository');
+
+    const realWorld = document.createElement('a');
+    realWorld.className = 'nav-network-link nav-network-knowledge';
+    realWorld.href = 'https://github.com/ArchilJali/Oxygen-Delivery-Evidence';
+    realWorld.target = '_blank';
+    realWorld.rel = 'noopener noreferrer';
+    realWorld.textContent = 'Real-World Evidence';
+    realWorld.title = 'Knowledge Base · Oxygen Delivery Evidence';
+    realWorld.setAttribute('aria-label', 'Real-World Evidence knowledge base, Oxygen Delivery Evidence repository');
+
+    network.append(separator, knowledgeLabel, veterinary, realWorld);
+  };
+
   const normalizePrimaryExplorerCTA = () => {
     const hubPaths = [
       '/BHOC-platform/veterinary/Vet-index.html',
@@ -176,6 +215,7 @@
     intro.insertAdjacentElement('afterend', section);
   };
 
+  addEcosystemNavigation();
   removePublicGitHubLinks();
   normalizePrimaryExplorerCTA();
   addExplorerContext();
