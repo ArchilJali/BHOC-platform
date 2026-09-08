@@ -47,7 +47,7 @@ Run `node scripts/build_veterinary_overview.cjs` after changing publication data
 
 The ten displayed species/model groups and the publication explorer share `speciesGroups` and `matchesSpecies` in `assets/publications-core.js`. Composite groups count unique records within a group; records can still appear in several groups. Journal counts are explicitly unnormalised journal labels, not unique journals. Author suggestions are extracted from the recorded author lists. Institution labels describe author affiliations, not necessarily study sites.
 
-The clinical highlight cites the original FDA FOI summary: 64 dogs; intent-to-treat success 22/30 versus 10/34; endpoint was no additional oxygen-carrying support for 24 hours, not survival. Adverse reactions are disclosed. Do not substitute the per-protocol 95% figure or broaden the product/species scope.
+The clinical highlight cites the original FDA FOI summary: 64 dogs; treatment success in the efficacy population was 20/21 (95%) versus 9/28 (32%), and in the intent-to-treat population 22/30 (73%) versus 10/34 (29%). Success meant no additional oxygen-carrying support for 24 hours, not survival. Adverse reactions are disclosed. Present both populations together; do not present the 95% figure as survival or broaden the product/species scope.
 
 ## Source provenance continuation
 
