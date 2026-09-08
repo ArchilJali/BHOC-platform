@@ -288,3 +288,9 @@ body.theme-transplant .hub-mark,body.theme-transplant .tag.year{color:#9a2638}
   .nav-network{grid-column:1!important;justify-content:flex-start!important}
   .nav-network-link{white-space:normal!important}
 }
+
+/* Veterinary primary CTA: keep only the O visible on the Zoetis-orange button. */
+body.theme-vet .overview-actions .button:not(.secondary) .vet-o{
+  color:#082d68!important;
+  font-weight:400!important;
+}
