@@ -40,25 +40,6 @@
     }
   }
 
-  const publicKnowledgeBaseRoutes = new Map([
-    ['https://github.com/archiljali/bhoc-vet-platform', 'https://archiljali.github.io/BHOC-VET-platform/'],
-    ['https://github.com/archiljali/bhoc-vet-platform/', 'https://archiljali.github.io/BHOC-VET-platform/'],
-    ['https://github.com/archiljali/oxygen-delivery-evidence', 'https://archiljali.github.io/BHOC-platform/real-world-evidence/'],
-    ['https://github.com/archiljali/oxygen-delivery-evidence/', 'https://archiljali.github.io/BHOC-platform/real-world-evidence/']
-  ]);
-
-  const rewriteKnowledgeBaseRepoLinks = () => {
-    document.querySelectorAll('a[href]').forEach(link => {
-      const href = (link.getAttribute('href') || '').trim();
-      const publicHref = publicKnowledgeBaseRoutes.get(href.toLowerCase());
-      if (!publicHref) return;
-      link.setAttribute('href', publicHref);
-      link.removeAttribute('target');
-      link.removeAttribute('rel');
-      link.removeAttribute('download');
-    });
-  };
-
   const addEcosystemNavigation = () => {
     const network = document.querySelector('.nav-network');
     if (!network || network.dataset.ecosystemEnhanced === 'true') return;
@@ -230,9 +211,7 @@
     intro.insertAdjacentElement('afterend', section);
   };
 
-  rewriteKnowledgeBaseRepoLinks();
   addEcosystemNavigation();
-  rewriteKnowledgeBaseRepoLinks();
   removePublicGitHubLinks();
   normalizePrimaryExplorerCTA();
   addExplorerContext();
