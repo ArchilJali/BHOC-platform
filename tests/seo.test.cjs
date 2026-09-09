@@ -88,7 +88,7 @@ test('every shared platform header exposes the complete BHOC website network',()
     assert.ok(source.includes('href="https://bhoctherapeutics.com/"'),`${file}: Therapeutics route`);
     assert.ok(source.includes('>BHOC Therapeutics</a>'),`${file}: Therapeutics label`);
     assert.ok(source.includes('href="https://bhocvet.com/"'),`${file}: Veterinary route`);
-    assert.ok(source.includes('<span class="vet-wordmark">BH<span class="vet-o">O</span>C</span> Veterinary</a>'),`${file}: Veterinary label and orange O`);
+    assert.ok(source.includes('<strong class="vet-wordmark">BH<b class="vet-o">O</b>C</strong> Veterinary</a>'),`${file}: Veterinary label and orange O`);
     assert.ok(source.includes('class="nav-network-link nav-network-pending" aria-disabled="true"'),`${file}: inactive Transplant route`);
     assert.ok(source.includes('BHOC Transplant<small>coming soon</small>'),`${file}: Transplant label`);
     assert.ok(!source.includes('target="_blank" rel="noopener">BHOC Therapeutics'),`${file}: owned network routes stay in the same tab`);
