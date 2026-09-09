@@ -7,6 +7,14 @@
     "url": "https://archiljali.github.io/BHOC-platform/",
     "type": "website"
   },
+  "real-world-evidence/index.html": {
+    "title": "Real-World Evidence | Oxygen Delivery Evidence | BHOC",
+    "description": "Public Real-World Evidence knowledge base for oxygen delivery, donor blood and transfusion comparators, tissue oxygenation, microcirculation, emergency care and translational evidence.",
+    "keywords": "Real-World Evidence, Oxygen Delivery Evidence, donor blood, blood transfusion, tissue oxygenation, hypoxia, ischemia, microcirculation, oxygen delivery, HBOC, BHOC, hemoglobin-based oxygen carrier",
+    "url": "https://archiljali.github.io/BHOC-platform/real-world-evidence/",
+    "type": "website",
+    "breadcrumbs": [["Home", "/"], ["Real-World Evidence", "/real-world-evidence/"]]
+  },
   "veterinary/Vet-index.html": {
     "title": "Veterinary Oxygen Carrier Evidence | Oxyglobin & BHOC",
     "description": "Explore 236 source-linked veterinary oxygen-carrier publications on Oxyglobin, animal anemia, species evidence, institutions and FDA and EMA records.",
@@ -238,5 +246,19 @@
     "url": "https://archiljali.github.io/BHOC-platform/clinical/pph-humanitarian-problem.html",
     "type": "article",
     "breadcrumbs": [["Home", "/"], ["Applications", "/clinical/"], ["PPH", "/clinical/pph-humanitarian-problem.html"]]
+  },
+  "concepts-hypotheses/index.html": {
+    "title": "Concepts & Hypotheses | BHOC Research & Pre-Publication",
+    "description": "BHOC Concepts & Hypotheses presents source-linked research concepts, scientific hypotheses, clinical questions and pre-publication thinking before formal journal publication.",
+    "keywords": "BHOC Concepts and Hypotheses, research concept, scientific hypothesis, clinical hypothesis, oxygen delivery, tissue oxygenation, BHOC, HBOC, Biological Hemoglobin Oxygen Carrier, Precision Oxygen Therapeutics, EMS, trauma, PPH, pre-publication",
+    "url": "https://archiljali.github.io/BHOC-platform/concepts-hypotheses/",
+    "type": "website"
+  },
+  "concepts-hypotheses/prehospital-oxygen-delivery-selection.html": {
+    "title": "Prehospital Oxygen-Delivery Patient Selection | BHOC",
+    "description": "BHOC research concept on prehospital patient selection beyond blood pressure and arrest, including tissue ischemia, oxygen-delivery failure and EMS protocol development.",
+    "keywords": "prehospital oxygen delivery, tissue ischemia, tissue oxygenation, EMS protocol, prehospital blood transfusion, hemorrhagic shock, trauma, oxygen deficit, organ oxygenation, BHOC, HBOC, Biological Hemoglobin Oxygen Carrier, Precision Oxygen Therapeutics, research concept, scientific hypothesis, pre-publication",
+    "url": "https://archiljali.github.io/BHOC-platform/concepts-hypotheses/prehospital-oxygen-delivery-selection.html",
+    "type": "article"
   }
 }
