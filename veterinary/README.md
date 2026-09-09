@@ -2,7 +2,7 @@
 
 ## Oxyglobin · HBOC literature · Precision oxygen therapeutics
 
-[**Open the Veterinary website →**](https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html) · [Publication explorer](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html) · [FDA & EMA records](https://archiljali.github.io/BHOC-platform/veterinary/Vet-fda-ema.html)
+[**Open the Veterinary website →**](https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html) · [BHOC VET-platform →](https://archiljali.github.io/BHOC-VET-platform/) · [Publication explorer](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html) · [FDA & EMA records](https://archiljali.github.io/BHOC-platform/veterinary/Vet-fda-ema.html)
 
 Explore species, author institutions, normalized journals and original citations. Historical Oxyglobin approvals, broader research and the proposed BHOC veterinary concept are presented separately.
 
@@ -44,7 +44,7 @@ Exotic / other animals combines ferret, rabbit and other-animal labels, counting
 
 ## A clinical milestone in the FDA record
 
-In the randomised field trial of 64 anaemic dogs, treatment success was reported in **22/30 (73%)** Oxyglobin-treated dogs versus **10/34 (29%)** controls (intent-to-treat population). Success meant no additional oxygen-carrying support for 24 hours, not survival. Adverse reactions, including pulmonary oedema, were reported. [Read the original FDA summary, pp. 4 to 8](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700).
+In the randomised field trial of 64 anaemic dogs, the FDA efficacy population reported treatment success in **20/21 (95%)** Oxyglobin-treated dogs versus **9/28 (32%)** controls; the intent-to-treat population reported **22/30 (73%)** versus **10/34 (29%)**. Success meant no additional oxygen-carrying support for 24 hours, not survival. Adverse reactions, including pulmonary oedema, were reported. [Read the original FDA summary, pp. 4 to 8](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700).
 
 ## Explore the section
 
