@@ -14,7 +14,7 @@ const BRAND_MARK = 'https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.p
 // Keep BHOC as one continuous wordmark. The O is a semantic child only for colour,
 // never a separate spaced span. This avoids legacy `.brand span` rules inserting gaps.
 const wordmark = className => `<strong class="${className}">BH<b class="brand-o">O</b>C</strong>`;
-const veterinaryWordmark = () => '<strong class="vet-wordmark">BH<b class="vet-o">O</b>C</strong>';
+const veterinaryWordmark = () => '<strong class="vet-wordmark">BH<b class="vet-o">O</b>C</strong> Veterinary';
 
 function walk(dir) {
   const out = [];
@@ -36,6 +36,7 @@ function sectionFor(rel) {
   if (p.startsWith('transplant/')) return 'transplant';
   if (p.startsWith('human/')) return 'human';
   if (p.startsWith('clinical/')) return 'clinical';
+  if (p.startsWith('concepts-hypotheses/')) return 'discussion';
   if (p.startsWith('open-discussion/')) return 'discussion';
   if (p.startsWith('social-media/linkedin/')) return 'linkedin';
   if (p.startsWith('science/')) return 'science';
@@ -51,7 +52,7 @@ function navHtml(section) {
   }).join('');
   const network = config.network?.length
     ? `<div class="nav-network" role="group" aria-label="BHOC websites">${config.network.map(item => item.enabled
-      ? `<a class="nav-network-link" href="${item.href}">${item.theme === 'vet' ? `${veterinaryWordmark()} Veterinary` : item.label}</a>`
+      ? `<a class="nav-network-link" href="${item.href}">${item.theme === 'vet' ? veterinaryWordmark() : item.label}</a>`
       : `<span class="nav-network-link nav-network-pending" aria-disabled="true" title="Coming soon">${item.label}<small>coming soon</small></span>`
     ).join('')}</div>`
     : '';
@@ -87,8 +88,8 @@ function normalizeVeterinaryBranding(src, section) {
   if (section !== 'veterinary') return src;
   return src
     .replaceAll('<span>BHOC · Biological Hemoglobin Oxygen Carrier', '<span>BH<b class="vet-o">O</b>C · Biological Hemoglobin Oxygen Carrier')
-    .replaceAll('>BHOC Veterinary</a>', `>${veterinaryWordmark()} Veterinary</a>`)
-    .replaceAll('>BHOC Veterinary Site</a>', `>${veterinaryWordmark()} Veterinary Site</a>`);
+    .replaceAll('>BHOC Veterinary</a>', `>${veterinaryWordmark()}</a>`)
+    .replaceAll('>BHOC Veterinary Site</a>', `>${veterinaryWordmark()} Site</a>`);
 }
 
 function normalizeHomeIdentity(src) {
