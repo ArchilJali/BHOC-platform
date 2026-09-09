@@ -1,4 +1,4 @@
-name: Weekly protected backup
+name: Verified weekly full backup
 
 on:
   push:
@@ -12,33 +12,62 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: verified-full-backup
+  cancel-in-progress: false
+
 jobs:
   backup:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v7
+      - name: Check out complete history
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           fetch-depth: 0
-      - name: Read version
-        id: version
-        shell: bash
-        run: |
-          VERSION=$(python3 -c "import json; print(json.load(open('version.json'))['version'])")
-          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
-      - name: Build full repository backup
+          persist-credentials: false
+
+      - name: Build and test full backup
+        id: backup
         shell: bash
         run: |
           set -euo pipefail
-          VERSION='${{ steps.version.outputs.version }}'
-          OUT="$RUNNER_TEMP/bhoc-backup"
-          mkdir -p "$OUT"
-          git bundle create "$OUT/BHOC-platform_v${VERSION}_FULL.bundle" --all
-          git archive --format=tar.gz --output="$OUT/BHOC-platform_v${VERSION}_SITE.tar.gz" HEAD
-          sha256sum "$OUT/BHOC-platform_v${VERSION}_FULL.bundle" "$OUT/BHOC-platform_v${VERSION}_SITE.tar.gz" > "$OUT/BHOC-platform_v${VERSION}_SHA256.txt"
-      - name: Store backup artifact
-        uses: actions/upload-artifact@v4
+          git update-ref refs/heads/main "$GITHUB_SHA"
+          repo_name="${GITHUB_REPOSITORY#*/}"
+          stamp="$(date -u +%Y%m%dT%H%M%SZ)"
+          out="$RUNNER_TEMP/verified-full-backup"
+          work="$RUNNER_TEMP/verified-full-backup-work"
+          mkdir -p "$out" "$work"
+          bundle_name="${repo_name}-${stamp}.git.bundle"
+          snapshot_name="${repo_name}-HEAD-${GITHUB_SHA}.tar.gz"
+          bundle="$work/$bundle_name"
+          snapshot="$work/$snapshot_name"
+          package="$out/${repo_name}-full-backup-${stamp}.tar.gz"
+          git bundle create "$bundle" --all
+          git archive --format=tar.gz --prefix="${repo_name}-${GITHUB_SHA}/" --output="$snapshot" "$GITHUB_SHA"
+          git for-each-ref --sort=refname --format='%(objectname)%09%(refname)' refs/heads refs/remotes refs/tags > "$work/REFS.tsv"
+          git bundle verify "$bundle" > "$work/BUNDLE-VERIFY.txt" 2>&1
+          restore="$RUNNER_TEMP/verified-full-backup-restore.git"
+          restored_refs="$RUNNER_TEMP/verified-full-backup-restored-refs.tsv"
+          git init --bare --quiet "$restore"
+          git -C "$restore" fetch --quiet "$bundle" 'refs/*:refs/*'
+          git -C "$restore" fsck --full --strict > "$work/RESTORE-FSCK.txt" 2>&1
+          test "$(git -C "$restore" rev-parse refs/heads/main)" = "$GITHUB_SHA"
+          git -C "$restore" for-each-ref --sort=refname --format='%(objectname)%09%(refname)' refs/heads refs/remotes refs/tags > "$restored_refs"
+          cmp "$work/REFS.tsv" "$restored_refs"
+          printf 'repository=%s\ncreated_at_utc=%s\nhead_sha=%s\nretention_rule=keep at least 3 verified full backups; delete only after 21 days when 3 newer verified backups exist\n' "$GITHUB_REPOSITORY" "$stamp" "$GITHUB_SHA" > "$work/MANIFEST.txt"
+          (cd "$work" && sha256sum "$bundle_name" "$snapshot_name" REFS.tsv BUNDLE-VERIFY.txt RESTORE-FSCK.txt MANIFEST.txt > SHA256SUMS)
+          tar -C "$work" -czf "$package" "$bundle_name" "$snapshot_name" REFS.tsv BUNDLE-VERIFY.txt RESTORE-FSCK.txt MANIFEST.txt SHA256SUMS
+          tar -tzf "$package" > /dev/null
+          sha256sum "$package" > "$package.sha256"
+          echo "artifact_name=${repo_name}-verified-full-backup-${stamp}" >> "$GITHUB_OUTPUT"
+          echo "backup_path=$out" >> "$GITHUB_OUTPUT"
+
+      - name: Store verified backup
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
-          name: BHOC-platform_BACKUP_v${{ steps.version.outputs.version }}
-          path: ${{ runner.temp }}/bhoc-backup/
+          name: ${{ steps.backup.outputs.artifact_name }}
+          path: ${{ steps.backup.outputs.backup_path }}/
           retention-days: 90
           if-no-files-found: error
+          compression-level: 0
