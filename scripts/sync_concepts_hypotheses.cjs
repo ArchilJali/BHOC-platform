@@ -41,7 +41,8 @@ function normalizeConceptCopy(src) {
     .replaceAll('Pre-Review', 'Pre-Publication')
     .replaceAll('Pre-review', 'Pre-publication')
     .replaceAll('pre-review', 'pre-publication')
-    .replaceAll('open development stage', 'development stage');
+    .replaceAll('open development stage', 'development stage')
+    .replaceAll('an research concept', 'a research concept');
 }
 
 function ensureConceptArticle(src) {
