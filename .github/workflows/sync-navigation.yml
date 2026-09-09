@@ -6,6 +6,7 @@ on:
     paths:
       - 'config/navigation.json'
       - 'scripts/sync_navigation.cjs'
+      - 'scripts/sync_concepts_hypotheses.cjs'
       - 'assets/intelligence-2026.css'
       - 'assets/navigation.js'
       - '.github/workflows/sync-navigation.yml'
@@ -27,20 +28,21 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Sync navigation across HTML pages
+      - name: Sync navigation and concept metadata across HTML pages
         run: |
           git pull --rebase origin main
           node scripts/sync_navigation.cjs
+          node scripts/sync_concepts_hypotheses.cjs
 
       - name: Commit generated navigation updates
         run: |
           if git diff --quiet; then
-            echo "Navigation already synchronized."
+            echo "Navigation and concept metadata already synchronized."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add '*.html' '**/*.html'
-          git commit -m "Sync shared BHOC navigation [version-stamp]"
+          git commit -m "Sync BHOC navigation and concept metadata [version-stamp]"
           git pull --rebase origin main
           git push
