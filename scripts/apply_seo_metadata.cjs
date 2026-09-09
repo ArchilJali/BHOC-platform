@@ -27,7 +27,7 @@ function breadcrumbBlock(data){
   const itemListElement=data.breadcrumbs.map(([name,url],index)=>({
     '@type':'ListItem',position:index+1,name,item:url==='/'?`${base}/`:`${base}${url}`
   }));
-  return `\n  <script type="application/ld+json" data-seo-breadcrumbs>\n${JSON.stringify({'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement},null,2)}\n  </script>\n`;
+  return `  <script type="application/ld+json" data-seo-breadcrumbs>\n${JSON.stringify({'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement},null,2)}\n  </script>\n`;
 }
 
 function render(file,data){
@@ -43,7 +43,7 @@ function render(file,data){
   html=stripTag(html,/\s*<link\b(?=[^>]*\brel=["']icon["'])[^>]*>/i);
   html=stripTag(html,/\s*<link\b(?=[^>]*\brel=["']sitemap["'])[^>]*>/i);
   html=stripTag(html,/\s*<link\b(?=[^>]*\brel=["']author["'])[^>]*>/i);
-  html=html.replace(/\s*<script type="application\/ld\+json" data-seo-breadcrumbs>[\s\S]*?<\/script>\s*/i,'');
+  html=html.replace(/\s*<script type="application\/ld\+json" data-seo-breadcrumbs>[\s\S]*?<\/script>\s*/i,'\n');
   const viewport=/<meta\b(?=[^>]*\bname=["']viewport["'])[^>]*>/i;
   if(!viewport.test(html))throw new Error(`${file}: viewport meta missing`);
   html=html.replace(viewport,match=>match+managedBlock(file,data));
