@@ -36,6 +36,7 @@ function sectionFor(rel) {
   if (p.startsWith('transplant/')) return 'transplant';
   if (p.startsWith('human/')) return 'human';
   if (p.startsWith('clinical/')) return 'clinical';
+  if (p.startsWith('open-discussion/')) return 'discussion';
   if (p.startsWith('social-media/linkedin/')) return 'linkedin';
   if (p.startsWith('science/')) return 'science';
   if (p.startsWith('historical-sources/')) return 'history';
