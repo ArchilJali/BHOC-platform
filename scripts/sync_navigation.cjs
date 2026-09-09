@@ -8,7 +8,7 @@ const SKIP_DIRS = new Set(['.git', 'node_modules']);
 const SHELL_HREF = '/BHOC-platform/assets/platform-shell.css';
 const INTELLIGENCE_HREF = '/BHOC-platform/assets/intelligence-2026.css';
 const NAV_SCRIPT = '/BHOC-platform/assets/navigation.js';
-const AUTHOR_PROFILE = 'https://www.linkedin.com/in/archil-jaliashvili-98804927b/';
+const AUTHOR_PROFILE = 'https://www.linkedin.com/in/archil-jaliashvili-bhoc/';
 const BRAND_MARK = 'https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
 
 // Keep BHOC as one continuous wordmark. The O is a semantic child only for colour,

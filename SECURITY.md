@@ -6,7 +6,7 @@ This repository is the core evidence and public web platform for BHOC / Precisio
 ## Reporting a security issue
 Do not publish suspected vulnerabilities, leaked credentials, access tokens, private keys, or exploitation details in a public GitHub issue.
 
-If a security concern is discovered, contact the repository owner privately through the contact channels listed on the BHOC platform website or GitHub profile.
+Report security concerns privately to `info@bhoctherapeutics.com` with the affected URL, reproduction steps, impact, and supporting evidence.
 
 ## Repository protection principles
 - The default branch must remain protected against deletion and force-push.

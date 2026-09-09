@@ -3,7 +3,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const AUTHOR = 'Archil Jaliashvili';
-const AUTHOR_URL = 'https://www.linkedin.com/in/archil-jaliashvili-98804927b/';
+const AUTHOR_URL = 'https://www.linkedin.com/in/archil-jaliashvili-bhoc/';
 const OLD_BASE = '/BHOC-platform/open-discussion/';
 const NEW_BASE = '/BHOC-platform/concepts-hypotheses/';
 
