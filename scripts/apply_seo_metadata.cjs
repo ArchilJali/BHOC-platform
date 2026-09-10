@@ -9,6 +9,7 @@ const brandMark='https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?
 const veterinaryMark='https://bhocvet.com/assets/favicon.svg';
 const base='https://archiljali.github.io/BHOC-platform';
 const authorProfile='https://www.linkedin.com/in/archil-jaliashvili-bhoc/';
+const homeSocialImage=`${base}/assets/bhoc-platform-social-preview-20260910.png`;
 
 function escapeAttr(value){return value.replace(/&(?!(?:amp|lt|gt|quot|#39);)/g,'&amp;').replace(/"/g,'&quot;')}
 function stripTag(html,pattern){return html.replace(pattern,'')}
@@ -19,7 +20,11 @@ function managedBlock(file,data){
   const favicon=veterinary?veterinaryMark:brandMark;
   const socialTitle=data.socialTitle||data.title;
   const articleAuthor=data.type==='article'?`\n  <meta property="article:author" content="${authorProfile}">`:'';
-  return `\n  <!-- SEO metadata: managed by scripts/apply_seo_metadata.cjs -->\n  <title>${data.title}</title>\n  <meta name="description" content="${escapeAttr(data.description)}">\n  <meta name="keywords" content="${escapeAttr(data.keywords)}">\n  <meta name="author" content="Archil Jaliashvili">\n  <link rel="author" href="${authorProfile}">\n  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">\n  <link rel="canonical" href="${data.url}">\n  <link rel="icon" href="${favicon}" type="${veterinary?'image/svg+xml':'image/png'}">\n  <link rel="sitemap" href="${prefix}sitemap.xml" type="application/xml">\n  <meta property="og:locale" content="en_US">\n  <meta property="og:site_name" content="BHOC Therapeutics Platform">\n  <meta property="og:type" content="${data.type}">\n  <meta property="og:title" content="${escapeAttr(socialTitle.replace(/&amp;/g,'&'))}">\n  <meta property="og:description" content="${escapeAttr(data.description)}">\n  <meta property="og:url" content="${data.url}">${articleAuthor}\n  <meta name="twitter:card" content="summary">\n  <meta name="twitter:title" content="${escapeAttr(socialTitle.replace(/&amp;/g,'&'))}">\n  <meta name="twitter:description" content="${escapeAttr(data.description)}">`;
+  const home=file==='index.html';
+  const socialImageAlt='Precision Oxygen Therapeutics - BHOC Biological Hemoglobin Oxygen Carrier';
+  const socialImage=home?`\n  <meta property="og:image" content="${homeSocialImage}">\n  <meta property="og:image:secure_url" content="${homeSocialImage}">\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="630">\n  <meta property="og:image:type" content="image/png">\n  <meta property="og:image:alt" content="${socialImageAlt}">`:'';
+  const twitterImage=home?`\n  <meta name="twitter:image" content="${homeSocialImage}">\n  <meta name="twitter:image:alt" content="${socialImageAlt}">`:'';
+  return `\n  <!-- SEO metadata: managed by scripts/apply_seo_metadata.cjs -->\n  <title>${data.title}</title>\n  <meta name="description" content="${escapeAttr(data.description)}">\n  <meta name="keywords" content="${escapeAttr(data.keywords)}">\n  <meta name="author" content="Archil Jaliashvili">\n  <link rel="author" href="${authorProfile}">\n  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">\n  <link rel="canonical" href="${data.url}">\n  <link rel="icon" href="${favicon}" type="${veterinary?'image/svg+xml':'image/png'}">\n  <link rel="sitemap" href="${prefix}sitemap.xml" type="application/xml">\n  <meta property="og:locale" content="en_US">\n  <meta property="og:site_name" content="BHOC Therapeutics Platform">\n  <meta property="og:type" content="${data.type}">\n  <meta property="og:title" content="${escapeAttr(socialTitle.replace(/&amp;/g,'&'))}">\n  <meta property="og:description" content="${escapeAttr(data.description)}">\n  <meta property="og:url" content="${data.url}">${articleAuthor}${socialImage}\n  <meta name="twitter:card" content="${home?'summary_large_image':'summary'}">\n  <meta name="twitter:title" content="${escapeAttr(socialTitle.replace(/&amp;/g,'&'))}">\n  <meta name="twitter:description" content="${escapeAttr(data.description)}">${twitterImage}`;
 }
 
 function breadcrumbBlock(data){
@@ -37,7 +42,7 @@ function render(file,data){
   html=stripTag(html,/\s*<title>[\s\S]*?<\/title>/i);
   const metaKeys=['description','keywords','author','robots','twitter:card','twitter:title','twitter:description','twitter:image','twitter:image:alt'];
   for(const key of metaKeys)html=stripTag(html,new RegExp(`\\s*<meta\\b(?=[^>]*\\bname=["']${key.replace(':','\\:')}["'])[^>]*>`,'i'));
-  const propertyKeys=['og:locale','og:site_name','og:type','og:title','og:description','og:url','og:image','og:image:width','og:image:height','og:image:alt','article:author'];
+  const propertyKeys=['og:locale','og:site_name','og:type','og:title','og:description','og:url','og:image','og:image:secure_url','og:image:width','og:image:height','og:image:type','og:image:alt','article:author'];
   for(const key of propertyKeys)html=stripTag(html,new RegExp(`\\s*<meta\\b(?=[^>]*\\bproperty=["']${key.replace(/:/g,'\\:')}["'])[^>]*>`,'i'));
   html=stripTag(html,/\s*<link\b(?=[^>]*\brel=["']canonical["'])[^>]*>/i);
   html=stripTag(html,/\s*<link\b(?=[^>]*\brel=["']icon["'])[^>]*>/i);
