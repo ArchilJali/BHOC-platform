@@ -26,6 +26,7 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
+          # Complete history is already fetched above. Do not run git fetch origin here: credentials are intentionally not persisted.
 
       - name: Build and test full backup
         id: backup
