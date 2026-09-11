@@ -668,5 +668,26 @@
         "/concepts-hypotheses/pph-oxygen-delivery-window.html"
       ]
     ]
+  },
+  "science/prehospital-blood-transfusion-oxygen-delivery.html": {
+    "title": "Prehospital Blood Transfusion & Oxygen Delivery | BHOC",
+    "description": "PHBTC 2026 evidence analysis: prehospital transfusion decisions use shock physiology rather than Hb/Hct thresholds, with oxygen delivery and treatment time central to hemorrhagic shock care.",
+    "keywords": "prehospital blood transfusion, hemorrhagic shock, oxygen delivery, EMS blood transfusion, Shock Index, hemoglobin, hematocrit, prehospital resuscitation, BHOC, HBOC, Precision Oxygen Therapeutics",
+    "url": "https://archiljali.github.io/BHOC-platform/science/prehospital-blood-transfusion-oxygen-delivery.html",
+    "type": "article",
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Scientific evidence",
+        "/science/index.html"
+      ],
+      [
+        "Prehospital blood transfusion and oxygen delivery",
+        "/science/prehospital-blood-transfusion-oxygen-delivery.html"
+      ]
+    ]
   }
 }
