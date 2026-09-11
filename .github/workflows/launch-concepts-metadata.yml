@@ -1,0 +1,51 @@
+name: Launch Concepts SEO sync
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/launch_concepts_metadata.cjs'
+      - '.github/workflows/launch-concepts-metadata.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bhoc-platform-content-write
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Register metadata and regenerate SEO
+        run: |
+          git pull --rebase origin main
+          node scripts/launch_concepts_metadata.cjs
+          node scripts/apply_seo_metadata.cjs
+      - name: Validate SEO and internal links
+        run: |
+          node --test tests/*.test.cjs
+          node scripts/apply_seo_metadata.cjs --check
+          python3 scripts/check_links.py
+      - name: Commit generated launch SEO
+        run: |
+          if git diff --quiet; then
+            echo "Concepts launch SEO already synchronized."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add seo/page-metadata.json sitemap.xml concepts-hypotheses/*.html
+          git commit -m "Synchronize Concepts launch SEO [version-stamp]"
+          git pull --rebase origin main
+          git push
