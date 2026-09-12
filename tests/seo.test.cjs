@@ -9,7 +9,7 @@ const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 // Validate generated SEO outputs only after the canonical metadata and sitemap have been synchronized on main.
 const initiativeMark='https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
 const veterinaryMark='https://bhocvet.com/assets/favicon.svg';
-const homeSocialImage='https://archiljali.github.io/BHOC-platform/assets/bhoc-platform-social-preview-20260910.png';
+const homeSocialImage='https://evidence.bhoctherapeutics.com/assets/bhoc-evidence-social-preview.png';
 
 function html(file){return fs.readFileSync(path.join(root,file),'utf8')}
 function count(source,pattern){return [...source.matchAll(pattern)].length}
@@ -42,11 +42,13 @@ test('managed metadata, canonical, social cards and H1 are complete',()=>{
     if(isHome){
       assert.ok(source.includes(`<meta property="og:image" content="${homeSocialImage}">`),`${file}: OG image missing`);
       assert.ok(source.includes(`<meta property="og:image:secure_url" content="${homeSocialImage}">`),`${file}: secure OG image missing`);
-      assert.ok(source.includes('<meta property="og:image:width" content="1200">'),`${file}: OG image width missing`);
-      assert.ok(source.includes('<meta property="og:image:height" content="630">'),`${file}: OG image height missing`);
+      assert.ok(source.includes('<meta property="og:image:width" content="240">'),`${file}: OG image width missing`);
+      assert.ok(source.includes('<meta property="og:image:height" content="240">'),`${file}: OG image height missing`);
       assert.ok(source.includes('<meta property="og:image:type" content="image/png">'),`${file}: OG image type missing`);
       assert.ok(source.includes(`<meta name="twitter:image" content="${homeSocialImage}">`),`${file}: Twitter image missing`);
-      assert.ok(source.includes('name="twitter:card" content="summary_large_image"'),`${file}: large Twitter card missing`);
+      assert.ok(source.includes('name="twitter:card" content="summary"'),`${file}: compact Twitter card missing`);
+      assert.ok(source.includes('property="og:title" content="BHOC Scientific Evidence"'),`${file}: compact social title missing`);
+      assert.ok(source.includes('property="og:description" content="Source-linked evidence on BHOC, HBOC and oxygen delivery."'),`${file}: compact social description missing`);
     }else{
       assert.ok(!source.includes('property="og:image"'),`${file}: OG image should be absent`);
       assert.ok(!source.includes('name="twitter:image"'),`${file}: Twitter image should be absent`);
@@ -84,11 +86,11 @@ test('local fallback social preview remains a valid 1200 by 630 PNG',()=>{
   assert.equal(png.readUInt32BE(20),630);
 });
 
-test('homepage WhatsApp social preview remains a valid 1200 by 630 PNG',()=>{
-  const png=fs.readFileSync(path.join(root,'assets/bhoc-platform-social-preview-20260910.png'));
+test('homepage WhatsApp social preview remains a compact 240 by 240 PNG',()=>{
+  const png=fs.readFileSync(path.join(root,'assets/bhoc-evidence-social-preview.png'));
   assert.equal(png.toString('hex',0,8),'89504e470d0a1a0a');
-  assert.equal(png.readUInt32BE(16),1200);
-  assert.equal(png.readUInt32BE(20),630);
+  assert.equal(png.readUInt32BE(16),240);
+  assert.equal(png.readUInt32BE(20),240);
 });
 
 test('every shared platform header exposes the complete BHOC website network',()=>{
