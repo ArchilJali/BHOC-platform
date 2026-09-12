@@ -28,3 +28,4 @@ jobs:
           git commit -m "Stage evidence.bhoctherapeutics.com URL migration"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
+# retrigger after workflow exists on branch
