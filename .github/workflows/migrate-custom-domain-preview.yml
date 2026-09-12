@@ -1,0 +1,30 @@
+name: Stage Evidence custom-domain migration
+on:
+  push:
+    branches: ['preview/evidence-custom-domain-20260912']
+    paths:
+      - 'scripts/migrate_custom_domain_20260912.py'
+      - '.github/workflows/migrate-custom-domain-preview.yml'
+permissions:
+  contents: write
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Rewrite project URLs for branded domain
+        run: python scripts/migrate_custom_domain_20260912.py
+      - name: Commit staged migration
+        run: |
+          git config user.name "BHOC Domain Migration"
+          git config user.email "actions@users.noreply.github.com"
+          git add . ':!scripts/migrate_custom_domain_20260912.py' ':!.github/workflows/migrate-custom-domain-preview.yml'
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Stage evidence.bhoctherapeutics.com URL migration"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
