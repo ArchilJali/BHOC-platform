@@ -87,23 +87,23 @@ Historical authorisations concern Oxyglobin for dogs; they are not approval of a
 
 | Species / model group | Indexed publications |
 | :--- | ---: |
-| 🐕 [Canine (Dog)](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Canine) | 25 |
-| 🐈 [Feline (Cat)](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Feline) | 6 |
-| 🐴 [Equine (Horse)](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Equine) | 4 |
-| 🐖 [Porcine (Pig)](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Porcine) | 38 |
-| 🐑 [Ovine (Sheep)](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Ovine) | 4 |
-| 🐀 [Rodent](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Rodent) | 39 |
-| 🦅 [Avian (Birds)](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Avian) | 18 |
-| 🦦 [Exotic / other animals](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=__exotic__) | 15 |
-| 👤 [Human](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Human) | 89 |
-| 🧪 [Other / In vitro](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=__other_models__) | 21 |
+| 🐕 [Canine (Dog)](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html?species=Canine) | 25 |
+| 🐈 [Feline (Cat)](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html?species=Feline) | 6 |
+| 🐴 [Equine (Horse)](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html?species=Equine) | 4 |
+| 🐖 [Porcine (Pig)](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html?species=Porcine) | 38 |
+| 🐑 [Ovine (Sheep)](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html?species=Ovine) | 4 |
+| 🐀 [Rodent](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html?species=Rodent) | 39 |
+| 🦅 [Avian (Birds)](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html?species=Avian) | 18 |
+| 🦦 [Exotic / other animals](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html?species=__exotic__) | 15 |
+| 👤 [Human](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html?species=Human) | 89 |
+| 🧪 [Other / In vitro](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html?species=__other_models__) | 21 |
 | **Total bibliography (not the sum of groups)** | **236** |
 
 Counts are records carrying indexed species or model labels, not counts of confirmed treatment studies. A record can appear in several groups; group counts must not be added to obtain the total. Labels may be incomplete.
 
 Exotic / other animals combines ferret, rabbit and other-animal labels, counting each record once. It does not imply wildlife use. Other / In vitro includes in-vitro labels and 13 records with no species label.
 
-[Source data](Vet-publications.json) · [Methodology](https://archiljali.github.io/BHOC-platform/veterinary/publication-methodology.html)
+[Source data](Vet-publications.json) · [Methodology](https://evidence.bhoctherapeutics.com/veterinary/publication-methodology.html)
 
 ---
 

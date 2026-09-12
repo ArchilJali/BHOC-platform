@@ -4,8 +4,8 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const AUTHOR = 'Archil Jaliashvili';
 const AUTHOR_URL = 'https://www.linkedin.com/in/archil-jaliashvili-bhoc/';
-const OLD_BASE = '/BHOC-platform/open-discussion/';
-const NEW_BASE = '/BHOC-platform/concepts-hypotheses/';
+const OLD_BASE = '/open-discussion/';
+const NEW_BASE = '/concepts-hypotheses/';
 
 function walk(dir) {
   const out = [];
@@ -28,7 +28,7 @@ function humanDate(iso) {
 function normalizeGlobal(src) {
   return src
     .replaceAll(OLD_BASE, NEW_BASE)
-    .replaceAll('https://archiljali.github.io/BHOC-platform/open-discussion/', 'https://archiljali.github.io/BHOC-platform/concepts-hypotheses/')
+    .replaceAll('https://evidence.bhoctherapeutics.com/open-discussion/', 'https://evidence.bhoctherapeutics.com/concepts-hypotheses/')
     .replaceAll('Open Discussion', 'Concepts & Hypotheses');
 }
 

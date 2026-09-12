@@ -7,7 +7,7 @@ const version=JSON.parse(fs.readFileSync(path.join(root,'version.json'),'utf8'))
 const check=process.argv.includes('--check');
 const brandMark='https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
 const veterinaryMark='https://bhocvet.com/assets/favicon.svg';
-const base='https://archiljali.github.io/BHOC-platform';
+const base='https://evidence.bhoctherapeutics.com';
 const authorProfile='https://www.linkedin.com/in/archil-jaliashvili-bhoc/';
 
 function escapeAttr(value){return value.replace(/&(?!(?:amp|lt|gt|quot|#39);)/g,'&amp;').replace(/"/g,'&quot;')}

@@ -2,7 +2,7 @@
 
 Status: READY FOR PUBLICATION
 Date prepared: 11 Sep 2026
-Primary link: https://archiljali.github.io/BHOC-platform/concepts-hypotheses/
+Primary link: https://evidence.bhoctherapeutics.com/concepts-hypotheses/
 
 We have launched a new **Concepts & Hypotheses** section on the BHOC Therapeutics Platform.
 
@@ -19,7 +19,7 @@ Each page is source-linked and clearly marked **Research Concept · Hypothesis**
 These are not clinical recommendations or peer-reviewed conclusions. They are questions we believe are worth defining and testing properly.
 
 Concepts & Hypotheses:
-https://archiljali.github.io/BHOC-platform/concepts-hypotheses/
+https://evidence.bhoctherapeutics.com/concepts-hypotheses/
 
 ## Publication order after launch
 

@@ -4,7 +4,7 @@ from html.parser import HTMLParser
 from urllib.parse import urljoin, urlparse, unquote
 import sys
 ROOT=Path(__file__).resolve().parents[1]
-BASE='https://archiljali.github.io/BHOC-platform/'
+BASE='https://evidence.bhoctherapeutics.com/'
 _EXCLUDED_HOST=''.join(('hbo2','therapeutics.com'))
 FORBIDDEN_NETLOCS={_EXCLUDED_HOST,f'www.{_EXCLUDED_HOST}'}
 class Document(HTMLParser):
@@ -27,8 +27,8 @@ for p,d in documents.items():
         if dest.netloc.lower() in FORBIDDEN_NETLOCS:
             errors.append(f'{p.relative_to(ROOT)}: forbidden outbound link {ref}')
             continue
-        if dest.netloc!='archiljali.github.io' or not dest.path.startswith('/BHOC-platform/'):continue
-        rel=unquote(dest.path[len('/BHOC-platform/'):]);target=(ROOT/rel).resolve()
+        if dest.netloc!='archiljali.github.io' or not dest.path.startswith('/'):continue
+        rel=unquote(dest.path[len('/'):]);target=(ROOT/rel).resolve()
         if target.is_dir():target=target/'index.html'
         checked+=1
         if not target.is_file():errors.append(f'{p.relative_to(ROOT)}: missing {ref}')
