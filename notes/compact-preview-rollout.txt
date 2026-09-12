@@ -1,1 +1,0 @@
-Use a compact square Open Graph thumbnail for WhatsApp instead of the previous full-width 1200x630 card. Keep BHOC + short section label only; title and description remain in metadata below the thumbnail.
