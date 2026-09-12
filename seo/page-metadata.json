@@ -710,5 +710,27 @@
         "/science/aabb-rbc-transfusion-thresholds-oxygen-delivery.html"
       ]
     ]
+  },
+  "real-world-evidence/blood-groups-history/index.html": {
+    "title": "Blood Groups History | ABO to 49 ISBT Systems | BHOC",
+    "description": "A source-linked timeline of human blood-group discovery, from Karl Landsteiner and ABO to 49 ISBT systems, modern red-cell antigens and transfusion compatibility.",
+    "keywords": "blood groups history, ABO blood group, Karl Landsteiner, Rh blood group, blood group systems, ISBT blood groups, red cell antigens, MNS, Kell, Duffy, Kidd, Diego, JAMA blood group, PIGZ blood group, transfusion compatibility",
+    "url": "https://archiljali.github.io/BHOC-platform/real-world-evidence/blood-groups-history/",
+    "type": "article",
+    "lastmod": "2026-09-12",
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Real-World Evidence",
+        "/real-world-evidence/"
+      ],
+      [
+        "Blood Groups History",
+        "/real-world-evidence/blood-groups-history/"
+      ]
+    ]
   }
 }
