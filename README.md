@@ -8,7 +8,7 @@
 - [BHOC Veterinary](https://bhocvet.com/)
 - BHOC Transplant: coming soon at `bhoctransplant.com`
 
-Veterinary entry points: [BHOC Veterinary site](https://bhocvet.com/) and [Veterinary Evidence Library](https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html).
+Veterinary entry points: [BHOC Veterinary site](https://bhocvet.com/) and [Veterinary Evidence Library](https://evidence.bhoctherapeutics.com/veterinary/Vet-index.html).
 
 <p align="center">
   <span style="background-color: #1a365d; color: #ffffff; padding: 10px 30px; border-radius: 8px; font-weight: 700; font-size: 18px; display: inline-block; letter-spacing: 1px;">
@@ -73,7 +73,7 @@ Veterinary entry points: [BHOC Veterinary site](https://bhocvet.com/) and [Veter
       <strong style="font-size: 14px; color: #1a365d;">Veterinary</strong><br>
       <small style="font-size: 11px; color: #718096;">Application</small>
       <br><br>
-      <a href="/BHOC-platform/veterinary/Vet-index.html" target="_blank" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
+      <a href="/veterinary/Vet-index.html" target="_blank" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
     </td>
     <td style="width: 12px;"></td>
     <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 16px; width: 140px; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
@@ -82,7 +82,7 @@ Veterinary entry points: [BHOC Veterinary site](https://bhocvet.com/) and [Veter
       <strong style="font-size: 14px; color: #1a365d;">Transplantation</strong><br>
       <small style="font-size: 11px; color: #718096;">Application</small>
       <br><br>
-      <a href="/BHOC-platform/transplant/Transplant-index.html" target="_blank" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
+      <a href="/transplant/Transplant-index.html" target="_blank" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
     </td>
     <td style="width: 12px;"></td>
     <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 16px; width: 140px; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
@@ -100,7 +100,7 @@ Veterinary entry points: [BHOC Veterinary site](https://bhocvet.com/) and [Veter
       <strong style="font-size: 14px; color: #1a365d;">Scientific</strong><br>
       <small style="font-size: 11px; color: #718096;">Articles</small>
       <br><br>
-      <a href="/BHOC-platform/science/" target="_blank" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
+      <a href="/science/" target="_blank" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
     </td>
     <td style="width: 12px;"></td>
     <td align="center" style="border: 2px solid #1a365d; border-radius: 10px; padding: 20px 16px; width: 140px; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
@@ -109,7 +109,7 @@ Veterinary entry points: [BHOC Veterinary site](https://bhocvet.com/) and [Veter
       <strong style="font-size: 14px; color: #1a365d;">LinkedIn</strong><br>
       <small style="font-size: 11px; color: #718096;">Publications</small>
       <br><br>
-      <a href="/BHOC-platform/social-media/linkedin/" target="_blank" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
+      <a href="/social-media/linkedin/" target="_blank" style="text-decoration: none; color: #1a365d; font-weight: 600; border: 2px solid #1a365d; border-radius: 6px; padding: 4px 14px; display: inline-block; font-size: 11px;">Explore →</a>
     </td>
   </tr>
 </table>

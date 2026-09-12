@@ -5,9 +5,9 @@ const ROOT = path.resolve(__dirname, '..');
 const config = JSON.parse(fs.readFileSync(path.join(ROOT, 'config/navigation.json'), 'utf8'));
 const version = JSON.parse(fs.readFileSync(path.join(ROOT, 'version.json'), 'utf8'));
 const SKIP_DIRS = new Set(['.git', 'node_modules']);
-const SHELL_HREF = '/BHOC-platform/assets/platform-shell.css';
-const INTELLIGENCE_HREF = '/BHOC-platform/assets/intelligence-2026.css';
-const NAV_SCRIPT = '/BHOC-platform/assets/navigation.js';
+const SHELL_HREF = '/assets/platform-shell.css';
+const INTELLIGENCE_HREF = '/assets/intelligence-2026.css';
+const NAV_SCRIPT = '/assets/navigation.js';
 const AUTHOR_PROFILE = 'https://www.linkedin.com/in/archil-jaliashvili-bhoc/';
 const BRAND_MARK = 'https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
 
@@ -72,7 +72,7 @@ function ensurePlatformAssets(src) {
 function normalizeBrandIdentity(src) {
   return src
     .replace(/<link\s+rel=["']icon["'][^>]*bhoc-mark\.svg[^>]*>/gi, `<link rel="icon" href="${BRAND_MARK}" type="image/png">`)
-    .replaceAll('/BHOC-platform/assets/bhoc-mark.svg', BRAND_MARK);
+    .replaceAll('/assets/bhoc-mark.svg', BRAND_MARK);
 }
 
 function normalizeAuthorIdentity(src) {

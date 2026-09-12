@@ -2,7 +2,9 @@ name: Sync SEO metadata and sitemap
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+      - 'preview/evidence-custom-domain-20260912'
     paths:
       - 'seo/page-metadata.json'
       - 'scripts/apply_seo_metadata.cjs'
@@ -14,7 +16,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: bhoc-platform-content-write
+  group: bhoc-platform-content-write-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -31,7 +33,7 @@ jobs:
 
       - name: Apply canonical SEO metadata
         run: |
-          git pull --rebase origin main
+          git pull --rebase origin "${GITHUB_REF_NAME}"
           node scripts/apply_seo_metadata.cjs
 
       - name: Commit generated SEO outputs
@@ -44,5 +46,5 @@ jobs:
             exit 0
           fi
           git commit -m "Sync BHOC SEO metadata and sitemap [version-stamp]"
-          git pull --rebase origin main
-          git push
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

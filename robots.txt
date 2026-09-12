@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://archiljali.github.io/BHOC-platform/sitemap.xml
+Sitemap: https://evidence.bhoctherapeutics.com/sitemap.xml

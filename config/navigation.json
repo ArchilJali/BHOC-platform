@@ -2,17 +2,17 @@
   "brand": {
     "label": "BHOC",
     "subLabel": "Therapeutics Platform",
-    "href": "/BHOC-platform/index.html"
+    "href": "/index.html"
   },
   "links": [
-    {"label": "Veterinary", "href": "/BHOC-platform/veterinary/Vet-index.html", "section": "veterinary"},
-    {"label": "Transplantation", "href": "/BHOC-platform/transplant/Transplant-index.html", "section": "transplant"},
-    {"label": "Human Use", "href": "/BHOC-platform/human/BHOC-Human-index.html", "section": "human"},
-    {"label": "Applications", "href": "/BHOC-platform/clinical/", "section": "clinical"},
-    {"label": "Concepts & Hypotheses", "href": "/BHOC-platform/concepts-hypotheses/", "section": "discussion"},
-    {"label": "LinkedIn Publications", "href": "/BHOC-platform/social-media/linkedin/", "section": "linkedin"},
-    {"label": "Science", "href": "/BHOC-platform/science/", "section": "science"},
-    {"label": "History", "href": "/BHOC-platform/historical-sources/", "section": "history"}
+    {"label": "Veterinary", "href": "/veterinary/Vet-index.html", "section": "veterinary"},
+    {"label": "Transplantation", "href": "/transplant/Transplant-index.html", "section": "transplant"},
+    {"label": "Human Use", "href": "/human/BHOC-Human-index.html", "section": "human"},
+    {"label": "Applications", "href": "/clinical/", "section": "clinical"},
+    {"label": "Concepts & Hypotheses", "href": "/concepts-hypotheses/", "section": "discussion"},
+    {"label": "LinkedIn Publications", "href": "/social-media/linkedin/", "section": "linkedin"},
+    {"label": "Science", "href": "/science/", "section": "science"},
+    {"label": "History", "href": "/historical-sources/", "section": "history"}
   ],
   "network": [
     {

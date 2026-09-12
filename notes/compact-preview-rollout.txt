@@ -1,0 +1,1 @@
+Use a text-only Open Graph preview for WhatsApp: no og:image. Keep a short BHOC title and one-line description in metadata, with the branded custom domain after DNS cutover.

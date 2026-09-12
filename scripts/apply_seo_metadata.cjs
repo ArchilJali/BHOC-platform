@@ -7,9 +7,8 @@ const version=JSON.parse(fs.readFileSync(path.join(root,'version.json'),'utf8'))
 const check=process.argv.includes('--check');
 const brandMark='https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
 const veterinaryMark='https://bhocvet.com/assets/favicon.svg';
-const base='https://archiljali.github.io/BHOC-platform';
+const base='https://evidence.bhoctherapeutics.com';
 const authorProfile='https://www.linkedin.com/in/archil-jaliashvili-bhoc/';
-const homeSocialImage=`${base}/assets/bhoc-platform-social-preview-20260910.png`;
 
 function escapeAttr(value){return value.replace(/&(?!(?:amp|lt|gt|quot|#39);)/g,'&amp;').replace(/"/g,'&quot;')}
 function stripTag(html,pattern){return html.replace(pattern,'')}
@@ -18,13 +17,11 @@ function managedBlock(file,data){
   const prefix=depth?'../'.repeat(depth):'';
   const veterinary=file.startsWith('veterinary/');
   const favicon=veterinary?veterinaryMark:brandMark;
-  const socialTitle=data.socialTitle||data.title;
-  const articleAuthor=data.type==='article'?`\n  <meta property="article:author" content="${authorProfile}">`:'';
   const home=file==='index.html';
-  const socialImageAlt='Precision Oxygen Therapeutics - BHOC Biological Hemoglobin Oxygen Carrier';
-  const socialImage=home?`\n  <meta property="og:image" content="${homeSocialImage}">\n  <meta property="og:image:secure_url" content="${homeSocialImage}">\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="630">\n  <meta property="og:image:type" content="image/png">\n  <meta property="og:image:alt" content="${socialImageAlt}">`:'';
-  const twitterImage=home?`\n  <meta name="twitter:image" content="${homeSocialImage}">\n  <meta name="twitter:image:alt" content="${socialImageAlt}">`:'';
-  return `\n  <!-- SEO metadata: managed by scripts/apply_seo_metadata.cjs -->\n  <title>${data.title}</title>\n  <meta name="description" content="${escapeAttr(data.description)}">\n  <meta name="keywords" content="${escapeAttr(data.keywords)}">\n  <meta name="author" content="Archil Jaliashvili">\n  <link rel="author" href="${authorProfile}">\n  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">\n  <link rel="canonical" href="${data.url}">\n  <link rel="icon" href="${favicon}" type="${veterinary?'image/svg+xml':'image/png'}">\n  <link rel="sitemap" href="${prefix}sitemap.xml" type="application/xml">\n  <meta property="og:locale" content="en_US">\n  <meta property="og:site_name" content="BHOC Therapeutics Platform">\n  <meta property="og:type" content="${data.type}">\n  <meta property="og:title" content="${escapeAttr(socialTitle.replace(/&amp;/g,'&'))}">\n  <meta property="og:description" content="${escapeAttr(data.description)}">\n  <meta property="og:url" content="${data.url}">${articleAuthor}${socialImage}\n  <meta name="twitter:card" content="${home?'summary_large_image':'summary'}">\n  <meta name="twitter:title" content="${escapeAttr(socialTitle.replace(/&amp;/g,'&'))}">\n  <meta name="twitter:description" content="${escapeAttr(data.description)}">${twitterImage}`;
+  const socialTitle=home?'BHOC Scientific Evidence':(data.socialTitle||data.title);
+  const socialDescription=home?'Source-linked evidence on BHOC, HBOC and oxygen delivery.':data.description;
+  const articleAuthor=data.type==='article'?`\n  <meta property="article:author" content="${authorProfile}">`:'';
+  return `\n  <!-- SEO metadata: managed by scripts/apply_seo_metadata.cjs -->\n  <title>${data.title}</title>\n  <meta name="description" content="${escapeAttr(data.description)}">\n  <meta name="keywords" content="${escapeAttr(data.keywords)}">\n  <meta name="author" content="Archil Jaliashvili">\n  <link rel="author" href="${authorProfile}">\n  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">\n  <link rel="canonical" href="${data.url}">\n  <link rel="icon" href="${favicon}" type="${veterinary?'image/svg+xml':'image/png'}">\n  <link rel="sitemap" href="${prefix}sitemap.xml" type="application/xml">\n  <meta property="og:locale" content="en_US">\n  <meta property="og:site_name" content="BHOC Therapeutics Platform">\n  <meta property="og:type" content="${data.type}">\n  <meta property="og:title" content="${escapeAttr(socialTitle.replace(/&amp;/g,'&'))}">\n  <meta property="og:description" content="${escapeAttr(socialDescription)}">\n  <meta property="og:url" content="${data.url}">${articleAuthor}\n  <meta name="twitter:card" content="summary">\n  <meta name="twitter:title" content="${escapeAttr(socialTitle.replace(/&amp;/g,'&'))}">\n  <meta name="twitter:description" content="${escapeAttr(socialDescription)}">`;
 }
 
 function breadcrumbBlock(data){

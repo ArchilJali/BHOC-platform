@@ -2,7 +2,7 @@
 
 ## Oxyglobin · HBOC literature · Precision oxygen therapeutics
 
-[**Open the Veterinary website →**](https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html) · [BHOC VET-platform →](https://archiljali.github.io/BHOC-VET-platform/) · [Publication explorer](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html) · [FDA & EMA records](https://archiljali.github.io/BHOC-platform/veterinary/Vet-fda-ema.html)
+[**Open the Veterinary website →**](https://evidence.bhoctherapeutics.com/veterinary/Vet-index.html) · [BHOC VET-platform →](https://evidence.bhocvet.com/) · [Publication explorer](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html) · [FDA & EMA records](https://evidence.bhoctherapeutics.com/veterinary/Vet-fda-ema.html)
 
 Explore species, author institutions, normalized journals and original citations. Historical Oxyglobin approvals, broader research and the proposed BHOC veterinary concept are presented separately.
 
@@ -26,16 +26,16 @@ Choose a group to open its filtered publication list on the website.
 
 | Species / model group | Indexed publications |
 | :--- | ---: |
-| 🐕 [Canine (Dog)](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Canine) | 25 |
-| 🐈 [Feline (Cat)](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Feline) | 6 |
-| 🐴 [Equine (Horse)](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Equine) | 4 |
-| 🐖 [Porcine (Pig)](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Porcine) | 38 |
-| 🐑 [Ovine (Sheep)](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Ovine) | 4 |
-| 🐀 [Rodent](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Rodent) | 39 |
-| 🦅 [Avian (Birds)](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Avian) | 18 |
-| 🦦 [Exotic / other animals](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=__exotic__) | 15 |
-| 👤 [Human](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=Human) | 89 |
-| 🧪 [Other / In vitro](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html?species=__other_models__) | 21 |
+| 🐕 [Canine (Dog)](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html?species=Canine) | 25 |
+| 🐈 [Feline (Cat)](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html?species=Feline) | 6 |
+| 🐴 [Equine (Horse)](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html?species=Equine) | 4 |
+| 🐖 [Porcine (Pig)](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html?species=Porcine) | 38 |
+| 🐑 [Ovine (Sheep)](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html?species=Ovine) | 4 |
+| 🐀 [Rodent](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html?species=Rodent) | 39 |
+| 🦅 [Avian (Birds)](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html?species=Avian) | 18 |
+| 🦦 [Exotic / other animals](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html?species=__exotic__) | 15 |
+| 👤 [Human](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html?species=Human) | 89 |
+| 🧪 [Other / In vitro](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html?species=__other_models__) | 21 |
 | **Total bibliography (not the sum of groups)** | **236** |
 
 Counts are records carrying indexed species or model labels, not counts of confirmed treatment studies. A record can appear in several groups; group counts must not be added to obtain the total. Labels may be incomplete.
@@ -48,12 +48,12 @@ In the randomised field trial of 64 anaemic dogs, the FDA efficacy population re
 
 ## Explore the section
 
-- [Choose or search an author](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html#authorInput)
-- [Browse normalized journal names](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html#journalInput)
-- [Separate focused and background literature](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html#scopeSelect)
-- [Author institutions and original publications](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html#institutionSearch)
-- [Source matching, species labels and evidence limits](https://archiljali.github.io/BHOC-platform/veterinary/publication-methodology.html)
-- [Veterinary development concept](https://archiljali.github.io/BHOC-platform/veterinary/business/BHOC-Veterinary-Concept.htm)
+- [Choose or search an author](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html#authorInput)
+- [Browse normalized journal names](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html#journalInput)
+- [Separate focused and background literature](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html#scopeSelect)
+- [Author institutions and original publications](https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html#institutionSearch)
+- [Source matching, species labels and evidence limits](https://evidence.bhoctherapeutics.com/veterinary/publication-methodology.html)
+- [Veterinary development concept](https://evidence.bhoctherapeutics.com/veterinary/business/BHOC-Veterinary-Concept.htm)
 - [Detailed section guide](Vet-README.md)
 - [Structured bibliography](Vet-publications.json)
 

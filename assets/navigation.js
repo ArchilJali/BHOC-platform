@@ -24,13 +24,13 @@
     });
 
     const sectionRules = [
-      ['/veterinary/', '/BHOC-platform/veterinary/Vet-index.html'],
-      ['/transplant/', '/BHOC-platform/transplant/Transplant-index.html'],
-      ['/human/', '/BHOC-platform/human/BHOC-Human-index.html'],
-      ['/clinical/', '/BHOC-platform/clinical/'],
-      ['/social-media/linkedin/', '/BHOC-platform/social-media/linkedin/'],
-      ['/science/', '/BHOC-platform/science/'],
-      ['/historical-sources/', '/BHOC-platform/historical-sources/']
+      ['/veterinary/', '/veterinary/Vet-index.html'],
+      ['/transplant/', '/transplant/Transplant-index.html'],
+      ['/human/', '/human/BHOC-Human-index.html'],
+      ['/clinical/', '/clinical/'],
+      ['/social-media/linkedin/', '/social-media/linkedin/'],
+      ['/science/', '/science/'],
+      ['/historical-sources/', '/historical-sources/']
     ];
     const activeRule = sectionRules.find(([segment]) => path.includes(segment));
     if (activeRule) {
@@ -60,14 +60,14 @@
 
     const veterinary = document.createElement('a');
     veterinary.className = 'nav-network-link nav-network-knowledge';
-    veterinary.href = 'https://archiljali.github.io/BHOC-VET-platform/';
+    veterinary.href = 'https://evidence.bhocvet.com/';
     veterinary.textContent = 'Veterinary Direction';
     veterinary.title = 'Knowledge Base · BHOC VET-platform';
     veterinary.setAttribute('aria-label', 'Veterinary Direction knowledge base, public BHOC VET-platform');
 
     const realWorld = document.createElement('a');
     realWorld.className = 'nav-network-link nav-network-knowledge';
-    realWorld.href = 'https://archiljali.github.io/BHOC-platform/real-world-evidence/';
+    realWorld.href = 'https://evidence.bhoctherapeutics.com/real-world-evidence/';
     realWorld.textContent = 'Real-World Evidence';
     realWorld.title = 'Knowledge Base · Oxygen Delivery Evidence';
     realWorld.setAttribute('aria-label', 'Real-World Evidence knowledge base, public Oxygen Delivery Evidence page');
@@ -77,9 +77,9 @@
 
   const normalizePrimaryExplorerCTA = () => {
     const hubPaths = [
-      '/BHOC-platform/veterinary/Vet-index.html',
-      '/BHOC-platform/human/BHOC-Human-index.html',
-      '/BHOC-platform/transplant/Transplant-index.html'
+      '/veterinary/Vet-index.html',
+      '/human/BHOC-Human-index.html',
+      '/transplant/Transplant-index.html'
     ];
     if (!hubPaths.includes(path)) return;
     const primary = document.querySelector('.overview-actions .button:not(.secondary)');
@@ -143,9 +143,9 @@
   const enhanceApplicationCards = () => {
     if (!(path.endsWith('/clinical/') || path.endsWith('/clinical/index.html'))) return;
     const routes = [
-      ['.vertical-card.sickle', '/BHOC-platform/human/BHOC-Human-search.html?direction=Hematology%2C%20Sickle%20Cell%20%26%20Severe%20Anemia', 'Open sickle cell and severe anemia evidence'],
-      ['.vertical-card.oncology', '/BHOC-platform/human/BHOC-Human-search.html?direction=Oncology%20%26%20Tumor%20Oxygenation', 'Open oncology and tumor oxygenation evidence'],
-      ['.vertical-card.transplant', '/BHOC-platform/transplant/Transplant-index.html', 'Open transplantation evidence hub']
+      ['.vertical-card.sickle', '/human/BHOC-Human-search.html?direction=Hematology%2C%20Sickle%20Cell%20%26%20Severe%20Anemia', 'Open sickle cell and severe anemia evidence'],
+      ['.vertical-card.oncology', '/human/BHOC-Human-search.html?direction=Oncology%20%26%20Tumor%20Oxygenation', 'Open oncology and tumor oxygenation evidence'],
+      ['.vertical-card.transplant', '/transplant/Transplant-index.html', 'Open transplantation evidence hub']
     ];
 
     routes.forEach(([selector, href, label]) => {
