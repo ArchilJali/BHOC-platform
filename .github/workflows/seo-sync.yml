@@ -9,6 +9,7 @@ on:
       - 'seo/page-metadata.json'
       - 'scripts/apply_seo_metadata.cjs'
       - 'version.json'
+      - 'scripts/register_aabb_metadata_custom_domain.py'
       - '.github/workflows/seo-sync.yml'
   workflow_dispatch:
 
@@ -31,20 +32,27 @@ jobs:
         with:
           node-version: '22'
 
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+
+      - name: Register custom-domain AABB metadata
+        if: github.ref_name == 'preview/evidence-custom-domain-20260912'
+        run: python scripts/register_aabb_metadata_custom_domain.py
+
       - name: Apply canonical SEO metadata
         run: |
-          git pull --rebase origin "${GITHUB_REF_NAME}"
           node scripts/apply_seo_metadata.cjs
 
       - name: Commit generated SEO outputs
         run: |
           git config user.name "BHOC SEO Automation"
           git config user.email "actions@users.noreply.github.com"
-          git add sitemap.xml '*.html' '**/*.html'
+          git add seo/page-metadata.json sitemap.xml '*.html' '**/*.html'
           if git diff --cached --quiet; then
             echo "SEO metadata and sitemap already synchronized."
             exit 0
           fi
           git commit -m "Sync BHOC SEO metadata and sitemap [version-stamp]"
-          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
