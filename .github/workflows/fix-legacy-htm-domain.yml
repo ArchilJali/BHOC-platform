@@ -1,0 +1,29 @@
+name: Fix legacy HTM domain references
+on:
+  push:
+    branches: ['preview/evidence-custom-domain-20260912']
+    paths:
+      - 'scripts/fix_legacy_htm_custom_domain.py'
+      - '.github/workflows/fix-legacy-htm-domain.yml'
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - run: python scripts/fix_legacy_htm_custom_domain.py
+      - name: Commit legacy HTM fix
+        run: |
+          git config user.name "BHOC Domain Migration"
+          git config user.email "actions@users.noreply.github.com"
+          git add veterinary/business/BHOC-Veterinary-Concept.htm
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Fix legacy HTM custom-domain links"
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
