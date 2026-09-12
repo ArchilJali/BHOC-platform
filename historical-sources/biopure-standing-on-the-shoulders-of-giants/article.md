@@ -130,15 +130,6 @@ That is the technology story in its most relevant form:
 
 The importance lies not in the length of the manufacturing description, but in the fact that Biopure crossed each boundary.
 
-### 4.1. Manufacturing Quality Is Part of the Product
-
-For an injectable cell-free hemoglobin biologic, purification and manufacturing control are not secondary to the molecule. They are part of the product definition and part of regulatory acceptability. Biopure itself explained this directly in SEC filings: Hemopure was classified as a biologic, and a change in manufacturing process could be considered by FDA to produce an altered or potentially different product.[18](#ref-18)
-
-Early cell-free hemoglobin work also showed why this matters biologically. Endotoxin, stromal phospholipids and residual proteins can confound attribution of inflammatory toxicity to hemoglobin itself. Quantitative endotoxin assays later identified lipopolysaccharide contamination in some early modified-hemoglobin production runs and allowed sources to be identified and controlled.[19](#ref-19),[20](#ref-20)
-
-Endotoxin cannot be assigned retrospectively as the sole cause of HBOC toxicity. Our interpretation is narrower: inadequate control of endotoxin or other residual contaminants may have contributed materially to toxicity in some early preparations and may have made it harder to separate product biology from process-related inflammation. Product-specific NO reactivity, oxidation, methemoglobin formation, heme release, molecular-size distribution and oxygen affinity remain important.
-
-The regulatory history of Oxyglobin makes the manufacturing requirement concrete. FDA inspected Biopure's facilities for compliance with good manufacturing practices, and European regulators also inspected the facilities before Oxyglobin marketing authorization.[18](#ref-18),[21](#ref-21) For a hemoglobin oxygen carrier, manufacturing consistency is part of the medicine, not an administrative detail.
 
 ## 5. Regulatory and Clinical Translation
 
@@ -176,19 +167,6 @@ Nevertheless, those later difficulties do not erase the translational sequence a
 
 Few biotechnology programs travel the entire distance.
 
-### 6.1. What Failed at Biopure: Technology, Governance, Regulation and Capital
-
-The collapse of Biopure Corporation should not be reduced to a simple statement that the technology failed. Oxyglobin had U.S. and European veterinary authorization, Hemopure had South African human authorization, and Biopure had built an industrial manufacturing platform. At the same time, the U.S. human program had real clinical and regulatory problems.
-
-The public-company history added another layer. Biopure's July 1999 IPO was not the clean blockbuster launch sometimes implied in later retellings. An SEC case concerning the underwriter described Biopure as a "cold" IPO for which the offering size and proposed price range were reduced and final pricing was delayed.[22](#ref-22) Biopure later traded at a market capitalization above $1 billion according to a later SEC-filed successor-company prospectus, but that is not the same as an IPO valuation.[23](#ref-23)
-
-Leadership also changed. Carl W. Rausch, co-founder and CEO from 1984 to 2002, moved to Vice Chairman and Chief Technology Officer in 2002; Thomas A. Moore became President and CEO.[18](#ref-18) The public record establishes the transition, but it does not prove that the board removed Rausch because of a conflict of interests or that the leadership change alone caused the later failure.
-
-In 2003 FDA placed the proposed trauma program on clinical hold and raised serious questions about the orthopedic-surgery application. SEC later brought enforcement actions alleging that Biopure and executives made misleading disclosures about material FDA developments while the company was raising capital. Biopure settled the SEC case in 2006 without admitting or denying the allegations and agreed to retain an independent consultant to review disclosure and compliance procedures.[24](#ref-24),[25](#ref-25)
-
-Financing pressure then became severe. In 2009 Biopure entered bankruptcy proceedings and sold substantially all operating assets to OPK Biotech.[26](#ref-26) There is no primary-source basis for saying that FDA "revoked Biopure's GMP license." SEC filings instead show FDA GMP inspections of the manufacturing facilities and continued manufacturing activity.[18](#ref-18)
-
-The more defensible historical conclusion is that governance, disclosure, regulatory strategy, clinical risk and capital constraints all shaped Biopure's outcome. The failure of the corporation was not identical to disappearance of the underlying technology. But it would also be inaccurate to dismiss the U.S. regulatory setbacks as politics or finance alone.
 
 ## 7. Historical Significance and Limitations
 
@@ -253,23 +231,6 @@ There was only a patient-and oxygen that needed to reach tissue.
 <a id="ref-17"></a>**17.** The Wall Street Transcript. Carl W. Rausch: Biopure Corporation executive biography and interview record. 2000. [Biographical record](https://www.twst.com/bio/carl-w-rausch/).
 
 
-<a id="ref-18"></a>**18.** Biopure Corporation. Form 10-K and executive/manufacturing disclosures: biologics are defined by manufacturing process and composition; FDA GMP inspection history; Carl W. Rausch and Thomas A. Moore executive roles. U.S. Securities and Exchange Commission. [SEC filing](https://www.sec.gov/Archives/edgar/data/815508/000095013504000426/b49311bce10vk.htm)
-
-<a id="ref-19"></a>**19.** Feola M, Simoni J, Canizaro PC. Quality control of hemoglobin solutions: purity before modification. *Artificial Organs*. 1991. [PubMed](https://pubmed.ncbi.nlm.nih.gov/1867535/)
-
-<a id="ref-20"></a>**20.** Production of modified crosslinked cell-free hemoglobin for human use: quantitative determination of endotoxin contamination. [PubMed](https://pubmed.ncbi.nlm.nih.gov/8259598/)
-
-<a id="ref-21"></a>**21.** European Medicines Agency. Oxyglobin regulatory history and pre-authorisation manufacturing inspection. [EMA](https://www.ema.europa.eu/en/documents/procedural-steps/oxyglobin-epar-procedural-steps-taken-authorisation_en.pdf)
-
-<a id="ref-22"></a>**22.** U.S. Securities and Exchange Commission. J.P. Morgan Securities Inc. litigation release describing the July 1999 Biopure offering as a "cold" IPO. [SEC Litigation Release No. 18385](https://www.sec.gov/enforcement-litigation/litigation-releases/lr-18385)
-
-<a id="ref-23"></a>**23.** SEC-filed successor-company prospectus discussing Biopure's later market capitalization and product history. This retrospective source is used only for the later market-capitalization statement, not as an IPO valuation. [SEC filing](https://www.sec.gov/Archives/edgar/data/1615647/000149315222011184/forms-1.htm)
-
-<a id="ref-24"></a>**24.** U.S. Securities and Exchange Commission. SEC Charges Massachusetts Biotechnology Company and Executives with Securities Fraud. 14 Sep 2005. [SEC Litigation Release No. 19376](https://www.sec.gov/enforcement-litigation/litigation-releases/lr-19376)
-
-<a id="ref-25"></a>**25.** U.S. Securities and Exchange Commission. SEC Settles Civil Injunctive Action Against Biopure Corporation and Its General Counsel. 12 Sep 2006. [SEC Litigation Release No. 19825](https://www.sec.gov/enforcement-litigation/litigation-releases/lr-19825)
-
-<a id="ref-26"></a>**26.** Biopure Corporation. Form 8-K, 18 Aug 2009: bankruptcy auction and sale of substantially all operating assets to OPK Biotech LLC. [SEC filing](https://www.sec.gov/Archives/edgar/data/815508/000119312509180106/d8k.htm)
 
 ## Copyright and Permissions
 
