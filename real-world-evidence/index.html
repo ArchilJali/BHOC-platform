@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- SEO metadata: managed by scripts/apply_seo_metadata.cjs -->
-  <title>Real-World Evidence | Oxygen Delivery Evidence | BHOC</title>
-  <meta name="description" content="Public Real-World Evidence knowledge base for oxygen delivery, donor blood and transfusion comparators, tissue oxygenation, microcirculation, emergency care and translational evidence.">
-  <meta name="keywords" content="Real-World Evidence, Oxygen Delivery Evidence, donor blood, blood transfusion, tissue oxygenation, hypoxia, ischemia, microcirculation, oxygen delivery, HBOC, BHOC, hemoglobin-based oxygen carrier">
+  <title>Real-World Evidence | Oxygen Delivery, Donor Blood & Transfusion | BHOC</title>
+  <meta name="description" content="Browse the BHOC Real-World Evidence knowledge base: donor blood and transfusion, blood groups, EMS, postpartum hemorrhage, tissue oxygenation, human-use context and transplantation.">
+  <meta name="keywords" content="Real-World Evidence, Oxygen Delivery Evidence, donor blood, blood transfusion, blood groups, transfusion compatibility, tissue oxygenation, hypoxia, ischemia, microcirculation, prehospital EMS, postpartum hemorrhage, HBOC, BHOC">
   <meta name="author" content="Archil Jaliashvili">
   <link rel="author" href="https://www.linkedin.com/in/archil-jaliashvili-bhoc/">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -16,63 +16,100 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="BHOC Therapeutics Platform">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Real-World Evidence | Oxygen Delivery Evidence | BHOC">
-  <meta property="og:description" content="Public Real-World Evidence knowledge base for oxygen delivery, donor blood and transfusion comparators, tissue oxygenation, microcirculation, emergency care and translational evidence.">
+  <meta property="og:title" content="Real-World Evidence | Oxygen Delivery, Donor Blood & Transfusion | BHOC">
+  <meta property="og:description" content="Browse the BHOC Real-World Evidence knowledge base across donor blood, transfusion, oxygen biology, emergency care, human-use context and transplantation.">
   <meta property="og:url" content="https://archiljali.github.io/BHOC-platform/real-world-evidence/">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Real-World Evidence | Oxygen Delivery Evidence | BHOC">
-  <meta name="twitter:description" content="Public Real-World Evidence knowledge base for oxygen delivery, donor blood and transfusion comparators, tissue oxygenation, microcirculation, emergency care and translational evidence.">
+  <meta name="twitter:title" content="Real-World Evidence | BHOC Therapeutics Platform">
+  <meta name="twitter:description" content="A public section directory for donor-blood comparators, transfusion science, oxygen delivery and clinical context.">
   <link rel="stylesheet" href="../assets/evidence.css">
   <link rel="stylesheet" href="../assets/platform-shell.css">
   <link rel="stylesheet" href="../assets/intelligence-2026.css">
   <style>
-    .rwe-hero{position:relative;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:18px;padding:38px 36px 34px;margin-bottom:18px}.rwe-hero:before{content:"";position:absolute;inset:0 0 auto;height:6px;background:#1687a7}.rwe-hero .eyebrow{color:#1687a7}.rwe-hero h1{max-width:900px;margin:8px 0 12px;font-size:clamp(34px,4.6vw,56px);line-height:1.04;letter-spacing:-1.6px}.rwe-hero p{max-width:920px;margin:0;color:var(--muted);font-size:15px;line-height:1.65}.rwe-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}.rwe-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0 26px}.rwe-card{padding:22px}.rwe-card small{display:block;color:#1687a7;font-size:9px;font-weight:800;letter-spacing:.10em;text-transform:uppercase}.rwe-card h2{margin:7px 0 8px;font-size:20px;line-height:1.2}.rwe-card p{margin:0 0 13px;color:var(--muted);font-size:12.5px;line-height:1.55}.rwe-card a{text-decoration:none;font-size:12px;font-weight:800}.rwe-boundary{background:#102f49;color:#fff;border-radius:15px;padding:28px;margin:24px 0}.rwe-boundary .eyebrow{color:#8fd7e3}.rwe-boundary h2{margin:8px 0 12px;font-size:28px}.rwe-boundary p{max-width:940px;color:#dbe7eb;font-size:13px;line-height:1.7}.rwe-network{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:17px}.rwe-network a{display:block;border:1px solid var(--line);border-radius:10px;padding:14px 15px;background:#fff;text-decoration:none}.rwe-network small{display:block;color:#7b8793;font-size:8px;font-weight:800;letter-spacing:.10em;text-transform:uppercase}.rwe-network strong{display:block;margin-top:3px;color:var(--ink);font-size:13px}.rwe-network span{display:block;margin-top:4px;color:var(--muted);font-size:10.5px}.rwe-network a:hover{border-color:#1687a7;background:#f4fafb}@media(max-width:900px){.rwe-grid,.rwe-network{grid-template-columns:1fr 1fr}}@media(max-width:620px){.rwe-hero{padding:30px 20px 26px}.rwe-grid,.rwe-network{grid-template-columns:1fr}.rwe-boundary{padding:23px}}
+    .rwe-hero{position:relative;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:18px;padding:38px 36px 34px;margin-bottom:18px}.rwe-hero:before{content:"";position:absolute;inset:0 0 auto;height:6px;background:#1687a7}.rwe-hero .eyebrow{color:#1687a7}.rwe-hero h1{max-width:900px;margin:8px 0 12px;font-size:clamp(34px,4.6vw,56px);line-height:1.04;letter-spacing:-1.6px}.rwe-hero p{max-width:920px;margin:0;color:var(--muted);font-size:15px;line-height:1.65}.rwe-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}.rwe-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0 26px}.rwe-card{padding:22px}.rwe-card small{display:block;color:#1687a7;font-size:9px;font-weight:800;letter-spacing:.10em;text-transform:uppercase}.rwe-card h2{margin:7px 0 8px;font-size:20px;line-height:1.2}.rwe-card p{margin:0 0 13px;color:var(--muted);font-size:12.5px;line-height:1.55}.rwe-card a{text-decoration:none;font-size:12px;font-weight:800}.rwe-boundary{background:#102f49;color:#fff;border-radius:15px;padding:28px;margin:24px 0}.rwe-boundary .eyebrow{color:#8fd7e3}.rwe-boundary h2{margin:8px 0 12px;font-size:28px}.rwe-boundary p{max-width:940px;color:#dbe7eb;font-size:13px;line-height:1.7}.rwe-network{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:17px}.rwe-network a{display:block;border:1px solid var(--line);border-radius:10px;padding:14px 15px;background:#fff;text-decoration:none}.rwe-network small{display:block;color:#7b8793;font-size:8px;font-weight:800;letter-spacing:.10em;text-transform:uppercase}.rwe-network strong{display:block;margin-top:3px;color:var(--ink);font-size:13px}.rwe-network span{display:block;margin-top:4px;color:var(--muted);font-size:10.5px}.rwe-network a:hover{border-color:#1687a7;background:#f4fafb}.rwe-directory{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0 28px}.dir-card{border:1px solid var(--line);border-radius:14px;background:#fff;padding:20px}.dir-card small{display:block;color:#1687a7;font-size:9px;font-weight:800;letter-spacing:.10em;text-transform:uppercase}.dir-card h3{margin:6px 0 10px;font-size:18px}.dir-card ul{list-style:none;margin:0;padding:0}.dir-card li{border-top:1px solid #edf1f3;padding:9px 0}.dir-card li:first-child{border-top:0}.dir-card a{text-decoration:none;font-size:12.5px;font-weight:750}.dir-card span{display:block;color:var(--muted);font-size:10.5px;margin-top:2px;line-height:1.45}.new-tag{display:inline-block;margin-left:6px;padding:2px 6px;border-radius:999px;background:#e7f6f8;color:#0e718b;font-size:8px;font-weight:900;letter-spacing:.06em;text-transform:uppercase}@media(max-width:900px){.rwe-grid,.rwe-network,.rwe-directory{grid-template-columns:1fr 1fr}}@media(max-width:620px){.rwe-hero{padding:30px 20px 26px}.rwe-grid,.rwe-network,.rwe-directory{grid-template-columns:1fr}.rwe-boundary{padding:23px}}
   </style>
   <script src="../assets/navigation.js" defer></script>
-  <link rel="stylesheet" href="/BHOC-platform/assets/platform-shell.css">
-  <link rel="stylesheet" href="/BHOC-platform/assets/intelligence-2026.css">
-  <script src="/BHOC-platform/assets/navigation.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CollectionPage",
+    "name":"Real-World Evidence | BHOC Therapeutics Platform",
+    "url":"https://archiljali.github.io/BHOC-platform/real-world-evidence/",
+    "description":"A public knowledge-base section connecting donor-blood and transfusion comparators, oxygen biology, emergency care, human-use context and transplantation.",
+    "isPartOf":{"@type":"WebSite","name":"BHOC Therapeutics Platform","url":"https://archiljali.github.io/BHOC-platform/"}
+  }
+  </script>
   <script type="application/ld+json" data-seo-breadcrumbs>
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://archiljali.github.io/BHOC-platform/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Real-World Evidence",
-      "item": "https://archiljali.github.io/BHOC-platform/real-world-evidence/"
-    }
-  ]
-}
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://archiljali.github.io/BHOC-platform/"},
+      {"@type":"ListItem","position":2,"name":"Real-World Evidence","item":"https://archiljali.github.io/BHOC-platform/real-world-evidence/"}
+    ]
+  }
   </script>
 </head>
 <body class="theme-main">
   <a class="skip" href="#main">Skip to content</a>
-  <header class="site-header"><nav class="site-nav" aria-label="Main navigation"><a class="brand" href="/BHOC-platform/index.html" aria-current="page"><strong class="brand-word">BH<b class="brand-o">O</b>C</strong><span class="brand-sub">Therapeutics Platform</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="bhoc-nav"><span>Menu</span><b aria-hidden="true">☰</b></button><div class="nav-links" id="bhoc-nav"><a href="/BHOC-platform/veterinary/Vet-index.html">Veterinary</a><a href="/BHOC-platform/transplant/Transplant-index.html">Transplantation</a><a href="/BHOC-platform/human/BHOC-Human-index.html">Human Use</a><a href="/BHOC-platform/clinical/">Applications</a><a href="/BHOC-platform/concepts-hypotheses/">Concepts & Hypotheses</a><a href="/BHOC-platform/social-media/linkedin/">LinkedIn Publications</a><a href="/BHOC-platform/science/">Science</a><a href="/BHOC-platform/historical-sources/">History</a><div class="nav-network" role="group" aria-label="BHOC websites"><a class="nav-network-link" href="https://bhoctherapeutics.com/">BHOC Therapeutics</a><a class="nav-network-link" href="https://bhocvet.com/"><strong class="vet-wordmark">BH<b class="vet-o">O</b>C</strong> Veterinary</a><span class="nav-network-link nav-network-pending" aria-disabled="true" title="Coming soon">BHOC Transplant<small>coming soon</small></span></div></div></nav></header>
+  <header class="site-header"><nav class="site-nav" aria-label="Main navigation"><a class="brand" href="/BHOC-platform/index.html" aria-current="page"><strong class="brand-word">BH<b class="brand-o">O</b>C</strong><span class="brand-sub">Therapeutics Platform</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="bhoc-nav"><span>Menu</span><b aria-hidden="true">☰</b></button><div class="nav-links" id="bhoc-nav"><a href="/BHOC-platform/veterinary/Vet-index.html">Veterinary</a><a href="/BHOC-platform/transplant/Transplant-index.html">Transplantation</a><a href="/BHOC-platform/human/BHOC-Human-index.html">Human Use</a><a href="/BHOC-platform/clinical/">Applications</a><a href="/BHOC-platform/concepts-hypotheses/">Concepts &amp; Hypotheses</a><a href="/BHOC-platform/social-media/linkedin/">LinkedIn Publications</a><a href="/BHOC-platform/science/">Science</a><a href="/BHOC-platform/historical-sources/">History</a><div class="nav-network" role="group" aria-label="BHOC websites"><a class="nav-network-link" href="https://bhoctherapeutics.com/">BHOC Therapeutics</a><a class="nav-network-link" href="https://bhocvet.com/"><strong class="vet-wordmark">BH<b class="vet-o">O</b>C</strong> Veterinary</a><span class="nav-network-link nav-network-pending" aria-disabled="true" title="Coming soon">BHOC Transplant<small>coming soon</small></span></div></div></nav></header>
 
   <main id="main" class="shell">
     <section class="rwe-hero">
       <div class="eyebrow">Knowledge Base · Real-World Evidence</div>
       <h1>Oxygen Delivery Evidence</h1>
-      <p>A public knowledge-base entry for evidence, context and analysis beyond direct BHOC / HBOC records. It connects donor-blood and transfusion comparators, tissue oxygenation, hypoxia and ischemia, microcirculation, organ perfusion, emergency care and broader oxygen-delivery science.</p>
-      <div class="rwe-actions"><a class="button" href="../clinical/">Explore clinical applications →</a><a class="button secondary" href="../science/">Explore oxygen-delivery science →</a></div>
+      <p>A public knowledge-base section for evidence, context and analysis beyond direct BHOC / HBOC product records. It connects donor blood and transfusion comparators, blood-group compatibility, tissue oxygenation, hypoxia and ischemia, microcirculation, emergency care and broader oxygen-delivery science.</p>
+      <div class="rwe-actions"><a class="button" href="#directory">Browse all sections ↓</a><a class="button secondary" href="../clinical/">Clinical applications →</a><a class="button secondary" href="../science/">Oxygen-delivery science →</a></div>
     </section>
 
     <section aria-labelledby="rwe-domains"><div class="overview-heading"><div><div class="eyebrow">Evidence domains</div><h2 id="rwe-domains" class="section-heading">Read the clinical problem before the technology.</h2></div><span class="tag">Living Knowledge Base</span></div>
       <div class="rwe-grid">
         <article class="panel rwe-card"><small>01 / Emergency care</small><h2>Prehospital &amp; trauma</h2><p>Blood access, emergency transfusion, transport time, hemorrhage and the oxygen-delivery gap before definitive care.</p><a href="../clinical/prehospital-ems.html">Open Prehospital EMS →</a></article>
         <article class="panel rwe-card"><small>02 / Maternal emergency</small><h2>Postpartum hemorrhage</h2><p>Maternal bleeding, donor-blood access, time-critical resuscitation and oxygen-delivery context.</p><a href="../clinical/pph-humanitarian-problem.html">Open PPH evidence →</a></article>
-        <article class="panel rwe-card"><small>03 / Comparator evidence</small><h2>Donor blood &amp; transfusion</h2><p>Comparator evidence on blood availability, storage, compatibility, transfusion limitations and clinical context.</p><a href="../clinical/">Open applications landscape →</a></article>
+        <article class="panel rwe-card"><small>03 / Comparator evidence</small><h2>Donor blood &amp; transfusion</h2><p>Blood availability, compatibility, transfusion thresholds, donor-system constraints and the increasing complexity of blood-group science.</p><a href="blood-groups-history/">Blood Groups: ABO → 49 systems <span class="new-tag">new</span> →</a></article>
         <article class="panel rwe-card"><small>04 / Oxygen biology</small><h2>Microcirculation &amp; tissue oxygenation</h2><p>Flow, diffusion, extraction, endothelial biology and the difference between circulating oxygen metrics and tissue delivery.</p><a href="../science/oxygen-delivery-potency.html">Open oxygen-delivery science →</a></article>
         <article class="panel rwe-card"><small>05 / Human evidence</small><h2>Human-use context</h2><p>Clinical and translational evidence across anemia, emergency care, surgery, ischemia and critical care.</p><a href="../human/BHOC-Human-index.html">Open Human Use →</a></article>
         <article class="panel rwe-card"><small>06 / Organ systems</small><h2>Transplantation &amp; perfusion</h2><p>Preservation, machine perfusion, viability assessment, reperfusion and oxygen delivery across the graft journey.</p><a href="../transplant/Transplant-index.html">Open Transplantation →</a></article>
+      </div>
+    </section>
+
+    <section id="directory" aria-labelledby="directory-title">
+      <div class="overview-heading"><div><div class="eyebrow">Section directory</div><h2 id="directory-title" class="section-heading">All Real-World Evidence routes in one place.</h2></div><span class="tag">Current live pages</span></div>
+      <p>This directory exposes every current subsection connected to Real-World Evidence so readers and search engines can move from the broad clinical context to the underlying evidence, analysis and research questions without returning to the main platform each time.</p>
+      <div class="rwe-directory">
+        <article class="dir-card"><small>01 / Emergency care</small><h3>Prehospital &amp; trauma</h3><ul>
+          <li><a href="../clinical/prehospital-ems.html">Prehospital EMS &amp; Emergency Blood Transfusion →</a><span>Programs, blood access, logistics and the prehospital oxygen-delivery gap.</span></li>
+          <li><a href="../science/prehospital-blood-transfusion-oxygen-delivery.html">Prehospital transfusion &amp; oxygen-delivery analysis →</a><span>Scientific framing of blood transfusion and oxygen-delivery endpoints.</span></li>
+          <li><a href="../concepts-hypotheses/prehospital-oxygen-delivery-selection.html">Are we identifying the oxygen-delivery problem early enough? →</a><span>Research concept on prehospital selection signals and treatment window.</span></li>
+        </ul></article>
+
+        <article class="dir-card"><small>02 / Maternal emergency</small><h3>Postpartum hemorrhage</h3><ul>
+          <li><a href="../clinical/pph-humanitarian-problem.html">PPH · Maternal Emergency &amp; Blood Access →</a><span>Time-critical maternal hemorrhage, access constraints and oxygen delivery.</span></li>
+          <li><a href="../concepts-hypotheses/pph-oxygen-delivery-window.html">PPH oxygen-delivery window →</a><span>Research concept separating blood loss from the evolving oxygen-delivery deficit.</span></li>
+        </ul></article>
+
+        <article class="dir-card"><small>03 / Donor blood &amp; transfusion</small><h3>Comparator evidence</h3><ul>
+          <li><a href="blood-groups-history/">Blood Groups: From ABO to 49 Systems <span class="new-tag">new</span> →</a><span>Concise source-linked history and the current ISBT classification.</span></li>
+          <li><a href="../science/aabb-rbc-transfusion-thresholds-oxygen-delivery.html">RBC transfusion thresholds &amp; oxygen delivery →</a><span>Modern restrictive thresholds, patient context and limits of a number-only approach.</span></li>
+        </ul></article>
+
+        <article class="dir-card"><small>04 / Oxygen biology</small><h3>Microcirculation &amp; tissue oxygenation</h3><ul>
+          <li><a href="../science/oxygen-delivery-potency.html">Oxygen-delivery potency →</a><span>Functional oxygen delivery versus concentration alone.</span></li>
+          <li><a href="../science/nitric-oxide-scavenging-hboc-vasoconstriction.html">NO scavenging, vasoconstriction &amp; HBOC physiology →</a><span>Vascular response, nitric oxide and tissue oxygenation.</span></li>
+          <li><a href="../science/sepsis-microcirculation-tissue-oxygenation-bhoc.html">Sepsis, microcirculation &amp; tissue oxygenation →</a><span>Why systemic values may not fully represent microvascular oxygen delivery.</span></li>
+          <li><a href="../science/nobel-foundations-oxygen-metabolism-physiology.html">Nobel foundations in oxygen biology →</a><span>Scientific milestones relevant to oxygen sensing, metabolism and physiology.</span></li>
+        </ul></article>
+
+        <article class="dir-card"><small>05 / Human evidence</small><h3>Human-use context</h3><ul>
+          <li><a href="../human/BHOC-Human-index.html">Human-Use Evidence Hub →</a><span>Clinical and separately labelled translational evidence.</span></li>
+          <li><a href="../human/BHOC-Human-search.html">Human publication search →</a><span>Search records by direction, institution, author, journal and historical term.</span></li>
+          <li><a href="../human/BHOC-Human-fda-expanded-access.html">FDA Expanded Access · HBOC-201 / Hemopure →</a><span>Official access and regulatory context.</span></li>
+        </ul></article>
+
+        <article class="dir-card"><small>06 / Organ systems</small><h3>Transplantation &amp; perfusion</h3><ul>
+          <li><a href="../transplant/Transplant-index.html">Transplantation Evidence Hub →</a><span>Kidney, liver, heart, limb and cross-organ evidence.</span></li>
+          <li><a href="../transplant/Transplant-search.html">Transplantation publication search →</a><span>Search HBOC/BHOC evidence across preservation, perfusion and reperfusion.</span></li>
+        </ul></article>
       </div>
     </section>
 
@@ -80,10 +117,9 @@
 
     <section aria-labelledby="ecosystem-title"><div class="eyebrow">BHOC ecosystem</div><h2 id="ecosystem-title" class="section-heading">Clear public routes. No code repositories.</h2><div class="rwe-network"><a href="https://bhoctherapeutics.com/"><small>Website</small><strong>BHOC Therapeutics</strong><span>Main BHOC website</span></a><a href="https://bhocvet.com/"><small>Website</small><strong>BHOC Veterinary</strong><span>Veterinary website</span></a><a href="https://archiljali.github.io/BHOC-VET-platform/"><small>Knowledge Base</small><strong>Veterinary Direction</strong><span>Public BHOC VET-platform</span></a></div></section>
 
-    <p class="notice">This knowledge-base entry is scientific and educational. Inclusion of evidence does not establish efficacy, regulatory approval or a clinical recommendation.</p>
+    <p class="notice">This knowledge-base section is scientific and educational. Inclusion of evidence does not establish efficacy, regulatory approval or a clinical recommendation.</p>
   </main>
 
-  <footer class="site-footer"><span>BHOC Therapeutics Platform · Real-World Evidence</span><span><a href="https://bhoctherapeutics.com/">BHOC Therapeutics</a> · <a href="/BHOC-platform/">Platform Home</a> · <a href="https://archiljali.github.io/BHOC-VET-platform/">Veterinary Direction</a></span>  <p class="platform-version" data-platform-version>First published 20 Aug 2026 · 206 updates · Last updated 09 Sep 2026 · Version 26.09.09</p>
-</footer>
+  <footer class="site-footer"><span>BHOC Therapeutics Platform · Real-World Evidence</span><span><a href="https://bhoctherapeutics.com/">BHOC Therapeutics</a> · <a href="/BHOC-platform/">Platform Home</a> · <a href="https://archiljali.github.io/BHOC-VET-platform/">Veterinary Direction</a></span><p class="platform-version" data-platform-version>First published 20 Aug 2026 · Last updated 12 Sep 2026 · Version 26.09.12</p></footer>
 </body>
 </html>
