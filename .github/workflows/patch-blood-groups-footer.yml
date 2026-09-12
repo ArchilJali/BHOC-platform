@@ -1,0 +1,38 @@
+name: Patch Blood Groups article footer
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/patch_blood_groups_article_footer.cjs'
+      - '.github/workflows/patch-blood-groups-footer.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bhoc-platform-content-write
+  cancel-in-progress: false
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - name: Apply footer patch
+        run: node scripts/patch_blood_groups_article_footer.cjs
+      - name: Commit article update
+        shell: bash
+        run: |
+          git config user.name "BHOC Platform Automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add real-world-evidence/blood-groups-history/index.html
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Add visible author dates and back-to-top to Blood Groups article"
+          git pull --rebase origin main
+          git push
