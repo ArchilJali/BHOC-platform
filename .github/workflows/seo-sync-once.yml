@@ -1,0 +1,50 @@
+name: SEO sync once
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/seo-sync-once.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+      - name: Register concept and regenerate managed SEO
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs=require('fs');
+          const file='seo/page-metadata.json';
+          const config=JSON.parse(fs.readFileSync(file,'utf8'));
+          config['concepts-hypotheses/index.html']={
+            ...config['concepts-hypotheses/index.html'],
+            description:'BHOC Concepts & Hypotheses presents source-linked research concepts on prehospital oxygen delivery, functional potency, postpartum hemorrhage, nitric oxide and vascular control.',
+            keywords:'BHOC Concepts and Hypotheses, research concept, scientific hypothesis, oxygen delivery, tissue oxygenation, nitric oxide, NO scavenging, vascular control, HBOC vasoconstriction, red blood cell compartmentalization, prehospital EMS, blood transfusion, postpartum hemorrhage, L-TOF, BHOC, HBOC, Biological Hemoglobin Oxygen Carrier, Precision Oxygen Therapeutics, pre-publication',
+            lastmod:'2026-09-13'
+          };
+          config['concepts-hypotheses/size-compartmentalization-vascular-control.html']={
+            title:'Hemoglobin Size, Nitric Oxide & Vascular Control | BHOC',
+            description:'BHOC research hypothesis linking hemoglobin molecular scale, red-cell compartmentalization, nitric oxide scavenging, HBOC vasoconstriction and controlled vascular interaction.',
+            keywords:'hemoglobin molecular size, red blood cell compartmentalization, nitric oxide scavenging, NO scavenging, HBOC vasoconstriction, vascular control, microcirculation, tissue oxygenation, BHOC, HBOC, Biological Hemoglobin Oxygen Carrier, Precision Oxygen Therapeutics, research hypothesis',
+            url:'https://archiljali.github.io/BHOC-platform/concepts-hypotheses/size-compartmentalization-vascular-control.html',
+            type:'article',
+            lastmod:'2026-09-13'
+          };
+          fs.writeFileSync(file,JSON.stringify(config,null,2)+'\n');
+          NODE
+          node scripts/apply_seo_metadata.cjs
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add seo/page-metadata.json concepts-hypotheses/index.html concepts-hypotheses/size-compartmentalization-vascular-control.html sitemap.xml
+          git diff --cached --quiet || git commit -m 'Sync vascular hypothesis SEO metadata [seo-auto]'
+          git push
