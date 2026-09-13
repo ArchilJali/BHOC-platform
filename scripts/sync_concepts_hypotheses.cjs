@@ -3,7 +3,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const AUTHOR = 'Archil Jaliashvili';
-const AUTHOR_URL = 'https://www.linkedin.com/in/archil-jaliashvili-bhoc/';
+const AUTHOR_PROFILE = 'https://bhoctherapeutics.com/archil-jaliashvili/';
 const OLD_BASE = '/BHOC-platform/open-discussion/';
 const NEW_BASE = '/BHOC-platform/concepts-hypotheses/';
 
@@ -38,9 +38,6 @@ function normalizeConceptCopy(src) {
     .replaceAll('Open research discussion', 'Research concept and hypothesis')
     .replaceAll('working scientific discussion space', 'structured research-concept space')
     .replaceAll('Scientific discussion', 'Research concepts')
-    .replaceAll('Pre-Review', 'Pre-Publication')
-    .replaceAll('Pre-review', 'Pre-publication')
-    .replaceAll('pre-review', 'pre-publication')
     .replaceAll('open development stage', 'development stage')
     .replaceAll('an research concept', 'a research concept');
 }
@@ -56,7 +53,7 @@ function ensureConceptArticle(src) {
   if (next.includes('"@type":"Article"') && !next.includes('copyrightHolder')) {
     next = next.replace(
       /"publisher":\{"@type":"Organization","name":"BHOC Therapeutics Platform"\},/,
-      `"publisher":{"@type":"Organization","name":"BHOC Therapeutics Platform"},"copyrightHolder":{"@type":"Person","name":"${AUTHOR}","url":"${AUTHOR_URL}"},"copyrightYear":"2026","copyrightNotice":"© 2026 ${AUTHOR}",`
+      `"publisher":{"@type":"Organization","name":"BHOC Therapeutics Platform"},"copyrightHolder":{"@type":"Person","name":"${AUTHOR}","url":"${AUTHOR_PROFILE}"},"copyrightYear":"2026","copyrightNotice":"© 2026 ${AUTHOR}",`
     );
   } else if (next.includes('copyrightHolder') && !next.includes('copyrightNotice')) {
     next = next.replace(/"copyrightYear":"2026",/, `"copyrightYear":"2026","copyrightNotice":"© 2026 ${AUTHOR}",`);
@@ -66,7 +63,7 @@ function ensureConceptArticle(src) {
     const dateMatch = next.match(/"datePublished":"(\d{4}-\d{2}-\d{2})"/);
     const iso = dateMatch ? dateMatch[1] : '';
     const shown = humanDate(iso);
-    const byline = `\n  <p class="concept-authorship"><em>Research Concept · Hypothesis · Author: <a href="${AUTHOR_URL}" rel="author">${AUTHOR}</a>${iso ? ` · Published: <time datetime="${iso}">${shown}</time>` : ''} · © ${AUTHOR}</em></p>\n`;
+    const byline = `\n  <p class="concept-authorship"><em>Research Concept · Hypothesis · Author: <a href="${AUTHOR_PROFILE}" rel="author">${AUTHOR}</a>${iso ? ` · Published: <time datetime="${iso}">${shown}</time>` : ''} · © ${AUTHOR}</em></p>\n`;
     next = next.replace(/<footer class="site-footer">/i, `${byline}<footer class="site-footer">`);
   }
 
@@ -85,7 +82,8 @@ for (const file of walk(ROOT)) {
 
   if (rel.startsWith('concepts-hypotheses/')) {
     next = normalizeConceptCopy(next);
-    if (rel !== 'concepts-hypotheses/index.html') next = ensureConceptArticle(next);
+    const evidenceInformedAnalysis = /"genre"\s*:\s*\[[^\]]*"Evidence-Informed Concept Analysis"/.test(next);
+    if (rel !== 'concepts-hypotheses/index.html' && !evidenceInformedAnalysis) next = ensureConceptArticle(next);
   }
 
   if (next !== src) {

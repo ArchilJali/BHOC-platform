@@ -14,6 +14,7 @@ const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 const initiativeMark='https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
 const veterinaryMark='https://bhocvet.com/assets/favicon.svg';
 const defaultSocialImage='https://bhoctherapeutics.com/assets/bhoc-social-preview-20260905-initiative-logo.png';
+const authorProfile='https://bhoctherapeutics.com/archil-jaliashvili/';
 
 function html(file){return fs.readFileSync(path.join(root,file),'utf8')}
 function count(source,pattern){return [...source.matchAll(pattern)].length}
@@ -47,6 +48,8 @@ test('managed metadata, canonical, social cards and H1 are complete',()=>{
     assert.ok(source.includes(`property="og:image" content="${expectedImage}"`),`${file}: configured OG image missing`);
     assert.ok(source.includes(`name="twitter:image" content="${expectedImage}"`),`${file}: configured Twitter image missing`);
     assert.ok(source.includes('name="twitter:card" content="summary_large_image"'),`${file}: large Twitter card missing`);
+    assert.ok(source.includes(`<link rel="author" href="${authorProfile}">`),`${file}: owned author profile missing`);
+    if(data.type==='article')assert.ok(source.includes(`property="article:author" content="${authorProfile}"`),`${file}: article author profile missing`);
     if(isHome){
       assert.ok(source.includes('property="og:title" content="BHOC Scientific Evidence"'),`${file}: compact social title missing`);
       assert.ok(source.includes('property="og:description" content="Source-linked evidence on BHOC, HBOC and oxygen delivery."'),`${file}: compact social description missing`);
@@ -54,6 +57,26 @@ test('managed metadata, canonical, social cards and H1 are complete',()=>{
     assert.ok(source.includes(`<link rel="icon" href="${isVeterinary?veterinaryMark:initiativeMark}" type="${isVeterinary?'image/svg+xml':'image/png'}">`),`${file}: correct favicon missing`);
     assert.ok(source.includes('property="og:site_name" content="BHOC Therapeutics Platform"'),`${file}: platform social name missing`);
   }
+});
+
+test('structured author URLs use the owned profile while LinkedIn remains linked visibly',()=>{
+  const pages=[];
+  const walk=dir=>{
+    for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
+      if(entry.name.startsWith('.')||entry.name==='node_modules')continue;
+      const full=path.join(dir,entry.name);
+      if(entry.isDirectory())walk(full);
+      else if(entry.isFile()&&/\.html?$/i.test(entry.name))pages.push(path.relative(root,full));
+    }
+  };
+  walk(root);
+  for(const file of pages){
+    const source=html(file);
+    assert.ok(!/<(?:link|a)\b(?=[^>]*\brel=["']author["'])[^>]*linkedin\.com\/in\/archil-jaliashvili-bhoc/i.test(source),`${file}: rel=author still points to LinkedIn`);
+    assert.ok(!/<meta\b(?=[^>]*\bproperty=["']article:author["'])[^>]*linkedin\.com\/in\/archil-jaliashvili-bhoc/i.test(source),`${file}: article:author still points to LinkedIn`);
+    assert.ok(!/"url"\s*:\s*"https:\/\/www\.linkedin\.com\/in\/archil-jaliashvili-bhoc\/"/.test(source),`${file}: structured author URL still points to LinkedIn`);
+  }
+  assert.ok(html('social-media/linkedin/index.html').includes(`href="https://www.linkedin.com/in/archil-jaliashvili-bhoc/"`),'visible LinkedIn profile link must remain available');
 });
 
 test('all JSON-LD blocks parse and breadcrumb pages expose breadcrumbs',()=>{

@@ -42,7 +42,7 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add '*.html' '**/*.html'
+          git add '*.html' '*.htm' '**/*.html' '**/*.htm'
           git commit -m "Sync BHOC navigation and concept metadata [version-stamp]"
           git pull --rebase origin main
           git push
