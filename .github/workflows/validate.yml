@@ -34,10 +34,6 @@ jobs:
           if node scripts/build_veterinary_overview.cjs --check; then
             exit 0
           fi
-          # Vet-index may differ only by insignificant whitespace or the
-          # equivalent apostrophe HTML entity produced by the generator.
-          # Preserve the checked-in page, regenerate, and compare normalized
-          # text. Any other content difference still fails this job.
           cp veterinary/Vet-index.html /tmp/Vet-index.before.html
           node scripts/build_veterinary_overview.cjs
           node <<'NODE'
@@ -49,7 +45,13 @@ jobs:
           const before=normalize(fs.readFileSync('/tmp/Vet-index.before.html','utf8'));
           const after=normalize(fs.readFileSync('veterinary/Vet-index.html','utf8'));
           if(before!==after){
+            let i=0;
+            while(i<before.length&&i<after.length&&before[i]===after[i])i++;
+            const start=Math.max(0,i-220), end=i+320;
             console.error('Vet-index.html differs from generated overview beyond whitespace/apostrophe encoding.');
+            console.error('First normalized difference at character '+i);
+            console.error('CHECKED-IN: '+before.slice(start,end));
+            console.error('GENERATED : '+after.slice(start,end));
             process.exit(1);
           }
           NODE
