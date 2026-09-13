@@ -1,0 +1,64 @@
+name: OG image sync once
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/og-image-sync-once.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+      - name: Add page-specific Open Graph image support
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs=require('fs');
+
+          const scriptFile='scripts/apply_seo_metadata.cjs';
+          let script=fs.readFileSync(scriptFile,'utf8');
+          const oldA="  const articleAuthor=data.type==='article'?`\\n  <meta property=\"article:author\" content=\"${authorProfile}\">`:'';\n  return `\\n  <!-- SEO metadata: managed by scripts/apply_seo_metadata.cjs -->";
+          const newA="  const articleAuthor=data.type==='article'?`\\n  <meta property=\"article:author\" content=\"${authorProfile}\">`:'';\n  const socialImage=data.image?`\\n  <meta property=\"og:image\" content=\"${escapeAttr(data.image)}\">\\n  <meta property=\"og:image:secure_url\" content=\"${escapeAttr(data.image)}\">\\n  <meta property=\"og:image:width\" content=\"${data.imageWidth||1200}\">\\n  <meta property=\"og:image:height\" content=\"${data.imageHeight||630}\">\\n  <meta property=\"og:image:type\" content=\"${data.imageType||'image/png'}\">\\n  <meta property=\"og:image:alt\" content=\"${escapeAttr(data.imageAlt||socialTitle)}\">\\n  <meta name=\"twitter:image\" content=\"${escapeAttr(data.image)}\">\\n  <meta name=\"twitter:image:alt\" content=\"${escapeAttr(data.imageAlt||socialTitle)}\">`:'';\n  const twitterCard=data.image?'summary_large_image':'summary';\n  return `\\n  <!-- SEO metadata: managed by scripts/apply_seo_metadata.cjs -->";
+          if(!script.includes(oldA)) throw new Error('apply script insertion anchor missing');
+          script=script.replace(oldA,newA);
+          script=script.replace('  <meta property="og:url" content="${data.url}">${articleAuthor}\\n  <meta name="twitter:card" content="summary">','  <meta property="og:url" content="${data.url}">${socialImage}${articleAuthor}\\n  <meta name="twitter:card" content="${twitterCard}">');
+          fs.writeFileSync(scriptFile,script);
+
+          const configFile='seo/page-metadata.json';
+          const config=JSON.parse(fs.readFileSync(configFile,'utf8'));
+          const key='concepts-hypotheses/size-compartmentalization-vascular-control.html';
+          config[key]={...config[key],
+            image:'https://archiljali.github.io/BHOC-platform/assets/bhoc-evidence-social.png',
+            imageWidth:1200,
+            imageHeight:630,
+            imageType:'image/png',
+            imageAlt:'BHOC research concept: hemoglobin size, nitric oxide and vascular control'
+          };
+          fs.writeFileSync(configFile,JSON.stringify(config,null,2)+'\n');
+
+          const testFile='tests/seo.test.cjs';
+          let test=fs.readFileSync(testFile,'utf8');
+          const oldT=`    assert.ok(!source.includes('property="og:image"'),\`${'${file}'}: OG image should be absent\`);\n    assert.ok(!source.includes('name="twitter:image"'),\`${'${file}'}: Twitter image should be absent\`);\n    assert.ok(source.includes('name="twitter:card" content="summary"'),\`${'${file}'}: Twitter card missing\`);`;
+          const newT=`    if(data.image){\n      assert.ok(source.includes(\`property="og:image" content="${'${data.image}'}"\`),\`${'${file}'}: configured OG image missing\`);\n      assert.ok(source.includes(\`name="twitter:image" content="${'${data.image}'}"\`),\`${'${file}'}: configured Twitter image missing\`);\n      assert.ok(source.includes('name="twitter:card" content="summary_large_image"'),\`${'${file}'}: large Twitter card missing\`);\n    }else{\n      assert.ok(!source.includes('property="og:image"'),\`${'${file}'}: unexpected OG image\`);\n      assert.ok(!source.includes('name="twitter:image"'),\`${'${file}'}: unexpected Twitter image\`);\n      assert.ok(source.includes('name="twitter:card" content="summary"'),\`${'${file}'}: Twitter card missing\`);\n    }`;
+          if(!test.includes(oldT)) throw new Error('SEO test replacement anchor missing');
+          test=test.replace(oldT,newT);
+          fs.writeFileSync(testFile,test);
+          NODE
+          node scripts/apply_seo_metadata.cjs
+          node --test tests/seo.test.cjs
+          python3 scripts/check_links.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add scripts/apply_seo_metadata.cjs seo/page-metadata.json tests/seo.test.cjs concepts-hypotheses/size-compartmentalization-vascular-control.html
+          git diff --cached --quiet || git commit -m 'Add managed LinkedIn preview image for vascular hypothesis [seo-auto]'
+          git push
