@@ -12,7 +12,8 @@ const brandMark='https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?
 const veterinaryMark='https://bhocvet.com/assets/favicon.svg';
 const base='https://archiljali.github.io/BHOC-platform';
 const authorProfile='https://bhoctherapeutics.com/archil-jaliashvili/';
-const defaultSocialImage='https://bhoctherapeutics.com/assets/bhoc-social-preview-20260905-initiative-logo.png';
+const defaultSocialImage='https://bhoctherapeutics.com/assets/bhoc-social-preview-20260905-initiative-logo.png?v=20260913';
+const defaultSocialImageAlt='BHOC Therapeutics - One Oxygen. One Biology. One BHOC System.';
 
 function escapeAttr(value){return value.replace(/&(?!(?:amp|lt|gt|quot|#39);)/g,'&amp;').replace(/"/g,'&quot;')}
 function stripTag(html,pattern){return html.replace(pattern,'')}
@@ -25,8 +26,11 @@ function managedBlock(file,data){
   const socialTitle=home?'BHOC Scientific Evidence':(data.socialTitle||data.title);
   const socialDescription=home?'Source-linked evidence on BHOC, HBOC and oxygen delivery.':data.description;
   const articleAuthor=data.type==='article'?`\n  <meta property="article:author" content="${authorProfile}">`:'';
-  const image=data.image||defaultSocialImage;
-  const socialImage=`\n  <meta property="og:image" content="${escapeAttr(image)}">\n  <meta property="og:image:secure_url" content="${escapeAttr(image)}">\n  <meta property="og:image:width" content="${data.imageWidth||1200}">\n  <meta property="og:image:height" content="${data.imageHeight||630}">\n  <meta property="og:image:type" content="${data.imageType||'image/png'}">\n  <meta property="og:image:alt" content="${escapeAttr(data.imageAlt||'BHOC Evidence Platform')}">\n  <meta name="twitter:image" content="${escapeAttr(image)}">\n  <meta name="twitter:image:alt" content="${escapeAttr(data.imageAlt||'BHOC Evidence Platform')}">`;
+  // Brand rule: every BHOC-platform social link preview uses the same master visual.
+  // Page-specific title and description remain unique; only the visual identity is fixed.
+  const image=defaultSocialImage;
+  const imageAlt=defaultSocialImageAlt;
+  const socialImage=`\n  <meta property="og:image" content="${escapeAttr(image)}">\n  <meta property="og:image:secure_url" content="${escapeAttr(image)}">\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="630">\n  <meta property="og:image:type" content="image/png">\n  <meta property="og:image:alt" content="${escapeAttr(imageAlt)}">\n  <meta name="twitter:image" content="${escapeAttr(image)}">\n  <meta name="twitter:image:alt" content="${escapeAttr(imageAlt)}">`;
   const twitterCard='summary_large_image';
   return `\n  <!-- SEO metadata: managed by scripts/apply_seo_metadata.cjs -->\n  <title>${data.title}</title>\n  <meta name="description" content="${escapeAttr(data.description)}">\n  <meta name="keywords" content="${escapeAttr(data.keywords)}">\n  <meta name="author" content="Archil Jaliashvili">\n  <link rel="author" href="${authorProfile}">\n  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">\n  <link rel="canonical" href="${data.url}">\n  <link rel="icon" href="${favicon}" type="${veterinary?'image/svg+xml':'image/png'}">\n  <link rel="sitemap" href="${prefix}sitemap.xml" type="application/xml">\n  <meta property="og:locale" content="en_US">\n  <meta property="og:site_name" content="BHOC Therapeutics Platform">\n  <meta property="og:type" content="${data.type}">\n  <meta property="og:title" content="${escapeAttr(socialTitle.replace(/&amp;/g,'&'))}">\n  <meta property="og:description" content="${escapeAttr(socialDescription)}">\n  <meta property="og:url" content="${data.url}">${socialImage}${articleAuthor}\n  <meta name="twitter:card" content="${twitterCard}">\n  <meta name="twitter:title" content="${escapeAttr(socialTitle.replace(/&amp;/g,'&'))}">\n  <meta name="twitter:description" content="${escapeAttr(socialDescription)}">`;
 }
