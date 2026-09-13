@@ -6,7 +6,8 @@ const path=require('path');
 const root=path.resolve(__dirname,'..');
 const config={
   ...JSON.parse(fs.readFileSync(path.join(root,'seo/page-metadata.json'),'utf8')),
-  ...JSON.parse(fs.readFileSync(path.join(root,'seo/page-metadata-veterinary-cases.json'),'utf8'))
+  ...JSON.parse(fs.readFileSync(path.join(root,'seo/page-metadata-veterinary-cases.json'),'utf8')),
+  ...JSON.parse(fs.readFileSync(path.join(root,'seo/page-metadata-additions.json'),'utf8'))
 };
 const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 // Validate generated SEO outputs only after the canonical metadata and sitemap have been synchronized on main.
