@@ -80,52 +80,61 @@
   <style>
     body{--navy:#102f49;--teal:#087a76;--wine:#8a2940;background:#f2f6f7}
     .concept-subnav{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 14px}
-    .concept-subnav a{font-size:10.5px;font-weight:750;text-decoration:none;padding:7px 10px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink)}
+    .concept-subnav a{font-size:12px;font-weight:750;text-decoration:none;padding:8px 11px;border:1px solid var(--line);border-radius:999px;background:#fff;color:#173651}
     .concept-subnav a[aria-current="page"]{background:#102f49;color:#fff;border-color:#102f49}
-    .concept-hero{background:#fff;border:1px solid var(--line);border-radius:18px;padding:34px 36px;margin-bottom:18px;position:relative;overflow:hidden}
+    .concept-hero{background:#fff;border:1px solid var(--line);border-radius:18px;padding:38px 40px;margin-bottom:18px;position:relative;overflow:hidden}
     .concept-hero:before{content:"";position:absolute;inset:0 0 auto;height:6px;background:linear-gradient(90deg,#102f49,#087a76,#8a2940)}
-    .concept-hero h1{font-size:clamp(38px,5.2vw,60px);line-height:1.02;letter-spacing:-2px;max-width:1080px;margin:12px 0 14px}
-    .concept-hero .lead{max-width:980px;color:var(--muted);font-size:16px;line-height:1.68;margin:0}
+    .concept-hero h1{font-size:clamp(38px,5.2vw,60px);line-height:1.02;letter-spacing:-2px;max-width:1080px;margin:12px 0 14px;color:#102f49}
+    .concept-hero .lead{max-width:1000px;color:#344b61;font-size:18px;line-height:1.72;margin:0}
     .tag-row{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:8px}
     .tag{display:inline-flex;padding:7px 10px;border-radius:999px;background:#e9f4f1;color:#087a76;border:1px solid #cce2dc;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
     .tag.stage{background:#f7edf0;color:#8a2940;border-color:#e3cbd2}
-    .meta-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:20px}
-    .meta-grid div{padding:12px;border:1px solid var(--line);border-radius:10px;background:#f7fafb}
-    .meta-grid small{display:block;color:#75818b;font-size:8px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}
-    .meta-grid strong{display:block;margin-top:4px;font-size:11.5px;line-height:1.4;color:#102f49}
-    .section{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px;margin:18px 0}
-    .section h2{font-size:29px;line-height:1.15;letter-spacing:-.6px;margin:8px 0 12px}
-    .section h3{font-size:19px;line-height:1.25;margin:20px 0 8px}
-    .section p,.section li{color:var(--muted);font-size:13.5px;line-height:1.75}
-    .section ul{padding-left:20px}
-    .ref{font-size:.78em;font-weight:800;color:#087a76;white-space:nowrap}
-    .metric-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:18px}
-    .metric{padding:18px;border:1px solid var(--line);border-radius:10px;background:#f7fafb}
-    .metric strong{display:block;font-size:27px;line-height:1;color:#102f49}
-    .metric span{display:block;font-size:10.5px;line-height:1.5;margin-top:7px;color:var(--muted)}
-    .boundary{padding:16px;background:#eef5f4;border-left:3px solid #087a76;font-size:11.5px;line-height:1.65;color:var(--muted);margin-top:17px}
-    .risk-box{background:#102f49;color:#fff;border-color:#102f49}
-    .risk-box .eyebrow{color:#91d4cf}
-    .risk-box h2,.risk-box h3{color:#fff}
-    .risk-box p,.risk-box li{color:#dce8ec}
-    .risk-box strong{color:#fff}
-    .hypothesis{background:#f7edf0;border:1px solid #e3cbd2;border-radius:13px;padding:22px;margin-top:16px}
-    .hypothesis small{display:block;color:#8a2940;font-size:9px;font-weight:900;letter-spacing:.09em;text-transform:uppercase}
-    .hypothesis p{font-size:15px;line-height:1.65;color:#472735;margin:7px 0 0}
-    .framework{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:16px}
-    .framework div{padding:17px;border:1px solid var(--line);border-radius:10px;background:#f7fafb}
-    .framework strong{display:block;font-size:11.5px;line-height:1.35;color:#102f49}
-    .framework span{display:block;color:var(--muted);font-size:10.5px;line-height:1.55;margin-top:6px}
-    .related-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:16px}
-    .related-grid a{display:block;border:1px solid var(--line);border-radius:10px;padding:15px;background:#f9fbfc;text-decoration:none;color:var(--ink)}
-    .related-grid strong{display:block;font-size:12.5px}
-    .related-grid span{display:block;margin-top:5px;color:var(--muted);font-size:10.5px;line-height:1.5}
-    .references{counter-reset:ref}
-    .references li{margin:0 0 12px;padding-left:4px}
-    .references cite{font-style:italic}
-    .authorship{color:var(--muted);font-size:10.5px;line-height:1.55;text-align:right;margin:2px 3px 18px}
+    .byline{margin-top:22px;padding:17px 19px;border:1px solid #d8e3ec;border-radius:11px;background:#f7fafc;color:#2e4358;display:flex;align-items:center;gap:9px 14px;flex-wrap:wrap}
+    .byline-label{font-size:9px;font-weight:900;letter-spacing:.11em;text-transform:uppercase;color:#087a76}
+    .byline strong{font-family:Georgia,"Times New Roman",serif;font-size:20px;font-weight:600;color:#102f49}
+    .byline span{font-size:13px;color:#50657a}
+    .byline a{font-size:12px;font-weight:800;color:#087a76;text-decoration:none}
+    .byline a:hover{text-decoration:underline}
+    .meta-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:18px}
+    .meta-grid div{padding:13px;border:1px solid var(--line);border-radius:10px;background:#f7fafb}
+    .meta-grid small{display:block;color:#5d7083;font-size:9.5px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}
+    .meta-grid strong{display:block;margin-top:5px;font-size:13px;line-height:1.45;color:#102f49}
+    .section{background:#fff;border:1px solid var(--line);border-radius:14px;padding:32px 34px;margin:18px 0}
+    .section h2{font-size:30px;line-height:1.18;letter-spacing:-.6px;margin:8px 0 16px;color:#102f49!important}
+    .section h3{font-size:20px;line-height:1.3;margin:22px 0 9px;color:#173651}
+    .section p,.section li{color:#2d4358!important;font-size:16px!important;line-height:1.78!important}
+    .section p strong,.section li strong{color:#162f46}
+    .section ul{padding-left:22px}
+    .ref{font-size:.8em;font-weight:800;color:#087a76;white-space:nowrap}
+    .metric-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:20px}
+    .metric{padding:19px;border:1px solid var(--line);border-radius:10px;background:#f7fafb}
+    .metric strong{display:block;font-size:29px;line-height:1;color:#102f49}
+    .metric span{display:block;font-size:13px;line-height:1.55;margin-top:8px;color:#445a70}
+    .boundary{padding:18px;background:#eef5f4;border-left:4px solid #087a76;font-size:14px;line-height:1.72;color:#344b61;margin-top:18px}
+    .boundary strong{color:#173651}
+    .section.risk-box{background:#102f49!important;color:#fff!important;border-color:#102f49!important;box-shadow:none!important}
+    .risk-box .eyebrow{color:#a9e3df!important}
+    .risk-box h2,.risk-box h3{color:#fff!important}
+    .risk-box p,.risk-box li{color:#f3f7fa!important}
+    .risk-box p strong,.risk-box li strong{color:#fff!important}
+    .risk-box .ref{color:#a9e3df!important}
+    .hypothesis{background:#f7edf0;border:1px solid #e3cbd2;border-radius:13px;padding:24px;margin-top:18px}
+    .hypothesis small{display:block;color:#8a2940;font-size:10px;font-weight:900;letter-spacing:.09em;text-transform:uppercase}
+    .hypothesis p{font-size:17px!important;line-height:1.72!important;color:#472735!important;margin:8px 0 0}
+    .hypothesis p strong{color:#472735!important}
+    .framework{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:18px}
+    .framework div{padding:18px;border:1px solid var(--line);border-radius:10px;background:#f7fafb}
+    .framework strong{display:block;font-size:14px;line-height:1.4;color:#102f49}
+    .framework span{display:block;color:#40566b;font-size:13.5px;line-height:1.62;margin-top:7px}
+    .related-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin-top:18px}
+    .related-grid a{display:block;border:1px solid var(--line);border-radius:10px;padding:17px;background:#f9fbfc;text-decoration:none;color:#173651}
+    .related-grid strong{display:block;font-size:15px;color:#102f49}
+    .related-grid span{display:block;margin-top:6px;color:#40566b;font-size:13.5px;line-height:1.6}
+    .references{counter-reset:ref;padding-left:24px}
+    .references li{margin:0 0 15px;padding-left:5px;color:#2d4358!important;font-size:15.5px!important;line-height:1.72!important}
+    .references cite{font-style:italic;color:#21384e}
     @media(max-width:900px){.meta-grid,.metric-strip,.framework,.related-grid{grid-template-columns:1fr 1fr}}
-    @media(max-width:620px){.concept-hero,.section{padding:24px 20px}.meta-grid,.metric-strip,.framework,.related-grid{grid-template-columns:1fr}.authorship{text-align:left}}
+    @media(max-width:620px){.concept-hero,.section{padding:25px 20px}.concept-hero .lead{font-size:16.5px}.meta-grid,.metric-strip,.framework,.related-grid{grid-template-columns:1fr}.byline{align-items:flex-start;flex-direction:column}.section p,.section li{font-size:15.5px!important}}
   </style>
 </head>
 <body class="theme-main">
@@ -143,6 +152,14 @@
     <div class="tag-row"><span class="tag">Evidence-Informed Concept Analysis</span><span class="tag stage">Pre-Review · Hypothesis-Generating</span></div>
     <h1>Prehospital RhD risk, blood availability and the oxygen-delivery window</h1>
     <p class="lead">An evidence-informed analysis of emergency transfusion in females of childbearing potential, the balance between immediate survival and future reproductive risk, and a testable question for future prehospital oxygen-delivery strategies.</p>
+    <div class="byline" aria-label="Article authorship">
+      <span class="byline-label">Author &amp; Concept Analysis</span>
+      <strong>Archil Jaliashvili</strong>
+      <span>BHOC Scientific Evidence &amp; Research Platform</span>
+      <a href="https://bhoctherapeutics.com/archil-jaliashvili/">Author profile →</a>
+      <a href="https://www.linkedin.com/in/archil-jaliashvili-bhoc/">LinkedIn →</a>
+      <span>First published 13 Sep 2026</span>
+    </div>
     <div class="meta-grid">
       <div><small>Classification</small><strong>Evidence-Informed Concept Analysis</strong></div>
       <div><small>Status</small><strong>Pre-Review</strong></div>
@@ -150,8 +167,6 @@
       <div><small>Domain</small><strong>Prehospital EMS · Hemorrhage · Transfusion · Oxygen Delivery</strong></div>
     </div>
   </section>
-
-  <p class="authorship">Archil Jaliashvili · BHOC Scientific Evidence &amp; Research Platform · First published 13 Sep 2026</p>
 
   <section class="section">
     <div class="eyebrow">01 / Published evidence</div>
