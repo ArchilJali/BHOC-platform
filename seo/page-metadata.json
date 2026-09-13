@@ -90,13 +90,14 @@
     "type": "website",
     "breadcrumbs": [["Home", "/"], ["Veterinary evidence", "/veterinary/Vet-index.html"], ["Evidence guide", "/veterinary/Vet-README.html"]]
   },
-  "veterinary/Vet-business-concept.html": {
-    "title": "Veterinary Oxygen Therapeutics Evidence Context | BHOC",
-    "description": "Evidence-informed context for veterinary oxygen carriers, animal anemia, emergency veterinary care and blood-access limitations, without product claims.",
-    "keywords": "veterinary oxygen therapeutics, veterinary oxygen carrier, animal anemia, emergency veterinary care, veterinary blood access, BHOC development context",
-    "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-business-concept.html",
+  "veterinary/business/BHOC-Veterinary-Concept.htm": {
+    "title": "BHOC Veterinary Oxygen Carrier Concept | Animal Anemia",
+    "description": "Development concept for biological hemoglobin oxygen carriers in veterinary anemia, emergency medicine, animal blood access and oxygenation.",
+    "keywords": "BHOC veterinary concept, veterinary oxygen carrier, animal anemia, emergency veterinary medicine, veterinary blood access, Precision Oxygen Therapeutics",
+    "url": "https://archiljali.github.io/BHOC-platform/veterinary/business/BHOC-Veterinary-Concept.htm",
     "type": "article",
-    "breadcrumbs": [["Home", "/"], ["Veterinary evidence", "/veterinary/Vet-index.html"], ["Evidence context", "/veterinary/Vet-business-concept.html"]]
+    "lastmod": "2026-09-13",
+    "breadcrumbs": [["Home", "/"], ["Veterinary evidence", "/veterinary/Vet-index.html"], ["Development concept", "/veterinary/business/BHOC-Veterinary-Concept.htm"]]
   },
   "transplant/Transplant-index.html": {
     "title": "Transplantation Evidence Hub | BHOC Oxygen Therapeutics",
@@ -314,7 +315,7 @@
     "type": "article"
   },
   "concepts-hypotheses/size-compartmentalization-vascular-control.html": {
-    "title": "Is HBOC vasoconstriction only a side effect, or part of an architecture-and-control mechanism? | BHOC",
+    "title": "HBOC Vasoconstriction and Vascular Control | BHOC",
     "description": "BHOC research hypothesis linking hemoglobin molecular scale, red-cell compartmentalization, nitric oxide scavenging, HBOC vasoconstriction and controlled vascular interaction.",
     "keywords": "hemoglobin molecular size, red blood cell compartmentalization, nitric oxide scavenging, NO scavenging, HBOC vasoconstriction, vascular control, microcirculation, tissue oxygenation, BHOC, HBOC, Biological Hemoglobin Oxygen Carrier, Precision Oxygen Therapeutics, research hypothesis",
     "url": "https://archiljali.github.io/BHOC-platform/concepts-hypotheses/size-compartmentalization-vascular-control.html",

@@ -12,6 +12,7 @@ const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 // Validate generated SEO outputs only after the canonical metadata and sitemap have been synchronized on main.
 const initiativeMark='https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
 const veterinaryMark='https://bhocvet.com/assets/favicon.svg';
+const defaultSocialImage='https://archiljali.github.io/BHOC-platform/assets/bhoc-evidence-social.png';
 
 function html(file){return fs.readFileSync(path.join(root,file),'utf8')}
 function count(source,pattern){return [...source.matchAll(pattern)].length}
@@ -41,15 +42,10 @@ test('managed metadata, canonical, social cards and H1 are complete',()=>{
     assert.ok(source.includes(`<link rel="canonical" href="${data.url}">`),`${file}: configured canonical missing`);
     const isVeterinary=file.startsWith('veterinary/');
     const isHome=file==='index.html';
-    if(data.image){
-      assert.ok(source.includes(`property="og:image" content="${data.image}"`),`${file}: configured OG image missing`);
-      assert.ok(source.includes(`name="twitter:image" content="${data.image}"`),`${file}: configured Twitter image missing`);
-      assert.ok(source.includes('name="twitter:card" content="summary_large_image"'),`${file}: large Twitter card missing`);
-    }else{
-      assert.ok(!source.includes('property="og:image"'),`${file}: unexpected OG image`);
-      assert.ok(!source.includes('name="twitter:image"'),`${file}: unexpected Twitter image`);
-      assert.ok(source.includes('name="twitter:card" content="summary"'),`${file}: Twitter card missing`);
-    }
+    const expectedImage=data.image||defaultSocialImage;
+    assert.ok(source.includes(`property="og:image" content="${expectedImage}"`),`${file}: configured OG image missing`);
+    assert.ok(source.includes(`name="twitter:image" content="${expectedImage}"`),`${file}: configured Twitter image missing`);
+    assert.ok(source.includes('name="twitter:card" content="summary_large_image"'),`${file}: large Twitter card missing`);
     if(isHome){
       assert.ok(source.includes('property="og:title" content="BHOC Scientific Evidence"'),`${file}: compact social title missing`);
       assert.ok(source.includes('property="og:description" content="Source-linked evidence on BHOC, HBOC and oxygen delivery."'),`${file}: compact social description missing`);
@@ -71,10 +67,13 @@ test('all JSON-LD blocks parse and breadcrumb pages expose breadcrumbs',()=>{
 
 test('sitemap contains every canonical indexable page exactly once',()=>{
   const locations=[...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(match=>match[1].replace(/&amp;/g,'&'));
+  const lastmods=[...sitemap.matchAll(/<lastmod>(.*?)<\/lastmod>/g)].map(match=>match[1]);
   assert.equal(locations.length,Object.keys(config).length);
   assert.equal(new Set(locations).size,locations.length,'duplicate sitemap URLs');
   for(const data of Object.values(config))assert.ok(locations.includes(data.url),`${data.url}: missing from sitemap`);
-  for(const redirect of ['Vet-index.html','Vet-search.html','veterinary/index.html','veterinary/business/index.html']){
+  assert.equal(lastmods.length,Object.values(config).filter(data=>data.lastmod).length,'only explicit substantive lastmod dates belong in sitemap');
+  for(const data of Object.values(config).filter(data=>data.lastmod))assert.match(data.lastmod,/^\d{4}-\d{2}-\d{2}$/);
+  for(const redirect of ['Vet-index.html','Vet-search.html','veterinary/index.html','veterinary/business/index.html','veterinary/Vet-business-concept.html']){
     assert.ok(/noindex/.test(html(redirect)),`${redirect}: redirect must remain noindex`);
   }
 });
@@ -93,7 +92,7 @@ test('every shared platform header exposes the complete BHOC website network',()
       if(entry.name.startsWith('.')||entry.name==='node_modules')continue;
       const full=path.join(dir,entry.name);
       if(entry.isDirectory())walk(full);
-      else if(entry.isFile()&&entry.name.endsWith('.html')&&html(path.relative(root,full)).includes('class="site-header"'))pages.push(path.relative(root,full));
+      else if(entry.isFile()&&/\.html?$/i.test(entry.name)&&html(path.relative(root,full)).includes('class="site-header"'))pages.push(path.relative(root,full));
     }
   };
   walk(root);

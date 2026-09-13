@@ -6,12 +6,12 @@ const config={
   ...JSON.parse(fs.readFileSync(path.join(root,'seo/page-metadata.json'),'utf8')),
   ...JSON.parse(fs.readFileSync(path.join(root,'seo/page-metadata-veterinary-cases.json'),'utf8'))
 };
-const version=JSON.parse(fs.readFileSync(path.join(root,'version.json'),'utf8'));
 const check=process.argv.includes('--check');
 const brandMark='https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
 const veterinaryMark='https://bhocvet.com/assets/favicon.svg';
 const base='https://archiljali.github.io/BHOC-platform';
 const authorProfile='https://www.linkedin.com/in/archil-jaliashvili-bhoc/';
+const defaultSocialImage=`${base}/assets/bhoc-evidence-social.png`;
 
 function escapeAttr(value){return value.replace(/&(?!(?:amp|lt|gt|quot|#39);)/g,'&amp;').replace(/"/g,'&quot;')}
 function stripTag(html,pattern){return html.replace(pattern,'')}
@@ -24,8 +24,9 @@ function managedBlock(file,data){
   const socialTitle=home?'BHOC Scientific Evidence':(data.socialTitle||data.title);
   const socialDescription=home?'Source-linked evidence on BHOC, HBOC and oxygen delivery.':data.description;
   const articleAuthor=data.type==='article'?`\n  <meta property="article:author" content="${authorProfile}">`:'';
-  const socialImage=data.image?`\n  <meta property="og:image" content="${escapeAttr(data.image)}">\n  <meta property="og:image:secure_url" content="${escapeAttr(data.image)}">\n  <meta property="og:image:width" content="${data.imageWidth||1200}">\n  <meta property="og:image:height" content="${data.imageHeight||630}">\n  <meta property="og:image:type" content="${data.imageType||'image/png'}">\n  <meta property="og:image:alt" content="${escapeAttr(data.imageAlt||socialTitle)}">\n  <meta name="twitter:image" content="${escapeAttr(data.image)}">\n  <meta name="twitter:image:alt" content="${escapeAttr(data.imageAlt||socialTitle)}">`:'';
-  const twitterCard=data.image?'summary_large_image':'summary';
+  const image=data.image||defaultSocialImage;
+  const socialImage=`\n  <meta property="og:image" content="${escapeAttr(image)}">\n  <meta property="og:image:secure_url" content="${escapeAttr(image)}">\n  <meta property="og:image:width" content="${data.imageWidth||1200}">\n  <meta property="og:image:height" content="${data.imageHeight||630}">\n  <meta property="og:image:type" content="${data.imageType||'image/png'}">\n  <meta property="og:image:alt" content="${escapeAttr(data.imageAlt||'BHOC Evidence Platform')}">\n  <meta name="twitter:image" content="${escapeAttr(image)}">\n  <meta name="twitter:image:alt" content="${escapeAttr(data.imageAlt||'BHOC Evidence Platform')}">`;
+  const twitterCard='summary_large_image';
   return `\n  <!-- SEO metadata: managed by scripts/apply_seo_metadata.cjs -->\n  <title>${data.title}</title>\n  <meta name="description" content="${escapeAttr(data.description)}">\n  <meta name="keywords" content="${escapeAttr(data.keywords)}">\n  <meta name="author" content="Archil Jaliashvili">\n  <link rel="author" href="${authorProfile}">\n  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">\n  <link rel="canonical" href="${data.url}">\n  <link rel="icon" href="${favicon}" type="${veterinary?'image/svg+xml':'image/png'}">\n  <link rel="sitemap" href="${prefix}sitemap.xml" type="application/xml">\n  <meta property="og:locale" content="en_US">\n  <meta property="og:site_name" content="BHOC Therapeutics Platform">\n  <meta property="og:type" content="${data.type}">\n  <meta property="og:title" content="${escapeAttr(socialTitle.replace(/&amp;/g,'&'))}">\n  <meta property="og:description" content="${escapeAttr(socialDescription)}">\n  <meta property="og:url" content="${data.url}">${socialImage}${articleAuthor}\n  <meta name="twitter:card" content="${twitterCard}">\n  <meta name="twitter:title" content="${escapeAttr(socialTitle.replace(/&amp;/g,'&'))}">\n  <meta name="twitter:description" content="${escapeAttr(socialDescription)}">`;
 }
 
@@ -70,10 +71,9 @@ for(const [file,data] of Object.entries(config)){
     else console.error(`${file}: SEO metadata is stale`);
   }
 }
-const sitemapLastmod=version.updated_iso||new Date().toISOString().slice(0,10);
-const sitemap=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${Object.values(config).map(data=>`  <url>\n    <loc>${data.url.replace(/&/g,'&amp;')}</loc>\n    <lastmod>${data.lastmod||sitemapLastmod}</lastmod>\n  </url>`).join('\n')}\n</urlset>\n`;
 const sitemapPath=path.join(root,'sitemap.xml');
 const currentSitemap=fs.readFileSync(sitemapPath,'utf8');
+const sitemap=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${Object.values(config).map(data=>`  <url>\n    <loc>${data.url.replace(/&/g,'&amp;')}</loc>${data.lastmod?`\n    <lastmod>${data.lastmod}</lastmod>`:''}\n  </url>`).join('\n')}\n</urlset>\n`;
 if(sitemap!==currentSitemap){
   stale++;
   if(!check)fs.writeFileSync(sitemapPath,sitemap);
