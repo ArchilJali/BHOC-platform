@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://archiljali.github.io/BHOC-platform/transplant/Transplant-index.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-13</lastmod>
   </url>
   <url>
     <loc>https://archiljali.github.io/BHOC-platform/transplant/Transplant-search.html</loc>
@@ -58,7 +58,7 @@
   </url>
   <url>
     <loc>https://archiljali.github.io/BHOC-platform/human/BHOC-Human-index.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-13</lastmod>
   </url>
   <url>
     <loc>https://archiljali.github.io/BHOC-platform/human/BHOC-Human-search.html</loc>
@@ -152,4 +152,6 @@
     <loc>https://archiljali.github.io/BHOC-platform/real-world-evidence/blood-groups-history/</loc>
     <lastmod>2026-09-12</lastmod>
   </url>
+  <url><loc>https://archiljali.github.io/BHOC-platform/human/AABB-PBM-Standards-2026.html</loc><lastmod>2026-09-13</lastmod></url>
+  <url><loc>https://archiljali.github.io/BHOC-platform/transplant/HOPE-NMP-Liver-Transplantation-2026.html</loc><lastmod>2026-09-13</lastmod></url>
 </urlset>
