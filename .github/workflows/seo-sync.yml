@@ -27,10 +27,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-node@49933ea5288ca8642d1e84afbd3f7d6820020 # v4
-        with:
-          node-version: '22'
-
       - name: Apply canonical SEO metadata
         run: |
           git pull --rebase origin main
