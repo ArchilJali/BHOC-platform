@@ -1,6 +1,6 @@
 # Concepts & Hypotheses — Publication Flow
 
-Updated: 11 Sep 2026
+Updated: 13 Sep 2026
 Owner: Archil Jaliashvili
 
 This tracker separates author-generated hypotheses from established evidence and from later manuscript/publication stages.
@@ -10,6 +10,8 @@ This tracker separates author-generated hypotheses from established evidence and
 | C-001 | Are we identifying the oxygen-delivery problem early enough? | Research Concept · Hypothesis — LIVE | Warren et al. 2026 prehospital transfusion selection study | Expand evidence review around rapid prehospital decision-making, patient selection, validated perfusion/oxygenation markers and outcome endpoints. Build a pre-publication viewpoint outline. |
 | C-002 | Should oxygen-delivery potency matter more than hemoglobin concentration alone? | Research Concept · Hypothesis — LIVE | Rogers et al. 2026 L-TOF study | Map analytical potency measures to candidate in-vivo correlates: oxygen unloading, microcirculation, tissue oxygenation and clinical endpoints. Prepare a short scientific viewpoint outline. |
 | C-003 | Can the PPH treatment window be defined by oxygen-delivery risk, not blood-loss volume alone? | Research Concept · Hypothesis — LIVE | WHO 2025 consolidated PPH guideline | Review obstetric patient-selection variables, early deterioration signals and measurable endpoints. Keep hemorrhage control and standard PPH care explicitly primary. Prepare a pre-publication concept outline. |
+| C-004 | Is HBOC vasoconstriction only a side effect or an architecture-and-control mechanism? | Research Concept · Hypothesis — LIVE | Source-linked literature on hemoglobin scale, RBC compartmentalization, nitric-oxide kinetics and HBOC vascular response | Expand the evidence review separating historical class risk from product-engineering variables. Define measurable vascular-control, microcirculation and oxygen-delivery endpoints that could support or falsify the hypothesis. |
+| C-005 | Prehospital RhD risk, blood availability and the oxygen-delivery window | Evidence-Informed Concept Analysis · Pre-Review — LIVE | Yazer et al. 2026; CREDIT-EMS / Rosen et al. 2025; 2026 RhD risk-policy review and multidisciplinary position statement | Expand the risk-benefit synthesis, define falsifiable clinical and operational endpoints, and prepare a viewpoint/pre-review manuscript outline on compatibility risk, blood availability and complementary prehospital oxygen-delivery strategies. |
 
 ## Publication pipeline
 
@@ -22,8 +24,8 @@ Collect primary literature and guidance supporting, contradicting or limiting th
 **Stage 3 — Endpoint and testability framework**  
 Define patient/population, intervention or exposure, comparator, measurable variables and clinically meaningful endpoints. Record what would falsify the hypothesis.
 
-**Stage 4 — Pre-publication article**  
-Turn the concept into a structured viewpoint, hypothesis paper or protocol-development manuscript. Resolve unsupported claims before journal submission.
+**Stage 4 — Pre-publication article / pre-review**  
+Turn the concept into a structured viewpoint, hypothesis paper, evidence-informed pre-review or protocol-development manuscript. Resolve unsupported claims before journal submission.
 
 **Stage 5 — Journal publication flow**  
 Select the target journal, format to its author instructions, complete references/disclosures and submit one manuscript to one journal at a time unless the journal explicitly permits otherwise.
@@ -33,13 +35,15 @@ Select the target journal, format to its author instructions, complete reference
 Do not add pages merely to reach a number. Add the next concept only when it has a distinct scientific question and evidence base. Priority candidates:
 
 - Microcirculation and tissue oxygenation: when systemic oxygen variables fail to represent local oxygen delivery.
-- Cell-free hemoglobin, nitric-oxide biology and vasoconstriction: how to define a modern product-development safety hypothesis rather than repeat the historical class problem.
 - Transplantation: define the recipient/organ setting and endpoint before proposing a BHOC role.
+- Prehospital implementation science: define when an oxygen-delivery intervention would complement rather than duplicate blood-on-board programs.
 
 ## Launch sequence
 
-1. Publish the Concepts & Hypotheses section launch post.
-2. Publish C-001 as the first individual concept.
-3. Publish C-002 as the second individual concept.
-4. Publish C-003 as the third individual concept.
-5. Begin Stage 2 evidence review for C-001 and C-002 in parallel; keep C-003 tied to obstetric guidance and specialist criteria.
+1. Concepts & Hypotheses section — LIVE.
+2. C-001 prehospital patient-selection concept — LIVE.
+3. C-002 oxygen-delivery potency concept — LIVE.
+4. C-003 PPH oxygen-delivery window concept — LIVE.
+5. C-004 hemoglobin architecture / vascular-control concept — LIVE.
+6. C-005 RhD risk / blood availability / oxygen-delivery pre-review — LIVE.
+7. Continue Stage 2 evidence review and manuscript development only where the evidence base supports a distinct, falsifiable argument.
