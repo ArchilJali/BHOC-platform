@@ -27,7 +27,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+      - uses: actions/setup-node@49933ea5288ca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: '22'
 
@@ -40,7 +40,7 @@ jobs:
         run: |
           git config user.name "BHOC SEO Automation"
           git config user.email "actions@users.noreply.github.com"
-          git add sitemap.xml '*.html' '**/*.html'
+          git add sitemap.xml '*.html' '**/*.html' '*.htm' '**/*.htm'
           if git diff --cached --quiet; then
             echo "SEO metadata and sitemap already synchronized."
             exit 0
