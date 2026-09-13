@@ -8,7 +8,8 @@ const SKIP_DIRS = new Set(['.git', 'node_modules']);
 const SHELL_HREF = '/BHOC-platform/assets/platform-shell.css';
 const INTELLIGENCE_HREF = '/BHOC-platform/assets/intelligence-2026.css';
 const NAV_SCRIPT = '/BHOC-platform/assets/navigation.js';
-const AUTHOR_PROFILE = 'https://www.linkedin.com/in/archil-jaliashvili-bhoc/';
+const AUTHOR_PROFILE = 'https://bhoctherapeutics.com/archil-jaliashvili/';
+const LINKEDIN_PROFILE = 'https://www.linkedin.com/in/archil-jaliashvili-bhoc/';
 const BRAND_MARK = 'https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
 
 // Keep BHOC as one continuous wordmark. The O is a semantic child only for colour,
@@ -23,7 +24,7 @@ function walk(dir) {
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) {
       if (!SKIP_DIRS.has(entry.name)) out.push(...walk(full));
-    } else if (entry.isFile() && entry.name.toLowerCase().endsWith('.html')) {
+    } else if (entry.isFile() && /\.html?$/i.test(entry.name)) {
       out.push(full);
     }
   }
@@ -62,9 +63,9 @@ function navHtml(section) {
 function ensurePlatformAssets(src) {
   if (!/<\/head>/i.test(src)) return src;
   let next = src;
-  if (!next.includes(SHELL_HREF)) next = next.replace(/<\/head>/i, `  <link rel="stylesheet" href="${SHELL_HREF}">\n</head>`);
-  if (!next.includes(INTELLIGENCE_HREF)) next = next.replace(/<\/head>/i, `  <link rel="stylesheet" href="${INTELLIGENCE_HREF}">\n</head>`);
-  if (!next.includes(NAV_SCRIPT)) next = next.replace(/<\/head>/i, `  <script src="${NAV_SCRIPT}" defer></script>\n</head>`);
+  if (!/href=["'][^"']*assets\/platform-shell\.css["']/i.test(next)) next = next.replace(/<\/head>/i, `  <link rel="stylesheet" href="${SHELL_HREF}">\n</head>`);
+  if (!/href=["'][^"']*assets\/intelligence-2026\.css["']/i.test(next)) next = next.replace(/<\/head>/i, `  <link rel="stylesheet" href="${INTELLIGENCE_HREF}">\n</head>`);
+  if (!/src=["'][^"']*assets\/navigation\.js["']/i.test(next)) next = next.replace(/<\/head>/i, `  <script src="${NAV_SCRIPT}" defer></script>\n</head>`);
   if (!next.includes(`rel="author" href="${AUTHOR_PROFILE}"`)) next = next.replace(/<\/head>/i, `  <link rel="author" href="${AUTHOR_PROFILE}">\n</head>`);
   return next;
 }
@@ -77,9 +78,11 @@ function normalizeBrandIdentity(src) {
 
 function normalizeAuthorIdentity(src) {
   return src
-    .replaceAll('"url":"https://www.linkedin.com/in/archil-jaliashvili-bhoc/"', `"url":"${AUTHOR_PROFILE}"`)
-    .replaceAll('"url": "https://www.linkedin.com/in/archil-jaliashvili-bhoc/"', `"url": "${AUTHOR_PROFILE}"`)
-    .replaceAll('href="https://www.linkedin.com/in/archil-jaliashvili-bhoc/"', `href="${AUTHOR_PROFILE}"`)
+    .replaceAll(`"url":"${LINKEDIN_PROFILE}"`, `"url":"${AUTHOR_PROFILE}"`)
+    .replaceAll(`"url": "${LINKEDIN_PROFILE}"`, `"url": "${AUTHOR_PROFILE}"`)
+    .replace(/<link\b(?=[^>]*\brel=["']author["'])[^>]*>/gi, `<link rel="author" href="${AUTHOR_PROFILE}">`)
+    .replace(/<meta\b(?=[^>]*\bproperty=["']article:author["'])[^>]*>/gi, `<meta property="article:author" content="${AUTHOR_PROFILE}">`)
+    .replace(/<a\b[^>]*>/gi, tag => /\brel=["']author["']/i.test(tag) ? tag.replace(LINKEDIN_PROFILE, AUTHOR_PROFILE) : tag)
     .replaceAll('"author":{"@type":"Person","name":"Archil Jaliashvili"}', `"author":{"@type":"Person","name":"Archil Jaliashvili","url":"${AUTHOR_PROFILE}"}`)
     .replaceAll('"author": {"@type": "Person", "name": "Archil Jaliashvili"}', `"author": {"@type": "Person", "name": "Archil Jaliashvili", "url": "${AUTHOR_PROFILE}"}`);
 }
@@ -109,7 +112,7 @@ for (const file of walk(ROOT)) {
   const rel = path.relative(ROOT, file).replace(/\\/g, '/');
   const src = fs.readFileSync(file, 'utf8');
   const section = sectionFor(rel);
-  let next = normalizeVeterinaryBranding(normalizeBrandIdentity(src), section);
+  let next = normalizeAuthorIdentity(normalizeVeterinaryBranding(normalizeBrandIdentity(src), section));
 
   if (!headerRe.test(next)) {
     skipped++;
@@ -124,7 +127,6 @@ for (const file of walk(ROOT)) {
   next = next.replace(headerRe, navHtml(section));
   next = ensurePlatformAssets(next);
   next = normalizeBrandIdentity(next);
-  next = normalizeAuthorIdentity(next);
   if (rel === 'index.html') next = normalizeHomeIdentity(next);
 
   if (next !== src) {
