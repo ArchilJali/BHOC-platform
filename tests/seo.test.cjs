@@ -4,7 +4,10 @@ const fs=require('fs');
 const path=require('path');
 
 const root=path.resolve(__dirname,'..');
-const config=JSON.parse(fs.readFileSync(path.join(root,'seo/page-metadata.json'),'utf8'));
+const config={
+  ...JSON.parse(fs.readFileSync(path.join(root,'seo/page-metadata.json'),'utf8')),
+  ...JSON.parse(fs.readFileSync(path.join(root,'seo/page-metadata-veterinary-cases.json'),'utf8'))
+};
 const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 // Validate generated SEO outputs only after the canonical metadata and sitemap have been synchronized on main.
 const initiativeMark='https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
@@ -38,15 +41,9 @@ test('managed metadata, canonical, social cards and H1 are complete',()=>{
     assert.ok(source.includes(`<link rel="canonical" href="${data.url}">`),`${file}: configured canonical missing`);
     const isVeterinary=file.startsWith('veterinary/');
     const isHome=file==='index.html';
-    if(data.image){
-      assert.ok(source.includes(`property="og:image" content="${data.image}"`),`${file}: configured OG image missing`);
-      assert.ok(source.includes(`name="twitter:image" content="${data.image}"`),`${file}: configured Twitter image missing`);
-      assert.ok(source.includes('name="twitter:card" content="summary_large_image"'),`${file}: large Twitter card missing`);
-    }else{
-      assert.ok(!source.includes('property="og:image"'),`${file}: unexpected OG image`);
-      assert.ok(!source.includes('name="twitter:image"'),`${file}: unexpected Twitter image`);
-      assert.ok(source.includes('name="twitter:card" content="summary"'),`${file}: Twitter card missing`);
-    }
+    assert.ok(!source.includes('property="og:image"'),`${file}: OG image should be absent`);
+    assert.ok(!source.includes('name="twitter:image"'),`${file}: Twitter image should be absent`);
+    assert.ok(source.includes('name="twitter:card" content="summary"'),`${file}: Twitter card missing`);
     if(isHome){
       assert.ok(source.includes('property="og:title" content="BHOC Scientific Evidence"'),`${file}: compact social title missing`);
       assert.ok(source.includes('property="og:description" content="Source-linked evidence on BHOC, HBOC and oxygen delivery."'),`${file}: compact social description missing`);
