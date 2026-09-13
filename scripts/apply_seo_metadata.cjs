@@ -12,7 +12,7 @@ const brandMark='https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?
 const veterinaryMark='https://bhocvet.com/assets/favicon.svg';
 const base='https://archiljali.github.io/BHOC-platform';
 const authorProfile='https://www.linkedin.com/in/archil-jaliashvili-bhoc/';
-const defaultSocialImage=`${base}/assets/bhoc-evidence-social.png`;
+const defaultSocialImage='https://bhoctherapeutics.com/assets/bhoc-social-preview-20260905-initiative-logo.png';
 
 function escapeAttr(value){return value.replace(/&(?!(?:amp|lt|gt|quot|#39);)/g,'&amp;').replace(/"/g,'&quot;')}
 function stripTag(html,pattern){return html.replace(pattern,'')}
