@@ -38,6 +38,15 @@
 .shell-dark p{color:#dce8ec;font-size:13px;line-height:1.7}
 .shell-dark a{color:#fff;font-size:12px;font-weight:700}
 
+/* Dark editorial sections are used by Concepts & Hypotheses pages.
+   The intelligence visual layer forces .section backgrounds to white, so these
+   explicit overrides preserve the intended dark surface and readable contrast. */
+.section.dark{background:#102f49!important;color:#fff!important;border-color:#102f49!important}
+.section.dark h2,.section.dark h3,.section.dark strong{color:#fff!important}
+.section.dark p,.section.dark li{color:#dce8ec!important}
+.section.dark .eyebrow{color:#91d4cf!important}
+.section.dark a{color:#fff}
+
 .site-footer{max-width:1280px;margin:0 auto;padding:24px 32px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:12px}
 
 
