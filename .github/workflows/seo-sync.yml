@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - 'seo/page-metadata.json'
+      - 'seo/page-metadata-veterinary-cases.json'
+      - 'seo/page-metadata-additions.json'
       - 'scripts/apply_seo_metadata.cjs'
       - 'version.json'
       - '.github/workflows/seo-sync.yml'
