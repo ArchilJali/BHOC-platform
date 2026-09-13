@@ -733,13 +733,6 @@
       ]
     ]
   },
-  "human/AABB-PBM-Standards-2026.html": {
-    "title": "AABB Patient Blood Management Standards 2026 | BHOC Evidence",
-    "description": "AABB's proposed 2026 Patient Blood Management Standards address technology monitoring, artificial intelligence governance, informed consent and safety trends.",
-    "keywords": "AABB, Patient Blood Management, transfusion medicine, AI governance, blood safety, quality systems, BHOC, HBOC, Precision Oxygen Therapeutics",
-    "url": "https://archiljali.github.io/BHOC-platform/human/AABB-PBM-Standards-2026.html",
-    "type": "article"
-  },
   "transplant/HOPE-NMP-Liver-Transplantation-2026.html": {
     "title": "HOPE and NMP in Liver Transplantation | BHOC Evidence",
     "description": "Two real-world studies examine hypothermic oxygenated perfusion, normothermic machine perfusion, donor liver assessment and organ viability in transplantation.",
@@ -747,5 +740,4 @@
     "url": "https://archiljali.github.io/BHOC-platform/transplant/HOPE-NMP-Liver-Transplantation-2026.html",
     "type": "article"
   }
-
 }
