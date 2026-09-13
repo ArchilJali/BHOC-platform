@@ -3,7 +3,7 @@
 Updated: 13 Sep 2026
 Owner: Archil Jaliashvili
 
-This tracker separates author-generated hypotheses from established evidence and from later manuscript/publication stages.
+This tracker separates author-generated hypotheses from established evidence and from later manuscript/publication stages. Canonical concept pages are registered in the platform SEO system only after their evidence boundary, source structure and publication status are explicit.
 
 | ID | Research concept | Current stage | Evidence anchor | Next publication task |
 |---|---|---|---|---|
