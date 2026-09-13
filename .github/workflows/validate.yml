@@ -34,11 +34,25 @@ jobs:
           if node scripts/build_veterinary_overview.cjs --check; then
             exit 0
           fi
-          # The overview generator may normalize insignificant HTML whitespace.
-          # Regenerate once, allow whitespace-only drift only for Vet-index.html,
-          # and keep every other generated output on an exact comparison.
+          # Vet-index may differ only by insignificant whitespace or the
+          # equivalent apostrophe HTML entity produced by the generator.
+          # Preserve the checked-in page, regenerate, and compare normalized
+          # text. Any other content difference still fails this job.
+          cp veterinary/Vet-index.html /tmp/Vet-index.before.html
           node scripts/build_veterinary_overview.cjs
-          git diff --exit-code --ignore-all-space -- veterinary/Vet-index.html
+          node <<'NODE'
+          const fs=require('node:fs');
+          const normalize=s=>s
+            .replace(/&#39;|&apos;/g,"'")
+            .replace(/\s+/g,' ')
+            .trim();
+          const before=normalize(fs.readFileSync('/tmp/Vet-index.before.html','utf8'));
+          const after=normalize(fs.readFileSync('veterinary/Vet-index.html','utf8'));
+          if(before!==after){
+            console.error('Vet-index.html differs from generated overview beyond whitespace/apostrophe encoding.');
+            process.exit(1);
+          }
+          NODE
           git diff --exit-code -- veterinary/README.md veterinary/Vet-README.md veterinary/Vet-README.html veterinary/overview-statistics.json
           git checkout -- veterinary/Vet-index.html veterinary/README.md veterinary/Vet-README.md veterinary/Vet-README.html veterinary/overview-statistics.json
 
