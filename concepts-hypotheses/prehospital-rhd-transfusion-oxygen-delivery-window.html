@@ -45,7 +45,7 @@
     "@type":"Article",
     "headline":"Prehospital RhD Risk, Blood Availability and the Oxygen-Delivery Window",
     "alternativeHeadline":"An evidence-informed concept analysis of emergency transfusion, compatibility risk and future prehospital oxygen-delivery strategies",
-    "description":"Evidence-informed pre-review of RhD-positive prehospital transfusion, future HDFN risk, hemorrhagic shock, EMS blood access and a testable oxygen-delivery hypothesis.",
+    "description":"Evidence-informed pre-review of RhD-positive prehospital transfusion, future HDFN risk, hemorrhagic shock, EMS blood access, pediatric patient selection and a testable oxygen-delivery hypothesis.",
     "url":"https://archiljali.github.io/BHOC-platform/concepts-hypotheses/prehospital-rhd-transfusion-oxygen-delivery-window.html",
     "datePublished":"2026-09-13",
     "dateModified":"2026-09-13",
@@ -54,14 +54,15 @@
     "author":{"@type":"Person","name":"Archil Jaliashvili","url":"https://bhoctherapeutics.com/archil-jaliashvili/"},
     "publisher":{"@type":"Organization","name":"BHOC Scientific Evidence & Research Platform","url":"https://archiljali.github.io/BHOC-platform/"},
     "isPartOf":{"@type":"WebSite","name":"BHOC Therapeutics Platform","url":"https://archiljali.github.io/BHOC-platform/"},
-    "keywords":["prehospital blood transfusion","RhD-positive transfusion","HDFN","females of childbearing potential","hemorrhagic shock","EMS","blood compatibility","donor blood availability","oxygen delivery","tissue oxygenation","BHOC","HBOC","Biological Hemoglobin Oxygen Carrier","Precision Oxygen Therapeutics","Precision Oxygenation Therapeutics"],
+    "keywords":["prehospital blood transfusion","RhD-positive transfusion","HDFN","females of childbearing potential","hemorrhagic shock","EMS","pediatric prehospital transfusion","pediatric shock index","perfusion","blood compatibility","donor blood availability","oxygen delivery","tissue oxygenation","BHOC","HBOC","Biological Hemoglobin Oxygen Carrier","Precision Oxygen Therapeutics","Precision Oxygenation Therapeutics"],
     "citation":[
       "https://pubmed.ncbi.nlm.nih.gov/42664369/",
       "https://doi.org/10.1001/jamanetworkopen.2025.24368",
       "https://pubmed.ncbi.nlm.nih.gov/42441900/",
       "https://pubmed.ncbi.nlm.nih.gov/42490058/",
       "https://prehospitaltransfusion.org/news/washington-dc-over-400-ground-ems-agency-blood-transfusion-programs/",
-      "https://www.jems.com/industry-news/ground-ems-blood-transfusion-programs-surpass-400-agencies-nationwide/"
+      "https://www.jems.com/industry-news/ground-ems-blood-transfusion-programs-surpass-400-agencies-nationwide/",
+      "https://pubmed.ncbi.nlm.nih.gov/42725789/"
     ]
   }
   </script>
@@ -93,109 +94,55 @@
     .byline-label{font-size:9px;font-weight:900;letter-spacing:.11em;text-transform:uppercase;color:#087a76}
     .byline strong{font-family:Georgia,"Times New Roman",serif;font-size:20px;font-weight:600;color:#102f49}
     .byline span{font-size:13px;color:#50657a}
-    .byline a{font-size:12px;font-weight:800;color:#087a76;text-decoration:none}
-    .byline a:hover{text-decoration:underline}
-    .meta-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:18px}
-    .meta-grid div{padding:13px;border:1px solid var(--line);border-radius:10px;background:#f7fafb}
-    .meta-grid small{display:block;color:#5d7083;font-size:9.5px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}
-    .meta-grid strong{display:block;margin-top:5px;font-size:13px;line-height:1.45;color:#102f49}
-    .section{background:#fff;border:1px solid var(--line);border-radius:14px;padding:32px 34px;margin:18px 0}
-    .section h2{font-size:30px;line-height:1.18;letter-spacing:-.6px;margin:8px 0 16px;color:#102f49!important}
-    .section h3{font-size:20px;line-height:1.3;margin:22px 0 9px;color:#173651}
-    .section p,.section li{color:#2d4358!important;font-size:16px!important;line-height:1.78!important}
-    .section p strong,.section li strong{color:#162f46}
-    .section ul{padding-left:22px}
-    .ref{font-size:.8em;font-weight:800;color:#087a76;white-space:nowrap}
-    .metric-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:20px}
-    .metric{padding:19px;border:1px solid var(--line);border-radius:10px;background:#f7fafb}
-    .metric strong{display:block;font-size:29px;line-height:1;color:#102f49}
-    .metric span{display:block;font-size:13px;line-height:1.55;margin-top:8px;color:#445a70}
-    .boundary{padding:18px;background:#eef5f4;border-left:4px solid #087a76;font-size:14px;line-height:1.72;color:#344b61;margin-top:18px}
-    .boundary strong{color:#173651}
-    .section.risk-box{background:#102f49!important;color:#fff!important;border-color:#102f49!important;box-shadow:none!important}
-    .risk-box .eyebrow{color:#a9e3df!important}
-    .risk-box h2,.risk-box h3{color:#fff!important}
-    .risk-box p,.risk-box li{color:#f3f7fa!important}
-    .risk-box p strong,.risk-box li strong{color:#fff!important}
-    .risk-box .ref{color:#a9e3df!important}
-    .hypothesis{background:#f7edf0;border:1px solid #e3cbd2;border-radius:13px;padding:24px;margin-top:18px}
-    .hypothesis small{display:block;color:#8a2940;font-size:10px;font-weight:900;letter-spacing:.09em;text-transform:uppercase}
-    .hypothesis p{font-size:17px!important;line-height:1.72!important;color:#472735!important;margin:8px 0 0}
-    .hypothesis p strong{color:#472735!important}
-    .framework{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:18px}
-    .framework div{padding:18px;border:1px solid var(--line);border-radius:10px;background:#f7fafb}
-    .framework strong{display:block;font-size:14px;line-height:1.4;color:#102f49}
-    .framework span{display:block;color:#40566b;font-size:13.5px;line-height:1.62;margin-top:7px}
-    .related-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin-top:18px}
-    .related-grid a{display:block;border:1px solid var(--line);border-radius:10px;padding:17px;background:#f9fbfc;text-decoration:none;color:#173651}
-    .related-grid strong{display:block;font-size:15px;color:#102f49}
-    .related-grid span{display:block;margin-top:6px;color:#40566b;font-size:13.5px;line-height:1.6}
-    .references{counter-reset:ref;padding-left:24px}
-    .references li{margin:0 0 15px;padding-left:5px;color:#2d4358!important;font-size:15.5px!important;line-height:1.72!important}
-    .references cite{font-style:italic;color:#21384e}
+    .byline a{font-size:12px;font-weight:800;color:#087a76;text-decoration:none}.byline a:hover{text-decoration:underline}
+    .meta-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:18px}.meta-grid div{padding:13px;border:1px solid var(--line);border-radius:10px;background:#f7fafb}.meta-grid small{display:block;color:#5d7083;font-size:9.5px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}.meta-grid strong{display:block;margin-top:5px;font-size:13px;line-height:1.45;color:#102f49}
+    .section{background:#fff;border:1px solid var(--line);border-radius:14px;padding:32px 34px;margin:18px 0}.section h2{font-size:30px;line-height:1.18;letter-spacing:-.6px;margin:8px 0 16px;color:#102f49!important}.section h3{font-size:20px;line-height:1.3;margin:22px 0 9px;color:#173651}.section p,.section li{color:#2d4358!important;font-size:16px!important;line-height:1.78!important}.section p strong,.section li strong{color:#162f46}.section ul{padding-left:22px}.ref{font-size:.8em;font-weight:800;color:#087a76;white-space:nowrap}
+    .metric-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:20px}.metric{padding:19px;border:1px solid var(--line);border-radius:10px;background:#f7fafb}.metric strong{display:block;font-size:29px;line-height:1;color:#102f49}.metric span{display:block;font-size:13px;line-height:1.55;margin-top:8px;color:#445a70}
+    .boundary{padding:18px;background:#eef5f4;border-left:4px solid #087a76;font-size:14px;line-height:1.72;color:#344b61;margin-top:18px}.boundary strong{color:#173651}
+    .section.risk-box{background:#102f49!important;color:#fff!important;border-color:#102f49!important;box-shadow:none!important}.risk-box .eyebrow{color:#a9e3df!important}.risk-box h2,.risk-box h3{color:#fff!important}.risk-box p,.risk-box li{color:#f3f7fa!important}.risk-box p strong,.risk-box li strong{color:#fff!important}.risk-box .ref{color:#a9e3df!important}
+    .hypothesis{background:#f7edf0;border:1px solid #e3cbd2;border-radius:13px;padding:24px;margin-top:18px}.hypothesis small{display:block;color:#8a2940;font-size:10px;font-weight:900;letter-spacing:.09em;text-transform:uppercase}.hypothesis p{font-size:17px!important;line-height:1.72!important;color:#472735!important;margin:8px 0 0}.hypothesis p strong{color:#472735!important}
+    .framework{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:18px}.framework div{padding:18px;border:1px solid var(--line);border-radius:10px;background:#f7fafb}.framework strong{display:block;font-size:14px;line-height:1.4;color:#102f49}.framework span{display:block;color:#40566b;font-size:13.5px;line-height:1.62;margin-top:7px}
+    .related-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin-top:18px}.related-grid a{display:block;border:1px solid var(--line);border-radius:10px;padding:17px;background:#f9fbfc;text-decoration:none;color:#173651}.related-grid strong{display:block;font-size:15px;color:#102f49}.related-grid span{display:block;margin-top:6px;color:#40566b;font-size:13.5px;line-height:1.6}
+    .references{counter-reset:ref;padding-left:24px}.references li{margin:0 0 15px;padding-left:5px;color:#2d4358!important;font-size:15.5px!important;line-height:1.72!important}.references cite{font-style:italic;color:#21384e}
     @media(max-width:900px){.meta-grid,.metric-strip,.framework,.related-grid{grid-template-columns:1fr 1fr}}
     @media(max-width:620px){.concept-hero,.section{padding:25px 20px}.concept-hero .lead{font-size:16.5px}.meta-grid,.metric-strip,.framework,.related-grid{grid-template-columns:1fr}.byline{align-items:flex-start;flex-direction:column}.section p,.section li{font-size:15.5px!important}}
   </style>
 </head>
 <body class="theme-main">
-<header class="site-header"><nav class="site-nav" aria-label="Main navigation"><a class="brand" href="/BHOC-platform/index.html"><strong class="brand-word">BH<b class="brand-o">O</b>C</strong><span class="brand-sub">Therapeutics Platform</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="bhoc-nav"><span>Menu</span><b aria-hidden="true">☰</b></button><div class="nav-links" id="bhoc-nav"><a href="/BHOC-platform/veterinary/Vet-index.html">Veterinary</a><a href="/BHOC-platform/transplant/Transplant-index.html">Transplantation</a><a href="/BHOC-platform/human/BHOC-Human-index.html">Human Use</a><a href="/BHOC-platform/clinical/">Applications</a><a href="/BHOC-platform/concepts-hypotheses/" aria-current="page">Concepts & Hypotheses</a><a href="/BHOC-platform/social-media/linkedin/">LinkedIn Publications</a><a href="/BHOC-platform/science/">Science</a><a href="/BHOC-platform/historical-sources/">History</a><div class="nav-network" role="group" aria-label="BHOC websites"><a class="nav-network-link" href="https://bhoctherapeutics.com/">BHOC Therapeutics</a><a class="nav-network-link" href="https://bhocvet.com/"><strong class="vet-wordmark">BH<b class="vet-o">O</b>C</strong> Veterinary</a><span class="nav-network-link nav-network-pending" aria-disabled="true" title="Coming soon">BHOC Transplant<small>coming soon</small></span></div></div></nav></header>
+<header class="site-header"><nav class="site-nav" aria-label="Main navigation"><a class="brand" href="/BHOC-platform/index.html"><strong class="brand-word">BH<b class="brand-o">O</b>C</strong><span class="brand-sub">Therapeutics Platform</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="bhoc-nav"><span>Menu</span><b aria-hidden="true">☰</b></button><div class="nav-links" id="bhoc-nav"><a href="/BHOC-platform/veterinary/Vet-index.html">Veterinary</a><a href="/BHOC-platform/transplant/Transplant-index.html">Transplantation</a><a href="/BHOC-platform/human/BHOC-Human-index.html">Human Use</a><a href="/BHOC-platform/clinical/">Applications</a><a href="/BHOC-platform/concepts-hypotheses/" aria-current="page">Concepts &amp; Hypotheses</a><a href="/BHOC-platform/social-media/linkedin/">LinkedIn Publications</a><a href="/BHOC-platform/science/">Science</a><a href="/BHOC-platform/historical-sources/">History</a><div class="nav-network" role="group" aria-label="BHOC websites"><a class="nav-network-link" href="https://bhoctherapeutics.com/">BHOC Therapeutics</a><a class="nav-network-link" href="https://bhocvet.com/"><strong class="vet-wordmark">BH<b class="vet-o">O</b>C</strong> Veterinary</a><span class="nav-network-link nav-network-pending" aria-disabled="true" title="Coming soon">BHOC Transplant<small>coming soon</small></span></div></div></nav></header>
 
 <main class="shell">
-  <nav class="concept-subnav" aria-label="Concepts and hypotheses navigation">
-    <a href="./">Concepts &amp; Hypotheses</a>
-    <a href="prehospital-rhd-transfusion-oxygen-delivery-window.html" aria-current="page">Prehospital / RhD</a>
-    <a href="prehospital-oxygen-delivery-selection.html">Prehospital patient selection</a>
-    <a href="../clinical/prehospital-ems.html">Application context: EMS</a>
-  </nav>
+  <nav class="concept-subnav" aria-label="Concepts and hypotheses navigation"><a href="./">Concepts &amp; Hypotheses</a><a href="prehospital-rhd-transfusion-oxygen-delivery-window.html" aria-current="page">Prehospital / RhD</a><a href="prehospital-oxygen-delivery-selection.html">Prehospital patient selection</a><a href="../clinical/prehospital-ems.html">Application context: EMS</a></nav>
 
   <section class="concept-hero">
     <div class="tag-row"><span class="tag">Evidence-Informed Concept Analysis</span><span class="tag stage">Pre-Review · Hypothesis-Generating</span></div>
     <h1>Prehospital RhD risk, blood availability and the oxygen-delivery window</h1>
-    <p class="lead">An evidence-informed analysis of emergency transfusion in females of childbearing potential, the balance between immediate survival and future reproductive risk, and a testable question for future prehospital oxygen-delivery strategies.</p>
-    <div class="byline" aria-label="Article authorship">
-      <span class="byline-label">Author</span>
-      <strong>Archil Jaliashvili</strong>
-      <span>BHOC Scientific Evidence &amp; Research Platform</span>
-      <a href="https://bhoctherapeutics.com/archil-jaliashvili/">Author profile →</a>
-      <a href="https://www.linkedin.com/in/archil-jaliashvili-bhoc/">LinkedIn →</a>
-      <span>First published 13 Sep 2026</span>
-    </div>
-    <div class="meta-grid">
-      <div><small>Article type</small><strong>Evidence-Informed Concept Analysis</strong></div>
-      <div><small>Status</small><strong>Pre-Review</strong></div>
-      <div><small>Research type</small><strong>Hypothesis-generating</strong></div>
-      <div><small>Domain</small><strong>Prehospital EMS · Hemorrhage · Transfusion · Oxygen Delivery</strong></div>
-    </div>
+    <p class="lead">An evidence-informed analysis of emergency transfusion in females of childbearing potential, the balance between immediate survival and future reproductive risk, patient-selection physiology, and a testable question for future prehospital oxygen-delivery strategies.</p>
+    <div class="byline" aria-label="Article authorship"><span class="byline-label">Author</span><strong>Archil Jaliashvili</strong><span>BHOC Scientific Evidence &amp; Research Platform</span><a href="https://bhoctherapeutics.com/archil-jaliashvili/">Author profile →</a><a href="https://www.linkedin.com/in/archil-jaliashvili-bhoc/">LinkedIn →</a><span>First published 13 Sep 2026</span></div>
+    <div class="meta-grid"><div><small>Article type</small><strong>Evidence-Informed Concept Analysis</strong></div><div><small>Status</small><strong>Pre-Review</strong></div><div><small>Research type</small><strong>Hypothesis-generating</strong></div><div><small>Domain</small><strong>Prehospital EMS · Hemorrhage · Transfusion · Oxygen Delivery</strong></div></div>
   </section>
 
   <section class="section">
-    <div class="eyebrow">01 / Published evidence</div>
-    <h2>What the current prehospital data establish.</h2>
+    <div class="eyebrow">01 / Published evidence</div><h2>What the current prehospital data establish.</h2>
     <p>The CREDIT-EMS cohort described civilian prehospital transfusion practice across 48 U.S. states between 2020 and 2024. It included <strong>10,444 patients</strong> who received prehospital blood products. Among them, <strong>1,589 were females of childbearing potential aged 12 to 50 years</strong>. A total of <strong>957 of these 1,589 patients, approximately 60%, received at least one unit of RhD-positive whole blood or red blood cells</strong>.<sup class="ref">[1,2]</sup></p>
     <p>The frequency of RhD-positive exposure in this population increased substantially during the study period, from 43.2% in 2020 to 74.9% in 2024.<sup class="ref">[2]</sup></p>
-    <div class="metric-strip">
-      <div class="metric"><strong>10,444</strong><span>patients receiving civilian prehospital blood products in CREDIT-EMS</span></div>
-      <div class="metric"><strong>1,589</strong><span>females aged 12 to 50 years in the cohort</span></div>
-      <div class="metric"><strong>957</strong><span>received RhD-positive whole blood or RBCs, approximately 60%</span></div>
-      <div class="metric"><strong>48 min</strong><span>median prehospital interval, IQR 36 to 64 minutes</span></div>
-    </div>
+    <div class="metric-strip"><div class="metric"><strong>10,444</strong><span>patients receiving civilian prehospital blood products in CREDIT-EMS</span></div><div class="metric"><strong>1,589</strong><span>females aged 12 to 50 years in the cohort</span></div><div class="metric"><strong>957</strong><span>received RhD-positive whole blood or RBCs, approximately 60%</span></div><div class="metric"><strong>48 min</strong><span>median prehospital interval, IQR 36 to 64 minutes</span></div></div>
     <p>Only <strong>255 of 10,343 cases, 2.5%, had a prehospital interval of 20 minutes or less</strong>. Approximately 97.5% therefore remained in the prehospital care environment for more than 20 minutes.<sup class="ref">[2]</sup></p>
     <div class="boundary"><strong>Important population boundary:</strong> these data should not be described as 957 pregnant patients. The cohort was defined as females of childbearing potential. The concern is that RhD alloimmunization caused by an emergency transfusion today may affect a future pregnancy.</div>
     <div class="boundary"><strong>Important transport boundary:</strong> CREDIT-EMS was predominantly an air-medical dataset. Of 10,444 patients, 10,177, or 97.4%, were transported by air; 267 were transported by ground ambulance and 144 by fixed-wing aircraft. The study supports conclusions about the prehospital transfusion environment, not a claim that all 957 RhD-positive exposures occurred in ground ambulances.<sup class="ref">[2]</sup></div>
   </section>
 
   <section class="section risk-box">
-    <div class="eyebrow">02 / Immediate survival versus future risk</div>
-    <h2>The future risk is low, but it is not zero.</h2>
+    <div class="eyebrow">02 / Immediate survival versus future risk</div><h2>The future risk is low, but it is not zero.</h2>
     <p>Yazer, Vieni and Seheult modeled future hemolytic disease of the fetus and newborn, HDFN, after urgent prehospital RhD-positive transfusion in the 957 females identified by the earlier cohort. The maximum modeled HDFN rate for females of unknown RhD type was approximately <strong>0.8%</strong>, occurring at ages 18 to 20 years. Across the modeled regional cohorts, the estimated future HDFN rate ranged from approximately <strong>0.214% to 0.294% per year</strong>.<sup class="ref">[1]</sup></p>
-    <p>The authors concluded that future HDFN risk from urgent prehospital RhD-positive transfusion was low.<sup class="ref">[1]</sup> A 2026 narrative review similarly concluded that RhD-positive transfusion is supported when RhD-negative products are unavailable in hemorrhagic shock, while emphasizing risk mitigation and follow-up.<sup class="ref">[3]</sup></p>
+    <p>The study used <strong>500 simulation runs</strong> representing approximately <strong>2,500 simulated years</strong>. Across those simulations, <strong>1,368 HDFN cases</strong> were predicted, corresponding to approximately <strong>0.55 case per simulated year</strong>. Depending on regional transfusion volume, the modeled interval between future HDFN cases ranged from approximately <strong>2.4 to 80.7 years</strong>.<sup class="ref">[1]</sup></p>
+    <p>These values describe a modeled population-level risk, not directly observed long-term pregnancy outcomes. The authors concluded that future HDFN risk from urgent prehospital RhD-positive transfusion was low.<sup class="ref">[1]</sup> A 2026 narrative review similarly concluded that RhD-positive transfusion is supported when RhD-negative products are unavailable in hemorrhagic shock, while emphasizing risk mitigation and follow-up.<sup class="ref">[3]</sup></p>
     <p>The multidisciplinary 2026 joint position statement is even more explicit about the clinical trade-off. It reports D-alloimmunization rates after trauma transfusion in the range of approximately 8% to 43%, while modeled downstream severe HDFN or perinatal-death risks are substantially lower. Its conclusion is that life-saving transfusion should not be withheld when RhD-negative products are unavailable and transfusion is clinically indicated.<sup class="ref">[4]</sup></p>
     <p><strong>The clinical logic is therefore not that the compatibility-related risk is unimportant. The logic is that the immediate risk of uncontrolled hemorrhage and inadequate resuscitation is greater.</strong></p>
   </section>
 
   <section class="section">
-    <div class="eyebrow">03 / The prehospital oxygen-delivery window</div>
-    <h2>The physiological problem begins before hospital arrival.</h2>
+    <div class="eyebrow">03 / The prehospital oxygen-delivery window</div><h2>The physiological problem begins before hospital arrival.</h2>
     <p>Severe hemorrhage can simultaneously reduce circulating volume, perfusion pressure and oxygen-carrying capacity. Whole blood and red blood cell transfusion are not only oxygen therapies, because whole blood also contributes volume and hemostatic components. However, restoration of oxygen-carrying capacity is one of the central physiological functions of red-cell-containing resuscitation.</p>
     <p>The CREDIT-EMS median prehospital interval of 48 minutes, together with the finding that only 2.5% of cases had an interval of 20 minutes or less, shows that the prehospital phase can represent a substantial treatment window rather than a short transport interval.<sup class="ref">[2]</sup></p>
     <p>Ground EMS blood programs are also expanding. In June 2026 the Prehospital Blood Transfusion Coalition reported more than <strong>400 U.S. 9-1-1 ground EMS agencies</strong> with blood transfusion programs.<sup class="ref">[5]</sup> JEMS reported the same milestone and noted that <strong>less than 3% of eligible agencies</strong> carried blood products.<sup class="ref">[6]</sup></p>
@@ -203,61 +150,43 @@
   </section>
 
   <section class="section">
-    <div class="eyebrow">04 / Concept analysis</div>
-    <h2>Emergency systems are managing several constraints at the same time.</h2>
+    <div class="eyebrow">04 / Patient selection beyond blood pressure alone</div><h2>Pediatric consensus also points toward physiology, perfusion and clinical judgment.</h2>
+    <p>Magill and colleagues convened a multidisciplinary panel of <strong>20 experts</strong> in pediatric surgery, pediatric emergency medicine and EMS. The panel evaluated <strong>208 candidate criteria</strong> across <strong>six voting rounds</strong>, and <strong>35 recommendations</strong> reached the predefined threshold of at least 80% agreement.<sup class="ref">[7]</sup></p>
+    <p>The proposed pediatric prehospital transfusion framework requires <strong>suspected severe hemorrhage</strong>, at least <strong>one sign of shock after first-line hemorrhage control</strong>, and EMS clinical judgment that transfusion is needed.<sup class="ref">[7]</sup></p>
+    <p>Importantly, the assessment of shock was not limited to blood pressure. The consensus framework included <strong>poor perfusion</strong>, <strong>low cardiac output</strong> and validated <strong>pediatric shock indices</strong>. Routine use of end-tidal CO₂ as a transfusion trigger did not reach consensus.<sup class="ref">[7]</sup></p>
+    <div class="boundary"><strong>Evidence boundary:</strong> this is expert consensus, not a prospective outcome trial. It does not directly measure tissue oxygenation and does not evaluate BHOC. Its relevance here is narrower: prehospital transfusion selection is already moving toward a multi-parameter physiological assessment rather than a single blood-pressure threshold. That strengthens the rationale for prospectively validating which perfusion and oxygen-delivery markers best identify the patient who needs oxygen-carrying support, when support is needed, and how response should be measured.</div>
+  </section>
+
+  <section class="section">
+    <div class="eyebrow">05 / Concept analysis</div><h2>Emergency systems are managing several constraints at the same time.</h2>
     <p>The evidence can be separated into four linked problems:</p>
-    <ul>
-      <li><strong>Time:</strong> hemorrhage and oxygen debt evolve before definitive hospital treatment.</li>
-      <li><strong>Availability:</strong> blood products cannot yet be positioned on most ground EMS units.<sup class="ref">[5,6]</sup></li>
-      <li><strong>Compatibility:</strong> when RhD-negative products are unavailable, clinicians may accept a non-zero future alloimmunization risk rather than delay a clinically indicated transfusion.<sup class="ref">[1,3,4]</sup></li>
-      <li><strong>Function:</strong> the immediate objective is not a blood-group label itself, but restoration of the physiological functions required to keep the patient alive while hemorrhage control and definitive treatment proceed.</li>
-    </ul>
+    <ul><li><strong>Time:</strong> hemorrhage and oxygen debt evolve before definitive hospital treatment.</li><li><strong>Availability:</strong> blood products cannot yet be positioned on most ground EMS units.<sup class="ref">[5,6]</sup></li><li><strong>Compatibility:</strong> when RhD-negative products are unavailable, clinicians may accept a non-zero future alloimmunization risk rather than delay a clinically indicated transfusion.<sup class="ref">[1,3,4]</sup></li><li><strong>Function and patient selection:</strong> the immediate objective is restoration of the physiological functions required to keep the patient alive, and emerging consensus supports using perfusion, shock physiology and clinical judgment rather than a single pressure threshold.<sup class="ref">[7]</sup></li></ul>
     <p>This creates a useful research distinction. The goal should not be framed only as moving more donor blood closer to every patient. A broader systems objective is to determine how effective oxygen-carrying support can be made available earlier, while preserving the roles of hemorrhage control, donor blood, coagulation support, surgery and definitive hospital care.</p>
   </section>
 
   <section class="section">
-    <div class="eyebrow">05 / From Blood-on-Board to Oxygen-Delivery-on-Board</div>
-    <h2>A complementary prehospital design question.</h2>
+    <div class="eyebrow">06 / From Blood-on-Board to Oxygen-Delivery-on-Board</div><h2>A complementary prehospital design question.</h2>
     <p>Current blood-on-board programs demonstrate that prehospital clinicians need the capability to intervene before hospital arrival. They also expose the operational limits of relying exclusively on distributed donor-blood inventory.</p>
     <p>A purified, non-RBC hemoglobin oxygen carrier would not contain intact donor erythrocytes and therefore would not be expected to create the same RhD antigen exposure pathway as RhD-positive donor red cells. That does <strong>not</strong> imply absence of other immunologic, vascular, renal, oxidative or product-specific risks. Those risks require independent evaluation.</p>
     <p>If a Biological Hemoglobin Oxygen Carrier were validated for the relevant prehospital indication, with acceptable safety, efficacy, dosing, stability and operational characteristics, it could be investigated as a <strong>complementary bridge</strong> when immediate donor blood is unavailable, delayed or constrained by compatibility and logistics.</p>
-    <div class="hypothesis">
-      <small>BHOC hypothesis</small>
-      <p><strong>A validated room-temperature, long-shelf-life, non-RBC oxygen carrier could potentially reduce dependence of early prehospital oxygen-carrying support on donor-blood availability and conventional RBC ABO/RhD compatibility, while bridging selected patients to definitive transfusion and hospital treatment.</strong></p>
-    </div>
+    <div class="hypothesis"><small>BHOC hypothesis</small><p><strong>A validated room-temperature, long-shelf-life, non-RBC oxygen carrier could potentially reduce dependence of early prehospital oxygen-carrying support on donor-blood availability and conventional RBC ABO/RhD compatibility, while bridging selected patients to definitive transfusion and hospital treatment.</strong></p></div>
     <div class="boundary"><strong>Evidence boundary:</strong> the cited studies do not evaluate BHOC or any specific HBOC as a prehospital intervention and do not establish clinical efficacy or safety for this use. This is a hypothesis-generating interpretation that requires product-specific preclinical, clinical and operational validation.</div>
   </section>
 
   <section class="section">
-    <div class="eyebrow">06 / What would need to be tested</div>
-    <h2>The hypothesis must be falsifiable, not promotional.</h2>
-    <div class="framework">
-      <div><strong>Population</strong><span>Patients with time-critical hemorrhage or clinically meaningful compromise of oxygen delivery before definitive care.</span></div>
-      <div><strong>Intervention</strong><span>A defined BHOC/HBOC candidate with validated manufacturing, dose, quality attributes and prehospital stability.</span></div>
-      <div><strong>Comparator</strong><span>Current standard care, including hemorrhage control, donor blood where available, and established resuscitation protocols.</span></div>
-      <div><strong>Functional endpoints</strong><span>Time to oxygen-carrying support, shock physiology, lactate trends, perfusion markers, tissue oxygenation and organ-level outcomes.</span></div>
-      <div><strong>Safety endpoints</strong><span>Hemodynamics, vasoconstriction, methemoglobin, renal injury, oxidative effects, immunologic response and product-specific adverse events.</span></div>
-      <div><strong>Operational endpoints</strong><span>Vehicle-level availability, storage, shelf life, training burden, wastage, deployment time and transition to definitive hospital treatment.</span></div>
-    </div>
+    <div class="eyebrow">07 / What would need to be tested</div><h2>The hypothesis must be falsifiable, not promotional.</h2>
+    <div class="framework"><div><strong>Population</strong><span>Patients with time-critical hemorrhage or clinically meaningful compromise of oxygen delivery before definitive care.</span></div><div><strong>Intervention</strong><span>A defined BHOC/HBOC candidate with validated manufacturing, dose, quality attributes and prehospital stability.</span></div><div><strong>Comparator</strong><span>Current standard care, including hemorrhage control, donor blood where available, and established resuscitation protocols.</span></div><div><strong>Functional endpoints</strong><span>Time to oxygen-carrying support, age-appropriate shock indices, perfusion markers, cardiac-output measures where feasible, lactate trends, tissue oxygenation, response to intervention and organ-level outcomes.</span></div><div><strong>Safety endpoints</strong><span>Hemodynamics, vasoconstriction, methemoglobin, renal injury, oxidative effects, immunologic response and product-specific adverse events.</span></div><div><strong>Operational endpoints</strong><span>Vehicle-level availability, storage, shelf life, training burden, wastage, deployment time and transition to definitive hospital treatment.</span></div></div>
     <p>A future study should determine not only whether the product carries oxygen, but whether earlier availability changes clinically meaningful physiology and outcomes without introducing an unacceptable safety trade-off.</p>
+    <div class="boundary"><strong>Endpoint note:</strong> end-tidal CO₂ may remain an exploratory physiologic variable, but the pediatric consensus does not support treating it as a validated stand-alone transfusion trigger.<sup class="ref">[7]</sup></div>
   </section>
 
   <section class="section">
-    <div class="eyebrow">07 / Related BHOC Evidence &amp; Internal Resources</div>
-    <h2>Internal evidence routes.</h2>
-    <div class="related-grid">
-      <a href="../clinical/prehospital-ems.html"><strong>Prehospital EMS &amp; Emergency Blood Transfusion</strong><span>Ground EMS blood programs, access constraints, logistics and the prehospital oxygen-delivery gap.</span></a>
-      <a href="../science/prehospital-blood-transfusion-oxygen-delivery.html"><strong>Prehospital Blood Transfusion &amp; Oxygen Delivery</strong><span>Scientific framing of transfusion, oxygen-carrying capacity and prehospital treatment objectives.</span></a>
-      <a href="prehospital-oxygen-delivery-selection.html"><strong>Prehospital Oxygen-Delivery Patient Selection</strong><span>Related hypothesis on identifying clinically meaningful oxygen-delivery failure before severe hemodynamic collapse.</span></a>
-      <a href="../clinical/pph-humanitarian-problem.html"><strong>Postpartum Hemorrhage, Blood Access &amp; Maternal Emergency Care</strong><span>Separate maternal-emergency context for time-critical blood access and oxygen delivery.</span></a>
-      <a href="../science/oxygen-delivery-potency.html"><strong>Oxygen-Delivery Potency</strong><span>Functional oxygen-delivery performance versus hemoglobin concentration alone.</span></a>
-      <a href="../real-world-evidence/"><strong>Real-World Evidence: Oxygen Delivery Evidence</strong><span>Broader evidence on donor blood, compatibility, emergency care and tissue oxygenation.</span></a>
-    </div>
+    <div class="eyebrow">08 / Related BHOC Evidence &amp; Internal Resources</div><h2>Internal evidence routes.</h2>
+    <div class="related-grid"><a href="../clinical/prehospital-ems.html"><strong>Prehospital EMS &amp; Emergency Blood Transfusion</strong><span>Ground EMS blood programs, access constraints, logistics and the prehospital oxygen-delivery gap.</span></a><a href="../science/prehospital-blood-transfusion-oxygen-delivery.html"><strong>Prehospital Blood Transfusion &amp; Oxygen Delivery</strong><span>Scientific framing of transfusion, oxygen-carrying capacity and prehospital treatment objectives.</span></a><a href="prehospital-oxygen-delivery-selection.html"><strong>Prehospital Oxygen-Delivery Patient Selection</strong><span>Related hypothesis on identifying clinically meaningful oxygen-delivery failure before severe hemodynamic collapse.</span></a><a href="../clinical/pph-humanitarian-problem.html"><strong>Postpartum Hemorrhage, Blood Access &amp; Maternal Emergency Care</strong><span>Separate maternal-emergency context for time-critical blood access and oxygen delivery.</span></a><a href="../science/oxygen-delivery-potency.html"><strong>Oxygen-Delivery Potency</strong><span>Functional oxygen-delivery performance versus hemoglobin concentration alone.</span></a><a href="../real-world-evidence/"><strong>Real-World Evidence: Oxygen Delivery Evidence</strong><span>Broader evidence on donor blood, compatibility, emergency care and tissue oxygenation.</span></a></div>
   </section>
 
   <section class="section">
-    <div class="eyebrow">08 / References</div>
-    <h2>Primary literature and system sources.</h2>
+    <div class="eyebrow">09 / References</div><h2>Primary literature and system sources.</h2>
     <ol class="references">
       <li><strong>Yazer MH, Vieni C, Seheult JN.</strong> Rate of future hemolytic disease of the fetus and newborn following the prehospital transfusion of RhD-positive blood products to females of childbearing potential in the United States of America. <cite>Prehospital Emergency Care</cite>. Published online September 10, 2026. doi:10.1080/10903127.2026.2725214. PMID: 42664369.</li>
       <li><strong>Rosen CL, Thomas SA, McCartin MP, et al.</strong> Characteristics, Regional Evaluation, and D-Antigen in Transfusions by Emergency Medical Services. <cite>JAMA Network Open</cite>. 2025;8(7):e2524368. doi:10.1001/jamanetworkopen.2025.24368.</li>
@@ -265,15 +194,12 @@
       <li><strong>Henry R, Coleman JR, Holcomb JB, et al.</strong> Post-Transfusion Management of RhD-Negative Females of Childbearing Potential Who Receive RhD-Positive Low-Titer Group O Whole Blood and Red Blood Cells During Trauma Resuscitation: A Joint Position Statement and Resource Document. <cite>Journal of the American College of Surgeons</cite>. Published online July 22, 2026. doi:10.1097/XCS.0000000000002099. PMID: 42490058.</li>
       <li><strong>Prehospital Blood Transfusion Coalition.</strong> Washington, DC: Over 400 Ground EMS Agency Blood Transfusion Programs. Institutional program update. June 23, 2026.</li>
       <li><strong>JEMS.</strong> Ground EMS Blood Transfusion Programs Surpass 400 Agencies Nationwide. EMS industry report summarizing Prehospital Blood Transfusion Coalition data. June 22, 2026.</li>
+      <li><strong>Magill CF, Heintz H, Finney J, Nimmer M, Antevy PM, Clukies LD, Guyette FX, Ignacio RC, Kothari KM, Shah MI, Siegler JE, Studnek JR, Su J, Browne LR; Pediatric Prehospital Blood Transfusion Collaborative.</strong> Consensus Guidelines for Prehospital Transfusion in Children: A Modified Delphi Study. <cite>Prehospital Emergency Care</cite>. Published online September 11, 2026. doi:10.1080/10903127.2026.2729895. PMID: 42725789.</li>
     </ol>
     <div class="boundary"><strong>Scientific status:</strong> Evidence-Informed Concept Analysis · Pre-Review · Hypothesis-generating. This page is not a peer-reviewed manuscript, clinical guideline or treatment recommendation.</div>
   </section>
 </main>
 
-<footer class="site-footer">
-  <span>BHOC · Biological Hemoglobin Oxygen Carrier<br>Concepts &amp; Hypotheses · Evidence-Informed Concept Analysis</span>
-  <span><a href="../index.html">Platform home</a> · <a href="./">Concepts &amp; Hypotheses</a> · <a href="../clinical/prehospital-ems.html">Prehospital EMS</a> · <a href="../real-world-evidence/">Real-World Evidence</a></span>
-  <p class="platform-version" data-platform-version>First published 13 Sep 2026 · Last updated 13 Sep 2026 · Version 26.09.13</p>
-</footer>
+<footer class="site-footer"><span>BHOC · Biological Hemoglobin Oxygen Carrier<br>Concepts &amp; Hypotheses · Evidence-Informed Concept Analysis</span><span><a href="../index.html">Platform home</a> · <a href="./">Concepts &amp; Hypotheses</a> · <a href="../clinical/prehospital-ems.html">Prehospital EMS</a> · <a href="../real-world-evidence/">Real-World Evidence</a></span><p class="platform-version" data-platform-version>First published 13 Sep 2026 · Last updated 13 Sep 2026 · Version 26.09.13</p></footer>
 </body>
 </html>
