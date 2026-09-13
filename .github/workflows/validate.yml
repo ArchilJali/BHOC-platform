@@ -30,33 +30,7 @@ jobs:
       - name: Internal pages and anchors
         run: python3 scripts/check_links.py
       - name: Veterinary overview agrees with the bibliography
-        run: |
-          if node scripts/build_veterinary_overview.cjs --check; then
-            exit 0
-          fi
-          cp veterinary/Vet-index.html /tmp/Vet-index.before.html
-          node scripts/build_veterinary_overview.cjs
-          node <<'NODE'
-          const fs=require('node:fs');
-          const normalize=s=>s
-            .replace(/&#39;|&apos;/g,"'")
-            .replace(/\s+/g,' ')
-            .trim();
-          const before=normalize(fs.readFileSync('/tmp/Vet-index.before.html','utf8'));
-          const after=normalize(fs.readFileSync('veterinary/Vet-index.html','utf8'));
-          if(before!==after){
-            let i=0;
-            while(i<before.length&&i<after.length&&before[i]===after[i])i++;
-            const start=Math.max(0,i-220), end=i+320;
-            console.error('Vet-index.html differs from generated overview beyond whitespace/apostrophe encoding.');
-            console.error('First normalized difference at character '+i);
-            console.error('CHECKED-IN: '+before.slice(start,end));
-            console.error('GENERATED : '+after.slice(start,end));
-            process.exit(1);
-          }
-          NODE
-          git diff --exit-code -- veterinary/README.md veterinary/Vet-README.md veterinary/Vet-README.html veterinary/overview-statistics.json
-          git checkout -- veterinary/Vet-index.html veterinary/README.md veterinary/Vet-README.md veterinary/Vet-README.html veterinary/overview-statistics.json
+        run: node scripts/build_veterinary_overview.cjs --check
 
       - name: Platform overview agrees with all evidence hubs
         run: node scripts/build_platform_overview.cjs --check
