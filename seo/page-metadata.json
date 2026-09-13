@@ -615,10 +615,11 @@
   },
   "concepts-hypotheses/index.html": {
     "title": "Concepts & Hypotheses | BHOC Research & Pre-Publication",
-    "description": "BHOC Concepts & Hypotheses presents source-linked research concepts on prehospital oxygen delivery, functional oxygen-delivery potency and postpartum hemorrhage.",
-    "keywords": "BHOC Concepts and Hypotheses, research concept, scientific hypothesis, oxygen delivery, tissue oxygenation, prehospital EMS, blood transfusion, postpartum hemorrhage, L-TOF, BHOC, HBOC, Biological Hemoglobin Oxygen Carrier, Precision Oxygen Therapeutics, pre-publication",
+    "description": "BHOC Concepts & Hypotheses presents source-linked research concepts on prehospital oxygen delivery, functional potency, postpartum hemorrhage, nitric oxide and vascular control.",
+    "keywords": "BHOC Concepts and Hypotheses, research concept, scientific hypothesis, oxygen delivery, tissue oxygenation, nitric oxide, NO scavenging, vascular control, HBOC vasoconstriction, red blood cell compartmentalization, prehospital EMS, blood transfusion, postpartum hemorrhage, L-TOF, BHOC, HBOC, Biological Hemoglobin Oxygen Carrier, Precision Oxygen Therapeutics, pre-publication",
     "url": "https://archiljali.github.io/BHOC-platform/concepts-hypotheses/",
-    "type": "website"
+    "type": "website",
+    "lastmod": "2026-09-13"
   },
   "concepts-hypotheses/prehospital-oxygen-delivery-selection.html": {
     "title": "Prehospital Oxygen-Delivery Patient Selection | BHOC",
@@ -739,5 +740,13 @@
     "keywords": "liver transplantation, HOPE, NMP, hypothermic oxygenated perfusion, normothermic machine perfusion, donor liver, organ viability, tissue oxygenation, oxygen delivery, BHOC, HBOC",
     "url": "https://archiljali.github.io/BHOC-platform/transplant/HOPE-NMP-Liver-Transplantation-2026.html",
     "type": "article"
+  },
+  "concepts-hypotheses/size-compartmentalization-vascular-control.html": {
+    "title": "Hemoglobin Size, Nitric Oxide & Vascular Control | BHOC",
+    "description": "BHOC research hypothesis linking hemoglobin molecular scale, red-cell compartmentalization, nitric oxide scavenging, HBOC vasoconstriction and controlled vascular interaction.",
+    "keywords": "hemoglobin molecular size, red blood cell compartmentalization, nitric oxide scavenging, NO scavenging, HBOC vasoconstriction, vascular control, microcirculation, tissue oxygenation, BHOC, HBOC, Biological Hemoglobin Oxygen Carrier, Precision Oxygen Therapeutics, research hypothesis",
+    "url": "https://archiljali.github.io/BHOC-platform/concepts-hypotheses/size-compartmentalization-vascular-control.html",
+    "type": "article",
+    "lastmod": "2026-09-13"
   }
 }
