@@ -13,7 +13,7 @@ const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 // Validate generated SEO outputs only after the canonical metadata and sitemap have been synchronized on main.
 const initiativeMark='https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
 const veterinaryMark='https://bhocvet.com/assets/favicon.svg';
-const defaultSocialImage='https://archiljali.github.io/BHOC-platform/assets/bhoc-evidence-social.png';
+const defaultSocialImage='https://bhoctherapeutics.com/assets/bhoc-social-preview-20260905-initiative-logo.png';
 
 function html(file){return fs.readFileSync(path.join(root,file),'utf8')}
 function count(source,pattern){return [...source.matchAll(pattern)].length}
