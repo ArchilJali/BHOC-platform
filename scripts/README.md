@@ -33,7 +33,7 @@ The project sitemap is regenerated from the canonical page map. The repository a
 
 ## SEO metadata
 
-Canonical titles, descriptions, page-level keyword taxonomy, social previews, favicons and breadcrumb structured data are defined in `seo/page-metadata.json`. Run `node scripts/apply_seo_metadata.cjs` after changing that file or adding a canonical page. The same command regenerates `sitemap.xml`; `--check` verifies that the checked-in HTML and sitemap remain synchronized.
+Canonical titles, descriptions, page-level keyword taxonomy, social previews, favicons and breadcrumb structured data are defined in `seo/page-metadata.json`. Run `node scripts/apply_seo_metadata.cjs` after changing that file or adding a canonical page. The same command regenerates `sitemap.xml`; `--check` verifies that the checked-in HTML and sitemap remain synchronized. Add `lastmod` only when the page's main content changes materially. Pages without a verified substantive date omit the optional sitemap field rather than publishing a mechanical footer or version-stamp date.
 
 The keywords meta tag is retained as an internal taxonomy and for non-Google consumers. Google ranking intent is expressed through unique titles, H1 headings, visible source-backed content, descriptive internal links and canonical page separation rather than keyword repetition.
 
