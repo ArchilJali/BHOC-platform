@@ -140,6 +140,31 @@
     main.insertBefore(context, intro);
   };
 
+  const addHistoricalArticleBreadcrumbs = () => {
+    const articlePaths = [
+      '/BHOC-platform/historical-sources/biopure-standing-on-the-shoulders-of-giants/',
+      '/BHOC-platform/historical-sources/biopure-standing-on-the-shoulders-of-giants/index.html'
+    ];
+    if (!articlePaths.includes(path)) return;
+
+    const shell = document.querySelector('main.page-shell');
+    if (!shell || shell.querySelector('.historical-breadcrumbs')) return;
+
+    if (!document.querySelector('#historical-breadcrumbs-style')) {
+      const style = document.createElement('style');
+      style.id = 'historical-breadcrumbs-style';
+      style.textContent = '.historical-breadcrumbs{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0;padding:13px clamp(1.6rem,6vw,5rem);border-bottom:1px solid #dce3ea;background:#fffefa;color:#6a7687;font-size:11px;font-weight:750;line-height:1.4}.historical-breadcrumbs a{color:#16385f;text-decoration:none}.historical-breadcrumbs a:hover{text-decoration:underline;text-underline-offset:.2em}.historical-breadcrumbs .breadcrumb-parent{font-weight:850}.historical-breadcrumbs .breadcrumb-current{color:#6a7687;font-weight:650}.historical-breadcrumbs .breadcrumb-separator{color:#a7b0ba;font-weight:500}@media(max-width:680px){.historical-breadcrumbs{padding:11px 16px;font-size:10.5px;gap:6px}}';
+      document.head.appendChild(style);
+    }
+
+    const breadcrumbs = document.createElement('nav');
+    breadcrumbs.className = 'historical-breadcrumbs';
+    breadcrumbs.setAttribute('aria-label', 'Breadcrumb');
+    breadcrumbs.innerHTML = '<a href="/BHOC-platform/index.html">BHOC Platform</a><span class="breadcrumb-separator" aria-hidden="true">›</span><a class="breadcrumb-parent" href="/BHOC-platform/historical-sources/">Historical Sources</a><span class="breadcrumb-separator" aria-hidden="true">›</span><span class="breadcrumb-current" aria-current="page">Standing on the Shoulders of Giants</span>';
+
+    shell.prepend(breadcrumbs);
+  };
+
   const enhanceApplicationCards = () => {
     if (!(path.endsWith('/clinical/') || path.endsWith('/clinical/index.html'))) return;
     const routes = [
@@ -314,6 +339,7 @@
   removePublicGitHubLinks();
   normalizePrimaryExplorerCTA();
   addExplorerContext();
+  addHistoricalArticleBreadcrumbs();
   enhanceApplicationCards();
   restoreVetFdaEfficacyHighlight();
   enhanceRealWorldEvidenceActivity();
