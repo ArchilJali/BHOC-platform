@@ -2,9 +2,9 @@
 
 ## Oxyglobin · HBOC literature · Precision oxygen therapeutics
 
-[**Open the Veterinary website →**](https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html) · [BHOC VET-platform →](https://archiljali.github.io/BHOC-VET-platform/) · [Publication explorer](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html) · [FDA & EMA records](https://archiljali.github.io/BHOC-platform/veterinary/Vet-fda-ema.html)
+[**Open the Veterinary website →**](https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html) · [BHOC VET-platform →](https://archiljali.github.io/BHOC-VET-platform/) · [Vet Concepts & Questions →](https://archiljali.github.io/BHOC-VET-platform/concepts-questions/) · [Publication explorer](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html) · [FDA & EMA records](https://archiljali.github.io/BHOC-platform/veterinary/Vet-fda-ema.html)
 
-Explore species, author institutions, normalized journals and original citations. Historical Oxyglobin approvals, broader research and the proposed BHOC veterinary concept are presented separately.
+This repository is the veterinary evidence layer: publications, regulatory records, documented cases and source-linked species evidence. Interpretation and developing research questions live in the BHOC VET-platform.
 
 ## Database at a glance
 
@@ -48,6 +48,7 @@ In the randomised field trial of 64 anaemic dogs, the FDA efficacy population re
 
 ## Explore the section
 
+- [Vet Concepts & Questions](https://archiljali.github.io/BHOC-VET-platform/concepts-questions/)
 - [Choose or search an author](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html#authorInput)
 - [Browse normalized journal names](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html#journalInput)
 - [Separate focused and background literature](https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html#scopeSelect)

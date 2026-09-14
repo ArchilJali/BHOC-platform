@@ -32,7 +32,7 @@ function managedBlock(file,data){
   const imageAlt=defaultSocialImageAlt;
   const socialImage=`\n  <meta property="og:image" content="${escapeAttr(image)}">\n  <meta property="og:image:secure_url" content="${escapeAttr(image)}">\n  <meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="630">\n  <meta property="og:image:type" content="image/png">\n  <meta property="og:image:alt" content="${escapeAttr(imageAlt)}">\n  <meta name="twitter:image" content="${escapeAttr(image)}">\n  <meta name="twitter:image:alt" content="${escapeAttr(imageAlt)}">`;
   const twitterCard='summary_large_image';
-  return `\n  <!-- SEO metadata: managed by scripts/apply_seo_metadata.cjs -->\n  <title>${data.title}</title>\n  <meta name="description" content="${escapeAttr(data.description)}">\n  <meta name="keywords" content="${escapeAttr(data.keywords)}">\n  <meta name="author" content="Archil Jaliashvili">\n  <link rel="author" href="${authorProfile}">\n  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">\n  <link rel="canonical" href="${data.url}">\n  <link rel="icon" href="${favicon}" type="${veterinary?'image/svg+xml':'image/png'}">\n  <link rel="sitemap" href="${prefix}sitemap.xml" type="application/xml">\n  <meta property="og:locale" content="en_US">\n  <meta property="og:site_name" content="BHOC Therapeutics Platform">\n  <meta property="og:type" content="${data.type}">\n  <meta property="og:title" content="${escapeAttr(socialTitle.replace(/&amp;/g,'&'))}">\n  <meta property="og:description" content="${escapeAttr(socialDescription)}">\n  <meta property="og:url" content="${data.url}">${socialImage}${articleAuthor}\n  <meta name="twitter:card" content="${twitterCard}">\n  <meta name="twitter:title" content="${escapeAttr(socialTitle.replace(/&amp;/g,'&'))}">\n  <meta name="twitter:description" content="${escapeAttr(socialDescription)}">`;
+  return `\n  <!-- SEO metadata: managed by scripts/apply_seo_metadata.cjs -->\n  <title>${data.title}</title>\n  <meta name="description" content="${escapeAttr(data.description)}">\n  <meta name="keywords" content="${escapeAttr(data.keywords)}">\n  <meta name="author" content="Archil Jaliashvili">\n  <link rel="author" href="${authorProfile}">\n  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">\n  <meta name="yandex" content="noindex">\n  <link rel="canonical" href="${data.url}">\n  <link rel="icon" href="${favicon}" type="${veterinary?'image/svg+xml':'image/png'}">\n  <link rel="sitemap" href="${prefix}sitemap.xml" type="application/xml">\n  <meta property="og:locale" content="en_US">\n  <meta property="og:site_name" content="BHOC Therapeutics Platform">\n  <meta property="og:type" content="${data.type}">\n  <meta property="og:title" content="${escapeAttr(socialTitle.replace(/&amp;/g,'&'))}">\n  <meta property="og:description" content="${escapeAttr(socialDescription)}">\n  <meta property="og:url" content="${data.url}">${socialImage}${articleAuthor}\n  <meta name="twitter:card" content="${twitterCard}">\n  <meta name="twitter:title" content="${escapeAttr(socialTitle.replace(/&amp;/g,'&'))}">\n  <meta name="twitter:description" content="${escapeAttr(socialDescription)}">`;
 }
 
 function breadcrumbBlock(data){
@@ -48,7 +48,7 @@ function render(file,data){
   let html=fs.readFileSync(absolute,'utf8');
   html=html.replace(/\s*<!-- SEO metadata: managed by scripts\/apply_seo_metadata\.cjs -->[\s\S]*?<meta name="twitter:(?:image:alt|description)"[^>]*>/i,'');
   html=stripTag(html,/\s*<title>[\s\S]*?<\/title>/i);
-  const metaKeys=['description','keywords','author','robots','twitter:card','twitter:title','twitter:description','twitter:image','twitter:image:alt'];
+  const metaKeys=['description','keywords','author','robots','yandex','twitter:card','twitter:title','twitter:description','twitter:image','twitter:image:alt'];
   for(const key of metaKeys)html=stripTag(html,new RegExp(`\\s*<meta\\b(?=[^>]*\\bname=["']${key.replace(':','\\:')}["'])[^>]*>`,'i'));
   const propertyKeys=['og:locale','og:site_name','og:type','og:title','og:description','og:url','og:image','og:image:secure_url','og:image:width','og:image:height','og:image:type','og:image:alt','article:author'];
   for(const key of propertyKeys)html=stripTag(html,new RegExp(`\\s*<meta\\b(?=[^>]*\\bproperty=["']${key.replace(/:/g,'\\:')}["'])[^>]*>`,'i'));
@@ -84,5 +84,41 @@ if(sitemap!==currentSitemap){
   if(!check)fs.writeFileSync(sitemapPath,sitemap);
   else console.error('sitemap.xml: URL coverage is stale');
 }
+
+// Keep every current and future standalone BHOC page out of Yandex while
+// preserving the ordinary robots directive used by Google and other crawlers.
+const managedFiles=new Set(Object.keys(config));
+const standaloneHtml=[];
+function walkHtml(directory){
+  for(const entry of fs.readdirSync(directory,{withFileTypes:true})){
+    if(entry.name.startsWith('.')||entry.name==='node_modules')continue;
+    const absolute=path.join(directory,entry.name);
+    if(entry.isDirectory())walkHtml(absolute);
+    else if(entry.isFile()&&/\.html?$/i.test(entry.name))standaloneHtml.push(path.relative(root,absolute));
+  }
+}
+walkHtml(root);
+const publicHtml=standaloneHtml.filter(file=>!/^google[a-z0-9]+\.html$/i.test(file));
+for(const file of publicHtml){
+  if(managedFiles.has(file))continue;
+  const absolute=path.join(root,file);
+  const current=fs.readFileSync(absolute,'utf8');
+  const yandexTag=/<meta\b(?=[^>]*\bname=["']yandex["'])(?=[^>]*\bcontent=["']noindex["'])[^>]*>/gi;
+  const matches=[...current.matchAll(yandexTag)];
+  if(matches.length===1)continue;
+  stale++;
+  if(check){
+    console.error(`${file}: Yandex-only noindex directive is stale or missing`);
+    continue;
+  }
+  let next=current.replace(/\s*<meta\b(?=[^>]*\bname=["']yandex["'])[^>]*>/gi,'');
+  const robots=/<meta\b(?=[^>]*\bname=["']robots["'])[^>]*>/i;
+  const viewport=/<meta\b(?=[^>]*\bname=["']viewport["'])[^>]*>/i;
+  if(robots.test(next))next=next.replace(robots,tag=>`${tag}\n<meta name="yandex" content="noindex">`);
+  else if(viewport.test(next))next=next.replace(viewport,tag=>`${tag}\n<meta name="yandex" content="noindex">`);
+  else if(/<head>/i.test(next))next=next.replace(/<head>/i,tag=>`${tag}\n<meta name="yandex" content="noindex">`);
+  else throw new Error(`${file}: HTML head missing`);
+  fs.writeFileSync(absolute,next);
+}
 if(check&&stale)process.exit(1);
-console.log(check?`${Object.keys(config).length} SEO pages and sitemap are current`:`Updated ${stale} SEO output(s)`);
+console.log(check?`${Object.keys(config).length} SEO pages, sitemap and ${publicHtml.length} Yandex-blocked HTML files are current`:`Updated ${stale} SEO output(s)`);

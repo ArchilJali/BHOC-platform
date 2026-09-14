@@ -13,7 +13,7 @@ const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 // Validate generated SEO outputs only after the canonical metadata and sitemap have been synchronized on main.
 const initiativeMark='https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
 const veterinaryMark='https://bhocvet.com/assets/favicon.svg';
-const defaultSocialImage='https://bhoctherapeutics.com/assets/bhoc-social-preview-20260905-initiative-logo.png';
+const defaultSocialImage='https://bhoctherapeutics.com/assets/bhoc-social-preview-20260905-initiative-logo.png?v=20260913';
 const authorProfile='https://bhoctherapeutics.com/archil-jaliashvili/';
 
 function html(file){return fs.readFileSync(path.join(root,file),'utf8')}
@@ -44,7 +44,7 @@ test('managed metadata, canonical, social cards and H1 are complete',()=>{
     assert.ok(source.includes(`<link rel="canonical" href="${data.url}">`),`${file}: configured canonical missing`);
     const isVeterinary=file.startsWith('veterinary/');
     const isHome=file==='index.html';
-    const expectedImage=data.image||defaultSocialImage;
+    const expectedImage=defaultSocialImage;
     assert.ok(source.includes(`property="og:image" content="${expectedImage}"`),`${file}: configured OG image missing`);
     assert.ok(source.includes(`name="twitter:image" content="${expectedImage}"`),`${file}: configured Twitter image missing`);
     assert.ok(source.includes('name="twitter:card" content="summary_large_image"'),`${file}: large Twitter card missing`);
@@ -77,6 +77,25 @@ test('structured author URLs use the owned profile while LinkedIn remains linked
     assert.ok(!/"url"\s*:\s*"https:\/\/www\.linkedin\.com\/in\/archil-jaliashvili-bhoc\/"/.test(source),`${file}: structured author URL still points to LinkedIn`);
   }
   assert.ok(html('social-media/linkedin/index.html').includes(`href="https://www.linkedin.com/in/archil-jaliashvili-bhoc/"`),'visible LinkedIn profile link must remain available');
+});
+
+test('every public HTML page carries exactly one Yandex-only noindex directive',()=>{
+  const pages=[];
+  const walk=dir=>{
+    for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
+      if(entry.name.startsWith('.')||entry.name==='node_modules')continue;
+      const full=path.join(dir,entry.name);
+      if(entry.isDirectory())walk(full);
+      else if(entry.isFile()&&/\.html?$/i.test(entry.name)&&!/^google[a-z0-9]+\.html$/i.test(entry.name))pages.push(path.relative(root,full));
+    }
+  };
+  walk(root);
+  assert.ok(pages.length>=50,'full public HTML coverage');
+  for(const file of pages){
+    const source=html(file);
+    const directives=[...source.matchAll(/<meta\b(?=[^>]*\bname=["']yandex["'])(?=[^>]*\bcontent=["']noindex["'])[^>]*>/gi)];
+    assert.equal(directives.length,1,`${file}: exactly one Yandex-only noindex directive required`);
+  }
 });
 
 test('all JSON-LD blocks parse and breadcrumb pages expose breadcrumbs',()=>{
