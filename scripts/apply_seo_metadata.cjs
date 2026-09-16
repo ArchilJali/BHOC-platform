@@ -14,7 +14,6 @@ const base='https://archiljali.github.io/BHOC-platform';
 const authorProfile='https://bhoctherapeutics.com/archil-jaliashvili/';
 const defaultSocialImage='https://bhoctherapeutics.com/assets/bhoc-social-preview-20260905-initiative-logo.png?v=20260913';
 const defaultSocialImageAlt='BHOC Therapeutics - One Oxygen. One Biology. One BHOC System.';
-const sitemapLastmod='2026-09-16';
 
 function escapeAttr(value){return value.replace(/&(?!(?:amp|lt|gt|quot|#39);)/g,'&amp;').replace(/"/g,'&quot;')}
 function stripTag(html,pattern){return html.replace(pattern,'')}
@@ -79,7 +78,7 @@ for(const [file,data] of Object.entries(config)){
 }
 const sitemapPath=path.join(root,'sitemap.xml');
 const currentSitemap=fs.readFileSync(sitemapPath,'utf8');
-const sitemap=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${Object.values(config).map(data=>`  <url>\n    <loc>${data.url.replace(/&/g,'&amp;')}</loc>\n    <lastmod>${data.lastmod||sitemapLastmod}</lastmod>\n  </url>`).join('\n')}\n</urlset>\n`;
+const sitemap=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${Object.values(config).map(data=>`  <url>\n    <loc>${data.url.replace(/&/g,'&amp;')}</loc>${data.lastmod?`\n    <lastmod>${data.lastmod}</lastmod>`:''}\n  </url>`).join('\n')}\n</urlset>\n`;
 if(sitemap!==currentSitemap){
   stale++;
   if(!check)fs.writeFileSync(sitemapPath,sitemap);
