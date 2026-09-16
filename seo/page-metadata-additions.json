@@ -21,5 +21,25 @@
     "type": "website",
     "lastmod": "2026-09-16",
     "breadcrumbs": [["Home", "/"], ["LinkedIn publications", "/social-media/linkedin/"]]
+  },
+  "veterinary/Vet-03-publication-BHOC-Oxyglobin.html": {
+    "title": "Oxyglobin / HBOC-301 Evidence | FDA Efficacy, Blood Comparison & Oxygen Delivery",
+    "socialTitle": "Oxyglobin / HBOC-301 Evidence | FDA Efficacy & Blood Comparison",
+    "description": "Source-linked Oxyglobin and HBOC-301 evidence: FDA canine anemia efficacy, randomized Oxyglobin vs packed red blood cell comparison, oxygen-delivery studies and curated veterinary citations.",
+    "keywords": "Oxyglobin efficacy, HBOC-301, Oxyglobin studies, Oxyglobin vs blood transfusion, Oxyglobin vs packed red blood cells, hemoglobin glutamer-200, canine anemia, veterinary HBOC, oxygen delivery, microcirculation, Oxyglobin FDA, NADA 141-067, Biological Hemoglobin Oxygen Carrier, BHOC, Precision Oxygen Therapeutics, Precision Oxygenation Therapeutics",
+    "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-03-publication-BHOC-Oxyglobin.html",
+    "type": "website",
+    "lastmod": "2026-09-16",
+    "breadcrumbs": [["Home", "/"], ["Veterinary evidence", "/veterinary/Vet-index.html"], ["Oxyglobin / HBOC-301 evidence", "/veterinary/Vet-03-publication-BHOC-Oxyglobin.html"]]
+  },
+  "veterinary/Vet-FDA-registry.html": {
+    "title": "Oxyglobin FDA Approval | NADA 141-067 Efficacy & 24-Hour Evidence",
+    "socialTitle": "Oxyglobin FDA Approval | NADA 141-067 Efficacy Evidence",
+    "description": "FDA record for Oxyglobin in anemic dogs: NADA 141-067, 95% treatment success, plasma hemoglobin and Physical Condition Scale changes through 24 hours, and primary FOI sources.",
+    "keywords": "Oxyglobin FDA approval, NADA 141-067, Oxyglobin efficacy, Oxyglobin 95 percent, plasma hemoglobin, Physical Condition Scale, canine anemia, hemoglobin glutamer-200, HBOC-301, veterinary HBOC, oxygen carrier, oxygen delivery, Biological Hemoglobin Oxygen Carrier, BHOC",
+    "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-FDA-registry.html",
+    "type": "article",
+    "lastmod": "2026-09-16",
+    "breadcrumbs": [["Home", "/"], ["Veterinary evidence", "/veterinary/Vet-index.html"], ["FDA / EMA records", "/veterinary/Vet-fda-ema.html"], ["FDA Oxyglobin record", "/veterinary/Vet-FDA-registry.html"]]
   }
 }
