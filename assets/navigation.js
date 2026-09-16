@@ -335,6 +335,208 @@
     }
   };
 
+  const addGlobalPageContext = () => {
+    const main = document.querySelector('main');
+    if (!main || main.dataset.contextNavigationEnhanced === 'true') return;
+    main.dataset.contextNavigationEnhanced = 'true';
+
+    if (!document.getElementById('top')) {
+      const topAnchor = document.createElement('span');
+      topAnchor.id = 'top';
+      topAnchor.setAttribute('aria-hidden', 'true');
+      topAnchor.style.position = 'absolute';
+      topAnchor.style.top = '0';
+      document.body.prepend(topAnchor);
+    }
+
+    const sectionDefs = [
+      ['/veterinary/', 'Veterinary Evidence', '/BHOC-platform/veterinary/Vet-index.html'],
+      ['/transplant/', 'Transplantation', '/BHOC-platform/transplant/Transplant-index.html'],
+      ['/human/', 'Human Use', '/BHOC-platform/human/BHOC-Human-index.html'],
+      ['/clinical/', 'Applications', '/BHOC-platform/clinical/'],
+      ['/concepts-hypotheses/', 'Concepts & Hypotheses', '/BHOC-platform/concepts-hypotheses/'],
+      ['/social-media/linkedin/', 'LinkedIn Publications', '/BHOC-platform/social-media/linkedin/'],
+      ['/science/', 'Science', '/BHOC-platform/science/'],
+      ['/historical-sources/', 'History', '/BHOC-platform/historical-sources/'],
+      ['/real-world-evidence/', 'Real-World Evidence', '/BHOC-platform/real-world-evidence/']
+    ];
+    const sectionMatch = sectionDefs.find(([segment]) => path.includes(segment));
+    const section = sectionMatch ? {label: sectionMatch[1], href: sectionMatch[2]} : null;
+    const pageTitle = (main.querySelector('h1')?.textContent || document.title.split('|')[0] || 'Current page').replace(/\s+/g, ' ').trim().replace(/[.]+$/, '');
+    const shortTitle = pageTitle.length > 84 ? `${pageTitle.slice(0, 81).trim()}…` : pageTitle;
+    const canonicalCurrent = `${window.location.origin}${window.location.pathname}${window.location.search}`;
+
+    if (!document.querySelector('#global-page-context-style')) {
+      const style = document.createElement('style');
+      style.id = 'global-page-context-style';
+      style.textContent = '.global-page-context{display:grid;gap:9px;margin:0 0 18px;padding:10px 13px;border:1px solid var(--line,#dce3e7);border-radius:10px;background:rgba(255,255,255,.96);color:var(--ink,#17334d);box-shadow:0 4px 18px rgba(23,51,77,.04);font-size:11px;line-height:1.45}.global-context-trail,.global-context-actions,.global-page-end{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.global-context-trail a,.global-context-actions a,.global-page-end a,.global-context-actions button,.global-page-end button{color:var(--link,#0b5f78);font:inherit;font-weight:760;text-decoration:none;background:none;border:0;padding:0;cursor:pointer}.global-context-trail a:hover,.global-context-actions a:hover,.global-page-end a:hover,.global-context-actions button:hover,.global-page-end button:hover{text-decoration:underline;text-underline-offset:.2em}.global-context-current{color:var(--muted,#687884);font-weight:680}.global-context-sep{color:#a4afb7}.global-context-actions{padding-top:7px;border-top:1px solid var(--line,#dce3e7)}.global-context-actions .global-context-section{font-weight:830}.global-page-end{justify-content:space-between;margin:30px 0 8px;padding:13px 0 2px;border-top:1px solid var(--line,#dce3e7);font-size:11px}.global-page-end-group{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.global-floating-top{position:fixed;right:18px;bottom:18px;z-index:999;display:inline-flex;align-items:center;justify-content:center;min-width:48px;height:38px;padding:0 12px;border:1px solid #ccd7dc;border-radius:999px;background:#fff;color:#164258;font-size:11px;font-weight:850;text-decoration:none;box-shadow:0 8px 24px rgba(20,55,70,.14);opacity:0;transform:translateY(8px);pointer-events:none;transition:opacity .18s ease,transform .18s ease}.global-floating-top.is-visible{opacity:.96;transform:none;pointer-events:auto}.global-floating-top:focus-visible{opacity:1;transform:none;pointer-events:auto;outline:2px solid currentColor;outline-offset:2px}@media(max-width:680px){.global-page-context{margin-bottom:14px;padding:9px 10px;font-size:10.5px}.global-context-actions{gap:10px}.global-page-end{align-items:flex-start}.global-floating-top{right:12px;bottom:12px}}';
+      document.head.appendChild(style);
+    }
+
+    const toHref = item => {
+      const raw = typeof item === 'string' ? item : item && (item['@id'] || item.url);
+      if (!raw) return '';
+      try {
+        const url = new URL(raw, window.location.href);
+        return url.origin === window.location.origin ? `${url.pathname}${url.search}${url.hash}` : url.href;
+      } catch {
+        return raw;
+      }
+    };
+
+    let crumbs = [];
+    const breadcrumbScript = document.querySelector('script[data-seo-breadcrumbs]');
+    if (breadcrumbScript) {
+      try {
+        const data = JSON.parse(breadcrumbScript.textContent || '{}');
+        const items = Array.isArray(data.itemListElement) ? data.itemListElement : [];
+        crumbs = items.map(entry => ({label: String(entry.name || '').trim(), href: toHref(entry.item)})).filter(entry => entry.label);
+      } catch (_error) {}
+    }
+    if (!crumbs.length) {
+      crumbs.push({label: 'Home', href: '/BHOC-platform/'});
+      if (section) crumbs.push({label: section.label, href: section.href});
+      crumbs.push({label: shortTitle, href: ''});
+    } else {
+      const last = crumbs[crumbs.length - 1];
+      const lastPath = last.href ? (() => { try { return new URL(last.href, window.location.href).pathname; } catch { return ''; } })() : '';
+      if (lastPath !== window.location.pathname) crumbs.push({label: shortTitle, href: ''});
+    }
+
+    const trail = document.createElement('div');
+    trail.className = 'global-context-trail';
+    crumbs.forEach((crumb, index) => {
+      if (index) {
+        const sep = document.createElement('span');
+        sep.className = 'global-context-sep';
+        sep.setAttribute('aria-hidden', 'true');
+        sep.textContent = '›';
+        trail.appendChild(sep);
+      }
+      if (index < crumbs.length - 1 && crumb.href) {
+        const link = document.createElement('a');
+        link.href = crumb.href;
+        link.textContent = crumb.label;
+        trail.appendChild(link);
+      } else {
+        const current = document.createElement('span');
+        current.className = 'global-context-current';
+        current.setAttribute('aria-current', 'page');
+        current.textContent = crumb.label;
+        trail.appendChild(current);
+      }
+    });
+
+    let storedReturn = null;
+    try {
+      storedReturn = JSON.parse(sessionStorage.getItem('bhocReturnContext') || 'null');
+      if (storedReturn && (!storedReturn.url || storedReturn.url.split('#')[0] === canonicalCurrent.split('#')[0])) storedReturn = null;
+    } catch (_error) {
+      storedReturn = null;
+    }
+
+    const createBackControl = () => {
+      const hasStored = storedReturn && storedReturn.url;
+      const hasHistory = window.history.length > 1 || Boolean(document.referrer);
+      if (!hasStored && !hasHistory && !section) return null;
+      const button = document.createElement('button');
+      button.type = 'button';
+      const returnLabel = hasStored && storedReturn.label ? String(storedReturn.label).replace(/\s+/g, ' ').trim() : '';
+      button.textContent = hasStored && returnLabel ? `← Return to ${returnLabel.length > 54 ? `${returnLabel.slice(0, 51)}…` : returnLabel}` : hasHistory ? '← Back to previous page' : `← ${section.label}`;
+      button.addEventListener('click', () => {
+        if (hasStored) {
+          window.location.href = storedReturn.url;
+          return;
+        }
+        if (hasHistory) {
+          window.history.back();
+          return;
+        }
+        if (section) window.location.href = section.href;
+      });
+      return button;
+    };
+
+    const actions = document.createElement('div');
+    actions.className = 'global-context-actions';
+    const back = createBackControl();
+    if (back) actions.appendChild(back);
+    if (section && window.location.pathname !== section.href) {
+      const sectionLink = document.createElement('a');
+      sectionLink.className = 'global-context-section';
+      sectionLink.href = section.href;
+      sectionLink.textContent = `${section.label} home`;
+      actions.appendChild(sectionLink);
+    }
+    const home = document.createElement('a');
+    home.href = '/BHOC-platform/';
+    home.textContent = 'Platform home';
+    actions.appendChild(home);
+    const top = document.createElement('a');
+    top.href = '#top';
+    top.textContent = '↑ Back to top';
+    actions.appendChild(top);
+
+    const context = document.createElement('nav');
+    context.className = 'global-page-context';
+    context.setAttribute('aria-label', 'Page location and return navigation');
+    context.append(trail, actions);
+
+    document.querySelectorAll('.historical-breadcrumbs').forEach(item => item.remove());
+    main.prepend(context);
+
+    const end = document.createElement('nav');
+    end.className = 'global-page-end';
+    end.setAttribute('aria-label', 'End of page navigation');
+    const endGroup = document.createElement('div');
+    endGroup.className = 'global-page-end-group';
+    const endBack = createBackControl();
+    if (endBack) endGroup.appendChild(endBack);
+    if (section && window.location.pathname !== section.href) {
+      const endSection = document.createElement('a');
+      endSection.href = section.href;
+      endSection.textContent = `${section.label} home`;
+      endGroup.appendChild(endSection);
+    }
+    const endHome = document.createElement('a');
+    endHome.href = '/BHOC-platform/';
+    endHome.textContent = 'Platform home';
+    endGroup.appendChild(endHome);
+    const endTop = document.createElement('a');
+    endTop.href = '#top';
+    endTop.textContent = '↑ Back to top';
+    end.append(endGroup, endTop);
+    main.appendChild(end);
+
+    document.querySelectorAll('.rwe-page-tools').forEach(item => item.remove());
+
+    const floatingTop = document.createElement('a');
+    floatingTop.className = 'global-floating-top';
+    floatingTop.href = '#top';
+    floatingTop.textContent = '↑ Top';
+    floatingTop.setAttribute('aria-label', 'Back to top');
+    document.body.appendChild(floatingTop);
+    const updateFloatingTop = () => floatingTop.classList.toggle('is-visible', window.scrollY > 650);
+    updateFloatingTop();
+    window.addEventListener('scroll', updateFloatingTop, {passive: true});
+
+    document.addEventListener('click', event => {
+      const link = event.target.closest('a[href]');
+      if (!link || event.defaultPrevented || link.target === '_blank' || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      const href = link.getAttribute('href') || '';
+      if (!href || href.startsWith('#') || /^(mailto:|tel:|javascript:)/i.test(href)) return;
+      try {
+        const destination = new URL(link.href, window.location.href);
+        const currentBase = `${window.location.origin}${window.location.pathname}${window.location.search}`;
+        const destinationBase = `${destination.origin}${destination.pathname}${destination.search}`;
+        if (destinationBase === currentBase) return;
+        if (destination.origin === window.location.origin && destination.pathname.startsWith('/BHOC-platform/')) {
+          sessionStorage.setItem('bhocReturnContext', JSON.stringify({url: window.location.href, label: pageTitle, time: Date.now()}));
+        }
+      } catch (_error) {}
+    }, true);
+  };
+
   addEcosystemNavigation();
   removePublicGitHubLinks();
   normalizePrimaryExplorerCTA();
@@ -343,6 +545,7 @@
   enhanceApplicationCards();
   restoreVetFdaEfficacyHighlight();
   enhanceRealWorldEvidenceActivity();
+  addGlobalPageContext();
 
   if (!path.includes('/veterinary/')) return;
 
