@@ -1,0 +1,110 @@
+{
+  "updated": "2026-09-16",
+  "purpose": "Curated, source-verified additions and metadata corrections layered over the preserved base veterinary bibliography.",
+  "additions": [
+    {
+      "title": "A prospective, randomized comparison of Oxyglobin (HB-200) and packed red blood cell transfusion for canine babesiosis",
+      "authors": "Zambelli AB, Leisewitz AL",
+      "year": "2009",
+      "journal": "Journal of Veterinary Emergency and Critical Care",
+      "keywords": "Oxyglobin, HB-200, packed red blood cells, pRBC, canine babesiosis, Babesia rossi, randomized clinical trial, anemia",
+      "id": "bhoc-curated-20260916-001",
+      "institutions": [
+        "University of Pretoria"
+      ],
+      "affiliations": [
+        "Department of Companion Animal Clinical Studies, University of Pretoria, Pretoria, South Africa"
+      ],
+      "species_tags": [
+        "Canine"
+      ],
+      "pmid": "19691591",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/19691591/",
+      "doi": "10.1111/j.1476-4431.2009.00386.x",
+      "doi_url": "https://doi.org/10.1111/j.1476-4431.2009.00386.x",
+      "link": "https://doi.org/10.1111/j.1476-4431.2009.00386.x",
+      "metadata_source": "PubMed",
+      "metadata_url": "https://pubmed.ncbi.nlm.nih.gov/19691591/",
+      "metadata_checked": "2026-09-16",
+      "source_title": "A prospective, randomized comparison of Oxyglobin (HB-200) and packed red blood cell transfusion for canine babesiosis",
+      "source_authors": "Zambelli AB, Leisewitz AL.",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "metadata_status": "matched",
+      "species_basis": "Study population explicitly described as dogs with naturally occurring Babesia rossi infection",
+      "species": "Canine",
+      "source_review_note": "Prospective randomized clinical comparison of Oxyglobin with packed red blood cell transfusion in 12 naturally infected dogs. PubMed PMID 19691591."
+    },
+    {
+      "title": "Effects of haemoglobin-based oxygen carrier hemoglobin glutamer-200 (bovine) on intestinal perfusion and oxygenation in a canine hypovolaemia model",
+      "authors": "Driessen B, Jahr JS, Lurie F, Griffey SM, Gunther RA",
+      "year": "2001",
+      "journal": "British Journal of Anaesthesia",
+      "keywords": "Oxyglobin, hemoglobin glutamer-200, intestinal perfusion, oxygenation, canine, hypovolaemia, oxygen delivery, microcirculation",
+      "id": "bhoc-curated-20260916-002",
+      "institutions": [
+        "University of Pennsylvania"
+      ],
+      "affiliations": [
+        "Department of Clinical Studies, School of Veterinary Medicine, University of Pennsylvania, Kennett Square, Pennsylvania, USA"
+      ],
+      "species_tags": [
+        "Canine"
+      ],
+      "pmid": "11575346",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/11575346/",
+      "doi": "10.1093/bja/86.5.683",
+      "doi_url": "https://doi.org/10.1093/bja/86.5.683",
+      "link": "https://doi.org/10.1093/bja/86.5.683",
+      "metadata_source": "PubMed",
+      "metadata_url": "https://pubmed.ncbi.nlm.nih.gov/11575346/",
+      "metadata_checked": "2026-09-16",
+      "source_title": "Effects of haemoglobin-based oxygen carrier hemoglobin glutamer-200 (bovine) on intestinal perfusion and oxygenation in a canine hypovolaemia model",
+      "source_authors": "Driessen B, Jahr JS, Lurie F, Griffey SM, Gunther RA.",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "metadata_status": "matched",
+      "species_basis": "Study explicitly describes a canine acute hypovolaemia model",
+      "species": "Canine",
+      "source_review_note": "Distinct British Journal of Anaesthesia full paper, PMID 11575346. It is related to but must not replace the separate Veterinary Anaesthesia and Analgesia record PMID 28404246."
+    }
+  ],
+  "overrides": {
+    "bhoc-056": {
+      "source_review_note": "SOURCE VERIFICATION REQUIRED. The current repository has not established a sufficiently reliable primary PMID or DOI for this supplied citation. Retain as an unmatched historical bibliography record until the primary source is verified."
+    },
+    "bhoc-226": {
+      "authors": "Wehausen CE, Kirby R, Rudloff E",
+      "journal": "Journal of the American Veterinary Medical Association",
+      "keywords": "Oxyglobin, hemoglobin glutamer-200, Hb-200, hypotension, cats, systolic arterial blood pressure",
+      "institutions": [
+        "Animal Emergency Clinic, Oakdale"
+      ],
+      "affiliations": [
+        "Animal Emergency Clinic, Oakdale, MN 55128, USA"
+      ],
+      "species_tags": [
+        "Feline"
+      ],
+      "pmid": "21453180",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/21453180/",
+      "doi": "10.2460/javma.238.7.909",
+      "doi_url": "https://doi.org/10.2460/javma.238.7.909",
+      "link": "https://doi.org/10.2460/javma.238.7.909",
+      "metadata_source": "PubMed",
+      "metadata_url": "https://pubmed.ncbi.nlm.nih.gov/21453180/",
+      "metadata_checked": "2026-09-16",
+      "source_title": "Evaluation of the effects of bovine hemoglobin glutamer-200 on systolic arterial blood pressure in hypotensive cats: 44 cases (1997-2008).",
+      "source_authors": "Wehausen CE, Kirby R, Rudloff E.",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "metadata_status": "matched",
+      "species_basis": "Indexed feline clinical case series; 44 hypotensive cats",
+      "species": "Feline",
+      "source_review_note": "Metadata corrected 16 September 2026: the prior journal label 'Hb-200' was erroneous. PubMed identifies Journal of the American Veterinary Medical Association, 2011;238(7):909-914, DOI 10.2460/javma.238.7.909."
+    }
+  }
+}
