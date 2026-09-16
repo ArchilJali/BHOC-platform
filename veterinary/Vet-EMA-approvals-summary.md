@@ -1,5 +1,7 @@
 # EMA Approval - Oxyglobin (EU/2/99/015)
 
+[Veterinary Evidence Hub](Vet-index.html) → [Oxyglobin / HBOC-301 evidence overview](Vet-03-publication-BHOC-Oxyglobin.html) → **EMA efficacy detail**
+
 [← Back to Oxyglobin / HBOC-301 evidence overview](Vet-03-publication-BHOC-Oxyglobin.html#cause-specific-efficacy)
 
 ## Field-Trial Treatment Success
