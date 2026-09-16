@@ -43,7 +43,17 @@
   async function load(){
     loaded=false;$('results').setAttribute('aria-busy','true');$('results').innerHTML='<div class="empty" role="status">Loading the publication index…</div>';
     try{
-      const response=await fetch('Vet-publications.json');if(!response.ok)throw new Error('Data unavailable');data=C.validate(await response.json());
+      const response=await fetch('Vet-publications.json');if(!response.ok)throw new Error('Data unavailable');
+      const base=await response.json();
+      let curated={additions:[],overrides:{}};
+      try{const curatedResponse=await fetch('Vet-publications-curation.json',{cache:'no-store'});if(curatedResponse.ok)curated=await curatedResponse.json();}catch(_curationError){}
+      const overrides=curated&&curated.overrides&&typeof curated.overrides==='object'?curated.overrides:{};
+      const merged=base.map(p=>overrides[p.id]?{...p,...overrides[p.id]}:p);
+      for(const addition of Array.isArray(curated.additions)?curated.additions:[]){
+        const duplicate=merged.some(p=>p.id===addition.id||(addition.pmid&&p.pmid===addition.pmid)||(addition.doi&&p.doi===addition.doi));
+        if(!duplicate)merged.push(addition);
+      }
+      data=C.validate(merged);
       options=C.institutionOptions(data);
       $('authorOptions').innerHTML=C.authorOptions(data).map(name=>`<option value="${esc(name)}"></option>`).join('');
       $('journalInput').innerHTML='<option value="">All journals</option>'+C.journalOptions(data).map(j=>`<option value="${esc(j.value)}">${esc(j.label)} (${j.count})</option>`).join('');
