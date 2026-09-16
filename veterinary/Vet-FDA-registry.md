@@ -57,15 +57,42 @@ The original FDA approval states the indication as:
 
 **FDA endpoint:** treatment success = no additional oxygen-carrying support required for 24 hours. This was not a survival endpoint.
 
-
 | Parameter | Result |
 |-----------|--------|
 | **Pivotal Field Trial** | 64 client-owned anaemic dogs; 30 randomized to Oxyglobin and 34 to control |
 | **Treatment success - efficacy population** | 95% (20/21) Oxyglobin vs 32% (9/28) control; p≤0.001 |
 | **Treatment success - ITT** | 73% (22/30) Oxyglobin vs 29% (10/34) control; p≤0.001 |
 | **Time to Failure** | Significantly longer for Oxyglobin in efficacy and ITT analyses (p<0.001) |
-| **Plasma hemoglobin** | ITT mean change +4.16 g/dL immediately and +2.84 g/dL at 24 h; p<0.001 |
-| **Physical Condition Scale** | Improved from pretreatment through 24 h; p<0.001 |
+
+### 24-hour plasma hemoglobin time course — intent-to-treat population
+
+| Time after infusion | Mean change in plasma Hb | Interpretation |
+|---|---:|---|
+| **Immediately** | **+4.16 g/dL** | Immediate increase in circulating cell-free hemoglobin |
+| **4 h** | **+3.77 g/dL** | Substantial oxygen-carrying hemoglobin remained in circulation |
+| **12 h** | **+3.40 g/dL** | Persistent circulating oxygen-carrier capacity |
+| **24 h** | **+2.84 g/dL** | Significant plasma hemoglobin remained at 24 hours |
+
+The plasma-hemoglobin changes were statistically significant at **p<0.001**.
+
+### Physical Condition Scale time course — intent-to-treat population
+
+| Time after infusion | Mean change in Physical Condition Score |
+|---|---:|
+| **Immediately** | **+1.21 points** |
+| **4 h** | **+1.30 points** |
+| **12 h** | **+1.17 points** |
+| **24 h** | **+1.11 points** |
+
+The Physical Condition Scale changes were statistically significant at **p<0.001**.
+
+### What does “Physical Condition Score +1.11” mean?
+
+The FDA Physical Condition Scale evaluated clinically relevant manifestations of anaemia, including **attitude, physical activity / exercise tolerance and resting heart rate**. The activity component ranged from severe impairment, such as being recumbent or unable to stand, toward the ability to walk without tiring.
+
+Accordingly, a mean **+1.11-point improvement at 24 hours** indicates measurable improvement from pretreatment in clinical signs associated with anaemia, including lethargy/depression, exercise intolerance and elevated resting heart rate.
+
+**This is not a survival score and should not be presented as one.** The regulatory conclusion is that Oxyglobin increased plasma hemoglobin and improved clinical signs associated with anaemia for at least 24 hours.
 
 ---
 
@@ -84,8 +111,8 @@ The original FDA approval states the indication as:
 
 FDA documents (NADA 141-067, supplements). Cause-stratified success rates are kept on the EMA / EU detail page rather than duplicated here.
 
-Related: [Veterinary Evidence Hub](Vet-index.html) · [FDA / EMA regulatory hub](Vet-fda-ema.html) · [EMA treatment-success detail](Vet-EMA-approvals-summary.html#efficacy-data) · [Oxyglobin & Veterinary HBOC catalogue](publication-catalogue.html)
+Related: [Veterinary Evidence Hub](Vet-index.html) · [FDA / EMA regulatory hub](Vet-fda-ema.html) · [EMA treatment-success detail](Vet-EMA-approvals-summary.html#efficacy-data) · [Oxyglobin / HBOC-301 evidence](Vet-03-publication-BHOC-Oxyglobin.html)
 
 ---
 
-*Last updated: 3 September 2026*
+*Updated: 16 September 2026*
