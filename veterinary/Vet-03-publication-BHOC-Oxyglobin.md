@@ -14,6 +14,20 @@ The original FDA field trial enrolled **64 client-owned anaemic dogs**: 30 rando
 
 [Open FDA Oxyglobin evidence](Vet-FDA-registry.html)
 
+### Treatment success by cause of anaemia
+
+The EMA scientific discussion reports cause-stratified treatment success using the same 24-hour efficacy concept: no additional oxygen-carrying support was required during the efficacy window.
+
+| Cause of anaemia | Oxyglobin success | Control success |
+|---|---:|---:|
+| **Blood-loss anaemia** | **90%** | **45%** |
+| **Haemolytic anaemia** | **100%** | **9%** |
+| **Anaemia from ineffective erythropoiesis** | **100%** | **50%** |
+
+**How to read “100%”:** all evaluable Oxyglobin-treated dogs in that cause-of-anaemia stratum met the 24-hour treatment-success endpoint. It is **not** a 100% survival or cure claim.
+
+[Open the detailed EMA / EU treatment-success evidence](Vet-EMA-approvals-summary.html#efficacy-data)
+
 ### Prospective randomized Oxyglobin vs packed-RBC comparison
 
 **Zambelli AB, Leisewitz AL. 2009.** *A prospective, randomized comparison of Oxyglobin (HB-200) and packed red blood cell transfusion for canine babesiosis.* Journal of Veterinary Emergency and Critical Care. **PMID 19691591. DOI 10.1111/j.1476-4431.2009.00386.x.**
@@ -41,6 +55,7 @@ This is a distinct British Journal of Anaesthesia full paper and should be retai
 - [Search publications](Vet-search.html) - species, author, institution, journal, year and topic.
 - [Full citation catalogue](publication-catalogue.html) - base bibliography titles, authors, journals, PubMed records, DOI links and affiliations.
 - [FDA / EMA regulatory evidence](Vet-fda-ema.html) - Oxyglobin regulatory history and primary documents.
+- [Detailed EMA / EU treatment-success evidence](Vet-EMA-approvals-summary.html#efficacy-data) - cause-stratified Oxyglobin results, including the 100% haemolytic-anaemia and ineffective-erythropoiesis strata.
 - [Veterinary Evidence Hub](Vet-index.html) - overview of the veterinary evidence library.
 - [VET Applications](vet-stage/) - developing species and clinical-needs layer.
 
