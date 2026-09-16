@@ -1,5 +1,7 @@
 # EMA Approval - Oxyglobin (EU/2/99/015)
 
+[← Back to Oxyglobin / HBOC-301 evidence overview](Vet-03-publication-BHOC-Oxyglobin.html#cause-specific-efficacy)
+
 ## Field-Trial Treatment Success
 
 These percentages are **treatment-success rates**, not the frequency or severity of the cause of anaemia. Success meant **no need for additional oxygen-carrying support during the 24-hour efficacy window**; it was not a survival endpoint.
@@ -17,9 +19,11 @@ These percentages are **treatment-success rates**, not the frequency or severity
 | **Haemolytic anaemia** | **100%** | **9%** |
 | **Anaemia from ineffective erythropoiesis** | **100%** | **50%** |
 
-**Interpretation:** “100%” means all evaluable Oxyglobin-treated dogs in that cause-of-anaemia stratum met the 24-hour treatment-success endpoint. It does **not** mean “100% ineffective erythropoiesis” or “100% haemolysis.”
+**Interpretation:** “100%” means all evaluable Oxyglobin-treated dogs in that cause-of-anaemia stratum met the 24-hour treatment-success endpoint. It does **not** mean “100% ineffective erythropoiesis” or “100% haemolysis,” and it is not a 100% survival or cure claim.
 
 Sources: [EMA Oxyglobin EPAR / Scientific Discussion](https://www.ema.europa.eu/en/medicines/veterinary/EPAR/oxyglobin) · [FDA FOI field-trial endpoint and denominators](https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700)
+
+[Open the consolidated Oxyglobin / HBOC-301 evidence page](Vet-03-publication-BHOC-Oxyglobin.html#cause-specific-efficacy)
 
 ---
 
@@ -97,9 +101,6 @@ Oxyglobin provides oxygen-carrying support to dogs and improves clinical signs o
 
 ---
 
-
----
-
 ## Safety & Contraindications
 
 | Parameter | Detail |
@@ -127,8 +128,10 @@ EMA Oxyglobin regulatory record and European Commission primary documents for Ox
 
 [Open the Oxyglobin EU regulatory chronology](Vet-fda-ema.html#eu-primary-documents)
 
-Related: [Veterinary Evidence Hub](Vet-index.html) · [FDA Oxyglobin detail](Vet-FDA-registry.html) · [Oxyglobin & Veterinary HBOC catalogue](publication-catalogue.html)
+Related: [Oxyglobin / HBOC-301 evidence overview](Vet-03-publication-BHOC-Oxyglobin.html) · [Veterinary Evidence Hub](Vet-index.html) · [FDA Oxyglobin detail](Vet-FDA-registry.html) · [Oxyglobin & Veterinary HBOC catalogue](publication-catalogue.html)
+
+[↑ Back to top](#ema-approval---oxyglobin-eu299015)
 
 ---
 
-*Last updated: 3 September 2026*
+*Last updated: 16 September 2026*
