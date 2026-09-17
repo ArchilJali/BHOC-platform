@@ -72,3 +72,5 @@ jobs:
           retention-days: 90
           if-no-files-found: error
           compression-level: 0
+
+# Manual verified backup trigger: 2026-09-17
