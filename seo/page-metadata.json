@@ -13,7 +13,7 @@
     "keywords": "Real-World Evidence, Oxygen Delivery Evidence, donor blood, blood transfusion, tissue oxygenation, hypoxia, ischemia, microcirculation, oxygen delivery, HBOC, BHOC, hemoglobin-based oxygen carrier",
     "url": "https://archiljali.github.io/BHOC-platform/real-world-evidence/",
     "type": "website",
-    "lastmod": "2026-09-17",
+    "lastmod": "2026-09-18",
     "breadcrumbs": [
       ["Home", "/"],
       ["Real-World Evidence", "/real-world-evidence/"]
@@ -236,6 +236,7 @@
     "keywords": "BHOC applications, HBOC applications, Precision Oxygen Therapeutics, prehospital EMS, emergency blood transfusion, postpartum hemorrhage, PPH, donor blood, patient blood management, PBM, oxygen delivery, tissue oxygenation",
     "url": "https://archiljali.github.io/BHOC-platform/clinical/",
     "type": "website",
+    "lastmod": "2026-09-18",
     "breadcrumbs": [["Home", "/"], ["Applications", "/clinical/"]]
   },
   "clinical/prehospital-ems.html": {
@@ -244,7 +245,7 @@
     "keywords": "prehospital EMS, emergency blood transfusion, prehospital blood transfusion, EMS blood, severe hemorrhage, hemorrhagic shock, donor blood, blood availability, oxygen delivery, tissue oxygenation, BHOC, HBOC",
     "url": "https://archiljali.github.io/BHOC-platform/clinical/prehospital-ems.html",
     "type": "article",
-    "lastmod": "2026-09-17",
+    "lastmod": "2026-09-18",
     "breadcrumbs": [["Home", "/"], ["Applications", "/clinical/"], ["Prehospital EMS", "/clinical/prehospital-ems.html"]]
   },
   "clinical/pph-humanitarian-problem.html": {
