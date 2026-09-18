@@ -132,7 +132,6 @@ EMA Oxyglobin regulatory record and European Commission primary documents for Ox
 
 Related: [Oxyglobin / HBOC-301 evidence overview](Vet-03-publication-BHOC-Oxyglobin.html) · [Veterinary Evidence Hub](Vet-index.html) · [FDA Oxyglobin detail](Vet-FDA-registry.html) · [Oxyglobin & Veterinary HBOC catalogue](publication-catalogue.html)
 
-[↑ Back to top](#ema-approval---oxyglobin-eu299015)
 
 ---
 
