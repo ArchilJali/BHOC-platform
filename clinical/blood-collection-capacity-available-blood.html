@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO metadata: managed by scripts/apply_seo_metadata.cjs -->
+  <title>Blood Collection Capacity vs Blood Availability | BHOC</title>
+  <meta name="description" content="NHSBT data from BBTS 2026 show why more blood collection capacity does not automatically produce more successful donations or available blood.">
+  <meta name="keywords" content="blood collection capacity, blood availability, blood supply resilience, donor recruitment, donor retention, NHSBT, BBTS 2026, whole blood donation, blood donation conversion, donor blood, transfusion logistics, BHOC">
+  <meta name="author" content="Archil Jaliashvili">
+  <link rel="author" href="https://bhoctherapeutics.com/archil-jaliashvili/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="yandex" content="noindex">
+  <link rel="canonical" href="https://archiljali.github.io/BHOC-platform/clinical/blood-collection-capacity-available-blood.html">
+  <link rel="icon" href="https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055" type="image/png">
+  <link rel="sitemap" href="../sitemap.xml" type="application/xml">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="BHOC Therapeutics Platform">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Blood Collection Capacity Does Not Equal Available Blood">
+  <meta property="og:description" content="NHSBT data from BBTS 2026 show a measurable gap between available whole-blood collection capacity and successful donations.">
+  <meta property="og:url" content="https://archiljali.github.io/BHOC-platform/clinical/blood-collection-capacity-available-blood.html">
+  <meta property="og:image" content="https://bhoctherapeutics.com/assets/bhoc-social-preview-20260905-initiative-logo.png?v=20260913">
+  <meta property="og:image:secure_url" content="https://bhoctherapeutics.com/assets/bhoc-social-preview-20260905-initiative-logo.png?v=20260913">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="BHOC Therapeutics - One Oxygen. One Biology. One BHOC System.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blood Collection Capacity Does Not Equal Available Blood">
+  <meta name="twitter:description" content="NHSBT data from BBTS 2026 show a measurable gap between available whole-blood collection capacity and successful donations.">
+  <meta name="twitter:image" content="https://bhoctherapeutics.com/assets/bhoc-social-preview-20260905-initiative-logo.png?v=20260913">
+  <meta property="article:author" content="https://bhoctherapeutics.com/archil-jaliashvili/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Blood Collection Capacity Does Not Equal Available Blood","description":"Evidence analysis of NHSBT whole blood collection data presented at BBTS 2026, focusing on the gap between collection capacity and successful donations.","url":"https://archiljali.github.io/BHOC-platform/clinical/blood-collection-capacity-available-blood.html","datePublished":"2026-09-18","dateModified":"2026-09-18","author":{"@type":"Person","name":"Archil Jaliashvili","url":"https://bhoctherapeutics.com/archil-jaliashvili/"},"publisher":{"@type":"Organization","name":"BHOC Evidence Platform"},"about":["blood collection capacity","blood availability","donor recruitment","donor retention","blood supply resilience","NHS Blood and Transplant"]}</script>
+  <link rel="stylesheet" href="../assets/evidence.css">
+  <link rel="stylesheet" href="../assets/platform-shell.css">
+  <link rel="stylesheet" href="/BHOC-platform/assets/intelligence-2026.css">
+  <style>
+    body{--navy:#102f49;--teal:#087a76;background:#f2f6f7}
+    .reading-page{max-width:980px;margin:0 auto}
+    .hero{background:#fff;border:1px solid var(--line);border-radius:18px;padding:32px 34px;margin:18px 0;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;inset:0 0 auto;height:6px;background:linear-gradient(90deg,#087a76,#102f49)}
+    .kicker{display:inline-flex;padding:6px 10px;border-radius:999px;background:#e9f4f1;color:#087a76;border:1px solid #cce2dc;font-size:9px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .hero h1{font-size:clamp(36px,5vw,58px);line-height:1.02;letter-spacing:-2px;margin:16px 0 12px;max-width:900px}
+    .hero .lead{font-size:17px;line-height:1.65;color:var(--muted);max-width:850px}
+    .byline{font-size:10px;color:#718087;margin-top:14px}
+    .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:20px 0}
+    .stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}
+    .stat strong{display:block;font-size:30px;line-height:1;color:#102f49}
+    .stat span{display:block;font-size:11px;line-height:1.4;color:var(--muted);margin-top:8px}
+    .stat.primary{background:#102f49;border-color:#102f49}.stat.primary strong,.stat.primary span{color:#fff}
+    .section{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px;margin:16px 0}
+    .section h2{font-size:27px;line-height:1.15;letter-spacing:-.6px;margin:5px 0 12px}
+    .section p,.section li{font-size:13px;line-height:1.75;color:var(--muted)}
+    .definition{padding:16px 18px;background:#eef5f4;border-left:4px solid #087a76;border-radius:8px;margin:16px 0;font-size:13px;line-height:1.65}
+    .flow{padding:18px;background:#f7fafb;border:1px solid var(--line);border-radius:10px;font-size:12px;font-weight:750;line-height:1.65;color:#102f49;margin:18px 0}
+    .question{background:#102f49;color:#fff;border-radius:12px;padding:22px;margin:18px 0}
+    .question strong{display:block;font-size:20px;margin-bottom:8px}.question p{color:#dce8ec;margin:0}
+    .source{font-size:11px!important;line-height:1.65!important}
+    .source a{font-weight:700}
+    .navback{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+    .navback a{font-size:10.5px;font-weight:750;text-decoration:none;padding:7px 10px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink)}
+    @media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}.hero,.section{padding:22px}.hero h1{letter-spacing:-1px}}
+    @media(max-width:480px){.stats{grid-template-columns:1fr}}
+  </style>
+  <script type="application/ld+json" data-seo-breadcrumbs>
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://archiljali.github.io/BHOC-platform/"},
+    {"@type":"ListItem","position":2,"name":"Applications","item":"https://archiljali.github.io/BHOC-platform/clinical/"},
+    {"@type":"ListItem","position":3,"name":"Prehospital EMS","item":"https://archiljali.github.io/BHOC-platform/clinical/prehospital-ems.html"},
+    {"@type":"ListItem","position":4,"name":"Blood collection capacity","item":"https://archiljali.github.io/BHOC-platform/clinical/blood-collection-capacity-available-blood.html"}
+  ]}</script>
+  <script src="/BHOC-platform/assets/navigation.js" defer></script>
+</head>
+<body class="theme-main">
+<header class="site-header"><nav class="site-nav" aria-label="Main navigation"><a class="brand" href="/BHOC-platform/index.html"><strong class="brand-word">BH<b class="brand-o">O</b>C</strong><span class="brand-sub">Therapeutics Platform</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="bhoc-nav"><span>Menu</span><b aria-hidden="true">☰</b></button><div class="nav-links" id="bhoc-nav"><a href="/BHOC-platform/veterinary/Vet-index.html">Veterinary</a><a href="/BHOC-platform/transplant/Transplant-index.html">Transplantation</a><a href="/BHOC-platform/human/BHOC-Human-index.html">Human Use</a><a href="/BHOC-platform/clinical/" aria-current="page">Applications</a><a href="/BHOC-platform/concepts-hypotheses/">Concepts & Hypotheses</a><a href="/BHOC-platform/social-media/linkedin/">LinkedIn Publications</a><a href="/BHOC-platform/science/">Science</a><a href="/BHOC-platform/historical-sources/">History</a><div class="nav-network" role="group" aria-label="BHOC websites"><a class="nav-network-link" href="https://bhoctherapeutics.com/">BHOC Therapeutics</a><a class="nav-network-link" href="https://bhocvet.com/"><strong class="vet-wordmark">BH<b class="vet-o">O</b>C</strong> Veterinary</a></div></div></nav></header>
+
+<main class="shell reading-page">
+  <nav class="navback" aria-label="Article navigation"><a href="./">Applications Overview</a><a href="prehospital-ems.html">Prehospital / EMS</a><a href="../real-world-evidence/">Real-World Evidence</a></nav>
+
+  <article>
+    <header class="hero">
+      <span class="kicker">Evidence analysis · BBTS 2026 · NHSBT</span>
+      <h1>Blood Collection Capacity Does Not Equal Available Blood</h1>
+      <p class="lead">A blood system can expand collection capacity and still produce fewer successful donations. Four years of NHS Blood and Transplant data show where potential supply is lost before it becomes blood available for patients.</p>
+      <p class="byline">Evidence interpretation and commentary: Archil Jaliashvili · 18 September 2026</p>
+    </header>
+
+    <section class="stats" aria-label="Key NHSBT findings">
+      <div class="stat primary"><strong>+7.6%</strong><span>whole-blood collection capacity, 2022/23 to 2025/26</span></div>
+      <div class="stat"><strong>-3.4%</strong><span>successful donations over the same period</span></div>
+      <div class="stat"><strong>74.7%</strong><span>appointment capacity filled in 2025/26</span></div>
+      <div class="stat"><strong>57.8% vs 78.4%</strong><span>booking-to-successful-donation conversion, first-time vs repeat donors</span></div>
+    </section>
+
+    <section class="section">
+      <div class="eyebrow">01 / What capacity means</div>
+      <h2>First, define the bottleneck correctly.</h2>
+      <div class="definition"><strong>Blood collection capacity</strong> in this analysis means the available NHSBT whole-blood collection slots. It is not hospital capacity and it is not the total capacity of the blood system.</div>
+      <p>The distinction matters. A collection slot is potential supply. It becomes useful blood only if the pathway continues successfully through booking, attendance, donor eligibility, collection, testing, processing, inventory and distribution.</p>
+    </section>
+
+    <section class="section">
+      <div class="eyebrow">02 / What NHSBT found</div>
+      <h2>More available collection slots did not produce more successful donations.</h2>
+      <p>Rahimi and colleagues analysed national NHSBT whole-blood collection activity from April 2022 to March 2026. Total collection capacity increased from <strong>1,897,775</strong> to <strong>2,042,265</strong> slots, an increase of <strong>7.6%</strong>.</p>
+      <p>At the same time, successful donations decreased from <strong>1,457,455</strong> in 2022/23 to <strong>1,407,546</strong> in 2025/26, a decline of approximately <strong>3.4%</strong>.</p>
+      <p>The 2025/26 appointment fill rate was <strong>74.7%</strong>. Non-attendance remained between <strong>9.1% and 10.4%</strong>. Deferral rates moved from <strong>13.4%</strong> in 2022/23 to <strong>16.8%</strong> in 2024/25, then improved to <strong>14.4%</strong> in 2025/26.</p>
+    </section>
+
+    <section class="section">
+      <div class="eyebrow">03 / First-time donor conversion</div>
+      <h2>Recruiting a donor is not the same as obtaining a successful donation.</h2>
+      <p>First-time donors increased as a share of bookings, but their booking-to-successful-donation conversion averaged only <strong>57.8%</strong>, compared with <strong>78.4%</strong> for repeat donors.</p>
+      <p>The abstract reports higher losses among first-time donors through both non-attendance and post-attendance losses, including deferrals and failed venepunctures.</p>
+      <div class="flow">Potential donors → booking → attendance → eligibility → successful donation → testing and processing → inventory → distribution → patient</div>
+      <p>Each step has a role. Each step can also become a bottleneck.</p>
+    </section>
+
+    <section class="section">
+      <div class="eyebrow">04 / The system-level lesson</div>
+      <h2>Building the system is essential. It still does not remove every constraint.</h2>
+      <p>This is why blood supply resilience cannot be measured only by the number of donors, donor centres or available collection slots. The operational task of a blood system is to convert potential donors and collection capacity into safe blood that is actually available when and where patients need it.</p>
+      <p>The NHSBT analysis is useful because it shows the gap inside a national collection system using real operational data. Expanding infrastructure remains important, but infrastructure alone does not guarantee functional blood availability.</p>
+      <div class="question">
+        <strong>The next question</strong>
+        <p>How should health systems strengthen donor blood supply while also developing complementary options for time windows and locations where donor blood is unavailable, delayed or difficult to deploy?</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="eyebrow">05 / Relevance to BHOC research</div>
+      <h2>Complement the blood system, not dismiss it.</h2>
+      <p>Donor blood remains essential. The relevance to BHOC is the resilience question: whether a validated oxygen-delivery bridge could complement donor blood in specific settings where access, timing or logistics create a gap.</p>
+      <p>This page does not claim that BHOC can replace donor blood or solve donor-system attrition. It identifies a documented systems problem that can inform future research, product design and implementation studies.</p>
+    </section>
+
+    <section class="section">
+      <div class="eyebrow">Source / Reference</div>
+      <h2>Primary source</h2>
+      <p class="source"><strong>Rahimi N, Vendramin C, Fletcher A, Chia L.</strong> <em>Challenges in Donor Recruitment and Donor Retention in NHSBT Whole Blood Collection: A Four-Year Analysis.</em> Abstract P020. XLIII Annual Scientific Meeting of the British Blood Transfusion Society, SEC Glasgow, United Kingdom, 15-17 September 2026. Published in <em>Transfusion Medicine</em>, Volume 36, Issue S1. First published 11 September 2026.</p>
+      <p class="source"><strong>Official BBTS 2026 abstract collection DOI:</strong> <a href="https://doi.org/10.1111/tme.70109" target="_blank" rel="noopener noreferrer">10.1111/tme.70109</a></p>
+      <p class="source"><strong>Wiley Online Library:</strong> <a href="https://onlinelibrary.wiley.com/doi/10.1111/tme.70109" target="_blank" rel="noopener noreferrer">Open official abstract collection ↗</a></p>
+      <p class="byline"><em>Evidence interpretation and commentary: Archil Jaliashvili</em></p>
+    </section>
+
+    <p class="notice">Scientific and educational evidence analysis. The source describes blood collection operations and donor pathway attrition. BHOC relevance is presented as a research and system-resilience question, not as a clinical efficacy claim.</p>
+  </article>
+</main>
+
+<footer class="site-footer"><span>BHOC · Biological Hemoglobin Oxygen Carrier<br>Blood Supply Resilience Evidence</span><span><a href="/BHOC-platform/clinical/prehospital-ems.html">Prehospital EMS</a> · <a href="/BHOC-platform/real-world-evidence/">Real-World Evidence</a> · <a href="/BHOC-platform/index.html">Home</a></span><p class="platform-version" data-platform-version>First published 18 Sep 2026 · Version 26.09.18</p></footer>
+</body>
+</html>
