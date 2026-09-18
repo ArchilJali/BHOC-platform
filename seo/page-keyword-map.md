@@ -51,6 +51,7 @@ Use naturally where relevant, not as a repeated block:
 | `/social-media/linkedin/hemoglobin-beta-cys93-nitric-oxide-tissue-oxygenation.html` | tissue oxygenation, hemoglobin and HBOC | tissue oxygenation; hemoglobin physiology; HBOC; BHOC; oxygen delivery; microcirculation; source-linked scientific discussion |
 | `/clinical/` | BHOC Applications evidence | prehospital EMS; PPH; emergency blood transfusion; donor blood; PBM; oxygen delivery; tissue oxygenation |
 | `/clinical/prehospital-ems.html` | prehospital EMS and emergency blood transfusion | EMS blood; severe hemorrhage; hemorrhagic shock; donor blood; blood availability; tissue oxygenation; BHOC; HBOC |
+| `/clinical/blood-collection-capacity-available-blood.html` | blood collection capacity and functional blood availability | blood collection capacity; blood availability; donor recruitment; donor retention; donation conversion; NHSBT; blood supply resilience |
 | `/clinical/pph-humanitarian-problem.html` | PPH, postpartum hemorrhage, donor blood and PBM | postpartum haemorrhage; blood; donor blood; patient blood management; PBM; maternal emergency; transfusion; tissue oxygenation; BHOC; HBOC |
 
 ## Veterinary growth architecture
