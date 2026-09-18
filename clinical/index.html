@@ -103,6 +103,18 @@
   </style>
   <link rel="stylesheet" href="/BHOC-platform/assets/platform-shell.css">
   <link rel="stylesheet" href="/BHOC-platform/assets/intelligence-2026.css">
+  <style>
+    body.theme-main{--muted:#3f5563}
+    .applications-evidence-feature{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(250px,.6fr);gap:18px;align-items:center;margin:16px 0 24px;padding:22px 24px;background:#fff;border:2px solid #0b7c78;border-radius:14px;text-decoration:none;color:var(--ink);box-shadow:0 8px 22px rgba(16,47,73,.07)}
+    .applications-evidence-feature:hover{background:#f8fbfb}
+    .applications-evidence-feature small{display:block;color:#087a76;font-size:9px;font-weight:850;letter-spacing:.09em;text-transform:uppercase}
+    .applications-evidence-feature strong{display:block;margin-top:6px;font-size:22px;line-height:1.2;color:#102f49}
+    .applications-evidence-feature p{margin:7px 0 0;color:#3f5563!important;font-size:12.5px;line-height:1.6}
+    .applications-evidence-feature .evidence-numbers{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .applications-evidence-feature .evidence-numbers span{display:block;padding:12px;border-radius:9px;background:#f2f8f7;border:1px solid #d7e7e4;color:#3f5563;font-size:10px;line-height:1.35}
+    .applications-evidence-feature .evidence-numbers b{display:block;color:#102f49;font-size:22px;line-height:1;margin-bottom:5px}
+    @media(max-width:760px){.applications-evidence-feature{grid-template-columns:1fr}.applications-evidence-feature .evidence-numbers{max-width:440px}}
+  </style>
   <script src="/BHOC-platform/assets/navigation.js" defer></script>
   <script type="application/ld+json" data-seo-breadcrumbs>
 {
@@ -208,6 +220,18 @@
         </a>
       </div>
     </section>
+
+    <a class="applications-evidence-feature" href="blood-collection-capacity-available-blood.html" aria-label="Open Blood Collection Capacity Does Not Equal Available Blood evidence analysis">
+      <div>
+        <small>New evidence analysis · Blood supply resilience · BBTS 2026</small>
+        <strong>Blood Collection Capacity Does Not Equal Available Blood</strong>
+        <p>NHSBT operational data show why increasing available collection slots does not automatically increase successful donations. A system-level evidence case on donor recruitment, conversion and functional blood availability.</p>
+      </div>
+      <div class="evidence-numbers" aria-label="Key findings">
+        <span><b>+7.6%</b>collection capacity</span>
+        <span><b>-3.4%</b>successful donations</span>
+      </div>
+    </a>
 
     <div class="prototype-note"><strong>Evidence boundary:</strong> catalogue counts describe related evidence records, not disease-specific proof of efficacy. Published clinical directions link to dedicated evidence pages; future directions remain clearly separated until ready.</div>
 
