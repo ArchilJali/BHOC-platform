@@ -7,7 +7,7 @@ const version = JSON.parse(fs.readFileSync(path.join(ROOT, 'version.json'), 'utf
 const SKIP_DIRS = new Set(['.git', 'node_modules']);
 const SHELL_HREF = '/BHOC-platform/assets/platform-shell.css';
 const INTELLIGENCE_HREF = '/BHOC-platform/assets/intelligence-2026.css';
-const NAV_SCRIPT = '/BHOC-platform/assets/navigation.js';
+const NAV_SCRIPT = '/BHOC-platform/assets/navigation.js?v=20260918-1';
 const AUTHOR_PROFILE = 'https://bhoctherapeutics.com/archil-jaliashvili/';
 const LINKEDIN_PROFILE = 'https://www.linkedin.com/in/archil-jaliashvili-bhoc/';
 const BRAND_MARK = 'https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
@@ -65,7 +65,11 @@ function ensurePlatformAssets(src) {
   let next = src;
   if (!/href=["'][^"']*assets\/platform-shell\.css["']/i.test(next)) next = next.replace(/<\/head>/i, `  <link rel="stylesheet" href="${SHELL_HREF}">\n</head>`);
   if (!/href=["'][^"']*assets\/intelligence-2026\.css["']/i.test(next)) next = next.replace(/<\/head>/i, `  <link rel="stylesheet" href="${INTELLIGENCE_HREF}">\n</head>`);
-  if (!/src=["'][^"']*assets\/navigation\.js["']/i.test(next)) next = next.replace(/<\/head>/i, `  <script src="${NAV_SCRIPT}" defer></script>\n</head>`);
+  if (/src=["'][^"']*assets\/navigation\.js(?:\?[^"']*)?["']/i.test(next)) {
+    next = next.replace(/<script\b(?=[^>]*\bsrc=["'][^"']*assets\/navigation\.js(?:\?[^"']*)?["'])[^>]*><\/script>/gi, `<script src="${NAV_SCRIPT}" defer></script>`);
+  } else {
+    next = next.replace(/<\/head>/i, `  <script src="${NAV_SCRIPT}" defer></script>\n</head>`);
+  }
   if (!next.includes(`rel="author" href="${AUTHOR_PROFILE}"`)) next = next.replace(/<\/head>/i, `  <link rel="author" href="${AUTHOR_PROFILE}">\n</head>`);
   return next;
 }
