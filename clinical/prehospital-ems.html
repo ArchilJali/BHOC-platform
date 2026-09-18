@@ -80,6 +80,29 @@
   </style>
   <link rel="stylesheet" href="/BHOC-platform/assets/platform-shell.css">
   <link rel="stylesheet" href="/BHOC-platform/assets/intelligence-2026.css">
+  <style>
+    /* Page-level readability override. Keep body copy clearly legible after shared intelligence styles load. */
+    body.theme-main{--muted:#3d5260}
+    body.theme-main .impact-hero>p,
+    body.theme-main .section:not(.gap-panel) p,
+    body.theme-main .section:not(.gap-panel) li,
+    body.theme-main .system-benchmark p,
+    body.theme-main .source-card span,
+    body.theme-main .evidence-note{color:#3d5260!important}
+    body.theme-main .impact-stat small{color:#425865}
+    body.theme-main .evidence-note a{color:#075f70!important;font-weight:800}
+    .evidence-feature{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(280px,.55fr);gap:22px;align-items:center;background:#fff;border:2px solid #0b7c78;border-radius:16px;padding:26px 28px;margin:18px 0;box-shadow:0 10px 26px rgba(16,47,73,.08)}
+    .evidence-feature .eyebrow{color:#087a76}
+    .evidence-feature h2{font-size:30px;line-height:1.12;letter-spacing:-.8px;margin:7px 0 10px;color:#102f49}
+    .evidence-feature p{font-size:13.5px;line-height:1.7;color:#314a58!important;margin:0}
+    .evidence-feature .feature-link{display:inline-flex;margin-top:15px;padding:10px 14px;border-radius:8px;background:#102f49;color:#fff!important;text-decoration:none;font-size:12px;font-weight:800}
+    .evidence-feature .feature-link:hover{background:#087a76}
+    .evidence-feature-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .evidence-feature-stat{background:#f4f9f8;border:1px solid #cfe3df;border-radius:10px;padding:15px}
+    .evidence-feature-stat strong{display:block;font-size:27px;line-height:1;color:#102f49}
+    .evidence-feature-stat span{display:block;margin-top:7px;font-size:10.5px;line-height:1.4;color:#405562}
+    @media(max-width:760px){.evidence-feature{grid-template-columns:1fr;padding:22px}.evidence-feature h2{font-size:25px}}
+  </style>
   <script src="/BHOC-platform/assets/navigation.js" defer></script>
   <script type="application/ld+json" data-seo-breadcrumbs>
 {
@@ -113,7 +136,7 @@
 
 
   <main class="shell">
-    <nav class="clinical-subnav" aria-label="Application directions"><a href="./">Applications Overview</a><a href="prehospital-ems.html" aria-current="page">Prehospital / EMS</a><a href="pph-humanitarian-problem.html">PPH</a></nav>
+    <nav class="clinical-subnav" aria-label="Application directions"><a href="./">Applications Overview</a><a href="prehospital-ems.html" aria-current="page">Prehospital / EMS</a><a href="blood-collection-capacity-available-blood.html">Blood Supply Resilience</a><a href="pph-humanitarian-problem.html">PPH</a></nav>
     <section class="impact-hero">
       <span class="hero-tag">Prehospital EMS · Emergency Hemorrhage · Blood Transfusion</span>
       <h1>The bleeding starts before the hospital. The key physiological problem is inadequate oxygen delivery. Can we restore it in time?</h1>
@@ -124,6 +147,21 @@
         <div class="impact-stat"><strong>&gt;27/day</strong><span>severe blood-loss deaths</span><small>Simple daily equivalent of the annual PHBTC burden estimate.</small></div>
         <div class="impact-stat green"><strong>400+</strong><span>ground EMS blood programs</span><small>US 9-1-1 ground EMS agencies carrying blood products as of 23 Jun 2026.</small></div>
         <div class="impact-stat"><strong>&lt;3%</strong><span>of eligible agencies</span><small>Despite rapid growth, fewer than 3% of eligible ground EMS agencies carry blood.</small></div>
+      </div>
+    </section>
+
+    <section class="evidence-feature" aria-labelledby="blood-supply-feature-title">
+      <div>
+        <div class="eyebrow">New evidence analysis · BBTS 2026 · NHS Blood and Transplant</div>
+        <h2 id="blood-supply-feature-title">Blood Collection Capacity Does Not Equal Available Blood</h2>
+        <p>NHSBT increased available whole-blood collection capacity by <strong>7.6%</strong> from 2022/23 to 2025/26, while successful donations decreased by <strong>3.4%</strong>. The analysis shows a measurable gap between nominal collection capacity and blood that successfully enters the supply pathway.</p>
+        <a class="feature-link" href="blood-collection-capacity-available-blood.html">Read the full evidence analysis →</a>
+      </div>
+      <div class="evidence-feature-stats" aria-label="BBTS 2026 NHSBT findings">
+        <div class="evidence-feature-stat"><strong>+7.6%</strong><span>available whole-blood collection slots</span></div>
+        <div class="evidence-feature-stat"><strong>-3.4%</strong><span>successful donations</span></div>
+        <div class="evidence-feature-stat"><strong>74.7%</strong><span>appointment capacity filled in 2025/26</span></div>
+        <div class="evidence-feature-stat"><strong>57.8% vs 78.4%</strong><span>first-time vs repeat donor conversion</span></div>
       </div>
     </section>
 
