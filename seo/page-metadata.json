@@ -333,5 +333,15 @@
     "imageHeight": 630,
     "imageType": "image/png",
     "imageAlt": "BHOC research concept: hemoglobin size, nitric oxide and vascular control"
+  },
+  "clinical/blood-collection-capacity-available-blood.html": {
+    "title": "Blood Collection Capacity vs Blood Availability | BHOC",
+    "socialTitle": "Blood Collection Capacity Does Not Equal Available Blood",
+    "description": "NHSBT data from BBTS 2026 show why more blood collection capacity does not automatically produce more successful donations or available blood.",
+    "keywords": "blood collection capacity, blood availability, blood supply resilience, donor recruitment, donor retention, NHSBT, BBTS 2026, whole blood donation, blood donation conversion, donor blood, transfusion logistics, BHOC",
+    "url": "https://archiljali.github.io/BHOC-platform/clinical/blood-collection-capacity-available-blood.html",
+    "type": "article",
+    "lastmod": "2026-09-18",
+    "breadcrumbs": [["Home", "/"], ["Applications", "/clinical/"], ["Prehospital EMS", "/clinical/prehospital-ems.html"], ["Blood collection capacity", "/clinical/blood-collection-capacity-available-blood.html"]]
   }
 }
