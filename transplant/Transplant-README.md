@@ -10,11 +10,11 @@ This section organizes transplantation, organ perfusion and preservation publica
 
 ## Current catalogue
 
-- Liver: 24
-- General organ perfusion and preservation: 13
-- Kidney: 7
+- Liver: 25
+- General organ perfusion and preservation: 17
+- Kidney: 11
 - Heart: 6
 - Limb and composite tissue: 3
-- Total: 53
+- Total: 62
 
 Company corporate websites are not used as outbound evidence links. Records appearing in only one supplied source remain marked for review until their original DOI, PubMed record, regulator record or full text is verified.
