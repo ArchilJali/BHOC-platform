@@ -3,6 +3,21 @@
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('#bhoc-nav');
 
+  const enableReliableBackToTop = () => {
+    document.addEventListener('click', event => {
+      const link = event.target?.closest?.('a[href="#top"], a[data-back-to-top]');
+      if (!link || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+
+      const behavior = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+      window.scrollTo({top: 0, left: 0, behavior});
+
+      if (window.location.hash === '#top') {
+        window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}`);
+      }
+    }, true);
+  };
+
   if (toggle && nav) {
     const close = () => {
       nav.classList.remove('is-open');
@@ -537,6 +552,7 @@
     }, true);
   };
 
+  enableReliableBackToTop();
   addEcosystemNavigation();
   removePublicGitHubLinks();
   normalizePrimaryExplorerCTA();
