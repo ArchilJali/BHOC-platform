@@ -1,857 +1,857 @@
 {
-  "index.html": {
-    "title": "BHOC Therapeutics Platform | Precision Oxygen Therapeutics",
-    "socialTitle": "BHOC Therapeutics Platform",
-    "description": "Explore source-linked evidence on Biological Hemoglobin Oxygen Carriers, oxygen delivery, veterinary medicine, transplantation and human-use research.",
-    "keywords": "BHOC, Biological Hemoglobin Oxygen Carrier, Precision Oxygen Therapeutics, oxygen delivery, hemoglobin oxygen carrier, HBOC, scientific evidence, veterinary medicine, transplantation, human-use research",
-    "url": "https://archiljali.github.io/BHOC-platform/",
-    "type": "website"
-  },
-  "real-world-evidence/index.html": {
-    "title": "Real-World Evidence | Oxygen Delivery Evidence | BHOC",
-    "description": "Explore public real-world evidence on oxygen delivery, donor blood, transfusion comparators, tissue oxygenation, microcirculation and emergency care.",
-    "keywords": "Real-World Evidence, Oxygen Delivery Evidence, donor blood, blood transfusion, tissue oxygenation, hypoxia, ischemia, microcirculation, oxygen delivery, HBOC, BHOC, hemoglobin-based oxygen carrier",
-    "url": "https://archiljali.github.io/BHOC-platform/real-world-evidence/",
-    "type": "website",
-    "lastmod": "2026-09-18",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Real-World Evidence",
-        "/real-world-evidence/"
-      ]
-    ]
-  },
-  "veterinary/Vet-index.html": {
-    "title": "Vet Real-World Evidence & Cases | Oxyglobin & BHOC",
-    "description": "Source-linked veterinary real-world evidence and cases covering Oxyglobin, animal anemia, species evidence, institutions, publications and FDA and EMA records.",
-    "keywords": "veterinary real-world evidence, veterinary cases, veterinary oxygen carrier, Oxyglobin, veterinary transfusion, canine anemia, animal oxygenation, veterinary hemoglobin oxygen carrier, BHOC veterinary evidence, FDA Oxyglobin, EMA Oxyglobin",
-    "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html",
-    "type": "website",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Veterinary evidence",
-        "/veterinary/Vet-index.html"
-      ]
-    ]
-  },
-  "veterinary/Vet-search.html": {
-    "title": "Veterinary Oxygen Carrier Publication Search | BHOC",
-    "description": "Search 236 Oxyglobin and veterinary oxygen-carrier publications by institution, author, species, journal and year, with PubMed and DOI links.",
-    "keywords": "veterinary oxygen carrier publications, Oxyglobin publications, veterinary transfusion research, canine anemia research, animal oxygenation, PubMed, DOI, author institutions",
-    "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html",
-    "type": "website",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Veterinary evidence",
-        "/veterinary/Vet-index.html"
-      ],
-      [
-        "Publication search",
-        "/veterinary/Vet-search.html"
-      ]
-    ]
-  },
-  "veterinary/publication-catalogue.html": {
-    "title": "Oxyglobin & Veterinary HBOC Publication Catalogue | BHOC",
-    "description": "Browse a crawlable catalogue of Oxyglobin and veterinary HBOC literature with authors, journals, institutions, years, PubMed records and DOI links.",
-    "keywords": "Oxyglobin publication catalogue, veterinary HBOC literature, veterinary oxygen carrier bibliography, animal anemia, veterinary transfusion, PubMed, DOI",
-    "url": "https://archiljali.github.io/BHOC-platform/veterinary/publication-catalogue.html",
-    "type": "website",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Veterinary evidence",
-        "/veterinary/Vet-index.html"
-      ],
-      [
-        "Publication catalogue",
-        "/veterinary/publication-catalogue.html"
-      ]
-    ]
-  },
-  "veterinary/publication-methodology.html": {
-    "title": "Veterinary Evidence Methodology | BHOC Oxygen Carriers",
-    "description": "Review the source provenance, institution attribution, species classification and evidence limits used in the BHOC veterinary publication index.",
-    "keywords": "veterinary evidence methodology, BHOC publication methodology, source provenance, author affiliations, species classification, veterinary oxygen carrier evidence",
-    "url": "https://archiljali.github.io/BHOC-platform/veterinary/publication-methodology.html",
-    "type": "article",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Veterinary evidence",
-        "/veterinary/Vet-index.html"
-      ],
-      [
-        "Methodology",
-        "/veterinary/publication-methodology.html"
-      ]
-    ]
-  },
-  "veterinary/Vet-fda-ema.html": {
-    "title": "Oxyglobin FDA & EMA Regulatory Records | BHOC",
-    "description": "Source-linked FDA and EU/EMA records for Oxyglobin (hemoglobin glutamer-200), including 1999, 2001 and 2021 EC documents and HBOC/BHOC context.",
-    "keywords": "Oxyglobin FDA approval, Oxyglobin EMA authorization, Oxyglobin veterinary, Oxyglobin dog, hemoglobin glutamer-200, veterinary HBOC, veterinary oxygen carrier regulation, NADA 141-067, EU/2/99/015, canine anemia, BHOC veterinary evidence, Biological Hemoglobin Oxygen Carrier",
-    "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-fda-ema.html",
-    "type": "website",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Veterinary evidence",
-        "/veterinary/Vet-index.html"
-      ],
-      [
-        "FDA and EMA records",
-        "/veterinary/Vet-fda-ema.html"
-      ]
-    ]
-  },
-  "veterinary/Vet-FDA-registry.html": {
-    "title": "Oxyglobin FDA Approval | NADA 141-067 Veterinary Record",
-    "description": "FDA record for Oxyglobin in anemic dogs: NADA 141-067, the 24-hour treatment-success endpoint, efficacy and ITT results, and the original FOI source.",
-    "keywords": "Oxyglobin FDA approval, NADA 141-067, Oxyglobin dog, canine anemia, Oxyglobin treatment success, 24-hour efficacy endpoint, veterinary HBOC, veterinary oxygen carrier, FDA veterinary record, BHOC veterinary evidence",
-    "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-FDA-registry.html",
-    "type": "article",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Veterinary evidence",
-        "/veterinary/Vet-index.html"
-      ],
-      [
-        "FDA and EMA records",
-        "/veterinary/Vet-fda-ema.html"
-      ],
-      [
-        "FDA record",
-        "/veterinary/Vet-FDA-registry.html"
-      ]
-    ]
-  },
-  "veterinary/Vet-EMA-approvals-summary.html": {
-    "title": "Oxyglobin EMA Approval & EU Regulatory Record | BHOC",
-    "description": "Oxyglobin EU/EMA regulatory evidence in dogs: EU/2/99/015, 2001 EC product information and field-trial treatment-success results by anemia cause.",
-    "keywords": "Oxyglobin EMA approval, Oxyglobin EU authorization, EU/2/99/015, hemoglobin glutamer-200, Oxyglobin dog, canine anemia, Oxyglobin treatment success, blood loss anemia, hemolytic anemia, ineffective erythropoiesis, veterinary HBOC, BHOC veterinary evidence",
-    "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-EMA-approvals-summary.html",
-    "type": "article",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Veterinary evidence",
-        "/veterinary/Vet-index.html"
-      ],
-      [
-        "FDA and EMA records",
-        "/veterinary/Vet-fda-ema.html"
-      ],
-      [
-        "EMA record",
-        "/veterinary/Vet-EMA-approvals-summary.html"
-      ]
-    ]
-  },
-  "veterinary/Vet-03-publication-BHOC-Oxyglobin.html": {
-    "title": "Oxyglobin & Veterinary HBOC Publications | BHOC",
-    "description": "Source-linked Oxyglobin and veterinary HBOC literature with publication search, citation catalogue and regulatory evidence routes.",
-    "keywords": "Oxyglobin publications, veterinary HBOC, BHOC veterinary evidence",
-    "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-03-publication-BHOC-Oxyglobin.html",
-    "type": "website",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Veterinary evidence",
-        "/veterinary/Vet-index.html"
-      ],
-      [
-        "Oxyglobin publications",
-        "/veterinary/Vet-03-publication-BHOC-Oxyglobin.html"
-      ]
-    ]
-  },
-  "veterinary/Vet-README.html": {
-    "title": "Veterinary Oxygen Carrier Evidence Guide | BHOC",
-    "description": "Navigate the BHOC veterinary evidence hub, including Oxyglobin publications, animal anemia, veterinary transfusion, institutions and regulatory records.",
-    "keywords": "veterinary oxygen carrier evidence guide, BHOC veterinary evidence, Oxyglobin research, animal anemia, veterinary transfusion, regulatory records",
-    "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-README.html",
-    "type": "website",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Veterinary evidence",
-        "/veterinary/Vet-index.html"
-      ],
-      [
-        "Evidence guide",
-        "/veterinary/Vet-README.html"
-      ]
-    ]
-  },
-  "veterinary/business/BHOC-Veterinary-Concept.htm": {
-    "title": "BHOC Veterinary Oxygen Carrier Concept | Animal Anemia",
-    "description": "Development concept for biological hemoglobin oxygen carriers in veterinary anemia, emergency medicine, animal blood access and oxygenation.",
-    "keywords": "BHOC veterinary concept, veterinary oxygen carrier, animal anemia, emergency veterinary medicine, veterinary blood access, Precision Oxygen Therapeutics",
-    "url": "https://archiljali.github.io/BHOC-platform/veterinary/business/BHOC-Veterinary-Concept.htm",
-    "type": "article",
-    "lastmod": "2026-09-13",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Veterinary evidence",
-        "/veterinary/Vet-index.html"
-      ],
-      [
-        "Development concept",
-        "/veterinary/business/BHOC-Veterinary-Concept.htm"
-      ]
-    ]
-  },
-  "transplant/Transplant-index.html": {
-    "title": "Transplantation Evidence Hub | BHOC Oxygen Therapeutics",
-    "description": "Explore 53 source-linked publications on BHOC and HBOC oxygen carriers in liver, kidney, heart and limb transplantation, perfusion and organ preservation.",
-    "keywords": "BHOC transplantation, HBOC transplantation, oxygen carriers in transplantation, organ perfusion, machine perfusion, liver transplantation, kidney transplantation, heart transplantation, ischemia reperfusion, HBOC-201",
-    "url": "https://archiljali.github.io/BHOC-platform/transplant/Transplant-index.html",
-    "type": "website",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Transplantation evidence",
-        "/transplant/Transplant-index.html"
-      ]
-    ]
-  },
-  "transplant/Transplant-search.html": {
-    "title": "HBOC & BHOC Transplantation Evidence | Organ Perfusion",
-    "description": "Search 53 source-linked transplantation records on HBOC and BHOC oxygen carriers across organ perfusion, machine perfusion, liver, kidney, heart and related evidence.",
-    "keywords": "HBOC transplantation, BHOC transplantation, HBOC-201, Hemopure, organ perfusion, machine perfusion, oxygen carriers in transplantation, liver transplant, kidney transplant, heart transplant",
-    "url": "https://archiljali.github.io/BHOC-platform/transplant/Transplant-search.html",
-    "type": "website",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Transplantation evidence",
-        "/transplant/Transplant-index.html"
-      ],
-      [
-        "HBOC and BHOC evidence",
-        "/transplant/Transplant-search.html"
-      ]
-    ]
-  },
-  "human/BHOC-Human-index.html": {
-    "title": "Human-Use Oxygen Carrier Evidence | BHOC & HBOC-201",
-    "description": "Explore 184 source-linked human clinical and separately labelled translational records on HBOC-201, Hemopure, severe anemia, trauma and surgery.",
-    "keywords": "BHOC human use, HBOC-201 evidence, Hemopure publications, human oxygen carrier evidence, severe anemia, hemorrhage, trauma resuscitation, surgery, emergency oxygenation, clinical evidence",
-    "url": "https://archiljali.github.io/BHOC-platform/human/BHOC-Human-index.html",
-    "type": "website",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Human-use evidence",
-        "/human/BHOC-Human-index.html"
-      ]
-    ]
-  },
-  "human/BHOC-Human-search.html": {
-    "title": "Human-Use Publication Search | BHOC & HBOC-201",
-    "description": "Search 184 human-use and translational publications by direction, evidence group, institution, author, journal, year and historical product term.",
-    "keywords": "human-use oxygen carrier publications, HBOC-201 publications, Hemopure clinical evidence, severe anemia research, trauma resuscitation, surgery, emergency oxygenation, author institutions",
-    "url": "https://archiljali.github.io/BHOC-platform/human/BHOC-Human-search.html",
-    "type": "website",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Human-use evidence",
-        "/human/BHOC-Human-index.html"
-      ],
-      [
-        "Publication search",
-        "/human/BHOC-Human-search.html"
-      ]
-    ]
-  },
-  "human/BHOC-Human-fda-expanded-access.html": {
-    "title": "FDA Expanded Access IND | HBOC-201 & Hemopure",
-    "description": "Review official FDA and ClinicalTrials.gov records for HBOC-201 and Hemopure expanded access, emergency IND pathways and severe-anemia context.",
-    "keywords": "FDA expanded access, emergency IND, single-patient IND, HBOC-201, Hemopure, NCT01881503, severe anemia, oxygen carrier regulatory evidence",
-    "url": "https://archiljali.github.io/BHOC-platform/human/BHOC-Human-fda-expanded-access.html",
-    "type": "article",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Human-use evidence",
-        "/human/BHOC-Human-index.html"
-      ],
-      [
-        "FDA Expanded Access",
-        "/human/BHOC-Human-fda-expanded-access.html"
-      ]
-    ]
-  },
-  "science/index.html": {
-    "title": "Scientific Evidence Relevant to BHOC and Oxygen Therapeutics",
-    "description": "Explore source-linked evidence on BHOC, HBOCs, hemoglobin oxygen carriers, nitric oxide, microcirculation, tissue oxygenation and Precision Oxygen Therapeutics.",
-    "keywords": "BHOC scientific publications, Biological Hemoglobin Oxygen Carrier, hemoglobin-based oxygen carriers, HBOC vasoconstriction, nitric oxide scavenging, cell-free hemoglobin, hypoxic vasodilation, microcirculation, tissue oxygenation, oxygen delivery research, hemoglobin physiology, translational evidence",
-    "url": "https://archiljali.github.io/BHOC-platform/science/",
-    "type": "website",
-    "lastmod": "2026-09-17",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Scientific evidence",
-        "/science/"
-      ]
-    ]
-  },
-  "science/oxygen-delivery-potency.html": {
-    "title": "Oxygen Delivery Potency of Blood Products | BHOC",
-    "description": "Technical summary of the L-TOF framework for comparing oxygen-delivery potency in fresh blood, stored red blood cells and hemoglobin oxygen carriers.",
-    "keywords": "oxygen delivery potency, L-TOF, stored red blood cells, fresh blood, hemoglobin oxygen carriers, oxygen transport, blood products, BHOC science",
-    "url": "https://archiljali.github.io/BHOC-platform/science/oxygen-delivery-potency.html",
-    "type": "article",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Scientific evidence",
-        "/science/"
-      ],
-      [
-        "Oxygen delivery potency",
-        "/science/oxygen-delivery-potency.html"
-      ]
-    ]
-  },
-  "science/nobel-foundations-oxygen-metabolism-physiology.html": {
-    "title": "Nobel Foundations of Oxygen, Metabolism & Physiology | BHOC",
-    "description": "Trace Nobel-recognized discoveries in circulation, cellular respiration, metabolism, nitric oxide, HIF and hypoxia relevant to Precision Oxygen Therapeutics.",
-    "keywords": "oxygen physiology, oxygen metabolism, oxygen sensing, HIF, hypoxia, cellular respiration, microcirculation, vascular physiology, Precision Oxygenation Therapeutics, BHOC",
-    "url": "https://archiljali.github.io/BHOC-platform/science/nobel-foundations-oxygen-metabolism-physiology.html",
-    "type": "article",
-    "lastmod": "2026-09-17",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Scientific evidence",
-        "/science/"
-      ],
-      [
-        "Nobel foundations",
-        "/science/nobel-foundations-oxygen-metabolism-physiology.html"
-      ]
-    ]
-  },
-  "science/nitric-oxide-scavenging-hboc-vasoconstriction.html": {
-    "title": "Nitric Oxide Scavenging & HBOC Vasoconstriction | BHOC",
-    "description": "Scientific summary of hemoglobin nitric oxide scavenging, HBOC vasoconstriction, hypoxic vasodilation, microcirculation and tissue oxygenation.",
-    "keywords": "nitric oxide scavenging, HBOC vasoconstriction, hemoglobin-based oxygen carriers, cell-free hemoglobin, hemoglobin nitric oxide, hypoxic vasodilation, microcirculation, tissue oxygenation, BHOC, oxygen delivery",
-    "url": "https://archiljali.github.io/BHOC-platform/science/nitric-oxide-scavenging-hboc-vasoconstriction.html",
-    "type": "article",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Scientific evidence",
-        "/science/"
-      ],
-      [
-        "Nitric oxide and HBOC vasoconstriction",
-        "/science/nitric-oxide-scavenging-hboc-vasoconstriction.html"
-      ]
-    ]
-  },
-  "science/sepsis-microcirculation-tissue-oxygenation-bhoc.html": {
-    "title": "Tissue Oxygenation & Microcirculation | BHOC Science",
-    "description": "Scientific context for tissue oxygenation, microcirculation, sepsis and endothelial dysfunction, with relevance to BHOC, HBOC and Precision Oxygenation Therapeutics.",
-    "keywords": "BHOC, HBOC, Biological Hemoglobin Oxygen Carrier, hemoglobin-based oxygen carrier, Precision Oxygenation Therapeutics, oxygen therapeutics, tissue oxygenation, microcirculation, sepsis, septic shock, endothelial dysfunction, nitric oxide, oxygen delivery, HBOC-201, Hemopure, Oxyglobin, Biopure, next generation HBOC",
-    "url": "https://archiljali.github.io/BHOC-platform/science/sepsis-microcirculation-tissue-oxygenation-bhoc.html",
-    "type": "article",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Scientific evidence",
-        "/science/"
-      ],
-      [
-        "Tissue oxygenation and microcirculation",
-        "/science/sepsis-microcirculation-tissue-oxygenation-bhoc.html"
-      ]
-    ]
-  },
-  "historical-sources/index.html": {
-    "title": "BHOC Historical Sources | Biopure, Hemopure & Oxyglobin",
-    "description": "Explore primary documents and source-based history of Biopure, Hemopure, Oxyglobin and the development of hemoglobin oxygen carriers.",
-    "keywords": "HBOC history, Biopure history, Hemopure history, Oxyglobin history, hemoglobin oxygen carrier history, oxygen therapeutics history, primary documents",
-    "url": "https://archiljali.github.io/BHOC-platform/historical-sources/",
-    "type": "website",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Historical sources",
-        "/historical-sources/"
-      ]
-    ]
-  },
-  "historical-sources/biopure-standing-on-the-shoulders-of-giants/index.html": {
-    "title": "Biopure History & Early Oxygen Therapeutics | BHOC",
-    "description": "A source-based history of Biopure, Carl W. Rausch and the people and institutions behind an early hemoglobin oxygen-carrier platform.",
-    "keywords": "Biopure history, Carl W. Rausch, Hemopure history, Oxyglobin history, HBOC history, oxygen therapeutics history, biologics manufacturing",
-    "url": "https://archiljali.github.io/BHOC-platform/historical-sources/biopure-standing-on-the-shoulders-of-giants/",
-    "type": "article",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Historical sources",
-        "/historical-sources/"
-      ],
-      [
-        "Biopure history",
-        "/historical-sources/biopure-standing-on-the-shoulders-of-giants/"
-      ]
-    ]
-  },
-  "historical-sources/biopure-annual-report-2001/index.html": {
-    "title": "Biopure 2001 Annual Report | Hemopure & Oxyglobin History",
-    "description": "Historical review of Biopure's 2001 Annual Report covering Hemopure, Oxyglobin, South African approval, Phase III development, prehospital logistics and manufacturing.",
-    "keywords": "Biopure Annual Report 2001, Biopure, Hemopure, HBOC-201, Oxyglobin, HBOC history, oxygen therapeutics history, prehospital blood logistics, acute anemia, BHOC",
-    "url": "https://archiljali.github.io/BHOC-platform/historical-sources/biopure-annual-report-2001/",
-    "type": "article",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Historical sources",
-        "/historical-sources/"
-      ],
-      [
-        "Biopure Annual Report 2001",
-        "/historical-sources/biopure-annual-report-2001/"
-      ]
-    ]
-  },
-  "historical-sources/biopure-annual-report-2002/index.html": {
-    "title": "Biopure 2002 Annual Report | Hemopure & Trauma History",
-    "description": "Historical review of Biopure's 2002 Annual Report covering Hemopure, HBOC-201, Oxyglobin, FDA BLA review, South African approval, trauma research and oxygen therapeutics.",
-    "keywords": "Biopure Annual Report 2002, Biopure, Hemopure, HBOC-201, Oxyglobin, prehospital trauma, military research, FDA BLA, oxygen therapeutics history, BHOC",
-    "url": "https://archiljali.github.io/BHOC-platform/historical-sources/biopure-annual-report-2002/",
-    "type": "article",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Historical sources",
-        "/historical-sources/"
-      ],
-      [
-        "Biopure Annual Report 2002",
-        "/historical-sources/biopure-annual-report-2002/"
-      ]
-    ]
-  },
-  "social-media/linkedin/index.html": {
-    "title": "BHOC LinkedIn Publications | Oxygen Delivery & Transfusion",
-    "description": "Browse BHOC LinkedIn publications on oxygen delivery, hemoglobin physiology, microcirculation, transfusion, emergency care, transplantation and veterinary medicine.",
-    "keywords": "BHOC LinkedIn publications, Archil Jaliashvili, BHOC, Biological Hemoglobin Oxygen Carrier, hemoglobin physiology, microcirculation, tissue oxygenation, HBOC, oxygen delivery, blood transfusion, emergency medicine, transplantation, veterinary medicine, Precision Oxygenation Therapeutics",
-    "url": "https://archiljali.github.io/BHOC-platform/social-media/linkedin/",
-    "type": "website",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "LinkedIn publications",
-        "/social-media/linkedin/"
-      ]
-    ]
-  },
-  "social-media/linkedin/hemoglobin-beta-cys93-nitric-oxide-tissue-oxygenation.html": {
-    "title": "Tissue Oxygenation, Hemoglobin & HBOC | BHOC",
-    "description": "Source-linked scientific context on tissue oxygenation, hemoglobin physiology, microcirculation and HBOC/BHOC evaluation, based on peer-reviewed evidence and BHOC discussion.",
-    "keywords": "tissue oxygenation, hemoglobin, hemoglobin physiology, HBOC, BHOC, oxygen delivery, microcirculation, hemoglobin oxygen carrier, Biological Hemoglobin Oxygen Carrier",
-    "url": "https://archiljali.github.io/BHOC-platform/social-media/linkedin/hemoglobin-beta-cys93-nitric-oxide-tissue-oxygenation.html",
-    "type": "article",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "LinkedIn publications",
-        "/social-media/linkedin/"
-      ],
-      [
-        "Tissue oxygenation and HBOC",
-        "/social-media/linkedin/hemoglobin-beta-cys93-nitric-oxide-tissue-oxygenation.html"
-      ]
-    ]
-  },
-  "clinical/index.html": {
-    "title": "BHOC Applications | EMS, PPH & Oxygen Therapeutics",
-    "description": "Explore BHOC and HBOC applications across prehospital EMS, emergency blood transfusion, postpartum hemorrhage, donor blood, PBM and tissue oxygenation.",
-    "keywords": "BHOC applications, HBOC applications, Precision Oxygen Therapeutics, prehospital EMS, emergency blood transfusion, postpartum hemorrhage, PPH, donor blood, patient blood management, PBM, oxygen delivery, tissue oxygenation",
-    "url": "https://archiljali.github.io/BHOC-platform/clinical/",
-    "type": "website",
-    "lastmod": "2026-09-18",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Applications",
-        "/clinical/"
-      ]
-    ]
-  },
-  "clinical/prehospital-ems.html": {
-    "title": "Prehospital EMS & Emergency Transfusion | BHOC",
-    "description": "Review prehospital EMS and emergency transfusion evidence on severe hemorrhage, donor-blood access, tissue oxygenation and BHOC Precision Oxygen Therapeutics.",
-    "keywords": "prehospital EMS, emergency blood transfusion, prehospital blood transfusion, EMS blood, severe hemorrhage, hemorrhagic shock, donor blood, blood availability, oxygen delivery, tissue oxygenation, BHOC, HBOC",
-    "url": "https://archiljali.github.io/BHOC-platform/clinical/prehospital-ems.html",
-    "type": "article",
-    "lastmod": "2026-09-18",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Applications",
-        "/clinical/"
-      ],
-      [
-        "Prehospital EMS",
-        "/clinical/prehospital-ems.html"
-      ]
-    ]
-  },
-  "clinical/pph-humanitarian-problem.html": {
-    "title": "Postpartum Hemorrhage (PPH), Donor Blood & PBM | BHOC",
-    "description": "Review humanitarian evidence on postpartum hemorrhage, maternal emergency care, donor-blood access, patient blood management and tissue oxygen delivery.",
-    "keywords": "postpartum hemorrhage, postpartum haemorrhage, PPH, blood, donor blood, patient blood management, PBM, maternal hemorrhage, maternal emergency, transfusion, blood transfusion, tissue oxygenation, BHOC, HBOC",
-    "url": "https://archiljali.github.io/BHOC-platform/clinical/pph-humanitarian-problem.html",
-    "type": "article",
-    "lastmod": "2026-09-17",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Applications",
-        "/clinical/"
-      ],
-      [
-        "PPH",
-        "/clinical/pph-humanitarian-problem.html"
-      ]
-    ]
-  },
-  "concepts-hypotheses/index.html": {
-    "title": "Concepts & Hypotheses | BHOC Research & Pre-Publication",
-    "description": "Source-linked BHOC research concepts on oxygen delivery, tissue response, prehospital care, PPH, compatibility, nitric oxide and vascular control.",
-    "keywords": "BHOC Concepts and Hypotheses, research concept, scientific hypothesis, oxygen exposure, oxygen transport, oxygen delivery, tissue response, tissue oxygenation, hyperoxia, HIPI, nitric oxide, vascular control, prehospital EMS, postpartum hemorrhage, BHOC, HBOC, Biological Hemoglobin Oxygen Carrier, Precision Oxygen Therapeutics, pre-publication",
-    "url": "https://archiljali.github.io/BHOC-platform/concepts-hypotheses/",
-    "type": "website",
-    "lastmod": "2026-09-18"
-  },
-  "concepts-hypotheses/prehospital-oxygen-delivery-selection.html": {
-    "title": "Prehospital Oxygen-Delivery Patient Selection | BHOC",
-    "description": "BHOC research concept on prehospital patient selection beyond blood pressure and arrest, including tissue ischemia, oxygen-delivery failure and EMS protocol development.",
-    "keywords": "prehospital oxygen delivery, tissue ischemia, tissue oxygenation, EMS protocol, prehospital blood transfusion, hemorrhagic shock, trauma, oxygen deficit, organ oxygenation, BHOC, HBOC, Biological Hemoglobin Oxygen Carrier, Precision Oxygen Therapeutics, research concept, scientific hypothesis, pre-publication",
-    "url": "https://archiljali.github.io/BHOC-platform/concepts-hypotheses/prehospital-oxygen-delivery-selection.html",
-    "type": "article"
-  },
-  "concepts-hypotheses/oxygen-delivery-potency-vs-hemoglobin.html": {
-    "title": "Oxygen-Delivery Potency vs Hemoglobin | BHOC",
-    "description": "Research concept on functional oxygen-delivery potency beyond hemoglobin concentration, using L-TOF and complementary P50, Hill and Bohr-effect parameters.",
-    "keywords": "oxygen delivery potency, hemoglobin concentration, L-TOF, P50, Hill coefficient, Bohr effect, oxygen release capacity, oxygen transport, tissue oxygenation, BHOC, HBOC, Precision Oxygen Therapeutics, research hypothesis",
-    "url": "https://archiljali.github.io/BHOC-platform/concepts-hypotheses/oxygen-delivery-potency-vs-hemoglobin.html",
-    "type": "article",
-    "lastmod": "2026-09-17",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Concepts & Hypotheses",
-        "/concepts-hypotheses/"
-      ],
-      [
-        "Oxygen-delivery potency",
-        "/concepts-hypotheses/oxygen-delivery-potency-vs-hemoglobin.html"
-      ]
-    ]
-  },
-  "concepts-hypotheses/pph-oxygen-delivery-window.html": {
-    "title": "PPH Oxygen-Delivery Treatment Window | BHOC",
-    "description": "BHOC research concept defining a measurable oxygen-delivery risk window during postpartum hemorrhage, hemorrhage control and definitive transfusion care.",
-    "keywords": "postpartum hemorrhage, postpartum haemorrhage, PPH, oxygen delivery, maternal hemorrhage, donor blood, blood transfusion, patient blood management, tissue oxygenation, BHOC, HBOC, Biological Hemoglobin Oxygen Carrier, research hypothesis",
-    "url": "https://archiljali.github.io/BHOC-platform/concepts-hypotheses/pph-oxygen-delivery-window.html",
-    "type": "article",
-    "lastmod": "2026-09-17",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Concepts & Hypotheses",
-        "/concepts-hypotheses/"
-      ],
-      [
-        "PPH oxygen-delivery window",
-        "/concepts-hypotheses/pph-oxygen-delivery-window.html"
-      ]
-    ]
-  },
-  "science/prehospital-blood-transfusion-oxygen-delivery.html": {
-    "title": "Prehospital Blood Transfusion & Oxygen Delivery | BHOC",
-    "description": "PHBTC 2026 analysis of shock-based prehospital transfusion decisions, oxygen delivery and treatment timing in hemorrhagic shock, beyond Hb/Hct thresholds.",
-    "keywords": "prehospital blood transfusion, hemorrhagic shock, oxygen delivery, EMS blood transfusion, Shock Index, hemoglobin, hematocrit, prehospital resuscitation, BHOC, HBOC, Precision Oxygen Therapeutics",
-    "url": "https://archiljali.github.io/BHOC-platform/science/prehospital-blood-transfusion-oxygen-delivery.html",
-    "type": "article",
-    "lastmod": "2026-09-17",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Scientific evidence",
-        "/science/"
-      ],
-      [
-        "Prehospital blood transfusion and oxygen delivery",
-        "/science/prehospital-blood-transfusion-oxygen-delivery.html"
-      ]
-    ]
-  },
-  "science/aabb-rbc-transfusion-thresholds-oxygen-delivery.html": {
-    "title": "AABB 2025: RBC Transfusion Thresholds & Oxygen Delivery | BHOC",
-    "description": "AABB 2025 evidence on RBC transfusion thresholds, acute myocardial infarction, blood-product availability and oxygen-delivery relevance to BHOC and HBOC.",
-    "keywords": "AABB 2025, RBC transfusion threshold, red blood cell transfusion, hemoglobin threshold, acute myocardial infarction transfusion, oxygen delivery, patient blood management, blood availability, BHOC, HBOC, Biological Hemoglobin Oxygen Carrier, Hemoglobin-Based Oxygen Carrier, Precision Oxygen Therapeutics, Precision Oxygenation Therapeutics",
-    "url": "https://archiljali.github.io/BHOC-platform/science/aabb-rbc-transfusion-thresholds-oxygen-delivery.html",
-    "type": "article",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Science",
-        "/science/"
-      ],
-      [
-        "AABB RBC transfusion thresholds",
-        "/science/aabb-rbc-transfusion-thresholds-oxygen-delivery.html"
-      ]
-    ]
-  },
-  "real-world-evidence/blood-groups-history/index.html": {
-    "title": "Blood Groups History | ABO to 49 ISBT Systems | BHOC",
-    "description": "A source-linked timeline of human blood-group discovery, from Karl Landsteiner and ABO to 49 ISBT systems, modern red-cell antigens and transfusion compatibility.",
-    "keywords": "blood groups history, ABO blood group, Karl Landsteiner, Rh blood group, blood group systems, ISBT blood groups, red cell antigens, MNS, Kell, Duffy, Kidd, Diego, JAMA blood group, PIGZ blood group, transfusion compatibility",
-    "url": "https://archiljali.github.io/BHOC-platform/real-world-evidence/blood-groups-history/",
-    "type": "article",
-    "lastmod": "2026-09-12",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Real-World Evidence",
-        "/real-world-evidence/"
-      ],
-      [
-        "Blood Groups History",
-        "/real-world-evidence/blood-groups-history/"
-      ]
-    ]
-  },
-  "transplant/HOPE-NMP-Liver-Transplantation-2026.html": {
-    "title": "Machine Perfusion & Transplantation | BHOC Evidence 2026",
-    "description": "September 2026 evidence update across liver, kidney and lung transplantation, covering HOPE versus static cold storage, kidney machine perfusion and thoracoabdominal regional perfusion.",
-    "keywords": "transplantation, machine perfusion, HOPE, hypothermic oxygenated perfusion, kidney machine perfusion, thoracoabdominal regional perfusion, organ preservation, ischemia reperfusion, oxygen delivery, BHOC, HBOC",
-    "url": "https://archiljali.github.io/BHOC-platform/transplant/HOPE-NMP-Liver-Transplantation-2026.html",
-    "type": "article",
-    "lastmod": "2026-09-19",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Transplantation evidence",
-        "/transplant/Transplant-index.html"
-      ],
-      [
-        "Scientific evidence relevant to BHOC",
-        "/transplant/Transplant-relevant-evidence.html"
-      ],
-      [
-        "September 2026 perfusion evidence brief",
-        "/transplant/HOPE-NMP-Liver-Transplantation-2026.html"
-      ]
-    ]
-  },
-  "concepts-hypotheses/size-compartmentalization-vascular-control.html": {
-    "title": "HBOC Vasoconstriction and Vascular Control | BHOC",
-    "description": "BHOC research hypothesis linking hemoglobin molecular scale, red-cell compartmentalization, nitric oxide scavenging, HBOC vasoconstriction and controlled vascular interaction.",
-    "keywords": "hemoglobin molecular size, red blood cell compartmentalization, nitric oxide scavenging, NO scavenging, HBOC vasoconstriction, vascular control, microcirculation, tissue oxygenation, BHOC, HBOC, Biological Hemoglobin Oxygen Carrier, Precision Oxygen Therapeutics, research hypothesis",
-    "url": "https://archiljali.github.io/BHOC-platform/concepts-hypotheses/size-compartmentalization-vascular-control.html",
-    "type": "article",
-    "lastmod": "2026-09-13",
-    "image": "https://archiljali.github.io/BHOC-platform/assets/bhoc-evidence-social.png",
-    "imageWidth": 1200,
-    "imageHeight": 630,
-    "imageType": "image/png",
-    "imageAlt": "BHOC research concept: hemoglobin size, nitric oxide and vascular control"
-  },
-  "clinical/blood-collection-capacity-available-blood.html": {
-    "title": "Blood Collection Capacity vs Blood Availability | BHOC",
-    "socialTitle": "Blood Collection Capacity Does Not Equal Available Blood",
-    "description": "NHSBT data from BBTS 2026 show why more blood collection capacity does not automatically produce more successful donations or available blood.",
-    "keywords": "blood collection capacity, blood availability, blood supply resilience, donor recruitment, donor retention, NHSBT, BBTS 2026, whole blood donation, blood donation conversion, donor blood, transfusion logistics, BHOC",
-    "url": "https://archiljali.github.io/BHOC-platform/clinical/blood-collection-capacity-available-blood.html",
-    "type": "article",
-    "lastmod": "2026-09-18",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Applications",
-        "/clinical/"
-      ],
-      [
-        "Prehospital EMS",
-        "/clinical/prehospital-ems.html"
-      ],
-      [
-        "Blood collection capacity",
-        "/clinical/blood-collection-capacity-available-blood.html"
-      ]
-    ]
-  },
-  "concepts-hypotheses/oxygen-exposure-transport-delivery-tissue-response.html": {
-    "title": "Oxygen Exposure, Delivery & Tissue Response | BHOC",
-    "description": "Research concept separating oxygen exposure, transport and delivery from downstream tissue response, using Rogers, Chu and HIPI as distinct evidence layers.",
-    "keywords": "oxygen exposure, oxygen transport, oxygen delivery, tissue response, hyperoxia, HIPI, endpoint selection, oxygen delivery potency, P50, Hill coefficient, Bohr effect, tissue oxygenation, BHOC, HBOC, Precision Oxygen Therapeutics, scientific question",
-    "url": "https://archiljali.github.io/BHOC-platform/concepts-hypotheses/oxygen-exposure-transport-delivery-tissue-response.html",
-    "type": "article",
-    "lastmod": "2026-09-18",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Concepts & Hypotheses",
-        "/concepts-hypotheses/"
-      ],
-      [
-        "Oxygen exposure, delivery & tissue response",
-        "/concepts-hypotheses/oxygen-exposure-transport-delivery-tissue-response.html"
-      ]
-    ]
-  },
-  "transplant/Transplant-relevant-evidence.html": {
-    "title": "Scientific Evidence Relevant to BHOC & Transplant Oxygen Delivery",
-    "description": "External transplant evidence relevant to BHOC oxygen-delivery research across preservation, machine perfusion, regional perfusion and ischemia-reperfusion.",
-    "keywords": "BHOC transplant evidence, oxygen delivery transplantation, machine perfusion, HOPE, NMP, HMP, normothermic regional perfusion, organ preservation, ischemia reperfusion, liver transplantation, kidney transplantation, lung transplantation",
-    "url": "https://archiljali.github.io/BHOC-platform/transplant/Transplant-relevant-evidence.html",
-    "type": "website",
-    "lastmod": "2026-09-19",
-    "breadcrumbs": [
-      [
-        "Home",
-        "/"
-      ],
-      [
-        "Transplantation evidence",
-        "/transplant/Transplant-index.html"
-      ],
-      [
-        "Scientific evidence relevant to BHOC",
-        "/transplant/Transplant-relevant-evidence.html"
-      ]
-    ]
-  }
+    "index.html": {
+        "title": "BHOC Therapeutics Platform | Precision Oxygen Therapeutics",
+        "socialTitle": "BHOC Therapeutics Platform",
+        "description": "Explore source-linked evidence on Biological Hemoglobin Oxygen Carriers, oxygen delivery, veterinary medicine, transplantation and human-use research.",
+        "keywords": "BHOC, Biological Hemoglobin Oxygen Carrier, Precision Oxygen Therapeutics, oxygen delivery, hemoglobin oxygen carrier, HBOC, scientific evidence, veterinary medicine, transplantation, human-use research",
+        "url": "https://archiljali.github.io/BHOC-platform/",
+        "type": "website"
+    },
+    "real-world-evidence/index.html": {
+        "title": "Real-World Evidence | Oxygen Delivery Evidence | BHOC",
+        "description": "Explore public real-world evidence on oxygen delivery, donor blood, transfusion comparators, tissue oxygenation, microcirculation and emergency care.",
+        "keywords": "Real-World Evidence, Oxygen Delivery Evidence, donor blood, blood transfusion, tissue oxygenation, hypoxia, ischemia, microcirculation, oxygen delivery, HBOC, BHOC, hemoglobin-based oxygen carrier",
+        "url": "https://archiljali.github.io/BHOC-platform/real-world-evidence/",
+        "type": "website",
+        "lastmod": "2026-09-18",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Real-World Evidence",
+                "/real-world-evidence/"
+            ]
+        ]
+    },
+    "veterinary/Vet-index.html": {
+        "title": "Vet Real-World Evidence & Cases | Oxyglobin & BHOC",
+        "description": "Source-linked veterinary real-world evidence and cases covering Oxyglobin, animal anemia, species evidence, institutions, publications and FDA and EMA records.",
+        "keywords": "veterinary real-world evidence, veterinary cases, veterinary oxygen carrier, Oxyglobin, veterinary transfusion, canine anemia, animal oxygenation, veterinary hemoglobin oxygen carrier, BHOC veterinary evidence, FDA Oxyglobin, EMA Oxyglobin",
+        "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html",
+        "type": "website",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Veterinary evidence",
+                "/veterinary/Vet-index.html"
+            ]
+        ]
+    },
+    "veterinary/Vet-search.html": {
+        "title": "Veterinary Oxygen Carrier Publication Search | BHOC",
+        "description": "Search 236 Oxyglobin and veterinary oxygen-carrier publications by institution, author, species, journal and year, with PubMed and DOI links.",
+        "keywords": "veterinary oxygen carrier publications, Oxyglobin publications, veterinary transfusion research, canine anemia research, animal oxygenation, PubMed, DOI, author institutions",
+        "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html",
+        "type": "website",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Veterinary evidence",
+                "/veterinary/Vet-index.html"
+            ],
+            [
+                "Publication search",
+                "/veterinary/Vet-search.html"
+            ]
+        ]
+    },
+    "veterinary/publication-catalogue.html": {
+        "title": "Oxyglobin & Veterinary HBOC Publication Catalogue | BHOC",
+        "description": "Browse a crawlable catalogue of Oxyglobin and veterinary HBOC literature with authors, journals, institutions, years, PubMed records and DOI links.",
+        "keywords": "Oxyglobin publication catalogue, veterinary HBOC literature, veterinary oxygen carrier bibliography, animal anemia, veterinary transfusion, PubMed, DOI",
+        "url": "https://archiljali.github.io/BHOC-platform/veterinary/publication-catalogue.html",
+        "type": "website",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Veterinary evidence",
+                "/veterinary/Vet-index.html"
+            ],
+            [
+                "Publication catalogue",
+                "/veterinary/publication-catalogue.html"
+            ]
+        ]
+    },
+    "veterinary/publication-methodology.html": {
+        "title": "Veterinary Evidence Methodology | BHOC Oxygen Carriers",
+        "description": "Review the source provenance, institution attribution, species classification and evidence limits used in the BHOC veterinary publication index.",
+        "keywords": "veterinary evidence methodology, BHOC publication methodology, source provenance, author affiliations, species classification, veterinary oxygen carrier evidence",
+        "url": "https://archiljali.github.io/BHOC-platform/veterinary/publication-methodology.html",
+        "type": "article",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Veterinary evidence",
+                "/veterinary/Vet-index.html"
+            ],
+            [
+                "Methodology",
+                "/veterinary/publication-methodology.html"
+            ]
+        ]
+    },
+    "veterinary/Vet-fda-ema.html": {
+        "title": "Oxyglobin FDA & EMA Regulatory Records | BHOC",
+        "description": "Source-linked FDA and EU/EMA records for Oxyglobin (hemoglobin glutamer-200), including 1999, 2001 and 2021 EC documents and HBOC/BHOC context.",
+        "keywords": "Oxyglobin FDA approval, Oxyglobin EMA authorization, Oxyglobin veterinary, Oxyglobin dog, hemoglobin glutamer-200, veterinary HBOC, veterinary oxygen carrier regulation, NADA 141-067, EU/2/99/015, canine anemia, BHOC veterinary evidence, Biological Hemoglobin Oxygen Carrier",
+        "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-fda-ema.html",
+        "type": "website",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Veterinary evidence",
+                "/veterinary/Vet-index.html"
+            ],
+            [
+                "FDA and EMA records",
+                "/veterinary/Vet-fda-ema.html"
+            ]
+        ]
+    },
+    "veterinary/Vet-FDA-registry.html": {
+        "title": "Oxyglobin FDA Approval | NADA 141-067 Veterinary Record",
+        "description": "FDA record for Oxyglobin in anemic dogs: NADA 141-067, the 24-hour treatment-success endpoint, efficacy and ITT results, and the original FOI source.",
+        "keywords": "Oxyglobin FDA approval, NADA 141-067, Oxyglobin dog, canine anemia, Oxyglobin treatment success, 24-hour efficacy endpoint, veterinary HBOC, veterinary oxygen carrier, FDA veterinary record, BHOC veterinary evidence",
+        "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-FDA-registry.html",
+        "type": "article",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Veterinary evidence",
+                "/veterinary/Vet-index.html"
+            ],
+            [
+                "FDA and EMA records",
+                "/veterinary/Vet-fda-ema.html"
+            ],
+            [
+                "FDA record",
+                "/veterinary/Vet-FDA-registry.html"
+            ]
+        ]
+    },
+    "veterinary/Vet-EMA-approvals-summary.html": {
+        "title": "Oxyglobin EMA Approval & EU Regulatory Record | BHOC",
+        "description": "Oxyglobin EU/EMA regulatory evidence in dogs: EU/2/99/015, 2001 EC product information and field-trial treatment-success results by anemia cause.",
+        "keywords": "Oxyglobin EMA approval, Oxyglobin EU authorization, EU/2/99/015, hemoglobin glutamer-200, Oxyglobin dog, canine anemia, Oxyglobin treatment success, blood loss anemia, hemolytic anemia, ineffective erythropoiesis, veterinary HBOC, BHOC veterinary evidence",
+        "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-EMA-approvals-summary.html",
+        "type": "article",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Veterinary evidence",
+                "/veterinary/Vet-index.html"
+            ],
+            [
+                "FDA and EMA records",
+                "/veterinary/Vet-fda-ema.html"
+            ],
+            [
+                "EMA record",
+                "/veterinary/Vet-EMA-approvals-summary.html"
+            ]
+        ]
+    },
+    "veterinary/Vet-03-publication-BHOC-Oxyglobin.html": {
+        "title": "Oxyglobin & Veterinary HBOC Publications | BHOC",
+        "description": "Source-linked Oxyglobin and veterinary HBOC literature with publication search, citation catalogue and regulatory evidence routes.",
+        "keywords": "Oxyglobin publications, veterinary HBOC, BHOC veterinary evidence",
+        "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-03-publication-BHOC-Oxyglobin.html",
+        "type": "website",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Veterinary evidence",
+                "/veterinary/Vet-index.html"
+            ],
+            [
+                "Oxyglobin publications",
+                "/veterinary/Vet-03-publication-BHOC-Oxyglobin.html"
+            ]
+        ]
+    },
+    "veterinary/Vet-README.html": {
+        "title": "Veterinary Oxygen Carrier Evidence Guide | BHOC",
+        "description": "Navigate the BHOC veterinary evidence hub, including Oxyglobin publications, animal anemia, veterinary transfusion, institutions and regulatory records.",
+        "keywords": "veterinary oxygen carrier evidence guide, BHOC veterinary evidence, Oxyglobin research, animal anemia, veterinary transfusion, regulatory records",
+        "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-README.html",
+        "type": "website",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Veterinary evidence",
+                "/veterinary/Vet-index.html"
+            ],
+            [
+                "Evidence guide",
+                "/veterinary/Vet-README.html"
+            ]
+        ]
+    },
+    "veterinary/business/BHOC-Veterinary-Concept.htm": {
+        "title": "BHOC Veterinary Oxygen Carrier Concept | Animal Anemia",
+        "description": "Development concept for biological hemoglobin oxygen carriers in veterinary anemia, emergency medicine, animal blood access and oxygenation.",
+        "keywords": "BHOC veterinary concept, veterinary oxygen carrier, animal anemia, emergency veterinary medicine, veterinary blood access, Precision Oxygen Therapeutics",
+        "url": "https://archiljali.github.io/BHOC-platform/veterinary/business/BHOC-Veterinary-Concept.htm",
+        "type": "article",
+        "lastmod": "2026-09-13",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Veterinary evidence",
+                "/veterinary/Vet-index.html"
+            ],
+            [
+                "Development concept",
+                "/veterinary/business/BHOC-Veterinary-Concept.htm"
+            ]
+        ]
+    },
+    "transplant/Transplant-index.html": {
+        "title": "Transplantation Evidence Hub | BHOC Oxygen Therapeutics",
+        "description": "Explore 53 source-linked publications on BHOC and HBOC oxygen carriers in liver, kidney, heart and limb transplantation, perfusion and organ preservation.",
+        "keywords": "BHOC transplantation, HBOC transplantation, oxygen carriers in transplantation, organ perfusion, machine perfusion, liver transplantation, kidney transplantation, heart transplantation, ischemia reperfusion, HBOC-201",
+        "url": "https://archiljali.github.io/BHOC-platform/transplant/Transplant-index.html",
+        "type": "website",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Transplantation evidence",
+                "/transplant/Transplant-index.html"
+            ]
+        ]
+    },
+    "transplant/Transplant-search.html": {
+        "title": "HBOC & BHOC Transplantation Evidence | Organ Perfusion",
+        "description": "Search 53 source-linked transplantation records on HBOC and BHOC oxygen carriers across organ perfusion, machine perfusion, liver, kidney, heart and related evidence.",
+        "keywords": "HBOC transplantation, BHOC transplantation, HBOC-201, Hemopure, organ perfusion, machine perfusion, oxygen carriers in transplantation, liver transplant, kidney transplant, heart transplant",
+        "url": "https://archiljali.github.io/BHOC-platform/transplant/Transplant-search.html",
+        "type": "website",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Transplantation evidence",
+                "/transplant/Transplant-index.html"
+            ],
+            [
+                "HBOC and BHOC evidence",
+                "/transplant/Transplant-search.html"
+            ]
+        ]
+    },
+    "human/BHOC-Human-index.html": {
+        "title": "Human-Use Oxygen Carrier Evidence | BHOC & HBOC-201",
+        "description": "Explore 184 source-linked human clinical and separately labelled translational records on HBOC-201, Hemopure, severe anemia, trauma and surgery.",
+        "keywords": "BHOC human use, HBOC-201 evidence, Hemopure publications, human oxygen carrier evidence, severe anemia, hemorrhage, trauma resuscitation, surgery, emergency oxygenation, clinical evidence",
+        "url": "https://archiljali.github.io/BHOC-platform/human/BHOC-Human-index.html",
+        "type": "website",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Human-use evidence",
+                "/human/BHOC-Human-index.html"
+            ]
+        ]
+    },
+    "human/BHOC-Human-search.html": {
+        "title": "Human-Use Publication Search | BHOC & HBOC-201",
+        "description": "Search 184 human-use and translational publications by direction, evidence group, institution, author, journal, year and historical product term.",
+        "keywords": "human-use oxygen carrier publications, HBOC-201 publications, Hemopure clinical evidence, severe anemia research, trauma resuscitation, surgery, emergency oxygenation, author institutions",
+        "url": "https://archiljali.github.io/BHOC-platform/human/BHOC-Human-search.html",
+        "type": "website",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Human-use evidence",
+                "/human/BHOC-Human-index.html"
+            ],
+            [
+                "Publication search",
+                "/human/BHOC-Human-search.html"
+            ]
+        ]
+    },
+    "human/BHOC-Human-fda-expanded-access.html": {
+        "title": "FDA Expanded Access IND | HBOC-201 & Hemopure",
+        "description": "Review official FDA and ClinicalTrials.gov records for HBOC-201 and Hemopure expanded access, emergency IND pathways and severe-anemia context.",
+        "keywords": "FDA expanded access, emergency IND, single-patient IND, HBOC-201, Hemopure, NCT01881503, severe anemia, oxygen carrier regulatory evidence",
+        "url": "https://archiljali.github.io/BHOC-platform/human/BHOC-Human-fda-expanded-access.html",
+        "type": "article",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Human-use evidence",
+                "/human/BHOC-Human-index.html"
+            ],
+            [
+                "FDA Expanded Access",
+                "/human/BHOC-Human-fda-expanded-access.html"
+            ]
+        ]
+    },
+    "science/index.html": {
+        "title": "Scientific Evidence Relevant to BHOC and Oxygen Therapeutics",
+        "description": "Explore source-linked evidence on BHOC, HBOCs, hemoglobin oxygen carriers, nitric oxide, microcirculation, tissue oxygenation and Precision Oxygen Therapeutics.",
+        "keywords": "BHOC scientific publications, Biological Hemoglobin Oxygen Carrier, hemoglobin-based oxygen carriers, HBOC vasoconstriction, nitric oxide scavenging, cell-free hemoglobin, hypoxic vasodilation, microcirculation, tissue oxygenation, oxygen delivery research, hemoglobin physiology, translational evidence",
+        "url": "https://archiljali.github.io/BHOC-platform/science/",
+        "type": "website",
+        "lastmod": "2026-09-17",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Scientific evidence",
+                "/science/"
+            ]
+        ]
+    },
+    "science/oxygen-delivery-potency.html": {
+        "title": "Oxygen Delivery Potency of Blood Products | BHOC",
+        "description": "Technical summary of the L-TOF framework for comparing oxygen-delivery potency in fresh blood, stored red blood cells and hemoglobin oxygen carriers.",
+        "keywords": "oxygen delivery potency, L-TOF, stored red blood cells, fresh blood, hemoglobin oxygen carriers, oxygen transport, blood products, BHOC science",
+        "url": "https://archiljali.github.io/BHOC-platform/science/oxygen-delivery-potency.html",
+        "type": "article",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Scientific evidence",
+                "/science/"
+            ],
+            [
+                "Oxygen delivery potency",
+                "/science/oxygen-delivery-potency.html"
+            ]
+        ]
+    },
+    "science/nobel-foundations-oxygen-metabolism-physiology.html": {
+        "title": "Nobel Foundations of Oxygen, Metabolism & Physiology | BHOC",
+        "description": "Trace Nobel-recognized discoveries in circulation, cellular respiration, metabolism, nitric oxide, HIF and hypoxia relevant to Precision Oxygen Therapeutics.",
+        "keywords": "oxygen physiology, oxygen metabolism, oxygen sensing, HIF, hypoxia, cellular respiration, microcirculation, vascular physiology, Precision Oxygenation Therapeutics, BHOC",
+        "url": "https://archiljali.github.io/BHOC-platform/science/nobel-foundations-oxygen-metabolism-physiology.html",
+        "type": "article",
+        "lastmod": "2026-09-17",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Scientific evidence",
+                "/science/"
+            ],
+            [
+                "Nobel foundations",
+                "/science/nobel-foundations-oxygen-metabolism-physiology.html"
+            ]
+        ]
+    },
+    "science/nitric-oxide-scavenging-hboc-vasoconstriction.html": {
+        "title": "Nitric Oxide Scavenging & HBOC Vasoconstriction | BHOC",
+        "description": "Scientific summary of hemoglobin nitric oxide scavenging, HBOC vasoconstriction, hypoxic vasodilation, microcirculation and tissue oxygenation.",
+        "keywords": "nitric oxide scavenging, HBOC vasoconstriction, hemoglobin-based oxygen carriers, cell-free hemoglobin, hemoglobin nitric oxide, hypoxic vasodilation, microcirculation, tissue oxygenation, BHOC, oxygen delivery",
+        "url": "https://archiljali.github.io/BHOC-platform/science/nitric-oxide-scavenging-hboc-vasoconstriction.html",
+        "type": "article",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Scientific evidence",
+                "/science/"
+            ],
+            [
+                "Nitric oxide and HBOC vasoconstriction",
+                "/science/nitric-oxide-scavenging-hboc-vasoconstriction.html"
+            ]
+        ]
+    },
+    "science/sepsis-microcirculation-tissue-oxygenation-bhoc.html": {
+        "title": "Tissue Oxygenation & Microcirculation | BHOC Science",
+        "description": "Scientific context for tissue oxygenation, microcirculation, sepsis and endothelial dysfunction, with relevance to BHOC, HBOC and Precision Oxygenation Therapeutics.",
+        "keywords": "BHOC, HBOC, Biological Hemoglobin Oxygen Carrier, hemoglobin-based oxygen carrier, Precision Oxygenation Therapeutics, oxygen therapeutics, tissue oxygenation, microcirculation, sepsis, septic shock, endothelial dysfunction, nitric oxide, oxygen delivery, HBOC-201, Hemopure, Oxyglobin, Biopure, next generation HBOC",
+        "url": "https://archiljali.github.io/BHOC-platform/science/sepsis-microcirculation-tissue-oxygenation-bhoc.html",
+        "type": "article",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Scientific evidence",
+                "/science/"
+            ],
+            [
+                "Tissue oxygenation and microcirculation",
+                "/science/sepsis-microcirculation-tissue-oxygenation-bhoc.html"
+            ]
+        ]
+    },
+    "historical-sources/index.html": {
+        "title": "BHOC Historical Sources | Biopure, Hemopure & Oxyglobin",
+        "description": "Explore primary documents and source-based history of Biopure, Hemopure, Oxyglobin and the development of hemoglobin oxygen carriers.",
+        "keywords": "HBOC history, Biopure history, Hemopure history, Oxyglobin history, hemoglobin oxygen carrier history, oxygen therapeutics history, primary documents",
+        "url": "https://archiljali.github.io/BHOC-platform/historical-sources/",
+        "type": "website",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Historical sources",
+                "/historical-sources/"
+            ]
+        ]
+    },
+    "historical-sources/biopure-standing-on-the-shoulders-of-giants/index.html": {
+        "title": "Biopure History & Early Oxygen Therapeutics | BHOC",
+        "description": "A source-based history of Biopure, Carl W. Rausch and the people and institutions behind an early hemoglobin oxygen-carrier platform.",
+        "keywords": "Biopure history, Carl W. Rausch, Hemopure history, Oxyglobin history, HBOC history, oxygen therapeutics history, biologics manufacturing",
+        "url": "https://archiljali.github.io/BHOC-platform/historical-sources/biopure-standing-on-the-shoulders-of-giants/",
+        "type": "article",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Historical sources",
+                "/historical-sources/"
+            ],
+            [
+                "Biopure history",
+                "/historical-sources/biopure-standing-on-the-shoulders-of-giants/"
+            ]
+        ]
+    },
+    "historical-sources/biopure-annual-report-2001/index.html": {
+        "title": "Biopure 2001 Annual Report | Hemopure & Oxyglobin History",
+        "description": "Historical review of Biopure's 2001 Annual Report covering Hemopure, Oxyglobin, South African approval, Phase III development, prehospital logistics and manufacturing.",
+        "keywords": "Biopure Annual Report 2001, Biopure, Hemopure, HBOC-201, Oxyglobin, HBOC history, oxygen therapeutics history, prehospital blood logistics, acute anemia, BHOC",
+        "url": "https://archiljali.github.io/BHOC-platform/historical-sources/biopure-annual-report-2001/",
+        "type": "article",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Historical sources",
+                "/historical-sources/"
+            ],
+            [
+                "Biopure Annual Report 2001",
+                "/historical-sources/biopure-annual-report-2001/"
+            ]
+        ]
+    },
+    "historical-sources/biopure-annual-report-2002/index.html": {
+        "title": "Biopure 2002 Annual Report | Hemopure & Trauma History",
+        "description": "Historical review of Biopure's 2002 Annual Report covering Hemopure, HBOC-201, Oxyglobin, FDA BLA review, South African approval, trauma research and oxygen therapeutics.",
+        "keywords": "Biopure Annual Report 2002, Biopure, Hemopure, HBOC-201, Oxyglobin, prehospital trauma, military research, FDA BLA, oxygen therapeutics history, BHOC",
+        "url": "https://archiljali.github.io/BHOC-platform/historical-sources/biopure-annual-report-2002/",
+        "type": "article",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Historical sources",
+                "/historical-sources/"
+            ],
+            [
+                "Biopure Annual Report 2002",
+                "/historical-sources/biopure-annual-report-2002/"
+            ]
+        ]
+    },
+    "social-media/linkedin/index.html": {
+        "title": "BHOC LinkedIn Publications | Oxygen Delivery & Transfusion",
+        "description": "Browse BHOC LinkedIn publications on oxygen delivery, hemoglobin physiology, microcirculation, transfusion, emergency care, transplantation and veterinary medicine.",
+        "keywords": "BHOC LinkedIn publications, Archil Jaliashvili, BHOC, Biological Hemoglobin Oxygen Carrier, hemoglobin physiology, microcirculation, tissue oxygenation, HBOC, oxygen delivery, blood transfusion, emergency medicine, transplantation, veterinary medicine, Precision Oxygenation Therapeutics",
+        "url": "https://archiljali.github.io/BHOC-platform/social-media/linkedin/",
+        "type": "website",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "LinkedIn publications",
+                "/social-media/linkedin/"
+            ]
+        ]
+    },
+    "social-media/linkedin/hemoglobin-beta-cys93-nitric-oxide-tissue-oxygenation.html": {
+        "title": "Tissue Oxygenation, Hemoglobin & HBOC | BHOC",
+        "description": "Source-linked scientific context on tissue oxygenation, hemoglobin physiology, microcirculation and HBOC/BHOC evaluation, based on peer-reviewed evidence and BHOC discussion.",
+        "keywords": "tissue oxygenation, hemoglobin, hemoglobin physiology, HBOC, BHOC, oxygen delivery, microcirculation, hemoglobin oxygen carrier, Biological Hemoglobin Oxygen Carrier",
+        "url": "https://archiljali.github.io/BHOC-platform/social-media/linkedin/hemoglobin-beta-cys93-nitric-oxide-tissue-oxygenation.html",
+        "type": "article",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "LinkedIn publications",
+                "/social-media/linkedin/"
+            ],
+            [
+                "Tissue oxygenation and HBOC",
+                "/social-media/linkedin/hemoglobin-beta-cys93-nitric-oxide-tissue-oxygenation.html"
+            ]
+        ]
+    },
+    "clinical/index.html": {
+        "title": "BHOC Applications | EMS, PPH & Oxygen Therapeutics",
+        "description": "Explore BHOC and HBOC applications across prehospital EMS, emergency blood transfusion, postpartum hemorrhage, donor blood, PBM and tissue oxygenation.",
+        "keywords": "BHOC applications, HBOC applications, Precision Oxygen Therapeutics, prehospital EMS, emergency blood transfusion, postpartum hemorrhage, PPH, donor blood, patient blood management, PBM, oxygen delivery, tissue oxygenation",
+        "url": "https://archiljali.github.io/BHOC-platform/clinical/",
+        "type": "website",
+        "lastmod": "2026-09-18",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Applications",
+                "/clinical/"
+            ]
+        ]
+    },
+    "clinical/prehospital-ems.html": {
+        "title": "Prehospital EMS & Emergency Transfusion | BHOC",
+        "description": "Review prehospital EMS and emergency transfusion evidence on severe hemorrhage, donor-blood access, tissue oxygenation and BHOC Precision Oxygen Therapeutics.",
+        "keywords": "prehospital EMS, emergency blood transfusion, prehospital blood transfusion, EMS blood, severe hemorrhage, hemorrhagic shock, donor blood, blood availability, oxygen delivery, tissue oxygenation, BHOC, HBOC",
+        "url": "https://archiljali.github.io/BHOC-platform/clinical/prehospital-ems.html",
+        "type": "article",
+        "lastmod": "2026-09-18",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Applications",
+                "/clinical/"
+            ],
+            [
+                "Prehospital EMS",
+                "/clinical/prehospital-ems.html"
+            ]
+        ]
+    },
+    "clinical/pph-humanitarian-problem.html": {
+        "title": "Postpartum Hemorrhage (PPH), Donor Blood & PBM | BHOC",
+        "description": "Review humanitarian evidence on postpartum hemorrhage, maternal emergency care, donor-blood access, patient blood management and tissue oxygen delivery.",
+        "keywords": "postpartum hemorrhage, postpartum haemorrhage, PPH, blood, donor blood, patient blood management, PBM, maternal hemorrhage, maternal emergency, transfusion, blood transfusion, tissue oxygenation, BHOC, HBOC",
+        "url": "https://archiljali.github.io/BHOC-platform/clinical/pph-humanitarian-problem.html",
+        "type": "article",
+        "lastmod": "2026-09-17",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Applications",
+                "/clinical/"
+            ],
+            [
+                "PPH",
+                "/clinical/pph-humanitarian-problem.html"
+            ]
+        ]
+    },
+    "concepts-hypotheses/index.html": {
+        "title": "Concepts & Hypotheses | BHOC Research & Pre-Publication",
+        "description": "Source-linked BHOC research concepts on oxygen delivery, tissue response, prehospital care, PPH, compatibility, nitric oxide and vascular control.",
+        "keywords": "BHOC Concepts and Hypotheses, research concept, scientific hypothesis, oxygen exposure, oxygen transport, oxygen delivery, tissue response, tissue oxygenation, hyperoxia, HIPI, nitric oxide, vascular control, prehospital EMS, postpartum hemorrhage, BHOC, HBOC, Biological Hemoglobin Oxygen Carrier, Precision Oxygen Therapeutics, pre-publication",
+        "url": "https://archiljali.github.io/BHOC-platform/concepts-hypotheses/",
+        "type": "website",
+        "lastmod": "2026-09-18"
+    },
+    "concepts-hypotheses/prehospital-oxygen-delivery-selection.html": {
+        "title": "Prehospital Oxygen-Delivery Patient Selection | BHOC",
+        "description": "BHOC research concept on prehospital patient selection beyond blood pressure and arrest, including tissue ischemia, oxygen-delivery failure and EMS protocol development.",
+        "keywords": "prehospital oxygen delivery, tissue ischemia, tissue oxygenation, EMS protocol, prehospital blood transfusion, hemorrhagic shock, trauma, oxygen deficit, organ oxygenation, BHOC, HBOC, Biological Hemoglobin Oxygen Carrier, Precision Oxygen Therapeutics, research concept, scientific hypothesis, pre-publication",
+        "url": "https://archiljali.github.io/BHOC-platform/concepts-hypotheses/prehospital-oxygen-delivery-selection.html",
+        "type": "article"
+    },
+    "concepts-hypotheses/oxygen-delivery-potency-vs-hemoglobin.html": {
+        "title": "Oxygen-Delivery Potency vs Hemoglobin | BHOC",
+        "description": "Research concept on functional oxygen-delivery potency beyond hemoglobin concentration, using L-TOF and complementary P50, Hill and Bohr-effect parameters.",
+        "keywords": "oxygen delivery potency, hemoglobin concentration, L-TOF, P50, Hill coefficient, Bohr effect, oxygen release capacity, oxygen transport, tissue oxygenation, BHOC, HBOC, Precision Oxygen Therapeutics, research hypothesis",
+        "url": "https://archiljali.github.io/BHOC-platform/concepts-hypotheses/oxygen-delivery-potency-vs-hemoglobin.html",
+        "type": "article",
+        "lastmod": "2026-09-17",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Concepts & Hypotheses",
+                "/concepts-hypotheses/"
+            ],
+            [
+                "Oxygen-delivery potency",
+                "/concepts-hypotheses/oxygen-delivery-potency-vs-hemoglobin.html"
+            ]
+        ]
+    },
+    "concepts-hypotheses/pph-oxygen-delivery-window.html": {
+        "title": "PPH Oxygen-Delivery Treatment Window | BHOC",
+        "description": "BHOC research concept defining a measurable oxygen-delivery risk window during postpartum hemorrhage, hemorrhage control and definitive transfusion care.",
+        "keywords": "postpartum hemorrhage, postpartum haemorrhage, PPH, oxygen delivery, maternal hemorrhage, donor blood, blood transfusion, patient blood management, tissue oxygenation, BHOC, HBOC, Biological Hemoglobin Oxygen Carrier, research hypothesis",
+        "url": "https://archiljali.github.io/BHOC-platform/concepts-hypotheses/pph-oxygen-delivery-window.html",
+        "type": "article",
+        "lastmod": "2026-09-17",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Concepts & Hypotheses",
+                "/concepts-hypotheses/"
+            ],
+            [
+                "PPH oxygen-delivery window",
+                "/concepts-hypotheses/pph-oxygen-delivery-window.html"
+            ]
+        ]
+    },
+    "science/prehospital-blood-transfusion-oxygen-delivery.html": {
+        "title": "Prehospital Blood Transfusion & Oxygen Delivery | BHOC",
+        "description": "PHBTC 2026 analysis of shock-based prehospital transfusion decisions, oxygen delivery and treatment timing in hemorrhagic shock, beyond Hb/Hct thresholds.",
+        "keywords": "prehospital blood transfusion, hemorrhagic shock, oxygen delivery, EMS blood transfusion, Shock Index, hemoglobin, hematocrit, prehospital resuscitation, BHOC, HBOC, Precision Oxygen Therapeutics",
+        "url": "https://archiljali.github.io/BHOC-platform/science/prehospital-blood-transfusion-oxygen-delivery.html",
+        "type": "article",
+        "lastmod": "2026-09-17",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Scientific evidence",
+                "/science/"
+            ],
+            [
+                "Prehospital blood transfusion and oxygen delivery",
+                "/science/prehospital-blood-transfusion-oxygen-delivery.html"
+            ]
+        ]
+    },
+    "science/aabb-rbc-transfusion-thresholds-oxygen-delivery.html": {
+        "title": "AABB 2025: RBC Transfusion Thresholds & Oxygen Delivery | BHOC",
+        "description": "AABB 2025 evidence on RBC transfusion thresholds, acute myocardial infarction, blood-product availability and oxygen-delivery relevance to BHOC and HBOC.",
+        "keywords": "AABB 2025, RBC transfusion threshold, red blood cell transfusion, hemoglobin threshold, acute myocardial infarction transfusion, oxygen delivery, patient blood management, blood availability, BHOC, HBOC, Biological Hemoglobin Oxygen Carrier, Hemoglobin-Based Oxygen Carrier, Precision Oxygen Therapeutics, Precision Oxygenation Therapeutics",
+        "url": "https://archiljali.github.io/BHOC-platform/science/aabb-rbc-transfusion-thresholds-oxygen-delivery.html",
+        "type": "article",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Science",
+                "/science/"
+            ],
+            [
+                "AABB RBC transfusion thresholds",
+                "/science/aabb-rbc-transfusion-thresholds-oxygen-delivery.html"
+            ]
+        ]
+    },
+    "real-world-evidence/blood-groups-history/index.html": {
+        "title": "Blood Groups History | ABO to 49 ISBT Systems | BHOC",
+        "description": "A source-linked timeline of human blood-group discovery, from Karl Landsteiner and ABO to 49 ISBT systems, modern red-cell antigens and transfusion compatibility.",
+        "keywords": "blood groups history, ABO blood group, Karl Landsteiner, Rh blood group, blood group systems, ISBT blood groups, red cell antigens, MNS, Kell, Duffy, Kidd, Diego, JAMA blood group, PIGZ blood group, transfusion compatibility",
+        "url": "https://archiljali.github.io/BHOC-platform/real-world-evidence/blood-groups-history/",
+        "type": "article",
+        "lastmod": "2026-09-12",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Real-World Evidence",
+                "/real-world-evidence/"
+            ],
+            [
+                "Blood Groups History",
+                "/real-world-evidence/blood-groups-history/"
+            ]
+        ]
+    },
+    "transplant/HOPE-NMP-Liver-Transplantation-2026.html": {
+        "title": "Machine Perfusion & Transplantation | BHOC Evidence 2026",
+        "description": "September 2026 evidence update across liver, kidney and lung transplantation, covering HOPE versus static cold storage, kidney machine perfusion and thoracoabdominal regional perfusion.",
+        "keywords": "transplantation, machine perfusion, HOPE, hypothermic oxygenated perfusion, kidney machine perfusion, thoracoabdominal regional perfusion, organ preservation, ischemia reperfusion, oxygen delivery, BHOC, HBOC",
+        "url": "https://archiljali.github.io/BHOC-platform/transplant/HOPE-NMP-Liver-Transplantation-2026.html",
+        "type": "article",
+        "lastmod": "2026-09-19",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Transplantation evidence",
+                "/transplant/Transplant-index.html"
+            ],
+            [
+                "Scientific evidence relevant to BHOC",
+                "/transplant/Transplant-relevant-evidence.html"
+            ],
+            [
+                "September 2026 perfusion evidence brief",
+                "/transplant/HOPE-NMP-Liver-Transplantation-2026.html"
+            ]
+        ]
+    },
+    "concepts-hypotheses/size-compartmentalization-vascular-control.html": {
+        "title": "HBOC Vasoconstriction and Vascular Control | BHOC",
+        "description": "BHOC research hypothesis linking hemoglobin molecular scale, red-cell compartmentalization, nitric oxide scavenging, HBOC vasoconstriction and controlled vascular interaction.",
+        "keywords": "hemoglobin molecular size, red blood cell compartmentalization, nitric oxide scavenging, NO scavenging, HBOC vasoconstriction, vascular control, microcirculation, tissue oxygenation, BHOC, HBOC, Biological Hemoglobin Oxygen Carrier, Precision Oxygen Therapeutics, research hypothesis",
+        "url": "https://archiljali.github.io/BHOC-platform/concepts-hypotheses/size-compartmentalization-vascular-control.html",
+        "type": "article",
+        "lastmod": "2026-09-13",
+        "image": "https://archiljali.github.io/BHOC-platform/assets/bhoc-evidence-social.png",
+        "imageWidth": 1200,
+        "imageHeight": 630,
+        "imageType": "image/png",
+        "imageAlt": "BHOC research concept: hemoglobin size, nitric oxide and vascular control"
+    },
+    "clinical/blood-collection-capacity-available-blood.html": {
+        "title": "Blood Collection Capacity vs Blood Availability | BHOC",
+        "socialTitle": "Blood Collection Capacity Does Not Equal Available Blood",
+        "description": "NHSBT data from BBTS 2026 show why more blood collection capacity does not automatically produce more successful donations or available blood.",
+        "keywords": "blood collection capacity, blood availability, blood supply resilience, donor recruitment, donor retention, NHSBT, BBTS 2026, whole blood donation, blood donation conversion, donor blood, transfusion logistics, BHOC",
+        "url": "https://archiljali.github.io/BHOC-platform/clinical/blood-collection-capacity-available-blood.html",
+        "type": "article",
+        "lastmod": "2026-09-18",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Applications",
+                "/clinical/"
+            ],
+            [
+                "Prehospital EMS",
+                "/clinical/prehospital-ems.html"
+            ],
+            [
+                "Blood collection capacity",
+                "/clinical/blood-collection-capacity-available-blood.html"
+            ]
+        ]
+    },
+    "concepts-hypotheses/oxygen-exposure-transport-delivery-tissue-response.html": {
+        "title": "Oxygen Exposure, Delivery & Tissue Response | BHOC",
+        "description": "Research concept separating oxygen exposure, transport and delivery from downstream tissue response, using Rogers, Chu and HIPI as distinct evidence layers.",
+        "keywords": "oxygen exposure, oxygen transport, oxygen delivery, tissue response, hyperoxia, HIPI, endpoint selection, oxygen delivery potency, P50, Hill coefficient, Bohr effect, tissue oxygenation, BHOC, HBOC, Precision Oxygen Therapeutics, scientific question",
+        "url": "https://archiljali.github.io/BHOC-platform/concepts-hypotheses/oxygen-exposure-transport-delivery-tissue-response.html",
+        "type": "article",
+        "lastmod": "2026-09-18",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Concepts & Hypotheses",
+                "/concepts-hypotheses/"
+            ],
+            [
+                "Oxygen exposure, delivery & tissue response",
+                "/concepts-hypotheses/oxygen-exposure-transport-delivery-tissue-response.html"
+            ]
+        ]
+    },
+    "transplant/Transplant-relevant-evidence.html": {
+        "title": "Scientific Evidence Relevant to BHOC & Transplant Oxygen Delivery",
+        "description": "External transplant evidence relevant to BHOC oxygen-delivery research across preservation, machine perfusion, regional perfusion and ischemia-reperfusion.",
+        "keywords": "BHOC transplant evidence, oxygen delivery transplantation, machine perfusion, HOPE, NMP, HMP, normothermic regional perfusion, organ preservation, ischemia reperfusion, liver transplantation, kidney transplantation, lung transplantation",
+        "url": "https://archiljali.github.io/BHOC-platform/transplant/Transplant-relevant-evidence.html",
+        "type": "website",
+        "lastmod": "2026-09-19",
+        "breadcrumbs": [
+            [
+                "Home",
+                "/"
+            ],
+            [
+                "Transplantation evidence",
+                "/transplant/Transplant-index.html"
+            ],
+            [
+                "Scientific evidence relevant to BHOC",
+                "/transplant/Transplant-relevant-evidence.html"
+            ]
+        ]
+    }
 }
