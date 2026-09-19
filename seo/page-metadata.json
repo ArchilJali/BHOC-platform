@@ -745,11 +745,30 @@
     ]
   },
   "transplant/HOPE-NMP-Liver-Transplantation-2026.html": {
-    "title": "HOPE and NMP in Liver Transplantation | BHOC Evidence",
-    "description": "Two real-world studies examine hypothermic oxygenated perfusion, normothermic machine perfusion, donor liver assessment and organ viability in transplantation.",
-    "keywords": "liver transplantation, HOPE, NMP, hypothermic oxygenated perfusion, normothermic machine perfusion, donor liver, organ viability, tissue oxygenation, oxygen delivery, BHOC, HBOC",
+    "title": "Machine Perfusion & Transplantation | September 2026 BHOC Evidence",
+    "description": "September 2026 evidence update across liver, kidney and lung transplantation, covering HOPE versus static cold storage, kidney machine perfusion and thoracoabdominal regional perfusion.",
+    "keywords": "transplantation, machine perfusion, HOPE, hypothermic oxygenated perfusion, kidney machine perfusion, thoracoabdominal regional perfusion, organ preservation, ischemia reperfusion, oxygen delivery, BHOC, HBOC",
     "url": "https://archiljali.github.io/BHOC-platform/transplant/HOPE-NMP-Liver-Transplantation-2026.html",
-    "type": "article"
+    "type": "article",
+    "lastmod": "2026-09-19",
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Transplantation evidence",
+        "/transplant/Transplant-index.html"
+      ],
+      [
+        "Scientific evidence relevant to BHOC",
+        "/transplant/Transplant-relevant-evidence.html"
+      ],
+      [
+        "September 2026 perfusion evidence brief",
+        "/transplant/HOPE-NMP-Liver-Transplantation-2026.html"
+      ]
+    ]
   },
   "concepts-hypotheses/size-compartmentalization-vascular-control.html": {
     "title": "HBOC Vasoconstriction and Vascular Control | BHOC",
@@ -810,6 +829,28 @@
       [
         "Oxygen exposure, delivery & tissue response",
         "/concepts-hypotheses/oxygen-exposure-transport-delivery-tissue-response.html"
+      ]
+    ]
+  },
+  "transplant/Transplant-relevant-evidence.html": {
+    "title": "Scientific Evidence Relevant to BHOC & Transplant Oxygen Delivery",
+    "description": "Source-linked external transplantation evidence relevant to BHOC oxygen-delivery research across preservation, machine perfusion, regional perfusion, viability assessment and ischemia-reperfusion.",
+    "keywords": "BHOC transplant evidence, oxygen delivery transplantation, machine perfusion, HOPE, NMP, HMP, normothermic regional perfusion, organ preservation, ischemia reperfusion, liver transplantation, kidney transplantation, lung transplantation",
+    "url": "https://archiljali.github.io/BHOC-platform/transplant/Transplant-relevant-evidence.html",
+    "type": "website",
+    "lastmod": "2026-09-19",
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Transplantation evidence",
+        "/transplant/Transplant-index.html"
+      ],
+      [
+        "Scientific evidence relevant to BHOC",
+        "/transplant/Transplant-relevant-evidence.html"
       ]
     ]
   }
