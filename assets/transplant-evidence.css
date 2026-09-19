@@ -1,0 +1,106 @@
+/* Transplant evidence architecture and reading layout.
+   Separates historical HBOC evidence from external transplantation evidence relevant to BHOC. */
+
+.theme-transplant .transplant-architecture{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:24px 0 28px;
+}
+.theme-transplant .evidence-lane{
+  position:relative;overflow:hidden;padding:26px 28px;background:#fff;border:1px solid var(--line);border-radius:14px;
+}
+.theme-transplant .evidence-lane:before{
+  content:"";position:absolute;inset:0 auto 0 0;width:5px;background:var(--teal);
+}
+.theme-transplant .evidence-lane.relevant:before{background:#6f7f8a}
+.theme-transplant .evidence-lane h2{font-size:25px;line-height:1.22;letter-spacing:-.55px;margin:8px 0 12px}
+.theme-transplant .evidence-lane p{font-size:13px;color:var(--muted);line-height:1.68;margin:0 0 16px}
+.theme-transplant .lane-meta{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 18px}
+.theme-transplant .lane-pill{font-size:10px;font-weight:750;letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:5px 9px;background:var(--wash);color:var(--muted)}
+.theme-transplant .lane-boundary{font-size:11px!important;border-top:1px solid var(--line);padding-top:13px;margin-top:16px!important}
+
+.theme-transplant .organ-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px;row-gap:4px;margin:20px 0}
+.theme-transplant .organ-item{display:flex;gap:10px;align-items:center;min-height:72px;border-bottom:1px solid var(--line);padding:12px 4px;color:var(--ink);text-decoration:none;min-width:0}
+.theme-transplant .organ-item:hover{background:var(--wash)}
+.theme-transplant .organ-icon{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--soft);color:var(--teal);font-size:12px;font-weight:800;flex-shrink:0}
+.theme-transplant .organ-name{font-size:12px;font-weight:650;flex:1;min-width:0}
+.theme-transplant .organ-item>strong{font-size:21px;line-height:1;font-variant-numeric:tabular-nums;min-width:38px;text-align:right}
+.theme-transplant .organ-track{display:block;height:4px;background:#eadfe2;border-radius:3px;margin-top:10px;overflow:hidden}
+.theme-transplant .organ-track>span{display:block;height:100%;background:var(--teal);border-radius:3px}
+.theme-transplant .evidence-breakdown{margin:18px 0 20px;padding:0}
+.theme-transplant .evidence-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;padding:11px 0;border-bottom:1px solid var(--line);font-size:12px}
+.theme-transplant .evidence-row strong{font-size:17px;color:var(--ink)}
+
+.theme-transplant .transplant-highlight{background:#4b2630;color:#fff;padding:30px;border-radius:var(--radius);margin-top:26px}
+.theme-transplant .transplant-highlight .eyebrow{color:#f2bdc5}
+.theme-transplant .transplant-highlight h2{font-size:27px;line-height:1.25;letter-spacing:-.5px;margin:9px 0 12px}
+.theme-transplant .transplant-highlight>p{max-width:850px;color:#f1e5e8;font-size:13px}
+.theme-transplant .transplant-highlight .clinical-limit{color:#f1e5e8;border-top:1px solid #7b4a56;padding-top:18px;font-size:12px}
+.theme-transplant .pathway{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#7b4a56;border-radius:8px;overflow:hidden;margin:22px 0}
+.theme-transplant .pathway div{background:#4b2630;padding:18px 16px;min-height:100px}
+.theme-transplant .pathway small{display:block;color:#f2bdc5;font-size:10px;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.theme-transplant .pathway strong{display:block;color:#fff;font-size:15px;line-height:1.35}
+
+.theme-transplant .relevant-hero{
+  position:relative;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:16px;padding:31px 32px 28px;margin-bottom:22px;
+}
+.theme-transplant .relevant-hero:before{content:"";position:absolute;inset:0 0 auto;height:5px;background:linear-gradient(90deg,#aa2e3f 0 34%,#6f7f8a 34% 67%,#293944 67%)}
+.theme-transplant .relevant-hero h1{max-width:980px;font-size:clamp(32px,4vw,48px);line-height:1.08;letter-spacing:-1.6px;margin:9px 0 13px}
+.theme-transplant .relevant-hero>p{max-width:930px;color:var(--muted);font-size:15px;line-height:1.65}
+.theme-transplant .evidence-boundary{
+  margin:16px 0 0;padding:13px 15px;border:1px solid var(--line);border-radius:9px;background:var(--soft);font-size:12px;line-height:1.6;color:var(--muted)
+}
+.theme-transplant .evidence-boundary strong{color:var(--ink)}
+
+.theme-transplant .taxonomy-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:20px 0 28px}
+.theme-transplant .taxonomy-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px}
+.theme-transplant .taxonomy-card small{display:block;color:var(--teal);font-size:10px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;margin-bottom:7px}
+.theme-transplant .taxonomy-card h2,.theme-transplant .taxonomy-card h3{font-size:18px;line-height:1.3;margin:0 0 8px}
+.theme-transplant .taxonomy-card p{font-size:12px;line-height:1.6;color:var(--muted);margin:0}
+.theme-transplant .taxonomy-card .count-big{display:block;font-size:30px;line-height:1.1;color:var(--ink);font-weight:650;margin-bottom:8px}
+
+.theme-transplant .study-section{margin:30px 0}
+.theme-transplant .study-section-header{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:14px}
+.theme-transplant .study-section-header h2{font-size:26px;line-height:1.2;letter-spacing:-.55px;margin:6px 0 0}
+.theme-transplant .study-section-header p{max-width:680px;margin:0;font-size:12px;line-height:1.6;color:var(--muted)}
+.theme-transplant .study-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.theme-transplant .study-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;min-width:0}
+.theme-transplant .study-card h3{font-size:17px;line-height:1.4;letter-spacing:-.2px;margin:8px 0 9px}
+.theme-transplant .study-card p{font-size:12.5px;line-height:1.66;color:var(--muted);margin:8px 0}
+.theme-transplant .study-meta{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:9px}
+.theme-transplant .study-meta span{font-size:9.5px;font-weight:760;letter-spacing:.05em;text-transform:uppercase;border-radius:999px;padding:4px 8px;background:var(--wash);border:1px solid var(--line);color:var(--muted)}
+.theme-transplant .study-meta .organ{background:var(--soft);color:var(--teal)}
+.theme-transplant .study-links{display:flex;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:12px;margin-top:14px}
+.theme-transplant .study-links a{font-size:11px;font-weight:750;text-decoration:none}
+.theme-transplant .study-links a:hover{text-decoration:underline}
+
+.theme-transplant .brief-body{max-width:1120px;margin:24px auto 72px;padding:30px 34px}
+.theme-transplant .brief-body p{font-size:15px;line-height:1.72;color:var(--muted);margin:0 0 17px}
+.theme-transplant .brief-body h2{margin:32px 0 12px;font-size:24px;line-height:1.2}
+.theme-transplant .brief-callout{margin:24px 0;padding:19px 21px;border-left:4px solid var(--teal);background:var(--soft);color:var(--ink);line-height:1.65}
+.theme-transplant .brief-boundary{margin:26px 0;padding:14px 16px;border:1px solid var(--line);border-radius:8px;background:var(--wash);color:var(--muted);font-size:13px;line-height:1.6}
+.theme-transplant .source-list{display:grid;gap:10px}
+.theme-transplant .brief-source{padding:14px 0;border-top:1px solid var(--line);font-size:12.5px;line-height:1.6}
+.theme-transplant .brief-source:first-child{border-top:0}
+.theme-transplant .brief-source a{font-weight:700}
+.theme-transplant .evidence-breadcrumb{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 auto 18px;padding:11px 14px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--muted);font-size:12px;line-height:1.45}
+.theme-transplant .evidence-breadcrumb a{color:var(--teal);font-weight:700;text-decoration:none}
+.theme-transplant .evidence-breadcrumb a:hover{text-decoration:underline}
+.theme-transplant .evidence-breadcrumb span[aria-current="page"]{color:var(--ink);font-weight:600}
+.theme-transplant .evidence-breadcrumb span[aria-hidden="true"]{color:#9aa5a4;font-size:16px}
+
+@media(max-width:900px){
+  .theme-transplant .transplant-architecture,.theme-transplant .study-grid{grid-template-columns:1fr}
+  .theme-transplant .taxonomy-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .theme-transplant .pathway{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .theme-transplant .organ-list,.theme-transplant .taxonomy-grid{grid-template-columns:1fr}
+  .theme-transplant .organ-item{min-height:62px}
+  .theme-transplant .pathway{grid-template-columns:1fr}
+  .theme-transplant .pathway div{min-height:auto}
+  .theme-transplant .relevant-hero{padding:27px 20px 23px}
+  .theme-transplant .brief-body{padding:22px 18px}
+  .theme-transplant .study-section-header{display:block}
+  .theme-transplant .study-section-header p{margin-top:8px}
+  .theme-transplant .evidence-breadcrumb{align-items:flex-start;gap:5px 7px;font-size:11px}
+  .theme-transplant .evidence-breadcrumb span[aria-current="page"]{flex-basis:100%;padding-top:2px}
+}
