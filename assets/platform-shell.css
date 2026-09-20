@@ -47,6 +47,16 @@
 .section.dark .eyebrow{color:#91d4cf!important}
 .section.dark a{color:#fff}
 
+/* Clinical applications subnavigation */
+.clinical-subnav{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 16px;padding:9px;background:#f7fafb;border:1px solid var(--line);border-radius:12px}
+.clinical-subnav a{display:inline-flex;align-items:center;gap:6px;font-size:10.5px;font-weight:750;text-decoration:none;padding:7px 10px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink)}
+.clinical-subnav a:hover{color:var(--teal);border-color:var(--teal)}
+.clinical-subnav a[aria-current="page"]{background:#102f49;color:#fff;border-color:#102f49}
+.clinical-subnav a.nav-gov{background:#eef5fb;color:#0b466e;border-color:#b6ccdd}
+.clinical-subnav a.nav-gov:before{content:"GOV";display:inline-flex;align-items:center;padding:2px 5px;border-radius:999px;background:#0b466e;color:#fff;font-size:7px;font-weight:900;letter-spacing:.07em}
+.clinical-subnav a.nav-gov:hover{background:#e4f0f8;color:#083a5a;border-color:#7fa6c1}
+@media(max-width:680px){.clinical-subnav{padding:8px}.clinical-subnav a{font-size:10px;padding:7px 9px}}
+
 .site-footer{max-width:1280px;margin:0 auto;padding:24px 32px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:12px}
 
 
