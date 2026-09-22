@@ -27,10 +27,11 @@
     },
     "veterinary/Vet-index.html": {
         "title": "Vet Real-World Evidence & Cases | Oxyglobin & BHOC",
-        "description": "Source-linked veterinary real-world evidence and cases covering Oxyglobin, animal anemia, species evidence, institutions, publications and FDA and EMA records.",
+        "description": "Source-linked veterinary real-world evidence and cases covering Oxyglobin, 885 historical canine reports, animal anemia, species evidence, publications and FDA and EMA records.",
         "keywords": "veterinary real-world evidence, veterinary cases, veterinary oxygen carrier, Oxyglobin, veterinary transfusion, canine anemia, animal oxygenation, veterinary hemoglobin oxygen carrier, BHOC veterinary evidence, FDA Oxyglobin, EMA Oxyglobin",
         "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html",
         "type": "website",
+        "lastmod": "2026-09-22",
         "breadcrumbs": [
             [
                 "Home",
