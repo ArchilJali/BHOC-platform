@@ -1,5 +1,6 @@
 (() => {
   const path = window.location.pathname;
+  const OFFICIAL_YOUTUBE_CHANNEL = 'https://www.youtube.com/@BHOCTherapeutics';
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('#bhoc-nav');
 
@@ -490,6 +491,12 @@
     endHome.href = '/BHOC-platform/';
     endHome.textContent = 'Platform home';
     endGroup.appendChild(endHome);
+    const endYouTube = document.createElement('a');
+    endYouTube.href = OFFICIAL_YOUTUBE_CHANNEL;
+    endYouTube.target = '_blank';
+    endYouTube.rel = 'noopener noreferrer';
+    endYouTube.textContent = 'YouTube @BHOCTherapeutics';
+    endGroup.appendChild(endYouTube);
     end.append(endGroup);
     main.appendChild(end);
 
