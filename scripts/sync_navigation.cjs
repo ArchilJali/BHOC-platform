@@ -7,7 +7,7 @@ const version = JSON.parse(fs.readFileSync(path.join(ROOT, 'version.json'), 'utf
 const SKIP_DIRS = new Set(['.git', 'node_modules']);
 const SHELL_HREF = '/BHOC-platform/assets/platform-shell.css';
 const INTELLIGENCE_HREF = '/BHOC-platform/assets/intelligence-2026.css';
-const NAV_SCRIPT = '/BHOC-platform/assets/navigation.js?v=20260922-inline4';
+const NAV_SCRIPT = '/BHOC-platform/assets/navigation.js?v=20260922-inline5';
 const AUTHOR_PROFILE = 'https://bhoctherapeutics.com/archil-jaliashvili/';
 const LINKEDIN_PROFILE = 'https://www.linkedin.com/in/archil-jaliashvili-bhoc/';
 const BRAND_MARK = 'https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
@@ -74,6 +74,24 @@ function ensurePlatformAssets(src) {
   return next;
 }
 
+
+const FOOTER_SOCIALS = "<span class=\"bhoc-footer-socials\" role=\"group\" aria-label=\"BHOC social media\" style=\"display:inline-flex;align-items:center;gap:8px;margin-left:12px;vertical-align:middle;white-space:nowrap\"><a class=\"bhoc-footer-social-link\" data-network=\"linkedin\" href=\"https://www.linkedin.com/company/bhoc-therapeutics/\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"BHOC Therapeutics on LinkedIn\" title=\"BHOC Therapeutics on LinkedIn\" style=\"display:inline-flex;align-items:center;justify-content:center;width:35px;height:35px;box-sizing:border-box;border:1.25px solid #6aa6df;border-radius:10px;text-decoration:none;background:rgba(255,255,255,.04)\"><svg viewBox=\"0 0 24 24\" width=\"21\" height=\"21\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"2.5\" y=\"2.5\" width=\"19\" height=\"19\" rx=\"4\" fill=\"#0a66c2\"/><path fill=\"#ffffff\" d=\"M7.25 9.2H4.8V17h2.45V9.2Zm-1.22-3.6a1.43 1.43 0 1 0 0 2.86 1.43 1.43 0 0 0 0-2.86ZM19 12.65c0-2.35-1.25-3.44-2.93-3.44-1.35 0-1.96.74-2.29 1.26V9.2h-2.44V17h2.44v-3.86c0-1.02.2-2 1.46-2 1.25 0 1.26 1.17 1.26 2.07V17H19v-4.35Z\"/></svg></a><a class=\"bhoc-footer-social-link\" data-network=\"youtube\" href=\"https://www.youtube.com/@BHOCTherapeutics\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"BHOC Therapeutics on YouTube\" title=\"BHOC Therapeutics on YouTube\" style=\"display:inline-flex;align-items:center;justify-content:center;width:35px;height:35px;box-sizing:border-box;border:1.25px solid #ff4d4d;border-radius:10px;text-decoration:none;background:rgba(255,255,255,.04)\"><svg viewBox=\"0 0 24 24\" width=\"21\" height=\"21\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"2.5\" y=\"5.5\" width=\"19\" height=\"13\" rx=\"4\" fill=\"#ff0000\"/><path d=\"m10 9 5.5 3-5.5 3Z\" fill=\"#ffffff\"/></svg></a></span>";
+
+function ensureFooterSocials(src) {
+  if (src.includes('class="bhoc-footer-socials"')) return src;
+  const footerStart = src.indexOf('<footer class="site-footer">');
+  if (footerStart < 0) return src;
+  const footerEnd = src.indexOf('</footer>', footerStart);
+  if (footerEnd < 0) return src;
+  const versionPos = src.indexOf('class="platform-version"', footerStart);
+  let insertAt = footerEnd;
+  if (versionPos >= 0 && versionPos < footerEnd) {
+    const pClose = src.indexOf('</p>', versionPos);
+    if (pClose >= 0 && pClose < footerEnd) insertAt = pClose;
+  }
+  return src.slice(0, insertAt) + FOOTER_SOCIALS + src.slice(insertAt);
+}
+
 function normalizeBrandIdentity(src) {
   return src
     .replace(/<link\s+rel=["']icon["'][^>]*bhoc-mark\.svg[^>]*>/gi, `<link rel="icon" href="${BRAND_MARK}" type="image/png">`)
@@ -116,7 +134,7 @@ for (const file of walk(ROOT)) {
   const rel = path.relative(ROOT, file).replace(/\\/g, '/');
   const src = fs.readFileSync(file, 'utf8');
   const section = sectionFor(rel);
-  let next = normalizeAuthorIdentity(normalizeVeterinaryBranding(normalizeBrandIdentity(src), section));
+  let next = ensureFooterSocials(normalizeAuthorIdentity(normalizeVeterinaryBranding(normalizeBrandIdentity(src), section)));
 
   if (!headerRe.test(next)) {
     skipped++;
