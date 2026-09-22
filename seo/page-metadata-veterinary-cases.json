@@ -12,6 +12,20 @@
       ["Oxyglobin historical canine archive", "/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html"]
     ]
   },
+  "veterinary/Vet-archive-Oxyglobin-Case-Explorer.html": {
+    "title": "Search 146 Historical Oxyglobin Canine Case Records",
+    "description": "Search 146 de-identified canine case forms from Oxyglobin Case Listing Book II by diagnosis, treatment sequence, reported dose and short-term outcome.",
+    "keywords": "Oxyglobin cases, canine anemia cases, Oxyglobin dose, canine blood loss, canine hemolysis, veterinary case explorer, hemoglobin glutamer-200 bovine",
+    "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-archive-Oxyglobin-Case-Explorer.html",
+    "type": "website",
+    "lastmod": "2026-09-22",
+    "breadcrumbs": [
+      ["Home", "/"],
+      ["Vet Real-World Evidence & Cases", "/veterinary/Vet-index.html"],
+      ["Oxyglobin historical canine archive", "/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html"],
+      ["146-case explorer", "/veterinary/Vet-archive-Oxyglobin-Case-Explorer.html"]
+    ]
+  },
   "veterinary/Vet-case-K9-Saxon-Oxyglobin.html": {
     "title": "K-9 Saxon & Oxyglobin | Veterinary Real-World Case",
     "description": "Documented 2002 case of Fresno Police K-9 Saxon, catastrophic trauma, Oxyglobin emergency treatment and the later Saxon Award, with source-linked veterinary HBOC context.",

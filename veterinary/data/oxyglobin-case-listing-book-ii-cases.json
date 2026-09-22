@@ -1,0 +1,2936 @@
+{
+  "data_version": "2026-09-22",
+  "source": "Oxyglobin Solution - Case Listing Book II (Biopure Corporation, October 2000)",
+  "scope": "146 selected canine case forms; historical, manufacturer-collected, descriptive evidence",
+  "transcription_note": "Fields reflect the printed case forms. Missing or unclear values are not inferred. Clinician, clinic, location and patient names are omitted.",
+  "field_notes": {
+    "case_identity": "Each ID identifies a printed form, not a confirmed unique dog; overlapping or repeated reports may be present.",
+    "treatment_sequence": "Sequence selected on the printed form for the first 72 hours; it does not establish causal effect.",
+    "administration_route": "The individual printed forms do not state a route, so the explorer reports it as not stated.",
+    "amount_and_dose": "Bag count and dose are transcribed only when printed and legible; no missing dose is calculated from weight.",
+    "outcomes": "Short-term status fields and later follow-up are descriptive, selected reports and must not be interpreted as efficacy or survival rates."
+  },
+  "case_count": 146,
+  "cases": [
+    {
+      "id": "BL-001",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Hemoabdomen",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 28,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 10,
+      "administration_route": null,
+      "pcv_pre_percent": 31,
+      "pcv_post_percent": 10,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 10,
+        "booklet_case_page": 1,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-002",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Hemoabdomen",
+      "treatment_sequence": "Oxyglobin followed by packed RBCs",
+      "weight_lb": null,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 12,
+      "pcv_post_percent": 14,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 10,
+        "booklet_case_page": 1,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-003",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Hemoabdomen",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 40,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 7,
+      "administration_route": null,
+      "pcv_pre_percent": 13,
+      "pcv_post_percent": 8,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 10,
+        "booklet_case_page": 1,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-004",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Hemoabdomen / Trauma",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 26,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 11,
+      "administration_route": null,
+      "pcv_pre_percent": 20,
+      "pcv_post_percent": 27,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 10,
+        "booklet_case_page": 1,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-005",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Immune Mediated Thrombocytopenia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 47,
+      "oxyglobin_125ml_bags": "3",
+      "reported_dose_ml_kg": 18,
+      "administration_route": null,
+      "pcv_pre_percent": 9,
+      "pcv_post_percent": 8,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 11,
+        "booklet_case_page": 2,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-006",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Immune Mediated Thrombocytopenia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 60,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 9,
+      "administration_route": null,
+      "pcv_pre_percent": 16,
+      "pcv_post_percent": 15,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Died",
+      "later_follow_up": "Little or no improvement was reported; the 72-hour field records death.",
+      "source": {
+        "pdf_page": 11,
+        "booklet_case_page": 2,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-007",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Immune Mediated Thrombocytopenia",
+      "treatment_sequence": "Oxyglobin followed by packed RBCs",
+      "weight_lb": 20,
+      "oxyglobin_125ml_bags": "4",
+      "reported_dose_ml_kg": 55,
+      "administration_route": null,
+      "pcv_pre_percent": 8,
+      "pcv_post_percent": 6,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 11,
+        "booklet_case_page": 2,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-008",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Immune Mediated Thrombocytopenia",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 60,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 5,
+      "administration_route": null,
+      "pcv_pre_percent": 18,
+      "pcv_post_percent": 18,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": "Later euthanized after PCV fell again and fever developed.",
+      "source": {
+        "pdf_page": 11,
+        "booklet_case_page": 2,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-009",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Parasite Anemia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 3,
+      "oxyglobin_125ml_bags": "<1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 10,
+      "pcv_post_percent": 15,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 12,
+        "booklet_case_page": 3,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-010",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Parasite Anemia",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 40,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 14,
+      "administration_route": null,
+      "pcv_pre_percent": 8,
+      "pcv_post_percent": 8,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 12,
+        "booklet_case_page": 3,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-011",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Parasite Anemia",
+      "treatment_sequence": "Oxyglobin followed by packed RBCs",
+      "weight_lb": null,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 7,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 12,
+        "booklet_case_page": 3,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-012",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Parasite Anemia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 6,
+      "oxyglobin_125ml_bags": "<1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 9,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 12,
+        "booklet_case_page": 3,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-013",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Parasite Anemia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 5,
+      "oxyglobin_125ml_bags": "<1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 7,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 13,
+        "booklet_case_page": 4,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-014",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Parasite Anemia",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 40,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 7,
+      "administration_route": null,
+      "pcv_pre_percent": 8,
+      "pcv_post_percent": 8,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 13,
+        "booklet_case_page": 4,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-015",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Parasite Anemia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 23,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 12,
+      "administration_route": null,
+      "pcv_pre_percent": 6,
+      "pcv_post_percent": 6,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Not available",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 13,
+        "booklet_case_page": 4,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-016",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Parasite Anemia / Fleas",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 15,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 18,
+      "administration_route": null,
+      "pcv_pre_percent": 10,
+      "pcv_post_percent": 13,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 13,
+        "booklet_case_page": 4,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-017",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Parasite Anemia / Fleas",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 10,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 28,
+      "administration_route": null,
+      "pcv_pre_percent": 10,
+      "pcv_post_percent": 9,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 14,
+        "booklet_case_page": 5,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-018",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Parasite Anemia / Hookworm",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 21,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 13,
+      "administration_route": null,
+      "pcv_pre_percent": 20,
+      "pcv_post_percent": 24,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 14,
+        "booklet_case_page": 5,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-019",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Parasite Anemia / Surgery / Amputation",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": null,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 18,
+      "pcv_post_percent": 22,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 14,
+        "booklet_case_page": 5,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-020",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Parasite Anemia / Ticks",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 20,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 14,
+      "administration_route": null,
+      "pcv_pre_percent": null,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 14,
+        "booklet_case_page": 5,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-021",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Parasite Anemia / Ticks",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 140,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 4,
+      "administration_route": null,
+      "pcv_pre_percent": 4,
+      "pcv_post_percent": 4,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 15,
+        "booklet_case_page": 6,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-022",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Parasite Anemia / Ticks",
+      "treatment_sequence": "Whole blood followed by Oxyglobin",
+      "weight_lb": 11,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 50,
+      "administration_route": null,
+      "pcv_pre_percent": 8,
+      "pcv_post_percent": 5,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 15,
+        "booklet_case_page": 6,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-023",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Parasite Anemia / Ticks",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 6,
+      "oxyglobin_125ml_bags": "<1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": null,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 15,
+        "booklet_case_page": 6,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-024",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Parvo Virus",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 13,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 21,
+      "administration_route": null,
+      "pcv_pre_percent": 53,
+      "pcv_post_percent": 40,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 15,
+        "booklet_case_page": 6,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-025",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Parvo Virus",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 15,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 18,
+      "administration_route": null,
+      "pcv_pre_percent": null,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 16,
+        "booklet_case_page": 7,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-026",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Parvo Virus",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 45,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 6,
+      "administration_route": null,
+      "pcv_pre_percent": 18,
+      "pcv_post_percent": 24,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 16,
+        "booklet_case_page": 7,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-027",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Parvo Virus",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 39,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 7,
+      "administration_route": null,
+      "pcv_pre_percent": 12,
+      "pcv_post_percent": 16,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 16,
+        "booklet_case_page": 7,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-028",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Parvo Virus / Parasite Anemia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 21,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 13,
+      "administration_route": null,
+      "pcv_pre_percent": 3,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 16,
+        "booklet_case_page": 7,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-029",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Post Surgical Blood Loss",
+      "treatment_sequence": "Oxyglobin followed by packed RBCs",
+      "weight_lb": 80,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 7,
+      "administration_route": null,
+      "pcv_pre_percent": 28,
+      "pcv_post_percent": 27,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 17,
+        "booklet_case_page": 8,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-030",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Post Surgical Blood Loss / Shock",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 12,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 23,
+      "administration_route": null,
+      "pcv_pre_percent": 12,
+      "pcv_post_percent": 10,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 17,
+        "booklet_case_page": 8,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-031",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Rodenticide Toxicity",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 6,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 46,
+      "administration_route": null,
+      "pcv_pre_percent": 7,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 17,
+        "booklet_case_page": 8,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-032",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Rodenticide Toxicity",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 20,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 14,
+      "administration_route": null,
+      "pcv_pre_percent": 24,
+      "pcv_post_percent": 14,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 17,
+        "booklet_case_page": 8,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-033",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Rodenticide Toxicity",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 35,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 8,
+      "administration_route": null,
+      "pcv_pre_percent": 14,
+      "pcv_post_percent": 14,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 18,
+        "booklet_case_page": 9,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-034",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Rodenticide Toxicity",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 69,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 8,
+      "administration_route": null,
+      "pcv_pre_percent": 14,
+      "pcv_post_percent": 14,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 18,
+        "booklet_case_page": 9,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-035",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Rodenticide Toxicity",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 65,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 10,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 18,
+        "booklet_case_page": 9,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-036",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Rodenticide Toxicity",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 17,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 16,
+      "administration_route": null,
+      "pcv_pre_percent": 12,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 18,
+        "booklet_case_page": 9,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-037",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Rodenticide Toxicity",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 40,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 7,
+      "administration_route": null,
+      "pcv_pre_percent": 15,
+      "pcv_post_percent": 15,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 19,
+        "booklet_case_page": 10,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-038",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Rodenticide Toxicity",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 32,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 17,
+      "administration_route": null,
+      "pcv_pre_percent": 15,
+      "pcv_post_percent": 15,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 19,
+        "booklet_case_page": 10,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-039",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Rodenticide Toxicity",
+      "treatment_sequence": "Oxyglobin followed by packed RBCs",
+      "weight_lb": 14,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 20,
+      "administration_route": null,
+      "pcv_pre_percent": 20,
+      "pcv_post_percent": 18,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 19,
+        "booklet_case_page": 10,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-040",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Rodenticide Toxicity / Heartworm Positive",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 54,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 5,
+      "administration_route": null,
+      "pcv_pre_percent": null,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 19,
+        "booklet_case_page": 10,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-041",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Shock",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 84,
+      "oxyglobin_125ml_bags": "3",
+      "reported_dose_ml_kg": 10,
+      "administration_route": null,
+      "pcv_pre_percent": 24,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 20,
+        "booklet_case_page": 11,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-042",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Shock / Surgery",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 40,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": null,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 20,
+        "booklet_case_page": 11,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-043",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Shock / Surgery",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 9,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 31,
+      "administration_route": null,
+      "pcv_pre_percent": null,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Not available",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 20,
+        "booklet_case_page": 11,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-044",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / C-Section",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 5,
+      "oxyglobin_125ml_bags": "<1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 46,
+      "pcv_post_percent": 26,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Not available",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 20,
+        "booklet_case_page": 11,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-045",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / C-Section",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 6,
+      "oxyglobin_125ml_bags": "<1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 18,
+      "pcv_post_percent": 18,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 21,
+        "booklet_case_page": 12,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-046",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / C-Section",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 50,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 6,
+      "administration_route": null,
+      "pcv_pre_percent": 13,
+      "pcv_post_percent": 25,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 21,
+        "booklet_case_page": 12,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-047",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / C-Section",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 76,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 4,
+      "administration_route": null,
+      "pcv_pre_percent": null,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 21,
+        "booklet_case_page": 12,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-048",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / General",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 80,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 23,
+      "pcv_post_percent": 27,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Not available",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 21,
+        "booklet_case_page": 12,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-049",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / Hemangiosarcoma",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 82,
+      "oxyglobin_125ml_bags": "3",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 18,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 22,
+        "booklet_case_page": 13,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-050",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / Hemangiosarcoma",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 60,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 9,
+      "administration_route": null,
+      "pcv_pre_percent": 36,
+      "pcv_post_percent": 32,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 22,
+        "booklet_case_page": 13,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-051",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / Hemangiosarcoma",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 28,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 10,
+      "administration_route": null,
+      "pcv_pre_percent": 18,
+      "pcv_post_percent": 14,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 22,
+        "booklet_case_page": 13,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-052",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / Neoplasia / Geriatric",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 80,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 3,
+      "administration_route": null,
+      "pcv_pre_percent": null,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 22,
+        "booklet_case_page": 13,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-053",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / Pyometra",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 38,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 7,
+      "administration_route": null,
+      "pcv_pre_percent": 23,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 23,
+        "booklet_case_page": 14,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-054",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / Pyometra",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 90,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 3,
+      "administration_route": null,
+      "pcv_pre_percent": 16,
+      "pcv_post_percent": 25,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 23,
+        "booklet_case_page": 14,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-055",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / Pyometra",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 112,
+      "oxyglobin_125ml_bags": "<1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 9,
+      "pcv_post_percent": 7,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 23,
+        "booklet_case_page": 14,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-056",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / Pyometra",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 3,
+      "oxyglobin_125ml_bags": "<1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 19,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 23,
+        "booklet_case_page": 14,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-057",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / Pyometra",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 20,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 14,
+      "administration_route": null,
+      "pcv_pre_percent": 20,
+      "pcv_post_percent": 24,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 24,
+        "booklet_case_page": 15,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-058",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / Pyometra",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 47,
+      "oxyglobin_125ml_bags": "<1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 26,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 24,
+        "booklet_case_page": 15,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-059",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / Pyometra",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 50,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 6,
+      "administration_route": null,
+      "pcv_pre_percent": 12,
+      "pcv_post_percent": 18,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 24,
+        "booklet_case_page": 15,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-060",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / Pyometra",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 45,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 6,
+      "administration_route": null,
+      "pcv_pre_percent": null,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 24,
+        "booklet_case_page": 15,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-061",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / Pyometra",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 17,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 32,
+      "administration_route": null,
+      "pcv_pre_percent": 8,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 25,
+        "booklet_case_page": 16,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-062",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / Pyometra / Ulcers",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 34,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 8,
+      "administration_route": null,
+      "pcv_pre_percent": 18,
+      "pcv_post_percent": 18,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 25,
+        "booklet_case_page": 16,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-063",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / Splenic Hemangiosarcoma",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 65,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 4,
+      "administration_route": null,
+      "pcv_pre_percent": 32,
+      "pcv_post_percent": 25,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 25,
+        "booklet_case_page": 16,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-064",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / Splenic Hemangiosarcoma",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 29,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 19,
+      "administration_route": null,
+      "pcv_pre_percent": 17,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 25,
+        "booklet_case_page": 16,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-065",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / Splenic Hemangiosarcoma",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 80,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 3,
+      "administration_route": null,
+      "pcv_pre_percent": 18,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 26,
+        "booklet_case_page": 17,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-066",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / Splenic Hemangiosarcoma",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 69,
+      "oxyglobin_125ml_bags": "<1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 24,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 26,
+        "booklet_case_page": 17,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-067",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / Splenic Hemangiosarcoma",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 100,
+      "oxyglobin_125ml_bags": "<1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 28,
+      "pcv_post_percent": 20,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 26,
+        "booklet_case_page": 17,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-068",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / Splenic Hemangiosarcoma",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 140,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 4,
+      "administration_route": null,
+      "pcv_pre_percent": 22,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Died",
+      "later_follow_up": "Died suddenly at home after three postoperative days; the report suspected an embolus.",
+      "source": {
+        "pdf_page": 26,
+        "booklet_case_page": 17,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-069",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Surgery / Splenic Hemangiosarcoma/Diabetic",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 17,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 16,
+      "administration_route": null,
+      "pcv_pre_percent": 14,
+      "pcv_post_percent": 15,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 27,
+        "booklet_case_page": 18,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-070",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Trauma / Bite Wounds",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 67,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 4,
+      "administration_route": null,
+      "pcv_pre_percent": 31,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 27,
+        "booklet_case_page": 18,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-071",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Trauma / Gunshot",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 25,
+      "oxyglobin_125ml_bags": "<1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": null,
+      "pcv_post_percent": null,
+      "outcome_24h": "Not available",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 27,
+        "booklet_case_page": 18,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-072",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Trauma / Gunshot / Amputation",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 150,
+      "oxyglobin_125ml_bags": "3",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 20,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 27,
+        "booklet_case_page": 18,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-073",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Trauma / Gunshot / Amputation",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": null,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 40,
+      "pcv_post_percent": 30,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 28,
+        "booklet_case_page": 19,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-074",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Trauma / HBC",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 64,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 4,
+      "administration_route": null,
+      "pcv_pre_percent": 64,
+      "pcv_post_percent": 44,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 28,
+        "booklet_case_page": 19,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-075",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Trauma / HBC",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 45,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 12,
+      "administration_route": null,
+      "pcv_pre_percent": 18,
+      "pcv_post_percent": 15,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 28,
+        "booklet_case_page": 19,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-076",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Trauma / HBC",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 90,
+      "oxyglobin_125ml_bags": "<1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": null,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 28,
+        "booklet_case_page": 19,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-077",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Trauma / HBC / Hypovolemic shock",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 58,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 5,
+      "administration_route": null,
+      "pcv_pre_percent": 52,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 29,
+        "booklet_case_page": 20,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-078",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Trauma / HBC / Shock",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 35,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 8,
+      "administration_route": null,
+      "pcv_pre_percent": null,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 29,
+        "booklet_case_page": 20,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-079",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Trauma / Other",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 82,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 3,
+      "administration_route": null,
+      "pcv_pre_percent": 41,
+      "pcv_post_percent": 38,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 29,
+        "booklet_case_page": 20,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-080",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Trauma / Other",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 98,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 6,
+      "administration_route": null,
+      "pcv_pre_percent": 25,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 29,
+        "booklet_case_page": 20,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-081",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Trauma / Shock",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 72,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 8,
+      "administration_route": null,
+      "pcv_pre_percent": 20,
+      "pcv_post_percent": 23,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 30,
+        "booklet_case_page": 21,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-082",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Trauma / Shock",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 20,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": null,
+      "pcv_post_percent": 20,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 30,
+        "booklet_case_page": 21,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-083",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Trauma / Surgery",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 48,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 6,
+      "administration_route": null,
+      "pcv_pre_percent": 30,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 30,
+        "booklet_case_page": 21,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-084",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Trauma / Surgery",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 40,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 14,
+      "administration_route": null,
+      "pcv_pre_percent": 26,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 30,
+        "booklet_case_page": 21,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-085",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Trauma / Surgery",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 31,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 18,
+      "administration_route": null,
+      "pcv_pre_percent": 21,
+      "pcv_post_percent": 21,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 31,
+        "booklet_case_page": 22,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-086",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Trauma / Surgery / Amputation",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 43,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 6,
+      "administration_route": null,
+      "pcv_pre_percent": 20,
+      "pcv_post_percent": 20,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 31,
+        "booklet_case_page": 22,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-087",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Trauma / Surgery / Amputation",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 47,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 21,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 31,
+        "booklet_case_page": 22,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-088",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Ulcers",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 80,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 12,
+      "pcv_post_percent": 15,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 31,
+        "booklet_case_page": 22,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "BL-089",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Ulcers",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 107,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 5,
+      "administration_route": null,
+      "pcv_pre_percent": 17,
+      "pcv_post_percent": 15,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 32,
+        "booklet_case_page": 23,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "BL-090",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Ulcers / Chronic Addison’s Disease",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 55,
+      "oxyglobin_125ml_bags": "4",
+      "reported_dose_ml_kg": 20,
+      "administration_route": null,
+      "pcv_pre_percent": 20,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 32,
+        "booklet_case_page": 23,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "BL-091",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Ulcers / GI",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 60,
+      "oxyglobin_125ml_bags": "4",
+      "reported_dose_ml_kg": 18,
+      "administration_route": null,
+      "pcv_pre_percent": 10,
+      "pcv_post_percent": 7,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 32,
+        "booklet_case_page": 23,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "BL-092",
+      "booklet_section": "Blood loss",
+      "diagnosis": "Ulcers / GI",
+      "treatment_sequence": "Oxyglobin followed by packed RBCs",
+      "weight_lb": 21,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 26,
+      "administration_route": null,
+      "pcv_pre_percent": 15,
+      "pcv_post_percent": 24,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 32,
+        "booklet_case_page": 23,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "HM-001",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Ehrlichiosis",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 35,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 8,
+      "administration_route": null,
+      "pcv_pre_percent": 22,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 34,
+        "booklet_case_page": 24,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "HM-002",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Ehrlichiosis",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 35,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 8,
+      "administration_route": null,
+      "pcv_pre_percent": 8,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 34,
+        "booklet_case_page": 24,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "HM-003",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Ehrlichiosis / Immune Mediated Hemolytic Anemia",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 38,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 14,
+      "administration_route": null,
+      "pcv_pre_percent": 12,
+      "pcv_post_percent": 14,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 34,
+        "booklet_case_page": 24,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "HM-004",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Hemolysis",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 57,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 10,
+      "administration_route": null,
+      "pcv_pre_percent": 11,
+      "pcv_post_percent": 13,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 34,
+        "booklet_case_page": 24,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "HM-005",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Hemolysis / Coagulapathy / Hemothorax",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 3,
+      "oxyglobin_125ml_bags": "<1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 16,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Not available",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 35,
+        "booklet_case_page": 25,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "HM-006",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Hemolysis / Snake Bite",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 20,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 14,
+      "administration_route": null,
+      "pcv_pre_percent": 24,
+      "pcv_post_percent": 21,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 35,
+        "booklet_case_page": 25,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "HM-007",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "IMHA",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 36,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 8,
+      "administration_route": null,
+      "pcv_pre_percent": 20,
+      "pcv_post_percent": null,
+      "outcome_24h": "Died",
+      "outcome_72h": "Died",
+      "later_follow_up": "The report attributed death to emboli.",
+      "source": {
+        "pdf_page": 35,
+        "booklet_case_page": 25,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "HM-008",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "IMHA / Bone Marrow Disease",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 84,
+      "oxyglobin_125ml_bags": "3",
+      "reported_dose_ml_kg": 10,
+      "administration_route": null,
+      "pcv_pre_percent": 9,
+      "pcv_post_percent": 9,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": "Died 4.5 days after infusion; no response to steroid therapy was reported.",
+      "source": {
+        "pdf_page": 35,
+        "booklet_case_page": 25,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "HM-009",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "IMHA / Parasite Anemia",
+      "treatment_sequence": "Oxyglobin followed by packed RBCs",
+      "weight_lb": 30,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 9,
+      "administration_route": null,
+      "pcv_pre_percent": 17,
+      "pcv_post_percent": 13,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 36,
+        "booklet_case_page": 26,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "HM-010",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "IMHA / Septicemia",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 18,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 31,
+      "administration_route": null,
+      "pcv_pre_percent": 14,
+      "pcv_post_percent": 7,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 36,
+        "booklet_case_page": 26,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "HM-011",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "IMHA / Splenectomy",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 42,
+      "oxyglobin_125ml_bags": "5",
+      "reported_dose_ml_kg": 33,
+      "administration_route": null,
+      "pcv_pre_percent": null,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 36,
+        "booklet_case_page": 26,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "HM-012",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Immune Mediated Hemolytic Anemia",
+      "treatment_sequence": "Whole blood followed by Oxyglobin",
+      "weight_lb": 32,
+      "oxyglobin_125ml_bags": "3",
+      "reported_dose_ml_kg": 26,
+      "administration_route": null,
+      "pcv_pre_percent": 14,
+      "pcv_post_percent": 8,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 36,
+        "booklet_case_page": 26,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "HM-013",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Immune Mediated Hemolytic Anemia",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 101,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 5,
+      "administration_route": null,
+      "pcv_pre_percent": 14,
+      "pcv_post_percent": 16,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 37,
+        "booklet_case_page": 27,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "HM-014",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Immune Mediated Hemolytic Anemia",
+      "treatment_sequence": "Packed RBCs followed by Oxyglobin",
+      "weight_lb": 52,
+      "oxyglobin_125ml_bags": "4",
+      "reported_dose_ml_kg": 21,
+      "administration_route": null,
+      "pcv_pre_percent": 9,
+      "pcv_post_percent": 7,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 37,
+        "booklet_case_page": 27,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "HM-015",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Immune Mediated Hemolytic Anemia",
+      "treatment_sequence": "Oxyglobin followed by packed RBCs",
+      "weight_lb": 10,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 4,
+      "pcv_post_percent": 5,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 37,
+        "booklet_case_page": 27,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "HM-016",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Immune Mediated Hemolytic Anemia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 25,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 17,
+      "pcv_post_percent": 16,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 37,
+        "booklet_case_page": 27,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "HM-017",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Immune Mediated Hemolytic Anemia",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 55,
+      "oxyglobin_125ml_bags": "4",
+      "reported_dose_ml_kg": 20,
+      "administration_route": null,
+      "pcv_pre_percent": 17,
+      "pcv_post_percent": 7,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 38,
+        "booklet_case_page": 28,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "HM-018",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Immune Mediated Hemolytic Anemia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 55,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 10,
+      "administration_route": null,
+      "pcv_pre_percent": 9,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 38,
+        "booklet_case_page": 28,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "HM-019",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Immune Mediated Hemolytic Anemia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 41,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 13,
+      "administration_route": null,
+      "pcv_pre_percent": 15,
+      "pcv_post_percent": 15,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 38,
+        "booklet_case_page": 28,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "HM-020",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Immune Mediated Hemolytic Anemia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 22,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 13,
+      "administration_route": null,
+      "pcv_pre_percent": 15,
+      "pcv_post_percent": 10,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 38,
+        "booklet_case_page": 28,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "HM-021",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Immune Mediated Hemolytic Anemia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 20,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 14,
+      "administration_route": null,
+      "pcv_pre_percent": 16,
+      "pcv_post_percent": 16,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 39,
+        "booklet_case_page": 29,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "HM-022",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Immune Mediated Hemolytic Anemia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 110,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 3,
+      "administration_route": null,
+      "pcv_pre_percent": 14,
+      "pcv_post_percent": 12,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 39,
+        "booklet_case_page": 29,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "HM-023",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Immune Mediated Hemolytic Anemia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 30,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 9,
+      "administration_route": null,
+      "pcv_pre_percent": 12,
+      "pcv_post_percent": 29,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 39,
+        "booklet_case_page": 29,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "HM-024",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Immune Mediated Hemolytic Anemia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 40,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 7,
+      "administration_route": null,
+      "pcv_pre_percent": 18,
+      "pcv_post_percent": 22,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 39,
+        "booklet_case_page": 29,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "HM-025",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Immune Mediated Hemolytic Anemia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 33,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 8,
+      "administration_route": null,
+      "pcv_pre_percent": 11,
+      "pcv_post_percent": 13,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 40,
+        "booklet_case_page": 30,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "HM-026",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Immune Mediated Hemolytic Anemia",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 14,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 39,
+      "administration_route": null,
+      "pcv_pre_percent": 15,
+      "pcv_post_percent": 3,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 40,
+        "booklet_case_page": 30,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "HM-027",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Immune Mediated Hemolytic Anemia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 35,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 16,
+      "administration_route": null,
+      "pcv_pre_percent": 16,
+      "pcv_post_percent": 16,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 40,
+        "booklet_case_page": 30,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "HM-028",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Immune Mediated Hemolytic Anemia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 20,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 14,
+      "administration_route": null,
+      "pcv_pre_percent": 11,
+      "pcv_post_percent": 8,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 40,
+        "booklet_case_page": 30,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "HM-029",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Immune Mediated Hemolytic Anemia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 85,
+      "oxyglobin_125ml_bags": "4",
+      "reported_dose_ml_kg": 13,
+      "administration_route": null,
+      "pcv_pre_percent": 16,
+      "pcv_post_percent": 9,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Died",
+      "later_follow_up": "Severe hemolysis was reported the next morning; PCV fell to 2.1%, and euthanasia was elected.",
+      "source": {
+        "pdf_page": 41,
+        "booklet_case_page": 31,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "HM-030",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Immune Mediated Hemolytic Anemia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 20,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 14,
+      "administration_route": null,
+      "pcv_pre_percent": 12,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Died",
+      "later_follow_up": "Euthanasia was elected about 36 hours later because of poor response to medication.",
+      "source": {
+        "pdf_page": 41,
+        "booklet_case_page": 31,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "HM-031",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Immune Mediated Hemolytic Anemia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 51,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 15,
+      "pcv_post_percent": 12,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 41,
+        "booklet_case_page": 31,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "HM-032",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Immune Mediated Thrombocytopenia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 22,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 13,
+      "administration_route": null,
+      "pcv_pre_percent": 13,
+      "pcv_post_percent": 12,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 41,
+        "booklet_case_page": 31,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "HM-033",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Zinc Toxicity",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 6,
+      "oxyglobin_125ml_bags": "<1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 11,
+      "pcv_post_percent": 8,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 42,
+        "booklet_case_page": 32,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "HM-034",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Zinc Toxicity",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 48,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 28,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 42,
+        "booklet_case_page": 32,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "HM-035",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Zinc Toxicity / IMHA",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 8,
+      "oxyglobin_125ml_bags": "<1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 11,
+      "pcv_post_percent": 11,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 42,
+        "booklet_case_page": 32,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "HM-036",
+      "booklet_section": "Hemolysis",
+      "diagnosis": "Zinc Toxicity / Thrombocytopenia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 70,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 8,
+      "administration_route": null,
+      "pcv_pre_percent": 22,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Died",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 42,
+        "booklet_case_page": 32,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "IE-001",
+      "booklet_section": "Ineffective erythropoiesis",
+      "diagnosis": "Bone Marrow Disease",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 84,
+      "oxyglobin_125ml_bags": "3",
+      "reported_dose_ml_kg": 10,
+      "administration_route": null,
+      "pcv_pre_percent": 9,
+      "pcv_post_percent": 9,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": "Died 4.5 days after infusion; no response to steroid therapy was reported.",
+      "source": {
+        "pdf_page": 44,
+        "booklet_case_page": 33,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "IE-002",
+      "booklet_section": "Ineffective erythropoiesis",
+      "diagnosis": "Bone Marrow Disease / Parasite Anemia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 70,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 10,
+      "pcv_post_percent": 12,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 44,
+        "booklet_case_page": 33,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "IE-003",
+      "booklet_section": "Ineffective erythropoiesis",
+      "diagnosis": "Bone Marrow Disease / Parasite Anemia",
+      "treatment_sequence": "Oxyglobin followed by packed RBCs",
+      "weight_lb": 14,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 20,
+      "administration_route": null,
+      "pcv_pre_percent": 10,
+      "pcv_post_percent": 8,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": "Died 3.5 days after infusion; no response to medication was reported.",
+      "source": {
+        "pdf_page": 44,
+        "booklet_case_page": 33,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "IE-004",
+      "booklet_section": "Ineffective erythropoiesis",
+      "diagnosis": "Chronic Disease",
+      "treatment_sequence": "Oxyglobin followed by whole blood",
+      "weight_lb": 65,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 8,
+      "administration_route": null,
+      "pcv_pre_percent": 15,
+      "pcv_post_percent": 15,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": "A second bag and 250 mL whole blood were reported at 72 hours; outlook remained grave.",
+      "source": {
+        "pdf_page": 44,
+        "booklet_case_page": 33,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "IE-005",
+      "booklet_section": "Ineffective erythropoiesis",
+      "diagnosis": "Exploratory / Neoplasia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 84,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 7,
+      "administration_route": null,
+      "pcv_pre_percent": 18,
+      "pcv_post_percent": 14,
+      "outcome_24h": "Died",
+      "outcome_72h": "Died",
+      "later_follow_up": "Extensive neoplastic involvement was found during exploration, and euthanasia was authorized.",
+      "source": {
+        "pdf_page": 45,
+        "booklet_case_page": 34,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "IE-006",
+      "booklet_section": "Ineffective erythropoiesis",
+      "diagnosis": "Exploratory / Neoplasia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 134,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 4,
+      "administration_route": null,
+      "pcv_pre_percent": 22,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 45,
+        "booklet_case_page": 34,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "IE-007",
+      "booklet_section": "Ineffective erythropoiesis",
+      "diagnosis": "Ineffective Erythropoiesis / C-Section",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 19,
+      "oxyglobin_125ml_bags": "<1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": null,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 45,
+        "booklet_case_page": 34,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "IE-008",
+      "booklet_section": "Ineffective erythropoiesis",
+      "diagnosis": "Neoplasia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 110,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 5,
+      "administration_route": null,
+      "pcv_pre_percent": 16,
+      "pcv_post_percent": 16,
+      "outcome_24h": "Died",
+      "outcome_72h": "Died",
+      "later_follow_up": "Multiple liver growths were found during laparotomy, and euthanasia was performed.",
+      "source": {
+        "pdf_page": 45,
+        "booklet_case_page": 34,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "IE-009",
+      "booklet_section": "Ineffective erythropoiesis",
+      "diagnosis": "Neoplasia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 80,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 7,
+      "administration_route": null,
+      "pcv_pre_percent": 27,
+      "pcv_post_percent": 29,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 46,
+        "booklet_case_page": 35,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "IE-010",
+      "booklet_section": "Ineffective erythropoiesis",
+      "diagnosis": "Neoplasia",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 31,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 9,
+      "administration_route": null,
+      "pcv_pre_percent": 15,
+      "pcv_post_percent": 16,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 46,
+        "booklet_case_page": 35,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "IE-011",
+      "booklet_section": "Ineffective erythropoiesis",
+      "diagnosis": "Neoplasia / Amputation",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 90,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 31,
+      "pcv_post_percent": 20,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 46,
+        "booklet_case_page": 35,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "IE-012",
+      "booklet_section": "Ineffective erythropoiesis",
+      "diagnosis": "Neoplasia / Arterial Mass / Surgery",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 38,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 14,
+      "administration_route": null,
+      "pcv_pre_percent": 15,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Not available",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 46,
+        "booklet_case_page": 35,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "IE-013",
+      "booklet_section": "Ineffective erythropoiesis",
+      "diagnosis": "Neoplasia / Hemangiosarcoma",
+      "treatment_sequence": "Oxyglobin followed by packed RBCs",
+      "weight_lb": 40,
+      "oxyglobin_125ml_bags": "2",
+      "reported_dose_ml_kg": 14,
+      "administration_route": null,
+      "pcv_pre_percent": 17,
+      "pcv_post_percent": 22,
+      "outcome_24h": "Died",
+      "outcome_72h": "Died",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 47,
+        "booklet_case_page": 36,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "IE-014",
+      "booklet_section": "Ineffective erythropoiesis",
+      "diagnosis": "Neoplasia / Hemangiosarcoma",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 46,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 6,
+      "administration_route": null,
+      "pcv_pre_percent": 17,
+      "pcv_post_percent": 21,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 47,
+        "booklet_case_page": 36,
+        "position_on_page": 2
+      }
+    },
+    {
+      "id": "IE-015",
+      "booklet_section": "Ineffective erythropoiesis",
+      "diagnosis": "Neoplasia / Hemangiosarcoma / Surgery",
+      "treatment_sequence": "Oxyglobin followed by packed RBCs",
+      "weight_lb": 70,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 4,
+      "administration_route": null,
+      "pcv_pre_percent": 29,
+      "pcv_post_percent": 28,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": null,
+      "source": {
+        "pdf_page": 47,
+        "booklet_case_page": 36,
+        "position_on_page": 3
+      }
+    },
+    {
+      "id": "IE-016",
+      "booklet_section": "Ineffective erythropoiesis",
+      "diagnosis": "Renal Failure",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 70,
+      "oxyglobin_125ml_bags": "1",
+      "reported_dose_ml_kg": 4,
+      "administration_route": null,
+      "pcv_pre_percent": 15,
+      "pcv_post_percent": 15,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Died",
+      "later_follow_up": "Initial improvement was reported, followed by death associated with chronic renal failure.",
+      "source": {
+        "pdf_page": 47,
+        "booklet_case_page": 36,
+        "position_on_page": 4
+      }
+    },
+    {
+      "id": "IE-017",
+      "booklet_section": "Ineffective erythropoiesis",
+      "diagnosis": "Renal Failure",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 30,
+      "oxyglobin_125ml_bags": "3",
+      "reported_dose_ml_kg": 28,
+      "administration_route": null,
+      "pcv_pre_percent": 11,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Survived",
+      "later_follow_up": "Died several weeks later from other reported complications.",
+      "source": {
+        "pdf_page": 48,
+        "booklet_case_page": 37,
+        "position_on_page": 1
+      }
+    },
+    {
+      "id": "IE-018",
+      "booklet_section": "Ineffective erythropoiesis",
+      "diagnosis": "Renal Failure",
+      "treatment_sequence": "Oxyglobin only",
+      "weight_lb": 7,
+      "oxyglobin_125ml_bags": "<1",
+      "reported_dose_ml_kg": null,
+      "administration_route": null,
+      "pcv_pre_percent": 7,
+      "pcv_post_percent": null,
+      "outcome_24h": "Survived",
+      "outcome_72h": "Not available",
+      "later_follow_up": "Poor response and persistent weakness were reported; euthanasia was requested.",
+      "source": {
+        "pdf_page": 48,
+        "booklet_case_page": 37,
+        "position_on_page": 2
+      }
+    }
+  ]
+}
