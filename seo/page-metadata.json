@@ -27,10 +27,11 @@
     },
     "veterinary/Vet-index.html": {
         "title": "Vet Real-World Evidence & Cases | Oxyglobin & BHOC",
-        "description": "Source-linked veterinary real-world evidence and cases covering Oxyglobin, animal anemia, species evidence, institutions, publications and FDA and EMA records.",
+        "description": "Source-linked veterinary real-world evidence and cases covering Oxyglobin, 885 historical canine reports, animal anemia, species evidence, publications and FDA and EMA records.",
         "keywords": "veterinary real-world evidence, veterinary cases, veterinary oxygen carrier, Oxyglobin, veterinary transfusion, canine anemia, animal oxygenation, veterinary hemoglobin oxygen carrier, BHOC veterinary evidence, FDA Oxyglobin, EMA Oxyglobin",
         "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html",
         "type": "website",
+        "lastmod": "2026-09-22",
         "breadcrumbs": [
             [
                 "Home",
@@ -561,7 +562,7 @@
     "clinical/index.html": {
         "title": "BHOC Applications | EMS, PPH & Oxygen Therapeutics",
         "description": "Explore BHOC and HBOC applications across prehospital EMS, emergency blood transfusion, postpartum hemorrhage, donor blood, PBM and tissue oxygenation.",
-        "keywords": "BHOC applications, HBOC applications, Precision Oxygen Therapeutics, prehospital EMS, emergency blood transfusion, postpartum hemorrhage, PPH, donor blood, patient blood management, PBM, oxygen delivery, tissue oxygenation",
+        "keywords": "BHOC applications, HBOC applications, Precision Oxygen Therapeutics, prehospital EMS, prehospital blood transfusion, prehospital blood program, blood supply resilience, emergency blood transfusion, postpartum hemorrhage, PPH, donor blood, patient blood management, PBM, oxygen delivery, tissue oxygenation",
         "url": "https://archiljali.github.io/BHOC-platform/clinical/",
         "type": "website",
         "lastmod": "2026-09-18",
@@ -578,8 +579,8 @@
     },
     "clinical/prehospital-ems.html": {
         "title": "Prehospital EMS & Emergency Transfusion | BHOC",
-        "description": "Review prehospital EMS and emergency transfusion evidence on severe hemorrhage, donor-blood access, tissue oxygenation and BHOC Precision Oxygen Therapeutics.",
-        "keywords": "prehospital EMS, emergency blood transfusion, prehospital blood transfusion, EMS blood, severe hemorrhage, hemorrhagic shock, donor blood, blood availability, oxygen delivery, tissue oxygenation, BHOC, HBOC",
+        "description": "NHTSA Office of EMS now highlights prehospital blood transfusion as a dedicated EMS issue. Review blood-program implementation, supply, logistics and oxygen-delivery evidence.",
+        "keywords": "prehospital EMS, emergency blood transfusion, prehospital blood transfusion, prehospital blood program, NHTSA Office of EMS, EMS.gov, federal EMS, EMS blood, severe hemorrhage, hemorrhagic shock, donor blood, blood availability, blood supply resilience, oxygen delivery, tissue oxygenation, BHOC, HBOC",
         "url": "https://archiljali.github.io/BHOC-platform/clinical/prehospital-ems.html",
         "type": "article",
         "lastmod": "2026-09-18",
