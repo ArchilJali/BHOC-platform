@@ -519,7 +519,7 @@
     if (!document.getElementById('bhoc-footer-social-style')) {
       const style = document.createElement('style');
       style.id = 'bhoc-footer-social-style';
-      style.textContent = '.bhoc-footer-socials{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;margin:14px 0 0;padding-top:12px;border-top:1px solid rgba(120,135,150,.22)}.bhoc-footer-social-link{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid currentColor;border-radius:9px;text-decoration:none;transition:transform .16s ease,opacity .16s ease}.bhoc-footer-social-link:hover{transform:translateY(-1px);opacity:.82}.bhoc-footer-social-link:focus-visible{outline:3px solid rgba(10,102,194,.2);outline-offset:2px}.bhoc-footer-social-link svg{width:19px;height:19px;display:block}.bhoc-footer-social-link[data-network="linkedin"]{color:#0a66c2}.bhoc-footer-social-link[data-network="youtube"]{color:#ff0000}';
+      style.textContent = '.bhoc-footer-socials{display:inline-flex;align-items:center;gap:7px;margin-left:10px;vertical-align:middle;white-space:nowrap}.bhoc-footer-social-link{display:inline-flex;align-items:center;justify-content:center;width:29px;height:29px;border:1px solid currentColor;border-radius:9px;text-decoration:none;transition:transform .16s ease,opacity .16s ease}.bhoc-footer-social-link:hover{transform:translateY(-1px);opacity:.82}.bhoc-footer-social-link:focus-visible{outline:3px solid rgba(10,102,194,.2);outline-offset:2px}.bhoc-footer-social-link svg{width:17px;height:17px;display:block}.bhoc-footer-social-link[data-network="linkedin"]{color:#0a66c2}.bhoc-footer-social-link[data-network="youtube"]{color:#ff0000}';
       document.head.appendChild(style);
     }
     const makeSocial = (href, network, label, svg) => {
@@ -541,14 +541,16 @@
       footer.querySelectorAll('a[href*="linkedin.com"],a[href*="youtube.com/@BHOCTherapeutics"]').forEach(link => {
         if ((link.textContent || '').trim().toLowerCase().startsWith('youtube')) link.remove();
       });
-      const nav = document.createElement('nav');
+      const nav = document.createElement('span');
       nav.className = 'bhoc-footer-socials';
+      nav.setAttribute('role', 'group');
       nav.setAttribute('aria-label', 'BHOC social media');
       nav.append(
         makeSocial(OFFICIAL_LINKEDIN_COMPANY, 'linkedin', 'BHOC Therapeutics on LinkedIn', linkedinSvg),
         makeSocial(OFFICIAL_YOUTUBE_CHANNEL, 'youtube', 'BHOC Therapeutics on YouTube', youtubeSvg)
       );
-      footer.appendChild(nav);
+      const target = footer.querySelector('.platform-version, .footer-bottom, .footer-meta, .footer-publication') || footer.querySelector('p:last-of-type') || footer;
+      target.appendChild(nav);
     });
   };
 
