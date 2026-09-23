@@ -1,7 +1,7 @@
 {
-  "snapshot": "2026-08-30",
-  "uniquePublications": 335,
-  "hubPlacements": 473,
+  "snapshot": "2026-09-23",
+  "uniquePublications": 336,
+  "hubPlacements": 474,
   "evidenceHubs": 3,
   "indexedAuthorInstitutions": 154,
   "normalizedJournalLabels": 168,
@@ -10,7 +10,7 @@
   "hubs": {
     "veterinary": 236,
     "transplantation": 53,
-    "humanUse": 184
+    "humanUse": 185
   },
   "notes": {
     "uniquePublications": "Deduplicated across hubs by DOI, PMID and normalized title.",
