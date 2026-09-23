@@ -4648,5 +4648,29 @@
     "citation": "Zucker S, Lysik RM. Pathogenesis of anemia in rats with Walker 256 carcinosarcoma. J Lab Clin Med. 1977Sep;90(3):502-11.",
     "note": "Animal or veterinary study retained as translational evidence; it is not human clinical evidence.",
     "institutions": []
+  },
+  {
+    "id": 412,
+    "title": "Precision Oxygen Therapeutics: From Blood Substitutes to the Biological Hemoglobin Oxygen Carrier (BHOC) Framework for Controlled Microvascular and Tissue-Level Oxygen Delivery",
+    "year": 2026,
+    "direction": "Critical Care & Oxygen Delivery",
+    "evidenceGroup": "Reviews, clinical context & policy",
+    "evidence": "Preprint / perspective",
+    "product": "BHOC / oxygen carrier (general or other)",
+    "speciesDetail": "Human / translational framework",
+    "authors": "Rausch CW, Jaliashvili A",
+    "journal": "",
+    "pmid": "",
+    "doi": "10.20944/preprints202609.1886.v1",
+    "pubmedUrl": "",
+    "doiUrl": "https://doi.org/10.20944/preprints202609.1886.v1",
+    "hbo2Url": "",
+    "sources": "Preprints.org",
+    "sourceCount": 1,
+    "verification": "Primary source verified",
+    "sourceRows": "Preprints.org 2026",
+    "citation": "Rausch CW, Jaliashvili A. Precision Oxygen Therapeutics: From Blood Substitutes to the Biological Hemoglobin Oxygen Carrier (BHOC) Framework for Controlled Microvascular and Tissue-Level Oxygen Delivery. Preprints.org. 2026. doi:10.20944/preprints202609.1886.v1.",
+    "note": "Preprint (Version 1), posted 22 September 2026; not peer-reviewed. Essay defining the BHOC and Precision Oxygen Therapeutics framework.",
+    "institutions": []
   }
 ]
