@@ -50,7 +50,7 @@ const institutions = new Set(records.flatMap(publication => Array.isArray(public
 const animalLabels = new Set(veterinary.flatMap(publication => publication.species_tags || []).filter(label => !['Human', 'In vitro'].includes(label)));
 const animalLabelledRecords = veterinary.filter(publication => (publication.species_tags || []).some(label => !['Human', 'In vitro'].includes(label))).length;
 const overview = {
-  snapshot: '2026-08-30',
+  snapshot: '2026-09-25',
   uniquePublications: new Set(records.map((_, index) => root(index))).size,
   hubPlacements: records.length,
   evidenceHubs: 3,
