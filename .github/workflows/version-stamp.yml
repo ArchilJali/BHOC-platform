@@ -1,6 +1,20 @@
 name: Platform version stamp
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '*.html'
+      - '**/*.html'
+      - '*.htm'
+      - '**/*.htm'
+      - '*.md'
+      - '**/*.md'
+      - 'assets/**'
+      - 'config/**'
+      - 'version.json'
+      - '.github/workflows/version-stamp.yml'
+      - '!drafts/**'
   workflow_dispatch:
 
 permissions:
@@ -25,14 +39,17 @@ jobs:
         shell: bash
         run: |
           git pull --rebase origin main
+          SOURCE_COMMIT="$(git log -1 --format=%H --invert-grep --fixed-strings --grep='[version-stamp]')"
           VERSION="$(TZ=Asia/Tbilisi date +'%y.%m.%d')"
           UPDATED="$(TZ=Asia/Tbilisi date +'%d %b %Y')"
           ISO="$(TZ=Asia/Tbilisi date +'%Y-%m-%d')"
-          python3 - "$VERSION" "$UPDATED" "$ISO" <<'PY'
+          python3 - "$VERSION" "$UPDATED" "$ISO" "$SOURCE_COMMIT" <<'PY'
           from pathlib import Path
           import json, re, sys
 
-          version, updated, iso = sys.argv[1:]
+          version, updated, iso, source_commit = sys.argv[1:]
+          if not source_commit:
+              raise SystemExit("Missing source commit")
           version_file = Path('version.json')
 
           if version_file.exists():
@@ -42,6 +59,10 @@ jobs:
                   current = {}
           else:
               current = {}
+
+          if current.get('source_commit') == source_commit:
+              print('This content commit is already stamped.')
+              raise SystemExit(0)
 
           first_published = current.get('first_published', '20 Aug 2026')
           first_published_iso = current.get('first_published_iso', '2026-08-20')
@@ -54,35 +75,42 @@ jobs:
               'updates': updates,
               'updated': updated,
               'updated_iso': iso,
-              'timezone': 'Asia/Tbilisi'
+              'timezone': 'Asia/Tbilisi',
+              'source_commit': source_commit
           }, indent=2) + '\n', encoding='utf-8')
 
-          marker = (
-              f'<p class="platform-version" data-platform-version>'
+          label = (
               f'First published {first_published} · {updates} updates · '
-              f'Last updated {updated} · Version {version}</p>'
+              f'Last updated {updated} · Version {version}'
           )
 
+          # Keep existing footer children, including social icons, while replacing
+          # only the leading status text. Do not inject a footer into draft pages.
           pattern = re.compile(
-              r'<p\b[^>]*\bclass\s*=\s*["\'][^"\']*\bplatform-version\b[^"\']*["\'][^>]*>.*?</p>',
+              r'(<p\b[^>]*\bclass\s*=\s*["\'][^"\']*\bplatform-version\b[^"\']*["\'][^>]*>)(.*?)(</p>)',
               flags=re.I | re.S
           )
-          verification_file = 'google3023721c92b6366f.html'
 
+          def replace_status(match):
+              old_body = match.group(2)
+              child_start = old_body.find('<')
+              children = old_body[child_start:] if child_start >= 0 else ''
+              return match.group(1) + label + children + match.group(3)
+
+          verification_file = 'google3023721c92b6366f.html'
           for p in Path('.').rglob('*.html'):
-              if '.git' in p.parts or p.name == verification_file:
+              if '.git' in p.parts or 'drafts' in p.parts or p.name == verification_file:
                   continue
-              s = p.read_text(encoding='utf-8')
-              if pattern.search(s):
-                  s2 = pattern.sub(marker, s, count=1)
-              elif re.search(r'</footer>', s, flags=re.I):
-                  s2 = re.sub(r'</footer>', f'  {marker}\n</footer>', s, count=1, flags=re.I)
-              elif re.search(r'</body>', s, flags=re.I):
-                  s2 = re.sub(r'</body>', f'<footer class="site-footer">\n  {marker}\n</footer>\n</body>', s, count=1, flags=re.I)
-              else:
-                  s2 = s
-              if s2 != s:
-                  p.write_text(s2, encoding='utf-8')
+              content = p.read_text(encoding='utf-8')
+              revised = pattern.sub(replace_status, content, count=1)
+              if p.as_posix() == 'index.html':
+                  revised = re.sub(
+                      r'(<span class="tag">Updated )[^<]*(</span>)',
+                      lambda m: m.group(1) + updated + m.group(2),
+                      revised, count=1
+                  )
+              if revised != content:
+                  p.write_text(revised, encoding='utf-8')
           PY
 
       - name: Commit live status
