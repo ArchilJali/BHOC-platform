@@ -1,9 +1,10 @@
 {
-  "version": "26.09.11",
+  "version": "26.09.25",
   "first_published": "20 Aug 2026",
   "first_published_iso": "2026-08-20",
-  "updates": 207,
-  "updated": "11 Sep 2026",
-  "updated_iso": "2026-09-11",
-  "timezone": "Asia/Tbilisi"
+  "updates": 208,
+  "updated": "25 Sep 2026",
+  "updated_iso": "2026-09-25",
+  "timezone": "Asia/Tbilisi",
+  "source_commit": "33ac3f5fa93e064c9125cfaa11223c1e24ddb2b3"
 }
