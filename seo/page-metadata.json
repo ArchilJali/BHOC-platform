@@ -45,7 +45,7 @@
     },
     "veterinary/Vet-search.html": {
         "title": "Veterinary Oxygen Carrier Publication Search | BHOC",
-        "description": "Search 236 Oxyglobin and veterinary oxygen-carrier publications by institution, author, species, journal and year, with PubMed and DOI links.",
+        "description": "Search the 236-record historical veterinary bibliography and three curated Oxyglobin additions by institution, author, species, journal and year.",
         "keywords": "veterinary oxygen carrier publications, Oxyglobin publications, veterinary transfusion research, canine anemia research, animal oxygenation, PubMed, DOI, author institutions",
         "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html",
         "type": "website",

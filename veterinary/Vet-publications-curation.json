@@ -69,6 +69,40 @@
       "species_basis": "Study explicitly describes a canine acute hypovolaemia model",
       "species": "Canine",
       "source_review_note": "Distinct British Journal of Anaesthesia full paper, PMID 11575346. It is related to but must not replace the separate Veterinary Anaesthesia and Analgesia record PMID 28404246."
+    },
+    {
+      "title": "Clinical use of a haemoglobin-based oxygen carrying solution (Oxyglobin) in 48 cats (2002-2006)",
+      "authors": "Weingart C, Kohn B",
+      "year": "2008",
+      "journal": "Journal of Feline Medicine and Surgery",
+      "keywords": "Oxyglobin, hemoglobin glutamer-200, cats, feline anemia, clinical use, safety, volume overload",
+      "id": "bhoc-curated-20260926-003",
+      "institutions": [
+        "Free University of Berlin"
+      ],
+      "affiliations": [
+        "Clinic for Small Animals, Faculty of Veterinary Medicine, Free University of Berlin, Berlin, Germany"
+      ],
+      "species_tags": [
+        "Feline"
+      ],
+      "pmid": "18455461",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/18455461/",
+      "doi": "10.1016/j.jfms.2007.10.012",
+      "doi_url": "https://doi.org/10.1016/j.jfms.2007.10.012",
+      "link": "https://doi.org/10.1016/j.jfms.2007.10.012",
+      "metadata_source": "PubMed",
+      "metadata_url": "https://pubmed.ncbi.nlm.nih.gov/18455461/",
+      "metadata_checked": "2026-09-26",
+      "source_title": "Clinical use of a haemoglobin-based oxygen carrying solution (Oxyglobin) in 48 cats (2002-2006)",
+      "source_authors": "Weingart C, Kohn B.",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "metadata_status": "matched",
+      "species_basis": "Study population is 48 anemic cats reported in a retrospective clinical study",
+      "species": "Feline",
+      "source_review_note": "Historical product-specific Oxyglobin use in 48 cats, PMID 18455461. Retrospective observational design; does not establish the efficacy or safety of a new BHOC formulation."
     }
   ],
   "overrides": {

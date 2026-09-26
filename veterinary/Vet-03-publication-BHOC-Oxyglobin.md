@@ -61,7 +61,7 @@ This is a distinct British Journal of Anaesthesia full paper and should be retai
 
 ## Current searchable evidence layer
 
-The preserved base bibliography contains **236 records**. The live search now applies **2 additional source-verified Oxyglobin/HBOC-301 records**, for **238 searchable records** in the active evidence layer.
+The preserved base bibliography contains **236 records**. The live search now applies **3 additional source-verified historical Oxyglobin/HBOC records**, for **239 searchable records** in the active evidence layer.
 
 ## Evidence boundary
 
@@ -70,3 +70,7 @@ The preserved base bibliography contains **236 records**. The live search now ap
 ---
 
 *Updated: 16 September 2026*
+
+## Curated addition · 26 September 2026
+
+- **Weingart C, Kohn B (2008):** retrospective Oxyglobin use in 48 cats. PMID **18455461**, DOI **10.1016/j.jfms.2007.10.012**. Historical product-specific clinical evidence, with safety and outcome limits requiring source-level interpretation; it does not establish a new BHOC indication.
