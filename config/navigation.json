@@ -28,7 +28,8 @@
     },
     {
       "label": "BHOC Transplant",
-      "enabled": false
+      "href": "https://archiljali.github.io/bhoc-transplant/",
+      "enabled": true
     }
   ]
 }
