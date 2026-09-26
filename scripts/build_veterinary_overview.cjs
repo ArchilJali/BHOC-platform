@@ -11,6 +11,12 @@ const data=C.validate(JSON.parse(read('veterinary/Vet-publications.json')));
 const caseData=JSON.parse(read('veterinary/Vet-cases.json'));
 const cases=Array.isArray(caseData.cases)?caseData.cases:[];
 const s=C.overview(data);
+const curated=JSON.parse(read('veterinary/Vet-publications-curation.json'));
+const merged=data.map(p=>curated.overrides?.[p.id]?{...p,...curated.overrides[p.id]}:p);
+for(const addition of Array.isArray(curated.additions)?curated.additions:[]){
+  if(!merged.some(p=>p.id===addition.id||(addition.pmid&&p.pmid===addition.pmid)||(addition.doi&&p.doi===addition.doi)))merged.push(addition);
+}
+const active=C.overview(C.validate(merged));
 const base='https://archiljali.github.io/BHOC-platform/veterinary/';
 const vetPlatform='https://archiljali.github.io/BHOC-VET-platform/';
 const vetConcepts=vetPlatform+'concepts-questions/';
@@ -34,12 +40,13 @@ const main=`<main id="main" class="shell">
 <p class="notice"><strong>Evidence architecture:</strong> this page is the <strong>Evidence Layer</strong>. The <a href="${vetPlatform}">BHOC VET-platform</a> is the <strong>Interpretation &amp; Research Layer</strong>, where source-linked evidence is developed into <a href="${vetConcepts}">Concepts &amp; Questions</a> without duplicating the underlying evidence library.</p>
 
 <section aria-label="Database statistics" class="overview-stats">
-${stat(s.total,'Total publications','Bibliographic records','publication-catalogue.html')}
+${stat(active.total,'Searchable publications',`${s.total} base · ${active.total-s.total} curated`,'Vet-search.html')}
 ${stat(sourceCount,'Documented case sources',cases.length+' case · '+archiveCount+' historical archive','#documented-cases')}
 ${stat(s.groups.length,'Species / model groups','Animal, human &amp; in vitro','#species-distribution')}
 ${stat(s.institutions,'Author institutions','Browse the institution directory','Vet-search.html')}
-${stat(s.linked,'Source-linked citations',`${s.pubmed} PubMed · ${s.dois} DOI links`,'publication-methodology.html')}
+${stat(s.linked,'Base source-linked citations',`${s.pubmed} PubMed · ${s.dois} DOI links`,'publication-methodology.html')}
 </section>
+<p class="overview-caption">The species distribution and catalogue below describe the ${s.total}-record preserved base. Search also includes ${active.total-s.total} source-verified curated additions (${active.total} active records), without counting existing studies twice.</p>
 
 <div class="overview-grid">
 <section class="panel species-panel" id="species-distribution" aria-labelledby="species-heading"><div class="overview-heading"><div><div class="eyebrow">Browse the bibliography</div><h2 id="species-heading">Species Distribution</h2></div><span class="tag">${s.total} total records</span></div><p class="overview-caption">Select a species or model group to open matching publications.</p><div class="species-list">${rows}</div><p class="overview-caption">Human and in-vitro records provide wider research context; they are not veterinary approvals. Bar lengths compare group counts, not percentages of a whole.</p><details class="overview-details" id="overview-notes"><summary>How to interpret these numbers</summary><p>${note}</p><p>${groupNote}</p><p>${journalNote}</p><p><a href="Vet-publications.json">Source bibliography</a> · <a href="publication-methodology.html">Index methodology</a></p></details></section>
