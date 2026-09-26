@@ -74,7 +74,14 @@
     realWorld.title = 'Knowledge Base · Oxygen Delivery Evidence';
     realWorld.setAttribute('aria-label', 'Real-World Evidence knowledge base, public Oxygen Delivery Evidence page');
 
-    network.append(separator, knowledgeLabel, veterinary, realWorld);
+    const transplant = document.createElement('a');
+    transplant.className = 'nav-network-link nav-network-knowledge';
+    transplant.href = 'https://archiljali.github.io/BHOC-Transplant-platform/';
+    transplant.textContent = 'Transplant Evidence';
+    transplant.title = 'Knowledge Base · BHOC Transplant platform';
+    transplant.setAttribute('aria-label', 'Transplant evidence knowledge base, public BHOC Transplant platform');
+
+    network.append(separator, knowledgeLabel, veterinary, transplant, realWorld);
   };
 
   const normalizePrimaryExplorerCTA = () => {

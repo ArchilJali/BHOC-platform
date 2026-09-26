@@ -92,5 +92,7 @@
       "doiUrl": "https://doi.org/10.1111/ctr.70664",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/42672047/"
     }
-  ]
+  ],
+  "archiveStatus": "Frozen legacy snapshot as of 19 September 2026; current related evidence is maintained in BHOC-Transplant-platform.",
+  "canonicalData": "https://archiljali.github.io/BHOC-Transplant-platform/data/related-evidence.json"
 }

@@ -43,3 +43,7 @@ The following publications are retained as comparative or contextual transplanta
 **Evidence boundary:** these publications describe different oxygen-carrier products and molecular architectures. Their findings may inform BHOC research questions but do not establish efficacy, safety or equivalence for BHOC.
 
 Company corporate websites are not used as outbound evidence links. Records appearing in only one supplied source remain marked for review until their original DOI, PubMed record, regulator record or full text is verified.
+
+## Evidence platform split (26 Sep 2026)
+
+This repository remains the source for the 53-record transplant-focused HBOC and oxygen-carrier catalogue and historical articles. Current external transplant studies and future related evidence are maintained at [BHOC-Transplant-platform](https://archiljali.github.io/BHOC-Transplant-platform/). `Transplant-relevant-evidence.json` is a frozen legacy snapshot for existing data links; do not add new studies here. The old related-evidence HTML route sends readers to the new platform.

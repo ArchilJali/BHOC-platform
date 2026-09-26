@@ -832,27 +832,5 @@
                 "/concepts-hypotheses/oxygen-exposure-transport-delivery-tissue-response.html"
             ]
         ]
-    },
-    "transplant/Transplant-relevant-evidence.html": {
-        "title": "Scientific Evidence Relevant to BHOC & Transplant Oxygen Delivery",
-        "description": "External transplant evidence relevant to BHOC oxygen-delivery research across preservation, machine perfusion, regional perfusion and ischemia-reperfusion.",
-        "keywords": "BHOC transplant evidence, oxygen delivery transplantation, machine perfusion, HOPE, NMP, HMP, normothermic regional perfusion, organ preservation, ischemia reperfusion, liver transplantation, kidney transplantation, lung transplantation",
-        "url": "https://archiljali.github.io/BHOC-platform/transplant/Transplant-relevant-evidence.html",
-        "type": "website",
-        "lastmod": "2026-09-19",
-        "breadcrumbs": [
-            [
-                "Home",
-                "/"
-            ],
-            [
-                "Transplantation evidence",
-                "/transplant/Transplant-index.html"
-            ],
-            [
-                "Scientific evidence relevant to BHOC",
-                "/transplant/Transplant-relevant-evidence.html"
-            ]
-        ]
     }
 }
