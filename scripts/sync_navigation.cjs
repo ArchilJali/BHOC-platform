@@ -8,6 +8,7 @@ const SKIP_DIRS = new Set(['.git', 'node_modules']);
 const SHELL_HREF = '/BHOC-platform/assets/platform-shell.css';
 const INTELLIGENCE_HREF = '/BHOC-platform/assets/intelligence-2026.css';
 const NAV_SCRIPT = '/BHOC-platform/assets/navigation.js?v=20260922-inline5';
+const ANALYTICS_SCRIPT = '/BHOC-platform/assets/analytics.js?v=20260927';
 const AUTHOR_PROFILE = 'https://bhoctherapeutics.com/archil-jaliashvili/';
 const LINKEDIN_PROFILE = 'https://www.linkedin.com/in/archil-jaliashvili-bhoc/';
 const BRAND_MARK = 'https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
@@ -69,6 +70,11 @@ function ensurePlatformAssets(src) {
     next = next.replace(/<script\b(?=[^>]*\bsrc=["'][^"']*assets\/navigation\.js(?:\?[^"']*)?["'])[^>]*><\/script>/gi, `<script src="${NAV_SCRIPT}" defer></script>`);
   } else {
     next = next.replace(/<\/head>/i, `  <script src="${NAV_SCRIPT}" defer></script>\n</head>`);
+  }
+  if (/src=["'][^"']*assets\/analytics\.js(?:\?[^"']*)?["']/i.test(next)) {
+    next = next.replace(/<script\b(?=[^>]*\bsrc=["'][^"']*assets\/analytics\.js(?:\?[^"']*)?["'])[^>]*><\/script>/gi, `<script src="${ANALYTICS_SCRIPT}" defer></script>`);
+  } else {
+    next = next.replace(/<\/head>/i, `  <script src="${ANALYTICS_SCRIPT}" defer></script>\n</head>`);
   }
   if (!next.includes(`rel="author" href="${AUTHOR_PROFILE}"`)) next = next.replace(/<\/head>/i, `  <link rel="author" href="${AUTHOR_PROFILE}">\n</head>`);
   return next;
