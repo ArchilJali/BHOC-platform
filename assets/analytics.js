@@ -14,7 +14,9 @@
     window.gtag('config', GA4_MEASUREMENT_ID);
   }
 
-  if (AHREFS_DATA_KEY) {
+  if (AHREFS_DATA_KEY && !Array.from(document.querySelectorAll('script[src]')).some(
+    script => script.src === 'https://analytics.ahrefs.com/analytics.js' && script.dataset.key === AHREFS_DATA_KEY
+  )) {
     const ahrefsScript = document.createElement('script');
     ahrefsScript.async = true;
     ahrefsScript.src = 'https://analytics.ahrefs.com/analytics.js';
