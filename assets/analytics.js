@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const GA4_MEASUREMENT_ID = '';
-  const AHREFS_DATA_KEY = '';
+  const AHREFS_DATA_KEY = 'npWICTTrMv3ktsAlhswQ7g';
 
   if (GA4_MEASUREMENT_ID) {
     window.dataLayer = window.dataLayer || [];
