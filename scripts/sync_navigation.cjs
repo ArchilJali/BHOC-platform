@@ -8,7 +8,7 @@ const SKIP_DIRS = new Set(['.git', 'node_modules']);
 const SHELL_HREF = '/BHOC-platform/assets/platform-shell.css';
 const INTELLIGENCE_HREF = '/BHOC-platform/assets/intelligence-2026.css';
 const NAV_SCRIPT = '/BHOC-platform/assets/navigation.js?v=20260922-inline5';
-const ANALYTICS_SCRIPT = '/BHOC-platform/assets/analytics.js?v=20260927';
+const ANALYTICS_SCRIPT = '/BHOC-platform/assets/analytics.js?v=20260927b';
 const AUTHOR_PROFILE = 'https://bhoctherapeutics.com/archil-jaliashvili/';
 const LINKEDIN_PROFILE = 'https://www.linkedin.com/in/archil-jaliashvili-bhoc/';
 const BRAND_MARK = 'https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark.png?v=202609055';
