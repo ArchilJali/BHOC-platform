@@ -32,18 +32,17 @@ function htmlFiles(directory) {
   });
 }
 
-test('public sitemap pages and VET Applications exclude Yandex without excluding Google or Bing', () => {
-  const files = new Set(['veterinary/vet-stage/index.html']);
-  for (const [, location] of read('sitemap.xml').matchAll(/<loc>(.*?)<\/loc>/g)) {
-    const url = new URL(location.replaceAll('&amp;', '&'));
-    assert.equal(url.origin, 'https://archiljali.github.io');
-    assert.ok(url.pathname.startsWith('/BHOC-platform/'));
-    let file = decodeURIComponent(url.pathname.slice('/BHOC-platform/'.length));
-    if (!file || file.endsWith('/')) file += 'index.html';
-    files.add(file);
+test('old evidence pages point to the owned hub and retain Yandex exclusion', () => {
+  assert.doesNotMatch(read('sitemap.xml'), /<loc>/, 'the old sitemap is empty');
+  const files = htmlFiles(root).filter(file => file !== '404.html' && !file.startsWith('_includes/') && !/^google[a-z0-9]+\.html$/i.test(file));
+  assert.ok(files.length > 50, 'check all migration pages');
+  for (const file of files) {
+    const source = read(file);
+    assert.ok(directives(source, 'robots').includes('noindex'), `${file}: old page noindex`);
+    assert.deepEqual(directives(source, 'yandex'), ['noindex'], `${file}: Yandex-only exclusion retained`);
+    assert.match(source, /<meta http-equiv="refresh" content="0;url=https:\/\/bhoctherapeutics\.com\/evidence\/library\//, `${file}: immediate refresh`);
+    assert.match(source, /<link rel="canonical" href="https:\/\/bhoctherapeutics\.com\/evidence\/library\//, `${file}: owned canonical`);
   }
-  assert.ok(files.size > 30, 'check the full public sitemap, not just the home page');
-  for (const file of files) assertPublicIndexing(read(file), file);
 });
 
 test('real drafts, migration redirects and 404 retain their general noindex', () => {

@@ -20,7 +20,16 @@
     "url": "https://archiljali.github.io/BHOC-platform/social-media/linkedin/",
     "type": "website",
     "lastmod": "2026-09-16",
-    "breadcrumbs": [["Home", "/"], ["LinkedIn publications", "/social-media/linkedin/"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "LinkedIn publications",
+        "/social-media/linkedin/"
+      ]
+    ]
   },
   "veterinary/Vet-03-publication-BHOC-Oxyglobin.html": {
     "title": "Oxyglobin / HBOC-301 Evidence | FDA Efficacy & Blood Comparison",
@@ -30,7 +39,20 @@
     "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-03-publication-BHOC-Oxyglobin.html",
     "type": "website",
     "lastmod": "2026-09-16",
-    "breadcrumbs": [["Home", "/"], ["Veterinary evidence", "/veterinary/Vet-index.html"], ["Oxyglobin / HBOC-301 evidence", "/veterinary/Vet-03-publication-BHOC-Oxyglobin.html"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Veterinary evidence",
+        "/veterinary/Vet-index.html"
+      ],
+      [
+        "Oxyglobin / HBOC-301 evidence",
+        "/veterinary/Vet-03-publication-BHOC-Oxyglobin.html"
+      ]
+    ]
   },
   "veterinary/Vet-FDA-registry.html": {
     "title": "Oxyglobin FDA Approval | NADA 141-067 Efficacy & 24-Hour Evidence",
@@ -40,7 +62,24 @@
     "url": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-FDA-registry.html",
     "type": "article",
     "lastmod": "2026-09-16",
-    "breadcrumbs": [["Home", "/"], ["Veterinary evidence", "/veterinary/Vet-index.html"], ["FDA / EMA records", "/veterinary/Vet-fda-ema.html"], ["FDA Oxyglobin record", "/veterinary/Vet-FDA-registry.html"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Veterinary evidence",
+        "/veterinary/Vet-index.html"
+      ],
+      [
+        "FDA / EMA records",
+        "/veterinary/Vet-fda-ema.html"
+      ],
+      [
+        "FDA Oxyglobin record",
+        "/veterinary/Vet-FDA-registry.html"
+      ]
+    ]
   },
   "science/pregnancy-sickle-cell-oxygen-delivery.html": {
     "title": "Pregnancy, Sickle Cell Disease & Oxygen Delivery | BHOC Science",
@@ -49,7 +88,20 @@
     "url": "https://archiljali.github.io/BHOC-platform/science/pregnancy-sickle-cell-oxygen-delivery.html",
     "type": "article",
     "lastmod": "2026-09-16",
-    "breadcrumbs": [["Home", "/"], ["Science", "/science/"], ["Pregnancy, Sickle Cell Disease & Oxygen Delivery", "/science/pregnancy-sickle-cell-oxygen-delivery.html"]]
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Science",
+        "/science/"
+      ],
+      [
+        "Pregnancy, Sickle Cell Disease & Oxygen Delivery",
+        "/science/pregnancy-sickle-cell-oxygen-delivery.html"
+      ]
+    ]
   },
   "historical-sources/us-military-navy-hboc-research/index.html": {
     "title": "U.S. Navy RESUS and Military HBOC Research | BHOC",
@@ -73,5 +125,37 @@
         "/historical-sources/us-military-navy-hboc-research/"
       ]
     ]
+  },
+  "transplant/related/index.html": {
+    "title": "Transplant Related Evidence | BHOC Therapeutics",
+    "description": "Explore a unified BHOC evidence catalogue connecting seven external transplant studies with the separate historical oxygen-carrier record and research limits.",
+    "keywords": "BHOC transplant, transplantation, kidney, liver, lung, evidence, organ perfusion, xenotransplantation",
+    "url": "https://archiljali.github.io/BHOC-platform/transplant/related/",
+    "type": "website",
+    "lastmod": "2026-09-28"
+  },
+  "transplant/related/evidence.html": {
+    "title": "Transplant Study Records | BHOC Therapeutics",
+    "description": "Review seven source-linked external liver, kidney and lung studies on preservation, perfusion and xenotransplantation, with methods and BHOC boundaries.",
+    "keywords": "BHOC transplant, transplantation, kidney, liver, lung, evidence, organ perfusion, xenotransplantation",
+    "url": "https://archiljali.github.io/BHOC-platform/transplant/related/evidence.html",
+    "type": "website",
+    "lastmod": "2026-09-28"
+  },
+  "transplant/related/methodology.html": {
+    "title": "Transplant Evidence Methodology | BHOC Therapeutics",
+    "description": "Read how BHOC Therapeutics classifies external transplant research, original sources, study designs and limits without treating related science as BHOC efficacy.",
+    "keywords": "BHOC transplant, transplantation, kidney, liver, lung, evidence, organ perfusion, xenotransplantation",
+    "url": "https://archiljali.github.io/BHOC-platform/transplant/related/methodology.html",
+    "type": "website",
+    "lastmod": "2026-09-28"
+  },
+  "transplant/related/montgomery-kidney-xenotransplantation-evidence.html": {
+    "title": "Montgomery Kidney Research Brief | BHOC Therapeutics",
+    "description": "Read a source-linked analysis of Montgomery kidney xenotransplantation studies in decedent models, including short-term results, corrections and limits.",
+    "keywords": "BHOC transplant, transplantation, kidney, liver, lung, evidence, organ perfusion, xenotransplantation",
+    "url": "https://archiljali.github.io/BHOC-platform/transplant/related/montgomery-kidney-xenotransplantation-evidence.html",
+    "type": "article",
+    "lastmod": "2026-09-28"
   }
 }
