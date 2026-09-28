@@ -58,7 +58,7 @@ test('managed metadata, canonical, social cards and H1 are complete',()=>{
       assert.ok(source.includes('property="og:description" content="Source-linked evidence on BHOC, HBOC and oxygen delivery."'),`${file}: compact social description missing`);
     }
     assert.ok(source.includes(`<link rel="icon" href="${isVeterinary?veterinaryMark:initiativeMark}" type="${isVeterinary?'image/svg+xml':'image/png'}">`),`${file}: correct favicon missing`);
-    assert.ok(source.includes('property="og:site_name" content="BHOC Therapeutics Platform"'),`${file}: platform social name missing`);
+    assert.ok(source.includes('property="og:site_name" content="BHOC Therapeutics"'),`${file}: platform social name missing`);
   }
 });
 
