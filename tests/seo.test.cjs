@@ -15,6 +15,7 @@ const initiativeMark='https://bhoctherapeutics.com/assets/bhoc-biodiversity-mark
 const veterinaryMark='https://bhocvet.com/assets/favicon.svg';
 const defaultSocialImage='https://bhoctherapeutics.com/assets/bhoc-social-preview-20260905-initiative-logo.png?v=20260913';
 const authorProfile='https://bhoctherapeutics.com/archil-jaliashvili/';
+const migratedUrl=url=>url.replace('https://archiljali.github.io/BHOC-platform','https://bhoctherapeutics.com/evidence/library');
 
 function html(file){return fs.readFileSync(path.join(root,file),'utf8')}
 function count(source,pattern){return [...source.matchAll(pattern)].length}
@@ -41,7 +42,9 @@ test('managed metadata, canonical, social cards and H1 are complete',()=>{
     assert.equal(count(source,/<link rel="canonical"/g),1,`${file}: canonical count`);
     assert.equal(count(source,/<h1\b/gi),1,`${file}: H1 count`);
     assert.ok(source.includes(`<title>${data.title}</title>`),`${file}: configured title missing`);
-    assert.ok(source.includes(`<link rel="canonical" href="${data.url}">`),`${file}: configured canonical missing`);
+    assert.ok(source.includes(`<link rel="canonical" href="${migratedUrl(data.url)}">`),`${file}: owned-domain canonical missing`);
+    assert.ok(source.includes(`content="0;url=${migratedUrl(data.url)}"`),`${file}: immediate migration bridge missing`);
+    assert.ok(source.includes('<meta name="robots" content="noindex,follow">'),`${file}: old route remains out of the index`);
     const isVeterinary=file.startsWith('veterinary/');
     const isHome=file==='index.html';
     const expectedImage=defaultSocialImage;
@@ -104,17 +107,15 @@ test('all JSON-LD blocks parse and breadcrumb pages expose breadcrumbs',()=>{
     const blocks=[...source.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi)];
     assert.ok(blocks.length>=1,`${file}: JSON-LD missing`);
     for(const block of blocks)assert.doesNotThrow(()=>JSON.parse(block[1]),`${file}: invalid JSON-LD`);
-    if(data.breadcrumbs)assert.ok(source.includes('"@type": "BreadcrumbList"'),`${file}: breadcrumb schema missing`);
+    if(data.breadcrumbs)assert.ok(blocks.some(block=>JSON.parse(block[1])['@type']==='BreadcrumbList'),`${file}: breadcrumb schema missing`);
   }
 });
 
-test('sitemap contains every canonical indexable page exactly once',()=>{
+test('old-host sitemap excludes migrated canonical pages',()=>{
   const locations=[...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(match=>match[1].replace(/&amp;/g,'&'));
   const lastmods=[...sitemap.matchAll(/<lastmod>(.*?)<\/lastmod>/g)].map(match=>match[1]);
-  assert.equal(locations.length,Object.keys(config).length);
-  assert.equal(new Set(locations).size,locations.length,'duplicate sitemap URLs');
-  for(const data of Object.values(config))assert.ok(locations.includes(data.url),`${data.url}: missing from sitemap`);
-  assert.equal(lastmods.length,Object.values(config).filter(data=>data.lastmod).length,'only explicit substantive lastmod dates belong in sitemap');
+  assert.equal(locations.length,0,'old host must not advertise moved content');
+  assert.equal(lastmods.length,0,'old host has no indexable pages to date');
   for(const data of Object.values(config).filter(data=>data.lastmod))assert.match(data.lastmod,/^\d{4}-\d{2}-\d{2}$/);
   for(const redirect of ['Vet-index.html','Vet-search.html','veterinary/index.html','veterinary/business/index.html','veterinary/Vet-business-concept.html']){
     assert.ok(/noindex/.test(html(redirect)),`${redirect}: redirect must remain noindex`);

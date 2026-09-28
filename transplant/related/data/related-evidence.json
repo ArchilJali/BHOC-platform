@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-19",
+  "updated": "2026-09-27",
   "scope": "Scientific evidence relevant to BHOC and transplant oxygen delivery. These records are external transplantation studies and are not BHOC efficacy evidence.",
   "records": [
     {
@@ -91,8 +91,67 @@
       "pmid": "42672047",
       "doiUrl": "https://doi.org/10.1111/ctr.70664",
       "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/42672047/"
+    },
+    {
+      "id": "TR-REL-2022-006",
+      "organ": "Kidney",
+      "modality": "Gene-edited porcine kidney xenotransplantation",
+      "evidenceType": "Two-case human decedent study",
+      "title": "Results of Two Cases of Pig-to-Human Kidney Xenotransplantation",
+      "year": 2022,
+      "publicationDate": "2022-05-19",
+      "authors": "Montgomery RA, Stern JM, Lonze BE, et al.",
+      "journal": "The New England Journal of Medicine",
+      "population": "Two recipients with established brain death; 54-hour observation",
+      "signal": "The authors reported urine production and no biopsy evidence of hyperacute or antibody-mediated rejection during the 54-hour observation.",
+      "relevance": "External context for the xenograft pathway and early organ-function assessment.",
+      "boundary": "Short-term decedent research, not long-term living-recipient evidence. No BHOC or oxygen-carrier intervention was tested.",
+      "doi": "10.1056/NEJMoa2120238",
+      "pmid": "35584156",
+      "doiUrl": "https://doi.org/10.1056/NEJMoa2120238",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/35584156/",
+      "briefUrl": "https://archiljali.github.io/BHOC-Transplant-platform/montgomery-kidney-xenotransplantation-evidence.html#study-2022",
+      "added": "2026-09-27",
+      "sourceChecked": "2026-09-27",
+      "reviewScope": "Editorial check of original bibliographic record and abstract; not independent verification of underlying data.",
+      "classification": "External transplantation research; not BHOC efficacy evidence"
+    },
+    {
+      "id": "TR-REL-2026-007",
+      "organ": "Kidney",
+      "modality": "Gene-edited porcine kidney xenotransplantation",
+      "evidenceType": "Single-recipient human decedent study",
+      "title": "Physiology and immunology of a pig-to-human decedent kidney xenotransplant",
+      "year": 2026,
+      "publicationDate": "2026-02-05",
+      "firstOnlineDate": "2025-11-13",
+      "authors": "Montgomery RA, Stern JM, Fathi F, Suek N, et al.",
+      "journal": "Nature",
+      "population": "One recipient with established brain death; planned 61-day observation",
+      "signal": "Dialysis independence was achieved. Antibody-mediated rejection developed on day 33; the authors reported reversal after treatment.",
+      "relevance": "External context for interpreting graft function alongside immune response in the xenograft pathway.",
+      "boundary": "Not 61 rejection-free days. A single decedent study cannot establish long-term living-recipient outcomes or BHOC benefit; no oxygen-carrier intervention was tested.",
+      "doi": "10.1038/s41586-025-09847-6",
+      "pmid": "41233546",
+      "doiUrl": "https://doi.org/10.1038/s41586-025-09847-6",
+      "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/41233546/",
+      "briefUrl": "https://archiljali.github.io/BHOC-Transplant-platform/montgomery-kidney-xenotransplantation-evidence.html#study-2026",
+      "corrections": [
+        {"type": "Publisher Correction", "published": "2026-02-12", "doi": "10.1038/s41586-026-10252-w", "pmid": "41680323", "url": "https://doi.org/10.1038/s41586-026-10252-w"},
+        {"type": "Author Correction", "published": "2026-06-04", "doi": "10.1038/s41586-026-10694-2", "pmid": "42243534", "url": "https://doi.org/10.1038/s41586-026-10694-2"}
+      ],
+      "added": "2026-09-27",
+      "sourceChecked": "2026-09-27",
+      "reviewScope": "Editorial check of original bibliographic record, abstract and correction trail; no figure-level reanalysis or independent data audit.",
+      "classification": "External transplantation research; not BHOC efficacy evidence"
     }
   ],
-  "archiveStatus": "Frozen legacy snapshot as of 19 September 2026; current related evidence is maintained in BHOC-Transplant-platform.",
-  "canonicalData": "https://archiljali.github.io/BHOC-platform/transplant/related/data/related-evidence.json"
+  "provenance": {
+    "sourceRepository": "ArchilJali/BHOC-platform",
+    "sourcePath": "transplant/Transplant-relevant-evidence.json",
+    "sourceUpdated": "2026-09-19",
+    "migrated": "2026-09-26",
+    "status": "External transplant context; not BHOC product evidence",
+    "migrationScope": "Records TR-REL-2026-001 through TR-REL-2026-005. Later additions carry their own added and sourceChecked dates. Correction notices are linked amendments, not additional study records."
+  }
 }
