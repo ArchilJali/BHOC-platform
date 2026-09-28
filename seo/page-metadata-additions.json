@@ -157,5 +157,33 @@
     "url": "https://archiljali.github.io/BHOC-platform/transplant/related/montgomery-kidney-xenotransplantation-evidence.html",
     "type": "article",
     "lastmod": "2026-09-28"
+  },
+  "human/health-system-resilience-oxygen-security.html": {
+    "title": "Oxygen Security, Strategic Reserves & Modular Manufacturing | BHOC",
+    "socialTitle": "Global Oxygen Security: Strategic Reserves & Modular Manufacturing",
+    "description": "WHO policy context and BHOC development concept for Oxygen Security, strategic sovereign reserves, resilient supply chains and modular robotic regional manufacturing.",
+    "keywords": "Oxygen Security, strategic sovereign reserves, strategic medical stockpiles, WHO preparedness, blood supply resilience, Precision Oxygen Therapeutics, Biological Hemoglobin Oxygen Carrier, BHOC, modular manufacturing, robotic manufacturing, regional manufacturing, AI-assisted monitoring, QA QC, resilient medical supply, local manufacturing, emergency preparedness",
+    "url": "https://archiljali.github.io/BHOC-platform/human/health-system-resilience-oxygen-security.html",
+    "type": "article",
+    "lastmod": "2026-09-28",
+    "image": "https://bhoctherapeutics.com/evidence/library/assets/bhoc-global-modular-robotic-manufacturing-oxygen-security-2026.svg",
+    "imageWidth": 1200,
+    "imageHeight": 630,
+    "imageType": "image/svg+xml",
+    "imageAlt": "BHOC development concept for global modular robotic manufacturing of Precision Oxygen Therapeutics with regional nodes, centralized digital oversight, AI-assisted monitoring, QA/QC and Oxygen Security",
+    "breadcrumbs": [
+      [
+        "Home",
+        "/"
+      ],
+      [
+        "Human-use evidence",
+        "/human/BHOC-Human-index.html"
+      ],
+      [
+        "Oxygen Security",
+        "/human/health-system-resilience-oxygen-security.html"
+      ]
+    ]
   }
 }
