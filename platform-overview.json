@@ -1,15 +1,15 @@
 {
-  "snapshot": "2026-09-25",
-  "uniquePublications": 336,
-  "hubPlacements": 474,
+  "snapshot": "2026-10-04",
+  "uniquePublications": 337,
+  "hubPlacements": 475,
   "evidenceHubs": 3,
-  "indexedAuthorInstitutions": 155,
+  "indexedAuthorInstitutions": 156,
   "normalizedJournalLabels": 168,
   "animalLabelledRecords": 141,
   "animalEvidenceLabels": 10,
   "hubs": {
     "veterinary": 236,
-    "transplantation": 53,
+    "transplantation": 54,
     "humanUse": 185
   },
   "notes": {

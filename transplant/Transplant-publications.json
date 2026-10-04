@@ -1347,5 +1347,46 @@
     "institutions": [
       "University of Colorado"
     ]
+  },
+  {
+    "id": 413,
+    "title": "Evaluating the Effects of Kidney Preservation at 10 °C with Hemopure and Sodium Thiosulfate in a Rat Model of Syngeneic Orthotopic Kidney Transplantation",
+    "year": 2024,
+    "organ": "Kidney",
+    "direction": "Transplantation - Kidney",
+    "product": "HBOC-201 / Hemopure",
+    "evidence": "Preclinical animal",
+    "authors": "Abou Taka M, Dugbartey GJ, Richard-Mohamed M, McLeod P, Jiang J, Major S, Arp J, O’Neil C, Liu W, Gabril M, Moussa M, Luke P, Sener A",
+    "journal": "International Journal of Molecular Sciences",
+    "institution": "University of Western Ontario; London Health Sciences Center; University of Ghana",
+    "institutions": [
+      "University of Western Ontario",
+      "London Health Sciences Center",
+      "University of Ghana"
+    ],
+    "pmid": "38396887",
+    "pmcid": "PMC10889495",
+    "doi": "10.3390/ijms25042210",
+    "pubmedUrl": "https://pubmed.ncbi.nlm.nih.gov/38396887/",
+    "doiUrl": "https://doi.org/10.3390/ijms25042210",
+    "originalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10889495/",
+    "sources": "PubMed; PMC",
+    "verification": "Verified original source",
+    "sourceRows": "PMID 38396887; PMCID PMC10889495",
+    "hbo2Category": "",
+    "citation": "Abou Taka M, Dugbartey GJ, Richard-Mohamed M, et al. Evaluating the Effects of Kidney Preservation at 10 °C with Hemopure and Sodium Thiosulfate in a Rat Model of Syngeneic Orthotopic Kidney Transplantation. Int J Mol Sci. 2024 Feb 12;25(4):2210. doi: 10.3390/ijms25042210. PMID: 38396887; PMCID: PMC10889495.",
+    "keywords": "Kidney renal transplantation Hemopure HBOC-201 sodium thiosulfate STS 10 °C static cold storage ischemia reperfusion injury rat syngeneic orthotopic preclinical",
+    "model": "Syngeneic orthotopic kidney transplantation in male Lewis rats; renal proximal tubular cell hypoxia-reoxygenation",
+    "summary": "Donor kidneys were stored for 24 hours at 10 °C in University of Wisconsin solution supplemented with Hemopure, sodium thiosulfate, or both. The combined treatment improved early graft function and reduced several tissue-injury and inflammatory markers after transplantation.",
+    "limitations": "Small preclinical syngeneic rat model. Longer-term graft-function differences were not statistically significant and overall rat survival was poor. Renal blood flow and local tissue pO2 were not quantified. The findings concern Hemopure plus sodium thiosulfate and do not establish BHOC efficacy or a human transplant indication.",
+    "relatedRecords": [
+      {
+        "id": 280,
+        "relationship": "Related 2023 conference abstract on the same temperature, Hemopure and sodium thiosulfate research approach; retained as a distinct publication",
+        "doi": "10.1097/ju.0000000000003324.06"
+      }
+    ],
+    "verifiedAt": "2026-10-04",
+    "approvedAt": "2026-10-04"
   }
 ]

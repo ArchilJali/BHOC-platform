@@ -8,19 +8,19 @@ This section organizes transplantation, organ perfusion and preservation publica
 - `Transplant-search.html` - searchable publication catalogue.
 - `Transplant-publications.json` - structured publication data.
 
-## Current catalogue
+## Current catalogue (4 October 2026)
 
 - Liver: 24
 - General organ perfusion and preservation: 13
-- Kidney: 7
+- Kidney: 8
 - Heart: 6
 - Limb and composite tissue: 3
-- Total: 53
+- Total: 54
 
 
 ## Related external oxygen-carrier literature
 
-The following publications are retained as comparative or contextual transplantation evidence. They concern M101 / HEMO2life or related marine extracellular oxygen-carrier systems and are **not included in the 53-record core Transplant publication catalogue**. They may be cited selectively where they help explain organ preservation, oxygen delivery, hypoxia, perfusion, ischemia-reperfusion biology or related research questions.
+The following publications are retained as comparative or contextual transplantation evidence. They concern M101 / HEMO2life or related marine extracellular oxygen-carrier systems and are **not included in the 54-record core Transplant publication catalogue**. They may be cited selectively where they help explain organ preservation, oxygen delivery, hypoxia, perfusion, ischemia-reperfusion biology or related research questions.
 
 1. Mallet V, Dutheil D, Polard V, Rousselot M, Leize E, Hauet T, Goujon JM, Zal F. *Dose-ranging study of the performance of the natural oxygen transporter HEMO2 Life in organ preservation.* Artificial Organs. 2014;38(8):691-701. doi:10.1111/aor.12307. PMID:24749976. — Kidney; dose/function; organ preservation.
 
@@ -46,4 +46,4 @@ Company corporate websites are not used as outbound evidence links. Records appe
 
 ## Evidence platform split (26 Sep 2026)
 
-This repository remains the source for the 53-record transplant-focused HBOC and oxygen-carrier catalogue and historical articles. Current external transplant studies and future related evidence are maintained at [BHOC-Transplant-platform](https://archiljali.github.io/BHOC-Transplant-platform/). `Transplant-relevant-evidence.json` is a frozen legacy snapshot for existing data links; do not add new studies here. The old related-evidence HTML route sends readers to the new platform.
+This repository remains the source for the 54-record transplant-focused HBOC and oxygen-carrier catalogue and historical articles. Current external transplant studies and future related evidence are maintained at [BHOC-Transplant-platform](https://archiljali.github.io/BHOC-Transplant-platform/). `Transplant-relevant-evidence.json` is a frozen legacy snapshot for existing data links; do not add new studies here. The old related-evidence HTML route sends readers to the new platform.

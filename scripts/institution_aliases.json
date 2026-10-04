@@ -344,10 +344,12 @@
     "University of Alberta"
   ],
   "University of Western Ontario": [
-    "University of Western Ontario"
+    "University of Western Ontario",
+    "Western University"
   ],
   "London Health Sciences Center": [
-    "London Health Sciences Center"
+    "London Health Sciences Center",
+    "London Health Sciences Centre"
   ],
   "National Research Council Institute for Biodiagnostics": [
     "National Research Council Institute for Biodiagnostics"
@@ -481,5 +483,8 @@
   ],
   "University of Hawaii": [
     "University of Hawaii"
+  ],
+  "University of Ghana": [
+    "University of Ghana"
   ]
 }
