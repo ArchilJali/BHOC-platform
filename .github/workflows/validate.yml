@@ -1,4 +1,5 @@
 name: Validate evidence hub
+# Manual runs are enabled for post-sync verification.
 on:
   workflow_dispatch:
   pull_request:
