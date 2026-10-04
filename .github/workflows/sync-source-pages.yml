@@ -1,0 +1,50 @@
+name: Sync source coverage pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "veterinary/Vet-publications.json"
+      - "veterinary/metadata-audit.json"
+      - "scripts/build_source_pages.cjs"
+      - "assets/publications-core.js"
+      - ".github/workflows/sync-source-pages.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-source-coverage-pages
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Synchronize with latest main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+      - name: Generate source coverage pages
+        run: node scripts/build_source_pages.cjs
+      - name: Commit generated changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "BHOC Source Page Builder"
+          git config user.email "archil.jali@gmail.com"
+          git add veterinary/metadata-audit.json veterinary/publication-methodology.html veterinary/publication-catalogue.html
+          if git diff --cached --quiet; then
+            echo "Source coverage pages already current."
+            exit 0
+          fi
+          git commit -m "Synchronize generated source coverage pages"
+          git push origin HEAD:main
