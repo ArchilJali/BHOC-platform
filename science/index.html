@@ -63,6 +63,23 @@
   ]
 }
   </script>
+
+<style data-science-feed-pager>
+.science-feed-tools{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:14px 0 20px;padding:14px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.science-feed-search{flex:1 1 200px;min-width:0}
+.science-feed-search input{box-sizing:border-box;width:100%;min-height:44px;padding:10px 12px;border:1px solid #d0d8de;border-radius:8px;background:#fff;color:#102f49;font:inherit;font-size:16px}
+.science-feed-summary{color:var(--muted);font-size:14px;white-space:nowrap}
+.science-feed-viewall,.science-feed-page button{min-height:44px;padding:9px 14px;border:1px solid #d0d8de;border-radius:999px;background:#fff;color:#102f49;font:inherit;font-size:14px;font-weight:700;cursor:pointer}
+.science-feed-viewall:hover,.science-feed-page button:hover:not(:disabled){border-color:var(--teal);color:var(--teal)}
+.science-feed-search input:focus-visible,.science-feed-viewall:focus-visible,.science-feed-page button:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+.science-feed-page{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin:24px 0 0}
+.science-feed-page span{min-width:110px;text-align:center;color:var(--muted);font-size:14px}
+.science-feed-page button:disabled{opacity:.4;cursor:default}
+.paper-card[hidden],.science-feed-page[hidden]{display:none!important}
+.science-feed-empty{padding:20px 0;color:var(--muted)}
+.science-feed-tools .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:640px){.science-feed-tools{align-items:stretch}.science-feed-summary{width:100%;order:3}.science-feed-viewall{margin-left:auto}}
+</style>
 </head>
 <body class="theme-main">
   <a class="skip" href="#main">Skip to content</a>
@@ -150,5 +167,38 @@
     </div>
   </main>
   <footer class="site-footer"><span>BHOC · Biological Hemoglobin Oxygen Carrier<br>Scientific and educational information. Not clinical advice.</span><span><a href="/BHOC-platform/index.html">Home</a> · <a href="/BHOC-platform/veterinary/Vet-index.html">Veterinary</a> · <a href="/BHOC-platform/transplant/Transplant-index.html">Transplantation</a> · <a href="/BHOC-platform/human/BHOC-Human-index.html">Human Use</a> · <a href="/BHOC-platform/clinical/">Applications</a> · <a href="/BHOC-platform/social-media/linkedin/">LinkedIn Publications</a> · <a href="/BHOC-platform/science/">Science</a> · <a href="/BHOC-platform/historical-sources/">History</a> · <a href="https://github.com/ArchilJali/BHOC-platform">GitHub</a></span><p class="platform-version" data-platform-version>First published 20 Aug 2026 · 234 updates · Last updated 08 Oct 2026 · Version 26.10.08<span class="bhoc-footer-socials" role="group" aria-label="BHOC social media" style="display:inline-flex;align-items:center;gap:8px;margin-left:12px;vertical-align:middle;white-space:nowrap"><a class="bhoc-footer-social-link" data-network="linkedin" href="https://www.linkedin.com/company/bhoc-therapeutics/" target="_blank" rel="noopener noreferrer" aria-label="BHOC Therapeutics on LinkedIn" title="BHOC Therapeutics on LinkedIn" style="display:inline-flex;align-items:center;justify-content:center;width:35px;height:35px;box-sizing:border-box;border:1.25px solid #6aa6df;border-radius:10px;text-decoration:none;background:rgba(255,255,255,.04)"><svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true" focusable="false"><rect x="2.5" y="2.5" width="19" height="19" rx="4" fill="#0a66c2"/><path fill="#ffffff" d="M7.25 9.2H4.8V17h2.45V9.2Zm-1.22-3.6a1.43 1.43 0 1 0 0 2.86 1.43 1.43 0 0 0 0-2.86ZM19 12.65c0-2.35-1.25-3.44-2.93-3.44-1.35 0-1.96.74-2.29 1.26V9.2h-2.44V17h2.44v-3.86c0-1.02.2-2 1.46-2 1.25 0 1.26 1.17 1.26 2.07V17H19v-4.35Z"/></svg></a><a class="bhoc-footer-social-link" data-network="youtube" href="https://www.youtube.com/@BHOCTherapeutics" target="_blank" rel="noopener noreferrer" aria-label="BHOC Therapeutics on YouTube" title="BHOC Therapeutics on YouTube" style="display:inline-flex;align-items:center;justify-content:center;width:35px;height:35px;box-sizing:border-box;border:1.25px solid #ff4d4d;border-radius:10px;text-decoration:none;background:rgba(255,255,255,.04)"><svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true" focusable="false"><rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="#ff0000"/><path d="m10 9 5.5 3-5.5 3Z" fill="#ffffff"/></svg></a></span></p></footer>
+<script data-science-feed-pager>
+(()=>{const PAGE_SIZE=5;
+function init(){
+ const feed=document.querySelector('.knowledge-card'); if(!feed)return;
+ const items=[...feed.children].filter(el=>el.matches('article.paper-card')); if(items.length<=PAGE_SIZE)return;
+ const tools=document.createElement('div'); tools.className='science-feed-tools'; tools.innerHTML='<label class="science-feed-search"><span class="sr-only">Search publications</span><input type="search" placeholder="Search publications…" aria-label="Search publications"></label><span class="science-feed-summary" aria-live="polite"></span><button class="science-feed-viewall" type="button">View all</button>';
+ const pager=document.createElement('nav'); pager.className='science-feed-page'; pager.setAttribute('aria-label','Publication pages'); pager.innerHTML='<button type="button" data-dir="-1">Newer</button><span aria-live="polite"></span><button type="button" data-dir="1">Older</button>';
+ items[0].before(tools); items[items.length-1].after(pager);
+ const input=tools.querySelector('input'),summary=tools.querySelector('.science-feed-summary'),allBtn=tools.querySelector('.science-feed-viewall'),pageLabel=pager.querySelector('span'),prev=pager.querySelector('[data-dir="-1"]'),next=pager.querySelector('[data-dir="1"]');
+ let page=0,showAll=false;
+ const params=new URLSearchParams(location.search); if(params.get('q'))input.value=params.get('q'); if(params.get('view')==='all')showAll=true; const requested=Number(params.get('page')); if(Number.isInteger(requested)&&requested>0)page=requested-1;
+ function revealHash(){const target=document.getElementById(decodeURIComponent(location.hash.slice(1))); const idx=items.findIndex(x=>x===target||x.contains(target)); if(idx>=0){input.value='';page=Math.floor(idx/PAGE_SIZE);showAll=false;return target;}return null;}
+ const initialTarget=revealHash();
+ const norm=s=>(s||'').toLowerCase().normalize('NFKD');
+ function render(push=true){
+  const q=norm(input.value.trim()); const matches=items.filter(x=>!q||norm(x.textContent).includes(q)); const pages=Math.max(1,Math.ceil(matches.length/PAGE_SIZE)); page=Math.min(page,pages-1); if(page<0)page=0;
+  const shown=showAll?matches:matches.slice(page*PAGE_SIZE,(page+1)*PAGE_SIZE); const set=new Set(shown); items.forEach(x=>x.hidden=!set.has(x));
+  let empty=feed.querySelector('.science-feed-empty'); if(!matches.length){if(!empty){empty=document.createElement('div');empty.className='science-feed-empty';empty.textContent='No publications matched your search.';feed.append(empty)}}else if(empty)empty.remove();
+  const from=matches.length?(showAll?1:page*PAGE_SIZE+1):0, to=showAll?matches.length:Math.min(matches.length,(page+1)*PAGE_SIZE);
+  summary.textContent=matches.length?from+'–'+to+' of '+matches.length:'0 results'; pageLabel.textContent=showAll?'All publications':'Page '+(page+1)+' of '+pages;
+  prev.disabled=showAll||page===0; next.disabled=showAll||page>=pages-1; pager.hidden=matches.length<=PAGE_SIZE&&!showAll; allBtn.textContent=showAll?'Show 5 per page':'View all';
+  if(push){const p=new URLSearchParams(location.search); if(input.value.trim())p.set('q',input.value.trim());else p.delete('q'); if(showAll){p.set('view','all');p.delete('page')}else{p.delete('view');if(page>0)p.set('page',String(page+1));else p.delete('page')} history.replaceState(null,'',location.pathname+(p.toString()?'?'+p:'')+location.hash)}
+ }
+ input.addEventListener('input',()=>{page=0;showAll=false;render()});
+ allBtn.addEventListener('click',()=>{showAll=!showAll;page=0;render();tools.scrollIntoView({behavior:'smooth',block:'start'})});
+ prev.addEventListener('click',()=>{page--;render();tools.scrollIntoView({behavior:'smooth',block:'start'})});
+ next.addEventListener('click',()=>{page++;render();tools.scrollIntoView({behavior:'smooth',block:'start'})});
+ window.addEventListener('hashchange',()=>{const target=revealHash();if(target){render();target.scrollIntoView({block:'start'});}});
+ render(false); if(initialTarget)initialTarget.scrollIntoView({block:'start'});
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
+</script>
 </body>
 </html>
