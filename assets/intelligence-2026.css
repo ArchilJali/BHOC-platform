@@ -294,3 +294,14 @@ body.theme-vet .overview-actions .button:not(.secondary) .vet-o{
   color:#082d68!important;
   font-weight:400!important;
 }
+
+/* Dark EMS panels retain their surface after the shared white-card rules. */
+body .section.gap-panel{background:#102f49!important;color:#fff!important;border-color:#102f49!important}
+body .section.gap-panel h2,body .section.gap-panel .big-question{color:#fff!important}
+body .section.gap-panel p,body .section.gap-panel li{color:#dce8ec!important}
+body .section.gap-panel .eyebrow{background:#fff!important;color:#102f49!important}
+body .impact-stat.primary{background:#102f49!important;border-color:#102f49!important;color:#fff!important}
+body .impact-stat.green{background:#0b6c67!important;border-color:#0b6c67!important;color:#fff!important}
+body .impact-stat.primary strong,body .impact-stat.primary span,body .impact-stat.green strong,body .impact-stat.green span{color:#fff!important}
+body .impact-stat.primary small{color:#dce8ec!important}
+body .impact-stat.green small{color:#d9efec!important}
