@@ -36,6 +36,11 @@ Twelve dogs with naturally occurring *Babesia rossi* anaemia were randomized to 
 
 [PubMed](https://pubmed.ncbi.nlm.nih.gov/19691591/) · [DOI](https://doi.org/10.1111/j.1476-4431.2009.00386.x)
 
+
+### Related veterinary oncology research by Anthony B. Zambelli
+
+The separate [Zambelli Oxyglobin and veterinary oncology bibliography](Zambelli-Oxyglobin-veterinary-oncology-evidence.md) links his 2009 Oxyglobin comparison with his 2013 and 2015 oncology publications. The oncology papers are research-context evidence, not Oxyglobin or BHOC oncology efficacy studies.
+
 ### Distinct Driessen full paper — do not replace PMID 28404246
 
 **Driessen B, Jahr JS, Lurie F, Griffey SM, Gunther RA. 2001.** *Effects of haemoglobin-based oxygen carrier hemoglobin glutamer-200 (bovine) on intestinal perfusion and oxygenation in a canine hypovolaemia model.* British Journal of Anaesthesia. **PMID 11575346. DOI 10.1093/bja/86.5.683.**
