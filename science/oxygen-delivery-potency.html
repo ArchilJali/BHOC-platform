@@ -134,7 +134,15 @@
             .container table { display: block; max-width: 100%; overflow-x: auto; overscroll-behavior-inline: contain; }
             .container th, .container td { min-width: 7rem; }
         }
-    </style>
+      /* BHOC compact reading layout: responsive full-width, denser typography */
+  body {line-height:1.45;padding:1rem .75rem;}
+  .container {max-width:1280px;width:100%;padding:clamp(1rem,2vw,1.65rem);border-radius:14px;}
+  .container p,.container li {line-height:1.48;margin-top:.45rem;margin-bottom:.55rem;}
+  .container h2 {margin-top:1.15rem;margin-bottom:.5rem;}
+  .container h3 {margin-top:.9rem;margin-bottom:.4rem;}
+  .container table {width:100%;}
+  @media(max-width:700px){body{padding:.35rem}.container{padding:1rem;border-radius:0;overflow-wrap:anywhere;}}
+</style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","name":"Oxygen Delivery Potency of Blood Products | BHOC","headline":"Oxygen Delivery Potency of Blood Products | BHOC","description":"A technical BHOC summary of the L-TOF framework for comparing oxygen delivery potency, stored red blood cells and hemoglobin oxygen carriers.","url":"https://archiljali.github.io/BHOC-platform/science/oxygen-delivery-potency.html","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"BHOC Therapeutics","url":"https://archiljali.github.io/BHOC-platform/","alternateName":["BHOC Platform"],"publisher":{"@id":"https://bhoctherapeutics.com/#organization"},"@id":"https://archiljali.github.io/BHOC-platform/#website"},"author":{"@type":"Person","name":"Archil Jaliashvili","url":"https://bhoctherapeutics.com/archil-jaliashvili/","@id":"https://bhoctherapeutics.com/archil-jaliashvili/#person","description":"Biotechnology and healthcare executive with more than 20 years of experience; BHOC project lead.","jobTitle":"Biotechnology and oxygen therapeutics executive","worksFor":{"@id":"https://bhoctherapeutics.com/#organization"},"sameAs":["https://www.linkedin.com/in/archil-jaliashvili-bhoc/","https://orcid.org/0009-0006-4712-4942","https://github.com/ArchilJali"],"knowsAbout":["Biological Hemoglobin Oxygen Carrier","Precision Oxygen Therapeutics","Hemoglobin-based oxygen carriers","Tissue oxygen delivery","Microcirculation"]}}</script><link rel="stylesheet" href="../assets/platform-shell.css">
 <script type="application/ld+json" data-bhoc-identity>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://bhoctherapeutics.com/#organization","name":"BHOC Therapeutics","url":"https://bhoctherapeutics.com/","description":"BHOC Therapeutics connects hemoglobin biology, oxygen delivery and source-linked research across human, veterinary and transplant applications within Precision Oxygen Therapeutics.","logo":"https://bhoctherapeutics.com/assets/bhoc-biodiversity-logo.png","sameAs":["https://www.linkedin.com/company/bhoc-therapeutics/","https://www.youtube.com/@BHOCTherapeutics","https://bhocvet.com/","https://bhoctransplant.com/"]},{"@type":"Person","@id":"https://bhoctherapeutics.com/archil-jaliashvili/#person","name":"Archil Jaliashvili","url":"https://bhoctherapeutics.com/archil-jaliashvili/","description":"Biotechnology and healthcare executive with more than 20 years of experience; BHOC project lead.","jobTitle":"Biotechnology and oxygen therapeutics executive","worksFor":{"@id":"https://bhoctherapeutics.com/#organization"},"sameAs":["https://www.linkedin.com/in/archil-jaliashvili-bhoc/","https://orcid.org/0009-0006-4712-4942","https://github.com/ArchilJali"],"knowsAbout":["Biological Hemoglobin Oxygen Carrier","Precision Oxygen Therapeutics","Hemoglobin-based oxygen carriers","Tissue oxygen delivery","Microcirculation"]},{"@type":"WebSite","@id":"https://archiljali.github.io/BHOC-platform/#website","name":"BHOC Therapeutics","url":"https://archiljali.github.io/BHOC-platform/","publisher":{"@id":"https://bhoctherapeutics.com/#organization"},"inLanguage":"en","alternateName":["science"]},{"@type":"WebPage","@id":"https://archiljali.github.io/BHOC-platform/science/oxygen-delivery-potency.html#webpage","url":"https://archiljali.github.io/BHOC-platform/science/oxygen-delivery-potency.html","name":"Oxygen Delivery Potency of Blood Products | BHOC","isPartOf":{"@id":"https://archiljali.github.io/BHOC-platform/#website"},"author":{"@id":"https://bhoctherapeutics.com/archil-jaliashvili/#person"},"publisher":{"@id":"https://bhoctherapeutics.com/#organization"}}]}</script>
   <script type="application/ld+json" data-seo-breadcrumbs>
@@ -243,7 +251,7 @@
     <div class="highlight-box">
         <strong>Key finding from the study:</strong> in the authors’ in vitro L-TOF model,
         <strong>476 ± 21.6 mL of day-42 stored RBC concentrate</strong> was calculated to be equipotent to
-        <strong>300 ± 0.0 mL of fresh RBCs</strong>, corresponding to a <strong>158% increase</strong> in modeled dose.
+        <strong>300 ± 0.0 mL of fresh RBCs</strong>, corresponding to <strong>158.7% of the fresh-RBC reference volume</strong> (an approximately <strong>58.7% increase</strong> in modeled dose).
     </div>
 
     <h3>3.1 What was compared</h3>
@@ -275,7 +283,7 @@
         L-TOF enables a <strong>direct, quantitative comparison</strong> of oxygen delivery potency
         between different blood products, providing a much-needed <strong>quality metric</strong>
         for transfusion medicine. This tool could help guide more precise transfusion decisions,
-        potentially improving patient outcomes, especially in massive transfusion scenarios.
+        as a candidate in vitro research comparator; clinical effects require independent in vivo and clinical validation.
     </p>
 
     <div class="highlight-box">
